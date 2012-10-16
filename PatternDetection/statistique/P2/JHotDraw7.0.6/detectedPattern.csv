@@ -1,0 +1,103 @@
+class name;;Method name;;;;Method signature;;;;;;exit stmt;;Analysed unit
+nanoxml.XMLElement;;getAttribute;;;;<nanoxml.XMLElement: java.lang.Object getAttribute(java.lang.String,java.util.Map,java.lang.String,boolean)>;;;;;;throw $r8;;if z0 == 0 goto $r7 = (java.lang.String) r4
+nanoxml.XMLElement;;getBooleanAttribute;;;;<nanoxml.XMLElement: boolean getBooleanAttribute(java.lang.String,java.lang.String,java.lang.String,boolean)>;;;;;;throw $r7;;if $z3 == 0 goto $r6 = (java.lang.String) r4
+nanoxml.XMLElement;;parseFromReader;;;;<nanoxml.XMLElement: void parseFromReader(java.io.Reader,int)>;;;;;;throw $r4;;if c1 == 60 goto c2 = virtualinvoke r0.<nanoxml.XMLElement: char readChar()>()
+nanoxml.XMLElement;;scanString;;;;<nanoxml.XMLElement: void scanString(java.lang.StringBuffer)>;;;;;;throw $r2;;if c0 == 34 goto c1 = virtualinvoke r0.<nanoxml.XMLElement: char readChar()>()
+nanoxml.XMLElement;;skipComment;;;;<nanoxml.XMLElement: void skipComment()>;;;;;;throw $r1;;if $c2 == 62 goto return
+nanoxml.XMLElement;;readChar;;;;<nanoxml.XMLElement: char readChar()>;;;;;;throw $r2;;if i2 >= 0 goto (branch)
+nanoxml.XMLElement;;scanElement;;;;<nanoxml.XMLElement: void scanElement(nanoxml.XMLElement)>;;;;;;throw $r6;;if c1 == 61 goto $c2 = virtualinvoke r0.<nanoxml.XMLElement: char scanWhitespace()>()
+nanoxml.XMLElement;;scanElement;;;;<nanoxml.XMLElement: void scanElement(nanoxml.XMLElement)>;;;;;;throw $r7;;if c3 == 62 goto return
+nanoxml.XMLElement;;scanElement;;;;<nanoxml.XMLElement: void scanElement(nanoxml.XMLElement)>;;;;;;throw $r8;;if c6 == 45 goto c7 = virtualinvoke r0.<nanoxml.XMLElement: char readChar()>()
+nanoxml.XMLElement;;scanElement;;;;<nanoxml.XMLElement: void scanElement(nanoxml.XMLElement)>;;;;;;throw $r9;;if c7 == 45 goto virtualinvoke r0.<nanoxml.XMLElement: void skipComment()>()
+nanoxml.XMLElement;;scanElement;;;;<nanoxml.XMLElement: void scanElement(nanoxml.XMLElement)>;;;;;;throw $r11;;if c8 == 60 goto c4 = virtualinvoke r0.<nanoxml.XMLElement: char readChar()>()
+nanoxml.XMLElement;;scanElement;;;;<nanoxml.XMLElement: void scanElement(nanoxml.XMLElement)>;;;;;;throw $r15;;if c9 == 47 goto $c10 = virtualinvoke r0.<nanoxml.XMLElement: char scanWhitespace()>()
+nanoxml.XMLElement;;scanElement;;;;<nanoxml.XMLElement: void scanElement(nanoxml.XMLElement)>;;;;;;throw $r16;;if $z3 != 0 goto $c11 = virtualinvoke r0.<nanoxml.XMLElement: char scanWhitespace()>()
+nanoxml.XMLElement;;scanElement;;;;<nanoxml.XMLElement: void scanElement(nanoxml.XMLElement)>;;;;;;throw $r17;;if $c11 == 62 goto return
+nanoxml.XMLElement;;resolveEntity;;;;<nanoxml.XMLElement: void resolveEntity(java.lang.StringBuffer)>;;;;;;throw $r15;;if r14 != null goto virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char[])>(r14)
+net.n3.nanoxml.XMLElement;;addChild;;;;<net.n3.nanoxml.XMLElement: void addChild(net.n3.nanoxml.IXMLElement)>;;;;;;throw $r3;;if r1 != null goto $r4 = interfaceinvoke r1.<net.n3.nanoxml.IXMLElement: java.lang.String getName()>()
+net.n3.nanoxml.XMLElement;;insertChild;;;;<net.n3.nanoxml.XMLElement: void insertChild(net.n3.nanoxml.IXMLElement,int)>;;;;;;throw $r3;;if r1 != null goto $r4 = interfaceinvoke r1.<net.n3.nanoxml.IXMLElement: java.lang.String getName()>()
+net.n3.nanoxml.XMLElement;;removeChild;;;;<net.n3.nanoxml.XMLElement: void removeChild(net.n3.nanoxml.IXMLElement)>;;;;;;throw $r2;;if r1 != null goto $r3 = r0.<net.n3.nanoxml.XMLElement: java.util.ArrayList children>
+net.n3.nanoxml.StdXMLReader;;read;;;;<net.n3.nanoxml.StdXMLReader: char read()>;;;;;;throw $r4;;if $z0 == 0 goto $r5 = r0.<net.n3.nanoxml.StdXMLReader: net.n3.nanoxml.StdXMLReader$StackedReader currentReader>
+org.jhotdraw.util.Methods;;invoke;;;;<org.jhotdraw.util.Methods: java.lang.Object invoke(java.lang.Object,java.lang.String,java.lang.Class[],java.lang.Object[])>;;;;;;throw r5;;if $r20 == null goto $r21 = r16
+org.jhotdraw.util.Methods;;invoke;;;;<org.jhotdraw.util.Methods: java.lang.Object invoke(java.lang.Object,java.lang.String,java.lang.Class[],java.lang.Object[])>;;;;;;throw r5;;if $r20 == null goto $r21 = r16
+org.jhotdraw.geom.BezierPath;;getPointOnPath;;;;<org.jhotdraw.geom.BezierPath: java.awt.geom.Point2D$Double getPointOnPath(double,double)>;;;;;;throw $r18;;if $z1 == 0 goto interfaceinvoke r16.<java.awt.geom.PathIterator: int currentSegment(double[])>(r2)
+org.jhotdraw.geom.BezierPath;;moveTo;;;;<org.jhotdraw.geom.BezierPath: void moveTo(double,double)>;;;;;;throw $r1;;if $i0 == 0 goto $r2 = new org.jhotdraw.geom.BezierPath$Node
+org.jhotdraw.geom.BezierPath;;lineTo;;;;<org.jhotdraw.geom.BezierPath: void lineTo(double,double)>;;;;;;throw $r1;;if $i0 != 0 goto $r2 = new org.jhotdraw.geom.BezierPath$Node
+org.jhotdraw.geom.BezierPath;;quadTo;;;;<org.jhotdraw.geom.BezierPath: void quadTo(double,double,double,double)>;;;;;;throw $r1;;if $i0 != 0 goto $r2 = new org.jhotdraw.geom.BezierPath$Node
+org.jhotdraw.geom.BezierPath;;curveTo;;;;<org.jhotdraw.geom.BezierPath: void curveTo(double,double,double,double,double,double)>;;;;;;throw $r2;;if $i0 != 0 goto $i1 = virtualinvoke r0.<org.jhotdraw.geom.BezierPath: int size()>()
+org.jhotdraw.draw.DefaultDrawingView;;paste;;;;<org.jhotdraw.draw.DefaultDrawingView: void paste()>;;;;;;throw r8;;if r21 == null goto throw r8
+org.jhotdraw.xml.XMLTransferable;;getTransferData;;;;<org.jhotdraw.xml.XMLTransferable: java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor)>;;;;;;throw $r5;;if $z0 == 0 goto $r5 = new java.awt.datatransfer.UnsupportedFlavorException
+org.jhotdraw.draw.GridConstrainer;;<init>;;;;<org.jhotdraw.draw.GridConstrainer: void <init>(double,double)>;;;;;;throw $r1;;if $b0 <= 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jhotdraw.draw.GridConstrainer;;<init>;;;;<org.jhotdraw.draw.GridConstrainer: void <init>(double,double)>;;;;;;throw $r1;;if $b1 > 0 goto r0.<org.jhotdraw.draw.GridConstrainer: double width> = d0
+org.jhotdraw.gui.datatransfer.CompositeTransferable;;getTransferData;;;;<org.jhotdraw.gui.datatransfer.CompositeTransferable: java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor)>;;;;;;throw $r5;;if r2 != null goto $r6 = interfaceinvoke r2.<java.awt.datatransfer.Transferable: java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor)>(r1)
+org.jhotdraw.draw.action.VerticalGridLayout;;<init>;;;;<org.jhotdraw.draw.action.VerticalGridLayout: void <init>(int,int,int,int,boolean)>;;;;;;throw $r1;;if i1 != 0 goto r0.<org.jhotdraw.draw.action.VerticalGridLayout: int rows> = i0
+org.jhotdraw.draw.action.VerticalGridLayout;;setRows;;;;<org.jhotdraw.draw.action.VerticalGridLayout: void setRows(int)>;;;;;;throw $r1;;if $i1 != 0 goto r0.<org.jhotdraw.draw.action.VerticalGridLayout: int rows> = i0
+org.jhotdraw.draw.action.VerticalGridLayout;;setColumns;;;;<org.jhotdraw.draw.action.VerticalGridLayout: void setColumns(int)>;;;;;;throw $r1;;if $i1 != 0 goto r0.<org.jhotdraw.draw.action.VerticalGridLayout: int cols> = i0
+org.jhotdraw.samples.draw.DrawApplet;;setData;;;;<org.jhotdraw.samples.draw.DrawApplet: void setData(java.lang.String)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.draw.DrawApplet;;setData;;;;<org.jhotdraw.samples.draw.DrawApplet: void setData(java.lang.String)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.draw.DrawApplet;;getData;;;;<org.jhotdraw.samples.draw.DrawApplet: java.lang.String getData()>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.draw.DrawApplet;;getData;;;;<org.jhotdraw.samples.draw.DrawApplet: java.lang.String getData()>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.draw.DrawProject;;write;;;;<org.jhotdraw.samples.draw.DrawProject: void write(java.io.File)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.draw.DrawProject;;read;;;;<org.jhotdraw.samples.draw.DrawProject: void read(java.io.File)>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.net.NetApplet;;setData;;;;<org.jhotdraw.samples.net.NetApplet: void setData(java.lang.String)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.net.NetApplet;;setData;;;;<org.jhotdraw.samples.net.NetApplet: void setData(java.lang.String)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.net.NetApplet;;getData;;;;<org.jhotdraw.samples.net.NetApplet: java.lang.String getData()>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.net.NetApplet;;getData;;;;<org.jhotdraw.samples.net.NetApplet: java.lang.String getData()>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.net.NetProject;;write;;;;<org.jhotdraw.samples.net.NetProject: void write(java.io.File)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.net.NetProject;;read;;;;<org.jhotdraw.samples.net.NetProject: void read(java.io.File)>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.pert.PertApplet;;setData;;;;<org.jhotdraw.samples.pert.PertApplet: void setData(java.lang.String)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.pert.PertApplet;;setData;;;;<org.jhotdraw.samples.pert.PertApplet: void setData(java.lang.String)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.pert.PertApplet;;getData;;;;<org.jhotdraw.samples.pert.PertApplet: java.lang.String getData()>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.pert.PertApplet;;getData;;;;<org.jhotdraw.samples.pert.PertApplet: java.lang.String getData()>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.pert.PertProject;;write;;;;<org.jhotdraw.samples.pert.PertProject: void write(java.io.File)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.pert.PertProject;;read;;;;<org.jhotdraw.samples.pert.PertProject: void read(java.io.File)>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.svg.SVGApplet;;setData;;;;<org.jhotdraw.samples.svg.SVGApplet: void setData(java.lang.String)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.svg.SVGApplet;;setData;;;;<org.jhotdraw.samples.svg.SVGApplet: void setData(java.lang.String)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.svg.SVGApplet;;getData;;;;<org.jhotdraw.samples.svg.SVGApplet: java.lang.String getData()>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.svg.SVGApplet;;getData;;;;<org.jhotdraw.samples.svg.SVGApplet: java.lang.String getData()>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.svg.SVGProject;;write;;;;<org.jhotdraw.samples.svg.SVGProject: void write(java.io.File)>;;;;;;throw r5;;if r2 == null goto throw r5
+org.jhotdraw.samples.svg.SVGProject;;read;;;;<org.jhotdraw.samples.svg.SVGProject: void read(java.io.File)>;;;;;;throw r6;;if r2 == null goto throw r6
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r15;;if $i5 == -2 goto $d0 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r16;;if $i6 == -2 goto $d1 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r18;;if $i7 == -2 goto $d4 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r20;;if $i8 == -2 goto $d7 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r28;;if $i9 == -2 goto $d14 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r29;;if $i10 == -2 goto $d15 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r30;;if $i11 == -2 goto $d18 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r32;;if $i12 == -2 goto $d21 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r34;;if $i13 == -2 goto $d26 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r35;;if $i14 == -2 goto $d29 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r37;;if $i15 == -2 goto $d34 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r38;;if $i16 == -2 goto $d37 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r40;;if $i17 == -2 goto $d42 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r41;;if $i18 == -2 goto $d43 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r42;;if $i19 == -2 goto $d44 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r43;;if $i20 == -2 goto $d45 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r44;;if $i21 == -2 goto $d46 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r45;;if $i22 == -2 goto $d47 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r46;;if $i23 == -2 goto $d54 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r47;;if $i24 == -2 goto $d57 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r48;;if $i25 == -2 goto $d60 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r49;;if $i26 == -2 goto $d63 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r50;;if $i27 == -2 goto $d66 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r52;;if $i28 == -2 goto $d69 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r59;;if $i31 == -2 goto $d86 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r60;;if $i32 == -2 goto $d87 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r61;;if $i33 == -2 goto $d88 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r62;;if $i34 == -2 goto $d89 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r69;;if $i37 == -2 goto $d104 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r70;;if $i38 == -2 goto $d107 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r71;;if $i39 == -2 goto $d110 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r73;;if $i40 == -2 goto $d113 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r75;;if $i41 == -2 goto $d122 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r76;;if $i42 == -2 goto $d123 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r77;;if $i43 == -2 goto $d124 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r78;;if $i44 == -2 goto $d125 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r79;;if $i45 == -2 goto $d130 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r80;;if $i46 == -2 goto $d133 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r81;;if $i47 == -2 goto $d136 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r83;;if $i48 == -2 goto $d139 = r4.<java.awt.geom.Point2D$Double: double y>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r91;;if $i51 == -2 goto $d154 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r92;;if $i52 == -2 goto $d155 = r8.<java.io.StreamTokenizer: double nval>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r99;;if $i55 == -2 goto $d168 = r4.<java.awt.geom.Point2D$Double: double x>
+org.jhotdraw.samples.svg.SVGUtil;;fromPathData;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.List fromPathData(java.lang.String)>;;;;;;throw $r101;;if $i56 == -2 goto $d171 = r4.<java.awt.geom.Point2D$Double: double y>

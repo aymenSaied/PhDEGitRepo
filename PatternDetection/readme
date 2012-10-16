@@ -1,0 +1,7 @@
+1 importe le projet JHotDraw7.0.6  dans le workspace 
+2 importe le projet PatternDetection dans le workspace 
+2 dans MainDriverP1 et MainDriverP2 modifier les instructions suivante en changeant le pathe de JHotDraw7.0.6  
+ String SourcePath2 ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\JHotDraw7.0.6\\src";
+        resaltingClassPath.append(";"+"C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\JHotDraw7.0.6\\bin");
+
+3  dans run configuration pour MainDriverP1 et MainDriverP2 mettre test dans  program arguments 

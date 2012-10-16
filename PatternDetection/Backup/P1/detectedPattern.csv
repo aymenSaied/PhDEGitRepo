@@ -1,0 +1,27 @@
+class name;;Method name;;;;Method signature;;;;type of exitStmt;;exit stmt;;Analysed unit;
+net.n3.nanoxml.XMLException;;buildMessage;;;;<net.n3.nanoxml.XMLException: java.lang.String buildMessage(java.lang.String,int,java.lang.Exception,java.lang.String,boolean)>;;;;exitpoin;;return r3;;if r1 == null goto return r3;
+net.n3.nanoxml.XMLElement;;addChild;;;;<net.n3.nanoxml.XMLElement: void addChild(net.n3.nanoxml.IXMLElement)>;;;;ThrowStmt;;throw $r3;;if r1 != null goto $r4 = interfaceinvoke r1.<net.n3.nanoxml.IXMLElement: java.lang.String getName()>();
+net.n3.nanoxml.XMLElement;;insertChild;;;;<net.n3.nanoxml.XMLElement: void insertChild(net.n3.nanoxml.IXMLElement,int)>;;;;ThrowStmt;;throw $r3;;if r1 != null goto $r4 = interfaceinvoke r1.<net.n3.nanoxml.IXMLElement: java.lang.String getName()>();
+net.n3.nanoxml.XMLElement;;removeChild;;;;<net.n3.nanoxml.XMLElement: void removeChild(net.n3.nanoxml.IXMLElement)>;;;;ThrowStmt;;throw $r2;;if r1 != null goto $r3 = r0.<net.n3.nanoxml.XMLElement: java.util.ArrayList children>;
+org.jhotdraw.app.action.RedoAction;;updateProject;;;;<org.jhotdraw.app.action.RedoAction: void updateProject(org.jhotdraw.app.Project,org.jhotdraw.app.Project)>;;;;exitpoin;;return;;if r2 == null goto return;1
+org.jhotdraw.app.action.UndoAction;;updateProject;;;;<org.jhotdraw.app.action.UndoAction: void updateProject(org.jhotdraw.app.Project,org.jhotdraw.app.Project)>;;;;exitpoin;;return;;if r2 == null goto return;1
+org.jhotdraw.app.action.AbstractProjectAction;;<init>;;;;<org.jhotdraw.app.action.AbstractProjectAction: void <init>(org.jhotdraw.app.Application)>;;;;exitpoin;;return;;if r1 == null goto return;1
+org.jhotdraw.draw.AbstractAttributedCompositeFigure;;setAttribute;;;;<org.jhotdraw.draw.AbstractAttributedCompositeFigure: void setAttribute(org.jhotdraw.draw.AttributeKey,java.lang.Object)>;;;;exitpoin;;return;;if r2 == null goto return;
+org.jhotdraw.draw.AttributedFigure;;setAttribute;;;;<org.jhotdraw.draw.AttributedFigure: void setAttribute(org.jhotdraw.draw.AttributeKey,java.lang.Object)>;;;;exitpoin;;return;;if r2 == null goto return;
+org.jhotdraw.xml.NanoXMLLiteDOMOutput;;addAttribute;;;;<org.jhotdraw.xml.NanoXMLLiteDOMOutput: void addAttribute(java.lang.String,java.lang.String)>;;;;exitpoin;;return;;if r2 == null goto return;
+org.jhotdraw.xml.NanoXMLLiteDOMOutput;;addAttribute;;;;<org.jhotdraw.xml.NanoXMLLiteDOMOutput: void addAttribute(java.lang.String,java.lang.String,java.lang.String)>;;;;exitpoin;;return;;if r2 == null goto return;
+org.jhotdraw.draw.action.AbstractEditorAction;;<init>;;;;<org.jhotdraw.draw.action.AbstractEditorAction: void <init>(org.jhotdraw.draw.DrawingEditor)>;;;;exitpoin;;return;;if r1 == null goto return;1
+org.jhotdraw.samples.draw.DrawApplet;;setData;;;;<org.jhotdraw.samples.draw.DrawApplet: void setData(java.lang.String)>;;;;exitpoin;;return;;if r1 == null goto return;
+org.jhotdraw.samples.draw.DrawProject;;setEditor;;;;<org.jhotdraw.samples.draw.DrawProject: void setEditor(org.jhotdraw.draw.DrawingEditor)>;;;;exitpoin;;return;;if r1 == null goto return;
+org.jhotdraw.samples.net.NetApplet;;setData;;;;<org.jhotdraw.samples.net.NetApplet: void setData(java.lang.String)>;;;;exitpoin;;return;;if r1 == null goto return;
+org.jhotdraw.samples.net.NetProject;;setEditor;;;;<org.jhotdraw.samples.net.NetProject: void setEditor(org.jhotdraw.draw.DrawingEditor)>;;;;exitpoin;;return;;if r1 == null goto return;
+org.jhotdraw.samples.pert.PertApplet;;setData;;;;<org.jhotdraw.samples.pert.PertApplet: void setData(java.lang.String)>;;;;exitpoin;;return;;if r1 == null goto return;
+org.jhotdraw.samples.pert.PertProject;;setEditor;;;;<org.jhotdraw.samples.pert.PertProject: void setEditor(org.jhotdraw.draw.DrawingEditor)>;;;;exitpoin;;return;;if r1 == null goto return;
+org.jhotdraw.samples.svg.SVGApplet;;setData;;;;<org.jhotdraw.samples.svg.SVGApplet: void setData(java.lang.String)>;;;;exitpoin;;return;;if r1 == null goto return;
+org.jhotdraw.xml.NanoXMLDOMOutput;;addAttribute;;;;<org.jhotdraw.xml.NanoXMLDOMOutput: void addAttribute(java.lang.String,java.lang.String)>;;;;exitpoin;;return;;if r2 == null goto return;
+org.jhotdraw.xml.NanoXMLDOMOutput;;addAttribute;;;;<org.jhotdraw.xml.NanoXMLDOMOutput: void addAttribute(java.lang.String,java.lang.String,java.lang.String)>;;;;exitpoin;;return;;if r2 == null goto return;
+org.jhotdraw.samples.svg.SVGProject;;setEditor;;;;<org.jhotdraw.samples.svg.SVGProject: void setEditor(org.jhotdraw.draw.DrawingEditor)>;;;;exitpoin;;return;;if r1 == null goto return;
+org.jhotdraw.samples.svg.SVGUtil;;getTransform;;;;<org.jhotdraw.samples.svg.SVGUtil: java.awt.geom.AffineTransform getTransform(java.lang.String)>;;;;exitpoin;;return r2;;if r0 == null goto return r2;
+org.jhotdraw.samples.svg.SVGUtil;;getDimensionValue;;;;<org.jhotdraw.samples.svg.SVGUtil: double getDimensionValue(org.jhotdraw.xml.DOMInput,java.lang.String)>;;;;exitpoin;;return 0.0;;if r1 == null goto return 0.0;
+org.jhotdraw.samples.svg.SVGUtil;;getStyles;;;;<org.jhotdraw.samples.svg.SVGUtil: java.util.Map getStyles(java.lang.String)>;;;;exitpoin;;return r2;;if r0 != null goto $r7 = new java.io.StreamTokenizer;
+org.jhotdraw.xml.JavaxDOMOutput;;addAttribute;;;;<org.jhotdraw.xml.JavaxDOMOutput: void addAttribute(java.lang.String,java.lang.String)>;;;;exitpoin;;return;;if r2 == null goto return;
