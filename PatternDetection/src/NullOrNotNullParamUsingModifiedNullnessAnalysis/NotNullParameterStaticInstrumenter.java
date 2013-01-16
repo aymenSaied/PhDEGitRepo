@@ -271,6 +271,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 		while (PathLength < 4 && !findConditionComparingLlocalToNull && !mustExitWhileLoop){
 			
+			
+			
 			if (predsList.size() == 1) {
 				
 				theConsideredPredecessor=predsList.get(0);
@@ -292,14 +294,14 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					mustExitWhileLoop=true;
 					
 					
-				}else  {
+				}  
 					
 					//monter dans le pathe pour verifier les autre unit 
 					
 					predsList = cfg.getPredsOf(theConsideredPredecessor);
 					
 					PathLength++;
-				}
+				
 				
 				
 				
