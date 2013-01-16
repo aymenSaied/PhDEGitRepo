@@ -55,6 +55,85 @@ import soot.toolkits.scalar.SimpleLocalDefs;
 
 public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
+	
+	
+	
+	/*
+	 * la classe PatternOccurrenceInfo est utiliser pour remplir un map 
+	 * qui representra pour chaque param qui ne doit pas etre nulll(le key du map )
+	 * l'ensemble des d'iferentes ocurence des instruction qui impose que le param ne dois pas 
+	 * etre null
+	 * 
+	 *  cette structure a pour nom unitCausingNullsNotAllowed c'est un map son key est le param et son value
+	 *  est une liste de PatternOccurrenceInfo
+	 *  
+	 *  je vouler donner un ordre dans cet list talque le elemet corespond au type 1 et elem2 type 2 mais 
+	 *  
+	 *  plusieur occurence du maime tupe peuvent exister
+	 *  
+	 * */
+	
+	
+	protected class PatternOccurrenceInfo{
+		
+		
+		public PatternOccurrenceInfo(Unit unit ,String type, String comment ){
+			
+			this.setUnitOnwhichOccurrenceIsDetected(unit);
+			this.setOccurrenceType(type);
+			this.setCommentFragment(comment);
+			
+			
+		}
+		
+		private Unit unitOnwhichOccurrenceIsDetected ;
+		private String occurrenceType;
+		private String commentFragment;
+		
+		
+		//todo changer le type en enumeration 
+		
+		
+
+
+		public Unit getUnitOnwhichOccurrenceIsDetected() {
+			return unitOnwhichOccurrenceIsDetected;
+		}
+
+
+		public void setUnitOnwhichOccurrenceIsDetected(
+				Unit unitOnwhichOccurrenceIsDetected) {
+			this.unitOnwhichOccurrenceIsDetected = unitOnwhichOccurrenceIsDetected;
+		}
+
+
+		public String getCommentFragment() {
+			return commentFragment;
+		}
+
+
+		public void setCommentFragment(String commentFragment) {
+			this.commentFragment = commentFragment;
+		}
+
+
+		public String getOccurrenceType() {
+			return occurrenceType;
+		}
+
+
+		public void setOccurrenceType(String occurrenceType) {
+			this.occurrenceType = occurrenceType;
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
 	/* some internal fields */
 
 	static PrintWriter out;
@@ -142,6 +221,10 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		 
 	//detect null not allowed patern 	
 		
+		 
+		 
+		 
+		 
 		 detectNullNotAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,nullTestedLocalsAnalysis);
 		
 	}
@@ -166,6 +249,10 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		 * 
 		 * */ 
 		
+		ArrayList<PatternOccurrenceInfo> ListOfPatternOccurrenceInfo = new ArrayList<PatternOccurrenceInfo>();
+		
+		Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed = new  HashMap<Local, ArrayList<PatternOccurrenceInfo>> (methodParameterChain.size() * 2 + 1, 0.7f); ;
+
 		
 		
 		Set<Local> LocalsDefinedUsingParameterSet = localDefinedUsingParameterToParameter.keySet();

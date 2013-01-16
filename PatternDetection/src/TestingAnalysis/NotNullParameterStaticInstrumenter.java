@@ -39,6 +39,13 @@ import soot.SootMethod;
 import soot.Unit;
 import soot.Value;
 import soot.ValueBox;
+import soot.jimple.ArrayRef;
+import soot.jimple.FieldRef;
+import soot.jimple.InstanceFieldRef;
+import soot.jimple.InstanceInvokeExpr;
+import soot.jimple.InvokeExpr;
+import soot.jimple.MonitorStmt;
+import soot.jimple.Stmt;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.SimpleLocalDefs;
@@ -116,7 +123,89 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 			
 		}
 
+		Iterator<Unit> units2 =cfg.iterator();
+		
+		while (units2.hasNext()) {
+			Unit unit = (Unit) units2.next();
+			Stmt stmt = (Stmt)unit ;
+			
+			
+			
+			if (stmt.containsArrayRef()) {
+				System.out.println("*******");
+				ArrayRef arrayRef = stmt.getArrayRef();
+				Value array = arrayRef.getBase();
+				
+				
+				System.out.println("arrayRef:    "+arrayRef);
+				System.out.println("Base must be non be null:    "+array);
+			}
+			
+			
+			if(stmt.containsFieldRef()) {
+				System.out.println("######");
+				
+				System.out.println("stmt:    "+stmt);
+				
+				FieldRef fieldRef = stmt.getFieldRef();
+				if(fieldRef instanceof InstanceFieldRef) {
+				InstanceFieldRef instanceFieldRef = (InstanceFieldRef) fieldRef;
+				//here we know that the receiver must point to an object
+				Value base = instanceFieldRef.getBase();
+				
+				System.out.println("fieldRef:    "+fieldRef);
+				System.out.println("the receiver  must be non null:    "+base);
+				}
+			}
+			
+			
+			
+			if(stmt.containsInvokeExpr()) {
+				
+				System.out.println("@@@@@@");
+				
+				System.out.println("stmt:    "+stmt);
+				
+				
+				InvokeExpr invokeExpr = stmt.getInvokeExpr();
+				
+				if(invokeExpr instanceof InstanceInvokeExpr) {
+					InstanceInvokeExpr instanceInvokeExpr = (InstanceInvokeExpr) invokeExpr;
+					//here we know that the receiver must point to an object
+					Value base = instanceInvokeExpr.getBase();
+					System.out.println("invokeExpr:    "+invokeExpr);
+					System.out.println("the receiver  must be non null:    "+base);
+					
+				}
+				
+				
+			}
+			
+			
+			//in case of a monitor statement, we know that if it succeeds, we have a non-null value
+			if(stmt instanceof MonitorStmt) {
+				System.out.println("MMMMMMMM");
+				MonitorStmt monitorStmt = (MonitorStmt) stmt;
+				
+				
+				
+				System.out.println("monitorStmt:    "+monitorStmt);
+				System.out.println("the op must be non null:    "+monitorStmt.getOp());
+				
+				
+				
+				
+			}
+			
+					
+			
+		
+			
+			
+			
+		}
 
+		
 		
 		
 		
