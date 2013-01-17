@@ -40,8 +40,15 @@ import soot.SootMethod;
 import soot.Unit;
 import soot.Value;
 import soot.ValueBox;
+import soot.jimple.ArrayRef;
 import soot.jimple.DefinitionStmt;
+import soot.jimple.FieldRef;
+import soot.jimple.InstanceFieldRef;
+import soot.jimple.InstanceInvokeExpr;
+import soot.jimple.InvokeExpr;
 import soot.jimple.NullConstant;
+import soot.jimple.ReturnStmt;
+import soot.jimple.ReturnVoidStmt;
 import soot.jimple.Stmt;
 import soot.jimple.ThrowStmt;
 import soot.jimple.internal.AbstractBinopExpr;
@@ -225,15 +232,58 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		 
 		 
 		 
-		 detectNullNotAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,nullTestedLocalsAnalysis);
-		
+		 Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed = detectNullNotAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,nullTestedLocalsAnalysis);
+		 
+		 detectNullAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,unitCausingNullsNotAllowed );
+	
+	
+	
+	
+	
+	Set<Local>NullsNotAllowedParam= unitCausingNullsNotAllowed.keySet();
+	Iterator<Local> locals = NullsNotAllowedParam.iterator();
+	
+			
+			while (locals.hasNext()) {
+				System.out.println("************************************************");
+				
+				Local local = (Local) locals.next();
+			
+				ArrayList<PatternOccurrenceInfo> ocurencList= unitCausingNullsNotAllowed.get(local);
+				
+				
+				
+				System.out.println("---->param :"+local+" must not be null because : ");
+				
+				System.out.println();
+				for (Iterator iterator = ocurencList.iterator(); iterator
+						.hasNext();) {
+					PatternOccurrenceInfo patternOccurrenceInfo = (PatternOccurrenceInfo) iterator
+							.next();
+					System.out.println("###################################################");
+					System.out.println(patternOccurrenceInfo.getCommentFragment());
+					System.out.println("patern type   :"+patternOccurrenceInfo.getOccurrenceType());
+					System.out.println("detected in unit   :"+patternOccurrenceInfo.getUnitOnwhichOccurrenceIsDetected());
+					
+					System.out.println("###################################################");
+					
+					
+					
+				}
+				
+				System.out.println();
+				System.out.println("************************************************");	
+			}
+	
+		 
+	
 	}
 
 	
 	
 	
 	
-	private void  detectNullNotAllowedPatern(UnitGraph cfg, Map<Local, Local> localDefinedUsingParameterToParameter,ModifiedNullnessAnalysis modifiedNullnessAnalysis, NullTestedLocalsAnalysis nullTestedLocalsAnalysis) {
+	private Map<Local, ArrayList<PatternOccurrenceInfo>>   detectNullNotAllowedPatern(UnitGraph cfg, Map<Local, Local> localDefinedUsingParameterToParameter,ModifiedNullnessAnalysis modifiedNullnessAnalysis, NullTestedLocalsAnalysis nullTestedLocalsAnalysis) {
 		
 		
 		/*to do
@@ -249,7 +299,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		 * 
 		 * */ 
 		
-		ArrayList<PatternOccurrenceInfo> ListOfPatternOccurrenceInfo = new ArrayList<PatternOccurrenceInfo>();
+		//ArrayList<PatternOccurrenceInfo> ListOfPatternOccurrenceInfo = new ArrayList<PatternOccurrenceInfo>();
 		
 		Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed = new  HashMap<Local, ArrayList<PatternOccurrenceInfo>> (methodParameterChain.size() * 2 + 1, 0.7f); ;
 
@@ -281,8 +331,24 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 					if (throwStmtBecauseofnNullParam) {
 						
-						System.out.println("pattern detected param  "+ l + " must not be null  otherwise an exception is thrown ");
 						
+						String coment= "pattern detected param  "+ l + " must not be null  otherwise an exception is thrown ";
+						System.out.println(coment);
+						
+						
+						
+						String type1 = "ThrowStmt for param";
+					
+						PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type1, coment);
+					
+					
+ 
+						unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,l,poi);
+						
+						
+					
+					
+					
 					}
 					
 					
@@ -305,7 +371,18 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 					if (throwStmtBecauseofnNullParam) {
 						
-						System.out.println("pattern detected param  "+ localDefinedUsingParameterToParameter.get(l) + " must not be null it define a local "+ l  +  "which when is null an exception is thrown ");
+						String coment="pattern detected param  "+ localDefinedUsingParameterToParameter.get(l) + " must not be null it define a local "+ l  +  "which when is null an exception is thrown ";
+						System.out.println(coment);
+						
+						
+						String type2 = "ThrowStmt for local initialized from param";
+						
+						PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type2, coment);
+					
+					
+ 
+						unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(l),poi);
+
 						
 					}
 					
@@ -325,7 +402,204 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				
 			} else {
 				
+				Stmt stmt = (Stmt)unit ;
+				//handel ArrayRef
 				
+				
+				if (stmt.containsArrayRef()) {
+					
+					ArrayRef arrayRef = stmt.getArrayRef();
+					Value array = arrayRef.getBase();
+				
+					
+					if (!modifiedNullnessAnalysis.isAlwaysNonNullBefore(unit, (Local)array)) {
+						
+						
+						if (methodParameterChain.contains(array)) {
+							
+							
+							String coment= "pattern detected param  "+ array + " must not be null  because used in  ArrayRef ";
+							System.out.println(coment);
+							
+							
+							
+							String type3 = "ArrayRef for param";
+						
+							PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type3, coment);
+						
+						
+	 
+							unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,(Local)array,poi);
+							
+
+							
+							
+							
+						} else if (LocalsDefinedUsingParameterSet.contains(array)) {
+							
+							
+							String coment="pattern detected param  "+ localDefinedUsingParameterToParameter.get(array) + " must not be null it define a local "+ array  +  "which used in  ArrayRef ";
+							System.out.println(coment);
+							
+							
+							String type4 = "ArrayRef for local initialized from param";
+							
+							PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type4, coment);
+						
+						
+	 
+							unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(array),poi);
+
+							
+							
+							
+							
+							
+						}						
+						
+						
+					}
+					
+					
+					
+				} else if (stmt.containsFieldRef()) {
+					
+					
+					FieldRef fieldRef = stmt.getFieldRef();
+					if(fieldRef instanceof InstanceFieldRef) {
+					InstanceFieldRef instanceFieldRef = (InstanceFieldRef) fieldRef;
+					//here we know that the receiver must point to an object
+					Value base = instanceFieldRef.getBase();
+					
+					
+					
+					
+					if (!modifiedNullnessAnalysis.isAlwaysNonNullBefore(unit, (Local)base)) {
+						
+						
+						if (methodParameterChain.contains(base)) {
+							
+							
+							String coment= "pattern detected param  "+ base + " must not be null  because used in  FieldRef ";
+							System.out.println(coment);
+							
+							
+							
+							String type5 = "FieldRef for param";
+						
+							PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type5, coment);
+						
+						
+	 
+							unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,(Local)base,poi);
+							
+
+							
+							
+							
+						} else if (LocalsDefinedUsingParameterSet.contains(base)) {
+							
+							
+							String coment="pattern detected param  "+ localDefinedUsingParameterToParameter.get(base) + " must not be null it define a local "+ base  +  "which used in  FieldRef ";
+							System.out.println(coment);
+							
+							
+							String type6 = "FieldRef for local initialized from param";
+							
+							PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type6, coment);
+						
+						
+	 
+							unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(base),poi);
+
+							
+							
+							
+							
+							
+						}						
+						
+						
+					}
+					
+					
+					
+					
+					
+					}
+					
+				} else if (stmt.containsInvokeExpr()) {
+					
+					
+					InvokeExpr invokeExpr = stmt.getInvokeExpr();
+					
+					if(invokeExpr instanceof InstanceInvokeExpr) {
+						InstanceInvokeExpr instanceInvokeExpr = (InstanceInvokeExpr) invokeExpr;
+						//here we know that the receiver must point to an object
+						Value base = instanceInvokeExpr.getBase();
+						
+						
+						
+						
+						
+						if (!modifiedNullnessAnalysis.isAlwaysNonNullBefore(unit, (Local)base)) {
+							
+							
+							if (methodParameterChain.contains(base)) {
+								
+								
+								String coment= "pattern detected param  "+ base + " must not be null  because used in  InvokeExpr ";
+								System.out.println(coment);
+								
+								
+								
+								String type7 = "InvokeExpr for param";
+							
+								PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type7, coment);
+							
+							
+		 
+								unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,(Local)base,poi);
+								
+
+								
+								
+								
+							} else if (LocalsDefinedUsingParameterSet.contains(base)) {
+								
+								
+								String coment="pattern detected param  "+ localDefinedUsingParameterToParameter.get(base) + " must not be null it define a local "+ base  +  "which used in  InvokeExpr ";
+								System.out.println(coment);
+								
+								
+								String type8 = "InvokeExpr for local initialized from param";
+								
+								PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type8, coment);
+							
+							
+		 
+								unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(base),poi);
+
+								
+								
+								
+								
+								
+							}						
+							
+							
+						}
+						
+						
+						
+						
+						
+						
+					}
+					
+					
+					
+				}
 				
 				
 				
@@ -336,8 +610,80 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 			
 		}
 		
-					
+	
+		return unitCausingNullsNotAllowed;
+		
 				
+	}
+	
+	private void detectNullAllowedPatern(UnitGraph cfg,Map<Local, Local> localDefinedUsingParameterToParameter,ModifiedNullnessAnalysis modifiedNullnessAnalysis, Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed ){
+		
+		
+		Set<Local> LocalsDefinedUsingParameterSet = localDefinedUsingParameterToParameter.keySet();
+		Iterator<Unit> units =cfg.iterator();
+		while (units.hasNext()) {
+			Unit unit = (Unit) units.next();
+		
+			if (unit instanceof ReturnStmt || unit instanceof ReturnVoidStmt) {
+				
+				
+				
+				for (Local l : methodParameterChain) {
+					
+				if (modifiedNullnessAnalysis.isAlwaysNullBefore(unit, l)) {
+					
+					if (!unitCausingNullsNotAllowed.containsKey(l)) {
+						
+						System.out.println("NullAllowed pattern detected param is  :"+l);
+						
+						
+					}else{
+						
+						//dans une peut etre nule et ne dois pas etre nulle voir si on veut enricir les comentaire par cette situation
+						
+						
+					}
+					
+					
+				}	
+					
+				}
+				
+				
+				for (Local l : LocalsDefinedUsingParameterSet) {
+					
+				if (modifiedNullnessAnalysis.isAlwaysNullBefore(unit, l)) {
+					
+					if (!unitCausingNullsNotAllowed.containsKey(localDefinedUsingParameterToParameter.get(l))) {
+						
+						System.out.println("NullAllowed pattern detected param is  :"+localDefinedUsingParameterToParameter.get(l)+" it initialize local "+ l);
+						
+						
+					}else{
+						
+						//dans une peut etre nule et ne dois pas etre nulle voir si on veut enricir les comentaire par cette situation
+						
+						
+					}
+					
+					
+				}	
+					
+				}
+				
+				
+				
+			}
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
 	}
 	
 	
@@ -621,6 +967,31 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	
 	
 
+	private Map<Local, ArrayList<PatternOccurrenceInfo>>  updateUnitCausingNullsNotAllowed(Map<Local, ArrayList<PatternOccurrenceInfo>> inMap,Local l,PatternOccurrenceInfo poi){
+		
+		
+		Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed =inMap;
+		
+		
+		if (unitCausingNullsNotAllowed.containsKey(l)) {
+			
+			unitCausingNullsNotAllowed.get(l).add(poi);
+			//todo verifier que la liste est mise à jour  
+			
+		} else {
+			
+			
+			ArrayList<PatternOccurrenceInfo> ListOfPatternOccurrenceInfo = new ArrayList<PatternOccurrenceInfo>();
+			
+			ListOfPatternOccurrenceInfo.add(poi);
+			unitCausingNullsNotAllowed.put(l, ListOfPatternOccurrenceInfo);
+		}
+		
+		
+		return unitCausingNullsNotAllowed;
+		
+	}
+	
 	
 
 
