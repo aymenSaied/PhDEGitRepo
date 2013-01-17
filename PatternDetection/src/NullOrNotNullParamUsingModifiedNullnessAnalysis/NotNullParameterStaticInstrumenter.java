@@ -618,13 +618,17 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	
 	private void detectNullAllowedPatern(UnitGraph cfg,Map<Local, Local> localDefinedUsingParameterToParameter,ModifiedNullnessAnalysis modifiedNullnessAnalysis, Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed ){
 		
+		ArrayList<Local>	LocalsWaNullsAtLeastOneTime = new ArrayList<Local>();
+		
+		
+		ArrayList<Local>  ParameterWaNullsAtLeastOneTime = new ArrayList<Local>();
 		
 		Set<Local> LocalsDefinedUsingParameterSet = localDefinedUsingParameterToParameter.keySet();
 		Iterator<Unit> units =cfg.iterator();
 		while (units.hasNext()) {
 			Unit unit = (Unit) units.next();
 		
-			if (unit instanceof ReturnStmt || unit instanceof ReturnVoidStmt) {
+			
 				
 				
 				
@@ -632,17 +636,13 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 				if (modifiedNullnessAnalysis.isAlwaysNullBefore(unit, l)) {
 					
-					if (!unitCausingNullsNotAllowed.containsKey(l)) {
+					
+					if (!ParameterWaNullsAtLeastOneTime.contains(l)) {
 						
-						System.out.println("NullAllowed pattern detected param is  :"+l);
-						
-						
-					}else{
-						
-						//dans une peut etre nule et ne dois pas etre nulle voir si on veut enricir les comentaire par cette situation
-						
+						ParameterWaNullsAtLeastOneTime.add(l);
 						
 					}
+					
 					
 					
 				}	
@@ -654,14 +654,9 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 				if (modifiedNullnessAnalysis.isAlwaysNullBefore(unit, l)) {
 					
-					if (!unitCausingNullsNotAllowed.containsKey(localDefinedUsingParameterToParameter.get(l))) {
-						
-						System.out.println("NullAllowed pattern detected param is  :"+localDefinedUsingParameterToParameter.get(l)+" it initialize local "+ l);
-						
-						
-					}else{
-						
-						//dans une peut etre nule et ne dois pas etre nulle voir si on veut enricir les comentaire par cette situation
+					if (!LocalsWaNullsAtLeastOneTime.contains(l)) {
+					
+						LocalsWaNullsAtLeastOneTime.add(l);
 						
 						
 					}
@@ -673,11 +668,58 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				
 				
 				
-			}
+			
 			
 			
 			
 		}
+		
+		//pour les parm
+		
+		
+		for (Local l : ParameterWaNullsAtLeastOneTime) {
+			
+			
+			if (!unitCausingNullsNotAllowed.containsKey(l)) {
+				
+				System.out.println("NullAllowed pattern detected param is  :"+l);
+				
+				
+			}else{
+				
+				//dans une peut etre nule et ne dois pas etre nulle voir si on veut enricir les comentaire par cette situation
+				
+				
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		//pour les local 
+		
+		for (Local l : LocalsWaNullsAtLeastOneTime) {
+		
+			if (!unitCausingNullsNotAllowed.containsKey(localDefinedUsingParameterToParameter.get(l))) {
+				
+				System.out.println("NullAllowed pattern detected param is  :"+localDefinedUsingParameterToParameter.get(l)+" it initialize local "+ l);
+				
+				
+			}else{
+				
+				//dans une peut etre nule et ne dois pas etre nulle voir si on veut enricir les comentaire par cette situation
+				
+				
+			}
+			
+			
+		}
+		
 		
 		
 		
