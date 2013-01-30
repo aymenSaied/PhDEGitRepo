@@ -24,6 +24,7 @@ package NullOrNotNullParamUsingModifiedNullnessAnalysis;
 /* InvokeStaticInstrumenter extends the abstract class BodyTransformer,
  * and implements <pre>internalTransform</pre> method.
  */
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -59,8 +60,16 @@ import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.LocalUnitPair;
 import soot.toolkits.scalar.SimpleLocalDefs;
+import stat.Statistique;
 
 public class NotNullParameterStaticInstrumenter extends BodyTransformer {
+
+	
+	static {
+		nullNotAllowedPaternDistributionOverClasses = new HashMap<String, Integer>(350);
+		nullAllowedPaternDistributionOverClasses = new HashMap<String, Integer>(350);
+		
+	}
 
 	
 	
@@ -146,17 +155,16 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	static PrintWriter out;
 	static PrintWriter patternDistributionOverMethod;
 	static PrintWriter detectedPattern;
-	static HashMap<String, Integer> patternDistributionOverClasses;
+	static HashMap<String, Integer> nullAllowedPaternDistributionOverClasses;
+	static HashMap<String, Integer> nullNotAllowedPaternDistributionOverClasses;
 	static ArrayList<Local> methodParameterChain;
+	static String satistuquePath; 
+	
 
-	static {
-		patternDistributionOverClasses = new HashMap<String, Integer>(350);
+	public NotNullParameterStaticInstrumenter(String satatPath) {
 
-	}
-
-	public NotNullParameterStaticInstrumenter(PrintWriter pw1, PrintWriter pw2,
-			PrintWriter pw3) {
-
+		satistuquePath=satatPath;
+		
 	}
 
 	/*
@@ -234,6 +242,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		 
 		 Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed = detectNullNotAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,nullTestedLocalsAnalysis);
 		 
+	//detect null  allowed patern 
+		 
 		 detectNullAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,unitCausingNullsNotAllowed );
 	
 	
@@ -283,7 +293,20 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	
 	
 	
-	private Map<Local, ArrayList<PatternOccurrenceInfo>>   detectNullNotAllowedPatern(UnitGraph cfg, Map<Local, Local> localDefinedUsingParameterToParameter,ModifiedNullnessAnalysis modifiedNullnessAnalysis, NullTestedLocalsAnalysis nullTestedLocalsAnalysis) {
+	private Map<Local, ArrayList<PatternOccurrenceInfo>>   detectNullNotAllowedPatern(UnitGraph cfg, Map<Local, Local> localDefinedUsingParameterToParameter,ModifiedNullnessAnalysis modifiedNullnessAnalysis, NullTestedLocalsAnalysis nullTestedLocalsAnalysis)  {
+		
+		
+		//initialisation du hashmap pour la distrubution des patron sur les classes
+		
+				if (nullNotAllowedPaternDistributionOverClasses.containsKey(cfg.getBody().getMethod().getDeclaringClass().getName())) {
+			    	
+					//ne rien faire 
+				} else {
+					
+					nullNotAllowedPaternDistributionOverClasses.put(cfg.getBody().getMethod().getDeclaringClass().getName(),0);
+
+				} 
+		
 		
 		
 		/*to do
@@ -300,6 +323,11 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		 * */ 
 		
 		//ArrayList<PatternOccurrenceInfo> ListOfPatternOccurrenceInfo = new ArrayList<PatternOccurrenceInfo>();
+		  
+		
+		
+		
+		
 		
 		Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed = new  HashMap<Local, ArrayList<PatternOccurrenceInfo>> (methodParameterChain.size() * 2 + 1, 0.7f); ;
 
@@ -611,12 +639,69 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		}
 		
 	
+		
+		
+		Statistique Statistique = new Statistique();
+		
+		if (unitCausingNullsNotAllowed.keySet().size() > 0) {
+	    	 
+		    String className= cfg.getBody().getMethod().getDeclaringClass().getName();
+			
+			
+			 // used for Statistique patternDistributionOverClasses  NullNotAllowedPattern
+			
+	    	 Integer nbOfnullNotAllowedPaternIndeclaringClass = nullNotAllowedPaternDistributionOverClasses.get(className);
+	    	 
+	    	 nbOfnullNotAllowedPaternIndeclaringClass += unitCausingNullsNotAllowed.keySet().size();
+	    	 
+	    	 nullNotAllowedPaternDistributionOverClasses.put(className, nbOfnullNotAllowedPaternIndeclaringClass);
+			
+	    	 
+	    	 //Statistique patternDistributionOverMethod  NullNotAllowedPattern
+	    	 String methodName =cfg.getBody().getMethod().getName();
+	    	 String statfileName= "\\NullNotAllowedPatternDistributionOverMethod.csv";
+	    	 try {
+				Statistique.statistiqueForPatternDistributionOverMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, satistuquePath, statfileName);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    	 
+		}    
+	    
+		
+		
+		
+		
+		
+		
 		return unitCausingNullsNotAllowed;
 		
 				
 	}
 	
 	private void detectNullAllowedPatern(UnitGraph cfg,Map<Local, Local> localDefinedUsingParameterToParameter,ModifiedNullnessAnalysis modifiedNullnessAnalysis, Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed ){
+		
+		
+		//initialisation du hashmap pour la distrubution des patron sur les classes
+		
+		if (nullAllowedPaternDistributionOverClasses.containsKey(cfg.getBody().getMethod().getDeclaringClass().getName())) {
+	    	
+			//ne rien faire 
+		} else {
+			
+			nullAllowedPaternDistributionOverClasses.put(cfg.getBody().getMethod().getDeclaringClass().getName(),0);
+
+		} 
+
+		
+		
+		
+		
+		
+		
+		
+		 Integer nbOfnullAllowedPaternInCurrentMethod =0;
 		
 		ArrayList<Local>	LocalsWaNullsAtLeastOneTime = new ArrayList<Local>();
 		
@@ -684,6 +769,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				
 				System.out.println("NullAllowed pattern detected param is  :"+l);
 				
+				nbOfnullAllowedPaternInCurrentMethod ++;
+				
 				
 			}else{
 				
@@ -709,6 +796,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				
 				System.out.println("NullAllowed pattern detected param is  :"+localDefinedUsingParameterToParameter.get(l)+" it initialize local "+ l);
 				
+				nbOfnullAllowedPaternInCurrentMethod ++;
+				
 				
 			}else{
 				
@@ -722,6 +811,36 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 		
 		
+		
+		Statistique Statistique = new Statistique();
+		if (nbOfnullAllowedPaternInCurrentMethod > 0) {
+	    	 
+			 //used fotr Statistique patternDistributionOverClasse  NullAllowedPattern
+			String className= cfg.getBody().getMethod().getDeclaringClass().getName();
+		    
+	    	 Integer nbOfNullAllowedPaternIndeclaringClass =  nullAllowedPaternDistributionOverClasses.get(className);
+	    	 
+	    	 nbOfNullAllowedPaternIndeclaringClass += nbOfnullAllowedPaternInCurrentMethod;
+	    	 
+	    	 nullAllowedPaternDistributionOverClasses.put(className, nbOfNullAllowedPaternIndeclaringClass);
+			
+	    	 
+	    	 
+	    	 //Statistique patternDistributionOverMethod  NullAllowedPattern
+	    	 String methodName =cfg.getBody().getMethod().getName();
+	    	 String statfileName= "\\NullAllowedPatternDistributionOverMethod.csv";
+	    	 try {
+	    		 
+	    		 
+	    		 //erreur pour unitCausingNullsNotAllowed.keySet().size()  dans statistiqueForPatternDistributionOverMethod
+				Statistique.statistiqueForPatternDistributionOverMethod(nbOfnullAllowedPaternInCurrentMethod, className, methodName, satistuquePath, statfileName);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    	 
+	    	 
+		}  
 		
 		
 		
@@ -1036,5 +1155,15 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	
 	
 
+	
+	public HashMap<String, Integer> getNullNotAllowedPaternDistributionOverClasses() {
+		return nullNotAllowedPaternDistributionOverClasses;
+	}
+	
+	
+	public HashMap<String, Integer> getNullAllowedPaternDistributionOverClasses() {
+		return nullAllowedPaternDistributionOverClasses;
+	}
+	
 
 }

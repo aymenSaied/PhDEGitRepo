@@ -428,7 +428,7 @@ public class InvokeStaticInstrumenterP1 extends BodyTransformer{
   
 public void statistique() throws FileNotFoundException{
 	
-	PrintWriter patternDistributionOverClass= new PrintWriter(".\\statistique\\P1\\JHotDraw7.0.6\\patternDistributionOverClass.csv");  
+	PrintWriter patternDistributionOverClass= new PrintWriter(".\\statistique\\P1\\JHotDraw7.0.6\\nullNotAllowedPatternDistributionOverClass.csv");  
 	
 	patternDistributionOverClass.println("class name"+";;"+"number of detected pattern");
 

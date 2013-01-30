@@ -10,9 +10,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
+import java.util.List;
 
-import soot.*;
+import soot.Pack;
+import soot.PackManager;
+import soot.Scene;
+import soot.Transform;
+import stat.Statistique;
 
 public class MainDriver {
   public static void main(String[] args) throws IOException {
@@ -34,7 +39,85 @@ public class MainDriver {
 	  String NomFichier3 = ".\\statistique\\API\\P\\TestDetectingPaternInAPI\\detectedPattern.csv";
 	  PrintWriter file3 = new PrintWriter(new FileWriter(NomFichier3));
 	 
-	  NotNullParameterStaticInstrumenter staticInstrumenter =new NotNullParameterStaticInstrumenter(file1,file2,file3);
+	 
+	  //String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestDetectingPaternInAPI";
+	 // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestDetectingPaternInAPI"; 
+		  
+	  
+	  //String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\JHotDraw7.0.6";
+	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
+	   
+
+	    //String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.applet";
+	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
+	
+	  
+	//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.awt";
+	//String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
+	  
+
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.beans";
+		//String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.beans";
+
+	  
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.io";
+		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
+	  
+	  
+	  
+
+		String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.lang";
+		    String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
+	  
+	  
+
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.math";
+		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
+	  
+	  
+	  
+
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.net";
+		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
+	  
+	  
+
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.nio";
+		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
+	  
+	  
+
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.rmi";
+		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
+	  
+	  
+
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.security";
+		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
+	  
+	  
+
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.sql";
+		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
+	  
+	  
+
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.text";
+		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
+	  
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  // NotNullParameterStaticInstrumenter staticInstrumenter =new NotNullParameterStaticInstrumenter(file1,file2,file3);
+	  NotNullParameterStaticInstrumenter staticInstrumenter =new NotNullParameterStaticInstrumenter(StaticLocationPath);
+	  
     /* add a phase to transformer pack by call Pack.add */
     Pack jtp = PackManager.v().getPack("jtp");
     jtp.add(new Transform("jtp.instrumenter", 
@@ -44,9 +127,13 @@ public class MainDriver {
      * InvokeStaticInstrumenter.internalTransform will get called.
      */
    
+  
     
     
-	 String SourcePath2 ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestDetectingPaternInAPI\\src";
+    
+    
+    
+    String SourcePath2 =projectToAnalyzePath+"\\src";
 	 int j =0;
 	 try {
 		ArrayList<String> classes = getClass(SourcePath2);
@@ -58,22 +145,24 @@ public class MainDriver {
 			j++;
 		}
 		
-		String[] internalargs = new String[classes.size()];
+		// String[] internalargs = new String[classes.size()];
+		List<String> internalargs = new ArrayList<String>(classes.size());
+		internalargs.add("-pp"); //pour ajouter les classe de la lib standar  à soot (en plus d'un probléme pour la configuration la verssion de lib standar  )
 		
 		int i=0;
 		for (String classename : classes) {
 			if(!classename.equals("MainDriver") && !classename.equals("InvokeStaticInstrumenter")){
 				System.out.println(i);
-				internalargs[i]=classename;
+				internalargs.add(classename);
 				i++;
 				
 			}
 			
 		}
 
-	 if(internalargs.length!=0){
+	 if(internalargs.size()!=0){
 		 
-		 args=internalargs;
+		 args=internalargs.toArray(new String[internalargs.size()]);
 	 }
 	 
 	 } catch (Exception e) {
@@ -86,7 +175,7 @@ public class MainDriver {
 	    StringBuilder resaltingClassPath = new StringBuilder();
         resaltingClassPath.append(classPath);
         
-        resaltingClassPath.append(";"+"C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestDetectingPaternInAPI\\bin");
+        resaltingClassPath.append(";"+projectToAnalyzePath+"\\bin");
         System.out.println("resaltingClassPath---------->"+resaltingClassPath);
         Scene.v().setSootClassPath(resaltingClassPath.toString());
 	    System.out.println("new class path---------->"+Scene.v().getSootClassPath());
@@ -99,6 +188,23 @@ public class MainDriver {
     file2.close();
     file3.close();
    
+    
+    Statistique Statistique = new Statistique();
+    
+    // Statistique patternDistributionOverClasses  NullNotAllowedPattern
+    HashMap<String, Integer> patternDistributionOverClasses1= staticInstrumenter.getNullNotAllowedPaternDistributionOverClasses();
+    String  patterName1 = "NullNotAllowed";
+    String filePath1 =  StaticLocationPath +"\\NullNotAllowedPatternDistributionOverClass.csv";
+    Statistique.statistiqueForPatternDistributionOverClass(patternDistributionOverClasses1, filePath1, patterName1);
+    
+    // Statistique patternDistributionOverClasses  NullAllowedPattern    
+    
+    HashMap<String, Integer> patternDistributionOverClasses2= staticInstrumenter.getNullAllowedPaternDistributionOverClasses();
+    String  patterName2 = "NullAllowed";
+    String filePath2 =  StaticLocationPath +"\\NullAllowedpatternDistributionOverClass.csv";
+    Statistique.statistiqueForPatternDistributionOverClass(patternDistributionOverClasses2, filePath2, patterName2);
+    
+    
     
   }
 
