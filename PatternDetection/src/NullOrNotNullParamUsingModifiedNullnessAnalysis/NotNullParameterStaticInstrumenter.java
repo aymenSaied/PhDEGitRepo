@@ -90,7 +90,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	 * */
 	
 	
-	protected class PatternOccurrenceInfo{
+	public class PatternOccurrenceInfo{
 		
 		
 		public PatternOccurrenceInfo(Unit unit ,String type, String comment ){
@@ -660,8 +660,16 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	    	 //Statistique patternDistributionOverMethod  NullNotAllowedPattern
 	    	 String methodName =cfg.getBody().getMethod().getName();
 	    	 String statfileName= "\\NullNotAllowedPatternDistributionOverMethod.csv";
+	    	 String OccurrenStatfileName= "\\NullNotAllowedPatternOccurrenInMethod.csv";
+	    	 
 	    	 try {
 				Statistique.statistiqueForPatternDistributionOverMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, satistuquePath, statfileName);
+				Statistique.statistiqueForPatternOccurrenInMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, satistuquePath, OccurrenStatfileName,unitCausingNullsNotAllowed);
+				
+				
+				
+				
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

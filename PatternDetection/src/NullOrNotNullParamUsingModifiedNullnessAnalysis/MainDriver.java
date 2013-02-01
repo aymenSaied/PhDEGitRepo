@@ -29,6 +29,8 @@ public class MainDriver {
       System.exit(0);
     }
     
+	  
+	  
 	  String NomFichier1 = ".\\Test\\API\\P\\test1.txt";
 	  PrintWriter file1 = new PrintWriter(new FileWriter(NomFichier1));
 	  
@@ -41,19 +43,26 @@ public class MainDriver {
 	 
 	 
 	  //String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestDetectingPaternInAPI";
-	 // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestDetectingPaternInAPI"; 
+	  //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestDetectingPaternInAPI"; 
 		  
-	  
-	  //String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\JHotDraw7.0.6";
+
+	    //String projectToAnalyzePath ="..\\..\\JHotDraw7.0.6.git\\JHotDraw7.0.6";
 	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
 	   
-
-	    //String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.applet";
-	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
+	   // String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\JHotDraw7.0.6";
+	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
 	
 	  
-	//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.awt";
-	//String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
+	  //String projectToAnalyzePath ="..\\..\\JHotDraw7.0.6.git\\JHotDraw7.0.6";
+	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
+	   
+	  
+	    //String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
+	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
+	  
+	  
+	String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
+	String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
 	  
 
 		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.beans";
@@ -66,8 +75,8 @@ public class MainDriver {
 	  
 	  
 
-		String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.lang";
-		    String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
+		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.lang";
+		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
 	  
 	  
 
@@ -136,7 +145,12 @@ public class MainDriver {
     String SourcePath2 =projectToAnalyzePath+"\\src";
 	 int j =0;
 	 try {
+		 
+		 
 		ArrayList<String> classes = getClass(SourcePath2);
+		
+		
+		
 		System.out.println(">>>----les classe  sont---->> ");
 		
 		for (String classname : classes) {
@@ -162,12 +176,15 @@ public class MainDriver {
 
 	 if(internalargs.size()!=0){
 		 
+		
+		 
 		 args=internalargs.toArray(new String[internalargs.size()]);
 	 }
 	 
 	 } catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+		
 	}
 	 
 	    String classPath =Scene.v().getSootClassPath();
@@ -213,10 +230,14 @@ public class MainDriver {
 		ArrayList<String> list;
 		
 			File rep = new File(repertoire);
+			
 			rep.getName();
+			
+			
 			String [] listefichiers;
 			list = new ArrayList<String>();
 			listefichiers=rep.list();
+			
 			for(int i=0;i<listefichiers.length;i++){
 				if( listefichiers[i].endsWith(".java") ||listefichiers[i].endsWith(".class")){ //
 					int dot = listefichiers[i].lastIndexOf('.');
@@ -229,7 +250,7 @@ public class MainDriver {
 				if(r.isDirectory())
 					list.addAll(getClass(r.getName(), r));
 			}
-		//System.out.println("chofniiiiiiiiiiiiiiiii");
+			
 		return list;
 	}
 
