@@ -49,13 +49,8 @@ public class MainDriver {
 	    //String projectToAnalyzePath ="..\\..\\JHotDraw7.0.6.git\\JHotDraw7.0.6";
 	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
 	   
-	   // String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\JHotDraw7.0.6";
-	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
-	
-	  
-	  //String projectToAnalyzePath ="..\\..\\JHotDraw7.0.6.git\\JHotDraw7.0.6";
-	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
 	   
+	  
 	  
 	    //String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
 	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
@@ -65,56 +60,58 @@ public class MainDriver {
 	String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.beans";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
 		//String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.beans";
 
 	  
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.io";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
 		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
 	  
 	  
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.lang";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.lang\\TestJdk.lang";
 		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
 	  
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.math";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
 		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
 	  
 	  
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.net";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
 		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
 	  
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.nio";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
 		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
 	  
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.rmi";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.rmi\\TestJdk.rmi";
 		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
 	  
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.security";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
 		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
 	  
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.sql";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.sql\\TestJdk.sql";
 		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
 	  
 	  
 
-		//String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestJdk.text";
+		//String projectToAnalyzePath ="..\\..\\TestJdk.text\\TestJdk.text";
 		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
 	  
 	  
+	//String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
+    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
 
 	  
 	  
