@@ -20,7 +20,8 @@ public class Statistique {
 
 	public void statistiqueForPatternDistributionOverClass(
 			HashMap<String, Integer> patternDistributionOverClasses,
-			String filePath, String patterName) throws FileNotFoundException {
+			String filePath, String patterName, String statistiqueLocation,
+			int nbAnalyzedMethod) throws FileNotFoundException {
 
 		String statFilePath = filePath;
 
@@ -52,6 +53,56 @@ public class Statistique {
 				+ patterName + "________avec nb totl de patron :_" + i);
 
 		patternDistributionOverClass.close();
+
+		// generation des statistique generale pour le patron nb de classe nb de
+		// methode nb de pattern
+
+		{
+
+			String filePath1 = statistiqueLocation + "\\GeneralInformation.csv";
+
+			File file1 = new File(filePath1);
+
+			if (!file1.exists()) {
+
+				// dans cet partie l'apel c'est le premier apel donc creation du
+				// ficier et info pour NullNotAllowed
+
+				PrintWriter GeneralInformation = new PrintWriter(file1);
+				GeneralInformation.println("number of class" + ";;"
+						+ "number of Method" + ";;" + patterName + ";;"
+						+ "number of detected pattern");
+
+				GeneralInformation.println(setEntry.size() + ";;"
+						+ nbAnalyzedMethod + ";;" + patterName + ";;" + i);
+
+				GeneralInformation.close();
+
+			} else {
+
+				// dans cet partie l'apel c'est le 2em apel donc info pour NullAllowed
+				
+
+				
+				
+				PrintWriter GeneralInformation;
+				try {
+					GeneralInformation = new PrintWriter(new BufferedWriter(
+							new FileWriter(file1, true)));
+
+					GeneralInformation.println("*" + ";;" + "*" + ";;"
+							+ patterName + ";;" + i);
+					GeneralInformation.close();
+
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+			}
+
+		}
+
 	}
 
 	public void statistiqueForPatternDistributionOverMethod(
@@ -124,8 +175,8 @@ public class Statistique {
 				ArrayList<PatternOccurrenceInfo> listOfPatternOccurrenceInfo = unitCausingNullsNotAllowed
 						.get(param);
 
-				patternDistributionOverMethod.println("*" + ";;"
-						+ " * " + ";;" + " * " + ";;" + param + ";;"
+				patternDistributionOverMethod.println("*" + ";;" + " * " + ";;"
+						+ " * " + ";;" + param + ";;"
 						+ listOfPatternOccurrenceInfo.size());
 
 				Iterator<PatternOccurrenceInfo> patternOccurrenceInfoIterator = listOfPatternOccurrenceInfo
@@ -135,11 +186,24 @@ public class Statistique {
 					PatternOccurrenceInfo patternOccurrenceInfo = (PatternOccurrenceInfo) patternOccurrenceInfoIterator
 							.next();
 
-					patternDistributionOverMethod.println("*" + ";;" + "*"
-							+ ";;" + "*" + ";;" + "*" + ";;" + "*" + ";;"
-							+ patternOccurrenceInfo.getOccurrenceType() + ";;"
-							+ patternOccurrenceInfo.getUnitOnwhichOccurrenceIsDetected() + ";;"
-							+ patternOccurrenceInfo.getCommentFragment());
+					patternDistributionOverMethod
+							.println("*"
+									+ ";;"
+									+ "*"
+									+ ";;"
+									+ "*"
+									+ ";;"
+									+ "*"
+									+ ";;"
+									+ "*"
+									+ ";;"
+									+ patternOccurrenceInfo.getOccurrenceType()
+									+ ";;"
+									+ patternOccurrenceInfo
+											.getUnitOnwhichOccurrenceIsDetected()
+									+ ";;"
+									+ patternOccurrenceInfo
+											.getCommentFragment());
 
 				}
 
@@ -153,10 +217,7 @@ public class Statistique {
 					new BufferedWriter(new FileWriter(file1, true)));
 			patternDistributionOverMethod.println(className + ";;" + methodName
 					+ ";;" + nbOfDetectedpatternInCurrentMethod);
-			
-			
-			
-			
+
 			Iterator<Local> parameters = unitCausingNullsNotAllowed.keySet()
 					.iterator();
 
@@ -165,8 +226,8 @@ public class Statistique {
 				ArrayList<PatternOccurrenceInfo> listOfPatternOccurrenceInfo = unitCausingNullsNotAllowed
 						.get(param);
 
-				patternDistributionOverMethod.println("*" + ";;"
-						+ " * " + ";;" + " * " + ";;" + param + ";;"
+				patternDistributionOverMethod.println("*" + ";;" + " * " + ";;"
+						+ " * " + ";;" + param + ";;"
 						+ listOfPatternOccurrenceInfo.size());
 
 				Iterator<PatternOccurrenceInfo> patternOccurrenceInfoIterator = listOfPatternOccurrenceInfo
@@ -176,17 +237,28 @@ public class Statistique {
 					PatternOccurrenceInfo patternOccurrenceInfo = (PatternOccurrenceInfo) patternOccurrenceInfoIterator
 							.next();
 
-					patternDistributionOverMethod.println("*" + ";;" + "*"
-							+ ";;" + "*" + ";;" + "*" + ";;" + "*" + ";;"
-							+ patternOccurrenceInfo.getOccurrenceType() + ";;"
-							+ patternOccurrenceInfo.getUnitOnwhichOccurrenceIsDetected() + ";;"
-							+ patternOccurrenceInfo.getCommentFragment());
+					patternDistributionOverMethod
+							.println("*"
+									+ ";;"
+									+ "*"
+									+ ";;"
+									+ "*"
+									+ ";;"
+									+ "*"
+									+ ";;"
+									+ "*"
+									+ ";;"
+									+ patternOccurrenceInfo.getOccurrenceType()
+									+ ";;"
+									+ patternOccurrenceInfo
+											.getUnitOnwhichOccurrenceIsDetected()
+									+ ";;"
+									+ patternOccurrenceInfo
+											.getCommentFragment());
 
 				}
 
 			}
-			
-			
 
 			patternDistributionOverMethod.close();
 

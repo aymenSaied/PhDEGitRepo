@@ -204,19 +204,20 @@ public class MainDriver {
    
     
     Statistique Statistique = new Statistique();
-    
+    int nbAnalyzedMethod =staticInstrumenter.getNumberOfAnalyzedMethod();
     // Statistique patternDistributionOverClasses  NullNotAllowedPattern
     HashMap<String, Integer> patternDistributionOverClasses1= staticInstrumenter.getNullNotAllowedPaternDistributionOverClasses();
     String  patterName1 = "NullNotAllowed";
+    
     String filePath1 =  StaticLocationPath +"\\NullNotAllowedPatternDistributionOverClass.csv";
-    Statistique.statistiqueForPatternDistributionOverClass(patternDistributionOverClasses1, filePath1, patterName1);
+    Statistique.statistiqueForPatternDistributionOverClass(patternDistributionOverClasses1, filePath1, patterName1,StaticLocationPath,nbAnalyzedMethod);
     
     // Statistique patternDistributionOverClasses  NullAllowedPattern    
     
     HashMap<String, Integer> patternDistributionOverClasses2= staticInstrumenter.getNullAllowedPaternDistributionOverClasses();
     String  patterName2 = "NullAllowed";
     String filePath2 =  StaticLocationPath +"\\NullAllowedpatternDistributionOverClass.csv";
-    Statistique.statistiqueForPatternDistributionOverClass(patternDistributionOverClasses2, filePath2, patterName2);
+    Statistique.statistiqueForPatternDistributionOverClass(patternDistributionOverClasses2, filePath2, patterName2,StaticLocationPath,nbAnalyzedMethod);
     
     
     

@@ -68,7 +68,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	static {
 		nullNotAllowedPaternDistributionOverClasses = new HashMap<String, Integer>(350);
 		nullAllowedPaternDistributionOverClasses = new HashMap<String, Integer>(350);
-		
+		nbMethode= 0;
 	}
 
 	
@@ -159,7 +159,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	static HashMap<String, Integer> nullNotAllowedPaternDistributionOverClasses;
 	static ArrayList<Local> methodParameterChain;
 	static String satistuquePath; 
-	
+	static int nbMethode;
 
 	public NotNullParameterStaticInstrumenter(String satatPath) {
 
@@ -175,6 +175,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		// body's method
 
 		SootMethod method = body.getMethod();
+		nbMethode++;
 		SootClass declaringClass = method.getDeclaringClass();
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
@@ -1173,5 +1174,12 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		return nullAllowedPaternDistributionOverClasses;
 	}
 	
-
+	
+	public int getNumberOfAnalyzedMethod(){
+		
+	
+		return nbMethode;
+	}
+	
+	
 }
