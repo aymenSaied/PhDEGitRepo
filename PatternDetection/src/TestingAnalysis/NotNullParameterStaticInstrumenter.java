@@ -101,7 +101,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		for (Local l : methodParameterChain) {
 			
 			
-			System.out.println("-------->methodParameter:    "+l);
+			System.out.println("-------->methodParameter:    "+l );
+			
 		}
 		
 		

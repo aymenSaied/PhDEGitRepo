@@ -46,7 +46,7 @@ public class MainDriver {
 	  //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestDetectingPaternInAPI"; 
 		  
 
-	    //String projectToAnalyzePath ="..\\..\\JHotDraw7.0.6.git\\JHotDraw7.0.6";
+	   // String projectToAnalyzePath ="..\\..\\JHotDraw7.0.6.git\\JHotDraw7.0.6";
 	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
 	   
 	   
@@ -56,8 +56,8 @@ public class MainDriver {
 	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
 	  
 	  
-	String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
-	String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
+	//String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
+	//String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
 	  
 
 		//String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
@@ -76,38 +76,40 @@ public class MainDriver {
 	  
 
 		//String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
-		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
+		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
 	  
 	  
 	  
 
 		//String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
-		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
+		   // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
 	  
 	  
 
 		//String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
-		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
+		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
 	  
 	  
 
 		//String projectToAnalyzePath ="..\\..\\TestJdk.rmi\\TestJdk.rmi";
-		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
+		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
 	  
 	  
 
-		//String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
-		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
+	//* 
+	  String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
+		  // 
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
 	  
 	  
 
 		//String projectToAnalyzePath ="..\\..\\TestJdk.sql\\TestJdk.sql";
-		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
+		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
 	  
 	  
 
 		//String projectToAnalyzePath ="..\\..\\TestJdk.text\\TestJdk.text";
-		    //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
+		   // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
 	  
 	  
 	//String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
@@ -158,6 +160,7 @@ public class MainDriver {
 		
 		// String[] internalargs = new String[classes.size()];
 		List<String> internalargs = new ArrayList<String>(classes.size());
+		 
 		internalargs.add("-pp"); //pour ajouter les classe de la lib standar  à soot (en plus d'un probléme pour la configuration la verssion de lib standar  )
 		
 		int i=0;
@@ -188,8 +191,11 @@ public class MainDriver {
 	    System.out.println("class path---------->"+Scene.v().getSootClassPath());
 	    StringBuilder resaltingClassPath = new StringBuilder();
         resaltingClassPath.append(classPath);
-        
+        //*
+        resaltingClassPath.append(";C:\\Program Files (x86)\\Java\\jre7\\lib\\jce.jar");
         resaltingClassPath.append(";"+projectToAnalyzePath+"\\bin");
+        
+        
         System.out.println("resaltingClassPath---------->"+resaltingClassPath);
         Scene.v().setSootClassPath(resaltingClassPath.toString());
 	    System.out.println("new class path---------->"+Scene.v().getSootClassPath());
