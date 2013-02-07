@@ -3,7 +3,7 @@ java.awt.MouseInfo;;0
 java.awt.im.InputSubset;;0
 java.awt.image.ColorModel;;2
 java.awt.image.ComponentSampleModel;;4
-java.awt.image.MemoryImageSource;;1
+java.awt.image.MemoryImageSource;;0
 java.awt.font.TransformAttribute;;0
 java.awt.GraphicsCallback;;0
 java.awt.DisplayMode;;1
@@ -37,9 +37,9 @@ java.awt.LinearGradientPaintContext;;0
 java.awt.AWTPermission;;0
 java.awt.dnd.DropTargetAdapter;;0
 java.awt.WaitDispatchSupport;;0
-java.awt.image.IndexColorModel;;2
+java.awt.image.IndexColorModel;;1
 java.awt.image.RasterFormatException;;0
-java.awt.Window;;15
+java.awt.Window;;14
 java.awt.FontMetrics;;0
 java.awt.Color;;7
 java.awt.image.PixelInterleavedSampleModel;;0
@@ -59,7 +59,7 @@ java.awt.event.InvocationEvent;;0
 java.awt.image.DataBuffer;;1
 java.awt.DefaultKeyboardFocusManager;;3
 java.awt.ContainerOrderFocusTraversalPolicy;;0
-java.awt.font.TextLayout;;4
+java.awt.font.TextLayout;;2
 java.awt.Toolkit;;1
 java.awt.event.TextEvent;;0
 java.awt.event.FocusEvent;;0
@@ -88,7 +88,6 @@ java.awt.image.AffineTransformOp;;2
 java.awt.color.ICC_Profile;;0
 java.awt.Scrollbar;;2
 java.awt.image.DataBufferFloat;;0
-java.awt.dnd.DnDConstants;;0
 java.awt.RadialGradientPaint;;0
 java.awt.event.ComponentAdapter;;0
 java.awt.Frame;;2
@@ -108,7 +107,7 @@ java.awt.GridBagLayout;;0
 java.awt.image.AreaAveragingScaleFilter;;0
 java.awt.dnd.DragSourceDragEvent;;0
 java.awt.dnd.SerializationTester;;0
-java.awt.image.ColorConvertOp;;5
+java.awt.image.ColorConvertOp;;4
 java.awt.font.CharArrayIterator;;0
 java.awt.image.RGBImageFilter;;0
 java.awt.SystemColor;;0
@@ -160,7 +159,7 @@ java.awt.CheckboxGroup;;0
 java.awt.ImageCapabilities;;0
 java.awt.dnd.DragSourceEvent;;0
 java.awt.dnd.DnDEventMulticaster;;2
-java.awt.Font;;4
+java.awt.Font;;2
 java.awt.LinearGradientPaint;;0
 java.awt.CardLayout;;1
 java.awt.GraphicsEnvironment;;0
@@ -218,7 +217,7 @@ java.awt.Component;;30
 java.awt.Event;;0
 java.awt.datatransfer.SystemFlavorMap;;6
 java.awt.image.Kernel;;1
-java.awt.geom.Arc2D;;1
+java.awt.geom.Arc2D;;0
 java.awt.MultipleGradientPaint;;0
 java.awt.image.ImageFilter;;0
 java.awt.Dimension;;0
@@ -226,7 +225,7 @@ java.awt.event.KeyEvent;;0
 java.awt.image.renderable.RenderableImageProducer;;0
 java.awt.image.renderable.ParameterBlock;;0
 java.awt.event.ActionEvent;;0
-java.awt.datatransfer.DataFlavor;;5
+java.awt.datatransfer.DataFlavor;;1
 java.awt.font.GraphicAttribute;;0
 java.awt.image.DataBufferShort;;0
 java.awt.dnd.DropTargetEvent;;0
@@ -263,6 +262,6 @@ java.awt.geom.RectangularShape;;0
 java.awt.AWTEvent;;1
 java.awt.geom.ArcIterator;;0
 java.awt.im.InputContext;;0
-java.awt.Container;;5
+java.awt.Container;;3
 java.awt.image.LookupOp;;2
 java.awt.color.ICC_ProfileGray;;0

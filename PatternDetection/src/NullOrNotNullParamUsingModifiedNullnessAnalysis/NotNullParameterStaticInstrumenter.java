@@ -229,26 +229,46 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 		 
 		 
-		 //lacer les tested parameter et les modified nullnessAnalysis
-
-		 ModifiedNullnessAnalysis modifiedNullnessAnalysis = new ModifiedNullnessAnalysis(cfg);
-		 NullTestedLocalsAnalysis nullTestedLocalsAnalysis = new NullTestedLocalsAnalysis((ExceptionalUnitGraph)cfg);
+		 //ajout de une condition pour traiter uniquement les methode public et eviter les accessor creer par le compilmateur donc qui contienne $ dans leur nom  
 		 
 		 
-	//detect null not allowed patern 	
+		 boolean methodIsPrivate =soot.Modifier.isPrivate(method.getModifiers()); 
+		 boolean MethodCreatedBycompiler = method.getName().contains("$");
+		 
+		 
+		 
+		 if (!methodIsPrivate && !MethodCreatedBycompiler) {
 		
+			 
+			 //lacer les tested parameter et les modified nullnessAnalysis
+
+			 ModifiedNullnessAnalysis modifiedNullnessAnalysis = new ModifiedNullnessAnalysis(cfg);
+			 NullTestedLocalsAnalysis nullTestedLocalsAnalysis = new NullTestedLocalsAnalysis((ExceptionalUnitGraph)cfg);
+			 		 
+			  
+			 
+			 //detect null not allowed patern 	
+			
+			 
+			 
+			 
+			 
+			 Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed = detectNullNotAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,nullTestedLocalsAnalysis);
+			 
+		//detect null  allowed patern 
+			 
+			 detectNullAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,unitCausingNullsNotAllowed );
+
+			 
+			 
+			 
+			 
+		}
 		 
 		 
-		 
-		 
-		 Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed = detectNullNotAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,nullTestedLocalsAnalysis);
-		 
-	//detect null  allowed patern 
-		 
-		 detectNullAllowedPatern(cfg,localDefinedUsingParameterToParameter,modifiedNullnessAnalysis,unitCausingNullsNotAllowed );
+			
 	
-	
-	
+	/*  juste pour l'afichage des ocurence 
 	
 	
 	Set<Local>NullsNotAllowedParam= unitCausingNullsNotAllowed.keySet();
@@ -286,6 +306,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				System.out.println("************************************************");	
 			}
 	
+			
+			*/
 		 
 	
 	}

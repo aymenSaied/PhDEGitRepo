@@ -65,15 +65,11 @@ java.awt.Frame;;remove;;1
 java.awt.Toolkit;;removeAWTEventListener;;1
 java.awt.Choice;;addItemListener;;1
 java.awt.Choice;;removeItemListener;;1
-java.awt.Container;;isRemoveNotifyNeeded;;1
-java.awt.Container;;reparentChild;;1
 java.awt.Container;;getComponentZOrder;;1
 java.awt.Container;;addContainerListener;;1
 java.awt.Container;;removeContainerListener;;1
 java.awt.Font;;<init>;;1
-java.awt.Font;;<init>;;1
 java.awt.Font;;deriveFont;;1
-java.awt.Font;;getItalicAngle;;1
 java.awt.Color;;RGBtoHSB;;1
 java.awt.Color;;getRGBComponents;;1
 java.awt.Color;;getRGBColorComponents;;1
@@ -85,7 +81,6 @@ java.awt.Cursor;;getSystemCustomCursor;;1
 java.awt.dnd.DropTarget;;<init>;;1
 java.awt.dnd.DropTarget;;addDropTargetListener;;1
 java.awt.dnd.DropTarget;;setFlavorMap;;1
-java.awt.Window;;initGC;;1
 java.awt.Window;;<init>;;1
 java.awt.Window;;<init>;;1
 java.awt.Window;;setIconImages;;1
@@ -136,8 +131,6 @@ java.awt.KeyboardFocusManager;;clearMostRecentFocusOwner;;1
 java.awt.KeyboardFocusManager;;processSynchronousLightweightTransfer;;2
 java.awt.KeyboardFocusManager;;shouldNativelyFocusHeavyweight;;2
 java.awt.KeyboardFocusManager;;removeLastFocusRequest;;1
-java.awt.font.TextLayout;;fastInit;;1
-java.awt.font.TextLayout;;getCaretInfo;;1
 java.awt.font.TextLayout;;equals;;1
 java.awt.font.TextLayout;;hitToPoint;;1
 java.awt.font.FontRenderContext;;equals;;1
@@ -164,7 +157,6 @@ java.awt.font.TextLine;;createComponentsOnRun;;1
 java.awt.font.NumericShaper;;equals;;1
 java.awt.image.DirectColorModel;;getDataElements;;1
 java.awt.image.DirectColorModel;;getComponents;;1
-java.awt.image.IndexColorModel;;installpixel;;1
 java.awt.image.IndexColorModel;;getComponents;;1
 java.awt.image.SinglePixelPackedSampleModel;;getDataElements;;1
 java.awt.image.SinglePixelPackedSampleModel;;getPixel;;1
@@ -180,10 +172,7 @@ java.awt.image.ComponentSampleModel;;getDataElements;;1
 java.awt.image.ComponentSampleModel;;getPixel;;1
 java.awt.image.ComponentSampleModel;;getPixels;;1
 java.awt.image.ComponentSampleModel;;getSamples;;1
-java.awt.datatransfer.DataFlavor;;<init>;;2
-java.awt.datatransfer.DataFlavor;;initialize;;1
 java.awt.datatransfer.DataFlavor;;equals;;1
-java.awt.datatransfer.DataFlavor;;isMimeTypeEqual;;1
 java.awt.datatransfer.MimeType;;match;;1
 java.awt.datatransfer.MimeType;;match;;1
 java.awt.datatransfer.SystemFlavorMap;;getNativesForFlavor;;1
@@ -196,12 +185,10 @@ java.awt.dnd.DnDEventMulticaster;;addInternal;;2
 java.awt.font.ImageGraphicAttribute;;equals;;1
 java.awt.font.ShapeGraphicAttribute;;getOutline;;1
 java.awt.font.ShapeGraphicAttribute;;equals;;1
-java.awt.geom.Arc2D;;contains;;1
 java.awt.geom.Area;;equals;;1
 java.awt.image.AffineTransformOp;;<init>;;1
 java.awt.image.AffineTransformOp;;createCompatibleDestImage;;1
 java.awt.image.ColorConvertOp;;filter;;2
-java.awt.image.ColorConvertOp;;createCompatibleDestImage;;1
 java.awt.image.ColorConvertOp;;createCompatibleDestImage;;1
 java.awt.image.ColorConvertOp;;getPoint2D;;1
 java.awt.image.Kernel;;getKernelData;;1
@@ -226,7 +213,6 @@ java.awt.image.LookupOp;;createCompatibleDestImage;;1
 java.awt.image.LookupOp;;getPoint2D;;1
 java.awt.image.ShortLookupTable;;lookupPixel;;1
 java.awt.image.ShortLookupTable;;lookupPixel;;1
-java.awt.image.MemoryImageSource;;initialize;;1
 java.awt.image.RescaleOp;;getScaleFactors;;1
 java.awt.image.RescaleOp;;getOffsets;;1
 java.awt.image.RescaleOp;;createCompatibleDestImage;;1

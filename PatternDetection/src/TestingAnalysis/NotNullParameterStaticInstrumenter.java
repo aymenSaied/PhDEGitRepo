@@ -46,6 +46,7 @@ import soot.jimple.InstanceInvokeExpr;
 import soot.jimple.InvokeExpr;
 import soot.jimple.MonitorStmt;
 import soot.jimple.Stmt;
+import soot.options.Options;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.SimpleLocalDefs;
@@ -77,9 +78,36 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	protected void internalTransform(Body body, String phase, Map options) {
 		// body's method
 
-		SootMethod method = body.getMethod();
-		SootClass declaringClass = method.getDeclaringClass();
+		
+		
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+
+		
+		SootMethod method = body.getMethod();
+		System.out.println("methodSignature----->"+method.getSignature());
+		System.out.println("methodModifiers----->"+method.getModifiers());
+		
+		if (method.getModifiers()==soot.Modifier.PRIVATE) {
+			
+			System.out.println("methodModifiers----->PRIVATE"+ soot.Modifier.isPrivate(method.getModifiers()));
+		}
+		
+		
+		System.out.println("method.Declaration----->"+method.getDeclaration());
+		
+		System.out.println("method.Source----->"+method.getSource());
+		
+
+		SootClass declaringClass = method.getDeclaringClass();
+	/*
+		
+		
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		
+		
+		
+		
+		
 
 		System.out.println("instrumenting method : " + method.getSignature()
 				+ "    in class  " + declaringClass.getName());
@@ -209,7 +237,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 		
 		
-		
+		*/
 		
 			
 		
