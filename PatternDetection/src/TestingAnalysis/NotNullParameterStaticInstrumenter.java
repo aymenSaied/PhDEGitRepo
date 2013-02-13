@@ -46,6 +46,7 @@ import soot.jimple.InstanceInvokeExpr;
 import soot.jimple.InvokeExpr;
 import soot.jimple.MonitorStmt;
 import soot.jimple.Stmt;
+import soot.jimple.ThrowStmt;
 import soot.options.Options;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
@@ -99,7 +100,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 
 		SootClass declaringClass = method.getDeclaringClass();
-	/*
+	 //  /*
 		
 		
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -228,7 +229,20 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 			
 					
 			
-		
+			if(stmt instanceof ThrowStmt){
+				
+				ThrowStmt throwStmt = (ThrowStmt) stmt;
+				
+				Value theexceptionop =throwStmt.getOp();
+				
+				// TODO  utiliser getDefsOfAt(Local l, Unit s) de SmartLocalDefs pour trouver l'uniter qui a fait l'afectationde l'operateur et prendre la deuxieme partie de cette affectaion qui represente l'exeption                       theexceptionop.get
+				
+				System.out.println("ThrowStmt:    "+stmt);
+				System.out.println("the op is :    "+throwStmt.getOp() );
+				
+				
+				
+			}
 			
 			
 			
@@ -237,7 +251,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 		
 		
-		*/
+//		*/
 		
 			
 		

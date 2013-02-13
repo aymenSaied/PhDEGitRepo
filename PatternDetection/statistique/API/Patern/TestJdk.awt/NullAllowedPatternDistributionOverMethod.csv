@@ -1,219 +1,219 @@
-class name;;Method name;;number of detected pattern
-java.awt.AWTEvent;;setSource;;1
-java.awt.image.ColorModel;;getUnnormalizedComponents;;1
-java.awt.image.ColorModel;;getNormalizedComponents;;1
-java.awt.image.Raster;;createInterleavedRaster;;1
-java.awt.image.Raster;;createBandedRaster;;1
-java.awt.image.Raster;;createPackedRaster;;1
-java.awt.image.Raster;;createPackedRaster;;1
-java.awt.image.Raster;;createRaster;;1
-java.awt.image.Raster;;createWritableRaster;;1
-java.awt.image.Raster;;createWritableRaster;;1
-java.awt.image.Raster;;createChild;;1
-java.awt.image.WritableRaster;;createWritableChild;;1
-java.awt.image.SampleModel;;getPixel;;1
-java.awt.image.SampleModel;;getDataElements;;1
-java.awt.image.SampleModel;;getPixel;;1
-java.awt.image.SampleModel;;getPixel;;1
-java.awt.image.SampleModel;;getPixels;;1
-java.awt.image.SampleModel;;getPixels;;1
-java.awt.image.SampleModel;;getPixels;;1
-java.awt.image.SampleModel;;getSamples;;1
-java.awt.image.SampleModel;;getSamples;;1
-java.awt.image.SampleModel;;getSamples;;1
-java.awt.Button;;addActionListener;;1
-java.awt.Button;;removeActionListener;;1
-java.awt.Component;;getBounds;;1
-java.awt.Component;;getSize;;1
-java.awt.Component;;getLocation;;1
-java.awt.Component;;setPreferredSize;;1
-java.awt.Component;;setMinimumSize;;1
-java.awt.Component;;setMaximumSize;;1
-java.awt.Component;;addComponentListener;;1
-java.awt.Component;;removeComponentListener;;1
-java.awt.Component;;addFocusListener;;1
-java.awt.Component;;removeFocusListener;;1
-java.awt.Component;;addHierarchyListener;;1
-java.awt.Component;;removeHierarchyListener;;1
-java.awt.Component;;addHierarchyBoundsListener;;1
-java.awt.Component;;removeHierarchyBoundsListener;;1
-java.awt.Component;;addKeyListener;;1
-java.awt.Component;;removeKeyListener;;1
-java.awt.Component;;addMouseListener;;1
-java.awt.Component;;removeMouseListener;;1
-java.awt.Component;;addMouseMotionListener;;1
-java.awt.Component;;removeMouseMotionListener;;1
-java.awt.Component;;addMouseWheelListener;;1
-java.awt.Component;;removeMouseWheelListener;;1
-java.awt.Component;;addInputMethodListener;;1
-java.awt.Component;;removeInputMethodListener;;1
-java.awt.Component;;setFocusTraversalKeys_NoIDCheck;;1
-java.awt.Component;;setRequestFocusController;;1
-java.awt.Component;;addPropertyChangeListener;;1
-java.awt.Component;;addPropertyChangeListener;;1
-java.awt.Component;;isInstanceOf;;2
-java.awt.Dialog;;setModalityType;;1
-java.awt.MenuItem;;addActionListener;;1
-java.awt.MenuItem;;removeActionListener;;1
-java.awt.List;;addItem;;1
-java.awt.List;;addItemListener;;1
-java.awt.List;;removeItemListener;;1
-java.awt.List;;addActionListener;;1
-java.awt.List;;removeActionListener;;1
-java.awt.Frame;;setTitle;;1
-java.awt.Frame;;remove;;1
-java.awt.Toolkit;;removeAWTEventListener;;1
-java.awt.Choice;;addItemListener;;1
-java.awt.Choice;;removeItemListener;;1
-java.awt.Container;;getComponentZOrder;;1
-java.awt.Container;;addContainerListener;;1
-java.awt.Container;;removeContainerListener;;1
-java.awt.Font;;<init>;;1
-java.awt.Font;;deriveFont;;1
-java.awt.Color;;RGBtoHSB;;1
-java.awt.Color;;getRGBComponents;;1
-java.awt.Color;;getRGBColorComponents;;1
-java.awt.Color;;getComponents;;1
-java.awt.Color;;getColorComponents;;1
-java.awt.Color;;getComponents;;1
-java.awt.Color;;getColorComponents;;1
-java.awt.Cursor;;getSystemCustomCursor;;1
-java.awt.dnd.DropTarget;;<init>;;1
-java.awt.dnd.DropTarget;;addDropTargetListener;;1
-java.awt.dnd.DropTarget;;setFlavorMap;;1
-java.awt.Window;;<init>;;1
-java.awt.Window;;<init>;;1
-java.awt.Window;;setIconImages;;1
-java.awt.Window;;setCursor;;1
-java.awt.Window;;setModalExclusionType;;1
-java.awt.Window;;addWindowListener;;1
-java.awt.Window;;addWindowStateListener;;1
-java.awt.Window;;addWindowFocusListener;;1
-java.awt.Window;;removeWindowListener;;1
-java.awt.Window;;removeWindowStateListener;;1
-java.awt.Window;;removeWindowFocusListener;;1
-java.awt.Window;;setGraphicsConfiguration;;1
-java.awt.Window;;setShape;;1
-java.awt.Window;;setBackground;;1
-java.awt.GraphicsDevice;;setFullScreenWindow;;1
-java.awt.image.BufferedImage;;getRGB;;1
-java.awt.image.BufferedImage;;copyData;;1
-java.awt.TextField;;<init>;;1
-java.awt.TextField;;addActionListener;;1
-java.awt.TextField;;removeActionListener;;1
-java.awt.Checkbox;;addItemListener;;1
-java.awt.Checkbox;;removeItemListener;;1
-java.awt.Scrollbar;;addAdjustmentListener;;1
-java.awt.Scrollbar;;removeAdjustmentListener;;1
-java.awt.FileDialog;;setDirectory;;1
-java.awt.FileDialog;;setFile;;1
-java.awt.CheckboxMenuItem;;addItemListener;;1
-java.awt.CheckboxMenuItem;;removeItemListener;;1
-java.awt.datatransfer.Clipboard;;addFlavorListener;;1
-java.awt.TextComponent;;<init>;;1
-java.awt.TextComponent;;setText;;1
-java.awt.TextComponent;;addTextListener;;1
-java.awt.TextComponent;;removeTextListener;;1
-java.awt.datatransfer.UnsupportedFlavorException;;<init>;;1
-java.awt.AWTEventMulticaster;;addInternal;;2
-java.awt.AWTEventMulticaster;;save;;1
-java.awt.geom.AffineTransform;;transform;;1
-java.awt.geom.AffineTransform;;inverseTransform;;1
-java.awt.geom.AffineTransform;;deltaTransform;;1
-java.awt.geom.AffineTransform;;createTransformedShape;;1
-java.awt.BorderLayout;;addLayoutComponent;;1
-java.awt.BorderLayout;;getConstraints;;1
-java.awt.CardLayout;;addLayoutComponent;;1
-java.awt.image.DataBuffer;;toIntArray;;1
-java.awt.KeyboardFocusManager;;setCurrentKeyboardFocusManager;;1
-java.awt.KeyboardFocusManager;;setGlobalFocusOwner;;1
-java.awt.KeyboardFocusManager;;clearMostRecentFocusOwner;;1
-java.awt.KeyboardFocusManager;;processSynchronousLightweightTransfer;;2
-java.awt.KeyboardFocusManager;;shouldNativelyFocusHeavyweight;;2
-java.awt.KeyboardFocusManager;;removeLastFocusRequest;;1
-java.awt.font.TextLayout;;equals;;1
-java.awt.font.TextLayout;;hitToPoint;;1
-java.awt.font.FontRenderContext;;equals;;1
-java.awt.DisplayMode;;equals;;1
-java.awt.font.GlyphVector;;getGlyphCharIndices;;1
-java.awt.TrayIcon;;addMouseListener;;1
-java.awt.TrayIcon;;removeMouseListener;;1
-java.awt.TrayIcon;;addMouseMotionListener;;1
-java.awt.TrayIcon;;removeMouseMotionListener;;1
-java.awt.TrayIcon;;addActionListener;;1
-java.awt.TrayIcon;;removeActionListener;;1
-java.awt.SystemTray;;remove;;1
-java.awt.SystemTray;;addPropertyChangeListener;;1
-java.awt.SystemTray;;removePropertyChangeListener;;1
-java.awt.DefaultKeyboardFocusManager;;enqueueKeyEvents;;1
-java.awt.DefaultKeyboardFocusManager;;dequeueKeyEvents;;1
-java.awt.DefaultKeyboardFocusManager;;discardKeyEvents;;1
-java.awt.SentEvent;;<init>;;1
-java.awt.dnd.DragSourceContext;;<init>;;1
-java.awt.dnd.DragSourceContext;;setCursor;;1
-java.awt.dnd.DragSourceContext;;addDragSourceListener;;1
-java.awt.font.TextLine;;getPixelBounds;;1
-java.awt.font.TextLine;;createComponentsOnRun;;1
-java.awt.font.NumericShaper;;equals;;1
-java.awt.image.DirectColorModel;;getDataElements;;1
-java.awt.image.DirectColorModel;;getComponents;;1
-java.awt.image.IndexColorModel;;getComponents;;1
-java.awt.image.SinglePixelPackedSampleModel;;getDataElements;;1
-java.awt.image.SinglePixelPackedSampleModel;;getPixel;;1
-java.awt.image.SinglePixelPackedSampleModel;;getPixels;;1
-java.awt.image.SinglePixelPackedSampleModel;;getSamples;;1
-java.awt.ScrollPaneAdjustable;;addAdjustmentListener;;1
-java.awt.ScrollPaneAdjustable;;removeAdjustmentListener;;1
-java.awt.TexturePaint;;createContext;;1
-java.awt.TexturePaintContext;;makeRaster;;1
-java.awt.TexturePaintContext;;dropRaster;;1
-java.awt.TexturePaintContext;;dropByteRaster;;1
-java.awt.image.ComponentSampleModel;;getDataElements;;1
-java.awt.image.ComponentSampleModel;;getPixel;;1
-java.awt.image.ComponentSampleModel;;getPixels;;1
-java.awt.image.ComponentSampleModel;;getSamples;;1
-java.awt.datatransfer.DataFlavor;;equals;;1
-java.awt.datatransfer.MimeType;;match;;1
-java.awt.datatransfer.MimeType;;match;;1
-java.awt.datatransfer.SystemFlavorMap;;getNativesForFlavor;;1
-java.awt.datatransfer.SystemFlavorMap;;getFlavorsForNative;;1
-java.awt.datatransfer.SystemFlavorMap;;getNativesForFlavors;;1
-java.awt.datatransfer.SystemFlavorMap;;getFlavorsForNatives;;1
-java.awt.datatransfer.SystemFlavorMap;;encodeJavaMIMEType;;1
-java.awt.datatransfer.SystemFlavorMap;;encodeDataFlavor;;1
-java.awt.dnd.DnDEventMulticaster;;addInternal;;2
-java.awt.font.ImageGraphicAttribute;;equals;;1
-java.awt.font.ShapeGraphicAttribute;;getOutline;;1
-java.awt.font.ShapeGraphicAttribute;;equals;;1
-java.awt.geom.Area;;equals;;1
-java.awt.image.AffineTransformOp;;<init>;;1
-java.awt.image.AffineTransformOp;;createCompatibleDestImage;;1
-java.awt.image.ColorConvertOp;;filter;;2
-java.awt.image.ColorConvertOp;;createCompatibleDestImage;;1
-java.awt.image.ColorConvertOp;;getPoint2D;;1
-java.awt.image.Kernel;;getKernelData;;1
-java.awt.image.BandCombineOp;;getPoint2D;;1
-java.awt.image.BandedSampleModel;;getDataElements;;1
-java.awt.image.BandedSampleModel;;getPixel;;1
-java.awt.image.BandedSampleModel;;getPixels;;1
-java.awt.image.BandedSampleModel;;getSamples;;1
-java.awt.image.ComponentColorModel;;getDataElements;;1
-java.awt.image.ComponentColorModel;;getComponents;;1
-java.awt.image.ComponentColorModel;;getComponents;;1
-java.awt.image.ComponentColorModel;;getDataElements;;1
-java.awt.image.ComponentColorModel;;getDataElements;;1
-java.awt.image.ComponentColorModel;;getNormalizedComponents;;1
-java.awt.image.ByteLookupTable;;lookupPixel;;1
-java.awt.image.ByteLookupTable;;lookupPixel;;1
-java.awt.image.ConvolveOp;;filter;;1
-java.awt.image.ConvolveOp;;getPoint2D;;1
-java.awt.image.MultiPixelPackedSampleModel;;getDataElements;;1
-java.awt.image.MultiPixelPackedSampleModel;;getPixel;;1
-java.awt.image.LookupOp;;createCompatibleDestImage;;1
-java.awt.image.LookupOp;;getPoint2D;;1
-java.awt.image.ShortLookupTable;;lookupPixel;;1
-java.awt.image.ShortLookupTable;;lookupPixel;;1
-java.awt.image.RescaleOp;;getScaleFactors;;1
-java.awt.image.RescaleOp;;getOffsets;;1
-java.awt.image.RescaleOp;;createCompatibleDestImage;;1
-java.awt.image.RescaleOp;;getPoint2D;;1
+class name;;Method name;;method Declaration;;number of detected pattern
+java.awt.AWTEvent;;setSource;;public void setSource(java.lang.Object);;1
+java.awt.image.ColorModel;;getUnnormalizedComponents;;public int[] getUnnormalizedComponents(float[], int, int[], int);;1
+java.awt.image.ColorModel;;getNormalizedComponents;;public float[] getNormalizedComponents(int[], int, float[], int);;1
+java.awt.image.Raster;;createInterleavedRaster;;public static java.awt.image.WritableRaster createInterleavedRaster(java.awt.image.DataBuffer, int, int, int, int, int[], java.awt.Point);;1
+java.awt.image.Raster;;createBandedRaster;;public static java.awt.image.WritableRaster createBandedRaster(java.awt.image.DataBuffer, int, int, int, int[], int[], java.awt.Point);;1
+java.awt.image.Raster;;createPackedRaster;;public static java.awt.image.WritableRaster createPackedRaster(java.awt.image.DataBuffer, int, int, int, int[], java.awt.Point);;1
+java.awt.image.Raster;;createPackedRaster;;public static java.awt.image.WritableRaster createPackedRaster(java.awt.image.DataBuffer, int, int, int, java.awt.Point);;1
+java.awt.image.Raster;;createRaster;;public static java.awt.image.Raster createRaster(java.awt.image.SampleModel, java.awt.image.DataBuffer, java.awt.Point);;1
+java.awt.image.Raster;;createWritableRaster;;public static java.awt.image.WritableRaster createWritableRaster(java.awt.image.SampleModel, java.awt.Point);;1
+java.awt.image.Raster;;createWritableRaster;;public static java.awt.image.WritableRaster createWritableRaster(java.awt.image.SampleModel, java.awt.image.DataBuffer, java.awt.Point);;1
+java.awt.image.Raster;;createChild;;public java.awt.image.Raster createChild(int, int, int, int, int, int, int[]);;1
+java.awt.image.WritableRaster;;createWritableChild;;public java.awt.image.WritableRaster createWritableChild(int, int, int, int, int, int, int[]);;1
+java.awt.image.SampleModel;;getPixel;;public int[] getPixel(int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getDataElements;;public java.lang.Object getDataElements(int, int, int, int, java.lang.Object, java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getPixel;;public float[] getPixel(int, int, float[], java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getPixel;;public double[] getPixel(int, int, double[], java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getPixels;;public int[] getPixels(int, int, int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getPixels;;public float[] getPixels(int, int, int, int, float[], java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getPixels;;public double[] getPixels(int, int, int, int, double[], java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getSamples;;public int[] getSamples(int, int, int, int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getSamples;;public float[] getSamples(int, int, int, int, int, float[], java.awt.image.DataBuffer);;1
+java.awt.image.SampleModel;;getSamples;;public double[] getSamples(int, int, int, int, int, double[], java.awt.image.DataBuffer);;1
+java.awt.Button;;addActionListener;;public synchronized void addActionListener(java.awt.event.ActionListener);;1
+java.awt.Button;;removeActionListener;;public synchronized void removeActionListener(java.awt.event.ActionListener);;1
+java.awt.Component;;getBounds;;public java.awt.Rectangle getBounds(java.awt.Rectangle);;1
+java.awt.Component;;getSize;;public java.awt.Dimension getSize(java.awt.Dimension);;1
+java.awt.Component;;getLocation;;public java.awt.Point getLocation(java.awt.Point);;1
+java.awt.Component;;setPreferredSize;;public void setPreferredSize(java.awt.Dimension);;1
+java.awt.Component;;setMinimumSize;;public void setMinimumSize(java.awt.Dimension);;1
+java.awt.Component;;setMaximumSize;;public void setMaximumSize(java.awt.Dimension);;1
+java.awt.Component;;addComponentListener;;public synchronized void addComponentListener(java.awt.event.ComponentListener);;1
+java.awt.Component;;removeComponentListener;;public synchronized void removeComponentListener(java.awt.event.ComponentListener);;1
+java.awt.Component;;addFocusListener;;public synchronized void addFocusListener(java.awt.event.FocusListener);;1
+java.awt.Component;;removeFocusListener;;public synchronized void removeFocusListener(java.awt.event.FocusListener);;1
+java.awt.Component;;addHierarchyListener;;public void addHierarchyListener(java.awt.event.HierarchyListener);;1
+java.awt.Component;;removeHierarchyListener;;public void removeHierarchyListener(java.awt.event.HierarchyListener);;1
+java.awt.Component;;addHierarchyBoundsListener;;public void addHierarchyBoundsListener(java.awt.event.HierarchyBoundsListener);;1
+java.awt.Component;;removeHierarchyBoundsListener;;public void removeHierarchyBoundsListener(java.awt.event.HierarchyBoundsListener);;1
+java.awt.Component;;addKeyListener;;public synchronized void addKeyListener(java.awt.event.KeyListener);;1
+java.awt.Component;;removeKeyListener;;public synchronized void removeKeyListener(java.awt.event.KeyListener);;1
+java.awt.Component;;addMouseListener;;public synchronized void addMouseListener(java.awt.event.MouseListener);;1
+java.awt.Component;;removeMouseListener;;public synchronized void removeMouseListener(java.awt.event.MouseListener);;1
+java.awt.Component;;addMouseMotionListener;;public synchronized void addMouseMotionListener(java.awt.event.MouseMotionListener);;1
+java.awt.Component;;removeMouseMotionListener;;public synchronized void removeMouseMotionListener(java.awt.event.MouseMotionListener);;1
+java.awt.Component;;addMouseWheelListener;;public synchronized void addMouseWheelListener(java.awt.event.MouseWheelListener);;1
+java.awt.Component;;removeMouseWheelListener;;public synchronized void removeMouseWheelListener(java.awt.event.MouseWheelListener);;1
+java.awt.Component;;addInputMethodListener;;public synchronized void addInputMethodListener(java.awt.event.InputMethodListener);;1
+java.awt.Component;;removeInputMethodListener;;public synchronized void removeInputMethodListener(java.awt.event.InputMethodListener);;1
+java.awt.Component;;setFocusTraversalKeys_NoIDCheck;;final void setFocusTraversalKeys_NoIDCheck(int, java.util.Set);;1
+java.awt.Component;;setRequestFocusController;;static synchronized void setRequestFocusController(sun.awt.RequestFocusController);;1
+java.awt.Component;;addPropertyChangeListener;;public void addPropertyChangeListener(java.beans.PropertyChangeListener);;1
+java.awt.Component;;addPropertyChangeListener;;public void addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);;1
+java.awt.Component;;isInstanceOf;;static boolean isInstanceOf(java.lang.Object, java.lang.String);;2
+java.awt.Dialog;;setModalityType;;public void setModalityType(java.awt.Dialog$ModalityType);;1
+java.awt.MenuItem;;addActionListener;;public synchronized void addActionListener(java.awt.event.ActionListener);;1
+java.awt.MenuItem;;removeActionListener;;public synchronized void removeActionListener(java.awt.event.ActionListener);;1
+java.awt.List;;addItem;;public synchronized void addItem(java.lang.String, int);;1
+java.awt.List;;addItemListener;;public synchronized void addItemListener(java.awt.event.ItemListener);;1
+java.awt.List;;removeItemListener;;public synchronized void removeItemListener(java.awt.event.ItemListener);;1
+java.awt.List;;addActionListener;;public synchronized void addActionListener(java.awt.event.ActionListener);;1
+java.awt.List;;removeActionListener;;public synchronized void removeActionListener(java.awt.event.ActionListener);;1
+java.awt.Frame;;setTitle;;public void setTitle(java.lang.String);;1
+java.awt.Frame;;remove;;public void remove(java.awt.MenuComponent);;1
+java.awt.Toolkit;;removeAWTEventListener;;public void removeAWTEventListener(java.awt.event.AWTEventListener);;1
+java.awt.Choice;;addItemListener;;public synchronized void addItemListener(java.awt.event.ItemListener);;1
+java.awt.Choice;;removeItemListener;;public synchronized void removeItemListener(java.awt.event.ItemListener);;1
+java.awt.Container;;getComponentZOrder;;public int getComponentZOrder(java.awt.Component);;1
+java.awt.Container;;addContainerListener;;public synchronized void addContainerListener(java.awt.event.ContainerListener);;1
+java.awt.Container;;removeContainerListener;;public synchronized void removeContainerListener(java.awt.event.ContainerListener);;1
+java.awt.Font;;<init>;;public void <init>(java.lang.String, int, int);;1
+java.awt.Font;;deriveFont;;public java.awt.Font deriveFont(java.util.Map);;1
+java.awt.Color;;RGBtoHSB;;public static float[] RGBtoHSB(int, int, int, float[]);;1
+java.awt.Color;;getRGBComponents;;public float[] getRGBComponents(float[]);;1
+java.awt.Color;;getRGBColorComponents;;public float[] getRGBColorComponents(float[]);;1
+java.awt.Color;;getComponents;;public float[] getComponents(float[]);;1
+java.awt.Color;;getColorComponents;;public float[] getColorComponents(float[]);;1
+java.awt.Color;;getComponents;;public float[] getComponents(java.awt.color.ColorSpace, float[]);;1
+java.awt.Color;;getColorComponents;;public float[] getColorComponents(java.awt.color.ColorSpace, float[]);;1
+java.awt.Cursor;;getSystemCustomCursor;;public static java.awt.Cursor getSystemCustomCursor(java.lang.String) throws java.awt.AWTException, java.awt.HeadlessException;;1
+java.awt.dnd.DropTarget;;<init>;;public void <init>(java.awt.Component, int, java.awt.dnd.DropTargetListener, boolean, java.awt.datatransfer.FlavorMap) throws java.awt.HeadlessException;;1
+java.awt.dnd.DropTarget;;addDropTargetListener;;public synchronized void addDropTargetListener(java.awt.dnd.DropTargetListener) throws java.util.TooManyListenersException;;1
+java.awt.dnd.DropTarget;;setFlavorMap;;public void setFlavorMap(java.awt.datatransfer.FlavorMap);;1
+java.awt.Window;;<init>;;public void <init>(java.awt.Frame);;1
+java.awt.Window;;<init>;;public void <init>(java.awt.Window);;1
+java.awt.Window;;setIconImages;;public synchronized void setIconImages(java.util.List);;1
+java.awt.Window;;setCursor;;public void setCursor(java.awt.Cursor);;1
+java.awt.Window;;setModalExclusionType;;public void setModalExclusionType(java.awt.Dialog$ModalExclusionType);;1
+java.awt.Window;;addWindowListener;;public synchronized void addWindowListener(java.awt.event.WindowListener);;1
+java.awt.Window;;addWindowStateListener;;public synchronized void addWindowStateListener(java.awt.event.WindowStateListener);;1
+java.awt.Window;;addWindowFocusListener;;public synchronized void addWindowFocusListener(java.awt.event.WindowFocusListener);;1
+java.awt.Window;;removeWindowListener;;public synchronized void removeWindowListener(java.awt.event.WindowListener);;1
+java.awt.Window;;removeWindowStateListener;;public synchronized void removeWindowStateListener(java.awt.event.WindowStateListener);;1
+java.awt.Window;;removeWindowFocusListener;;public synchronized void removeWindowFocusListener(java.awt.event.WindowFocusListener);;1
+java.awt.Window;;setGraphicsConfiguration;;void setGraphicsConfiguration(java.awt.GraphicsConfiguration);;1
+java.awt.Window;;setShape;;public void setShape(java.awt.Shape);;1
+java.awt.Window;;setBackground;;public void setBackground(java.awt.Color);;1
+java.awt.GraphicsDevice;;setFullScreenWindow;;public void setFullScreenWindow(java.awt.Window);;1
+java.awt.image.BufferedImage;;getRGB;;public int[] getRGB(int, int, int, int, int[], int, int);;1
+java.awt.image.BufferedImage;;copyData;;public java.awt.image.WritableRaster copyData(java.awt.image.WritableRaster);;1
+java.awt.TextField;;<init>;;public void <init>(java.lang.String) throws java.awt.HeadlessException;;1
+java.awt.TextField;;addActionListener;;public synchronized void addActionListener(java.awt.event.ActionListener);;1
+java.awt.TextField;;removeActionListener;;public synchronized void removeActionListener(java.awt.event.ActionListener);;1
+java.awt.Checkbox;;addItemListener;;public synchronized void addItemListener(java.awt.event.ItemListener);;1
+java.awt.Checkbox;;removeItemListener;;public synchronized void removeItemListener(java.awt.event.ItemListener);;1
+java.awt.Scrollbar;;addAdjustmentListener;;public synchronized void addAdjustmentListener(java.awt.event.AdjustmentListener);;1
+java.awt.Scrollbar;;removeAdjustmentListener;;public synchronized void removeAdjustmentListener(java.awt.event.AdjustmentListener);;1
+java.awt.FileDialog;;setDirectory;;public void setDirectory(java.lang.String);;1
+java.awt.FileDialog;;setFile;;public void setFile(java.lang.String);;1
+java.awt.CheckboxMenuItem;;addItemListener;;public synchronized void addItemListener(java.awt.event.ItemListener);;1
+java.awt.CheckboxMenuItem;;removeItemListener;;public synchronized void removeItemListener(java.awt.event.ItemListener);;1
+java.awt.datatransfer.Clipboard;;addFlavorListener;;public synchronized void addFlavorListener(java.awt.datatransfer.FlavorListener);;1
+java.awt.TextComponent;;<init>;;void <init>(java.lang.String) throws java.awt.HeadlessException;;1
+java.awt.TextComponent;;setText;;public synchronized void setText(java.lang.String);;1
+java.awt.TextComponent;;addTextListener;;public synchronized void addTextListener(java.awt.event.TextListener);;1
+java.awt.TextComponent;;removeTextListener;;public synchronized void removeTextListener(java.awt.event.TextListener);;1
+java.awt.datatransfer.UnsupportedFlavorException;;<init>;;public void <init>(java.awt.datatransfer.DataFlavor);;1
+java.awt.AWTEventMulticaster;;addInternal;;protected static java.util.EventListener addInternal(java.util.EventListener, java.util.EventListener);;2
+java.awt.AWTEventMulticaster;;save;;protected static void save(java.io.ObjectOutputStream, java.lang.String, java.util.EventListener) throws java.io.IOException;;1
+java.awt.geom.AffineTransform;;transform;;public java.awt.geom.Point2D transform(java.awt.geom.Point2D, java.awt.geom.Point2D);;1
+java.awt.geom.AffineTransform;;inverseTransform;;public java.awt.geom.Point2D inverseTransform(java.awt.geom.Point2D, java.awt.geom.Point2D) throws java.awt.geom.NoninvertibleTransformException;;1
+java.awt.geom.AffineTransform;;deltaTransform;;public java.awt.geom.Point2D deltaTransform(java.awt.geom.Point2D, java.awt.geom.Point2D);;1
+java.awt.geom.AffineTransform;;createTransformedShape;;public java.awt.Shape createTransformedShape(java.awt.Shape);;1
+java.awt.BorderLayout;;addLayoutComponent;;public void addLayoutComponent(java.lang.String, java.awt.Component);;1
+java.awt.BorderLayout;;getConstraints;;public java.lang.Object getConstraints(java.awt.Component);;1
+java.awt.CardLayout;;addLayoutComponent;;public void addLayoutComponent(java.awt.Component, java.lang.Object);;1
+java.awt.image.DataBuffer;;toIntArray;;static int[] toIntArray(java.lang.Object);;1
+java.awt.KeyboardFocusManager;;setCurrentKeyboardFocusManager;;public static void setCurrentKeyboardFocusManager(java.awt.KeyboardFocusManager) throws java.lang.SecurityException;;1
+java.awt.KeyboardFocusManager;;setGlobalFocusOwner;;protected void setGlobalFocusOwner(java.awt.Component);;1
+java.awt.KeyboardFocusManager;;clearMostRecentFocusOwner;;static void clearMostRecentFocusOwner(java.awt.Component);;1
+java.awt.KeyboardFocusManager;;processSynchronousLightweightTransfer;;static boolean processSynchronousLightweightTransfer(java.awt.Component, java.awt.Component, boolean, boolean, long);;2
+java.awt.KeyboardFocusManager;;shouldNativelyFocusHeavyweight;;static int shouldNativelyFocusHeavyweight(java.awt.Component, java.awt.Component, boolean, boolean, long, sun.awt.CausedFocusEvent$Cause);;2
+java.awt.KeyboardFocusManager;;removeLastFocusRequest;;static void removeLastFocusRequest(java.awt.Component);;1
+java.awt.font.TextLayout;;equals;;public boolean equals(java.awt.font.TextLayout);;1
+java.awt.font.TextLayout;;hitToPoint;;public void hitToPoint(java.awt.font.TextHitInfo, java.awt.geom.Point2D);;1
+java.awt.font.FontRenderContext;;equals;;public boolean equals(java.awt.font.FontRenderContext);;1
+java.awt.DisplayMode;;equals;;public boolean equals(java.awt.DisplayMode);;1
+java.awt.font.GlyphVector;;getGlyphCharIndices;;public int[] getGlyphCharIndices(int, int, int[]);;1
+java.awt.TrayIcon;;addMouseListener;;public synchronized void addMouseListener(java.awt.event.MouseListener);;1
+java.awt.TrayIcon;;removeMouseListener;;public synchronized void removeMouseListener(java.awt.event.MouseListener);;1
+java.awt.TrayIcon;;addMouseMotionListener;;public synchronized void addMouseMotionListener(java.awt.event.MouseMotionListener);;1
+java.awt.TrayIcon;;removeMouseMotionListener;;public synchronized void removeMouseMotionListener(java.awt.event.MouseMotionListener);;1
+java.awt.TrayIcon;;addActionListener;;public synchronized void addActionListener(java.awt.event.ActionListener);;1
+java.awt.TrayIcon;;removeActionListener;;public synchronized void removeActionListener(java.awt.event.ActionListener);;1
+java.awt.SystemTray;;remove;;public void remove(java.awt.TrayIcon);;1
+java.awt.SystemTray;;addPropertyChangeListener;;public synchronized void addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);;1
+java.awt.SystemTray;;removePropertyChangeListener;;public synchronized void removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);;1
+java.awt.DefaultKeyboardFocusManager;;enqueueKeyEvents;;protected synchronized void enqueueKeyEvents(long, java.awt.Component);;1
+java.awt.DefaultKeyboardFocusManager;;dequeueKeyEvents;;protected synchronized void dequeueKeyEvents(long, java.awt.Component);;1
+java.awt.DefaultKeyboardFocusManager;;discardKeyEvents;;protected synchronized void discardKeyEvents(java.awt.Component);;1
+java.awt.SentEvent;;<init>;;void <init>(java.awt.AWTEvent, sun.awt.AppContext);;1
+java.awt.dnd.DragSourceContext;;<init>;;public void <init>(java.awt.dnd.peer.DragSourceContextPeer, java.awt.dnd.DragGestureEvent, java.awt.Cursor, java.awt.Image, java.awt.Point, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener);;1
+java.awt.dnd.DragSourceContext;;setCursor;;public synchronized void setCursor(java.awt.Cursor);;1
+java.awt.dnd.DragSourceContext;;addDragSourceListener;;public synchronized void addDragSourceListener(java.awt.dnd.DragSourceListener) throws java.util.TooManyListenersException;;1
+java.awt.font.TextLine;;getPixelBounds;;public java.awt.Rectangle getPixelBounds(java.awt.font.FontRenderContext, float, float);;1
+java.awt.font.TextLine;;createComponentsOnRun;;public static sun.font.TextLineComponent[] createComponentsOnRun(int, int, char[], int[], byte[], sun.font.TextLabelFactory, java.awt.Font, sun.font.CoreMetrics, java.awt.font.FontRenderContext, sun.font.Decoration, sun.font.TextLineComponent[], int);;1
+java.awt.font.NumericShaper;;equals;;public boolean equals(java.lang.Object);;1
+java.awt.image.DirectColorModel;;getDataElements;;public java.lang.Object getDataElements(int, java.lang.Object);;1
+java.awt.image.DirectColorModel;;getComponents;;public final int[] getComponents(int, int[], int);;1
+java.awt.image.IndexColorModel;;getComponents;;public int[] getComponents(int, int[], int);;1
+java.awt.image.SinglePixelPackedSampleModel;;getDataElements;;public java.lang.Object getDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);;1
+java.awt.image.SinglePixelPackedSampleModel;;getPixel;;public int[] getPixel(int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.SinglePixelPackedSampleModel;;getPixels;;public int[] getPixels(int, int, int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.SinglePixelPackedSampleModel;;getSamples;;public int[] getSamples(int, int, int, int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.ScrollPaneAdjustable;;addAdjustmentListener;;public synchronized void addAdjustmentListener(java.awt.event.AdjustmentListener);;1
+java.awt.ScrollPaneAdjustable;;removeAdjustmentListener;;public synchronized void removeAdjustmentListener(java.awt.event.AdjustmentListener);;1
+java.awt.TexturePaint;;createContext;;public java.awt.PaintContext createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints);;1
+java.awt.TexturePaintContext;;makeRaster;;static synchronized java.awt.image.WritableRaster makeRaster(java.awt.image.ColorModel, java.awt.image.Raster, int, int);;1
+java.awt.TexturePaintContext;;dropRaster;;static synchronized void dropRaster(java.awt.image.ColorModel, java.awt.image.Raster);;1
+java.awt.TexturePaintContext;;dropByteRaster;;static synchronized void dropByteRaster(java.awt.image.Raster);;1
+java.awt.image.ComponentSampleModel;;getDataElements;;public java.lang.Object getDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);;1
+java.awt.image.ComponentSampleModel;;getPixel;;public int[] getPixel(int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.ComponentSampleModel;;getPixels;;public int[] getPixels(int, int, int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.ComponentSampleModel;;getSamples;;public int[] getSamples(int, int, int, int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.datatransfer.DataFlavor;;equals;;public boolean equals(java.awt.datatransfer.DataFlavor);;1
+java.awt.datatransfer.MimeType;;match;;public boolean match(java.awt.datatransfer.MimeType);;1
+java.awt.datatransfer.MimeType;;match;;public boolean match(java.lang.String) throws java.awt.datatransfer.MimeTypeParseException;;1
+java.awt.datatransfer.SystemFlavorMap;;getNativesForFlavor;;public synchronized java.util.List getNativesForFlavor(java.awt.datatransfer.DataFlavor);;1
+java.awt.datatransfer.SystemFlavorMap;;getFlavorsForNative;;public synchronized java.util.List getFlavorsForNative(java.lang.String);;1
+java.awt.datatransfer.SystemFlavorMap;;getNativesForFlavors;;public synchronized java.util.Map getNativesForFlavors(java.awt.datatransfer.DataFlavor[]);;1
+java.awt.datatransfer.SystemFlavorMap;;getFlavorsForNatives;;public synchronized java.util.Map getFlavorsForNatives(java.lang.String[]);;1
+java.awt.datatransfer.SystemFlavorMap;;encodeJavaMIMEType;;public static java.lang.String encodeJavaMIMEType(java.lang.String);;1
+java.awt.datatransfer.SystemFlavorMap;;encodeDataFlavor;;public static java.lang.String encodeDataFlavor(java.awt.datatransfer.DataFlavor);;1
+java.awt.dnd.DnDEventMulticaster;;addInternal;;protected static java.util.EventListener addInternal(java.util.EventListener, java.util.EventListener);;2
+java.awt.font.ImageGraphicAttribute;;equals;;public boolean equals(java.awt.font.ImageGraphicAttribute);;1
+java.awt.font.ShapeGraphicAttribute;;getOutline;;public java.awt.Shape getOutline(java.awt.geom.AffineTransform);;1
+java.awt.font.ShapeGraphicAttribute;;equals;;public boolean equals(java.awt.font.ShapeGraphicAttribute);;1
+java.awt.geom.Area;;equals;;public boolean equals(java.awt.geom.Area);;1
+java.awt.image.AffineTransformOp;;<init>;;public void <init>(java.awt.geom.AffineTransform, java.awt.RenderingHints);;1
+java.awt.image.AffineTransformOp;;createCompatibleDestImage;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);;1
+java.awt.image.ColorConvertOp;;filter;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);;2
+java.awt.image.ColorConvertOp;;createCompatibleDestImage;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);;1
+java.awt.image.ColorConvertOp;;getPoint2D;;public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);;1
+java.awt.image.Kernel;;getKernelData;;public final float[] getKernelData(float[]);;1
+java.awt.image.BandCombineOp;;getPoint2D;;public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);;1
+java.awt.image.BandedSampleModel;;getDataElements;;public java.lang.Object getDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);;1
+java.awt.image.BandedSampleModel;;getPixel;;public int[] getPixel(int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.BandedSampleModel;;getPixels;;public int[] getPixels(int, int, int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.BandedSampleModel;;getSamples;;public int[] getSamples(int, int, int, int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.ComponentColorModel;;getDataElements;;public java.lang.Object getDataElements(int, java.lang.Object);;1
+java.awt.image.ComponentColorModel;;getComponents;;public int[] getComponents(int, int[], int);;1
+java.awt.image.ComponentColorModel;;getComponents;;public int[] getComponents(java.lang.Object, int[], int);;1
+java.awt.image.ComponentColorModel;;getDataElements;;public java.lang.Object getDataElements(int[], int, java.lang.Object);;1
+java.awt.image.ComponentColorModel;;getDataElements;;public java.lang.Object getDataElements(float[], int, java.lang.Object);;1
+java.awt.image.ComponentColorModel;;getNormalizedComponents;;public float[] getNormalizedComponents(java.lang.Object, float[], int);;1
+java.awt.image.ByteLookupTable;;lookupPixel;;public int[] lookupPixel(int[], int[]);;1
+java.awt.image.ByteLookupTable;;lookupPixel;;public byte[] lookupPixel(byte[], byte[]);;1
+java.awt.image.ConvolveOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;1
+java.awt.image.ConvolveOp;;getPoint2D;;public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);;1
+java.awt.image.MultiPixelPackedSampleModel;;getDataElements;;public java.lang.Object getDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);;1
+java.awt.image.MultiPixelPackedSampleModel;;getPixel;;public int[] getPixel(int, int, int[], java.awt.image.DataBuffer);;1
+java.awt.image.LookupOp;;createCompatibleDestImage;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);;1
+java.awt.image.LookupOp;;getPoint2D;;public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);;1
+java.awt.image.ShortLookupTable;;lookupPixel;;public int[] lookupPixel(int[], int[]);;1
+java.awt.image.ShortLookupTable;;lookupPixel;;public short[] lookupPixel(short[], short[]);;1
+java.awt.image.RescaleOp;;getScaleFactors;;public final float[] getScaleFactors(float[]);;1
+java.awt.image.RescaleOp;;getOffsets;;public final float[] getOffsets(float[]);;1
+java.awt.image.RescaleOp;;createCompatibleDestImage;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);;1
+java.awt.image.RescaleOp;;getPoint2D;;public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);;1

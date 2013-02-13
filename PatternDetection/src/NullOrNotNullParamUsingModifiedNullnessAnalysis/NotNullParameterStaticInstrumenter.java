@@ -682,11 +682,12 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	    	 
 	    	 //Statistique patternDistributionOverMethod  NullNotAllowedPattern
 	    	 String methodName =cfg.getBody().getMethod().getName();
+	    	 String methodDeclaration =cfg.getBody().getMethod().getDeclaration();
 	    	 String statfileName= "\\NullNotAllowedPatternDistributionOverMethod.csv";
 	    	 String OccurrenStatfileName= "\\NullNotAllowedPatternOccurrenInMethod.csv";
 	    	 
 	    	 try {
-				Statistique.statistiqueForPatternDistributionOverMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, satistuquePath, statfileName);
+				Statistique.statistiqueForPatternDistributionOverMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, methodDeclaration,satistuquePath, statfileName);
 				Statistique.statistiqueForPatternOccurrenInMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, satistuquePath, OccurrenStatfileName,unitCausingNullsNotAllowed);
 				
 				
@@ -729,8 +730,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 		
 		
-		
-		
+		Map<Local, ArrayList<PatternOccurrenceInfo>> temporaryUnitCausingNullAllowed = new  HashMap<Local, ArrayList<PatternOccurrenceInfo>> (methodParameterChain.size() * 2 + 1, 0.7f); ;
+		Map<Local, ArrayList<PatternOccurrenceInfo>> permanentUnitCausingNullAllowed = new  HashMap<Local, ArrayList<PatternOccurrenceInfo>> (methodParameterChain.size() * 2 + 1, 0.7f); ;
 		
 		 Integer nbOfnullAllowedPaternInCurrentMethod =0;
 		
@@ -757,6 +758,33 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 						
 						ParameterWaNullsAtLeastOneTime.add(l);
 						
+						
+						
+			//in the next blok {} creating tompora maping for potential local and unit cosing null allowed
+						
+						{
+							
+							String coment= "NullAllowed pattern detected param is  :"+l;
+							System.out.println(coment);
+							
+							
+							
+							String type1 = "NullAllowed for param";
+						
+							PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type1, coment);
+						
+						
+	 
+							temporaryUnitCausingNullAllowed = updateUnitCausingNullsNotAllowed(temporaryUnitCausingNullAllowed,(Local)l,poi);
+							
+
+							
+							
+						}
+						
+						
+						
+						
 					}
 					
 					
@@ -773,6 +801,35 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					if (!LocalsWaNullsAtLeastOneTime.contains(l)) {
 					
 						LocalsWaNullsAtLeastOneTime.add(l);
+						
+//in the next blok {} creating tompora maping for potential local and unit cosing null allowed
+						
+						{
+							
+							
+							
+							String coment= "NullAllowed pattern detected param is  :"+localDefinedUsingParameterToParameter.get(l)+" it initialize local "+ l;
+							System.out.println(coment);
+							
+							
+							
+							String type2 = "NullAllowed for local initialized from param";
+						
+							PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type2, coment);
+						
+						
+	 
+							
+							
+							temporaryUnitCausingNullAllowed = updateUnitCausingNullsNotAllowed(temporaryUnitCausingNullAllowed,localDefinedUsingParameterToParameter.get(l),poi);
+
+							
+							
+						}
+						
+						
+						
+						
 						
 						
 					}
@@ -803,6 +860,12 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				nbOfnullAllowedPaternInCurrentMethod ++;
 				
 				
+				//remplire permanentUnitCausingNullAllowed à partir de temporaryUnitCausingNullAllowed pour les local qui sont definitivement selectioner 
+				
+				
+				permanentUnitCausingNullAllowed.put(l, temporaryUnitCausingNullAllowed.get(l));
+				
+				
 			}else{
 				
 				//dans une peut etre nule et ne dois pas etre nulle voir si on veut enricir les comentaire par cette situation
@@ -828,6 +891,14 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				System.out.println("NullAllowed pattern detected param is  :"+localDefinedUsingParameterToParameter.get(l)+" it initialize local "+ l);
 				
 				nbOfnullAllowedPaternInCurrentMethod ++;
+				
+				
+//remplire permanentUnitCausingNullAllowed à partir de temporaryUnitCausingNullAllowed pour les local qui sont definitivement selectioner 
+				Local paramCorespeldigToLocal =localDefinedUsingParameterToParameter.get(l);
+				
+				permanentUnitCausingNullAllowed.put(paramCorespeldigToLocal, temporaryUnitCausingNullAllowed.get(paramCorespeldigToLocal));
+				
+				
 				
 				
 			}else{
@@ -859,12 +930,18 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	    	 
 	    	 //Statistique patternDistributionOverMethod  NullAllowedPattern
 	    	 String methodName =cfg.getBody().getMethod().getName();
+	    	 String methodDeclaration =cfg.getBody().getMethod().getDeclaration();
 	    	 String statfileName= "\\NullAllowedPatternDistributionOverMethod.csv";
+	    	 String OccurrenStatfileName= "\\NullAllowedPatternOccurrenInMethod.csv";
+	    	 
 	    	 try {
 	    		 
 	    		 
 	    		 //erreur pour unitCausingNullsNotAllowed.keySet().size()  dans statistiqueForPatternDistributionOverMethod
-				Statistique.statistiqueForPatternDistributionOverMethod(nbOfnullAllowedPaternInCurrentMethod, className, methodName, satistuquePath, statfileName);
+				Statistique.statistiqueForPatternDistributionOverMethod(nbOfnullAllowedPaternInCurrentMethod, className, methodName, methodDeclaration,satistuquePath, statfileName);
+				Statistique.statistiqueForPatternOccurrenInMethod(permanentUnitCausingNullAllowed.keySet().size(), className, methodName, satistuquePath, OccurrenStatfileName,permanentUnitCausingNullAllowed);
+				
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

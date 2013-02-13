@@ -107,7 +107,7 @@ public class Statistique {
 
 	public void statistiqueForPatternDistributionOverMethod(
 			int nbOfDetectedpatternInCurrentMethod, String className,
-			String methodName, String statistiqueLocation, String file)
+			String methodName,String methodDeclaration, String statistiqueLocation, String file)
 			throws IOException {
 
 		String statistiqueLocationPath = statistiqueLocation;
@@ -120,10 +120,10 @@ public class Statistique {
 
 			PrintWriter patternDistributionOverMethod = new PrintWriter(file1);
 			patternDistributionOverMethod.println("class name" + ";;"
-					+ "Method name" + ";;" + "number of detected pattern");
+					+ "Method name" + ";;"+"method Declaration"+";;" + "number of detected pattern");
 
 			patternDistributionOverMethod.println(className + ";;" + methodName
-					+ ";;" + nbOfDetectedpatternInCurrentMethod);
+					+ ";;" + methodDeclaration +";;"+ nbOfDetectedpatternInCurrentMethod);
 			patternDistributionOverMethod.close();
 
 		} else {
@@ -131,7 +131,7 @@ public class Statistique {
 			PrintWriter patternDistributionOverMethod = new PrintWriter(
 					new BufferedWriter(new FileWriter(file1, true)));
 			patternDistributionOverMethod.println(className + ";;" + methodName
-					+ ";;" + nbOfDetectedpatternInCurrentMethod);
+					+ ";;"+ methodDeclaration +";;" + nbOfDetectedpatternInCurrentMethod);
 
 			patternDistributionOverMethod.close();
 
