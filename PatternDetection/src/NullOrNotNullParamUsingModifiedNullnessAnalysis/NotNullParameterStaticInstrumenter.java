@@ -47,6 +47,7 @@ import soot.jimple.FieldRef;
 import soot.jimple.InstanceFieldRef;
 import soot.jimple.InstanceInvokeExpr;
 import soot.jimple.InvokeExpr;
+import soot.jimple.MonitorStmt;
 import soot.jimple.NullConstant;
 import soot.jimple.ReturnStmt;
 import soot.jimple.ReturnVoidStmt;
@@ -650,6 +651,78 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 					
 					
+				} else if (stmt instanceof MonitorStmt ){
+					
+					
+					MonitorStmt monitorStmt = (MonitorStmt) stmt;
+					
+					
+					
+						
+						//here we know that the receiver must point to an object
+						Value monitorOp = monitorStmt.getOp();
+						
+						
+						
+						
+						
+						if (!modifiedNullnessAnalysis.isAlwaysNonNullBefore(unit, (Local)monitorOp)) {
+							
+							
+							if (methodParameterChain.contains(monitorOp)) {
+								
+								
+								String coment= "pattern detected param  "+ monitorOp + " must not be null  because used in  monitorStmt ";
+								System.out.println(coment);
+								
+								
+								
+								String type8 = "monitorStmt for param";
+							
+								PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type8, coment);
+							
+							
+		 
+								unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,(Local)monitorOp,poi);
+								
+
+								
+								
+								
+							} else if (LocalsDefinedUsingParameterSet.contains(monitorOp)) {
+								
+								
+								String coment="pattern detected param  "+ localDefinedUsingParameterToParameter.get(monitorOp) + " must not be null it define a local "+ monitorOp  +  "which used in  monitorStmt ";
+								System.out.println(coment);
+								
+								
+								String type9 = "monitorStmt for local initialized from param";
+								
+								PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type9, coment);
+							
+							
+		 
+								unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(monitorOp),poi);
+
+								
+								
+								
+								
+								
+							}						
+							
+							
+						}
+						
+						
+						
+						
+						
+						
+				
+					
+					
+					
 				}
 				
 				
@@ -688,7 +761,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	    	 
 	    	 try {
 				Statistique.statistiqueForPatternDistributionOverMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, methodDeclaration,satistuquePath, statfileName);
-				Statistique.statistiqueForPatternOccurrenInMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, satistuquePath, OccurrenStatfileName,unitCausingNullsNotAllowed);
+				Statistique.statistiqueForPatternOccurrenInMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName,methodDeclaration, satistuquePath, OccurrenStatfileName,unitCausingNullsNotAllowed);
 				
 				
 				
@@ -747,9 +820,31 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 			
 				
+			List<ValueBox> useAndDefBox = unit.getUseAndDefBoxes();
+			
+			ArrayList<Local> useAndDefValnInCurrentUnit = new ArrayList<Local>();
+			
+			for (ValueBox valueBox : useAndDefBox) {
+				
+				if (valueBox.getValue() instanceof Local) {
+					
+					useAndDefValnInCurrentUnit.add((Local)valueBox.getValue());
+					
+				}
+				
+				
+			}
+			
+			
+			
+			
 				
 				
 				for (Local l : methodParameterChain) {
+					
+					if (true/*useAndDefValnInCurrentUnit.contains(l)*/) {
+						
+					
 					
 				if (modifiedNullnessAnalysis.isAlwaysNullBefore(unit, l)) {
 					
@@ -791,10 +886,17 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 				}	
 					
+				}	
+				
 				}
 				
 				
 				for (Local l : LocalsDefinedUsingParameterSet) {
+					
+					
+					if (true/*useAndDefValnInCurrentUnit.contains(l)*/) {
+					
+					
 					
 				if (modifiedNullnessAnalysis.isAlwaysNullBefore(unit, l)) {
 					
@@ -802,7 +904,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 						LocalsWaNullsAtLeastOneTime.add(l);
 						
-//in the next blok {} creating tompora maping for potential local and unit cosing null allowed
+						//in the next blok {} creating tompora maping for potential local and unit cosing null allowed
 						
 						{
 							
@@ -836,7 +938,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 					
 				}	
-					
+				
+				}	
 				}
 				
 				
@@ -939,7 +1042,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	    		 
 	    		 //erreur pour unitCausingNullsNotAllowed.keySet().size()  dans statistiqueForPatternDistributionOverMethod
 				Statistique.statistiqueForPatternDistributionOverMethod(nbOfnullAllowedPaternInCurrentMethod, className, methodName, methodDeclaration,satistuquePath, statfileName);
-				Statistique.statistiqueForPatternOccurrenInMethod(permanentUnitCausingNullAllowed.keySet().size(), className, methodName, satistuquePath, OccurrenStatfileName,permanentUnitCausingNullAllowed);
+				Statistique.statistiqueForPatternOccurrenInMethod(permanentUnitCausingNullAllowed.keySet().size(), className, methodName, methodDeclaration,satistuquePath, OccurrenStatfileName,permanentUnitCausingNullAllowed);
 				
 				
 			} catch (IOException e) {

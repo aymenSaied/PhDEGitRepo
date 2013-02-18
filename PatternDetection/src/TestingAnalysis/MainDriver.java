@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 import soot.*;
 
@@ -58,22 +59,24 @@ public class MainDriver {
 			j++;
 		}
 		
-		String[] internalargs = new String[classes.size()];
+		List<String> internalargs = new ArrayList<String>(classes.size());
+		
+		
 		
 		int i=0;
 		for (String classename : classes) {
 			if(!classename.equals("MainDriver") && !classename.equals("InvokeStaticInstrumenter")){
 				System.out.println(i);
-				internalargs[i]=classename;
+				internalargs.add(classename);
 				i++;
 				
 			}
 			
 		}
 
-	 if(internalargs.length!=0){
+	 if(internalargs.size()!=0){
 		 
-		 args=internalargs;
+		 internalargs.toArray(new String[internalargs.size()]);
 	 }
 	 
 	 } catch (Exception e) {

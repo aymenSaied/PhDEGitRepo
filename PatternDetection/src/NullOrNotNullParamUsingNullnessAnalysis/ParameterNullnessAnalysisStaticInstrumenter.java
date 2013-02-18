@@ -135,9 +135,9 @@ public class ParameterNullnessAnalysisStaticInstrumenter extends BodyTransformer
 				
 				if (true/*usedLocal.contains(l)*/) {
 				
-					System.out.println("-------->param:                       "+l);
-					System.out.println("-------->isAlways Null Before:        "+ nullnessAnalysis.isAlwaysNullBefore(unit, l));
-					System.out.println("-------->isAlways Non_Null Before:    "+ nullnessAnalysis.isAlwaysNonNullBefore(unit, l));
+				//	System.out.println("-------->param:                       "+l);
+				//	System.out.println("-------->isAlways Null Before:        "+ nullnessAnalysis.isAlwaysNullBefore(unit, l));
+				//	System.out.println("-------->isAlways Non_Null Before:    "+ nullnessAnalysis.isAlwaysNonNullBefore(unit, l));
 					
 					
 					
@@ -145,6 +145,24 @@ public class ParameterNullnessAnalysisStaticInstrumenter extends BodyTransformer
 				
 				
 			}
+			
+			List<ValueBox> useAndDefBox = unit.getUseAndDefBoxes();
+			
+			for (ValueBox valueBox : useAndDefBox) {
+				
+				if (valueBox.getValue() instanceof Local) {
+					System.out.println("$-------->unit:    "+unit);
+					System.out.println("$$-------->Local:                       "+(Local)valueBox.getValue());
+					System.out.println("$$$-------->isAlways Null Before:        "+ nullnessAnalysis.isAlwaysNullBefore(unit, (Local)valueBox.getValue()));
+					
+					
+				}
+				
+				
+			}
+			
+			
+			
 				
 			
 		

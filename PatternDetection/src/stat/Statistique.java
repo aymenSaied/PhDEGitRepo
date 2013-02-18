@@ -80,11 +80,9 @@ public class Statistique {
 
 			} else {
 
-				// dans cet partie l'apel c'est le 2em apel donc info pour NullAllowed
-				
+				// dans cet partie l'apel c'est le 2em apel donc info pour
+				// NullAllowed
 
-				
-				
 				PrintWriter GeneralInformation;
 				try {
 					GeneralInformation = new PrintWriter(new BufferedWriter(
@@ -107,8 +105,8 @@ public class Statistique {
 
 	public void statistiqueForPatternDistributionOverMethod(
 			int nbOfDetectedpatternInCurrentMethod, String className,
-			String methodName,String methodDeclaration, String statistiqueLocation, String file)
-			throws IOException {
+			String methodName, String methodDeclaration,
+			String statistiqueLocation, String file) throws IOException {
 
 		String statistiqueLocationPath = statistiqueLocation;
 		String filename = file;
@@ -120,10 +118,12 @@ public class Statistique {
 
 			PrintWriter patternDistributionOverMethod = new PrintWriter(file1);
 			patternDistributionOverMethod.println("class name" + ";;"
-					+ "Method name" + ";;"+"method Declaration"+";;" + "number of detected pattern");
+					+ "Method name" + ";;" + "method Declaration" + ";;"
+					+ "number of detected pattern");
 
 			patternDistributionOverMethod.println(className + ";;" + methodName
-					+ ";;" + methodDeclaration +";;"+ nbOfDetectedpatternInCurrentMethod);
+					+ ";;" + methodDeclaration + ";;"
+					+ nbOfDetectedpatternInCurrentMethod);
 			patternDistributionOverMethod.close();
 
 		} else {
@@ -131,7 +131,8 @@ public class Statistique {
 			PrintWriter patternDistributionOverMethod = new PrintWriter(
 					new BufferedWriter(new FileWriter(file1, true)));
 			patternDistributionOverMethod.println(className + ";;" + methodName
-					+ ";;"+ methodDeclaration +";;" + nbOfDetectedpatternInCurrentMethod);
+					+ ";;" + methodDeclaration + ";;"
+					+ nbOfDetectedpatternInCurrentMethod);
 
 			patternDistributionOverMethod.close();
 
@@ -143,6 +144,7 @@ public class Statistique {
 			int nbOfDetectedpatternInCurrentMethod,
 			String className,
 			String methodName,
+			String methodDeclaration,
 			String statistiqueLocation,
 			String file,
 			Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed)
@@ -159,13 +161,14 @@ public class Statistique {
 			PrintWriter patternDistributionOverMethod = new PrintWriter(file1);
 			patternDistributionOverMethod.println("class name" + ";;"
 					+ "Method name" + ";;" + "number of detected pattern"
-					+ ";;" + "parameter" + ";;" + "number of occurrences"
-					+ ";;" + "occurrenceType" + ";;"
+					+ ";;" + "method Declaration" + ";;" + "parameter" + ";;"
+					+ "number of occurrences" + ";;" + "occurrenceType" + ";;"
 					+ "unitOnwhichOccurrenceIsDetected" + ";;"
 					+ "commentFragment");
 
 			patternDistributionOverMethod.println(className + ";;" + methodName
-					+ ";;" + nbOfDetectedpatternInCurrentMethod);
+					+ ";;" + nbOfDetectedpatternInCurrentMethod + ";;"
+					+ methodDeclaration);
 
 			Iterator<Local> parameters = unitCausingNullsNotAllowed.keySet()
 					.iterator();
@@ -176,7 +179,7 @@ public class Statistique {
 						.get(param);
 
 				patternDistributionOverMethod.println("*" + ";;" + " * " + ";;"
-						+ " * " + ";;" + param + ";;"
+						+ " * " + ";;" + "*" + ";;" + param + ";;"
 						+ listOfPatternOccurrenceInfo.size());
 
 				Iterator<PatternOccurrenceInfo> patternOccurrenceInfoIterator = listOfPatternOccurrenceInfo
@@ -188,6 +191,8 @@ public class Statistique {
 
 					patternDistributionOverMethod
 							.println("*"
+									+ ";;"
+									+ "*"
 									+ ";;"
 									+ "*"
 									+ ";;"
@@ -216,7 +221,8 @@ public class Statistique {
 			PrintWriter patternDistributionOverMethod = new PrintWriter(
 					new BufferedWriter(new FileWriter(file1, true)));
 			patternDistributionOverMethod.println(className + ";;" + methodName
-					+ ";;" + nbOfDetectedpatternInCurrentMethod);
+					+ ";;" + nbOfDetectedpatternInCurrentMethod + ";;"
+					+ methodDeclaration);
 
 			Iterator<Local> parameters = unitCausingNullsNotAllowed.keySet()
 					.iterator();
@@ -227,7 +233,7 @@ public class Statistique {
 						.get(param);
 
 				patternDistributionOverMethod.println("*" + ";;" + " * " + ";;"
-						+ " * " + ";;" + param + ";;"
+						+ " * " + ";;" + "*" + ";;" + param + ";;"
 						+ listOfPatternOccurrenceInfo.size());
 
 				Iterator<PatternOccurrenceInfo> patternOccurrenceInfoIterator = listOfPatternOccurrenceInfo
@@ -239,6 +245,8 @@ public class Statistique {
 
 					patternDistributionOverMethod
 							.println("*"
+									+ ";;"
+									+ "*"
 									+ ";;"
 									+ "*"
 									+ ";;"

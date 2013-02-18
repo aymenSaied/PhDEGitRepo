@@ -52,58 +52,56 @@ public class MainDriver {
 	   
 	  
 	  
-	    //		  String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
-	    //		  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
+	    //  String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
+	    //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
 	  
 	  
-	//	  String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
-	//	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
+	//  String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
+	//  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
 	  
 
 		//	  String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
 		//	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.beans";
 
 	  
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
+		// String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
+		  // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
 	  
 	  
 	  
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.lang\\TestJdk.lang";
-		  // 	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
+		//		  String projectToAnalyzePath ="..\\..\\TestJdk.lang\\TestJdk.lang";
+		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
 	  
 	  
 
-		//	  
-	  String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
-		  //	 
-	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
+		//	 String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
+		  // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
 	  
 	  
 	  
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
-		   //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
+		// String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
+		   // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
 	  
 	  
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
+		//		  String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
 		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
 	  
 	  
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.rmi\\TestJdk.rmi";
+		//		  String projectToAnalyzePath ="..\\..\\TestJdk.rmi\\TestJdk.rmi";
 		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
 	  
 	  
 
-	//	  	  String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
-		  //		  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
+	//	 	  String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
+		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
 	  
 	  
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.sql\\TestJdk.sql";
+		//		  String projectToAnalyzePath ="..\\..\\TestJdk.sql\\TestJdk.sql";
 		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
 	  
 	  
@@ -112,8 +110,10 @@ public class MainDriver {
 		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
 	  
 	  
-	//	  String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
-    //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
+	//	 
+	  String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
+    //
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
 
 	  
 	  
@@ -160,9 +160,16 @@ public class MainDriver {
 		
 		// String[] internalargs = new String[classes.size()];
 		List<String> internalargs = new ArrayList<String>(classes.size());
-		 
-		internalargs.add("-pp"); //pour ajouter les classe de la lib standar  à soot (en plus d'un probléme pour la configuration la verssion de lib standar  )
+		// to preserve the names of local variables (if possible) when performing ana analysis  
 		
+		/*
+		 * domage car cette option n'a pa eu l'effet atendue 
+		internalargs.add("-p");
+		internalargs.add("jb");
+		internalargs.add("use-original-names:true");
+		*/
+		internalargs.add("-pp"); //pour ajouter les classe de la lib standar  à soot (en plus d'un probléme pour la configuration la verssion de lib standar  )
+		  
 		int i=0;
 		for (String classename : classes) {
 			if(!classename.equals("MainDriver") && !classename.equals("InvokeStaticInstrumenter")){
@@ -173,6 +180,8 @@ public class MainDriver {
 			}
 			
 		}
+		
+		
 
 	 if(internalargs.size()!=0){
 		 
