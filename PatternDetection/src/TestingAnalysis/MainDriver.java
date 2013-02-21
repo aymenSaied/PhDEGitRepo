@@ -25,17 +25,17 @@ public class MainDriver {
       System.exit(0);
     }
     
-	  String NomFichier1 = ".\\Test\\API\\P\\test1.txt";
-	  PrintWriter file1 = new PrintWriter(new FileWriter(NomFichier1));
+	 // String NomFichier1 = ".\\Test\\API\\P\\test1.txt";
+	  //PrintWriter file1 = new PrintWriter(new FileWriter(NomFichier1));
 	  
-	  String NomFichier2 = ".\\statistique\\API\\P\\TestDetectingPaternInAPI\\patternDistributionOverMethod.csv";
-	  PrintWriter file2 = new PrintWriter(new FileWriter(NomFichier2));
+	  //String NomFichier2 = ".\\statistique\\API\\P\\TestDetectingPaternInAPI\\patternDistributionOverMethod.csv";
+	  //PrintWriter file2 = new PrintWriter(new FileWriter(NomFichier2));
 	 
 	  
-	  String NomFichier3 = ".\\statistique\\API\\P\\TestDetectingPaternInAPI\\detectedPattern.csv";
-	  PrintWriter file3 = new PrintWriter(new FileWriter(NomFichier3));
+	  //String NomFichier3 = ".\\statistique\\API\\P\\TestDetectingPaternInAPI\\detectedPattern.csv";
+	  //PrintWriter file3 = new PrintWriter(new FileWriter(NomFichier3));
 	 
-	  NotNullParameterStaticInstrumenter staticInstrumenter =new NotNullParameterStaticInstrumenter(file1,file2,file3);
+	  NotNullParameterStaticInstrumenter staticInstrumenter =new NotNullParameterStaticInstrumenter(/*file1,file2,file3*/);
     /* add a phase to transformer pack by call Pack.add */
     Pack jtp = PackManager.v().getPack("jtp");
     jtp.add(new Transform("jtp.instrumenter", 
@@ -76,7 +76,7 @@ public class MainDriver {
 
 	 if(internalargs.size()!=0){
 		 
-		 internalargs.toArray(new String[internalargs.size()]);
+		 args= internalargs.toArray(new String[internalargs.size()]);
 	 }
 	 
 	 } catch (Exception e) {
@@ -98,9 +98,9 @@ public class MainDriver {
     soot.Main.main(args);
     
     
-    file1.close();
-    file2.close();
-    file3.close();
+   // file1.close();
+    //file2.close();
+    //file3.close();
    
     
   }

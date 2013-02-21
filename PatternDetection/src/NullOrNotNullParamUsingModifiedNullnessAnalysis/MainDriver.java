@@ -42,8 +42,10 @@ public class MainDriver {
 	  PrintWriter file3 = new PrintWriter(new FileWriter(NomFichier3));
 	 
 	 
-	  //String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestDetectingPaternInAPI";
-	  //String StaticLocationPath  =".\\statistique\\API\\Patern\\TestDetectingPaternInAPI"; 
+	  //
+	  String projectToAnalyzePath ="C:\\Users\\medsd\\Desktop\\UdeM\\progetAnalyse\\workspace\\TestDetectingPaternInAPI";
+	  //
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestDetectingPaternInAPI"; 
 		  
 
 	   // String projectToAnalyzePath ="..\\..\\JHotDraw7.0.6.git\\JHotDraw7.0.6";
@@ -110,10 +112,8 @@ public class MainDriver {
 		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
 	  
 	  
-	//	 
-	  String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
-    //
-	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
+	//	 	  String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
+    //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
 
 	  
 	  

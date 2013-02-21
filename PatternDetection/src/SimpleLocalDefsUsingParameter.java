@@ -348,7 +348,7 @@ class LocalDefsFlowAnalysis extends ForwardFlowAnalysis
     protected void flowThrough(Object inValue, Object d, Object outValue)
     {
     	
-    	System.out.println("--------------------flowThrough ---------------------of aymen");
+    	
         FlowSet in = (FlowSet) inValue, out = (FlowSet) outValue;
         Unit unit = (Unit) d;
         

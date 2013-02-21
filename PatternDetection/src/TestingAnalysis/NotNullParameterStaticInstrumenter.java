@@ -67,8 +67,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
 	}
 
-	public NotNullParameterStaticInstrumenter(PrintWriter pw1, PrintWriter pw2,
-			PrintWriter pw3) {
+	public NotNullParameterStaticInstrumenter(/* PrintWriter pw1, PrintWriter pw2,	PrintWriter pw3 */) {
 
 	}
 
@@ -131,6 +130,15 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 			
 			
 			System.out.println("-------->methodParameter:    "+l );
+			
+		}
+		
+		
+Iterator<Unit> units =cfg.iterator();
+		
+		while (units.hasNext()) {
+			Unit unit = (Unit) units.next();
+			System.out.println("-------->unit:    "+unit);
 			
 		}
 		
