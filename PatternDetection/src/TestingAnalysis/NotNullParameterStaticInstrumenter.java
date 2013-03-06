@@ -34,12 +34,17 @@ import java.util.Map;
 import soot.Body;
 import soot.BodyTransformer;
 import soot.Local;
+import soot.RefLikeType;
+import soot.RefType;
 import soot.SootClass;
 import soot.SootMethod;
+import soot.Type;
 import soot.Unit;
 import soot.Value;
 import soot.ValueBox;
 import soot.jimple.ArrayRef;
+import soot.jimple.AssignStmt;
+import soot.jimple.CastExpr;
 import soot.jimple.FieldRef;
 import soot.jimple.InstanceFieldRef;
 import soot.jimple.InstanceInvokeExpr;
@@ -51,6 +56,7 @@ import soot.options.Options;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.SimpleLocalDefs;
+import soot.util.Chain;
 
 public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
@@ -139,8 +145,58 @@ Iterator<Unit> units =cfg.iterator();
 		while (units.hasNext()) {
 			Unit unit = (Unit) units.next();
 			System.out.println("-------->unit:    "+unit);
+			if( unit instanceof AssignStmt ){
+				
+				AssignStmt astmt = (AssignStmt) unit;
+	            Value rhs = astmt.getRightOp();
+	            Value lhs = astmt.getLeftOp();
+				
+	            if( rhs instanceof CastExpr ) {
+	            	 CastExpr cast = (CastExpr) rhs;
+	            	 Type castType = cast.getCastType();
+	            	//System.out.println("*-------->cast op:    "+	cast.getOp());
+	            //	System.out.println("*-------->castType:    "+	castType);
+	            	
+	            }
+				
+			} 
 			
 		}
+		
+		
+		
+		Chain locals = ((UnitGraph)cfg).getBody().getLocals();
+        List<Local> refLocals = new ArrayList<Local>();
+        for( Iterator lIt = locals.iterator(); lIt.hasNext(); ) {
+            final Local l = (Local) lIt.next();
+            if( l.getType() instanceof RefType ) {
+                
+            	
+            	System.out.println("-------->RefType:    "+l);
+            }
+            
+            if( l.getType() instanceof RefLikeType ) {
+                
+            	
+            	System.out.println("-------->RefLikeType:    "+l);
+            }
+            
+        }
+        
+        
+        
+        Type t= new Type() {
+			
+			@Override
+			public String toString() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		} ;
+        RefType rlt = new RefType(null);
+        
+        //rlt=t; //rlt=(RefType)t;
+        t=rlt;
 		
 /*		
 		

@@ -14,7 +14,7 @@ import java.util.Set;
 
 import soot.Local;
 import NullOrNotNullParamUsingModifiedNullnessAnalysis.NotNullParameterStaticInstrumenter;
-import NullOrNotNullParamUsingModifiedNullnessAnalysis.NotNullParameterStaticInstrumenter.PatternOccurrenceInfo;
+
 
 public class Statistique {
 

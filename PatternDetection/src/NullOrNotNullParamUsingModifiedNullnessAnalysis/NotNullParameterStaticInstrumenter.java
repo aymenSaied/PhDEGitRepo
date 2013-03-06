@@ -62,7 +62,7 @@ import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.LocalUnitPair;
 import soot.toolkits.scalar.SimpleLocalDefs;
 import stat.Statistique;
-
+import stat.PatternOccurrenceInfo;
 public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
 	
@@ -91,60 +91,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	 * */
 	
 	
-	public class PatternOccurrenceInfo{
-		
-		
-		public PatternOccurrenceInfo(Unit unit ,String type, String comment ){
-			
-			this.setUnitOnwhichOccurrenceIsDetected(unit);
-			this.setOccurrenceType(type);
-			this.setCommentFragment(comment);
-			
-			
-		}
-		
-		private Unit unitOnwhichOccurrenceIsDetected ;
-		private String occurrenceType;
-		private String commentFragment;
-		
-		
-		//todo changer le type en enumeration 
-		
-		
-
-
-		public Unit getUnitOnwhichOccurrenceIsDetected() {
-			return unitOnwhichOccurrenceIsDetected;
-		}
-
-
-		public void setUnitOnwhichOccurrenceIsDetected(
-				Unit unitOnwhichOccurrenceIsDetected) {
-			this.unitOnwhichOccurrenceIsDetected = unitOnwhichOccurrenceIsDetected;
-		}
-
-
-		public String getCommentFragment() {
-			return commentFragment;
-		}
-
-
-		public void setCommentFragment(String commentFragment) {
-			this.commentFragment = commentFragment;
-		}
-
-
-		public String getOccurrenceType() {
-			return occurrenceType;
-		}
-
-
-		public void setOccurrenceType(String occurrenceType) {
-			this.occurrenceType = occurrenceType;
-		}
-		
-		
-	}
+	
 	
 	
 	

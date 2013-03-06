@@ -271,6 +271,7 @@ public class ModifiedNullnessAnalysis  extends ForwardBranchedFlowAnalysis
 		} else if(left instanceof Local && right instanceof Local) {
 			out.put(left, out.get(right));
 		} else {
+			//out.put(left, BOTTOM);
 			out.put(left, TOP);
 		}
 	}
@@ -318,9 +319,19 @@ public class ModifiedNullnessAnalysis  extends ForwardBranchedFlowAnalysis
 	 */
 	public boolean isAlwaysNullBefore(Unit s, Immediate i) {
 		AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
-		return ai.get(i)==NULL;
+		return ((ai.get(i)==NULL)||(ai.get(i)==TOP) );
+		
+		//top
 	}
 
+	
+	public boolean mayBeNullBefore(Unit s, Immediate i) {
+		AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
+		return ((ai.get(i)==NULL)||(ai.get(i)==TOP) );
+		
+		//top
+	}
+	
 	/**
 	 * Returns <code>true</code> if the analysis could determine that i is always non-null
 	 * before the statement s.
@@ -330,6 +341,9 @@ public class ModifiedNullnessAnalysis  extends ForwardBranchedFlowAnalysis
 	 */
 	public boolean isAlwaysNonNullBefore(Unit s, Immediate i) {
 		AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
+		System.out.println("DDDD"+"Unit :  "+s+"value :  "+"  ai.get(i) : "+ai.get(i) +"  ai.get(i)==NON_NULL   :   "+ (ai.get(i)==NON_NULL));
 		return ai.get(i)==NON_NULL;
+		
+		
 	}
 }

@@ -58,8 +58,8 @@ public class MainDriver {
 	    //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
 	  
 	  
-	//  String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
-	//  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
+	// 	  	  String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
+	//		  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
 	  
 
 		//	  String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
