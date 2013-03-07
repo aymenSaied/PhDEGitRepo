@@ -1,0 +1,8 @@
+class name;;number of detected pattern
+java.math.MathContext;;4
+java.math.BitSieve;;1
+java.math.BigInteger;;59
+java.math.MutableBigInteger;;27
+java.math.BigDecimal;;50
+java.math.RoundingMode;;0
+java.math.SignedMutableBigInteger;;2

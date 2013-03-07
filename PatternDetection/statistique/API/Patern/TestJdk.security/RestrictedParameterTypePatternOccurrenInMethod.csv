@@ -1,0 +1,13 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.security.KeyStoreSpi;;engineSetEntry;;2;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException
+*;; * ;; * ;;*;;r3;;3
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r3 is type Restricted  it can be , java.security.KeyStore$PasswordProtection
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r3 is type Restricted  it can be , java.security.KeyStore$PasswordProtection
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r3 is type Restricted  it can be , java.security.KeyStore$PasswordProtection
+*;; * ;; * ;;*;;r2;;3
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r2 is type Restricted  it can be , java.security.KeyStore$TrustedCertificateEntry
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r2 is type Restricted  it can be , java.security.KeyStore$TrustedCertificateEntry, java.security.KeyStore$PrivateKeyEntry
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r2 is type Restricted  it can be , java.security.KeyStore$TrustedCertificateEntry, java.security.KeyStore$PrivateKeyEntry, java.security.KeyStore$SecretKeyEntry
+java.security.UnresolvedPermissionCollection;;add;;1;;public void add(java.security.Permission)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r1 is type Restricted  it can be , java.security.UnresolvedPermission

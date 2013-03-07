@@ -1,0 +1,18 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.net.URL;;<init>;;public void <init>(java.lang.String, java.lang.String, int, java.lang.String, java.net.URLStreamHandler) throws java.net.MalformedURLException;;1
+java.net.URL;;set;;protected void set(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);;1
+java.net.InetSocketAddress;;<init>;;public void <init>(java.net.InetAddress, int);;1
+java.net.Socket;;<init>;;public void <init>(java.lang.String, int) throws java.net.UnknownHostException, java.io.IOException;;1
+java.net.Socket;;<init>;;public void <init>(java.net.InetAddress, int) throws java.io.IOException;;1
+java.net.Socket;;<init>;;public void <init>(java.lang.String, int, java.net.InetAddress, int) throws java.io.IOException;;1
+java.net.Socket;;<init>;;public void <init>(java.net.InetAddress, int, java.net.InetAddress, int) throws java.io.IOException;;1
+java.net.Socket;;<init>;;public void <init>(java.lang.String, int, boolean) throws java.io.IOException;;1
+java.net.Socket;;<init>;;public void <init>(java.net.InetAddress, int, boolean) throws java.io.IOException;;1
+java.net.Socket;;bind;;public void bind(java.net.SocketAddress) throws java.io.IOException;;1
+java.net.ServerSocket;;bind;;public void bind(java.net.SocketAddress, int) throws java.io.IOException;;1
+java.net.URLStreamHandler;;setURL;;protected void setURL(java.net.URL, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String);;1
+java.net.CookieManager;;<init>;;public void <init>(java.net.CookieStore, java.net.CookiePolicy);;2
+java.net.HttpCookie;;setDomain;;public void setDomain(java.lang.String);;1
+java.net.DatagramSocket;;bind;;public synchronized void bind(java.net.SocketAddress) throws java.net.SocketException;;1
+java.net.DatagramSocket;;checkAddress;;void checkAddress(java.net.InetAddress, java.lang.String);;1
+java.net.URLClassLoader;;definePackage;;protected java.lang.Package definePackage(java.lang.String, java.util.jar.Manifest, java.net.URL) throws java.lang.IllegalArgumentException;;1

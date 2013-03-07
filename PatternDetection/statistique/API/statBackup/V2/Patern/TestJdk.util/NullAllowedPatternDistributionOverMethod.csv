@@ -1,0 +1,292 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.util.WeakHashMap;;unmaskNull;;static java.lang.Object unmaskNull(java.lang.Object);;1
+java.util.WeakHashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.AbstractMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.AbstractMap;;containsKey;;public boolean containsKey(java.lang.Object);;1
+java.util.AbstractMap;;get;;public java.lang.Object get(java.lang.Object);;1
+java.util.AbstractMap;;remove;;public java.lang.Object remove(java.lang.Object);;1
+java.util.AbstractCollection;;contains;;public boolean contains(java.lang.Object);;1
+java.util.AbstractCollection;;remove;;public boolean remove(java.lang.Object);;1
+java.util.Arrays;;hashCode;;public static int hashCode(long[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(int[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(short[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(char[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(byte[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(boolean[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(float[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(double[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(java.lang.Object[]);;1
+java.util.Arrays;;deepHashCode;;public static int deepHashCode(java.lang.Object[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(long[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(int[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(short[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(char[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(byte[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(boolean[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(float[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(double[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(java.lang.Object[]);;1
+java.util.Arrays;;deepToString;;public static java.lang.String deepToString(java.lang.Object[]);;1
+java.util.Locale;;getInstance;;static java.util.Locale getInstance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, sun.util.locale.LocaleExtensions);;1
+java.util.AbstractList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.AbstractList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.ArrayDeque;;removeFirstOccurrence;;public boolean removeFirstOccurrence(java.lang.Object);;1
+java.util.ArrayDeque;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.ArrayDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.HashMap;;get;;public java.lang.Object get(java.lang.Object);;1
+java.util.HashMap;;getEntry;;final java.util.HashMap$Entry getEntry(java.lang.Object);;1
+java.util.HashMap;;put;;public java.lang.Object put(java.lang.Object, java.lang.Object);;1
+java.util.HashMap;;removeEntryForKey;;final java.util.HashMap$Entry removeEntryForKey(java.lang.Object);;1
+java.util.HashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.HashMap;;addEntry;;void addEntry(int, java.lang.Object, java.lang.Object, int);;1
+java.util.InvalidPropertiesFormatException;;<init>;;public void <init>(java.lang.Throwable);;1
+java.util.ArrayList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.ArrayList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.ArrayList;;remove;;public boolean remove(java.lang.Object);;1
+java.util.TimSort;;sort;;static void sort(java.lang.Object[], int, int, java.util.Comparator);;1
+java.util.Date;;parse;;public static long parse(java.lang.String);;1
+java.util.concurrent.ConcurrentHashMap;;entryAt;;static final java.util.concurrent.ConcurrentHashMap$HashEntry entryAt(java.util.concurrent.ConcurrentHashMap$HashEntry[], int);;1
+java.util.concurrent.ConcurrentHashMap;;segmentAt;;static final java.util.concurrent.ConcurrentHashMap$Segment segmentAt(java.util.concurrent.ConcurrentHashMap$Segment[], int);;1
+java.util.Collections;;binarySearch;;public static int binarySearch(java.util.List, java.lang.Object, java.util.Comparator);;1
+java.util.Collections;;min;;public static java.lang.Object min(java.util.Collection, java.util.Comparator);;1
+java.util.Collections;;max;;public static java.lang.Object max(java.util.Collection, java.util.Comparator);;1
+java.util.Collections;;replaceAll;;public static boolean replaceAll(java.util.List, java.lang.Object, java.lang.Object);;1
+java.util.Collections;;reverseOrder;;public static java.util.Comparator reverseOrder(java.util.Comparator);;1
+java.util.Collections;;eq;;static boolean eq(java.lang.Object, java.lang.Object);;2
+java.util.Collections;;frequency;;public static int frequency(java.util.Collection, java.lang.Object);;1
+java.util.JumboEnumSet;;contains;;public boolean contains(java.lang.Object);;1
+java.util.JumboEnumSet;;remove;;public boolean remove(java.lang.Object);;1
+java.util.RegularEnumSet;;contains;;public boolean contains(java.lang.Object);;1
+java.util.RegularEnumSet;;remove;;public boolean remove(java.lang.Object);;1
+java.util.Formatter;;format;;public transient java.util.Formatter format(java.util.Locale, java.lang.String, java.lang.Object[]);;1
+java.util.Objects;;hashCode;;public static int hashCode(java.lang.Object);;1
+java.util.Objects;;toString;;public static java.lang.String toString(java.lang.Object, java.lang.String);;1
+java.util.LinkedHashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.LinkedList;;remove;;public boolean remove(java.lang.Object);;1
+java.util.LinkedList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.LinkedList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.LinkedList;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.Vector;;indexOf;;public synchronized int indexOf(java.lang.Object, int);;1
+java.util.Vector;;lastIndexOf;;public synchronized int lastIndexOf(java.lang.Object, int);;1
+java.util.TreeMap;;valEquals;;static final boolean valEquals(java.lang.Object, java.lang.Object);;2
+java.util.TreeMap;;exportEntry;;static java.util.Map$Entry exportEntry(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;keyOrNull;;static java.lang.Object keyOrNull(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;successor;;static java.util.TreeMap$Entry successor(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;predecessor;;static java.util.TreeMap$Entry predecessor(java.util.TreeMap$Entry);;1
+java.util.concurrent.ArrayBlockingQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.ArrayBlockingQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.ConcurrentSkipListMap;;remove;;public boolean remove(java.lang.Object, java.lang.Object);;1
+java.util.concurrent.Exchanger;;exchange;;public java.lang.Object exchange(java.lang.Object) throws java.lang.InterruptedException;;1
+java.util.concurrent.Exchanger;;exchange;;public java.lang.Object exchange(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException, java.util.concurrent.TimeoutException;;1
+java.util.concurrent.LinkedBlockingQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ForkJoinPool;;deregisterWorker;;final void deregisterWorker(java.util.concurrent.ForkJoinWorkerThread, java.lang.Throwable);;1
+java.util.concurrent.ForkJoinWorkerThread;;onTermination;;protected void onTermination(java.lang.Throwable);;1
+java.util.concurrent.LinkedBlockingDeque;;removeFirstOccurrence;;public boolean removeFirstOccurrence(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingDeque;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.LinkedTransferQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.Phaser;;<init>;;public void <init>(java.util.concurrent.Phaser, int);;1
+java.util.jar.JarVerifier;;beginEntry;;public void beginEntry(java.util.jar.JarEntry, sun.security.util.ManifestEntryVerifier) throws java.io.IOException;;1
+java.util.logging.StreamHandler;;setEncoding;;public void setEncoding(java.lang.String) throws java.lang.SecurityException, java.io.UnsupportedEncodingException;;1
+java.util.logging.Logger;;entering;;public void entering(java.lang.String, java.lang.String, java.lang.Object[]);;1
+java.util.logging.Logger;;removeHandler;;public void removeHandler(java.util.logging.Handler) throws java.lang.SecurityException;;1
+java.util.logging.XMLFormatter;;getHead;;public java.lang.String getHead(java.util.logging.Handler);;1
+java.util.prefs.AbstractPreferences;;<init>;;protected void <init>(java.util.prefs.AbstractPreferences, java.lang.String);;1
+java.util.WeakHashMap;;unmaskNull;;static java.lang.Object unmaskNull(java.lang.Object);;1
+java.util.WeakHashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.AbstractMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.AbstractMap;;containsKey;;public boolean containsKey(java.lang.Object);;1
+java.util.AbstractMap;;get;;public java.lang.Object get(java.lang.Object);;1
+java.util.AbstractMap;;remove;;public java.lang.Object remove(java.lang.Object);;1
+java.util.AbstractCollection;;contains;;public boolean contains(java.lang.Object);;1
+java.util.AbstractCollection;;remove;;public boolean remove(java.lang.Object);;1
+java.util.Arrays;;hashCode;;public static int hashCode(long[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(int[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(short[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(char[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(byte[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(boolean[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(float[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(double[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(java.lang.Object[]);;1
+java.util.Arrays;;deepHashCode;;public static int deepHashCode(java.lang.Object[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(long[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(int[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(short[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(char[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(byte[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(boolean[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(float[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(double[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(java.lang.Object[]);;1
+java.util.Arrays;;deepToString;;public static java.lang.String deepToString(java.lang.Object[]);;1
+java.util.Locale;;getInstance;;static java.util.Locale getInstance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, sun.util.locale.LocaleExtensions);;1
+java.util.AbstractList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.AbstractList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.ArrayDeque;;removeFirstOccurrence;;public boolean removeFirstOccurrence(java.lang.Object);;1
+java.util.ArrayDeque;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.ArrayDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.HashMap;;get;;public java.lang.Object get(java.lang.Object);;1
+java.util.HashMap;;getEntry;;final java.util.HashMap$Entry getEntry(java.lang.Object);;1
+java.util.HashMap;;put;;public java.lang.Object put(java.lang.Object, java.lang.Object);;1
+java.util.HashMap;;removeEntryForKey;;final java.util.HashMap$Entry removeEntryForKey(java.lang.Object);;1
+java.util.HashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.HashMap;;addEntry;;void addEntry(int, java.lang.Object, java.lang.Object, int);;1
+java.util.InvalidPropertiesFormatException;;<init>;;public void <init>(java.lang.Throwable);;1
+java.util.ArrayList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.ArrayList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.ArrayList;;remove;;public boolean remove(java.lang.Object);;1
+java.util.TimSort;;sort;;static void sort(java.lang.Object[], int, int, java.util.Comparator);;1
+java.util.Date;;parse;;public static long parse(java.lang.String);;1
+java.util.concurrent.ConcurrentHashMap;;entryAt;;static final java.util.concurrent.ConcurrentHashMap$HashEntry entryAt(java.util.concurrent.ConcurrentHashMap$HashEntry[], int);;1
+java.util.concurrent.ConcurrentHashMap;;segmentAt;;static final java.util.concurrent.ConcurrentHashMap$Segment segmentAt(java.util.concurrent.ConcurrentHashMap$Segment[], int);;1
+java.util.Collections;;binarySearch;;public static int binarySearch(java.util.List, java.lang.Object, java.util.Comparator);;1
+java.util.Collections;;min;;public static java.lang.Object min(java.util.Collection, java.util.Comparator);;1
+java.util.Collections;;max;;public static java.lang.Object max(java.util.Collection, java.util.Comparator);;1
+java.util.Collections;;replaceAll;;public static boolean replaceAll(java.util.List, java.lang.Object, java.lang.Object);;1
+java.util.Collections;;reverseOrder;;public static java.util.Comparator reverseOrder(java.util.Comparator);;1
+java.util.Collections;;eq;;static boolean eq(java.lang.Object, java.lang.Object);;2
+java.util.Collections;;frequency;;public static int frequency(java.util.Collection, java.lang.Object);;1
+java.util.JumboEnumSet;;contains;;public boolean contains(java.lang.Object);;1
+java.util.JumboEnumSet;;remove;;public boolean remove(java.lang.Object);;1
+java.util.RegularEnumSet;;contains;;public boolean contains(java.lang.Object);;1
+java.util.RegularEnumSet;;remove;;public boolean remove(java.lang.Object);;1
+java.util.Formatter;;format;;public transient java.util.Formatter format(java.util.Locale, java.lang.String, java.lang.Object[]);;1
+java.util.Objects;;hashCode;;public static int hashCode(java.lang.Object);;1
+java.util.Objects;;toString;;public static java.lang.String toString(java.lang.Object, java.lang.String);;1
+java.util.LinkedHashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.LinkedList;;remove;;public boolean remove(java.lang.Object);;1
+java.util.LinkedList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.LinkedList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.LinkedList;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.Vector;;indexOf;;public synchronized int indexOf(java.lang.Object, int);;1
+java.util.Vector;;lastIndexOf;;public synchronized int lastIndexOf(java.lang.Object, int);;1
+java.util.TreeMap;;valEquals;;static final boolean valEquals(java.lang.Object, java.lang.Object);;2
+java.util.TreeMap;;exportEntry;;static java.util.Map$Entry exportEntry(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;keyOrNull;;static java.lang.Object keyOrNull(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;successor;;static java.util.TreeMap$Entry successor(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;predecessor;;static java.util.TreeMap$Entry predecessor(java.util.TreeMap$Entry);;1
+java.util.concurrent.ArrayBlockingQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.ArrayBlockingQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.ConcurrentSkipListMap;;remove;;public boolean remove(java.lang.Object, java.lang.Object);;1
+java.util.concurrent.Exchanger;;exchange;;public java.lang.Object exchange(java.lang.Object) throws java.lang.InterruptedException;;1
+java.util.concurrent.Exchanger;;exchange;;public java.lang.Object exchange(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException, java.util.concurrent.TimeoutException;;1
+java.util.concurrent.LinkedBlockingQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ForkJoinPool;;deregisterWorker;;final void deregisterWorker(java.util.concurrent.ForkJoinWorkerThread, java.lang.Throwable);;1
+java.util.concurrent.ForkJoinWorkerThread;;onTermination;;protected void onTermination(java.lang.Throwable);;1
+java.util.concurrent.LinkedBlockingDeque;;removeFirstOccurrence;;public boolean removeFirstOccurrence(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingDeque;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.LinkedTransferQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.Phaser;;<init>;;public void <init>(java.util.concurrent.Phaser, int);;1
+java.util.jar.JarVerifier;;beginEntry;;public void beginEntry(java.util.jar.JarEntry, sun.security.util.ManifestEntryVerifier) throws java.io.IOException;;1
+java.util.logging.StreamHandler;;setEncoding;;public void setEncoding(java.lang.String) throws java.lang.SecurityException, java.io.UnsupportedEncodingException;;1
+java.util.logging.Logger;;entering;;public void entering(java.lang.String, java.lang.String, java.lang.Object[]);;1
+java.util.logging.Logger;;removeHandler;;public void removeHandler(java.util.logging.Handler) throws java.lang.SecurityException;;1
+java.util.logging.XMLFormatter;;getHead;;public java.lang.String getHead(java.util.logging.Handler);;1
+java.util.prefs.AbstractPreferences;;<init>;;protected void <init>(java.util.prefs.AbstractPreferences, java.lang.String);;1
+java.util.WeakHashMap;;unmaskNull;;static java.lang.Object unmaskNull(java.lang.Object);;1
+java.util.WeakHashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.AbstractMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.AbstractMap;;containsKey;;public boolean containsKey(java.lang.Object);;1
+java.util.AbstractMap;;get;;public java.lang.Object get(java.lang.Object);;1
+java.util.AbstractMap;;remove;;public java.lang.Object remove(java.lang.Object);;1
+java.util.AbstractCollection;;contains;;public boolean contains(java.lang.Object);;1
+java.util.AbstractCollection;;remove;;public boolean remove(java.lang.Object);;1
+java.util.Arrays;;hashCode;;public static int hashCode(long[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(int[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(short[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(char[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(byte[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(boolean[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(float[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(double[]);;1
+java.util.Arrays;;hashCode;;public static int hashCode(java.lang.Object[]);;1
+java.util.Arrays;;deepHashCode;;public static int deepHashCode(java.lang.Object[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(long[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(int[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(short[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(char[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(byte[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(boolean[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(float[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(double[]);;1
+java.util.Arrays;;toString;;public static java.lang.String toString(java.lang.Object[]);;1
+java.util.Arrays;;deepToString;;public static java.lang.String deepToString(java.lang.Object[]);;1
+java.util.Locale;;getInstance;;static java.util.Locale getInstance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, sun.util.locale.LocaleExtensions);;1
+java.util.AbstractList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.AbstractList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.ArrayDeque;;removeFirstOccurrence;;public boolean removeFirstOccurrence(java.lang.Object);;1
+java.util.ArrayDeque;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.ArrayDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.HashMap;;get;;public java.lang.Object get(java.lang.Object);;1
+java.util.HashMap;;getEntry;;final java.util.HashMap$Entry getEntry(java.lang.Object);;1
+java.util.HashMap;;put;;public java.lang.Object put(java.lang.Object, java.lang.Object);;1
+java.util.HashMap;;removeEntryForKey;;final java.util.HashMap$Entry removeEntryForKey(java.lang.Object);;1
+java.util.HashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.HashMap;;addEntry;;void addEntry(int, java.lang.Object, java.lang.Object, int);;1
+java.util.InvalidPropertiesFormatException;;<init>;;public void <init>(java.lang.Throwable);;1
+java.util.ArrayList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.ArrayList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.ArrayList;;remove;;public boolean remove(java.lang.Object);;1
+java.util.TimSort;;sort;;static void sort(java.lang.Object[], int, int, java.util.Comparator);;1
+java.util.Date;;parse;;public static long parse(java.lang.String);;1
+java.util.concurrent.ConcurrentHashMap;;entryAt;;static final java.util.concurrent.ConcurrentHashMap$HashEntry entryAt(java.util.concurrent.ConcurrentHashMap$HashEntry[], int);;1
+java.util.concurrent.ConcurrentHashMap;;segmentAt;;static final java.util.concurrent.ConcurrentHashMap$Segment segmentAt(java.util.concurrent.ConcurrentHashMap$Segment[], int);;1
+java.util.Collections;;binarySearch;;public static int binarySearch(java.util.List, java.lang.Object, java.util.Comparator);;1
+java.util.Collections;;min;;public static java.lang.Object min(java.util.Collection, java.util.Comparator);;1
+java.util.Collections;;max;;public static java.lang.Object max(java.util.Collection, java.util.Comparator);;1
+java.util.Collections;;replaceAll;;public static boolean replaceAll(java.util.List, java.lang.Object, java.lang.Object);;1
+java.util.Collections;;reverseOrder;;public static java.util.Comparator reverseOrder(java.util.Comparator);;1
+java.util.Collections;;eq;;static boolean eq(java.lang.Object, java.lang.Object);;2
+java.util.Collections;;frequency;;public static int frequency(java.util.Collection, java.lang.Object);;1
+java.util.JumboEnumSet;;contains;;public boolean contains(java.lang.Object);;1
+java.util.JumboEnumSet;;remove;;public boolean remove(java.lang.Object);;1
+java.util.RegularEnumSet;;contains;;public boolean contains(java.lang.Object);;1
+java.util.RegularEnumSet;;remove;;public boolean remove(java.lang.Object);;1
+java.util.Formatter;;format;;public transient java.util.Formatter format(java.util.Locale, java.lang.String, java.lang.Object[]);;1
+java.util.Objects;;hashCode;;public static int hashCode(java.lang.Object);;1
+java.util.Objects;;toString;;public static java.lang.String toString(java.lang.Object, java.lang.String);;1
+java.util.LinkedHashMap;;containsValue;;public boolean containsValue(java.lang.Object);;1
+java.util.LinkedList;;remove;;public boolean remove(java.lang.Object);;1
+java.util.LinkedList;;indexOf;;public int indexOf(java.lang.Object);;1
+java.util.LinkedList;;lastIndexOf;;public int lastIndexOf(java.lang.Object);;1
+java.util.LinkedList;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.Vector;;indexOf;;public synchronized int indexOf(java.lang.Object, int);;1
+java.util.Vector;;lastIndexOf;;public synchronized int lastIndexOf(java.lang.Object, int);;1
+java.util.TreeMap;;valEquals;;static final boolean valEquals(java.lang.Object, java.lang.Object);;2
+java.util.TreeMap;;exportEntry;;static java.util.Map$Entry exportEntry(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;keyOrNull;;static java.lang.Object keyOrNull(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;successor;;static java.util.TreeMap$Entry successor(java.util.TreeMap$Entry);;1
+java.util.TreeMap;;predecessor;;static java.util.TreeMap$Entry predecessor(java.util.TreeMap$Entry);;1
+java.util.concurrent.ArrayBlockingQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.ArrayBlockingQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ConcurrentLinkedQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.ConcurrentSkipListMap;;remove;;public boolean remove(java.lang.Object, java.lang.Object);;1
+java.util.concurrent.Exchanger;;exchange;;public java.lang.Object exchange(java.lang.Object) throws java.lang.InterruptedException;;1
+java.util.concurrent.Exchanger;;exchange;;public java.lang.Object exchange(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException, java.util.concurrent.TimeoutException;;1
+java.util.concurrent.LinkedBlockingQueue;;remove;;public boolean remove(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.ForkJoinPool;;deregisterWorker;;final void deregisterWorker(java.util.concurrent.ForkJoinWorkerThread, java.lang.Throwable);;1
+java.util.concurrent.ForkJoinWorkerThread;;onTermination;;protected void onTermination(java.lang.Throwable);;1
+java.util.concurrent.LinkedBlockingDeque;;removeFirstOccurrence;;public boolean removeFirstOccurrence(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingDeque;;removeLastOccurrence;;public boolean removeLastOccurrence(java.lang.Object);;1
+java.util.concurrent.LinkedBlockingDeque;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.LinkedTransferQueue;;contains;;public boolean contains(java.lang.Object);;1
+java.util.concurrent.Phaser;;<init>;;public void <init>(java.util.concurrent.Phaser, int);;1
+java.util.jar.JarVerifier;;beginEntry;;public void beginEntry(java.util.jar.JarEntry, sun.security.util.ManifestEntryVerifier) throws java.io.IOException;;1
+java.util.logging.StreamHandler;;setEncoding;;public void setEncoding(java.lang.String) throws java.lang.SecurityException, java.io.UnsupportedEncodingException;;1
+java.util.logging.Logger;;entering;;public void entering(java.lang.String, java.lang.String, java.lang.Object[]);;1
+java.util.logging.Logger;;removeHandler;;public void removeHandler(java.util.logging.Handler) throws java.lang.SecurityException;;1
+java.util.logging.XMLFormatter;;getHead;;public java.lang.String getHead(java.util.logging.Handler);;1
+java.util.prefs.AbstractPreferences;;<init>;;protected void <init>(java.util.prefs.AbstractPreferences, java.lang.String);;1

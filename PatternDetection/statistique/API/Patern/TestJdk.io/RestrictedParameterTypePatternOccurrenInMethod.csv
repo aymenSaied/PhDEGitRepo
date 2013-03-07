@@ -1,0 +1,8 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.io.ObjectStreamField;;compareTo;;1;;public int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $b0;;pattern detected param  r1 is type Restricted  it can be , java.io.ObjectStreamField
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i1;;pattern detected param  r1 is type Restricted  it can be , java.io.ObjectStreamField
+java.io.File;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.io.File

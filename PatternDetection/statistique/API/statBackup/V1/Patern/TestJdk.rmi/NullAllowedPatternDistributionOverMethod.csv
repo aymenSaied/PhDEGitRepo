@@ -1,0 +1,5 @@
+class name;;Method name;;number of detected pattern
+java.rmi.MarshalledObject;;<init>;;1
+java.rmi.registry.LocateRegistry;;getRegistry;;1
+java.rmi.server.RemoteServer;;setLog;;1
+java.rmi.server.RMIClassLoader;;loadClass;;1

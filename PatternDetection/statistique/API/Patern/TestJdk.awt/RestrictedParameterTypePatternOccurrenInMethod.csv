@@ -1,0 +1,25 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.awt.RenderingHints;;containsKey;;1;;public boolean containsKey(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $z0;;pattern detected param  r1 is type Restricted  it can be , java.awt.RenderingHints$Key
+java.awt.RenderingHints;;get;;1;;public java.lang.Object get(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $r4;;pattern detected param  r1 is type Restricted  it can be , java.awt.RenderingHints$Key
+java.awt.RenderingHints;;put;;1;;public java.lang.Object put(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $r12;;pattern detected param  r1 is type Restricted  it can be , java.awt.RenderingHints$Key
+java.awt.RenderingHints;;remove;;1;;public java.lang.Object remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $r4;;pattern detected param  r1 is type Restricted  it can be , java.awt.RenderingHints$Key
+java.awt.Dialog;;<init>;;1;;public void <init>(java.awt.Window, java.lang.String, java.awt.Dialog$ModalityType)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r1 is type Restricted  it can be , java.awt.Frame, java.awt.Dialog
+java.awt.Dialog;;<init>;;1;;public void <init>(java.awt.Window, java.lang.String, java.awt.Dialog$ModalityType, java.awt.GraphicsConfiguration)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r1 is type Restricted  it can be , java.awt.Frame, java.awt.Dialog
+java.awt.BorderLayout;;addLayoutComponent;;1;;public void addLayoutComponent(java.awt.Component, java.lang.Object)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r2 is type Restricted  it can be , java.lang.String
+java.awt.CardLayout;;addLayoutComponent;;1;;public void addLayoutComponent(java.awt.Component, java.lang.Object)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r2 is type Restricted  it can be , java.lang.String

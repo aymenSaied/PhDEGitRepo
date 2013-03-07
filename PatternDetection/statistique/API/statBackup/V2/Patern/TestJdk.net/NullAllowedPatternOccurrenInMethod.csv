@@ -1,0 +1,54 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.net.URL;;<init>;;1;;public void <init>(java.lang.String, java.lang.String, int, java.lang.String, java.net.URLStreamHandler) throws java.net.MalformedURLException
+*;; * ;; * ;;*;;r4;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r36 = staticinvoke <java.net.URL: java.net.URLStreamHandler getURLStreamHandler(java.lang.String)>(r7);;NullAllowed pattern detected param is  :r4
+java.net.URL;;set;;1;;protected void set(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r6;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r12 = r5;;NullAllowed pattern detected param is  :r6
+java.net.InetSocketAddress;;<init>;;1;;public void <init>(java.net.InetAddress, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r7 = staticinvoke <java.net.InetAddress: java.net.InetAddress anyLocalAddress()>();;NullAllowed pattern detected param is  :r1
+java.net.Socket;;<init>;;1;;public void <init>(java.lang.String, int) throws java.net.UnknownHostException, java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.net.InetSocketAddress;;NullAllowed pattern detected param is  :r1
+java.net.Socket;;<init>;;1;;public void <init>(java.net.InetAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.net.Socket;;<init>;;1;;public void <init>(java.lang.String, int, java.net.InetAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = new java.net.InetSocketAddress;;NullAllowed pattern detected param is  :r1
+java.net.Socket;;<init>;;1;;public void <init>(java.net.InetAddress, int, java.net.InetAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = null;;NullAllowed pattern detected param is  :r1
+java.net.Socket;;<init>;;1;;public void <init>(java.lang.String, int, boolean) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.net.InetSocketAddress;;NullAllowed pattern detected param is  :r1
+java.net.Socket;;<init>;;1;;public void <init>(java.net.InetAddress, int, boolean) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.net.Socket;;bind;;1;;public void bind(java.net.SocketAddress) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;$r8 = new java.net.InetSocketAddress;;NullAllowed pattern detected param is  :r1 it initialize local r2
+java.net.ServerSocket;;bind;;1;;public void bind(java.net.SocketAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = new java.net.InetSocketAddress;;NullAllowed pattern detected param is  :r1
+java.net.URLStreamHandler;;setURL;;1;;protected void setURL(java.net.URL, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r4;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;r8 = null;;NullAllowed pattern detected param is  :r4 it initialize local r14
+java.net.CookieManager;;<init>;;2;;public void <init>(java.net.CookieStore, java.net.CookiePolicy)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = new java.net.InMemoryCookieStore;;NullAllowed pattern detected param is  :r1
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = <java.net.CookiePolicy: java.net.CookiePolicy ACCEPT_ORIGINAL_SERVER>;;NullAllowed pattern detected param is  :r2
+java.net.HttpCookie;;setDomain;;1;;public void setDomain(java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.net.HttpCookie: java.lang.String domain> = r1;;NullAllowed pattern detected param is  :r1
+java.net.DatagramSocket;;bind;;1;;public synchronized void bind(java.net.SocketAddress) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r8 = new java.net.InetSocketAddress;;NullAllowed pattern detected param is  :r1
+java.net.DatagramSocket;;checkAddress;;1;;void checkAddress(java.net.InetAddress, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.net.URLClassLoader;;definePackage;;1;;protected java.lang.Package definePackage(java.lang.String, java.util.jar.Manifest, java.net.URL) throws java.lang.IllegalArgumentException
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;r13 = virtualinvoke r2.<java.util.jar.Manifest: java.util.jar.Attributes getAttributes(java.lang.String)>(r4);;NullAllowed pattern detected param is  :r3 it initialize local r12

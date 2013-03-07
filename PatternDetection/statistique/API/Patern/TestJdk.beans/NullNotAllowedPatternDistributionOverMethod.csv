@@ -1,0 +1,78 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.beans.PropertyChangeSupport;;<init>;;public void <init>(java.lang.Object);;1
+java.beans.PropertyChangeSupport;;firePropertyChange;;public void firePropertyChange(java.beans.PropertyChangeEvent);;1
+java.beans.BeanDescriptor;;<init>;;public void <init>(java.lang.Class, java.lang.Class);;1
+java.beans.BeanDescriptor;;<init>;;void <init>(java.beans.BeanDescriptor);;1
+java.beans.FeatureDescriptor;;<init>;;void <init>(java.beans.FeatureDescriptor, java.beans.FeatureDescriptor);;2
+java.beans.FeatureDescriptor;;<init>;;void <init>(java.beans.FeatureDescriptor);;1
+java.beans.FeatureDescriptor;;getReturnType;;static java.lang.Class getReturnType(java.lang.Class, java.lang.reflect.Method);;1
+java.beans.FeatureDescriptor;;getParameterTypes;;static java.lang.Class[] getParameterTypes(java.lang.Class, java.lang.reflect.Method);;1
+java.beans.FeatureDescriptor;;appendTo;;static void appendTo(java.lang.StringBuilder, java.lang.String, java.lang.Object);;1
+java.beans.FeatureDescriptor;;appendTo;;static void appendTo(java.lang.StringBuilder, java.lang.String, boolean);;1
+java.beans.EventSetDescriptor;;<init>;;public void <init>(java.lang.Class, java.lang.String, java.lang.Class, java.lang.String[], java.lang.String, java.lang.String, java.lang.String) throws java.beans.IntrospectionException;;1
+java.beans.EventSetDescriptor;;<init>;;void <init>(java.beans.EventSetDescriptor, java.beans.EventSetDescriptor);;2
+java.beans.EventSetDescriptor;;<init>;;void <init>(java.beans.EventSetDescriptor);;1
+java.beans.PropertyDescriptor;;<init>;;public void <init>(java.lang.String, java.lang.Class, java.lang.String, java.lang.String) throws java.beans.IntrospectionException;;1
+java.beans.PropertyDescriptor;;<init>;;void <init>(java.lang.Class, java.lang.String, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException;;1
+java.beans.PropertyDescriptor;;setClass0;;void setClass0(java.lang.Class);;1
+java.beans.PropertyDescriptor;;<init>;;void <init>(java.beans.PropertyDescriptor, java.beans.PropertyDescriptor);;2
+java.beans.PropertyDescriptor;;<init>;;void <init>(java.beans.PropertyDescriptor);;1
+java.beans.MethodDescriptor;;<init>;;public void <init>(java.lang.reflect.Method, java.beans.ParameterDescriptor[]);;1
+java.beans.MethodDescriptor;;<init>;;void <init>(java.beans.MethodDescriptor, java.beans.MethodDescriptor);;2
+java.beans.MethodDescriptor;;<init>;;void <init>(java.beans.MethodDescriptor);;1
+java.beans.MethodDescriptor;;appendTo;;void appendTo(java.lang.StringBuilder);;1
+java.beans.Beans;;instantiate;;public static java.lang.Object instantiate(java.lang.ClassLoader, java.lang.String, java.beans.beancontext.BeanContext, java.beans.AppletInitializer) throws java.io.IOException, java.lang.ClassNotFoundException;;2
+java.beans.Beans;;isInstanceOf;;public static boolean isInstanceOf(java.lang.Object, java.lang.Class);;1
+java.beans.Introspector;;flushFromCaches;;public static void flushFromCaches(java.lang.Class);;1
+java.beans.Introspector;;instantiate;;static java.lang.Object instantiate(java.lang.Class, java.lang.String) throws java.lang.InstantiationException, java.lang.IllegalAccessException, java.lang.ClassNotFoundException;;1
+java.beans.IndexedPropertyDescriptor;;<init>;;void <init>(java.beans.PropertyDescriptor, java.beans.PropertyDescriptor);;2
+java.beans.IndexedPropertyDescriptor;;<init>;;void <init>(java.beans.IndexedPropertyDescriptor);;1
+java.beans.ChangeListenerMap;;remove;;public final synchronized void remove(java.lang.String, java.util.EventListener);;1
+java.beans.DefaultPersistenceDelegate;;mutatesTo;;protected boolean mutatesTo(java.lang.Object, java.lang.Object);;1
+java.beans.DefaultPersistenceDelegate;;instantiate;;protected java.beans.Expression instantiate(java.lang.Object, java.beans.Encoder);;2
+java.beans.DefaultPersistenceDelegate;;invokeStatement;;static void invokeStatement(java.lang.Object, java.lang.String, java.lang.Object[], java.beans.Encoder);;1
+java.beans.DefaultPersistenceDelegate;;initialize;;protected void initialize(java.lang.Class, java.lang.Object, java.lang.Object, java.beans.Encoder);;1
+java.beans.PersistenceDelegate;;writeObject;;public void writeObject(java.lang.Object, java.beans.Encoder);;2
+java.beans.PersistenceDelegate;;initialize;;protected void initialize(java.lang.Class, java.lang.Object, java.lang.Object, java.beans.Encoder);;2
+java.beans.Encoder;;getValue;;java.lang.Object getValue(java.beans.Expression);;1
+java.beans.Encoder;;writeStatement;;public void writeStatement(java.beans.Statement);;1
+java.beans.VetoableChangeSupport;;<init>;;public void <init>(java.lang.Object);;1
+java.beans.VetoableChangeSupport;;fireVetoableChange;;public void fireVetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException;;1
+java.beans.MetaData;;getPrivateFieldValue;;static java.lang.Object getPrivateFieldValue(java.lang.Object, java.lang.String);;1
+java.beans.EventHandler;;<init>;;public void <init>(java.lang.Object, java.lang.String, java.lang.String, java.lang.String);;2
+java.beans.EventHandler;;create;;public static java.lang.Object create(java.lang.Class, java.lang.Object, java.lang.String, java.lang.String, java.lang.String);;2
+java.beans.NameGenerator;;unqualifiedClassName;;public static java.lang.String unqualifiedClassName(java.lang.Class);;1
+java.beans.IndexedPropertyChangeEvent;;appendTo;;void appendTo(java.lang.StringBuilder);;1
+java.beans.ReflectionUtils;;getPrivateField;;public static java.lang.Object getPrivateField(java.lang.Object, java.lang.Class, java.lang.String, java.beans.ExceptionListener);;1
+java.beans.PropertyEditorSupport;;<init>;;public void <init>(java.lang.Object);;1
+java.beans.XMLEncoder;;<init>;;public void <init>(java.io.OutputStream, java.lang.String, boolean, int);;1
+java.beans.XMLEncoder;;writeStatement;;public void writeStatement(java.beans.Statement);;1
+java.beans.beancontext.BeanContextMembershipEvent;;<init>;;public void <init>(java.beans.beancontext.BeanContext, java.util.Collection);;1
+java.beans.beancontext.BeanContextMembershipEvent;;<init>;;public void <init>(java.beans.beancontext.BeanContext, java.lang.Object[]);;1
+java.beans.beancontext.BeanContextServicesSupport;;addBeanContextServicesListener;;public void addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener);;1
+java.beans.beancontext.BeanContextServicesSupport;;removeBeanContextServicesListener;;public void removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener);;1
+java.beans.beancontext.BeanContextServicesSupport;;addService;;protected boolean addService(java.lang.Class, java.beans.beancontext.BeanContextServiceProvider, boolean);;2
+java.beans.beancontext.BeanContextServicesSupport;;revokeService;;public void revokeService(java.lang.Class, java.beans.beancontext.BeanContextServiceProvider, boolean);;2
+java.beans.beancontext.BeanContextServicesSupport;;hasService;;public synchronized boolean hasService(java.lang.Class);;1
+java.beans.beancontext.BeanContextServicesSupport;;getService;;public java.lang.Object getService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Class, java.lang.Object, java.beans.beancontext.BeanContextServiceRevokedListener) throws java.util.TooManyListenersException;;4
+java.beans.beancontext.BeanContextServicesSupport;;releaseService;;public void releaseService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Object);;3
+java.beans.beancontext.BeanContextServicesSupport;;serviceAvailable;;public void serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent);;1
+java.beans.beancontext.BeanContextServicesSupport;;serviceRevoked;;public void serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent);;1
+java.beans.beancontext.BeanContextServicesSupport;;childJustRemovedHook;;protected void childJustRemovedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild);;1
+java.beans.beancontext.BeanContextServicesSupport;;bcsPreSerializationHook;;protected synchronized void bcsPreSerializationHook(java.io.ObjectOutputStream) throws java.io.IOException;;1
+java.beans.beancontext.BeanContextServicesSupport;;bcsPreDeserializationHook;;protected synchronized void bcsPreDeserializationHook(java.io.ObjectInputStream) throws java.io.IOException, java.lang.ClassNotFoundException;;1
+java.beans.beancontext.BeanContextSupport;;add;;public boolean add(java.lang.Object);;1
+java.beans.beancontext.BeanContextSupport;;remove;;protected boolean remove(java.lang.Object, boolean);;1
+java.beans.beancontext.BeanContextSupport;;containsAll;;public boolean containsAll(java.util.Collection);;1
+java.beans.beancontext.BeanContextSupport;;addBeanContextMembershipListener;;public void addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener);;1
+java.beans.beancontext.BeanContextSupport;;removeBeanContextMembershipListener;;public void removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener);;1
+java.beans.beancontext.BeanContextSupport;;getResourceAsStream;;public java.io.InputStream getResourceAsStream(java.lang.String, java.beans.beancontext.BeanContextChild);;2
+java.beans.beancontext.BeanContextSupport;;getResource;;public java.net.URL getResource(java.lang.String, java.beans.beancontext.BeanContextChild);;2
+java.beans.beancontext.BeanContextSupport;;serialize;;protected final void serialize(java.io.ObjectOutputStream, java.util.Collection) throws java.io.IOException;;2
+java.beans.beancontext.BeanContextSupport;;deserialize;;protected final void deserialize(java.io.ObjectInputStream, java.util.Collection) throws java.io.IOException, java.lang.ClassNotFoundException;;2
+java.beans.beancontext.BeanContextSupport;;writeChildren;;public final void writeChildren(java.io.ObjectOutputStream) throws java.io.IOException;;1
+java.beans.beancontext.BeanContextSupport;;readChildren;;public final void readChildren(java.io.ObjectInputStream) throws java.io.IOException, java.lang.ClassNotFoundException;;1
+java.beans.beancontext.BeanContextSupport;;vetoableChange;;public void vetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException;;1
+java.beans.beancontext.BeanContextSupport;;propertyChange;;public void propertyChange(java.beans.PropertyChangeEvent);;1
+java.beans.beancontext.BeanContextSupport;;getChildBeanContextChild;;protected static final java.beans.beancontext.BeanContextChild getChildBeanContextChild(java.lang.Object);;1
+java.beans.beancontext.BeanContextSupport;;classEquals;;protected static final boolean classEquals(java.lang.Class, java.lang.Class);;2

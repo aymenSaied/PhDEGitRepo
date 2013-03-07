@@ -1,0 +1,93 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.io.PrintWriter;;write;;public void write(java.lang.String);;1
+java.io.ObjectInputStream;;resolveClass;;protected java.lang.Class resolveClass(java.io.ObjectStreamClass) throws java.io.IOException, java.lang.ClassNotFoundException;;1
+java.io.ObjectInputStream;;resolveProxyClass;;protected java.lang.Class resolveProxyClass(java.lang.String[]) throws java.io.IOException, java.lang.ClassNotFoundException;;1
+java.io.ObjectInputStream;;read;;public int read(byte[], int, int) throws java.io.IOException;;1
+java.io.ObjectOutputStream;;writeClassDescriptor;;protected void writeClassDescriptor(java.io.ObjectStreamClass) throws java.io.IOException;;1
+java.io.ObjectOutputStream;;write;;public void write(byte[], int, int) throws java.io.IOException;;1
+java.io.FilterOutputStream;;write;;public void write(byte[], int, int) throws java.io.IOException;;1
+java.io.Writer;;<init>;;protected void <init>(java.lang.Object);;1
+java.io.Writer;;write;;public void write(java.lang.String) throws java.io.IOException;;1
+java.io.Writer;;write;;public void write(java.lang.String, int, int) throws java.io.IOException;;1
+java.io.InputStream;;read;;public int read(byte[], int, int) throws java.io.IOException;;1
+java.io.OutputStream;;write;;public void write(byte[], int, int) throws java.io.IOException;;1
+java.io.ObjectStreamField;;<init>;;public void <init>(java.lang.String, java.lang.Class, boolean);;1
+java.io.ObjectStreamField;;<init>;;void <init>(java.lang.String, java.lang.String, boolean);;2
+java.io.ObjectStreamField;;<init>;;void <init>(java.lang.reflect.Field, boolean, boolean);;1
+java.io.ObjectStreamField;;compareTo;;public int compareTo(java.lang.Object);;1
+java.io.Bits;;getBoolean;;static boolean getBoolean(byte[], int);;1
+java.io.Bits;;getChar;;static char getChar(byte[], int);;1
+java.io.Bits;;getShort;;static short getShort(byte[], int);;1
+java.io.Bits;;getInt;;static int getInt(byte[], int);;1
+java.io.Bits;;getLong;;static long getLong(byte[], int);;1
+java.io.Bits;;putBoolean;;static void putBoolean(byte[], int, boolean);;1
+java.io.Bits;;putChar;;static void putChar(byte[], int, char);;1
+java.io.Bits;;putShort;;static void putShort(byte[], int, short);;1
+java.io.Bits;;putInt;;static void putInt(byte[], int, int);;1
+java.io.Bits;;putLong;;static void putLong(byte[], int, long);;1
+java.io.Console;;readLine;;public transient java.lang.String readLine(java.lang.String, java.lang.Object[]);;1
+java.io.Console;;readPassword;;public transient char[] readPassword(java.lang.String, java.lang.Object[]);;1
+java.io.Reader;;<init>;;protected void <init>(java.lang.Object);;1
+java.io.Reader;;read;;public int read(java.nio.CharBuffer) throws java.io.IOException;;1
+java.io.BufferedWriter;;write;;public void write(java.lang.String, int, int) throws java.io.IOException;;1
+java.io.ByteArrayInputStream;;read;;public synchronized int read(byte[], int, int);;1
+java.io.ByteArrayOutputStream;;writeTo;;public synchronized void writeTo(java.io.OutputStream) throws java.io.IOException;;1
+java.io.CharArrayWriter;;write;;public void write(java.lang.String, int, int);;1
+java.io.CharArrayWriter;;writeTo;;public void writeTo(java.io.Writer) throws java.io.IOException;;1
+java.io.FileInputStream;;<init>;;public void <init>(java.io.FileDescriptor);;1
+java.io.FileOutputStream;;<init>;;public void <init>(java.io.FileDescriptor);;1
+java.io.File;;<init>;;public void <init>(java.lang.String);;1
+java.io.File;;<init>;;public void <init>(java.lang.String, java.lang.String);;1
+java.io.File;;<init>;;public void <init>(java.io.File, java.lang.String);;1
+java.io.File;;<init>;;public void <init>(java.net.URI);;1
+java.io.File;;renameTo;;public boolean renameTo(java.io.File);;1
+java.io.File;;createTempFile;;public static java.io.File createTempFile(java.lang.String, java.lang.String, java.io.File) throws java.io.IOException;;2
+java.io.DataInputStream;;readUTF;;public static final java.lang.String readUTF(java.io.DataInput) throws java.io.IOException;;1
+java.io.PushbackInputStream;;read;;public int read(byte[], int, int) throws java.io.IOException;;1
+java.io.DataOutputStream;;writeBytes;;public final void writeBytes(java.lang.String) throws java.io.IOException;;1
+java.io.DataOutputStream;;writeChars;;public final void writeChars(java.lang.String) throws java.io.IOException;;1
+java.io.DataOutputStream;;writeUTF;;static int writeUTF(java.lang.String, java.io.DataOutput) throws java.io.IOException;;2
+java.io.ObjectStreamClass;;initNonProxy;;void initNonProxy(java.io.ObjectStreamClass, java.lang.Class, java.lang.ClassNotFoundException, java.io.ObjectStreamClass) throws java.io.InvalidClassException;;1
+java.io.ObjectStreamClass;;readNonProxy;;void readNonProxy(java.io.ObjectInputStream) throws java.io.IOException, java.lang.ClassNotFoundException;;1
+java.io.ObjectStreamClass;;writeNonProxy;;void writeNonProxy(java.io.ObjectOutputStream) throws java.io.IOException;;1
+java.io.ObjectStreamClass;;processQueue;;static void processQueue(java.lang.ref.ReferenceQueue, java.util.concurrent.ConcurrentMap);;2
+java.io.FilePermission;;implies;;public boolean implies(java.security.Permission);;1
+java.io.FilePermission;;impliesIgnoreMask;;boolean impliesIgnoreMask(java.io.FilePermission);;1
+java.io.FilePermission;;equals;;public boolean equals(java.lang.Object);;1
+java.io.InputStreamReader;;<init>;;public void <init>(java.io.InputStream, java.lang.String) throws java.io.UnsupportedEncodingException;;1
+java.io.InputStreamReader;;<init>;;public void <init>(java.io.InputStream, java.nio.charset.Charset);;1
+java.io.InputStreamReader;;<init>;;public void <init>(java.io.InputStream, java.nio.charset.CharsetDecoder);;1
+java.io.OutputStreamWriter;;<init>;;public void <init>(java.io.OutputStream, java.lang.String) throws java.io.UnsupportedEncodingException;;1
+java.io.OutputStreamWriter;;<init>;;public void <init>(java.io.OutputStream, java.nio.charset.Charset);;1
+java.io.OutputStreamWriter;;<init>;;public void <init>(java.io.OutputStream, java.nio.charset.CharsetEncoder);;1
+java.io.LineNumberInputStream;;read;;public int read(byte[], int, int) throws java.io.IOException;;1
+java.io.LineNumberReader;;read;;public int read(char[], int, int) throws java.io.IOException;;1
+java.io.PipedInputStream;;connect;;public void connect(java.io.PipedOutputStream) throws java.io.IOException;;1
+java.io.PipedInputStream;;read;;public synchronized int read(byte[], int, int) throws java.io.IOException;;1
+java.io.PipedOutputStream;;connect;;public synchronized void connect(java.io.PipedInputStream) throws java.io.IOException;;1
+java.io.PipedOutputStream;;write;;public void write(byte[], int, int) throws java.io.IOException;;1
+java.io.PipedReader;;connect;;public void connect(java.io.PipedWriter) throws java.io.IOException;;1
+java.io.PipedReader;;receive;;synchronized void receive(char[], int, int) throws java.io.IOException;;1
+java.io.PipedReader;;read;;public synchronized int read(char[], int, int) throws java.io.IOException;;1
+java.io.PipedWriter;;connect;;public synchronized void connect(java.io.PipedReader) throws java.io.IOException;;1
+java.io.RandomAccessFile;;<init>;;public void <init>(java.io.File, java.lang.String) throws java.io.FileNotFoundException;;1
+java.io.RandomAccessFile;;writeBytes;;public final void writeBytes(java.lang.String) throws java.io.IOException;;1
+java.io.RandomAccessFile;;writeChars;;public final void writeChars(java.lang.String) throws java.io.IOException;;1
+java.io.SequenceInputStream;;read;;public int read(byte[], int, int) throws java.io.IOException;;1
+java.io.StreamTokenizer;;<init>;;public void <init>(java.io.InputStream);;1
+java.io.StreamTokenizer;;<init>;;public void <init>(java.io.Reader);;1
+java.io.StringBufferInputStream;;<init>;;public void <init>(java.lang.String);;1
+java.io.StringBufferInputStream;;read;;public synchronized int read(byte[], int, int);;1
+java.io.StringReader;;<init>;;public void <init>(java.lang.String);;1
+java.io.StringWriter;;write;;public void write(java.lang.String, int, int);;1
+java.io.Win32FileSystem;;normalize;;public java.lang.String normalize(java.lang.String);;1
+java.io.Win32FileSystem;;prefixLength;;public int prefixLength(java.lang.String);;1
+java.io.Win32FileSystem;;resolve;;public java.lang.String resolve(java.lang.String, java.lang.String);;2
+java.io.Win32FileSystem;;fromURIPath;;public java.lang.String fromURIPath(java.lang.String);;1
+java.io.Win32FileSystem;;isAbsolute;;public boolean isAbsolute(java.io.File);;1
+java.io.Win32FileSystem;;resolve;;public java.lang.String resolve(java.io.File);;1
+java.io.Win32FileSystem;;canonicalize;;public java.lang.String canonicalize(java.lang.String) throws java.io.IOException;;1
+java.io.Win32FileSystem;;getSpace;;public long getSpace(java.io.File, int);;1
+java.io.Win32FileSystem;;compare;;public int compare(java.io.File, java.io.File);;2
+java.io.Win32FileSystem;;hashCode;;public int hashCode(java.io.File);;1
+java.io.WinNTFileSystem;;getSpace;;public long getSpace(java.io.File, int);;1

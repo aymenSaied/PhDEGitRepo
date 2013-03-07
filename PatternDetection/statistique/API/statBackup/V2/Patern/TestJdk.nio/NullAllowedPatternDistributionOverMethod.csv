@@ -1,0 +1,7 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.nio.charset.Charset;;<init>;;protected void <init>(java.lang.String, java.lang.String[]);;1
+java.nio.CharBuffer;;append;;public java.nio.CharBuffer append(java.lang.CharSequence);;1
+java.nio.CharBuffer;;append;;public java.nio.CharBuffer append(java.lang.CharSequence, int, int);;1
+java.nio.channels.AsynchronousServerSocketChannel;;open;;public static java.nio.channels.AsynchronousServerSocketChannel open(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException;;1
+java.nio.channels.AsynchronousSocketChannel;;open;;public static java.nio.channels.AsynchronousSocketChannel open(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException;;1
+java.nio.file.SimpleFileVisitor;;postVisitDirectory;;public java.nio.file.FileVisitResult postVisitDirectory(java.lang.Object, java.io.IOException) throws java.io.IOException;;1

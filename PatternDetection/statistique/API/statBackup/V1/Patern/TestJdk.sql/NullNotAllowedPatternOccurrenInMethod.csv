@@ -1,0 +1,27 @@
+class name;;Method name;;number of detected pattern;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.sql.Date;;valueOf;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.sql.Time;;valueOf;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.sql.Timestamp;;valueOf;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.sql.Timestamp;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.sql.Timestamp: int nanos>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.sql.Timestamp;;compareTo;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;l1 = virtualinvoke r1.<java.sql.Timestamp: long getTime()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i7 = r1.<java.sql.Timestamp: int nanos>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i9 = r1.<java.sql.Timestamp: int nanos>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.sql.Timestamp;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$l1 = virtualinvoke r1.<java.util.Date: long getTime()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.sql.DriverManager;;registerDriver;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.sql.DriverManager;;getConnection;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r0 must not be null  otherwise an exception is thrown 

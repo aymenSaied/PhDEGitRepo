@@ -1,0 +1,8 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.sql.BatchUpdateException;;<init>;;public void <init>(java.lang.String, java.lang.String, int, int[]);;1
+java.sql.BatchUpdateException;;<init>;;public void <init>(java.lang.Throwable);;1
+java.sql.BatchUpdateException;;<init>;;public void <init>(int[], java.lang.Throwable);;1
+java.sql.BatchUpdateException;;<init>;;public void <init>(java.lang.String, java.lang.String, int, int[], java.lang.Throwable);;1
+java.sql.SQLClientInfoException;;<init>;;public void <init>(java.util.Map, java.lang.Throwable);;1
+java.sql.DriverManager;;deregisterDriver;;public static synchronized void deregisterDriver(java.sql.Driver) throws java.sql.SQLException;;1
+java.sql.DriverManager;;setLogStream;;public static void setLogStream(java.io.PrintStream);;1

@@ -1,0 +1,144 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.nio.Bits;;getCharL;;static char getCharL(java.nio.ByteBuffer, int);;1
+java.nio.Bits;;getCharB;;static char getCharB(java.nio.ByteBuffer, int);;1
+java.nio.Bits;;putCharL;;static void putCharL(java.nio.ByteBuffer, int, char);;1
+java.nio.Bits;;putCharB;;static void putCharB(java.nio.ByteBuffer, int, char);;1
+java.nio.Bits;;getShortL;;static short getShortL(java.nio.ByteBuffer, int);;1
+java.nio.Bits;;getShortB;;static short getShortB(java.nio.ByteBuffer, int);;1
+java.nio.Bits;;putShortL;;static void putShortL(java.nio.ByteBuffer, int, short);;1
+java.nio.Bits;;putShortB;;static void putShortB(java.nio.ByteBuffer, int, short);;1
+java.nio.Bits;;getIntL;;static int getIntL(java.nio.ByteBuffer, int);;1
+java.nio.Bits;;getIntB;;static int getIntB(java.nio.ByteBuffer, int);;1
+java.nio.Bits;;putIntL;;static void putIntL(java.nio.ByteBuffer, int, int);;1
+java.nio.Bits;;putIntB;;static void putIntB(java.nio.ByteBuffer, int, int);;1
+java.nio.Bits;;getLongL;;static long getLongL(java.nio.ByteBuffer, int);;1
+java.nio.Bits;;getLongB;;static long getLongB(java.nio.ByteBuffer, int);;1
+java.nio.Bits;;putLongL;;static void putLongL(java.nio.ByteBuffer, int, long);;1
+java.nio.Bits;;putLongB;;static void putLongB(java.nio.ByteBuffer, int, long);;1
+java.nio.ByteBuffer;;get;;public java.nio.ByteBuffer get(byte[], int, int);;1
+java.nio.ByteBuffer;;put;;public java.nio.ByteBuffer put(java.nio.ByteBuffer);;1
+java.nio.ByteBuffer;;put;;public java.nio.ByteBuffer put(byte[], int, int);;1
+java.nio.ByteBuffer;;equals;;public boolean equals(java.lang.Object);;1
+java.nio.ByteBuffer;;compareTo;;public int compareTo(java.nio.ByteBuffer);;1
+java.nio.charset.Charset;;compareTo;;public final int compareTo(java.nio.charset.Charset);;1
+java.nio.charset.Charset;;equals;;public final boolean equals(java.lang.Object);;1
+java.nio.CharBuffer;;read;;public int read(java.nio.CharBuffer) throws java.io.IOException;;1
+java.nio.CharBuffer;;wrap;;public static java.nio.CharBuffer wrap(java.lang.CharSequence);;1
+java.nio.CharBuffer;;get;;public java.nio.CharBuffer get(char[], int, int);;1
+java.nio.CharBuffer;;put;;public java.nio.CharBuffer put(java.nio.CharBuffer);;1
+java.nio.CharBuffer;;put;;public java.nio.CharBuffer put(char[], int, int);;1
+java.nio.CharBuffer;;put;;public java.nio.CharBuffer put(java.lang.String, int, int);;1
+java.nio.CharBuffer;;put;;public final java.nio.CharBuffer put(java.lang.String);;1
+java.nio.CharBuffer;;equals;;public boolean equals(java.lang.Object);;1
+java.nio.CharBuffer;;compareTo;;public int compareTo(java.nio.CharBuffer);;1
+java.nio.ShortBuffer;;get;;public java.nio.ShortBuffer get(short[], int, int);;1
+java.nio.ShortBuffer;;put;;public java.nio.ShortBuffer put(java.nio.ShortBuffer);;1
+java.nio.ShortBuffer;;put;;public java.nio.ShortBuffer put(short[], int, int);;1
+java.nio.ShortBuffer;;equals;;public boolean equals(java.lang.Object);;1
+java.nio.ShortBuffer;;compareTo;;public int compareTo(java.nio.ShortBuffer);;1
+java.nio.IntBuffer;;get;;public java.nio.IntBuffer get(int[], int, int);;1
+java.nio.IntBuffer;;put;;public java.nio.IntBuffer put(java.nio.IntBuffer);;1
+java.nio.IntBuffer;;put;;public java.nio.IntBuffer put(int[], int, int);;1
+java.nio.IntBuffer;;equals;;public boolean equals(java.lang.Object);;1
+java.nio.IntBuffer;;compareTo;;public int compareTo(java.nio.IntBuffer);;1
+java.nio.LongBuffer;;get;;public java.nio.LongBuffer get(long[], int, int);;1
+java.nio.LongBuffer;;put;;public java.nio.LongBuffer put(java.nio.LongBuffer);;1
+java.nio.LongBuffer;;put;;public java.nio.LongBuffer put(long[], int, int);;1
+java.nio.LongBuffer;;equals;;public boolean equals(java.lang.Object);;1
+java.nio.LongBuffer;;compareTo;;public int compareTo(java.nio.LongBuffer);;1
+java.nio.FloatBuffer;;get;;public java.nio.FloatBuffer get(float[], int, int);;1
+java.nio.FloatBuffer;;put;;public java.nio.FloatBuffer put(java.nio.FloatBuffer);;1
+java.nio.FloatBuffer;;put;;public java.nio.FloatBuffer put(float[], int, int);;1
+java.nio.FloatBuffer;;equals;;public boolean equals(java.lang.Object);;1
+java.nio.FloatBuffer;;compareTo;;public int compareTo(java.nio.FloatBuffer);;1
+java.nio.DoubleBuffer;;get;;public java.nio.DoubleBuffer get(double[], int, int);;1
+java.nio.DoubleBuffer;;put;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer);;1
+java.nio.DoubleBuffer;;put;;public java.nio.DoubleBuffer put(double[], int, int);;1
+java.nio.DoubleBuffer;;equals;;public boolean equals(java.lang.Object);;1
+java.nio.DoubleBuffer;;compareTo;;public int compareTo(java.nio.DoubleBuffer);;1
+java.nio.HeapByteBuffer;;put;;public java.nio.ByteBuffer put(java.nio.ByteBuffer);;1
+java.nio.DirectByteBuffer;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectByteBuffer;;put;;public java.nio.ByteBuffer put(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsCharBufferB;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsCharBufferL;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsDoubleBufferB;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsDoubleBufferL;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsFloatBufferB;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsFloatBufferL;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsIntBufferB;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsIntBufferL;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsLongBufferB;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsLongBufferL;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsShortBufferB;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.ByteBufferAsShortBufferL;;<init>;;void <init>(java.nio.ByteBuffer);;1
+java.nio.StringCharBuffer;;<init>;;void <init>(java.lang.CharSequence, int, int);;1
+java.nio.HeapCharBuffer;;put;;public java.nio.CharBuffer put(java.nio.CharBuffer);;1
+java.nio.DirectIntBufferS;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectIntBufferS;;put;;public java.nio.IntBuffer put(java.nio.IntBuffer);;1
+java.nio.DirectIntBufferU;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectIntBufferU;;put;;public java.nio.IntBuffer put(java.nio.IntBuffer);;1
+java.nio.DirectShortBufferU;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectShortBufferU;;put;;public java.nio.ShortBuffer put(java.nio.ShortBuffer);;1
+java.nio.DirectShortBufferS;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectShortBufferS;;put;;public java.nio.ShortBuffer put(java.nio.ShortBuffer);;1
+java.nio.DirectDoubleBufferU;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectDoubleBufferU;;put;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer);;1
+java.nio.DirectDoubleBufferS;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectDoubleBufferS;;put;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer);;1
+java.nio.DirectLongBufferU;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectLongBufferU;;put;;public java.nio.LongBuffer put(java.nio.LongBuffer);;1
+java.nio.DirectFloatBufferS;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectFloatBufferS;;put;;public java.nio.FloatBuffer put(java.nio.FloatBuffer);;1
+java.nio.DirectLongBufferS;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectLongBufferS;;put;;public java.nio.LongBuffer put(java.nio.LongBuffer);;1
+java.nio.DirectFloatBufferU;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectFloatBufferU;;put;;public java.nio.FloatBuffer put(java.nio.FloatBuffer);;1
+java.nio.DirectCharBufferU;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectCharBufferU;;put;;public java.nio.CharBuffer put(java.nio.CharBuffer);;1
+java.nio.DirectCharBufferS;;<init>;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int);;1
+java.nio.DirectCharBufferS;;put;;public java.nio.CharBuffer put(java.nio.CharBuffer);;1
+java.nio.HeapDoubleBuffer;;put;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer);;1
+java.nio.HeapFloatBuffer;;put;;public java.nio.FloatBuffer put(java.nio.FloatBuffer);;1
+java.nio.HeapIntBuffer;;put;;public java.nio.IntBuffer put(java.nio.IntBuffer);;1
+java.nio.HeapLongBuffer;;put;;public java.nio.LongBuffer put(java.nio.LongBuffer);;1
+java.nio.HeapShortBuffer;;put;;public java.nio.ShortBuffer put(java.nio.ShortBuffer);;1
+java.nio.channels.AsynchronousFileChannel;;open;;public static transient java.nio.channels.AsynchronousFileChannel open(java.nio.file.Path, java.util.Set, java.util.concurrent.ExecutorService, java.nio.file.attribute.FileAttribute[]) throws java.io.IOException;;1
+java.nio.file.spi.FileSystemProvider;;newInputStream;;public transient java.io.InputStream newInputStream(java.nio.file.Path, java.nio.file.OpenOption[]) throws java.io.IOException;;1
+java.nio.file.spi.FileSystemProvider;;newOutputStream;;public transient java.io.OutputStream newOutputStream(java.nio.file.Path, java.nio.file.OpenOption[]) throws java.io.IOException;;1
+java.nio.channels.FileChannel;;open;;public static transient java.nio.channels.FileChannel open(java.nio.file.Path, java.util.Set, java.nio.file.attribute.FileAttribute[]) throws java.io.IOException;;1
+java.nio.channels.Channels;;newChannel;;public static java.nio.channels.ReadableByteChannel newChannel(java.io.InputStream);;1
+java.nio.channels.Channels;;newChannel;;public static java.nio.channels.WritableByteChannel newChannel(java.io.OutputStream);;1
+java.nio.channels.Channels;;newReader;;public static java.io.Reader newReader(java.nio.channels.ReadableByteChannel, java.nio.charset.CharsetDecoder, int);;1
+java.nio.channels.Channels;;newWriter;;public static java.io.Writer newWriter(java.nio.channels.WritableByteChannel, java.nio.charset.CharsetEncoder, int);;1
+java.nio.charset.CharsetDecoder;;replaceWith;;public final java.nio.charset.CharsetDecoder replaceWith(java.lang.String);;1
+java.nio.charset.CharsetDecoder;;onMalformedInput;;public final java.nio.charset.CharsetDecoder onMalformedInput(java.nio.charset.CodingErrorAction);;1
+java.nio.charset.CharsetDecoder;;onUnmappableCharacter;;public final java.nio.charset.CharsetDecoder onUnmappableCharacter(java.nio.charset.CodingErrorAction);;1
+java.nio.charset.CharsetDecoder;;decode;;public final java.nio.charset.CoderResult decode(java.nio.ByteBuffer, java.nio.CharBuffer, boolean);;2
+java.nio.charset.CharsetDecoder;;decode;;public final java.nio.CharBuffer decode(java.nio.ByteBuffer) throws java.nio.charset.CharacterCodingException;;1
+java.nio.charset.CharsetEncoder;;replaceWith;;public final java.nio.charset.CharsetEncoder replaceWith(byte[]);;1
+java.nio.charset.CharsetEncoder;;onMalformedInput;;public final java.nio.charset.CharsetEncoder onMalformedInput(java.nio.charset.CodingErrorAction);;1
+java.nio.charset.CharsetEncoder;;onUnmappableCharacter;;public final java.nio.charset.CharsetEncoder onUnmappableCharacter(java.nio.charset.CodingErrorAction);;1
+java.nio.charset.CharsetEncoder;;encode;;public final java.nio.charset.CoderResult encode(java.nio.CharBuffer, java.nio.ByteBuffer, boolean);;2
+java.nio.charset.CharsetEncoder;;encode;;public final java.nio.ByteBuffer encode(java.nio.CharBuffer) throws java.nio.charset.CharacterCodingException;;1
+java.nio.charset.CharsetEncoder;;canEncode;;public boolean canEncode(java.lang.CharSequence);;1
+java.nio.channels.spi.AbstractSelectableChannel;;removeKey;;void removeKey(java.nio.channels.SelectionKey);;1
+java.nio.channels.spi.AbstractSelectableChannel;;register;;public final java.nio.channels.SelectionKey register(java.nio.channels.Selector, int, java.lang.Object) throws java.nio.channels.ClosedChannelException;;1
+java.nio.channels.spi.AbstractSelector;;deregister;;protected final void deregister(java.nio.channels.spi.AbstractSelectionKey);;1
+java.nio.file.CopyMoveHelper;;copyToForeignTarget;;static transient void copyToForeignTarget(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[]) throws java.io.IOException;;1
+java.nio.file.Files;;newDirectoryStream;;public static java.nio.file.DirectoryStream newDirectoryStream(java.nio.file.Path, java.lang.String) throws java.io.IOException;;2
+java.nio.file.Files;;createDirectories;;public static transient java.nio.file.Path createDirectories(java.nio.file.Path, java.nio.file.attribute.FileAttribute[]) throws java.io.IOException;;1
+java.nio.file.Files;;getAttribute;;public static transient java.lang.Object getAttribute(java.nio.file.Path, java.lang.String, java.nio.file.LinkOption[]) throws java.io.IOException;;1
+java.nio.file.Files;;newBufferedReader;;public static java.io.BufferedReader newBufferedReader(java.nio.file.Path, java.nio.charset.Charset) throws java.io.IOException;;1
+java.nio.file.Files;;newBufferedWriter;;public static transient java.io.BufferedWriter newBufferedWriter(java.nio.file.Path, java.nio.charset.Charset, java.nio.file.OpenOption[]) throws java.io.IOException;;1
+java.nio.file.Files;;copy;;public static transient long copy(java.io.InputStream, java.nio.file.Path, java.nio.file.CopyOption[]) throws java.io.IOException;;1
+java.nio.file.Files;;write;;public static transient java.nio.file.Path write(java.nio.file.Path, java.lang.Iterable, java.nio.charset.Charset, java.nio.file.OpenOption[]) throws java.io.IOException;;2
+java.nio.file.attribute.FileTime;;to;;public long 'to'(java.util.concurrent.TimeUnit);;1
+java.nio.file.attribute.FileTime;;compareTo;;public int compareTo(java.nio.file.attribute.FileTime);;1
+java.nio.file.FileTreeWalker;;<init>;;void <init>(java.util.Set, java.nio.file.FileVisitor, int);;1
+java.nio.file.FileSystems;;getFileSystem;;public static java.nio.file.FileSystem getFileSystem(java.net.URI);;1
+java.nio.file.FileSystems;;newFileSystem;;public static java.nio.file.FileSystem newFileSystem(java.net.URI, java.util.Map, java.lang.ClassLoader) throws java.io.IOException;;1
+java.nio.file.FileSystems;;newFileSystem;;public static java.nio.file.FileSystem newFileSystem(java.nio.file.Path, java.lang.ClassLoader) throws java.io.IOException;;1
+java.nio.file.Paths;;get;;public static java.nio.file.Path get(java.net.URI);;1
+java.nio.file.attribute.AclEntry;;newBuilder;;public static java.nio.file.attribute.AclEntry$Builder newBuilder(java.nio.file.attribute.AclEntry);;1
+java.nio.file.attribute.PosixFilePermissions;;toString;;public static java.lang.String toString(java.util.Set);;1
+java.nio.file.attribute.PosixFilePermissions;;fromString;;public static java.util.Set fromString(java.lang.String);;1

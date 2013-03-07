@@ -1,0 +1,688 @@
+class name;;Method name;;number of detected pattern;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.security.AccessControlContext;;<init>;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r7 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r8 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r9 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.security.AccessControlContext;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.security.AccessControlContext;;checkPermission;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.AccessControlContext;;goCombiner;;1
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r2.<java.security.AccessControlContext: java.security.DomainCombiner combiner>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r2.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r2.<java.security.AccessControlContext: java.security.DomainCombiner combiner>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.security.AccessControlContext;;equals;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$z3 = specialinvoke r2.<java.security.AccessControlContext: boolean containsAllPDs(java.security.AccessControlContext)>(r0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r7 = r2.<java.security.AccessControlContext: java.security.DomainCombiner combiner>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.security.AccessControlContext: java.security.DomainCombiner combiner>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r10 = r2.<java.security.AccessControlContext: java.security.DomainCombiner combiner>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.security.AccessControlContext;;containsAllPDs;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r1.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.security.AccessController;;checkPermission;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.security.CodeSource;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.security.CodeSource: java.net.URL location>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.security.CodeSource: java.net.URL location>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.security.CodeSource;;matchCerts;;1
+*;; * ;; * ;;r1;;10
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.security.CodeSource: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.security.CodeSource: java.security.CodeSigner[] signers>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.security.CodeSource: java.security.CodeSigner[] signers>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.security.CodeSource: java.security.CodeSigner[] signers>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.security.CodeSource: java.security.CodeSigner[] signers>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r14 = r1.<java.security.CodeSource: java.security.CodeSigner[] signers>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r17 = r1.<java.security.CodeSource: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r19 = r1.<java.security.CodeSource: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r21 = r1.<java.security.CodeSource: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r24 = r1.<java.security.CodeSource: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.security.CodeSource;;writeObject;;1
+*;; * ;; * ;;r1;;7
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeUTF(java.lang.String)>($r9);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void write(byte[])>(r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r16);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.CodeSource;;readObject;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.String readUTF()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void readFully(byte[])>(r19);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r29 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Policy;;initPolicy;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r0.<java.security.Policy: java.util.WeakHashMap pdMapping>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.security.Policy: java.util.WeakHashMap pdMapping> = $r10;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r19 = r0.<java.security.Policy: java.util.WeakHashMap pdMapping>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r21 = r0.<java.security.Policy: java.util.WeakHashMap pdMapping>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.Policy;;getInstance;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.security.Policy;;handleException;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.security.NoSuchAlgorithmException: java.lang.Throwable getCause()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Policy;;addStaticPerms;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.security.PermissionCollection: void add(java.security.Permission)>($r8);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Policy;;implies;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.security.ProtectionDomain: java.security.ProtectionDomain$Key key>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r17 = r1.<java.security.ProtectionDomain: java.security.ProtectionDomain$Key key>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.security.CodeSigner;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.CodeSigner;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.BasicPermission;;init;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.BasicPermission;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Provider;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Provider;;implPutAll;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = interfaceinvoke r1.<java.util.Map: java.util.Set entrySet()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Provider;;implRemove;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$z1 = virtualinvoke r2.<java.lang.String: boolean startsWith(java.lang.String)>("Provider.");;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.security.Provider;;implPut;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$z2 = virtualinvoke r3.<java.lang.String: boolean startsWith(java.lang.String)>("Provider.");;pattern detected param  r1 must not be null it define a local r3which used in  InvokeExpr 
+java.security.Provider;;removeInvalidServices;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = interfaceinvoke r1.<java.util.Map: java.util.Set entrySet()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Provider;;getTypeAndAlgorithm;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int indexOf(java.lang.String)>(".");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>($i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Provider;;parseLegacyPut;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r13 = virtualinvoke r1.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>($i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Provider;;putService;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r20;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.Provider;;putPropertyStrings;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.Provider$Service: java.lang.String getType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.security.Provider$Service: java.lang.String getAlgorithm()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r1.<java.security.Provider$Service: java.lang.String getClassName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Provider;;removePropertyStrings;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.Provider$Service: java.lang.String getType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.security.Provider$Service: java.lang.String getAlgorithm()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Provider;;removeService;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.Provider;;addEngine;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Provider;;getEngineName;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.String: java.lang.String toLowerCase(java.util.Locale)>($r3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.AlgorithmParameters;;getInstance;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.AlgorithmParameterGenerator;;getInstance;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.Security;;getProviderProperty;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(r8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Security;;getProviderProperty;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(r4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.Provider: java.lang.String getProperty(java.lang.String)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.security.Provider: java.util.Enumeration keys()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.Provider: java.lang.String getProperty(java.lang.String)>(r4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Security;;insertProviderAt;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.security.Provider: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Security;;getProviders;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(58);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(0, i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>($i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Security;;getProviders;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = interfaceinvoke r0.<java.util.Map: java.util.Set keySet()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = interfaceinvoke r0.<java.util.Map: java.lang.Object get(java.lang.Object)>(r5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Security;;invalidateSMCache;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;z0 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>("package.access");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;z1 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>("package.definition");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Security;;getProvidersNotUsingCache;;1
+*;; * ;; * ;;r4;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$r7 = r4[i0];;pattern detected param  r4 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r8 = r4[i0];;pattern detected param  r4 must not be null  because used in  ArrayRef 
+java.security.Security;;isCriterionSatisfied;;1
+*;; * ;; * ;;r4;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r4.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(r7);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+java.security.Security;;isStandardAttr;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("KeySize");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("ImplementedIn");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Security;;isConstraintSatisfied;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("KeySize");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("ImplementedIn");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r1.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Security;;getFilterComponents;;2
+*;; * ;; * ;;r0;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(46);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(0, i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>($i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(32);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>($i5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>($i8, i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.MessageDigest;;getInstance;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.MessageDigest;;update;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.MessageDigest;;update;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.MessageDigest;;digest;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.MessageDigest;;isEqual;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$b5 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$b6 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.security.MessageDigest;;access$000;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.security.MessageDigest: java.lang.String algorithm>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.MessageDigest;;access$102;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.security.MessageDigest: java.security.Provider provider> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.MessageDigest;;access$100;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.security.MessageDigest: java.security.Provider provider>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.MessageDigest;;access$202;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.security.MessageDigest: int state> = i0;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.MessageDigest;;access$200;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r0.<java.security.MessageDigest: int state>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.MessageDigestSpi;;engineUpdate;;1
+*;; * ;; * ;;r1;;9
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.nio.ByteBuffer: boolean hasRemaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.ByteBuffer: boolean hasArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.nio.ByteBuffer: byte[] array()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.ByteBuffer: int arrayOffset()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.nio.ByteBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.ByteBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ByteBuffer: java.nio.Buffer position(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i5 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ByteBuffer: java.nio.ByteBuffer get(byte[],int,int)>($r8, 0, i9);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.CertPath;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r5 = virtualinvoke r2.<java.security.cert.CertPath: java.lang.String getType()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r4 = virtualinvoke r2.<java.security.cert.CertPath: java.util.List getCertificates()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.security.Timestamp;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.GuardedObject;;writeObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Identity;;addCertificate;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = interfaceinvoke r1.<java.security.Certificate: java.security.PublicKey getPublicKey()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = interfaceinvoke r1.<java.security.Certificate: java.security.PublicKey getPublicKey()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Identity;;keyEquals;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r1.<java.security.Key: java.lang.String getFormat()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = interfaceinvoke r1.<java.security.Key: byte[] getEncoded()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = interfaceinvoke r2.<java.security.Key: java.lang.String getFormat()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = interfaceinvoke r2.<java.security.Key: byte[] getEncoded()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.security.Identity;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r4 = virtualinvoke r2.<java.security.Identity: java.lang.String fullName()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.security.Identity;;identityEquals;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.security.Identity: java.lang.String name>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.security.Identity: java.security.PublicKey publicKey>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.security.Identity: java.security.PublicKey publicKey>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.security.Identity: java.security.PublicKey publicKey>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.security.IdentityScope;;getIdentity;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = interfaceinvoke r1.<java.security.Principal: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.KeyPairGenerator;;getInstance;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r0.<sun.security.jca.GetInstance$Instance: java.lang.Object impl>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r0.<sun.security.jca.GetInstance$Instance: java.lang.Object impl>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r0.<sun.security.jca.GetInstance$Instance: java.lang.Object impl>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r0.<sun.security.jca.GetInstance$Instance: java.security.Provider provider>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.spec.EncodedKeySpec;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.KeyStore;;getInstance;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.KeyStore;;getEntry;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.KeyStore;;access$000;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$z0 = r0.<java.security.KeyStore: boolean initialized>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.KeyStoreSpi;;engineSetEntry;;2
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r7 = virtualinvoke r4.<java.security.KeyStore$PasswordProtection: char[] getPassword()>();;pattern detected param  r3 must not be null it define a local r4which used in  InvokeExpr 
+*;; * ;; * ;;r2;;5
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r9 = virtualinvoke r5.<java.security.KeyStore$TrustedCertificateEntry: java.security.cert.Certificate getTrustedCertificate()>();;pattern detected param  r2 must not be null it define a local r5which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r13 = virtualinvoke $r12.<java.security.KeyStore$PrivateKeyEntry: java.security.PrivateKey getPrivateKey()>();;pattern detected param  r2 must not be null it define a local $r12which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r16 = virtualinvoke $r15.<java.security.KeyStore$PrivateKeyEntry: java.security.cert.Certificate[] getCertificateChain()>();;pattern detected param  r2 must not be null it define a local $r15which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r20 = virtualinvoke $r19.<java.security.KeyStore$SecretKeyEntry: javax.crypto.SecretKey getSecretKey()>();;pattern detected param  r2 must not be null it define a local $r19which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r26 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.security.Permissions;;getPermissionCollection;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.security.Permission: java.security.PermissionCollection newPermissionCollection()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Permissions;;getUnresolvedPermissions;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r17 = virtualinvoke r1.<java.security.Permission: java.security.PermissionCollection newPermissionCollection()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Permissions;;writeObject;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r10 = virtualinvoke r1.<java.io.ObjectOutputStream: java.io.ObjectOutputStream$PutField putFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Permissions;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.io.ObjectInputStream: java.io.ObjectInputStream$GetField readFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.UnresolvedPermission;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.UnresolvedPermission;;resolve;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r9 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.UnresolvedPermission;;equals;;1
+*;; * ;; * ;;r1;;14
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.security.UnresolvedPermission: java.lang.String type>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.security.UnresolvedPermission: java.lang.String name>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.security.UnresolvedPermission: java.lang.String name>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r10 = r2.<java.security.UnresolvedPermission: java.lang.String actions>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r12 = r2.<java.security.UnresolvedPermission: java.lang.String actions>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r14 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r16 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r18 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r20 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r23 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r26 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r28 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r29 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r31 = r2.<java.security.UnresolvedPermission: java.security.cert.Certificate[] certs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.security.UnresolvedPermission;;writeObject;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeUTF(java.lang.String)>($r9);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void write(byte[])>(r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.UnresolvedPermission;;readObject;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.String readUTF()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void readFully(byte[])>(r21);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.UnresolvedPermissionCollection;;add;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r14 = virtualinvoke r3.<java.security.UnresolvedPermission: java.lang.String getName()>();;pattern detected param  r1 must not be null it define a local r3which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r18 = virtualinvoke r3.<java.security.UnresolvedPermission: java.lang.String getName()>();;pattern detected param  r1 must not be null it define a local r3which used in  InvokeExpr 
+java.security.UnresolvedPermissionCollection;;getUnresolvedPermissions;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.UnresolvedPermissionCollection;;writeObject;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r24 = virtualinvoke r1.<java.io.ObjectOutputStream: java.io.ObjectOutputStream$PutField putFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.UnresolvedPermissionCollection;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.io.ObjectInputStream: java.io.ObjectInputStream$GetField readFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Signature;;getInstance;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("NONEwithRSA");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Signature;;getInstance;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r0.<sun.security.jca.GetInstance$Instance: java.lang.Object impl>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r0.<sun.security.jca.GetInstance$Instance: java.lang.Object impl>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r0.<sun.security.jca.GetInstance$Instance: java.lang.Object impl>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r0.<sun.security.jca.GetInstance$Instance: java.security.Provider provider>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.Signature;;isSpi;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r0.<java.security.Provider$Service: java.lang.String getType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.security.Provider$Service: java.lang.String getClassName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.security.Provider$Service: java.lang.Object newInstance(java.lang.Object)>(null);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r16 = virtualinvoke r0.<java.security.Provider$Service: java.lang.String getAlgorithm()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Signature;;getInstance;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("NONEwithRSA");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Signature;;getInstance;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("NONEwithRSA");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.Signature;;getInstanceRSA;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.security.Provider: java.security.Provider$Service getService(java.lang.String,java.lang.String)>("Signature", "NONEwithRSA");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r0.<java.security.Provider: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.Signature;;initVerify;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke r2.<java.security.cert.X509Certificate: java.util.Set getCriticalExtensionOIDs()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r4 = virtualinvoke r2.<java.security.cert.X509Certificate: boolean[] getKeyUsage()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r1.<java.security.cert.Certificate: java.security.PublicKey getPublicKey()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Signature;;sign;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.Signature;;update;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.Signature;;access$000;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.security.Signature: java.lang.String algorithm>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.security.SignatureSpi;;engineUpdate;;1
+*;; * ;; * ;;r1;;9
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.nio.ByteBuffer: boolean hasRemaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.ByteBuffer: boolean hasArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.nio.ByteBuffer: byte[] array()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.ByteBuffer: int arrayOffset()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.nio.ByteBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.ByteBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ByteBuffer: java.nio.Buffer position(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i5 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ByteBuffer: java.nio.ByteBuffer get(byte[],int,int)>(r4, 0, i8);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.SignedObject;;verify;;1
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.security.Signature: void initVerify(java.security.PublicKey)>(r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.security.Signature: void update(byte[])>($r5);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r2.<java.security.Signature: boolean verify(byte[])>($r8);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.security.SignedObject;;sign;;1
+*;; * ;; * ;;r2;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.security.Signature: void initSign(java.security.PrivateKey)>(r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.security.Signature: void update(byte[])>($r5);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r2.<java.security.Signature: byte[] sign()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r2.<java.security.Signature: java.lang.String getAlgorithm()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.security.SignedObject;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.io.ObjectInputStream: java.io.ObjectInputStream$GetField readFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.Signer;;setKeyPair;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.KeyPair: java.security.PublicKey getPublic()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.security.KeyPair: java.security.PrivateKey getPrivate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.URIParameter;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.cert.CertificateRevokedException;;writeObject;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r11);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeBoolean(boolean)>($z1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void write(byte[])>(r5);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.CertificateRevokedException;;readObject;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;z0 = virtualinvoke r1.<java.io.ObjectInputStream: boolean readBoolean()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void readFully(byte[])>(r4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.CertPathHelperImpl;;implSetPathToNames;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.security.cert.X509CertSelector: void setPathToNamesInternal(java.util.Set)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.CertPathHelperImpl;;implSetDateAndTime;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.security.cert.X509CRLSelector: void setDateAndTime(java.util.Date,long)>(r2, l0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;addSubjectAlternativeName;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;parseNames;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;addPathToName;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;cloneAndCheckNames;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;keyUsageToString;;1
+*;; * ;; * ;;r0;;9
+*;;*;;*;;*;;*;;ArrayRef for param;;$z0 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$z1 = r0[1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$z2 = r0[2];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$z3 = r0[3];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$z4 = r0[4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$z5 = r0[5];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$z6 = r0[6];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$z7 = r0[7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$z8 = r0[8];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.security.cert.X509CertSelector;;getExtensionObject;;1
+*;; * ;; * ;;r0;;6
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r6 = virtualinvoke r1.<sun.security.x509.X509CertImpl: sun.security.x509.PrivateKeyUsageExtension getPrivateKeyUsageExtension()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r7 = virtualinvoke r1.<sun.security.x509.X509CertImpl: sun.security.x509.SubjectAlternativeNameExtension getSubjectAlternativeNameExtension()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r8 = virtualinvoke r1.<sun.security.x509.X509CertImpl: sun.security.x509.NameConstraintsExtension getNameConstraintsExtension()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r9 = virtualinvoke r1.<sun.security.x509.X509CertImpl: sun.security.x509.CertificatePoliciesExtension getCertificatePoliciesExtension()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r10 = virtualinvoke r1.<sun.security.x509.X509CertImpl: sun.security.x509.ExtendedKeyUsageExtension getExtendedKeyUsageExtension()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r12 = virtualinvoke r0.<java.security.cert.X509Certificate: byte[] getExtensionValue(java.lang.String)>($r11);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;match;;1
+*;; * ;; * ;;r1;;8
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r8 = virtualinvoke r2.<java.security.cert.X509Certificate: java.math.BigInteger getSerialNumber()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r12 = virtualinvoke r2.<java.security.cert.X509Certificate: java.security.Principal getIssuerDN()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r15 = virtualinvoke r2.<java.security.cert.X509Certificate: java.security.Principal getSubjectDN()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r25 = virtualinvoke r2.<java.security.cert.X509Certificate: java.math.BigInteger getSerialNumber()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r30 = virtualinvoke r2.<java.security.cert.X509Certificate: javax.security.auth.x500.X500Principal getIssuerX500Principal()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r35 = virtualinvoke r2.<java.security.cert.X509Certificate: javax.security.auth.x500.X500Principal getSubjectX500Principal()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.security.cert.X509Certificate: void checkValidity(java.util.Date)>($r39);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r44 = virtualinvoke r2.<java.security.cert.X509Certificate: java.security.PublicKey getPublicKey()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.security.cert.X509CertSelector;;matchSubjectKeyID;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.cert.X509Certificate: byte[] getExtensionValue(java.lang.String)>("2.5.29.14");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;matchAuthorityKeyID;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.cert.X509Certificate: byte[] getExtensionValue(java.lang.String)>("2.5.29.35");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;matchSubjectPublicKeyAlgID;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.security.cert.X509Certificate: java.security.PublicKey getPublicKey()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;matchKeyUsage;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.cert.X509Certificate: boolean[] getKeyUsage()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;matchExcluded;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<sun.security.x509.GeneralSubtrees: java.util.Iterator iterator()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;matchPermitted;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<sun.security.x509.GeneralSubtrees: java.util.Iterator iterator()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;matchBasicConstraints;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.security.cert.X509Certificate: int getBasicConstraints()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CertSelector;;cloneSet;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r1 = virtualinvoke $r2.<java.util.HashSet: java.lang.Object clone()>();;pattern detected param  r0 must not be null it define a local $r2which used in  InvokeExpr 
+java.security.cert.X509CRLSelector;;addIssuer;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<javax.security.auth.x500.X500Principal: byte[] getEncoded()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CRLSelector;;addIssuerName;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CRLSelector;;cloneAndCheckIssuerNames;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CRLSelector;;parseIssuerNames;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CRLSelector;;match;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke r2.<java.security.cert.X509CRL: javax.security.auth.x500.X500Principal getIssuerX500Principal()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r15 = virtualinvoke r2.<java.security.cert.X509CRL: byte[] getExtensionValue(java.lang.String)>("2.5.29.20");;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r37 = virtualinvoke r2.<java.security.cert.X509CRL: java.util.Date getThisUpdate()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r38 = virtualinvoke r2.<java.security.cert.X509CRL: java.util.Date getNextUpdate()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.security.cert.CertPathValidatorException;;<init>;;2
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r4;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r4 must not be null  otherwise an exception is thrown 
+java.security.cert.CertPathValidatorException;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.CertStore;;handleException;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.security.NoSuchAlgorithmException: java.lang.Throwable getCause()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.security.cert.CollectionCertStoreParameters;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.cert.LDAPCertStoreParameters;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.cert.PKIXParameters;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.cert.PKIXParameters;;setTrustAnchors;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.cert.PKIXCertPathBuilderResult;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.cert.PKIXCertPathValidatorResult;;<init>;;2
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.cert.TrustAnchor;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.cert.TrustAnchor;;<init>;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.security.cert.PolicyQualifierInfo;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CRL;;getRevokedCertificate;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.cert.X509Certificate: javax.security.auth.x500.X500Principal getIssuerX500Principal()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.security.cert.X509Certificate: java.math.BigInteger getSerialNumber()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.cert.X509CRLEntry;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke $r4.<java.security.cert.X509CRLEntry: byte[] getEncoded()>();;pattern detected param  r1 must not be null it define a local $r4which used in  InvokeExpr 
+java.security.spec.ECParameterSpec;;<init>;;3
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.security.spec.EllipticCurve;;checkValidity;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke $r5.<java.security.spec.ECFieldFp: java.math.BigInteger getP()>();;pattern detected param  r0 must not be null it define a local $r5which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i2 = virtualinvoke $r15.<java.security.spec.ECFieldF2m: int getM()>();;pattern detected param  r0 must not be null it define a local $r15which used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.math.BigInteger: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r1.<java.math.BigInteger: int bitLength()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.spec.EllipticCurve;;<init>;;3
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.security.spec.EllipticCurve;;equals;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.security.spec.EllipticCurve: java.security.spec.ECField field>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.security.spec.EllipticCurve: java.math.BigInteger a>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.security.spec.EllipticCurve: java.math.BigInteger b>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.security.spec.ECPoint;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = $r4.<java.security.spec.ECPoint: java.math.BigInteger x>;;pattern detected param  r1 must not be null it define a local $r4which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = $r7.<java.security.spec.ECPoint: java.math.BigInteger y>;;pattern detected param  r1 must not be null it define a local $r7which used in  FieldRef 
+java.security.spec.RSAOtherPrimeInfo;;<init>;;3
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.security.spec.ECFieldF2m;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.spec.ECFieldF2m;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i1 = $r2.<java.security.spec.ECFieldF2m: int m>;;pattern detected param  r1 must not be null it define a local $r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = $r4.<java.security.spec.ECFieldF2m: int[] ks>;;pattern detected param  r1 must not be null it define a local $r4which used in  FieldRef 
+java.security.spec.ECFieldFp;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.math.BigInteger: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.security.spec.ECFieldFp;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = $r3.<java.security.spec.ECFieldFp: java.math.BigInteger p>;;pattern detected param  r1 must not be null it define a local $r3which used in  FieldRef 
+java.security.spec.ECGenParameterSpec;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.spec.ECPrivateKeySpec;;<init>;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.security.spec.ECPublicKeySpec;;<init>;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.security.spec.MGF1ParameterSpec;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.security.spec.PSSParameterSpec;;<init>;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.security.spec.RSAMultiPrimePrivateCrtKeySpec;;<init>;;8
+*;; * ;; * ;;r8;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r17;;pattern detected param  r8 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r7;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r16;;pattern detected param  r7 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r12;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r4;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r4 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r5;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r5 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r6;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r6 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r2 must not be null  otherwise an exception is thrown 

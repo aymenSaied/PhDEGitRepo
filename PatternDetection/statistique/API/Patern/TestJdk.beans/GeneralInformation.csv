@@ -1,0 +1,4 @@
+number of class;;number of Method;;NullNotAllowed;;number of detected pattern
+41;;547;;NullNotAllowed;;100
+*;;*;;NullAllowed;;25
+*;;*;;RestrictedParameterType;;1

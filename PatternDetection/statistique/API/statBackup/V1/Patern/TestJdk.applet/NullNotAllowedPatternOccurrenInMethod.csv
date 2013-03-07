@@ -1,0 +1,8 @@
+class name;;Method name;;number of detected pattern;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.applet.Applet;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.applet.Applet;;resize;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.awt.Dimension: int width>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.awt.Dimension: int height>;;pattern detected param  r1 must not be null  because used in  FieldRef 

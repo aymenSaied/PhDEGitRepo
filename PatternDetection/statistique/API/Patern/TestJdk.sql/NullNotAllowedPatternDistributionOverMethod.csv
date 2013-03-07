@@ -1,0 +1,8 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.sql.Date;;valueOf;;public static java.sql.Date valueOf(java.lang.String);;1
+java.sql.Time;;valueOf;;public static java.sql.Time valueOf(java.lang.String);;1
+java.sql.Timestamp;;valueOf;;public static java.sql.Timestamp valueOf(java.lang.String);;1
+java.sql.Timestamp;;equals;;public boolean equals(java.sql.Timestamp);;1
+java.sql.Timestamp;;compareTo;;public int compareTo(java.sql.Timestamp);;1
+java.sql.Timestamp;;compareTo;;public int compareTo(java.util.Date);;1
+java.sql.DriverManager;;registerDriver;;public static synchronized void registerDriver(java.sql.Driver) throws java.sql.SQLException;;1

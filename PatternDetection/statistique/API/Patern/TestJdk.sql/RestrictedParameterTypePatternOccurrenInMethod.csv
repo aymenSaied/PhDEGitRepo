@@ -1,0 +1,4 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.sql.Timestamp;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.util.Date

@@ -1,0 +1,759 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.nio.Bits;;getCharL;;1;;static char getCharL(java.nio.ByteBuffer, int)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b2 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b3 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;getCharB;;1;;static char getCharB(java.nio.ByteBuffer, int)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b1 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b3 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;putCharL;;1;;static void putCharL(java.nio.ByteBuffer, int, char)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>(i0, $b2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i3, $b4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;putCharB;;1;;static void putCharB(java.nio.ByteBuffer, int, char)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>(i0, $b2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i3, $b4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;getShortL;;1;;static short getShortL(java.nio.ByteBuffer, int)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b2 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b3 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;getShortB;;1;;static short getShortB(java.nio.ByteBuffer, int)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b1 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b3 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;putShortL;;1;;static void putShortL(java.nio.ByteBuffer, int, short)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>(i0, $b2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i3, $b4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;putShortB;;1;;static void putShortB(java.nio.ByteBuffer, int, short)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>(i0, $b2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i3, $b4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;getIntL;;1;;static int getIntL(java.nio.ByteBuffer, int)
+*;; * ;; * ;;*;;r0;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b2 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b4 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b6 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b7 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;getIntB;;1;;static int getIntB(java.nio.ByteBuffer, int)
+*;; * ;; * ;;*;;r0;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b1 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b3 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b5 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b7 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;putIntL;;1;;static void putIntL(java.nio.ByteBuffer, int, int)
+*;; * ;; * ;;*;;r0;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i2, $b3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i4, $b5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i6, $b7);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>(i0, $b8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;putIntB;;1;;static void putIntB(java.nio.ByteBuffer, int, int)
+*;; * ;; * ;;*;;r0;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>(i0, $b2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i3, $b4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i5, $b6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i7, $b8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;getLongL;;1;;static long getLongL(java.nio.ByteBuffer, int)
+*;; * ;; * ;;*;;r0;;8
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b2 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b4 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b6 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b8 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i7);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b10 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i9);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b12 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i11);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b14 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i13);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b15 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;getLongB;;1;;static long getLongB(java.nio.ByteBuffer, int)
+*;; * ;; * ;;*;;r0;;8
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b1 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b3 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b5 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b7 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b9 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b11 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i10);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b13 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i12);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b15 = virtualinvoke r0.<java.nio.ByteBuffer: byte _get(int)>($i14);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;putLongL;;1;;static void putLongL(java.nio.ByteBuffer, int, long)
+*;; * ;; * ;;*;;r0;;8
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i2, $b3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i4, $b5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i6, $b7);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i8, $b9);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i10, $b11);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i12, $b13);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i14, $b15);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>(i0, $b16);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.Bits;;putLongB;;1;;static void putLongB(java.nio.ByteBuffer, int, long)
+*;; * ;; * ;;*;;r0;;8
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>(i0, $b2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i3, $b4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i5, $b6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i7, $b8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i9, $b10);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i11, $b12);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i13, $b14);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.nio.ByteBuffer: void _put(int,byte)>($i15, $b16);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.ByteBuffer;;get;;1;;public java.nio.ByteBuffer get(byte[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[i3] = $b6;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.ByteBuffer;;put;;1;;public java.nio.ByteBuffer put(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b3 = virtualinvoke r1.<java.nio.ByteBuffer: byte get()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBuffer;;put;;1;;public java.nio.ByteBuffer put(byte[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$b6 = r1[i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.ByteBuffer;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i4 = virtualinvoke r2.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.ByteBuffer: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$b8 = virtualinvoke r2.<java.nio.ByteBuffer: byte get(int)>(i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.nio.ByteBuffer;;compareTo;;1;;public int compareTo(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.ByteBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$b9 = virtualinvoke r1.<java.nio.ByteBuffer: byte get(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.charset.Charset;;compareTo;;1;;public final int compareTo(java.nio.charset.Charset)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.nio.charset.Charset: java.lang.String name()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.charset.Charset;;equals;;1;;public final boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r4 = virtualinvoke $r3.<java.nio.charset.Charset: java.lang.String name()>();;pattern detected param  r1 must not be null it define a local $r3which used in  InvokeExpr 
+java.nio.CharBuffer;;read;;1;;public int read(java.nio.CharBuffer) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.CharBuffer: java.nio.CharBuffer put(java.nio.CharBuffer)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.CharBuffer;;wrap;;1;;public static java.nio.CharBuffer wrap(java.lang.CharSequence)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.CharBuffer;;get;;1;;public java.nio.CharBuffer get(char[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[i3] = $c6;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.CharBuffer;;put;;1;;public java.nio.CharBuffer put(java.nio.CharBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c3 = virtualinvoke r1.<java.nio.CharBuffer: char get()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.CharBuffer;;put;;1;;public java.nio.CharBuffer put(char[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$c6 = r1[i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.CharBuffer;;put;;1;;public java.nio.CharBuffer put(java.lang.String, int, int)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c5 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.CharBuffer;;put;;1;;public final java.nio.CharBuffer put(java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.CharBuffer;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i4 = virtualinvoke r2.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.CharBuffer: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$c8 = virtualinvoke r2.<java.nio.CharBuffer: char get(int)>(i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.nio.CharBuffer;;compareTo;;1;;public int compareTo(java.nio.CharBuffer)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.CharBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = virtualinvoke r1.<java.nio.CharBuffer: char get(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r1.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ShortBuffer;;get;;1;;public java.nio.ShortBuffer get(short[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[i3] = $s6;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.ShortBuffer;;put;;1;;public java.nio.ShortBuffer put(java.nio.ShortBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.ShortBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$s3 = virtualinvoke r1.<java.nio.ShortBuffer: short get()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ShortBuffer;;put;;1;;public java.nio.ShortBuffer put(short[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$s6 = r1[i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.ShortBuffer;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i4 = virtualinvoke r2.<java.nio.ShortBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.ShortBuffer: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$s8 = virtualinvoke r2.<java.nio.ShortBuffer: short get(int)>(i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.nio.ShortBuffer;;compareTo;;1;;public int compareTo(java.nio.ShortBuffer)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.ShortBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.ShortBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$s9 = virtualinvoke r1.<java.nio.ShortBuffer: short get(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r1.<java.nio.ShortBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.IntBuffer;;get;;1;;public java.nio.IntBuffer get(int[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[i3] = $i6;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.IntBuffer;;put;;1;;public java.nio.IntBuffer put(java.nio.IntBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.IntBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r1.<java.nio.IntBuffer: int get()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.IntBuffer;;put;;1;;public java.nio.IntBuffer put(int[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$i6 = r1[i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.IntBuffer;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i4 = virtualinvoke r2.<java.nio.IntBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.IntBuffer: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i8 = virtualinvoke r2.<java.nio.IntBuffer: int get(int)>(i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.nio.IntBuffer;;compareTo;;1;;public int compareTo(java.nio.IntBuffer)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.IntBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.IntBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.nio.IntBuffer: int get(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r1.<java.nio.IntBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.LongBuffer;;get;;1;;public java.nio.LongBuffer get(long[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[i3] = $l6;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.LongBuffer;;put;;1;;public java.nio.LongBuffer put(java.nio.LongBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.LongBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l3 = virtualinvoke r1.<java.nio.LongBuffer: long get()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.LongBuffer;;put;;1;;public java.nio.LongBuffer put(long[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$l6 = r1[i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.LongBuffer;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i4 = virtualinvoke r2.<java.nio.LongBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.LongBuffer: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = virtualinvoke r2.<java.nio.LongBuffer: long get(int)>(i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.nio.LongBuffer;;compareTo;;1;;public int compareTo(java.nio.LongBuffer)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.LongBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.LongBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l9 = virtualinvoke r1.<java.nio.LongBuffer: long get(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r1.<java.nio.LongBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.FloatBuffer;;get;;1;;public java.nio.FloatBuffer get(float[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[i3] = $f0;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.FloatBuffer;;put;;1;;public java.nio.FloatBuffer put(java.nio.FloatBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.FloatBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$f0 = virtualinvoke r1.<java.nio.FloatBuffer: float get()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.FloatBuffer;;put;;1;;public java.nio.FloatBuffer put(float[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$f0 = r1[i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.FloatBuffer;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i4 = virtualinvoke r2.<java.nio.FloatBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.FloatBuffer: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$f1 = virtualinvoke r2.<java.nio.FloatBuffer: float get(int)>(i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.nio.FloatBuffer;;compareTo;;1;;public int compareTo(java.nio.FloatBuffer)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.FloatBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.FloatBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$f1 = virtualinvoke r1.<java.nio.FloatBuffer: float get(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.nio.FloatBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DoubleBuffer;;get;;1;;public java.nio.DoubleBuffer get(double[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[i3] = $d0;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.DoubleBuffer;;put;;1;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.nio.DoubleBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d0 = virtualinvoke r1.<java.nio.DoubleBuffer: double get()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DoubleBuffer;;put;;1;;public java.nio.DoubleBuffer put(double[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$d0 = r1[i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.nio.DoubleBuffer;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i4 = virtualinvoke r2.<java.nio.DoubleBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.DoubleBuffer: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$d1 = virtualinvoke r2.<java.nio.DoubleBuffer: double get(int)>(i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.nio.DoubleBuffer;;compareTo;;1;;public int compareTo(java.nio.DoubleBuffer)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.DoubleBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.nio.DoubleBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d1 = virtualinvoke r1.<java.nio.DoubleBuffer: double get(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.nio.DoubleBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.HeapByteBuffer;;put;;1;;public java.nio.ByteBuffer put(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.HeapByteBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.nio.HeapByteBuffer: byte[] hb>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i2 = virtualinvoke r2.<java.nio.HeapByteBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i3 = virtualinvoke r2.<java.nio.HeapByteBuffer: int ix(int)>($i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.HeapByteBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.HeapByteBuffer: java.nio.Buffer position(int)>($i7);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.ByteBuffer: boolean isDirect()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ByteBuffer: java.nio.ByteBuffer get(byte[],int,int)>($r10, $i13, i10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectByteBuffer;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectByteBuffer;;put;;1;;public java.nio.ByteBuffer put(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectByteBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectByteBuffer: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectByteBuffer: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectByteBuffer: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.ByteBuffer: byte[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.ByteBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.ByteBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.ByteBuffer: byte[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.ByteBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ByteBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsCharBufferB;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsCharBufferL;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsDoubleBufferB;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsDoubleBufferL;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsFloatBufferB;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsFloatBufferL;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsIntBufferB;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsIntBufferL;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsLongBufferB;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsLongBufferL;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsShortBufferB;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.ByteBufferAsShortBufferL;;<init>;;1;;void <init>(java.nio.ByteBuffer)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.StringCharBuffer;;<init>;;1;;void <init>(java.lang.CharSequence, int, int)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = interfaceinvoke r1.<java.lang.CharSequence: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = interfaceinvoke r1.<java.lang.CharSequence: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.HeapCharBuffer;;put;;1;;public java.nio.CharBuffer put(java.nio.CharBuffer)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.HeapCharBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.nio.HeapCharBuffer: char[] hb>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i2 = virtualinvoke r2.<java.nio.HeapCharBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i3 = virtualinvoke r2.<java.nio.HeapCharBuffer: int ix(int)>($i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.HeapCharBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.HeapCharBuffer: java.nio.Buffer position(int)>($i7);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.CharBuffer: boolean isDirect()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.CharBuffer: java.nio.CharBuffer get(char[],int,int)>($r10, $i13, i10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectIntBufferS;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectIntBufferS;;put;;1;;public java.nio.IntBuffer put(java.nio.IntBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectIntBufferS: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectIntBufferS: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectIntBufferS: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectIntBufferS: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.IntBuffer: int[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.IntBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.IntBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.IntBuffer: int[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.IntBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.IntBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectIntBufferU;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectIntBufferU;;put;;1;;public java.nio.IntBuffer put(java.nio.IntBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectIntBufferU: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectIntBufferU: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectIntBufferU: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectIntBufferU: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.IntBuffer: int[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.IntBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.IntBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.IntBuffer: int[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.IntBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.IntBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectShortBufferU;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectShortBufferU;;put;;1;;public java.nio.ShortBuffer put(java.nio.ShortBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectShortBufferU: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectShortBufferU: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectShortBufferU: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectShortBufferU: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.ShortBuffer: short[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.ShortBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.ShortBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.ShortBuffer: short[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.ShortBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ShortBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectShortBufferS;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectShortBufferS;;put;;1;;public java.nio.ShortBuffer put(java.nio.ShortBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectShortBufferS: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectShortBufferS: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectShortBufferS: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectShortBufferS: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.ShortBuffer: short[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.ShortBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.ShortBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.ShortBuffer: short[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.ShortBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ShortBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectDoubleBufferU;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectDoubleBufferU;;put;;1;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectDoubleBufferU: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectDoubleBufferU: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectDoubleBufferU: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectDoubleBufferU: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.DoubleBuffer: double[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.DoubleBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.DoubleBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.DoubleBuffer: double[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.DoubleBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.DoubleBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectDoubleBufferS;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectDoubleBufferS;;put;;1;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectDoubleBufferS: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectDoubleBufferS: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectDoubleBufferS: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectDoubleBufferS: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.DoubleBuffer: double[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.DoubleBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.DoubleBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.DoubleBuffer: double[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.DoubleBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.DoubleBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectLongBufferU;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectLongBufferU;;put;;1;;public java.nio.LongBuffer put(java.nio.LongBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectLongBufferU: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectLongBufferU: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectLongBufferU: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectLongBufferU: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.LongBuffer: long[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.LongBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.LongBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.LongBuffer: long[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.LongBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.LongBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectFloatBufferS;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectFloatBufferS;;put;;1;;public java.nio.FloatBuffer put(java.nio.FloatBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectFloatBufferS: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectFloatBufferS: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectFloatBufferS: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectFloatBufferS: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.FloatBuffer: float[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.FloatBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.FloatBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.FloatBuffer: float[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.FloatBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.FloatBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectLongBufferS;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectLongBufferS;;put;;1;;public java.nio.LongBuffer put(java.nio.LongBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectLongBufferS: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectLongBufferS: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectLongBufferS: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectLongBufferS: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.LongBuffer: long[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.LongBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.LongBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.LongBuffer: long[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.LongBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.LongBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectFloatBufferU;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectFloatBufferU;;put;;1;;public java.nio.FloatBuffer put(java.nio.FloatBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectFloatBufferU: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectFloatBufferU: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectFloatBufferU: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectFloatBufferU: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.FloatBuffer: float[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.FloatBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.FloatBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.FloatBuffer: float[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.FloatBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.FloatBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectCharBufferU;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectCharBufferU;;put;;1;;public java.nio.CharBuffer put(java.nio.CharBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectCharBufferU: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectCharBufferU: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectCharBufferU: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectCharBufferU: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.CharBuffer: char[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.CharBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.CharBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.CharBuffer: char[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.CharBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.CharBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectCharBufferS;;<init>;;1;;void <init>(sun.nio.ch.DirectBuffer, int, int, int, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = interfaceinvoke r1.<sun.nio.ch.DirectBuffer: long address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.DirectCharBufferS;;put;;1;;public java.nio.CharBuffer put(java.nio.CharBuffer)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.DirectCharBufferS: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke r2.<java.nio.DirectCharBufferS: int limit()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l8 = specialinvoke r2.<java.nio.DirectCharBufferS: long ix(int)>(i0);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.DirectCharBufferS: java.nio.Buffer position(int)>($i12);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.nio.CharBuffer: char[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r1.<java.nio.CharBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r1.<java.nio.CharBuffer: int limit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.nio.CharBuffer: char[] hb>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r1.<java.nio.CharBuffer: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.CharBuffer: java.nio.Buffer position(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.HeapDoubleBuffer;;put;;1;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.HeapDoubleBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.nio.HeapDoubleBuffer: double[] hb>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i2 = virtualinvoke r2.<java.nio.HeapDoubleBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i3 = virtualinvoke r2.<java.nio.HeapDoubleBuffer: int ix(int)>($i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.HeapDoubleBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.HeapDoubleBuffer: java.nio.Buffer position(int)>($i7);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.DoubleBuffer: boolean isDirect()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.nio.DoubleBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.DoubleBuffer: java.nio.DoubleBuffer get(double[],int,int)>($r10, $i13, i10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.HeapFloatBuffer;;put;;1;;public java.nio.FloatBuffer put(java.nio.FloatBuffer)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.HeapFloatBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.nio.HeapFloatBuffer: float[] hb>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i2 = virtualinvoke r2.<java.nio.HeapFloatBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i3 = virtualinvoke r2.<java.nio.HeapFloatBuffer: int ix(int)>($i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.HeapFloatBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.HeapFloatBuffer: java.nio.Buffer position(int)>($i7);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.FloatBuffer: boolean isDirect()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.nio.FloatBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.FloatBuffer: java.nio.FloatBuffer get(float[],int,int)>($r10, $i13, i10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.HeapIntBuffer;;put;;1;;public java.nio.IntBuffer put(java.nio.IntBuffer)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.HeapIntBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.nio.HeapIntBuffer: int[] hb>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i2 = virtualinvoke r2.<java.nio.HeapIntBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i3 = virtualinvoke r2.<java.nio.HeapIntBuffer: int ix(int)>($i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.HeapIntBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.HeapIntBuffer: java.nio.Buffer position(int)>($i7);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.IntBuffer: boolean isDirect()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.nio.IntBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.IntBuffer: java.nio.IntBuffer get(int[],int,int)>($r10, $i13, i10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.HeapLongBuffer;;put;;1;;public java.nio.LongBuffer put(java.nio.LongBuffer)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.HeapLongBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.nio.HeapLongBuffer: long[] hb>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i2 = virtualinvoke r2.<java.nio.HeapLongBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i3 = virtualinvoke r2.<java.nio.HeapLongBuffer: int ix(int)>($i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.HeapLongBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.HeapLongBuffer: java.nio.Buffer position(int)>($i7);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.LongBuffer: boolean isDirect()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.nio.LongBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.LongBuffer: java.nio.LongBuffer get(long[],int,int)>($r10, $i13, i10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.HeapShortBuffer;;put;;1;;public java.nio.ShortBuffer put(java.nio.ShortBuffer)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke r2.<java.nio.HeapShortBuffer: int remaining()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.nio.HeapShortBuffer: short[] hb>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i2 = virtualinvoke r2.<java.nio.HeapShortBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i3 = virtualinvoke r2.<java.nio.HeapShortBuffer: int ix(int)>($i2);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i6 = virtualinvoke r2.<java.nio.HeapShortBuffer: int position()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.nio.HeapShortBuffer: java.nio.Buffer position(int)>($i7);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.nio.ShortBuffer: boolean isDirect()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.nio.ShortBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ShortBuffer: java.nio.ShortBuffer get(short[],int,int)>($r10, $i13, i10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.channels.AsynchronousFileChannel;;open;;1;;public static transient java.nio.channels.AsynchronousFileChannel open(java.nio.file.Path, java.util.Set, java.util.concurrent.ExecutorService, java.nio.file.attribute.FileAttribute[]) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = interfaceinvoke r0.<java.nio.file.Path: java.nio.file.FileSystem getFileSystem()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.file.spi.FileSystemProvider;;newInputStream;;1;;public transient java.io.InputStream newInputStream(java.nio.file.Path, java.nio.file.OpenOption[]) throws java.io.IOException
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r4 = r3[i1];;pattern detected param  r2 must not be null it define a local r3which used in  ArrayRef 
+java.nio.file.spi.FileSystemProvider;;newOutputStream;;1;;public transient java.io.OutputStream newOutputStream(java.nio.file.Path, java.nio.file.OpenOption[]) throws java.io.IOException
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r5 = r4[i2];;pattern detected param  r2 must not be null it define a local r4which used in  ArrayRef 
+java.nio.channels.FileChannel;;open;;1;;public static transient java.nio.channels.FileChannel open(java.nio.file.Path, java.util.Set, java.nio.file.attribute.FileAttribute[]) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = interfaceinvoke r0.<java.nio.file.Path: java.nio.file.FileSystem getFileSystem()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.channels.Channels;;newChannel;;1;;public static java.nio.channels.ReadableByteChannel newChannel(java.io.InputStream)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r4 = virtualinvoke $r3.<java.io.FileInputStream: java.nio.channels.FileChannel getChannel()>();;pattern detected param  r0 must not be null it define a local $r3which used in  InvokeExpr 
+java.nio.channels.Channels;;newChannel;;1;;public static java.nio.channels.WritableByteChannel newChannel(java.io.OutputStream)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r4 = virtualinvoke $r3.<java.io.FileOutputStream: java.nio.channels.FileChannel getChannel()>();;pattern detected param  r0 must not be null it define a local $r3which used in  InvokeExpr 
+java.nio.channels.Channels;;newReader;;1;;public static java.io.Reader newReader(java.nio.channels.ReadableByteChannel, java.nio.charset.CharsetDecoder, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.nio.charset.CharsetDecoder: java.nio.charset.CharsetDecoder reset()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.channels.Channels;;newWriter;;1;;public static java.io.Writer newWriter(java.nio.channels.WritableByteChannel, java.nio.charset.CharsetEncoder, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.nio.charset.CharsetEncoder: java.nio.charset.CharsetEncoder reset()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.charset.CharsetDecoder;;replaceWith;;1;;public final java.nio.charset.CharsetDecoder replaceWith(java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.nio.charset.CharsetDecoder;;onMalformedInput;;1;;public final java.nio.charset.CharsetDecoder onMalformedInput(java.nio.charset.CodingErrorAction)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.nio.charset.CharsetDecoder;;onUnmappableCharacter;;1;;public final java.nio.charset.CharsetDecoder onUnmappableCharacter(java.nio.charset.CodingErrorAction)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.nio.charset.CharsetDecoder;;decode;;2;;public final java.nio.charset.CoderResult decode(java.nio.ByteBuffer, java.nio.CharBuffer, boolean)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r1.<java.nio.ByteBuffer: boolean hasRemaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.nio.ByteBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.ByteBuffer: java.nio.Buffer position(int)>($i11);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r2.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.nio.CharBuffer: java.nio.CharBuffer put(java.lang.String)>($r17);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.nio.charset.CharsetDecoder;;decode;;1;;public final java.nio.CharBuffer decode(java.nio.ByteBuffer) throws java.nio.charset.CharacterCodingException
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.nio.ByteBuffer: boolean hasRemaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.charset.CharsetEncoder;;replaceWith;;1;;public final java.nio.charset.CharsetEncoder replaceWith(byte[])
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.nio.charset.CharsetEncoder;;onMalformedInput;;1;;public final java.nio.charset.CharsetEncoder onMalformedInput(java.nio.charset.CodingErrorAction)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.nio.charset.CharsetEncoder;;onUnmappableCharacter;;1;;public final java.nio.charset.CharsetEncoder onUnmappableCharacter(java.nio.charset.CodingErrorAction)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.nio.charset.CharsetEncoder;;encode;;2;;public final java.nio.charset.CoderResult encode(java.nio.CharBuffer, java.nio.ByteBuffer, boolean)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r1.<java.nio.CharBuffer: boolean hasRemaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.nio.CharBuffer: int position()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.nio.CharBuffer: java.nio.Buffer position(int)>($i11);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r2.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>($r17);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.nio.charset.CharsetEncoder;;encode;;1;;public final java.nio.ByteBuffer encode(java.nio.CharBuffer) throws java.nio.charset.CharacterCodingException
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.nio.CharBuffer: int remaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.nio.CharBuffer: boolean hasRemaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.charset.CharsetEncoder;;canEncode;;1;;public boolean canEncode(java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r2 = virtualinvoke $r3.<java.nio.CharBuffer: java.nio.CharBuffer duplicate()>();;pattern detected param  r1 must not be null it define a local $r3which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = interfaceinvoke r1.<java.lang.CharSequence: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.channels.spi.AbstractSelectableChannel;;removeKey;;1;;void removeKey(java.nio.channels.SelectionKey)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke $r10.<java.nio.channels.spi.AbstractSelectionKey: void invalidate()>();;pattern detected param  r1 must not be null it define a local $r10which used in  InvokeExpr 
+java.nio.channels.spi.AbstractSelectableChannel;;register;;1;;public final java.nio.channels.SelectionKey register(java.nio.channels.Selector, int, java.lang.Object) throws java.nio.channels.ClosedChannelException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r4 = virtualinvoke $r12.<java.nio.channels.spi.AbstractSelector: java.nio.channels.SelectionKey register(java.nio.channels.spi.AbstractSelectableChannel,int,java.lang.Object)>(r0, i0, r2);;pattern detected param  r1 must not be null it define a local $r12which used in  InvokeExpr 
+java.nio.channels.spi.AbstractSelector;;deregister;;1;;protected final void deregister(java.nio.channels.spi.AbstractSelectionKey)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.nio.channels.spi.AbstractSelectionKey: java.nio.channels.SelectableChannel channel()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.CopyMoveHelper;;copyToForeignTarget;;1;;static transient void copyToForeignTarget(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[]) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r16 = interfaceinvoke r1.<java.nio.file.Path: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.Files;;newDirectoryStream;;2;;public static java.nio.file.DirectoryStream newDirectoryStream(java.nio.file.Path, java.lang.String) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = interfaceinvoke r0.<java.nio.file.Path: java.nio.file.FileSystem getFileSystem()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("*");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.Files;;createDirectories;;1;;public static transient java.nio.file.Path createDirectories(java.nio.file.Path, java.nio.file.attribute.FileAttribute[]) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r0 = interfaceinvoke r0.<java.nio.file.Path: java.nio.file.Path toAbsolutePath()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r13 = interfaceinvoke r0.<java.nio.file.Path: java.nio.file.Path getParent()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.file.Files;;getAttribute;;1;;public static transient java.lang.Object getAttribute(java.nio.file.Path, java.lang.String, java.nio.file.LinkOption[]) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;5
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.lang.String: int indexOf(int)>(42);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int indexOf(int)>(44);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int indexOf(int)>(58);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>($i5);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.Files;;newBufferedReader;;1;;public static java.io.BufferedReader newBufferedReader(java.nio.file.Path, java.nio.charset.Charset) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.nio.charset.Charset: java.nio.charset.CharsetDecoder newDecoder()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.Files;;newBufferedWriter;;1;;public static transient java.io.BufferedWriter newBufferedWriter(java.nio.file.Path, java.nio.charset.Charset, java.nio.file.OpenOption[]) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.nio.charset.Charset: java.nio.charset.CharsetEncoder newEncoder()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.Files;;copy;;1;;public static transient long copy(java.io.InputStream, java.nio.file.Path, java.nio.file.CopyOption[]) throws java.io.IOException
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r4 = r3[i1];;pattern detected param  r2 must not be null it define a local r3which used in  ArrayRef 
+java.nio.file.Files;;write;;2;;public static transient java.nio.file.Path write(java.nio.file.Path, java.lang.Iterable, java.nio.charset.Charset, java.nio.file.OpenOption[]) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r9 = interfaceinvoke r1.<java.lang.Iterable: java.util.Iterator iterator()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.nio.charset.Charset: java.nio.charset.CharsetEncoder newEncoder()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.nio.file.attribute.FileTime;;to;;1;;public long 'to'(java.util.concurrent.TimeUnit)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l1 = virtualinvoke r1.<java.util.concurrent.TimeUnit: long convert(long,java.util.concurrent.TimeUnit)>($l0, $r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.attribute.FileTime;;compareTo;;1;;public int compareTo(java.nio.file.attribute.FileTime)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.nio.file.attribute.FileTime: java.util.concurrent.TimeUnit unit>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$l1 = r1.<java.nio.file.attribute.FileTime: long value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$l5 = r1.<java.nio.file.attribute.FileTime: long value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = specialinvoke r1.<java.nio.file.attribute.FileTime: java.nio.file.attribute.FileTime$DaysAndNanos asDaysAndNanos()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.FileTreeWalker;;<init>;;1;;void <init>(java.util.Set, java.nio.file.FileVisitor, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.nio.file.FileSystems;;getFileSystem;;1;;public static java.nio.file.FileSystem getFileSystem(java.net.URI)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.net.URI: java.lang.String getScheme()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.file.FileSystems;;newFileSystem;;1;;public static java.nio.file.FileSystem newFileSystem(java.net.URI, java.util.Map, java.lang.ClassLoader) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.net.URI: java.lang.String getScheme()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.file.FileSystems;;newFileSystem;;1;;public static java.nio.file.FileSystem newFileSystem(java.nio.file.Path, java.lang.ClassLoader) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.nio.file.Paths;;get;;1;;public static java.nio.file.Path get(java.net.URI)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.net.URI: java.lang.String getScheme()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.file.attribute.AclEntry;;newBuilder;;1;;public static java.nio.file.attribute.AclEntry$Builder newBuilder(java.nio.file.attribute.AclEntry)
+*;; * ;; * ;;*;;r0;;4
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r0.<java.nio.file.attribute.AclEntry: java.nio.file.attribute.AclEntryType type>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r0.<java.nio.file.attribute.AclEntry: java.nio.file.attribute.UserPrincipal who>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r0.<java.nio.file.attribute.AclEntry: java.util.Set perms>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r0.<java.nio.file.attribute.AclEntry: java.util.Set flags>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.nio.file.attribute.PosixFilePermissions;;toString;;1;;public static java.lang.String toString(java.util.Set)
+*;; * ;; * ;;*;;r0;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z4 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r7);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z5 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z6 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r9);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z7 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r10);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z8 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>($r11);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.nio.file.attribute.PosixFilePermissions;;fromString;;1;;public static java.util.Set fromString(java.lang.String)
+*;; * ;; * ;;*;;r0;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c1 = virtualinvoke r0.<java.lang.String: char charAt(int)>(0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c3 = virtualinvoke r0.<java.lang.String: char charAt(int)>(2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c4 = virtualinvoke r0.<java.lang.String: char charAt(int)>(3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c5 = virtualinvoke r0.<java.lang.String: char charAt(int)>(4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c6 = virtualinvoke r0.<java.lang.String: char charAt(int)>(5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c7 = virtualinvoke r0.<java.lang.String: char charAt(int)>(6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c8 = virtualinvoke r0.<java.lang.String: char charAt(int)>(7);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = virtualinvoke r0.<java.lang.String: char charAt(int)>(8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 

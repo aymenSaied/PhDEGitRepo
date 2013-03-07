@@ -1,0 +1,858 @@
+class name;;Method name;;number of detected pattern;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.text.AttributedString;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.AttributedString;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.AttributedString;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = interfaceinvoke r1.<java.text.AttributedCharacterIterator: int getBeginIndex()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = interfaceinvoke r1.<java.text.AttributedCharacterIterator: int getEndIndex()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.AttributedString;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.AttributedString;;addAttribute;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.AttributedString;;addAttribute;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.AttributedString;;addAttributes;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.AttributedString;;attributeValuesMatch;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.AttributedString;;appendContents;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = interfaceinvoke r2.<java.text.CharacterIterator: int getBeginIndex()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = interfaceinvoke r2.<java.text.CharacterIterator: int getEndIndex()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.CharacterIterator: char setIndex(int)>($i2);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c4 = interfaceinvoke r2.<java.text.CharacterIterator: char current()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.AttributedString;;access$000;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c1 = specialinvoke r0.<java.text.AttributedString: char charAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.AttributedString;;access$100;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = specialinvoke r0.<java.text.AttributedString: java.lang.Object getAttribute(java.text.AttributedCharacterIterator$Attribute,int)>(r1, i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.AttributedString;;access$300;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = specialinvoke r0.<java.text.AttributedString: boolean attributeValuesMatch(java.util.Set,int,int)>(r1, i0, i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.AttributedString;;access$400;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = specialinvoke r0.<java.text.AttributedString: java.lang.Object getAttributeCheckRange(java.text.AttributedCharacterIterator$Attribute,int,int,int)>(r1, i0, i1, i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.Bidi;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.Bidi;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.Bidi;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.BreakIterator;;getLong;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$b3 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b7 = r0[$i6];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.text.BreakIterator;;getInt;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$b3 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b6 = r0[$i5];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.text.BreakIterator;;getShort;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$b2 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b6 = r0[$i5];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.text.StringCharacterIterator;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.StringCharacterIterator;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.StringCharacterIterator;;setText;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.StringCharacterIterator;;equals;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i1 = virtualinvoke r2.<java.text.StringCharacterIterator: int hashCode()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.text.StringCharacterIterator: java.lang.String text>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i3 = r2.<java.text.StringCharacterIterator: int pos>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i5 = r2.<java.text.StringCharacterIterator: int begin>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i7 = r2.<java.text.StringCharacterIterator: int end>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.text.DictionaryBasedBreakIterator;;prepareCategoryFlags;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$b4 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.text.RuleBasedBreakIterator;;checkOffset;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = interfaceinvoke r0.<java.text.CharacterIterator: int getBeginIndex()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = interfaceinvoke r0.<java.text.CharacterIterator: int getEndIndex()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.RuleBasedBreakIterator;;setText;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = interfaceinvoke r1.<java.text.CharacterIterator: int getEndIndex()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r1.<java.text.CharacterIterator: char setIndex(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = interfaceinvoke r1.<java.text.CharacterIterator: int getIndex()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.MessageFormat;;applyPattern;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c4 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i8);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.MessageFormat;;setFormatsByArgumentIndex;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r4 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.text.MessageFormat;;setFormats;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.text.MessageFormat;;formatToCharacterIterator;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.MessageFormat;;parse;;1
+*;; * ;; * ;;r2;;6
+*;;*;;*;;*;;*;;FieldRef for param;;i2 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i2;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i13;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i13;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = $i23;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i2;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.text.MessageFormat;;subformat;;1
+*;; * ;; * ;;r2;;17
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r11);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r15 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(123);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i8 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r27 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String substring(int)>(i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r6);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i11 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r6);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r41);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i14 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r43 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String substring(int)>(i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.MessageFormat;;append;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c1 = interfaceinvoke r2.<java.text.CharacterIterator: char first()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c2 = interfaceinvoke r2.<java.text.CharacterIterator: char first()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c3 = interfaceinvoke r2.<java.text.CharacterIterator: char next()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.MessageFormat;;makeFormat;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r3 = r1[i2];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.text.MessageFormat;;findKeyword;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>($r2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$r2 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r6 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.text.MessageFormat;;copyAndFixQuotes;;2
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(c3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\'\'");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(c3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;c3 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.MessageFormat;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.CalendarBuilder;;establish;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r1.<java.util.Calendar: boolean isWeekDateSupported()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.util.Calendar: void clear()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.util.Calendar: void set(int,int)>(i1, $i9);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = virtualinvoke r1.<java.util.Calendar: int getFirstDayOfWeek()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z8 = virtualinvoke r1.<java.util.Calendar: boolean isLenient()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.util.Calendar: void setWeekDate(int,int,int)>($i17, i11, i13);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DateFormatSymbols;;setZoneStrings;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r5 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.text.DateFormatSymbols;;setLocalPatternChars;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.String: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DateFormatSymbols;;toOneBasedArray;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r2 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.text.DateFormatSymbols;;getZoneIndex;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>($r4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DateFormatSymbols;;copyMembers;;2
+*;; * ;; * ;;r1;;15
+*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.text.DateFormatSymbols: java.lang.String[] eras>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.text.DateFormatSymbols: java.lang.String[] eras>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.text.DateFormatSymbols: java.lang.String[] months>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r1.<java.text.DateFormatSymbols: java.lang.String[] months>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.text.DateFormatSymbols: java.lang.String[] shortMonths>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.text.DateFormatSymbols: java.lang.String[] shortMonths>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r15 = r1.<java.text.DateFormatSymbols: java.lang.String[] weekdays>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r16 = r1.<java.text.DateFormatSymbols: java.lang.String[] weekdays>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r19 = r1.<java.text.DateFormatSymbols: java.lang.String[] shortWeekdays>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r20 = r1.<java.text.DateFormatSymbols: java.lang.String[] shortWeekdays>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r23 = r1.<java.text.DateFormatSymbols: java.lang.String[] ampms>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r24 = r1.<java.text.DateFormatSymbols: java.lang.String[] ampms>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r27 = r1.<java.text.DateFormatSymbols: java.lang.String[][] zoneStrings>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r28 = specialinvoke r1.<java.text.DateFormatSymbols: java.lang.String[][] getZoneStringsImpl(boolean)>(1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$r30 = r1.<java.text.DateFormatSymbols: java.lang.String localPatternChars>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r2;;9
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String[] eras> = $r6;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String[] months> = $r10;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String[] shortMonths> = $r14;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String[] weekdays> = $r18;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String[] shortWeekdays> = $r22;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String[] ampms> = $r26;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String[][] zoneStrings> = $r28;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String[][] zoneStrings> = $r29;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.DateFormatSymbols: java.lang.String localPatternChars> = $r30;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.text.DateFormatSymbols;;writeObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.CharacterIteratorFieldDelegate;;formatted;;1
+*;; * ;; * ;;r3;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r3.<java.lang.StringBuffer: java.lang.String substring(int,int)>($i17, i0);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r3.<java.lang.StringBuffer: java.lang.String substring(int,int)>(i20, i1);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+java.text.CharacterIteratorFieldDelegate;;getIterator;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>($i4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.FieldPosition;;access$100;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = specialinvoke r0.<java.text.FieldPosition: boolean matchesField(java.text.Format$Field)>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.FieldPosition;;access$200;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = specialinvoke r0.<java.text.FieldPosition: boolean matchesField(java.text.Format$Field,int)>(r1, i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.ChoiceFormat;;applyPattern;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c4 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i8 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c10 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i9);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.ChoiceFormat;;format;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r6);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.ChoiceFormat;;parse;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>(i0, r3, 0, $i4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i8 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;7
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = $i6;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i7 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;i1 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = i1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i9 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.text.ChoiceFormat;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.NumberFormat;;format;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i0 = virtualinvoke $r4.<java.math.BigInteger: int bitLength()>();;pattern detected param  r1 must not be null it define a local $r4which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l1 = virtualinvoke $r5.<java.lang.Number: long longValue()>();;pattern detected param  r1 must not be null it define a local $r5which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$d0 = virtualinvoke $r7.<java.lang.Number: double doubleValue()>();;pattern detected param  r1 must not be null it define a local $r7which used in  InvokeExpr 
+java.text.NumberFormat;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.NumberFormat;;writeObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.CollationElementIterator;;<init>;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r2.<java.text.RuleBasedCollator: java.text.RBCollationTables getTables()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r2.<java.text.RuleBasedCollator: int getDecomposition()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.CollationElementIterator;;<init>;;1
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r2.<java.text.RuleBasedCollator: java.text.RBCollationTables getTables()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r2.<java.text.RuleBasedCollator: int getDecomposition()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.RBCollationTables;;reverse;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;c4 = virtualinvoke r0.<java.lang.StringBuffer: char charAt(int)>(i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c5 = virtualinvoke r0.<java.lang.StringBuffer: char charAt(int)>(i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.StringBuffer: void setCharAt(int,char)>(i2, $c5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.StringBuffer: void setCharAt(int,char)>(i3, c4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.RBCollationTables;;getEntry;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.util.Vector: int size()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.util.Vector: java.lang.Object elementAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.RBCollationTables;;access$102;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.text.RBCollationTables: boolean frenchSec> = z0;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.text.RBCollationTables;;access$202;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.text.RBCollationTables: boolean seAsianSwapping> = z0;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.text.RBCollationTables;;access$302;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.text.RBCollationTables: sun.text.UCompactIntArray mapping> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.text.RBCollationTables;;access$402;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.text.RBCollationTables: java.util.Vector contractTable> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.text.RBCollationTables;;access$502;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.text.RBCollationTables: java.util.Vector expandTable> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.text.RBCollationTables;;access$602;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.text.RBCollationTables: sun.text.IntHashtable contractFlags> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.text.RBCollationTables;;access$702;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.text.RBCollationTables: short maxSecOrder> = s0;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.text.RBCollationTables;;access$802;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.text.RBCollationTables: short maxTerOrder> = s0;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.text.RuleBasedCollator;;<init>;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.text.RuleBasedCollator: int getStrength()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.text.RuleBasedCollator: int getDecomposition()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.text.RuleBasedCollator: java.text.RBCollationTables tables>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.text.CollationKey;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.DateFormat;;format;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l0 = virtualinvoke $r7.<java.lang.Number: long longValue()>();;pattern detected param  r1 must not be null it define a local $r7which used in  InvokeExpr 
+java.text.SimpleDateFormat;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.SimpleDateFormat;;initializeCalendar;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.SimpleDateFormat;;compile;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c4 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c10 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i9);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c18 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i17);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c22 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;encode;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>($c4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>($c7);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>($c9);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>($c11);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;set2DigitYearStart;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$l0 = virtualinvoke r1.<java.util.Date: long getTime()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;format;;1
+*;; * ;; * ;;r3;;3
+*;;*;;*;;*;;*;;FieldRef for param;;r3.<java.text.FieldPosition: int endIndex> = $b0;;pattern detected param  r3 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r3.<java.text.FieldPosition: int beginIndex> = $b0;;pattern detected param  r3 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r3.<java.text.FieldPosition: java.text.Format$FieldDelegate getFieldDelegate()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;format;;1
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c11);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char[],int,int)>($r11, i0, i2);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;formatToCharacterIterator;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l0 = virtualinvoke $r9.<java.lang.Number: long longValue()>();;pattern detected param  r1 must not be null it define a local $r9which used in  InvokeExpr 
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.SimpleDateFormat;;subFormat;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r1.<java.text.Format$FieldDelegate: void formatted(int,java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>(i42, r68, r68, i3, $i43, r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;11
+*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r39);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r44);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r51);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(43);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(90);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(43);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(45);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(58);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r3);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i43 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;zeroPaddingNumber;;1
+*;; * ;; * ;;r1;;8
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c5);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c8);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c12);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c16);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c24);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c28);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c32);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;parse;;2
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c16 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c19 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;9
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = i1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i0;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = i1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i0;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = i1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = i0;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i0;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = i1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.text.SimpleDateFormat;;matchString;;3
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$r4 = r2[i2];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r5 = r2[i2];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r3.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(i1, i5);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean regionMatches(boolean,int,java.lang.String,int,int)>(1, i0, $r5, 0, i6);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;matchString;;2
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r3.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(i1, $i4);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.String: boolean regionMatches(boolean,int,java.lang.String,int,int)>(1, i0, r6, 0, i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;matchZoneString;;2
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r3 = r2[i1];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean regionMatches(boolean,int,java.lang.String,int,int)>(1, i0, r3, 0, $i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;matchDSTString;;2
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r4 = r2[i1];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean regionMatches(boolean,int,java.lang.String,int,int)>(1, i0, r3, 0, $i4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;subParseZoneString;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(16, i13);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;subParseNumericZone;;2
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r2.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(15, $i23);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;c5 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c9 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i8);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c13 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i12);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c13 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i14);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c17 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i16);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;subParse;;4
+*;; * ;; * ;;r4;;8
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r4.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(i4, i3);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r4.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(i4, i3);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r4.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(2, $i54);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r4.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(11, i3);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r4.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(10, i3);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r58 = virtualinvoke r4.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(15, 0);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r64 = virtualinvoke r4.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(15, 0);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r4.<java.text.CalendarBuilder: java.text.CalendarBuilder set(int,int)>(i4, i127);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r3;;2
+*;;*;;*;;*;;*;;FieldRef for param;;r3.<java.text.ParsePosition: int errorIndex> = i0;;pattern detected param  r3 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r3.<java.text.ParsePosition: int errorIndex> = $i142;;pattern detected param  r3 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r2[$b46] = $z8;;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;23
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c5 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i12);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i16 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, $i17);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i19 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c21 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i20);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i24 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c27 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i26);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c41 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c43 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i42);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c80 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i79);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i81 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z13 = virtualinvoke r1.<java.lang.String: boolean regionMatches(boolean,int,java.lang.String,int,int)>(1, i0, "GMT", 0, $i84);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i87 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c91 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i90);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i107 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c111 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i110);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i125 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r72 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, $i126);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i129 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c131 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i130);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i134 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c137 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i136);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;translatePattern;;3
+*;; * ;; * ;;r3;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r3.<java.lang.String: int length()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c1 = virtualinvoke r3.<java.lang.String: char charAt(int)>(i2);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c1 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(c1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;setDateFormatSymbols;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.text.DateFormatSymbols: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.SimpleDateFormat;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.text.SimpleDateFormat: java.lang.String pattern>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.text.SimpleDateFormat: java.text.DateFormatSymbols formatData>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.text.SimpleDateFormat;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r2.<java.text.DecimalFormatSymbols: java.lang.Object clone()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;format;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i0 = virtualinvoke $r4.<java.math.BigInteger: int bitLength()>();;pattern detected param  r1 must not be null it define a local $r4which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l1 = virtualinvoke $r5.<java.lang.Number: long longValue()>();;pattern detected param  r1 must not be null it define a local $r5which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$d0 = virtualinvoke $r11.<java.lang.Number: double doubleValue()>();;pattern detected param  r1 must not be null it define a local $r11which used in  InvokeExpr 
+java.text.DecimalFormat;;format;;1
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.text.FieldPosition: void setBeginIndex(int)>(0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.text.FieldPosition: void setEndIndex(int)>(0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r2.<java.text.FieldPosition: java.text.Format$FieldDelegate getFieldDelegate()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;format;;2
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r16);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i14 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(int,java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>(0, $r3, $r4, i0, $i7, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(int,java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>(0, $r18, $r19, i1, $i14, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;format;;1
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.text.FieldPosition: void setBeginIndex(int)>(0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.text.FieldPosition: void setEndIndex(int)>(0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r2.<java.text.FieldPosition: java.text.Format$FieldDelegate getFieldDelegate()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;format;;1
+*;; * ;; * ;;r3;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r3.<java.text.FieldPosition: void setBeginIndex(int)>(0);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r3.<java.text.FieldPosition: void setEndIndex(int)>(0);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r3.<java.text.FieldPosition: java.text.Format$FieldDelegate getFieldDelegate()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;format;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r1.<java.math.BigDecimal: java.math.BigDecimal multiply(java.math.BigDecimal)>($r7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.math.BigDecimal: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r1.<java.math.BigDecimal: java.math.BigDecimal negate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;format;;1
+*;; * ;; * ;;r3;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r3.<java.text.FieldPosition: void setBeginIndex(int)>(0);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r3.<java.text.FieldPosition: void setEndIndex(int)>(0);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r3.<java.text.FieldPosition: java.text.Format$FieldDelegate getFieldDelegate()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;format;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r1.<java.math.BigInteger: java.math.BigInteger multiply(java.math.BigInteger)>($r7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.math.BigInteger: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r1.<java.math.BigInteger: java.math.BigInteger negate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;formatToCharacterIterator;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$d0 = virtualinvoke $r6.<java.lang.Number: double doubleValue()>();;pattern detected param  r1 must not be null it define a local $r6which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l0 = virtualinvoke $r8.<java.lang.Number: long longValue()>();;pattern detected param  r1 must not be null it define a local $r8which used in  InvokeExpr 
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.DecimalFormat;;subformat;;2
+*;; * ;; * ;;r1;;40
+*;;*;;*;;*;;*;;InvokeExpr for param;;i8 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i9 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c31);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i9 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i9 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i32 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i33 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r33);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i34 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i35 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c36);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i37 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i18 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c45);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i46 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i47 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i53 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c60);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i64 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c6);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i65 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i67 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i68 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i69 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i70 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i71 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i72 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c82);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i83 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;10
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(int,java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>(0, $r26, $r27, i8, i9, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>($r28, $r29, i9, i10, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(int,java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>(1, $r30, $r31, i10, $i32, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>($r35, $r36, i33, $i34, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>($r40, $r41, i35, $i37, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>($r51, $r52, i18, $i46, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>($r64, $r65, i64, $i65, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(int,java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>(0, $r68, $r69, i47, $i68, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>($r71, $r72, i69, $i71, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.text.Format$FieldDelegate: void formatted(int,java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>(1, $r81, $r82, i72, $i83, r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;append;;4
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r3.<java.text.Format$FieldDelegate: void formatted(java.text.Format$Field,java.lang.Object,int,int,java.lang.StringBuffer)>(r7, r7, $i5, $i7, r1);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r4;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r6 = r4[i1];;pattern detected param  r4 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r2.<java.lang.String: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;parse;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>($i1, $r7, 0, $i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i3 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = $i5;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.text.DecimalFormat;;subparse;;6
+*;; * ;; * ;;r3;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i10 = virtualinvoke r3.<java.lang.String: int length()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = virtualinvoke r3.<java.lang.String: int length()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i14 = virtualinvoke r3.<java.lang.String: int length()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i16 = virtualinvoke r3.<java.lang.String: int length()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r4;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r4.<java.lang.String: int length()>();;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i13 = virtualinvoke r4.<java.lang.String: int length()>();;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i15 = virtualinvoke r4.<java.lang.String: int length()>();;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i18 = virtualinvoke r4.<java.lang.String: int length()>();;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r5;;11
+*;;*;;*;;*;;*;;FieldRef for param;;r5.<java.text.DigitList: int count> = $b21;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r5.<java.text.DigitList: int decimalAt> = $b21;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i24 = r5.<java.text.DigitList: int count>;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i25 = r5.<java.text.DigitList: int decimalAt>;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r5.<java.text.DigitList: int decimalAt> = $i26;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r5.<java.text.DigitList: void append(char)>($c28);;pattern detected param  r5 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r5.<java.text.DigitList: void append(char)>($c30);;pattern detected param  r5 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;r5.<java.text.DigitList: int decimalAt> = i6;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r5.<java.text.DigitList: int decimalAt> = i6;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i36 = r5.<java.text.DigitList: int decimalAt>;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r5.<java.text.DigitList: int decimalAt> = $i37;;pattern detected param  r5 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r1;;8
+*;;*;;*;;*;;*;;InvokeExpr for param;;z1 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>(i0, r3, 0, $i10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;z2 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>(i0, r4, 0, $i11);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z6 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>(i17, $r12, 0, $i19);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i23 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c8 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i17);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z10 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>(i17, r7, 0, $i31);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;z1 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>(i17, $r28, 0, $i38);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;z2 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>(i17, $r30, 0, $i39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;10
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;i1 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i0;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = i1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i17;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = $i46;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int index> = i17;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i47 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.text.ParsePosition: int errorIndex> = i17;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r6;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;r6[0] = 0;;pattern detected param  r6 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r6[0] = 1;;pattern detected param  r6 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r6[1] = z1;;pattern detected param  r6 must not be null  because used in  ArrayRef 
+java.text.DecimalFormat;;setDecimalFormatSymbols;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.text.DecimalFormatSymbols: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;expandAffix;;2
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c1 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c1 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c6 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: void setLength(int)>(0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r4);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r7);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r13 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;expandAffix;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i5);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c7 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i6);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i8 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;appendAffix;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;appendAffix;;2
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;21
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c2);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c4);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c6);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c8);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c10);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i13 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c12);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i15 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c14);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i17 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c16);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i18 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(164);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i19 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(48);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i20 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(44);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i21 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(46);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i22 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(37);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i23 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(8240);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i24 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(35);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i25 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(59);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i26 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(45);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i27 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(164);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i28 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(39);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i29 = virtualinvoke r2.<java.lang.String: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c1 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;applyPattern;;1
+*;; * ;; * ;;r1;;14
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i20 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i21 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c19 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i18);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i23 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c25 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i24);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i28 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c30 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i29);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i32 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c34 = virtualinvoke r1.<java.lang.String: char charAt(int)>($i33);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i18 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z6 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>(i18, r2, 0, $i38);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i41 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c42 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i40);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i61 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormat;;setRoundingMode;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.DecimalFormat;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DigitList;;set;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.String: void getChars(int,int,char[],int)>(0, i1, r2, 0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DigitList;;set;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.math.BigDecimal: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DigitList;;set;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.math.BigInteger: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DigitList;;equals;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i2 = r2.<java.text.DigitList: int count>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i4 = r2.<java.text.DigitList: int decimalAt>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.text.DigitList: char[] digits>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.text.DigitList;;parseInt;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$c4 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;c6 = r0[$i5];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.text.DecimalFormatSymbols;;setCurrency;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.DecimalFormatSymbols;;setExponentSeparator;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.text.DecimalFormatSymbols;;initialize;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.util.Locale: java.lang.String getUnicodeLocaleType(java.lang.String)>("nu");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r26 = virtualinvoke r1.<java.util.Locale: java.lang.String getCountry()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.DecimalFormatSymbols;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.MergeCollation;;fixEntry;;1
+*;; * ;; * ;;r1;;9
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.text.PatternEntry: java.lang.String chars>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.text.PatternEntry: java.lang.String extension>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i5 = r1.<java.text.PatternEntry: int strength>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i6 = r1.<java.text.PatternEntry: int strength>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i7 = r1.<java.text.PatternEntry: int strength>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r19 = r1.<java.text.PatternEntry: java.lang.String chars>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r20 = r1.<java.text.PatternEntry: java.lang.String chars>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r34 = r1.<java.text.PatternEntry: java.lang.String extension>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.text.PatternEntry: java.lang.String extension> = $r36;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.text.MergeCollation;;findLastEntry;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r24);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.text.PatternEntry;;addToBuffer;;1
+*;; * ;; * ;;r1;;14
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(10);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(32);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(38);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(32);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(32);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(61);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(44);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(59);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(60);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(38);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(63);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(32);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(47);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.PatternEntry;;appendQuoted;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;c0 = virtualinvoke r0.<java.lang.String: char charAt(int)>(0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;7
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.PatternEntry;;<init>;;2
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r2.<java.lang.StringBuffer: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.Normalizer;;normalize;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = interfaceinvoke r0.<java.lang.CharSequence: java.lang.String toString()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.Normalizer;;isNormalized;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = interfaceinvoke r0.<java.lang.CharSequence: java.lang.String toString()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.text.RBTableBuilder;;build;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.RBTableBuilder;;addContractOrder;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.String: int codePointAt(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, $i6);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i8 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.RBTableBuilder;;getContractOrder;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.String: int codePointAt(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.RBTableBuilder;;addExpandOrder;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = virtualinvoke r1.<java.lang.String: char charAt(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c3 = virtualinvoke r1.<java.lang.String: char charAt(int)>(1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c7 = virtualinvoke r1.<java.lang.String: char charAt(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.RBTableBuilder;;addExpansion;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c4 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c13 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.text.RBTableBuilder;;addContractFlags;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c4 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 

@@ -1,0 +1,27 @@
+class name;;number of detected pattern
+java.sql.SQLFeatureNotSupportedException;;0
+java.sql.Timestamp;;4
+java.sql.SQLDataException;;0
+java.sql.SQLTimeoutException;;0
+java.sql.SQLPermission;;0
+java.sql.RowIdLifetime;;0
+java.sql.SQLTransactionRollbackException;;0
+java.sql.Time;;1
+java.sql.SQLInvalidAuthorizationSpecException;;0
+java.sql.SQLIntegrityConstraintViolationException;;0
+java.sql.DriverPropertyInfo;;0
+java.sql.SQLTransientException;;0
+java.sql.DriverManager;;1
+java.sql.PseudoColumnUsage;;0
+java.sql.SQLSyntaxErrorException;;0
+java.sql.SQLClientInfoException;;0
+java.sql.ClientInfoStatus;;0
+java.sql.SQLNonTransientException;;0
+java.sql.SQLWarning;;0
+java.sql.SQLException;;0
+java.sql.SQLNonTransientConnectionException;;0
+java.sql.Date;;1
+java.sql.BatchUpdateException;;0
+java.sql.SQLRecoverableException;;0
+java.sql.SQLTransientConnectionException;;0
+java.sql.DataTruncation;;0

@@ -1,0 +1,2 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.applet.Applet;;resize;;public void resize(java.awt.Dimension);;1

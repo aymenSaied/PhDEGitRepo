@@ -1,0 +1,2 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.sql.Timestamp;;compareTo;;public volatile int compareTo(java.lang.Object);;1

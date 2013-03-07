@@ -1,0 +1,2 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.math.BigDecimal;;<init>;;public void <init>(java.math.BigInteger);;1

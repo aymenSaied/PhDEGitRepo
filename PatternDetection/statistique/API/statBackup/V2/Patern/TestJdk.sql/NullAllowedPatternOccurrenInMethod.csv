@@ -1,0 +1,22 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.sql.BatchUpdateException;;<init>;;1;;public void <init>(java.lang.String, java.lang.String, int, int[])
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = null;;NullAllowed pattern detected param is  :r3
+java.sql.BatchUpdateException;;<init>;;1;;public void <init>(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.sql.BatchUpdateException;;<init>;;1;;public void <init>(int[], java.lang.Throwable)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = null;;NullAllowed pattern detected param is  :r2
+java.sql.BatchUpdateException;;<init>;;1;;public void <init>(java.lang.String, java.lang.String, int, int[], java.lang.Throwable)
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = null;;NullAllowed pattern detected param is  :r3
+java.sql.SQLClientInfoException;;<init>;;1;;public void <init>(java.util.Map, java.lang.Throwable)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = null;;NullAllowed pattern detected param is  :r2
+java.sql.DriverManager;;deregisterDriver;;1;;public static synchronized void deregisterDriver(java.sql.Driver) throws java.sql.SQLException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r0
+java.sql.DriverManager;;setLogStream;;1;;public static void setLogStream(java.io.PrintStream)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;<java.sql.DriverManager: java.io.PrintWriter logWriter> = null;;NullAllowed pattern detected param is  :r0

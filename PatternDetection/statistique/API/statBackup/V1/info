@@ -1,0 +1,100 @@
+initiale /garder uniquement les methode public /effet de out.put(left, BOTTOM);/ effet de mayBeNullBefore 
+
+
+java.applet
+
+	nb class :1
+	nb methode: 27
+	NullNotAllowed :2---->1
+	NullAllowed :0---->0 
+	
+java.awt	
+
+	nb class :267
+	nb methode: 4844
+	NullNotAllowed :1103---->795   
+	NullAllowed :239---->224      366
+		
+
+java.beans 
+	nb class :41
+	nb methode:547
+	NullNotAllowed :153---->100
+	NullAllowed :38---->25
+	
+	
+java.io
+	nb class :74
+	nb methode:1012
+	NullNotAllowed :182---->98
+	NullAllowed :29---->24
+	
+		
+java.lang
+	nb class :167
+	nb methode:2394
+	NullNotAllowed :496---->368
+	NullAllowed :55---->42
+	
+		
+java.math
+	nb class :7
+	nb methode:300
+	NullNotAllowed :143---->84
+	NullAllowed :2---->1 
+	
+
+	
+java.net
+	nb class :69
+	nb methode:1040
+	NullNotAllowed :205---->84
+		NullAllowed :30---->18
+		
+
+java.nio
+	nb class :186
+	nb methode:1980
+	NullNotAllowed :175---->147
+	NullAllowed :9---->6
+
+jaba.rmi
+	nb class :50
+	nb methode:235
+	NullNotAllowed :39---->22
+	NullAllowed :4---->4 ----> 7
+	
+	
+	
+java.security	
+	nb class :128
+	nb methode:968
+	NullNotAllowed :181---->105
+	NullAllowed :39---->34
+	
+	
+	
+
+
+java.sql
+	nb class :27
+	nb methode:222
+	NullNotAllowed :8---->7
+	NullAllowed :8---->7 
+
+java.text	
+	nb class :42
+	nb methode:661
+	NullNotAllowed :171---->73
+		NullAllowed :24---->15
+		
+java.util	
+	nb class :205
+	nb methode:4060
+	NullNotAllowed :956---->535
+	NullAllowed :138---->99
+	
+
+
+
+

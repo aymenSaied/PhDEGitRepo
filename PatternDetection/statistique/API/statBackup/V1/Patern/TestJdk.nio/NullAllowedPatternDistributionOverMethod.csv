@@ -1,0 +1,9 @@
+class name;;Method name;;number of detected pattern
+java.nio.charset.Charset;;<init>;;1
+java.nio.CharBuffer;;append;;1
+java.nio.CharBuffer;;append;;1
+java.nio.channels.AsynchronousServerSocketChannel;;open;;1
+java.nio.channels.AsynchronousSocketChannel;;open;;1
+java.nio.channels.Channels;;checkNotNull;;1
+java.nio.file.TempFileHelper;;create;;2
+java.nio.file.SimpleFileVisitor;;postVisitDirectory;;1

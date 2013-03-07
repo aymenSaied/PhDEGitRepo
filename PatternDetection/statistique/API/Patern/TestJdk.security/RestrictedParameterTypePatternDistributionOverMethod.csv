@@ -1,0 +1,3 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.security.KeyStoreSpi;;engineSetEntry;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException;;2
+java.security.UnresolvedPermissionCollection;;add;;public void add(java.security.Permission);;1

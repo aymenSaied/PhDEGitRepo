@@ -1,0 +1,415 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.beans.PropertyChangeSupport;;<init>;;1;;public void <init>(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.PropertyChangeSupport;;firePropertyChange;;1;;public void firePropertyChange(java.beans.PropertyChangeEvent)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getOldValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getNewValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.String getPropertyName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.BeanDescriptor;;<init>;;1;;public void <init>(java.lang.Class, java.lang.Class)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.BeanDescriptor;;<init>;;1;;void <init>(java.beans.BeanDescriptor)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.beans.BeanDescriptor: java.lang.ref.Reference beanClassRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.beans.BeanDescriptor: java.lang.ref.Reference customizerClassRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.beans.FeatureDescriptor;;<init>;;2;;void <init>(java.beans.FeatureDescriptor, java.beans.FeatureDescriptor)
+*;; * ;; * ;;*;;r1;;7
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z0 = r1.<java.beans.FeatureDescriptor: boolean expert>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z3 = r1.<java.beans.FeatureDescriptor: boolean hidden>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z6 = r1.<java.beans.FeatureDescriptor: boolean preferred>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.beans.FeatureDescriptor: java.lang.String shortDescription>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.beans.FeatureDescriptor: java.lang.String displayName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.beans.FeatureDescriptor: java.lang.ref.Reference classRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r1.<java.beans.FeatureDescriptor: java.util.Hashtable table>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;*;;r2;;11
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r2.<java.beans.FeatureDescriptor: boolean expert>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z4 = r2.<java.beans.FeatureDescriptor: boolean hidden>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z7 = r2.<java.beans.FeatureDescriptor: boolean preferred>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r2.<java.beans.FeatureDescriptor: java.lang.String name>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r2.<java.beans.FeatureDescriptor: java.lang.String shortDescription>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r2.<java.beans.FeatureDescriptor: java.lang.String shortDescription>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r2.<java.beans.FeatureDescriptor: java.lang.String displayName>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r2.<java.beans.FeatureDescriptor: java.lang.String displayName>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r2.<java.beans.FeatureDescriptor: java.lang.ref.Reference classRef>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r2.<java.beans.FeatureDescriptor: java.lang.ref.Reference classRef>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r14 = r2.<java.beans.FeatureDescriptor: java.util.Hashtable table>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.beans.FeatureDescriptor;;<init>;;1;;void <init>(java.beans.FeatureDescriptor)
+*;; * ;; * ;;*;;r1;;8
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z0 = r1.<java.beans.FeatureDescriptor: boolean expert>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r1.<java.beans.FeatureDescriptor: boolean hidden>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z2 = r1.<java.beans.FeatureDescriptor: boolean preferred>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.beans.FeatureDescriptor: java.lang.String name>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.beans.FeatureDescriptor: java.lang.String shortDescription>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.beans.FeatureDescriptor: java.lang.String displayName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.beans.FeatureDescriptor: java.lang.ref.Reference classRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.beans.FeatureDescriptor: java.util.Hashtable table>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.beans.FeatureDescriptor;;getReturnType;;1;;static java.lang.Class getReturnType(java.lang.Class, java.lang.reflect.Method)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r0 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.reflect.Type getGenericReturnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.FeatureDescriptor;;getParameterTypes;;1;;static java.lang.Class[] getParameterTypes(java.lang.Class, java.lang.reflect.Method)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r0 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.reflect.Type[] getGenericParameterTypes()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.FeatureDescriptor;;appendTo;;1;;static void appendTo(java.lang.StringBuilder, java.lang.String, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; ");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.beans.FeatureDescriptor;;appendTo;;1;;static void appendTo(java.lang.StringBuilder, java.lang.String, boolean)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; ");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.beans.EventSetDescriptor;;<init>;;1;;public void <init>(java.lang.Class, java.lang.String, java.lang.Class, java.lang.String[], java.lang.String, java.lang.String, java.lang.String) throws java.beans.IntrospectionException
+*;; * ;; * ;;*;;r4;;2
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$r10 = r4[i0];;pattern detected param  r4 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$r12 = r4[i0];;pattern detected param  r4 must not be null  because used in  ArrayRef 
+java.beans.EventSetDescriptor;;<init>;;2;;void <init>(java.beans.EventSetDescriptor, java.beans.EventSetDescriptor)
+*;; * ;; * ;;*;;r1;;6
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor[] listenerMethodDescriptors>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.beans.EventSetDescriptor: java.lang.ref.Reference listenerTypeRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor addMethodDescriptor>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor removeMethodDescriptor>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r15 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor getMethodDescriptor>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r1.<java.beans.EventSetDescriptor: boolean inDefaultEventSet>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;*;;r2;;12
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r2.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor[] listenerMethodDescriptors>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r2.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor[] listenerMethodDescriptors>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r2.<java.beans.EventSetDescriptor: java.lang.ref.Reference listenerTypeRef>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r2.<java.beans.EventSetDescriptor: java.lang.ref.Reference listenerTypeRef>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r2.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor addMethodDescriptor>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r2.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor addMethodDescriptor>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r2.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor removeMethodDescriptor>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r14 = r2.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor removeMethodDescriptor>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r16 = r2.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor getMethodDescriptor>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r17 = r2.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor getMethodDescriptor>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z0 = r2.<java.beans.EventSetDescriptor: boolean unicast>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z2 = r2.<java.beans.EventSetDescriptor: boolean inDefaultEventSet>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.beans.EventSetDescriptor;;<init>;;1;;void <init>(java.beans.EventSetDescriptor)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor[] listenerMethodDescriptors>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor[] listenerMethodDescriptors>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor[] listenerMethodDescriptors>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.beans.EventSetDescriptor: java.lang.ref.Reference listenerTypeRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor addMethodDescriptor>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor removeMethodDescriptor>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.beans.EventSetDescriptor: java.beans.MethodDescriptor getMethodDescriptor>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z0 = r1.<java.beans.EventSetDescriptor: boolean unicast>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r1.<java.beans.EventSetDescriptor: boolean inDefaultEventSet>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.beans.PropertyDescriptor;;<init>;;1;;public void <init>(java.lang.String, java.lang.Class, java.lang.String, java.lang.String) throws java.beans.IntrospectionException
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.PropertyDescriptor;;<init>;;1;;void <init>(java.lang.Class, java.lang.String, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.PropertyDescriptor;;setClass0;;1;;void setClass0(java.lang.Class)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>($r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.PropertyDescriptor;;<init>;;2;;void <init>(java.beans.PropertyDescriptor, java.beans.PropertyDescriptor)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.beans.PropertyDescriptor: java.lang.String baseName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r1.<java.beans.PropertyDescriptor: java.lang.String readMethodName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r16 = r1.<java.beans.PropertyDescriptor: java.lang.String writeMethodName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r19 = r1.<java.beans.PropertyDescriptor: java.lang.ref.Reference propertyTypeRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.beans.PropertyDescriptor: java.lang.reflect.Method getReadMethod()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r33 = virtualinvoke r1.<java.beans.PropertyDescriptor: java.lang.reflect.Method getWriteMethod()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r39 = virtualinvoke r1.<java.beans.PropertyDescriptor: java.lang.Class getPropertyEditorClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r1.<java.beans.PropertyDescriptor: boolean bound>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z4 = r1.<java.beans.PropertyDescriptor: boolean constrained>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;*;;r2;;14
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r2.<java.beans.PropertyDescriptor: java.lang.String baseName>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r2.<java.beans.PropertyDescriptor: java.lang.String baseName>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r2.<java.beans.PropertyDescriptor: java.lang.String readMethodName>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r2.<java.beans.PropertyDescriptor: java.lang.String readMethodName>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r14 = r2.<java.beans.PropertyDescriptor: java.lang.String writeMethodName>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r15 = r2.<java.beans.PropertyDescriptor: java.lang.String writeMethodName>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r17 = r2.<java.beans.PropertyDescriptor: java.lang.ref.Reference propertyTypeRef>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r18 = r2.<java.beans.PropertyDescriptor: java.lang.ref.Reference propertyTypeRef>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.beans.PropertyDescriptor: java.lang.reflect.Method getReadMethod()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r2.<java.beans.PropertyDescriptor: java.lang.reflect.Method getWriteMethod()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r37 = virtualinvoke r2.<java.beans.PropertyDescriptor: java.lang.Class getPropertyEditorClass()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r38 = virtualinvoke r2.<java.beans.PropertyDescriptor: java.lang.Class getPropertyEditorClass()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z2 = r2.<java.beans.PropertyDescriptor: boolean bound>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z5 = r2.<java.beans.PropertyDescriptor: boolean constrained>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.beans.PropertyDescriptor;;<init>;;1;;void <init>(java.beans.PropertyDescriptor)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.beans.PropertyDescriptor: java.lang.ref.Reference propertyTypeRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.beans.PropertyDescriptor: java.lang.ref.Reference readMethodRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.beans.PropertyDescriptor: java.lang.ref.Reference writeMethodRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.beans.PropertyDescriptor: java.lang.ref.Reference propertyEditorClassRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.beans.PropertyDescriptor: java.lang.String writeMethodName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.beans.PropertyDescriptor: java.lang.String readMethodName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r1.<java.beans.PropertyDescriptor: java.lang.String baseName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z0 = r1.<java.beans.PropertyDescriptor: boolean bound>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r1.<java.beans.PropertyDescriptor: boolean constrained>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.beans.MethodDescriptor;;<init>;;1;;public void <init>(java.lang.reflect.Method, java.beans.ParameterDescriptor[])
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.MethodDescriptor;;<init>;;2;;void <init>(java.beans.MethodDescriptor, java.beans.MethodDescriptor)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.beans.MethodDescriptor: java.lang.ref.Reference methodRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.beans.MethodDescriptor: java.util.List params>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.beans.MethodDescriptor: java.lang.String[] paramNames>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.beans.MethodDescriptor: java.beans.ParameterDescriptor[] parameterDescriptors>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;*;;r2;;8
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r2.<java.beans.MethodDescriptor: java.lang.ref.Reference methodRef>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r2.<java.beans.MethodDescriptor: java.lang.ref.Reference methodRef>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r2.<java.beans.MethodDescriptor: java.util.List params>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r2.<java.beans.MethodDescriptor: java.util.List params>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r2.<java.beans.MethodDescriptor: java.lang.String[] paramNames>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r2.<java.beans.MethodDescriptor: java.lang.String[] paramNames>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r2.<java.beans.MethodDescriptor: java.beans.ParameterDescriptor[] parameterDescriptors>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r14 = r2.<java.beans.MethodDescriptor: java.beans.ParameterDescriptor[] parameterDescriptors>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.beans.MethodDescriptor;;<init>;;1;;void <init>(java.beans.MethodDescriptor)
+*;; * ;; * ;;*;;r1;;6
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.beans.MethodDescriptor: java.lang.ref.Reference methodRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.beans.MethodDescriptor: java.util.List params>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.beans.MethodDescriptor: java.lang.String[] paramNames>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.beans.MethodDescriptor: java.beans.ParameterDescriptor[] parameterDescriptors>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.beans.MethodDescriptor: java.beans.ParameterDescriptor[] parameterDescriptors>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.beans.MethodDescriptor: java.beans.ParameterDescriptor[] parameterDescriptors>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.beans.MethodDescriptor;;appendTo;;1;;void appendTo(java.lang.StringBuilder)
+*;; * ;; * ;;*;;r1;;5
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; parameterDescriptors={");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.StringBuilder: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: void setLength(int)>($i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("}");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.Beans;;instantiate;;2;;public static java.lang.Object instantiate(java.lang.ClassLoader, java.lang.String, java.beans.beancontext.BeanContext, java.beans.AppletInitializer) throws java.io.IOException, java.lang.ClassNotFoundException
+*;; * ;; * ;;*;;r3;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r3.<java.beans.AppletInitializer: void initialize(java.applet.Applet,java.beans.beancontext.BeanContext)>(r39, r2);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r3.<java.beans.AppletInitializer: void activate(java.applet.Applet)>(r39);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r17 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(46, 47);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r40 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(46, 47);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r41 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(46, 47);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.Beans;;isInstanceOf;;1;;public static boolean isInstanceOf(java.lang.Object, java.lang.Class)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.beans.Introspector;;flushFromCaches;;1;;public static void flushFromCaches(java.lang.Class)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.beans.Introspector;;instantiate;;1;;static java.lang.Object instantiate(java.lang.Class, java.lang.String) throws java.lang.InstantiationException, java.lang.IllegalAccessException, java.lang.ClassNotFoundException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.Class: java.lang.ClassLoader getClassLoader()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.beans.IndexedPropertyDescriptor;;<init>;;2;;void <init>(java.beans.PropertyDescriptor, java.beans.PropertyDescriptor)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r4 = virtualinvoke r3.<java.beans.IndexedPropertyDescriptor: java.lang.reflect.Method getIndexedReadMethod()>();;pattern detected param  r1 must not be null it define a local r3which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r5 = virtualinvoke r3.<java.beans.IndexedPropertyDescriptor: java.lang.reflect.Method getIndexedWriteMethod()>();;pattern detected param  r1 must not be null it define a local r3which used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r10 = virtualinvoke r9.<java.beans.IndexedPropertyDescriptor: java.lang.reflect.Method getIndexedReadMethod()>();;pattern detected param  r2 must not be null it define a local r9which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r13 = virtualinvoke r9.<java.beans.IndexedPropertyDescriptor: java.lang.reflect.Method getIndexedWriteMethod()>();;pattern detected param  r2 must not be null it define a local r9which used in  InvokeExpr 
+java.beans.IndexedPropertyDescriptor;;<init>;;1;;void <init>(java.beans.IndexedPropertyDescriptor)
+*;; * ;; * ;;*;;r1;;5
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.beans.IndexedPropertyDescriptor: java.lang.ref.Reference indexedReadMethodRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.beans.IndexedPropertyDescriptor: java.lang.ref.Reference indexedWriteMethodRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.beans.IndexedPropertyDescriptor: java.lang.ref.Reference indexedPropertyTypeRef>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.beans.IndexedPropertyDescriptor: java.lang.String indexedWriteMethodName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.beans.IndexedPropertyDescriptor: java.lang.String indexedReadMethodName>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.beans.ChangeListenerMap;;remove;;1;;public final synchronized void remove(java.lang.String, java.util.EventListener)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r2.<java.lang.Object: boolean equals(java.lang.Object)>($r8);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.beans.DefaultPersistenceDelegate;;mutatesTo;;1;;protected boolean mutatesTo(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.Object: boolean equals(java.lang.Object)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.DefaultPersistenceDelegate;;instantiate;;2;;protected java.beans.Expression instantiate(java.lang.Object, java.beans.Encoder)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r15 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r13 = virtualinvoke r2.<java.beans.Encoder: java.beans.ExceptionListener getExceptionListener()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.beans.DefaultPersistenceDelegate;;invokeStatement;;1;;static void invokeStatement(java.lang.Object, java.lang.String, java.lang.Object[], java.beans.Encoder)
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r3.<java.beans.Encoder: void writeStatement(java.beans.Statement)>($r4);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+java.beans.DefaultPersistenceDelegate;;initialize;;1;;protected void initialize(java.lang.Class, java.lang.Object, java.lang.Object, java.beans.Encoder)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.beans.PersistenceDelegate;;writeObject;;2;;public void writeObject(java.lang.Object, java.beans.Encoder)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r2.<java.beans.Encoder: java.lang.Object get(java.lang.Object)>(r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.beans.Encoder: java.lang.Object remove(java.lang.Object)>(r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.beans.Encoder: void writeExpression(java.beans.Expression)>($r5);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.beans.PersistenceDelegate;;initialize;;2;;protected void initialize(java.lang.Class, java.lang.Object, java.lang.Object, java.beans.Encoder)
+*;; * ;; * ;;*;;r4;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r4.<java.beans.Encoder: java.beans.PersistenceDelegate getPersistenceDelegate(java.lang.Class)>(r5);;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.lang.Class: java.lang.Class getSuperclass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.Encoder;;getValue;;1;;java.lang.Object getValue(java.beans.Expression)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.beans.Expression: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.Encoder;;writeStatement;;1;;public void writeStatement(java.beans.Statement)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.beans.Statement: java.lang.Object getTarget()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.VetoableChangeSupport;;<init>;;1;;public void <init>(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.VetoableChangeSupport;;fireVetoableChange;;1;;public void fireVetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getOldValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getNewValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.String getPropertyName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.MetaData;;getPrivateFieldValue;;1;;static java.lang.Object getPrivateFieldValue(java.lang.Object, java.lang.String)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int lastIndexOf(int)>(46);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>($i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.EventHandler;;<init>;;2;;public void <init>(java.lang.Object, java.lang.String, java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.EventHandler;;create;;2;;public static java.lang.Object create(java.lang.Class, java.lang.Object, java.lang.String, java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.NameGenerator;;unqualifiedClassName;;1;;public static java.lang.String unqualifiedClassName(java.lang.Class)
+*;; * ;; * ;;*;;r0;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isArray()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.Class: java.lang.Class getComponentType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.beans.IndexedPropertyChangeEvent;;appendTo;;1;;void appendTo(java.lang.StringBuilder)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; index=");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.ReflectionUtils;;getPrivateField;;1;;public static java.lang.Object getPrivateField(java.lang.Object, java.lang.Class, java.lang.String, java.beans.ExceptionListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.Class: java.lang.reflect.Field getDeclaredField(java.lang.String)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.PropertyEditorSupport;;<init>;;1;;public void <init>(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.XMLEncoder;;<init>;;1;;public void <init>(java.io.OutputStream, java.lang.String, boolean, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.XMLEncoder;;writeStatement;;1;;public void writeStatement(java.beans.Statement)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.beans.Statement: java.lang.Object getTarget()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.beans.Statement: java.lang.String getMethodName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.beans.Statement: java.lang.Object[] getArguments()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextMembershipEvent;;<init>;;1;;public void <init>(java.beans.beancontext.BeanContext, java.util.Collection)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextMembershipEvent;;<init>;;1;;public void <init>(java.beans.beancontext.BeanContext, java.lang.Object[])
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextServicesSupport;;addBeanContextServicesListener;;1;;public void addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextServicesSupport;;removeBeanContextServicesListener;;1;;public void removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextServicesSupport;;addService;;2;;protected boolean addService(java.lang.Class, java.beans.beancontext.BeanContextServiceProvider, boolean)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextServicesSupport;;revokeService;;2;;public void revokeService(java.lang.Class, java.beans.beancontext.BeanContextServiceProvider, boolean)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextServicesSupport;;hasService;;1;;public synchronized boolean hasService(java.lang.Class)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextServicesSupport;;getService;;4;;public java.lang.Object getService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Class, java.lang.Object, java.beans.beancontext.BeanContextServiceRevokedListener) throws java.util.TooManyListenersException
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r5;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r16;;pattern detected param  r5 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextServicesSupport;;releaseService;;3;;public void releaseService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextServicesSupport;;serviceAvailable;;1;;public void serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.beans.beancontext.BeanContextServiceAvailableEvent: java.lang.Class getServiceClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextServicesSupport;;serviceRevoked;;1;;public void serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.beans.beancontext.BeanContextServiceRevokedEvent: java.lang.Class getServiceClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextServicesSupport;;childJustRemovedHook;;1;;protected void childJustRemovedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r3.<java.beans.beancontext.BeanContextServicesSupport$BCSSChild: void cleanupReferences()>();;pattern detected param  r2 must not be null it define a local r3which used in  InvokeExpr 
+java.beans.beancontext.BeanContextServicesSupport;;bcsPreSerializationHook;;1;;protected synchronized void bcsPreSerializationHook(java.io.ObjectOutputStream) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r12);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r9);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextServicesSupport;;bcsPreDeserializationHook;;1;;protected synchronized void bcsPreDeserializationHook(java.io.ObjectInputStream) throws java.io.IOException, java.lang.ClassNotFoundException
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;add;;1;;public boolean add(java.lang.Object)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r5;;pattern detected param  r1 must not be null it define a local r5which used in  monitorStmt 
+java.beans.beancontext.BeanContextSupport;;remove;;1;;protected boolean remove(java.lang.Object, boolean)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r6;;pattern detected param  r1 must not be null it define a local r6which used in  monitorStmt 
+java.beans.beancontext.BeanContextSupport;;containsAll;;1;;public boolean containsAll(java.util.Collection)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;addBeanContextMembershipListener;;1;;public void addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextSupport;;removeBeanContextMembershipListener;;1;;public void removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextSupport;;getResourceAsStream;;2;;public java.io.InputStream getResourceAsStream(java.lang.String, java.beans.beancontext.BeanContextChild)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextSupport;;getResource;;2;;public java.net.URL getResource(java.lang.String, java.beans.beancontext.BeanContextChild)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.beans.beancontext.BeanContextSupport;;serialize;;2;;protected final void serialize(java.io.ObjectOutputStream, java.util.Collection) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r2.<java.util.Collection: java.lang.Object[] toArray()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;deserialize;;2;;protected final void deserialize(java.io.ObjectInputStream, java.util.Collection) throws java.io.IOException, java.lang.ClassNotFoundException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r2.<java.util.Collection: boolean add(java.lang.Object)>($r3);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;writeChildren;;1;;public final void writeChildren(java.io.ObjectOutputStream) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r12);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r13);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;readChildren;;1;;public final void readChildren(java.io.ObjectInputStream) throws java.io.IOException, java.lang.ClassNotFoundException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;vetoableChange;;1;;public void vetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.String getPropertyName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getSource()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getNewValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;propertyChange;;1;;public void propertyChange(java.beans.PropertyChangeEvent)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.String getPropertyName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getSource()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getOldValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r13 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getNewValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;getChildBeanContextChild;;1;;protected static final java.beans.beancontext.BeanContextChild getChildBeanContextChild(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r8 = interfaceinvoke $r7.<java.beans.beancontext.BeanContextProxy: java.beans.beancontext.BeanContextChild getBeanContextProxy()>();;pattern detected param  r0 must not be null it define a local $r7which used in  InvokeExpr 
+java.beans.beancontext.BeanContextSupport;;classEquals;;2;;protected static final boolean classEquals(java.lang.Class, java.lang.Class)
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 

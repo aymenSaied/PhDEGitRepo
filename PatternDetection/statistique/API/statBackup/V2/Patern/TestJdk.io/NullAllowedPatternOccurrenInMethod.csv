@@ -1,0 +1,73 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.io.PrintStream;;print;;1;;public void print(java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.io.PrintStream;;append;;1;;public java.io.PrintStream append(java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;virtualinvoke r0.<java.io.PrintStream: void print(java.lang.String)>("null");;NullAllowed pattern detected param is  :r1
+java.io.PrintStream;;append;;1;;public java.io.PrintStream append(java.lang.CharSequence, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = "null";;NullAllowed pattern detected param is  :r1
+java.io.PrintWriter;;print;;1;;public void print(java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.io.PrintWriter;;append;;1;;public java.io.PrintWriter append(java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;virtualinvoke r0.<java.io.PrintWriter: void write(java.lang.String)>("null");;NullAllowed pattern detected param is  :r1
+java.io.PrintWriter;;append;;1;;public java.io.PrintWriter append(java.lang.CharSequence, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = "null";;NullAllowed pattern detected param is  :r1
+java.io.ObjectOutputStream;;writeTypeString;;1;;void writeTypeString(java.lang.String) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.io.ObjectOutputStream: void writeNull()>();;NullAllowed pattern detected param is  :r1
+java.io.Writer;;append;;1;;public java.io.Writer append(java.lang.CharSequence) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;virtualinvoke r0.<java.io.Writer: void write(java.lang.String)>("null");;NullAllowed pattern detected param is  :r1
+java.io.Writer;;append;;1;;public java.io.Writer append(java.lang.CharSequence, int, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = "null";;NullAllowed pattern detected param is  :r1
+java.io.CharArrayWriter;;append;;1;;public java.io.CharArrayWriter append(java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = "null";;NullAllowed pattern detected param is  :r1
+java.io.CharArrayWriter;;append;;1;;public java.io.CharArrayWriter append(java.lang.CharSequence, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = "null";;NullAllowed pattern detected param is  :r1
+java.io.FileInputStream;;<init>;;1;;public void <init>(java.lang.String) throws java.io.FileNotFoundException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.io.FileInputStream;;<init>;;1;;public void <init>(java.io.File) throws java.io.FileNotFoundException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = null;;NullAllowed pattern detected param is  :r1
+java.io.FileOutputStream;;<init>;;1;;public void <init>(java.lang.String) throws java.io.FileNotFoundException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.io.FileOutputStream;;<init>;;1;;public void <init>(java.lang.String, boolean) throws java.io.FileNotFoundException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.io.FileOutputStream;;<init>;;1;;public void <init>(java.io.File, boolean) throws java.io.FileNotFoundException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = null;;NullAllowed pattern detected param is  :r1
+java.io.File;;<init>;;1;;public void <init>(java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r16 = <java.io.File: java.io.FileSystem fs>;;NullAllowed pattern detected param is  :r1
+java.io.File;;<init>;;1;;public void <init>(java.io.File, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r16 = <java.io.File: java.io.FileSystem fs>;;NullAllowed pattern detected param is  :r1
+java.io.File;;createTempFile;;1;;public static java.io.File createTempFile(java.lang.String, java.lang.String, java.io.File) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = ".tmp";;NullAllowed pattern detected param is  :r1
+java.io.RandomAccessFile;;<init>;;1;;public void <init>(java.lang.String, java.lang.String) throws java.io.FileNotFoundException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = null;;NullAllowed pattern detected param is  :r1
+java.io.RandomAccessFile;;<init>;;1;;public void <init>(java.io.File, java.lang.String) throws java.io.FileNotFoundException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = null;;NullAllowed pattern detected param is  :r1
+java.io.StringWriter;;append;;1;;public java.io.StringWriter append(java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;virtualinvoke r0.<java.io.StringWriter: void write(java.lang.String)>("null");;NullAllowed pattern detected param is  :r1
+java.io.StringWriter;;append;;1;;public java.io.StringWriter append(java.lang.CharSequence, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = "null";;NullAllowed pattern detected param is  :r1
+java.io.Win32FileSystem;;parentOrNull;;1;;static java.lang.String parentOrNull(java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0

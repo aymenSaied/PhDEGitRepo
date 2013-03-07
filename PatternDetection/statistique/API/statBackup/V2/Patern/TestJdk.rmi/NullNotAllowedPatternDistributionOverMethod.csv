@@ -1,0 +1,22 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.rmi.Naming;;bind;;public static void bind(java.lang.String, java.rmi.Remote) throws java.rmi.AlreadyBoundException, java.net.MalformedURLException, java.rmi.RemoteException;;1
+java.rmi.Naming;;rebind;;public static void rebind(java.lang.String, java.rmi.Remote) throws java.rmi.RemoteException, java.net.MalformedURLException;;1
+java.rmi.activation.Activatable;;exportObject;;public static java.rmi.activation.ActivationID exportObject(java.rmi.Remote, java.lang.String, java.rmi.MarshalledObject, boolean, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;;1
+java.rmi.activation.ActivationID;;equals;;public boolean equals(java.lang.Object);;1
+java.rmi.activation.ActivationDesc;;<init>;;public void <init>(java.rmi.activation.ActivationGroupID, java.lang.String, java.lang.String, java.rmi.MarshalledObject, boolean);;1
+java.rmi.activation.ActivationDesc;;equals;;public boolean equals(java.lang.Object);;1
+java.rmi.server.RemoteObject;;equals;;public boolean equals(java.lang.Object);;1
+java.rmi.activation.ActivationGroup;;createGroup;;public static synchronized java.rmi.activation.ActivationGroup createGroup(java.rmi.activation.ActivationGroupID, java.rmi.activation.ActivationGroupDesc, long) throws java.rmi.activation.ActivationException;;2
+java.rmi.server.ObjID;;write;;public void write(java.io.ObjectOutput) throws java.io.IOException;;1
+java.rmi.server.ObjID;;read;;public static java.rmi.server.ObjID read(java.io.ObjectInput) throws java.io.IOException;;1
+java.rmi.server.ObjID;;equals;;public boolean equals(java.lang.Object);;1
+java.rmi.dgc.VMID;;equals;;public boolean equals(java.lang.Object);;1
+java.rmi.server.UID;;equals;;public boolean equals(java.lang.Object);;1
+java.rmi.server.UID;;write;;public void write(java.io.DataOutput) throws java.io.IOException;;1
+java.rmi.server.UID;;read;;public static java.rmi.server.UID read(java.io.DataInput) throws java.io.IOException;;1
+java.rmi.activation.ActivationGroupID;;equals;;public boolean equals(java.lang.Object);;1
+java.rmi.activation.ActivationGroupDesc;;equals;;public boolean equals(java.lang.Object);;1
+java.rmi.server.RemoteObjectInvocationHandler;;<init>;;public void <init>(java.rmi.server.RemoteRef);;1
+java.rmi.server.RemoteObjectInvocationHandler;;invoke;;public java.lang.Object invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]) throws java.lang.Throwable;;1
+java.rmi.server.LogStream;;write;;public void write(byte[], int, int);;1
+java.rmi.server.LogStream;;parseLevel;;public static int parseLevel(java.lang.String);;1

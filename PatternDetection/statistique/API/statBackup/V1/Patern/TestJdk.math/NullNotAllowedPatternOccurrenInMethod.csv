@@ -1,0 +1,700 @@
+class name;;Method name;;number of detected pattern;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.math.BigDecimal;;<init>;;1
+*;; * ;; * ;;r1;;7
+*;;*;;*;;*;;*;;ArrayRef for param;;$c13 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c14 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;c8 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;c23 = r1[i22];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;c23 = r1[i22];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;c23 = r1[i22];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;c23 = r1[i22];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigDecimal;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;<init>;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;add;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;FieldRef for param;;l1 = r1.<java.math.BigDecimal: long intCompact>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i8 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;i2 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i16 = specialinvoke r1.<java.math.BigDecimal: int checkScale(long)>(l3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = specialinvoke r1.<java.math.BigDecimal: java.math.BigInteger bigMultiplyPowerTen(int)>(i16);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;add;;2
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;specialinvoke r1.<java.math.BigDecimal: java.math.BigInteger inflate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.math.BigDecimal: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.math.BigDecimal: int scale()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i20 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r20 = specialinvoke r1.<java.math.BigDecimal: java.math.BigInteger inflate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i12 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;preAlign;;3
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i10 = r3.<java.math.MathContext: int precision>;;pattern detected param  r3 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i12 = r5.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null it define a local r5which used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i14 = virtualinvoke r5.<java.math.BigDecimal: int precision()>();;pattern detected param  r1 must not be null it define a local r5which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i23 = virtualinvoke r5.<java.math.BigDecimal: int signum()>();;pattern detected param  r1 must not be null it define a local r5which used in  InvokeExpr 
+*;; * ;; * ;;r2;;4
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i5 = r4.<java.math.BigDecimal: int scale>;;pattern detected param  r2 must not be null it define a local r4which used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i7 = virtualinvoke r4.<java.math.BigDecimal: int precision()>();;pattern detected param  r2 must not be null it define a local r4which used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i17 = r4.<java.math.BigDecimal: int scale>;;pattern detected param  r2 must not be null it define a local r4which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i25 = r4.<java.math.BigDecimal: int scale>;;pattern detected param  r2 must not be null it define a local r4which used in  FieldRef 
+java.math.BigDecimal;;subtract;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.math.BigDecimal: java.math.BigDecimal negate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;subtract;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.math.BigDecimal: java.math.BigDecimal negate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;multiply;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;l1 = r1.<java.math.BigDecimal: long intCompact>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i7 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i13 = virtualinvoke r1.<java.math.BigDecimal: int precision()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;multiply;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;divide;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;$i3 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i8 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r1.<java.math.BigDecimal: java.math.BigDecimal setScale(int,int)>($i14, 7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$l16 = r1.<java.math.BigDecimal: long intCompact>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;divideAndRound;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i21 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r0.<java.math.BigInteger: int[] mag>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i18 = r0.<java.math.BigInteger: int signum>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i19 = r0.<java.math.BigInteger: int signum>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i20 = r0.<java.math.BigInteger: int signum>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;divide;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r2.<java.math.RoundingMode: int oldMode>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;divide;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r2.<java.math.RoundingMode: int oldMode>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;divide;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.math.BigDecimal: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i5 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;specialinvoke r1.<java.math.BigDecimal: java.math.BigInteger inflate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = virtualinvoke r1.<java.math.BigDecimal: int precision()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;divide;;2
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;$i7 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.math.BigDecimal: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r1.<java.math.BigDecimal: int precision()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$r14 = r1.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$l14 = r1.<java.math.BigDecimal: long intCompact>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r19 = r2.<java.math.MathContext: java.math.RoundingMode roundingMode>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;divideToIntegralValue;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$i4 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.math.BigDecimal: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = virtualinvoke r1.<java.math.BigDecimal: int precision()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i17 = virtualinvoke r1.<java.math.BigDecimal: int scale()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;divideToIntegralValue;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i5 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i8 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i13 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;divideAndRemainder;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r2.<java.math.MathContext: int precision>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;pow;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;$i4 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i5 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i7 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i8 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.math.MathContext: java.math.RoundingMode roundingMode>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;plus;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;setScale;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.RoundingMode: int oldMode>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;compareTo;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for param;;$i4 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;l1 = r1.<java.math.BigDecimal: long intCompact>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.math.BigDecimal: int signum()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;compareMagnitude;;1
+*;; * ;; * ;;r1;;7
+*;;*;;*;;*;;*;;FieldRef for param;;l0 = r1.<java.math.BigDecimal: long intCompact>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i10 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i13 = virtualinvoke r1.<java.math.BigDecimal: int precision()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i14 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = specialinvoke r1.<java.math.BigDecimal: java.math.BigInteger bigMultiplyPowerTen(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;equals;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i3 = r2.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;l1 = r2.<java.math.BigDecimal: long intCompact>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r3 = r2.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r6 = specialinvoke r2.<java.math.BigDecimal: java.math.BigInteger inflate()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.math.BigDecimal;;getValueString;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;matchScale;;1
+*;; * ;; * ;;r0;;12
+*;;*;;*;;*;;*;;ArrayRef for param;;$r1 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r2 = r0[1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r4 = r0[1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r5 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r6 = r0[1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[0] = $r7;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r8 = r0[1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r9 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r10 = r0[1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r11 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[1] = $r12;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigDecimal;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;writeObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;bigDigitLength;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r0.<java.math.BigInteger: int signum>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r0.<java.math.BigInteger: int compareMagnitude(java.math.BigInteger)>($r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;doRound;;2
+*;; * ;; * ;;r0;;7
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r0.<java.math.BigDecimal: int precision()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i6 = r0.<java.math.BigDecimal: int scale>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = specialinvoke r0.<java.math.BigDecimal: int checkScale(long)>($l9);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$l11 = r0.<java.math.BigDecimal: long intCompact>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r0.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$l13 = r0.<java.math.BigDecimal: long intCompact>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r0.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r1.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.math.MathContext: java.math.RoundingMode roundingMode>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;compactValFor;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;FieldRef for param;;r1 = r0.<java.math.BigInteger: int[] mag>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i10 = r0.<java.math.BigInteger: int signum>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;print;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$l0 = r1.<java.math.BigDecimal: long intCompact>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.BigDecimal: int scale>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.math.BigDecimal: int precision>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigDecimal;;access$000;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r1 = specialinvoke r0.<java.math.BigDecimal: java.math.BigInteger inflate()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.math.BigDecimal;;access$100;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.math.BigDecimal: java.math.BigInteger intVal>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.math.BigInteger;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$b1 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i1 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;<init>;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i4 = virtualinvoke r1.<java.lang.String: int lastIndexOf(int)>(45);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i5 = virtualinvoke r1.<java.lang.String: int lastIndexOf(int)>(43);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c12 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(i1, $i21);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r16 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>($i27, $i29);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;<init>;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$c8 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c9 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c10 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;parseInt;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$c6 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c7 = r1[i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;destructiveMulAdd;;1
+*;; * ;; * ;;r0;;6
+*;;*;;*;;*;;*;;ArrayRef for param;;$i11 = r0[i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i7] = $i16;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i18 = r0[$i17];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[$i22] = $i23;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i25 = r0[i8];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i8] = $i29;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;randomBits;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.util.Random: void nextBytes(byte[])>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;smallPrime;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r0.<java.util.Random: int nextInt()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;jacobiSymbol;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.math.BigInteger: int[] mag>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r0.<java.math.BigInteger: int[] mag>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r0.<java.math.BigInteger: java.math.BigInteger mod(java.math.BigInteger)>($r3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;lucasLehmerSequence;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.math.BigInteger: boolean testBit(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;valueOf;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i0 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;add;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i3 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;add;;2
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$i5 = r0[i4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i16 = r0[i4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i18 = r0[i4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i8 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;subtract;;1
+*;; * ;; * ;;r1;;6
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.math.BigInteger: java.math.BigInteger negate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i3 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;subtract;;2
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$i3 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i14 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i16 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i6 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;multiply;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i5 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;multiplyToLen;;2
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$i13 = r2[i5];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i27 = r2[i24];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$i16 = r1[i2];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i30 = r1[i22];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;squareToLen;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$i8 = r0[i3];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;i20 = r0[$i19];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i28 = r0[$i27];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;divide;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;divideAndRemainder;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;remainder;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;gcd;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.math.BigInteger: java.math.BigInteger abs()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;leftShift;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$i6 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i10 = r0[i5];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i15 = r0[i14];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;primitiveRightShift;;1
+*;; * ;; * ;;r0;;5
+*;;*;;*;;*;;*;;ArrayRef for param;;i4 = r0[i3];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;i4 = r0[$i6];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i3] = $i9;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i11 = r0[$b10];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[$b10] = $i12;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;primitiveLeftShift;;1
+*;; * ;; * ;;r0;;5
+*;;*;;*;;*;;*;;ArrayRef for param;;i4 = r0[i3];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;i4 = r0[$i8];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i3] = $i11;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i13 = r0[$i12];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[$i12] = $i14;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;bitLength;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i3 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;mod;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;modPow;;2
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i3 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z6 = virtualinvoke r1.<java.math.BigInteger: boolean testBit(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i4 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r1.<java.math.BigInteger: java.math.BigInteger negate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;7
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r2.<java.math.BigInteger: int signum>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r2.<java.math.BigInteger: boolean equals(java.lang.Object)>($r13);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r2.<java.math.BigInteger: boolean equals(java.lang.Object)>($r16);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z7 = virtualinvoke r2.<java.math.BigInteger: boolean equals(java.lang.Object)>($r22);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z9 = virtualinvoke r2.<java.math.BigInteger: boolean testBit(int)>(0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r2.<java.math.BigInteger: int getLowestSetBit()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r2.<java.math.BigInteger: java.math.BigInteger shiftRight(int)>(i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;oddModPow;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.math.BigInteger: boolean equals(java.lang.Object)>($r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;r5 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r6 = r2.<java.math.BigInteger: int[] mag>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.math.BigInteger;;montReduce;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;i5 = r0[$i9];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;intArrayCmpToLen;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i4 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i6 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;subN;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$i2 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i0] = $i10;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i5 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;mulAdd;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$i15 = r0[i10];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[$i19] = $i20;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i11 = r1[i5];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;addOne;;1
+*;; * ;; * ;;r0;;5
+*;;*;;*;;*;;*;;ArrayRef for param;;$i8 = r0[i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i7] = $i13;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i17 = r0[i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i7] = $i18;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i19 = r0[i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;modPow2;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.math.BigInteger: int bitLength()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.math.BigInteger: boolean testBit(int)>(i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;modInverse;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.math.BigInteger: boolean equals(java.lang.Object)>($r7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;javaIncrement;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$i4 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[i1] = $i5;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;and;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = specialinvoke r1.<java.math.BigInteger: int intLength()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = specialinvoke r1.<java.math.BigInteger: int getInt(int)>($i11);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;or;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = specialinvoke r1.<java.math.BigInteger: int intLength()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = specialinvoke r1.<java.math.BigInteger: int getInt(int)>($i11);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;xor;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = specialinvoke r1.<java.math.BigInteger: int intLength()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = specialinvoke r1.<java.math.BigInteger: int getInt(int)>($i11);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;andNot;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = specialinvoke r1.<java.math.BigInteger: int intLength()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i12 = specialinvoke r1.<java.math.BigInteger: int getInt(int)>($i11);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;compareTo;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.math.BigInteger: int compareMagnitude(java.math.BigInteger)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i6 = r1.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;compareMagnitude;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r3 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.BigInteger;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i2 = r2.<java.math.BigInteger: int signum>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;r4 = r2.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.math.BigInteger;;stripLeadingZeroInts;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i2 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;trustedStripLeadingZeroInts;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i2 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;stripLeadingZeroBytes;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$b10 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b13 = r0[$i5];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b19 = r0[$i9];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;makePositive;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;ArrayRef for param;;$b11 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b12 = r0[i2];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b17 = r0[$i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b24 = r0[$i10];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;makePositive;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$i5 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i7 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i16 = r0[i3];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.math.BigInteger;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.io.ObjectInputStream: java.io.ObjectInputStream$GetField readFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BigInteger;;writeObject;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.io.ObjectOutputStream: java.io.ObjectOutputStream$PutField putFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.MathContext;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.math.MathContext;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.math.MathContext;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i0 = r2.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r3 = r2.<java.math.MathContext: java.math.RoundingMode roundingMode>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.math.MathContext;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.MutableBigInteger;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.MutableBigInteger;;<init>;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.MutableBigInteger;;compare;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;i2 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.MutableBigInteger;;compareHalf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.MutableBigInteger;;copyValue;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.MutableBigInteger;;divadd;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i5 = r1[i2];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$i9 = r2[$i8];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r2[$i13] = $i14;;pattern detected param  r2 must not be null  because used in  ArrayRef 
+java.math.MutableBigInteger;;mulsub;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$i14 = r1[i9];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[$i16] = $i17;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$i10 = r2[i5];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+java.math.MutableBigInteger;;add;;1
+*;; * ;; * ;;r1;;7
+*;;*;;*;;*;;*;;FieldRef for param;;i1 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i7 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i8 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i16 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i35 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.MutableBigInteger;;subtract;;1
+*;; * ;; * ;;r1;;9
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;i5 = r2.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;i2 = r2.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;i3 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i8 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i13 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r7 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i25 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.math.MutableBigInteger;;difference;;1
+*;; * ;; * ;;r1;;13
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;i1 = r2.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;i2 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i4 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i9 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i19 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r7 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i22 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i31 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.math.MutableBigInteger: void normalize()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.math.MutableBigInteger;;multiply;;2
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;i1 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i10 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i29 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r2;;10
+*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int[] value> = $r4;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int offset> = 0;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int intLen> = i2;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r12 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.math.MutableBigInteger: void normalize()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.math.MutableBigInteger;;mul;;1
+*;; * ;; * ;;r1;;9
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.math.MutableBigInteger: void copyValue(java.math.MutableBigInteger)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.math.MutableBigInteger: void clear()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int offset> = 1;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int intLen> = $i21;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int offset> = 0;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int intLen> = $i23;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int[] value> = r2;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.MutableBigInteger;;divideOneWord;;1
+*;; * ;; * ;;r1;;12
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int intLen> = $b17;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int offset> = 0;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int[] value> = $r7;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int offset> = 0;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int intLen> = $i21;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.math.MutableBigInteger: void normalize()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.MutableBigInteger;;divide;;2
+*;; * ;; * ;;r1;;8
+*;;*;;*;;*;;*;;FieldRef for param;;$i4 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i7 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i8 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i10 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i11 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i12 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r2;;8
+*;;*;;*;;*;;*;;FieldRef for param;;$i6 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int intLen> = $i6;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int offset> = $b1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int intLen> = $b1;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int intLen> = $b2;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int offset> = 0;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.math.MutableBigInteger: void clear()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.math.MutableBigInteger;;divide;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int offset> = $b1;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int intLen> = $b1;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.math.MutableBigInteger: void clear()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.MutableBigInteger;;divideMagnitude;;2
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$i21 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;i4 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;i6 = r1[1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r2;;6
+*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int[] value> = $r11;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int offset> = 0;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r2.<java.math.MutableBigInteger: int intLen> = i2;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r5 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.math.MutableBigInteger: void normalize()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.math.MutableBigInteger;;divWord;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[0] = $i7;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[1] = 0;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[0] = $i13;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[1] = $i14;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.math.MutableBigInteger;;hybridGCD;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i1 = r2.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r6 = specialinvoke r2.<java.math.MutableBigInteger: java.math.MutableBigInteger binaryGCD(java.math.MutableBigInteger)>(r1);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r4 = virtualinvoke r2.<java.math.MutableBigInteger: java.math.MutableBigInteger divide(java.math.MutableBigInteger,java.math.MutableBigInteger)>(r1, r3);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.math.MutableBigInteger;;binaryGCD;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = specialinvoke r1.<java.math.MutableBigInteger: int getLowestSetBit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.math.MutableBigInteger: void rightShift(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i11 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r8 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i13 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.MutableBigInteger;;mutableModInverse;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.math.MutableBigInteger: boolean isOdd()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = specialinvoke r1.<java.math.MutableBigInteger: int getLowestSetBit()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.MutableBigInteger;;fixup;;2
+*;; * ;; * ;;r0;;13
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r0.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i11 = r0.<java.math.MutableBigInteger: int offset>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i12 = r0.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.math.MutableBigInteger: void add(java.math.MutableBigInteger)>(r3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;$i16 = r0.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.math.MutableBigInteger: int intLen> = $i17;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r0.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i19 = r0.<java.math.MutableBigInteger: int offset>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i20 = r0.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.math.MutableBigInteger: void add(java.math.MutableBigInteger)>(r3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.math.MutableBigInteger: void rightShift(int)>(i18);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i28 = virtualinvoke r0.<java.math.MutableBigInteger: int compare(java.math.MutableBigInteger)>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.math.MutableBigInteger: int subtract(java.math.MutableBigInteger)>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i5 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i6 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.math.MutableBigInteger: void mul(int,java.math.MutableBigInteger)>(i4, r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.math.MutableBigInteger: void mul(int,java.math.MutableBigInteger)>(i27, r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.BitSieve;;retrieve;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.math.BigInteger: java.math.BigInteger add(java.math.BigInteger)>($r6);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.math.SignedMutableBigInteger;;signedAdd;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.SignedMutableBigInteger: int sign>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.math.SignedMutableBigInteger;;signedSubtract;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.math.SignedMutableBigInteger: int sign>;;pattern detected param  r1 must not be null  because used in  FieldRef 

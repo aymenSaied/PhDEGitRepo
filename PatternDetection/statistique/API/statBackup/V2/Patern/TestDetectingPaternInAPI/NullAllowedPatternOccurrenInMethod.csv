@@ -1,0 +1,23 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+Test1;;method4;;1;;public void method4(java.lang.String, java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r6 = newarray (java.lang.String)[3];;NullAllowed pattern detected param is  :r1
+Test1;;method5;;1;;public void method5(int, java.lang.String, java.lang.String, Test1) throws java.lang.Exception
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;tableswitch(i0) {     case 1: goto $r13 = new java.lang.StringBuilder;     case 2: goto $r17 = new java.lang.StringBuilder;     default: goto r21 = "inconue"; };;NullAllowed pattern detected param is  :r2
+Test1;;method6;;1;;public void method6(java.lang.String, java.lang.String, java.lang.String, Test1) throws java.lang.Exception
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = new java.lang.StringBuilder;;NullAllowed pattern detected param is  :r3
+Test1;;methodtest2;;1;;public void methodtest2(java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = <java.lang.System: java.io.PrintStream out>;;NullAllowed pattern detected param is  :r1
+Test1;;methodtest3;;1;;public void methodtest3(java.lang.String)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;n1 = null;;NullAllowed pattern detected param is  :r1 it initialize local r2
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = <java.lang.System: java.io.PrintStream out>;;NullAllowed pattern detected param is  :r1
+Test1;;methodtest4;;1;;public void methodtest4(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;$z0 = r1 instanceof java.awt.Component;;NullAllowed pattern detected param is  :r1 it initialize local r2
+Test1;;getRegistry;;1;;public static java.rmi.registry.Registry getRegistry(java.lang.String, int, java.rmi.server.RMIClientSocketFactory) throws java.rmi.RemoteException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r16 = new sun.rmi.server.UnicastRef;;NullAllowed pattern detected param is  :r1

@@ -1,0 +1,9 @@
+class name;;Method name;;number of detected pattern
+java.sql.BatchUpdateException;;<init>;;1
+java.sql.BatchUpdateException;;<init>;;1
+java.sql.BatchUpdateException;;<init>;;1
+java.sql.BatchUpdateException;;<init>;;1
+java.sql.SQLClientInfoException;;<init>;;1
+java.sql.DriverManager;;deregisterDriver;;1
+java.sql.DriverManager;;setLogStream;;1
+java.sql.DriverManager;;getConnection;;1

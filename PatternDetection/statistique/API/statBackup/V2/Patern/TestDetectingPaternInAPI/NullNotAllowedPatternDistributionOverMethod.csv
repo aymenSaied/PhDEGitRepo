@@ -1,0 +1,7 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+Test1;;method0;;protected void method0(java.lang.String, java.lang.String, java.lang.String, int[]);;1
+Test1;;method1;;public void method1(java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);;1
+Test1;;method2;;public void method2(java.lang.String, java.lang.String, java.lang.String, Test1);;1
+Test1;;method3;;public void method3(java.lang.String, java.lang.String, java.lang.String, Test1);;1
+Test1;;method7;;public void method7(java.lang.String, java.lang.String, java.lang.String, Test1) throws java.lang.Exception;;1
+Test1;;method8;;public void method8(java.lang.String, java.lang.String, java.lang.String, Test1) throws java.lang.Exception;;1

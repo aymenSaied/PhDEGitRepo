@@ -1,0 +1,77 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.net.URL;;<init>;;public void <init>(java.lang.String, java.lang.String, int, java.lang.String, java.net.URLStreamHandler) throws java.net.MalformedURLException;;1
+java.net.URL;;<init>;;public void <init>(java.net.URL, java.lang.String, java.net.URLStreamHandler) throws java.net.MalformedURLException;;3
+java.net.URL;;set;;protected void set(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String);;1
+java.net.URL;;openConnection;;public java.net.URLConnection openConnection(java.net.Proxy) throws java.io.IOException;;1
+java.net.URL;;getURLStreamHandler;;static java.net.URLStreamHandler getURLStreamHandler(java.lang.String);;1
+java.net.DatagramPacket;;setData;;public synchronized void setData(byte[]);;1
+java.net.NetworkInterface;;getByName;;public static java.net.NetworkInterface getByName(java.lang.String) throws java.net.SocketException;;1
+java.net.NetworkInterface;;getByInetAddress;;public static java.net.NetworkInterface getByInetAddress(java.net.InetAddress) throws java.net.SocketException;;1
+java.net.NetworkInterface;;equals;;public boolean equals(java.lang.Object);;1
+java.net.InetSocketAddress;;<init>;;public void <init>(java.lang.String, int);;1
+java.net.InetSocketAddress;;createUnresolved;;public static java.net.InetSocketAddress createUnresolved(java.lang.String, int);;1
+java.net.InterfaceAddress;;equals;;public boolean equals(java.lang.Object);;1
+java.net.SocketInputStream;;<init>;;void <init>(java.net.AbstractPlainSocketImpl) throws java.io.IOException;;1
+java.net.Socket;;<init>;;public void <init>(java.net.Proxy);;1
+java.net.Socket;;connect;;public void connect(java.net.SocketAddress, int) throws java.io.IOException;;1
+java.net.ServerSocket;;<init>;;void <init>(java.net.SocketImpl);;1
+java.net.ServerSocket;;implAccept;;protected final void implAccept(java.net.Socket) throws java.io.IOException;;1
+java.net.SocketOutputStream;;<init>;;void <init>(java.net.AbstractPlainSocketImpl) throws java.io.IOException;;1
+java.net.PasswordAuthentication;;<init>;;public void <init>(java.lang.String, char[]);;1
+java.net.URLStreamHandler;;parseURL;;protected void parseURL(java.net.URL, java.lang.String, int, int);;2
+java.net.URLStreamHandler;;equals;;protected boolean equals(java.net.URL, java.net.URL);;2
+java.net.URLStreamHandler;;hashCode;;protected int hashCode(java.net.URL);;1
+java.net.URLStreamHandler;;sameFile;;protected boolean sameFile(java.net.URL, java.net.URL);;2
+java.net.URLStreamHandler;;getHostAddress;;protected synchronized java.net.InetAddress getHostAddress(java.net.URL);;1
+java.net.URLStreamHandler;;hostsEqual;;protected boolean hostsEqual(java.net.URL, java.net.URL);;2
+java.net.URLStreamHandler;;toExternalForm;;protected java.lang.String toExternalForm(java.net.URL);;1
+java.net.URLStreamHandler;;setURL;;protected void setURL(java.net.URL, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);;1
+java.net.URI;;equals;;public boolean equals(java.lang.Object);;1
+java.net.URI;;compareTo;;public int compareTo(java.net.URI);;1
+java.net.URLConnection;;setRequestProperty;;public void setRequestProperty(java.lang.String, java.lang.String);;1
+java.net.URLConnection;;addRequestProperty;;public void addRequestProperty(java.lang.String, java.lang.String);;1
+java.net.URLConnection;;guessContentTypeFromStream;;public static java.lang.String guessContentTypeFromStream(java.io.InputStream) throws java.io.IOException;;1
+java.net.ContentHandler;;getContent;;public java.lang.Object getContent(java.net.URLConnection, java.lang.Class[]) throws java.io.IOException;;1
+java.net.SocketPermission;;implies;;public boolean implies(java.security.Permission);;1
+java.net.SocketPermission;;impliesIgnoreMask;;boolean impliesIgnoreMask(java.net.SocketPermission);;1
+java.net.SocketPermission;;equals;;public boolean equals(java.lang.Object);;1
+java.net.HttpCookie;;equals;;public boolean equals(java.lang.Object);;1
+java.net.InMemoryCookieStore;;add;;public void add(java.net.URI, java.net.HttpCookie);;1
+java.net.InMemoryCookieStore;;get;;public java.util.List get(java.net.URI);;1
+java.net.InMemoryCookieStore;;remove;;public boolean remove(java.net.URI, java.net.HttpCookie);;1
+java.net.DatagramSocket;;<init>;;protected void <init>(java.net.DatagramSocketImpl);;1
+java.net.DatagramSocket;;connect;;public void connect(java.net.SocketAddress) throws java.net.SocketException;;1
+java.net.DatagramSocket;;send;;public void send(java.net.DatagramPacket) throws java.io.IOException;;1
+java.net.DatagramSocket;;receive;;public synchronized void receive(java.net.DatagramPacket) throws java.io.IOException;;1
+java.net.Inet4Address;;numericToTextFormat;;static java.lang.String numericToTextFormat(byte[]);;1
+java.net.MulticastSocket;;joinGroup;;public void joinGroup(java.net.InetAddress) throws java.io.IOException;;1
+java.net.MulticastSocket;;leaveGroup;;public void leaveGroup(java.net.InetAddress) throws java.io.IOException;;1
+java.net.MulticastSocket;;send;;public void send(java.net.DatagramPacket, byte) throws java.io.IOException;;1
+java.net.Inet6Address;;<init>;;void <init>(java.lang.String, byte[], int);;1
+java.net.Inet6Address;;numericToTextFormat;;static java.lang.String numericToTextFormat(byte[]);;1
+java.net.DualStackPlainDatagramSocketImpl;;bind0;;protected synchronized void bind0(int, java.net.InetAddress) throws java.net.SocketException;;1
+java.net.DualStackPlainDatagramSocketImpl;;peek;;protected synchronized int peek(java.net.InetAddress) throws java.io.IOException;;1
+java.net.DualStackPlainDatagramSocketImpl;;peekData;;protected synchronized int peekData(java.net.DatagramPacket) throws java.io.IOException;;1
+java.net.DualStackPlainDatagramSocketImpl;;receive0;;protected synchronized void receive0(java.net.DatagramPacket) throws java.io.IOException;;1
+java.net.DualStackPlainDatagramSocketImpl;;send;;protected void send(java.net.DatagramPacket) throws java.io.IOException;;1
+java.net.DualStackPlainDatagramSocketImpl;;connect0;;protected void connect0(java.net.InetAddress, int) throws java.net.SocketException;;1
+java.net.DualStackPlainDatagramSocketImpl;;socketSetOption;;protected void socketSetOption(int, java.lang.Object) throws java.net.SocketException;;1
+java.net.TwoStacksPlainDatagramSocketImpl;;bind;;protected synchronized void bind(int, java.net.InetAddress) throws java.net.SocketException;;1
+java.net.DualStackPlainSocketImpl;;socketConnect;;void socketConnect(java.net.InetAddress, int, int) throws java.io.IOException;;1
+java.net.DualStackPlainSocketImpl;;socketBind;;void socketBind(java.net.InetAddress, int) throws java.io.IOException;;1
+java.net.DualStackPlainSocketImpl;;socketAccept;;void socketAccept(java.net.SocketImpl) throws java.io.IOException;;1
+java.net.DualStackPlainSocketImpl;;socketSetOption;;void socketSetOption(int, boolean, java.lang.Object) throws java.net.SocketException;;1
+java.net.HttpURLConnection;;setRequestMethod;;public void setRequestMethod(java.lang.String) throws java.net.ProtocolException;;1
+java.net.IDN;;toASCII;;public static java.lang.String toASCII(java.lang.String, int);;1
+java.net.IDN;;toUnicode;;public static java.lang.String toUnicode(java.lang.String, int);;1
+java.net.Inet4AddressImpl;;isReachable;;public boolean isReachable(java.net.InetAddress, int, java.net.NetworkInterface, int) throws java.io.IOException;;1
+java.net.Inet6AddressImpl;;isReachable;;public boolean isReachable(java.net.InetAddress, int, java.net.NetworkInterface, int) throws java.io.IOException;;1
+java.net.PlainSocketImpl;;accept;;protected synchronized void accept(java.net.SocketImpl) throws java.io.IOException;;1
+java.net.TwoStacksPlainSocketImpl;;bind;;protected synchronized void bind(java.net.InetAddress, int) throws java.io.IOException;;1
+java.net.SocksSocketImpl;;<init>;;void <init>(java.net.Proxy);;1
+java.net.SocksSocketImpl;;socksBind;;protected synchronized void socksBind(java.net.InetSocketAddress) throws java.io.IOException;;1
+java.net.SocksSocketImpl;;acceptFrom;;protected void acceptFrom(java.net.SocketImpl, java.net.InetSocketAddress) throws java.io.IOException;;1
+java.net.URLClassLoader;;definePackage;;protected java.lang.Package definePackage(java.lang.String, java.util.jar.Manifest, java.net.URL) throws java.lang.IllegalArgumentException;;2
+java.net.URLClassLoader;;getPermissions;;protected java.security.PermissionCollection getPermissions(java.security.CodeSource);;1
+java.net.URLDecoder;;decode;;public static java.lang.String decode(java.lang.String, java.lang.String) throws java.io.UnsupportedEncodingException;;2
+java.net.URLEncoder;;encode;;public static java.lang.String encode(java.lang.String, java.lang.String) throws java.io.UnsupportedEncodingException;;2

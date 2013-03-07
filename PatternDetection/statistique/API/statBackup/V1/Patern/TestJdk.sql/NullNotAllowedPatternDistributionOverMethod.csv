@@ -1,0 +1,9 @@
+class name;;Method name;;number of detected pattern
+java.sql.Date;;valueOf;;1
+java.sql.Time;;valueOf;;1
+java.sql.Timestamp;;valueOf;;1
+java.sql.Timestamp;;equals;;1
+java.sql.Timestamp;;compareTo;;1
+java.sql.Timestamp;;compareTo;;1
+java.sql.DriverManager;;registerDriver;;1
+java.sql.DriverManager;;getConnection;;1

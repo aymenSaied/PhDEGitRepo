@@ -1,0 +1,8 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+Test1;;method4;;public void method4(java.lang.String, java.lang.String, java.lang.String);;1
+Test1;;method5;;public void method5(int, java.lang.String, java.lang.String, Test1) throws java.lang.Exception;;1
+Test1;;method6;;public void method6(java.lang.String, java.lang.String, java.lang.String, Test1) throws java.lang.Exception;;1
+Test1;;methodtest2;;public void methodtest2(java.lang.String);;1
+Test1;;methodtest3;;public void methodtest3(java.lang.String);;2
+Test1;;methodtest4;;public void methodtest4(java.lang.Object);;1
+Test1;;getRegistry;;public static java.rmi.registry.Registry getRegistry(java.lang.String, int, java.rmi.server.RMIClientSocketFactory) throws java.rmi.RemoteException;;1

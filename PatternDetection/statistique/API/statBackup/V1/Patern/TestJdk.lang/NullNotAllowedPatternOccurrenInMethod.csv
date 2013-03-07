@@ -1,0 +1,1692 @@
+class name;;Method name;;number of detected pattern;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.lang.String;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.lang.String: int hash>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.String;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;i5 = r1[i4];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;i7 = r1[i11];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.String;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$b6 = r1[$i5];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$b13 = r1[$i12];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.String;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.lang.String;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.lang.String;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.StringBuffer: char[] getValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.String;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.StringBuilder: char[] getValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.StringBuilder: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.String;;getBytes;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[$i8] = $b11;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.String;;getBytes;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.String;;getBytes;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.String;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;r4 = r2.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.lang.String;;contentEquals;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = interfaceinvoke r1.<java.lang.CharSequence: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke $r5.<java.lang.AbstractStringBuilder: char[] getValue()>();;pattern detected param  r1 must not be null it define a local $r5which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.Object: boolean equals(java.lang.Object)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c11 = interfaceinvoke r1.<java.lang.CharSequence: char charAt(int)>(i7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.String;;compareTo;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r3 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.String;;regionMatches;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;r3 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.String;;regionMatches;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;r3 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.String;;startsWith;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;r3 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.String;;endsWith;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.String;;indexOf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.String;;indexOf;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;c5 = r1[i2];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c17 = r1[i10];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$c13 = r0[i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c14 = r0[i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c16 = r0[i8];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.String;;lastIndexOf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.String;;lastIndexOf;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;c7 = r1[i6];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c20 = r1[$i19];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$c15 = r0[i9];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c18 = r0[$i17];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.String;;concat;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.String: void getChars(char[],int)>(r2, i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.String;;contains;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = interfaceinvoke r1.<java.lang.CharSequence: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.String;;replace;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = interfaceinvoke r1.<java.lang.CharSequence: java.lang.String toString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = interfaceinvoke r2.<java.lang.CharSequence: java.lang.String toString()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.String;;split;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c4 = virtualinvoke r1.<java.lang.String: char charAt(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c8 = virtualinvoke r1.<java.lang.String: char charAt(int)>(0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = virtualinvoke r1.<java.lang.String: char charAt(int)>(1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.String;;toLowerCase;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.String;;toUpperCase;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.Throwable;;printStackTrace;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.lang.Throwable$PrintStreamOrWriter: java.lang.Object lock()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Throwable$PrintStreamOrWriter: void println(java.lang.Object)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Throwable$PrintStreamOrWriter: void println(java.lang.Object)>($r13);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Throwable;;printEnclosedStackTrace;;3
+*;; * ;; * ;;r5;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = interfaceinvoke r5.<java.util.Set: boolean contains(java.lang.Object)>(r0);;pattern detected param  r5 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r5.<java.util.Set: boolean add(java.lang.Object)>(r0);;pattern detected param  r5 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.lang.Throwable$PrintStreamOrWriter: java.lang.Object lock()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Throwable$PrintStreamOrWriter: void println(java.lang.Object)>($r15);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Throwable$PrintStreamOrWriter: void println(java.lang.Object)>($r22);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Throwable$PrintStreamOrWriter: void println(java.lang.Object)>($r28);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Throwable$PrintStreamOrWriter: void println(java.lang.Object)>($r34);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r17 = r2[i1];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+java.lang.Throwable;;setStackTrace;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Throwable;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Throwable;;writeObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Throwable;;addSuppressed;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.StackTraceElement;;equals;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r3 = r2.<java.lang.StackTraceElement: java.lang.String declaringClass>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i0 = r2.<java.lang.StackTraceElement: int lineNumber>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.lang.StackTraceElement: java.lang.String methodName>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.lang.StackTraceElement: java.lang.String fileName>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.lang.Class;;toClass;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r2 = interfaceinvoke $r1.<java.lang.reflect.GenericArrayType: java.lang.reflect.Type getGenericComponentType()>();;pattern detected param  r0 must not be null it define a local $r1which used in  InvokeExpr 
+java.lang.Class;;addAll;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r0.<java.util.Collection: boolean add(java.lang.Object)>($r2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r2 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.Class;;searchFields;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$r4 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r7 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r2.<java.lang.String: java.lang.String intern()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.Class;;searchMethods;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r5 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.String: java.lang.String intern()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Class;;copyFields;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Class;;copyMethods;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Class;;copyConstructors;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Class;;cannotCastMsg;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Class;;asSubclass;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Class;;getAnnotation;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.Class;;isAnnotationPresent;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.StringBuffer;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuffer;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = interfaceinvoke r1.<java.lang.CharSequence: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuffer;;indexOf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuffer;;lastIndexOf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuffer;;writeObject;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.io.ObjectOutputStream: java.io.ObjectOutputStream$PutField putFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuffer;;readObject;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.io.ObjectInputStream: java.io.ObjectInputStream$GetField readFields()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.AbstractStringBuilder;;replace;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.String: void getChars(char[],int)>($r7, i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.AbstractStringBuilder;;indexOf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.AbstractStringBuilder;;lastIndexOf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Boolean;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$z2 = virtualinvoke $r2.<java.lang.Boolean: boolean booleanValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
+java.lang.Boolean;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r1.<java.lang.Boolean: boolean value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.Long;;getChars;;1
+*;; * ;; * ;;r0;;6
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i16] = $c17;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i2] = $c18;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i25] = $c26;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i2] = $c27;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i2] = $c34;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i35] = c3;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Long;;parseLong;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.lang.Long;;decode;;1
+*;; * ;; * ;;r0;;12
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("0x", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("0X", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("#", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z4 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("0", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z5 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("-", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z6 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("+", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Long;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l1 = virtualinvoke $r2.<java.lang.Long: long longValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
+java.lang.Long;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$l1 = r1.<java.lang.Long: long value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.Integer;;getChars;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i11] = $c12;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i2] = $c13;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i2] = $c20;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i21] = c3;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Integer;;parseInt;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.lang.Integer;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i1 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
+java.lang.Integer;;decode;;1
+*;; * ;; * ;;r0;;12
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("0x", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("0X", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("#", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z4 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("0", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z5 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("-", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z6 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String,int)>("+", i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Integer;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.lang.Integer: int value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.Short;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$s1 = virtualinvoke $r2.<java.lang.Short: short shortValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
+java.lang.Short;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$s1 = r1.<java.lang.Short: short value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.Float;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$f0 = $r2.<java.lang.Float: float value>;;pattern detected param  r1 must not be null it define a local $r2which used in  FieldRef 
+java.lang.Float;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$f1 = r1.<java.lang.Float: float value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.Double;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$d0 = $r2.<java.lang.Double: double value>;;pattern detected param  r1 must not be null it define a local $r2which used in  FieldRef 
+java.lang.Double;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$d1 = r1.<java.lang.Double: double value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.reflect.Constructor;;getAnnotation;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.ClassLoader;;checkPackageAccess;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ClassLoader;;preDefineClass;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r2.<java.security.ProtectionDomain: java.security.CodeSource getCodeSource()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.ClassLoader;;defineClassSourceLocation;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.security.ProtectionDomain: java.security.CodeSource getCodeSource()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ClassLoader;;postDefineClass;;1
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r2.<java.security.ProtectionDomain: java.security.CodeSource getCodeSource()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r2.<java.security.ProtectionDomain: java.security.CodeSource getCodeSource()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.ClassLoader;;defineClass;;1
+*;; * ;; * ;;r2;;9
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r2.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r2.<java.nio.ByteBuffer: boolean isDirect()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r2.<java.nio.ByteBuffer: boolean hasArray()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r2.<java.nio.ByteBuffer: byte[] array()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r2.<java.nio.ByteBuffer: int position()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r2.<java.nio.ByteBuffer: int arrayOffset()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.nio.ByteBuffer: java.nio.ByteBuffer get(byte[])>(r4);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r2.<java.nio.ByteBuffer: int position()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.nio.ByteBuffer: java.nio.ByteBuffer get(byte[])>(r7);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.ClassLoader;;checkCerts;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int lastIndexOf(int)>(46);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ClassLoader;;compareCerts;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$r4 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r5 = r1[i8];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.ClassLoader;;setSigners;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Class: void setSigners(java.lang.Object[])>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ClassLoader;;loadLibrary1;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.io.File: java.lang.String getCanonicalPath()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ClassLoader;;desiredAssertionStatus;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int lastIndexOf(java.lang.String)>(".");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int lastIndexOf(java.lang.String,int)>(".", $i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Package;;isSealed;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.net.URL: boolean equals(java.lang.Object)>($r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Package;;isCompatibleWith;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r15 = virtualinvoke r1.<java.lang.String: java.lang.String[] split(java.lang.String,int)>("\\.", -1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Package;;getPackage;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.Class: java.lang.ClassLoader getClassLoader()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Package;;<init>;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r15 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(46, 47);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r14 = virtualinvoke r2.<java.util.jar.Manifest: java.util.jar.Attributes getAttributes(java.lang.String)>(r5);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r23 = virtualinvoke r2.<java.util.jar.Manifest: java.util.jar.Attributes getMainAttributes()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.Package;;getSystemPackage;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r0.<java.lang.String: java.lang.String replace(char,char)>(46, 47);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.reflect.Method;;getAnnotation;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.reflect.Field;;getTypeName;;1
+*;; * ;; * ;;r0;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isArray()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$z1 = virtualinvoke r1.<java.lang.Class: boolean isArray()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r1 = virtualinvoke r1.<java.lang.Class: java.lang.Class getComponentType()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r4 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.reflect.Field;;getAnnotation;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.reflect.AccessibleObject;;setAccessible;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.reflect.AccessibleObject;;setAccessible0;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r2 = virtualinvoke r1.<java.lang.reflect.Constructor: java.lang.Class getDeclaringClass()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.reflect.AccessibleObject: boolean override> = z0;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.Character;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$c1 = virtualinvoke $r2.<java.lang.Character: char charValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
+java.lang.Character;;codePointAt;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;c1 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = interfaceinvoke r0.<java.lang.CharSequence: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Character;;codePointAtImpl;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;c2 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;c3 = r0[i4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Character;;codePointBefore;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;c1 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Character;;codePointBeforeImpl;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;c2 = r0[i4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;c3 = r0[i5];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Character;;toChars;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i1] = $c2;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Character;;toSurrogates;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[$i2] = $c3;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i1] = $c4;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Character;;codePointCount;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = interfaceinvoke r0.<java.lang.CharSequence: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c6 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c7 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Character;;codePointCountImpl;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$c6 = r0[$i5];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c7 = r0[i4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Character;;offsetByCodePoints;;1
+*;; * ;; * ;;r0;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = interfaceinvoke r0.<java.lang.CharSequence: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c6 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c7 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$c11 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i10);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Character;;offsetByCodePointsImpl;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;ArrayRef for param;;$c8 = r0[$i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c9 = r0[i4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c11 = r0[i4];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$c13 = r0[$i12];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.Character;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$c1 = r1.<java.lang.Character: char value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.Byte;;equals;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$b1 = virtualinvoke $r2.<java.lang.Byte: byte byteValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
+java.lang.Byte;;compareTo;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$b1 = r1.<java.lang.Byte: byte value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.ref.Finalizer;;access$100;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;specialinvoke r0.<java.lang.ref.Finalizer: void runFinalizer()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ref.Finalizer;;access$400;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.lang.ref.Finalizer: java.lang.ref.Finalizer next>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.Thread;;init;;2
+*;; * ;; * ;;r3;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.ThreadGroup: void checkAccess()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.ThreadGroup: void addUnstarted()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Thread;;stop;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.Thread;;setName;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Thread;;processQueue;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.ref.ReferenceQueue: java.lang.ref.Reference poll()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r1.<java.util.concurrent.ConcurrentMap: java.lang.Object remove(java.lang.Object)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuilder;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuilder;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = interfaceinvoke r1.<java.lang.CharSequence: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuilder;;indexOf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuilder;;lastIndexOf;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuilder;;writeObject;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.StringBuilder;;readObject;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.System;;setSecurityManager;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.SecurityManager: void checkPackageAccess(java.lang.String)>("java.lang");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.System;;checkKey;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkPermission;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke $r3.<java.security.AccessControlContext: void checkPermission(java.security.Permission)>(r1);;pattern detected param  r2 must not be null it define a local $r3which used in  InvokeExpr 
+java.lang.SecurityManager;;checkAccess;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkAccess;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkLink;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkRead;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkWrite;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkConnect;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkConnect;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkAccept;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkMulticast;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.net.InetAddress: java.lang.String getHostAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.SecurityManager;;checkMulticast;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.net.InetAddress: java.lang.String getHostAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.SecurityManager;;checkTopLevelWindow;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkPackageAccess;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkPackageDefinition;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.SecurityManager;;checkMemberAccess;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.ThreadLocal;;getMap;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.lang.Thread: java.lang.ThreadLocal$ThreadLocalMap threadLocals>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.ThreadLocal;;createMap;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.lang.Thread: java.lang.ThreadLocal$ThreadLocalMap threadLocals> = $r3;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.ThreadLocal;;access$400;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r0.<java.lang.ThreadLocal: int threadLocalHashCode>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.ApplicationShutdownHooks;;add;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Thread: boolean isAlive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ApplicationShutdownHooks;;remove;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.lang.ThreadGroup;;<init>;;1
+*;; * ;; * ;;r2;;4
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r2.<java.lang.ThreadGroup: int maxPriority>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$z0 = r2.<java.lang.ThreadGroup: boolean daemon>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r2.<java.lang.ThreadGroup: boolean vmAllowSuspension>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;specialinvoke r2.<java.lang.ThreadGroup: void add(java.lang.ThreadGroup)>(r0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.ThreadGroup;;checkParentAccess;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.ThreadGroup: void checkAccess()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ThreadGroup;;enumerate;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[$i8] = $r9;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.ThreadGroup;;list;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.PrintStream: void print(java.lang.String)>(" ");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.PrintStream: void println(java.lang.Object)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.PrintStream: void print(java.lang.String)>(" ");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.PrintStream: void println(java.lang.Object)>($r7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ThreadGroup;;uncaughtException;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.lang.Thread: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.Throwable: void printStackTrace(java.io.PrintStream)>($r13);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.ref.ReferenceQueue;;enqueue;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.lang.ref.Reference: java.lang.ref.ReferenceQueue queue>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.lang.ref.Reference: java.lang.ref.ReferenceQueue queue> = $r10;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.lang.ref.Reference: java.lang.ref.Reference next> = $r13;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.Enum;;compareTo;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r5 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r7 = virtualinvoke r2.<java.lang.Enum: java.lang.Class getDeclaringClass()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i1 = r2.<java.lang.Enum: int ordinal>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.lang.Enum;;valueOf;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.Class: java.util.Map enumConstantDirectory()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r0.<java.lang.Class: java.lang.String getCanonicalName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.ClassValue;;getCacheCarefully;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r1 = r0.<java.lang.Class: java.lang.ClassValue$ClassValueMap classValueMap>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.ClassValue;;getMap;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r1 = r0.<java.lang.Class: java.lang.ClassValue$ClassValueMap classValueMap>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.ClassValue;;initializeMap;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r0.<java.lang.Class: java.lang.ClassValue$ClassValueMap classValueMap>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.Class: java.lang.ClassValue$ClassValueMap classValueMap> = $r6;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.ConditionalSpecialCasing;;toLowerCaseEx;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ConditionalSpecialCasing;;toUpperCaseEx;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ConditionalSpecialCasing;;toUpperCaseCharArray;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ConditionalSpecialCasing;;lookUpTable;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r1.<java.util.Locale: java.lang.String getLanguage()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ConditionalSpecialCasing;;isFinalCased;;1
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r0.<java.lang.String: int codePointBefore(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i7 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ConditionalSpecialCasing;;isAfterI;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r0.<java.lang.String: int codePointBefore(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ConditionalSpecialCasing;;isAfterSoftDotted;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r0.<java.lang.String: int codePointBefore(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ConditionalSpecialCasing;;isMoreAbove;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ConditionalSpecialCasing;;isBeforeDot;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.EnumConstantNotPresentException;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.InheritableThreadLocal;;getMap;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.lang.Thread: java.lang.ThreadLocal$ThreadLocalMap inheritableThreadLocals>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.InheritableThreadLocal;;createMap;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.lang.Thread: java.lang.ThreadLocal$ThreadLocalMap inheritableThreadLocals> = $r3;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.ProcessBuilder;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.ProcessBuilder;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r4 = r3[i1];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
+java.lang.ProcessBuilder;;command;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.ProcessBuilder;;command;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r4 = r3[i1];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
+java.lang.ProcessBuilder;;redirectInput;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.ProcessBuilder$Redirect: java.lang.ProcessBuilder$Redirect$Type type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.ProcessBuilder$Redirect: java.lang.ProcessBuilder$Redirect$Type type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ProcessBuilder;;redirectOutput;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.ProcessBuilder$Redirect: java.lang.ProcessBuilder$Redirect$Type type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ProcessBuilder;;redirectError;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.ProcessBuilder$Redirect: java.lang.ProcessBuilder$Redirect$Type type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.ProcessImpl;;newFileOutputStream;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.io.File: java.lang.String getPath()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ProcessImpl;;<init>;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;ArrayRef for param;;$r8 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[0] = $r9;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r7 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.ProcessImpl;;access$002;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.ProcessImpl: java.io.OutputStream stdin_stream> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.ProcessImpl;;access$202;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.ProcessImpl: java.io.InputStream stdout_stream> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.ProcessImpl;;access$302;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.ProcessImpl: java.io.InputStream stderr_stream> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.ProcessEnvironment;;validateName;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r0.<java.lang.String: int indexOf(int,int)>(61, 1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ProcessEnvironment;;validateValue;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.ProcessEnvironment;;nonNullString;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.lang.ProcessEnvironment;;addToEnv;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.Runtime;;exec;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.Runtime;;loadLibrary0;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r2.<java.lang.String: int indexOf(int)>($c0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.StringCoding;;deref;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.ThreadLocal: java.lang.Object get()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.StringCoding;;set;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.ThreadLocal: void set(java.lang.Object)>($r2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.StringCoding;;decode;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.nio.charset.Charset: java.nio.charset.CharsetDecoder newDecoder()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.StringCoding;;encode;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.nio.charset.Charset: java.nio.charset.CharsetEncoder newEncoder()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.annotation.IncompleteAnnotationException;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r2.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>($i2);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canPairwiseConvert;;2
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canConvertArgument;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z6 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makePairwiseConvert;;2
+*;; * ;; * ;;r0;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r11 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r9 = virtualinvoke r9.<java.lang.invoke.MethodType: java.lang.invoke.MethodType changeReturnType(java.lang.Class)>(r12);;pattern detected param  r0 must not be null it define a local r9which used in  InvokeExpr 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r22 = virtualinvoke r5.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null it define a local r5which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r26 = virtualinvoke r5.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null it define a local r5which used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;isTrivialConversion;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;z0 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;z1 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z4 = virtualinvoke r1.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeReturnConversion;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makePermutation;;3
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r18 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;i1 = r2[i0];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;i3 = r2[i2];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+java.lang.invoke.AdapterMethodHandle;;extractStackMove;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i0 = virtualinvoke r1.<java.lang.invoke.AdapterMethodHandle: int getConversion()>();;pattern detected param  r0 must not be null it define a local r1which used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;diffTypes;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;diffReturnTypes;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;diffParamTypes;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>($i5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>($i6);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeRetype;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeVarargsCollector;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r0 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodType)>($r4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodHandle asFixedArity()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canCheckCast;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canCheckCast;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeCheckCast;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canPrimCast;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canPrimCast;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makePrimCast;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makePrimCastOnly;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canUnboxArgument;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canUnboxArgument;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeUnboxArgument;;2
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r15 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType changeParameterType(int,java.lang.Class)>(i0, r14);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r8 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType changeParameterType(int,java.lang.Class)>(i0, r6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canBoxArgument;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canBoxArgument;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeBoxArgument;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canDropArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeDropArguments;;2
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>(i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i4 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canDupArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeDupArguments;;2
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>(i2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i4 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canSwapArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeSwapArguments;;2
+*;; * ;; * ;;r0;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r18 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>($i9);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r13 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r17 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canRotateArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i10 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeRotateArguments;;2
+*;; * ;; * ;;r0;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;i4 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i5 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>($i17);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i6 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>(i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i9);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i10);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canSpreadArguments;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>($i13);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeSpreadArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i14 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>($i13);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r15 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodType)>(r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;canCollectArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;makeCollectArguments;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r25 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.AdapterMethodHandle;;nonAdapter;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.lang.invoke.MethodHandle: java.lang.Object vmtarget>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.BoundMethodHandle;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.invoke.DirectMethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.BoundMethodHandle;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.BoundMethodHandle;;<init>;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterSlotDepth(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.BoundMethodHandle;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.BoundMethodHandle;;checkReferenceArgument;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.BoundMethodHandle;;bindPrimitiveArgument;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.BoundMethodHandle;;badBoundArgumentException;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.BoundMethodHandle;;noParens;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(40);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r0 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(0, i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandle;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandle;;invokeWithArguments;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = interfaceinvoke r1.<java.util.List: java.lang.Object[] toArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandle;;asSpreaderChecks;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.Class: java.lang.Class getComponentType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandle;;spreadArrayChecks;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.Class: java.lang.Class getComponentType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandle;;asVarargsCollector;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.Class: java.lang.Class getComponentType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;checkRtype;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(r0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;checkPtype;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;checkPtypes;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r2 = r1[i2];;pattern detected param  r0 must not be null it define a local r1which used in  ArrayRef 
+java.lang.invoke.MethodType;;newIndexOutOfBoundsException;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r0.<java.lang.Object: java.lang.String toString()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;listToArray;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = interfaceinvoke r0.<java.util.List: int size()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = interfaceinvoke r0.<java.util.List: java.lang.Object[] toArray(java.lang.Object[])>($r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;methodType;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.lang.invoke.MethodType: java.lang.Class[] ptypes>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.invoke.MethodType;;makeImpl;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;wrapWithPrims;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.invoke.MethodType: boolean hasPrimitives()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;r1 = r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType wrapAlt>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType wrapAlt> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.MethodType;;unwrapWithNoPrims;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.invoke.MethodType: boolean hasPrimitives()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for param;;r1 = r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType wrapAlt>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType wrapAlt> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.MethodType;;equals;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.lang.invoke.MethodType: java.lang.Class rtype>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.lang.invoke.MethodType: java.lang.Class[] ptypes>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.lang.invoke.MethodType;;isConvertibleTo;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;canConvert;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z5 = virtualinvoke r0.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>($r8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r1.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>($r5);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z4 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;fromMethodDescriptorString;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("(");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(41);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(46);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;writeObject;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodType;;readObject;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.DirectMethodHandle;;<init>;;1
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r2.<java.lang.invoke.MemberName: boolean isMethod()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z3 = virtualinvoke r2.<java.lang.invoke.MemberName: boolean isConstructor()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z4 = virtualinvoke r2.<java.lang.invoke.MemberName: boolean isResolved()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleNatives;;notifyGenericMethodType;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleNatives;;raiseException;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r0 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i1 = virtualinvoke $r4.<java.lang.invoke.AdapterMethodHandle: int getConversion()>();;pattern detected param  r1 must not be null it define a local $r4which used in  InvokeExpr 
+java.lang.invoke.MethodHandleNatives;;isCallerSensitive;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.invoke.MemberName: boolean isInvocable()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MemberName: java.lang.Class getDeclaringClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MemberName: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleStatics;;getNameString;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;spreadInvoker;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.Invokers invokers()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;exactInvoker;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.Invokers invokers()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;invoker;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.Invokers invokers()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;checkValue;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;z0 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;z1 = virtualinvoke r1.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;permuteArguments;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;checkReorder;;3
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;i2 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r2.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r2.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;constant;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r0.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;identity;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;insertArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r4 = r1[i4];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.invoke.MethodHandles;;dropArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = interfaceinvoke r1.<java.util.List: int size()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = interfaceinvoke r1.<java.util.List: int size()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;filterArguments;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r14 = virtualinvoke r3.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null it define a local r3which used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r6 = r5[i4];;pattern detected param  r1 must not be null it define a local r5which used in  ArrayRef 
+java.lang.invoke.MethodHandles;;filterArgument;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;filterReturnValue;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;foldArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;guardWithTest;;3
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandles;;catchException;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodTypeForm;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class[] ptypes()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r9 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodTypeForm;;primsAtEndOrder;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class[] ptypes()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodTypeForm;;reorderParameters;;2
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class[] ptypes()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r5 = r2[$i11];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+java.lang.invoke.MethodTypeForm;;canonicalize;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class[] ptypes()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodTypeForm;;canonicalize;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isPrimitive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodTypeForm;;canonicalizes;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r0[i2];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r0.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.Invokers;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.Invokers;;invokerType;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType insertParameterTypes(int,java.lang.Class[])>(0, $r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MemberName;;<init>;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.Class getReturnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.Class[] getParameterTypes()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.reflect.Method: int getModifiers()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MemberName;;<init>;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.reflect.Constructor: java.lang.Class[] getParameterTypes()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.lang.reflect.Constructor: java.lang.Class getDeclaringClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.reflect.Constructor: int getModifiers()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MemberName;;<init>;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Field: java.lang.Class getDeclaringClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.reflect.Field: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.reflect.Field: java.lang.Class getType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.reflect.Field: int getModifiers()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MemberName;;<init>;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Class: java.lang.Class getDeclaringClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.Class: java.lang.String getSimpleName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.Class: int getModifiers()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MemberName;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("<init>");;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MemberName;;getName;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r2 = virtualinvoke $r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null it define a local $r1which used in  InvokeExpr 
+java.lang.invoke.MemberName;;access$000;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.lang.invoke.MemberName: java.lang.String name>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.MemberName;;access$100;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.lang.invoke.MemberName: java.lang.Object type>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.MemberName;;access$002;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.invoke.MemberName: java.lang.String name> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.MemberName;;access$102;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;r0.<java.lang.invoke.MemberName: java.lang.Object type> = r1;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.MemberName;;access$200;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r0.<java.lang.invoke.MemberName: int flags>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.CallSite;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.Invokers invokers()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.CallSite;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.CallSite;;<init>;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.Object invokeWithArguments(java.lang.Object[])>($r5);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.CallSite;;checkTargetChange;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.CallSite;;makeSite;;2
+*;; * ;; * ;;r4;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r4.<java.lang.invoke.MemberName: java.lang.Class getDeclaringClass()>();;pattern detected param  r4 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r0;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.Object invoke(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)>(r6, r1, r2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.Object invoke(java.lang.Object,java.lang.String,java.lang.invoke.MethodType,java.lang.Object)>(r6, r1, r2, r12);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r9 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.Object invoke(java.lang.Object,java.lang.String,java.lang.invoke.MethodType,java.lang.Object[])>(r6, r1, r2, r8);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.CallSite;;maybeReBox;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i0 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();;pattern detected param  r0 must not be null it define a local $r1which used in  InvokeExpr 
+java.lang.invoke.CallSite;;maybeReBoxElements;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$r1 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;r0[i0] = $r2;;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.invoke.MethodHandleImpl;;findMethod;;1
+*;; * ;; * ;;r0;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MemberName: java.lang.invoke.MethodType getMethodType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.invoke.MemberName: boolean isStatic()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MemberName: java.lang.Class getDeclaringClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r0.<java.lang.invoke.MemberName: java.lang.IllegalAccessException makeAccessException(java.lang.String,java.lang.Object)>("no direct method handle", r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z4 = virtualinvoke r0.<java.lang.invoke.MemberName: boolean isVarargs()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r0.<java.lang.invoke.MemberName: java.lang.IllegalAccessException makeAccessException(java.lang.String,java.lang.Object)>("cannot make variable arity", null);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;makeAllocator;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;accessArrayElement;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.Class: boolean isArray()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.Class: java.lang.Class getComponentType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;bindReceiver;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i0 = virtualinvoke $r6.<java.lang.invoke.AdapterMethodHandle: int conversionOp()>();;pattern detected param  r0 must not be null it define a local $r6which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;permuteArguments;;4
+*;; * ;; * ;;r3;;2
+*;;*;;*;;*;;*;;ArrayRef for param;;$i21 = r3[i2];;pattern detected param  r3 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$i22 = r3[i3];;pattern detected param  r3 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>($i21);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r85 = virtualinvoke r1.<java.lang.invoke.MethodType: java.util.List parameterList()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i18 = virtualinvoke r2.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r2.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r15 = virtualinvoke r2.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;convertArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType changeReturnType(java.lang.Class)>(r4);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;convertArguments;;3
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r2.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r2.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r2.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;spreadArguments;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;spreadArgumentsFromPos;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;spreadArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;collectArguments;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r0 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodType)>($r9);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;collectArguments;;3
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;filterArgument;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;foldArguments;;2
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;dropArguments;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;makeGuardWithTest;;3
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r15 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r16 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r19 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r17 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleImpl;;makeGuardWithCatch;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r19 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodType)>($r18);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.CountingMethodHandle;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FilterGeneric;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FilterGeneric;;getAdapter;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.invoke.FilterGeneric$Kind: int invokerIndex(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FilterGeneric;;makeArgumentFolder;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FilterGeneric;;makeArgumentCollector;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FilterGeneric;;make;;2
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FilterGeneric;;targetType;;3
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r2.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r2.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke r3.<java.lang.invoke.MethodType: java.lang.invoke.MethodType insertParameterTypes(int,java.lang.Class[])>(0, $r5);;pattern detected param  r0 must not be null it define a local r3which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i3 = virtualinvoke r3.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null it define a local r3which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r7 = virtualinvoke r3.<java.lang.invoke.MethodType: java.lang.invoke.MethodType dropParameterTypes(int,int)>(i0, $i3);;pattern detected param  r0 must not be null it define a local r3which used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.lang.invoke.FilterGeneric$Kind: int ordinal()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FilterGeneric;;entryType;;3
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke r3.<java.lang.invoke.MethodType: java.lang.invoke.MethodType dropParameterTypes(int,int)>(0, 1);;pattern detected param  r2 must not be null it define a local r3which used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r5 = virtualinvoke r3.<java.lang.invoke.MethodType: java.lang.invoke.MethodType dropParameterTypes(int,int)>(i0, $i3);;pattern detected param  r2 must not be null it define a local r3which used in  InvokeExpr 
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.lang.invoke.FilterGeneric$Kind: int ordinal()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.lang.invoke.MethodType: java.util.List parameterList()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FilterGeneric;;findAdapter;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r0.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;FieldRef for param;;$c4 = r1.<java.lang.invoke.FilterGeneric$Kind: char key>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.lang.invoke.FilterGeneric$Kind: java.lang.String invokerName(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.ToGeneric;;<init>;;1
+*;; * ;; * ;;r1;;4
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r13 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType erase()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r15 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType generic()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r20 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r53 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType insertParameterTypes(int,java.lang.Class[])>(0, $r51);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.ToGeneric;;makeRawArgumentFilter;;3
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.invoke.MethodType: int parameterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r2.<java.lang.invoke.MethodType: java.lang.Class parameterType(int)>(i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.ToGeneric;;computeReturnConversion;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.ToGeneric;;makeInstance;;2
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType erase()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType insertParameterTypes(int,java.lang.Class[])>(0, $r18);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.ToGeneric;;make;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType generic()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.ToGeneric;;of;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.ToGeneric;;findAdapter;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FromGeneric;;<init>;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType erase()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType insertParameterTypes(int,java.lang.Class[])>(0, $r15);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FromGeneric;;computeReturnConversion;;2
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FromGeneric;;computeUnboxingInvoker;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.Invokers invokers()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType erase()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType changeReturnType(java.lang.Class)>($r9);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FromGeneric;;makeInstance;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FromGeneric;;make;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FromGeneric;;of;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.FromGeneric;;findAdapter;;1
+*;; * ;; * ;;r0;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType generic()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.SpreadGeneric;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType generic()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.SpreadGeneric;;preSpreadType;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.invoke.MethodType: java.util.List parameterList()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.SpreadGeneric;;makeInstance;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.SpreadGeneric;;make;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.SpreadGeneric;;of;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodType generic()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodType: java.lang.invoke.MethodTypeForm form()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.SpreadGeneric;;findAdapter;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;FieldRef for param;;r2 = r0.<java.lang.invoke.SpreadGeneric: java.lang.invoke.MethodType targetType>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;FieldRef for param;;i0 = r0.<java.lang.invoke.SpreadGeneric: int spreadCount>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r1[0] = r10;;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.invoke.SpreadGeneric;;access$000;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;FieldRef for param;;$r1 = r0.<java.lang.invoke.SpreadGeneric: java.lang.invoke.MethodHandle entryPoint>;;pattern detected param  r0 must not be null  because used in  FieldRef 
+java.lang.invoke.InvokeGeneric;;<init>;;1
+*;; * ;; * ;;r1;;3
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType erase()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.invoke.MethodType: boolean equals(java.lang.Object)>($r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.invoke.MethodType insertParameterTypes(int,java.lang.Class[])>(0, $r7);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.InvokeGeneric;;dropDispatchArguments;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.InvokeGeneric;;dispatch;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r5 = virtualinvoke r7.<java.lang.invoke.MethodType: java.lang.invoke.Invokers invokers()>();;pattern detected param  r1 must not be null it define a local r7which used in  InvokeExpr 
+*;; * ;; * ;;r2;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodType)>(r1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.InvokeGeneric;;dispatchWithConversion;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.InvokeGeneric;;returnConversionNeeded;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodType: java.lang.Class returnType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r2.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.lang.invoke.InvokeGeneric;;addReturnConversion;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.Proxy;;getProxyClass;;1
+*;; * ;; * ;;r1;;5
+*;;*;;*;;*;;*;;ArrayRef for param;;$r18 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r20 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r23 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r62 = r1[i5];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;ArrayRef for param;;$r63 = r1[i5];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.lang.reflect.Proxy;;newProxyInstance;;1
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.lang.reflect.Proxy;;isProxyClass;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.lang.reflect.Proxy;;getInvocationHandler;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r1.<java.lang.reflect.Proxy: java.lang.reflect.InvocationHandler h>;;pattern detected param  r0 must not be null it define a local r1which used in  FieldRef 
+java.lang.invoke.MethodHandleProxies;;asInterfaceInstance;;2
+*;; * ;; * ;;r0;;6
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isInterface()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.lang.Class: int getModifiers()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r16 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r25 = virtualinvoke r0.<java.lang.Class: java.lang.ClassLoader getClassLoader()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r29 = virtualinvoke r0.<java.lang.Class: java.lang.Object cast(java.lang.Object)>($r28);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r1.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodType)>(r6);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleProxies;;isObjectMethod;;1
+*;; * ;; * ;;r0;;8
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.reflect.Method: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.reflect.Method: java.lang.Class getReturnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.reflect.Method: java.lang.Class[] getParameterTypes()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r0.<java.lang.reflect.Method: java.lang.Class getReturnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.reflect.Method: java.lang.Class[] getParameterTypes()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r0.<java.lang.reflect.Method: java.lang.Class getReturnType()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r0.<java.lang.reflect.Method: java.lang.Class[] getParameterTypes()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r0.<java.lang.reflect.Method: java.lang.Class[] getParameterTypes()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MethodHandleProxies;;callObjectMethod;;3
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r0.<java.lang.Object: int hashCode()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r14 = r2[0];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+java.lang.invoke.MethodHandleProxies;;getSingleNameMethods;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r0.<java.lang.Class: java.lang.reflect.Method[] getMethods()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.invoke.MutableCallSite;;syncAll;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r2 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.invoke.SwitchPoint;;invalidateAll;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r2 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.lang.management.LockInfo;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.lang.management.LockInfo;;<init>;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.management.ManagementFactory;;newPlatformMXBeanProxy;;2
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = interfaceinvoke r0.<javax.management.MBeanServerConnection: boolean isInstanceOf(javax.management.ObjectName,java.lang.String)>(r5, r6);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;z0 = interfaceinvoke r0.<javax.management.MBeanServerConnection: boolean isInstanceOf(javax.management.ObjectName,java.lang.String)>(r5, "javax.management.NotificationEmitter");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r6 = virtualinvoke r3.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r2 must not be null it define a local r3which used in  InvokeExpr 
+java.lang.management.ManagementFactory;;getPlatformMXBean;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.management.ManagementFactory;;getPlatformMXBeans;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.management.ManagementFactory;;getPlatformMXBean;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.management.ManagementFactory;;getPlatformMXBeans;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.management.PlatformComponent;;getGcMXBeanList;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r0.<java.lang.Class: boolean isInstance(java.lang.Object)>(r4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r0.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(r4);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.management.PlatformComponent;;getOSMXBeanList;;1
+*;; * ;; * ;;r0;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isInstance(java.lang.Object)>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.Class: java.lang.Object cast(java.lang.Object)>(r1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.management.PlatformComponent;;keyProperties;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r4 = r3[i1];;pattern detected param  r0 must not be null it define a local r3which used in  ArrayRef 
+java.lang.management.PlatformComponent;;getObjectNames;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = interfaceinvoke r1.<javax.management.MBeanServerConnection: java.util.Set queryNames(javax.management.ObjectName,javax.management.QueryExp)>(r4, null);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.management.PlatformComponent;;getPlatformComponent;;1
+*;; * ;; * ;;r0;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.lang.management.ThreadInfo;;<init>;;4
+*;; * ;; * ;;r7;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r16 = r7[i12];;pattern detected param  r7 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r5;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;r9 = r5[i6];;pattern detected param  r5 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r6;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;i8 = r6[i6];;pattern detected param  r6 must not be null  because used in  ArrayRef 
+*;; * ;; * ;;r4;;1
+*;;*;;*;;*;;*;;ArrayRef for param;;$r14 = r4[i8];;pattern detected param  r4 must not be null  because used in  ArrayRef 
+java.lang.management.ThreadInfo;;initialize;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$l5 = virtualinvoke r1.<java.lang.Thread: long getId()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.lang.Thread: java.lang.String getName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.management.ManagementPermission;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("control");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("monitor");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.management.ManagementPermission;;<init>;;1
+*;; * ;; * ;;r1;;2
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("control");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("monitor");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.management.MemoryNotificationInfo;;<init>;;2
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;; * ;; * ;;r2;;1
+*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.lang.reflect.ReflectAccess;;getMethodAccessor;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Method: sun.reflect.MethodAccessor getMethodAccessor()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;setMethodAccessor;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.reflect.Method: void setMethodAccessor(sun.reflect.MethodAccessor)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;getConstructorAccessor;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Constructor: sun.reflect.ConstructorAccessor getConstructorAccessor()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;setConstructorAccessor;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.lang.reflect.Constructor: void setConstructorAccessor(sun.reflect.ConstructorAccessor)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;getConstructorSlot;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.reflect.Constructor: int getSlot()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;getConstructorSignature;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Constructor: java.lang.String getSignature()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;getConstructorAnnotations;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Constructor: byte[] getRawAnnotations()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;getConstructorParameterAnnotations;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Constructor: byte[] getRawParameterAnnotations()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;copyMethod;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.reflect.Method copy()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;copyField;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Field: java.lang.reflect.Field copy()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.lang.reflect.ReflectAccess;;copyConstructor;;1
+*;; * ;; * ;;r1;;1
+*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Constructor: java.lang.reflect.Constructor copy()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 

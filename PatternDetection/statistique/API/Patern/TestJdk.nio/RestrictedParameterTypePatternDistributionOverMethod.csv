@@ -1,0 +1,12 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.nio.ByteBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.charset.Charset;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.CharBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.ShortBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.IntBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.LongBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.FloatBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.DoubleBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.channels.spi.AbstractSelectableChannel;;removeKey;;void removeKey(java.nio.channels.SelectionKey);;1
+java.nio.channels.spi.AbstractSelectableChannel;;register;;public final java.nio.channels.SelectionKey register(java.nio.channels.Selector, int, java.lang.Object) throws java.nio.channels.ClosedChannelException;;1
+java.nio.file.attribute.FileTime;;compareTo;;public volatile int compareTo(java.lang.Object);;1

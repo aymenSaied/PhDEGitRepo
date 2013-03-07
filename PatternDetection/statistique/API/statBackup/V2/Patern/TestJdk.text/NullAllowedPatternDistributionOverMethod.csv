@@ -1,0 +1,16 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.text.AttributedString;;<init>;;public void <init>(java.text.AttributedCharacterIterator, int, int, java.text.AttributedCharacterIterator$Attribute[]);;1
+java.text.RuleBasedBreakIterator;;equals;;public boolean equals(java.lang.Object);;1
+java.text.MessageFormat;;parse;;public java.lang.Object[] parse(java.lang.String, java.text.ParsePosition);;1
+java.text.FieldPosition;;equals;;public boolean equals(java.lang.Object);;1
+java.text.ParsePosition;;equals;;public boolean equals(java.lang.Object);;1
+java.text.ChoiceFormat;;equals;;public boolean equals(java.lang.Object);;1
+java.text.NumberFormat;;equals;;public boolean equals(java.lang.Object);;1
+java.text.RuleBasedCollator;;getCollationKey;;public synchronized java.text.CollationKey getCollationKey(java.lang.String);;1
+java.text.RuleBasedCollator;;equals;;public boolean equals(java.lang.Object);;1
+java.text.Collator;;equals;;public boolean equals(java.lang.Object);;1
+java.text.DecimalFormat;;equals;;public boolean equals(java.lang.Object);;1
+java.text.DecimalFormatSymbols;;equals;;public boolean equals(java.lang.Object);;1
+java.text.MergeCollation;;addPattern;;public void addPattern(java.lang.String) throws java.text.ParseException;;1
+java.text.PatternEntry;;equals;;public boolean equals(java.lang.Object);;1
+java.text.PatternEntry;;addToBuffer;;void addToBuffer(java.lang.StringBuffer, boolean, boolean, java.text.PatternEntry);;1

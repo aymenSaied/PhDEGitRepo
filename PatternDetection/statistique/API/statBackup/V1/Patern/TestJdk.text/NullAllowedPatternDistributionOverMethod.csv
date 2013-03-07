@@ -1,0 +1,22 @@
+class name;;Method name;;number of detected pattern
+java.text.AttributedString;;<init>;;1
+java.text.AttributedString;;valuesMatch;;2
+java.text.AttributedString;;mapsDiffer;;1
+java.text.RuleBasedBreakIterator;;equals;;1
+java.text.MessageFormat;;parse;;1
+java.text.MessageFormat;;subformat;;2
+java.text.FieldPosition;;equals;;1
+java.text.ParsePosition;;equals;;1
+java.text.ChoiceFormat;;equals;;1
+java.text.NumberFormat;;equals;;1
+java.text.CollationElementIterator;;makeReorderedBuffer;;2
+java.text.RuleBasedCollator;;getCollationKey;;1
+java.text.RuleBasedCollator;;equals;;1
+java.text.Collator;;equals;;1
+java.text.DecimalFormat;;equals;;1
+java.text.DecimalFormat;;appendAffix;;1
+java.text.DecimalFormatSymbols;;equals;;1
+java.text.MergeCollation;;addPattern;;1
+java.text.MergeCollation;;findLastEntry;;1
+java.text.PatternEntry;;equals;;1
+java.text.PatternEntry;;addToBuffer;;1
