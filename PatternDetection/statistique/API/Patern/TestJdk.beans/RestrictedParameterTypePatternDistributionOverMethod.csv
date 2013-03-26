@@ -1,2 +1,3 @@
 class name;;Method name;;method Declaration;;number of detected pattern
+java.beans.IndexedPropertyDescriptor;;<init>;;void <init>(java.beans.PropertyDescriptor, java.beans.PropertyDescriptor);;2
 java.beans.beancontext.BeanContextServicesSupport;;childJustRemovedHook;;protected void childJustRemovedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild);;1

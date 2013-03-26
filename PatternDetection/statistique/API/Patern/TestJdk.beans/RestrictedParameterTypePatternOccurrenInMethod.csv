@@ -1,4 +1,9 @@
 class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.beans.IndexedPropertyDescriptor;;<init>;;2;;void <init>(java.beans.PropertyDescriptor, java.beans.PropertyDescriptor)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.beans.IndexedPropertyDescriptor
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r2 maybe type Restricted  it can be , java.beans.IndexedPropertyDescriptor
 java.beans.beancontext.BeanContextServicesSupport;;childJustRemovedHook;;1;;protected void childJustRemovedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r2 is type Restricted  it can be , java.beans.beancontext.BeanContextServicesSupport$BCSSChild
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r2 is type Restricted  it can be , java.beans.beancontext.BeanContextServicesSupport$BCSSChild

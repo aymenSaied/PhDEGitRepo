@@ -1,3 +1,6 @@
 class name;;Method name;;method Declaration;;number of detected pattern
+java.io.PrintWriter;;<init>;;public void <init>(java.io.OutputStream, boolean);;1
 java.io.ObjectStreamField;;compareTo;;public int compareTo(java.lang.Object);;1
 java.io.File;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.io.DataInputStream;;readUTF;;public static final java.lang.String readUTF(java.io.DataInput) throws java.io.IOException;;1
+java.io.DataOutputStream;;writeUTF;;static int writeUTF(java.lang.String, java.io.DataOutput) throws java.io.IOException;;1

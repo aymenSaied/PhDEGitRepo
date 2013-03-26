@@ -5,7 +5,7 @@ java.lang.AssertionStatusDirectives;;0
 java.lang.StackOverflowError;;0
 java.lang.NoSuchFieldError;;0
 java.lang.UnsupportedOperationException;;0
-java.lang.Float;;1
+java.lang.Float;;2
 java.lang.invoke.FilterOneArgument;;0
 java.lang.NoSuchFieldException;;0
 java.lang.CharacterData00;;0
@@ -58,9 +58,9 @@ java.lang.Math;;0
 java.lang.invoke.ConstantCallSite;;0
 java.lang.CharacterDataUndefined;;0
 java.lang.SecurityManager;;1
-java.lang.Thread;;0
+java.lang.Thread;;1
 java.lang.ref.Reference;;0
-java.lang.reflect.Method;;0
+java.lang.reflect.Method;;1
 java.lang.StringBuilder;;0
 java.lang.IllegalAccessError;;0
 java.lang.management.ManagementFactory;;0
@@ -96,7 +96,7 @@ java.lang.reflect.Array;;0
 java.lang.CharacterData;;0
 java.lang.invoke.MethodHandleStatics;;0
 java.lang.Throwable;;0
-java.lang.AssertionError;;0
+java.lang.AssertionError;;1
 java.lang.Class;;0
 java.lang.ReflectiveOperationException;;0
 java.lang.reflect.GenericSignatureFormatError;;0
@@ -107,8 +107,8 @@ java.lang.Number;;0
 java.lang.reflect.AccessibleObject;;0
 java.lang.invoke.MutableCallSite;;0
 java.lang.InstantiationError;;0
-java.lang.reflect.Constructor;;0
-java.lang.invoke.MethodType;;0
+java.lang.reflect.Constructor;;1
+java.lang.invoke.MethodType;;1
 java.lang.invoke.FromGeneric;;0
 java.lang.reflect.ReflectPermission;;0
 java.lang.ref.SoftReference;;0
@@ -126,7 +126,7 @@ java.lang.invoke.CallSite;;0
 java.lang.ConditionalSpecialCasing;;0
 java.lang.reflect.Modifier;;0
 java.lang.NoSuchMethodException;;0
-java.lang.ThreadGroup;;0
+java.lang.ThreadGroup;;1
 java.lang.ClassValue;;0
 java.lang.ClassFormatError;;0
 java.lang.invoke.WrongMethodTypeException;;0
@@ -136,7 +136,7 @@ java.lang.invoke.MethodHandleProxies;;0
 java.lang.reflect.Field;;0
 java.lang.System;;0
 java.lang.SecurityException;;0
-java.lang.Double;;1
+java.lang.Double;;2
 java.lang.ArrayIndexOutOfBoundsException;;0
 java.lang.IndexOutOfBoundsException;;0
 java.lang.annotation.AnnotationTypeMismatchException;;0

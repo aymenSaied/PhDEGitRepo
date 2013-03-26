@@ -1,8 +1,17 @@
 class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.io.PrintWriter;;<init>;;1;;public void <init>(java.io.OutputStream, boolean)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.io.PrintStream
 java.io.ObjectStreamField;;compareTo;;1;;public int compareTo(java.lang.Object)
 *;; * ;; * ;;*;;r1;;2
-*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $b0;;pattern detected param  r1 is type Restricted  it can be , java.io.ObjectStreamField
-*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i1;;pattern detected param  r1 is type Restricted  it can be , java.io.ObjectStreamField
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $b0;;pattern detected param  r1 is type Restricted  it can be , java.io.ObjectStreamField
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $i1;;pattern detected param  r1 is type Restricted  it can be , java.io.ObjectStreamField
 java.io.File;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.io.File
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.io.File
+java.io.DataInputStream;;readUTF;;1;;public static final java.lang.String readUTF(java.io.DataInput) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $r24;;pattern detected param  r0 maybe type Restricted  it can be , java.io.DataInputStream
+java.io.DataOutputStream;;writeUTF;;1;;static int writeUTF(java.lang.String, java.io.DataOutput) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $i49;;pattern detected param  r1 maybe type Restricted  it can be , java.io.DataOutputStream

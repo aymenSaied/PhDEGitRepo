@@ -14,7 +14,7 @@ java.security.spec.EllipticCurve;;0
 java.security.SecureClassLoader;;0
 java.security.cert.LDAPCertStoreParameters;;0
 java.security.AlgorithmParameters;;0
-java.security.Permissions;;0
+java.security.Permissions;;1
 java.security.cert.CertificateRevokedException;;0
 java.security.UnresolvedPermissionCollection;;1
 java.security.IdentityScope;;0
@@ -53,7 +53,7 @@ java.security.cert.PKIXBuilderParameters;;0
 java.security.spec.X509EncodedKeySpec;;0
 java.security.NoSuchProviderException;;0
 java.security.DigestOutputStream;;0
-java.security.Signature;;0
+java.security.Signature;;1
 java.security.KeyException;;0
 java.security.cert.TrustAnchor;;0
 java.security.cert.X509CRLSelector;;0
@@ -75,7 +75,7 @@ java.security.cert.CertificateFactorySpi;;0
 java.security.Permission;;0
 java.security.KeyPair;;0
 java.security.cert.X509CRL;;0
-java.security.KeyStore;;0
+java.security.KeyStore;;1
 java.security.DigestInputStream;;0
 java.security.spec.InvalidKeySpecException;;0
 java.security.PermissionCollection;;0
@@ -106,7 +106,7 @@ java.security.spec.ECPrivateKeySpec;;0
 java.security.spec.RSAOtherPrimeInfo;;0
 java.security.SignatureSpi;;0
 java.security.URIParameter;;0
-java.security.cert.X509CertSelector;;0
+java.security.cert.X509CertSelector;;1
 java.security.cert.CertStoreException;;0
 java.security.cert.CertificateExpiredException;;0
 java.security.cert.CertPath;;0
@@ -125,5 +125,5 @@ java.security.UnrecoverableKeyException;;0
 java.security.spec.EncodedKeySpec;;0
 java.security.SignedObject;;0
 java.security.AllPermission;;0
-java.security.ProtectionDomain;;0
+java.security.ProtectionDomain;;2
 java.security.acl.LastOwnerException;;0

@@ -1,21 +1,49 @@
 class name;;Method name;;method Declaration;;number of detected pattern
+java.util.Properties;;store;;public void store(java.io.Writer, java.lang.String) throws java.io.IOException;;1
+java.util.Calendar;;before;;public boolean before(java.lang.Object);;1
+java.util.Calendar;;after;;public boolean after(java.lang.Object);;1
 java.util.Calendar;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.util.Date;;equals;;public boolean equals(java.lang.Object);;1
 java.util.Date;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.util.JapaneseImperialCalendar;;equals;;public boolean equals(java.lang.Object);;1
+java.util.GregorianCalendar;;equals;;public boolean equals(java.lang.Object);;1
 java.util.concurrent.locks.ReentrantLock;;hasWaiters;;public boolean hasWaiters(java.util.concurrent.locks.Condition);;1
 java.util.concurrent.locks.ReentrantLock;;getWaitQueueLength;;public int getWaitQueueLength(java.util.concurrent.locks.Condition);;1
 java.util.concurrent.locks.ReentrantLock;;getWaitingThreads;;protected java.util.Collection getWaitingThreads(java.util.concurrent.locks.Condition);;1
+java.util.Collections;;reverse;;public static void reverse(java.util.List);;1
+java.util.Collections;;shuffle;;public static void shuffle(java.util.List, java.util.Random);;1
+java.util.Collections;;fill;;public static void fill(java.util.List, java.lang.Object);;1
+java.util.Collections;;copy;;public static void copy(java.util.List, java.util.List);;2
+java.util.Collections;;rotate;;public static void rotate(java.util.List, int);;1
+java.util.Collections;;replaceAll;;public static boolean replaceAll(java.util.List, java.lang.Object, java.lang.Object);;1
+java.util.Collections;;indexOfSubList;;public static int indexOfSubList(java.util.List, java.util.List);;1
+java.util.Collections;;unmodifiableList;;public static java.util.List unmodifiableList(java.util.List);;1
+java.util.Collections;;synchronizedList;;public static java.util.List synchronizedList(java.util.List);;1
+java.util.Collections;;synchronizedList;;static java.util.List synchronizedList(java.util.List, java.lang.Object);;1
+java.util.Collections;;checkedList;;public static java.util.List checkedList(java.util.List, java.lang.Class);;1
+java.util.EnumMap;;<init>;;public void <init>(java.util.Map);;1
 java.util.EnumMap;;containsKey;;public boolean containsKey(java.lang.Object);;1
 java.util.EnumMap;;get;;public java.lang.Object get(java.lang.Object);;1
+java.util.EnumMap;;putAll;;public void putAll(java.util.Map);;1
 java.util.EnumMap;;put;;public volatile java.lang.Object put(java.lang.Object, java.lang.Object);;1
 java.util.JumboEnumSet;;add;;public volatile boolean add(java.lang.Object);;1
 java.util.RegularEnumSet;;add;;public volatile boolean add(java.lang.Object);;1
+java.util.PriorityQueue;;<init>;;public void <init>(java.util.Collection);;1
+java.util.TreeMap;;putAll;;public void putAll(java.util.Map);;1
 java.util.TreeMap;;compare;;final int compare(java.lang.Object, java.lang.Object);;1
+java.util.TreeSet;;addAll;;public boolean addAll(java.util.Collection);;1
 java.util.UUID;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.util.concurrent.ExecutorCompletionService;;<init>;;public void <init>(java.util.concurrent.Executor);;1
+java.util.concurrent.ExecutorCompletionService;;<init>;;public void <init>(java.util.concurrent.Executor, java.util.concurrent.BlockingQueue);;1
 java.util.concurrent.DelayQueue;;add;;public volatile boolean add(java.lang.Object);;1
 java.util.concurrent.DelayQueue;;offer;;public volatile boolean offer(java.lang.Object);;1
 java.util.concurrent.DelayQueue;;offer;;public volatile boolean offer(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;;1
 java.util.concurrent.DelayQueue;;put;;public volatile void put(java.lang.Object) throws java.lang.InterruptedException;;1
+java.util.concurrent.ForkJoinPool;;execute;;public void execute(java.lang.Runnable);;1
+java.util.concurrent.ForkJoinPool;;submit;;public java.util.concurrent.ForkJoinTask submit(java.lang.Runnable);;1
+java.util.concurrent.ForkJoinTask;;completeExceptionally;;public void completeExceptionally(java.lang.Throwable);;1
 java.util.concurrent.RecursiveAction;;setRawResult;;protected volatile void setRawResult(java.lang.Object);;1
+java.util.concurrent.PriorityBlockingQueue;;<init>;;public void <init>(java.util.Collection);;1
 java.util.concurrent.locks.ReentrantReadWriteLock;;hasWaiters;;public boolean hasWaiters(java.util.concurrent.locks.Condition);;1
 java.util.concurrent.locks.ReentrantReadWriteLock;;getWaitQueueLength;;public int getWaitQueueLength(java.util.concurrent.locks.Condition);;1
 java.util.concurrent.locks.ReentrantReadWriteLock;;getWaitingThreads;;protected java.util.Collection getWaitingThreads(java.util.concurrent.locks.Condition);;1

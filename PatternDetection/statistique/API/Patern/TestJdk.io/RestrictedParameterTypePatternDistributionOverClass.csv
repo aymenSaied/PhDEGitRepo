@@ -9,7 +9,7 @@ java.io.FileOutputStream;;0
 java.io.IOError;;0
 java.io.CharConversionException;;0
 java.io.Win32FileSystem;;0
-java.io.DataInputStream;;0
+java.io.DataInputStream;;1
 java.io.UTFDataFormatException;;0
 java.io.SerializablePermission;;0
 java.io.ObjectOutputStream;;0
@@ -25,7 +25,7 @@ java.io.BufferedOutputStream;;0
 java.io.FileReader;;0
 java.io.PrintStream;;0
 java.io.ByteArrayInputStream;;0
-java.io.DataOutputStream;;0
+java.io.DataOutputStream;;1
 java.io.Writer;;0
 java.io.InvalidClassException;;0
 java.io.OutputStreamWriter;;0
@@ -36,7 +36,7 @@ java.io.InputStream;;0
 java.io.ObjectStreamConstants;;0
 java.io.ObjectStreamException;;0
 java.io.ObjectStreamClass;;0
-java.io.PrintWriter;;0
+java.io.PrintWriter;;1
 java.io.ObjectStreamField;;1
 java.io.ExpiringCache;;0
 java.io.BufferedInputStream;;0

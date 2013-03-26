@@ -34,7 +34,7 @@ java.net.DatagramSocketImpl;;0
 java.net.URLStreamHandler;;0
 java.net.SocketOutputStream;;0
 java.net.ProtocolException;;0
-java.net.Inet4Address;;0
+java.net.Inet4Address;;1
 java.net.TwoStacksPlainSocketImpl;;0
 java.net.InetSocketAddress;;0
 java.net.InterfaceAddress;;0
@@ -49,7 +49,7 @@ java.net.DefaultInterface;;0
 java.net.SocksSocketImpl;;1
 java.net.UnknownServiceException;;0
 java.net.SocketTimeoutException;;0
-java.net.AbstractPlainSocketImpl;;1
+java.net.AbstractPlainSocketImpl;;2
 java.net.SocketInputStream;;0
 java.net.URLDecoder;;0
 java.net.DatagramSocket;;2

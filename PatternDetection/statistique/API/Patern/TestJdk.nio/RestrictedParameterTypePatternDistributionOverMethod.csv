@@ -7,6 +7,30 @@ java.nio.IntBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;
 java.nio.LongBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
 java.nio.FloatBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
 java.nio.DoubleBuffer;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.nio.HeapByteBuffer;;put;;public java.nio.ByteBuffer put(java.nio.ByteBuffer);;1
+java.nio.DirectByteBuffer;;put;;public java.nio.ByteBuffer put(java.nio.ByteBuffer);;1
+java.nio.HeapCharBuffer;;put;;public java.nio.CharBuffer put(java.nio.CharBuffer);;1
+java.nio.DirectIntBufferS;;put;;public java.nio.IntBuffer put(java.nio.IntBuffer);;1
+java.nio.DirectIntBufferU;;put;;public java.nio.IntBuffer put(java.nio.IntBuffer);;1
+java.nio.DirectShortBufferU;;put;;public java.nio.ShortBuffer put(java.nio.ShortBuffer);;1
+java.nio.DirectShortBufferS;;put;;public java.nio.ShortBuffer put(java.nio.ShortBuffer);;1
+java.nio.DirectDoubleBufferU;;put;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer);;1
+java.nio.DirectDoubleBufferS;;put;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer);;1
+java.nio.DirectLongBufferU;;put;;public java.nio.LongBuffer put(java.nio.LongBuffer);;1
+java.nio.DirectFloatBufferS;;put;;public java.nio.FloatBuffer put(java.nio.FloatBuffer);;1
+java.nio.DirectLongBufferS;;put;;public java.nio.LongBuffer put(java.nio.LongBuffer);;1
+java.nio.DirectFloatBufferU;;put;;public java.nio.FloatBuffer put(java.nio.FloatBuffer);;1
+java.nio.DirectCharBufferU;;put;;public java.nio.CharBuffer put(java.nio.CharBuffer);;1
+java.nio.DirectCharBufferS;;put;;public java.nio.CharBuffer put(java.nio.CharBuffer);;1
+java.nio.HeapDoubleBuffer;;put;;public java.nio.DoubleBuffer put(java.nio.DoubleBuffer);;1
+java.nio.HeapFloatBuffer;;put;;public java.nio.FloatBuffer put(java.nio.FloatBuffer);;1
+java.nio.HeapIntBuffer;;put;;public java.nio.IntBuffer put(java.nio.IntBuffer);;1
+java.nio.HeapLongBuffer;;put;;public java.nio.LongBuffer put(java.nio.LongBuffer);;1
+java.nio.HeapShortBuffer;;put;;public java.nio.ShortBuffer put(java.nio.ShortBuffer);;1
+java.nio.channels.Channels;;newChannel;;public static java.nio.channels.ReadableByteChannel newChannel(java.io.InputStream);;1
+java.nio.channels.Channels;;newChannel;;public static java.nio.channels.WritableByteChannel newChannel(java.io.OutputStream);;1
+java.nio.charset.CharsetEncoder;;canEncode;;public boolean canEncode(java.lang.CharSequence);;1
 java.nio.channels.spi.AbstractSelectableChannel;;removeKey;;void removeKey(java.nio.channels.SelectionKey);;1
 java.nio.channels.spi.AbstractSelectableChannel;;register;;public final java.nio.channels.SelectionKey register(java.nio.channels.Selector, int, java.lang.Object) throws java.nio.channels.ClosedChannelException;;1
+java.nio.file.attribute.FileTime;;equals;;public boolean equals(java.lang.Object);;1
 java.nio.file.attribute.FileTime;;compareTo;;public volatile int compareTo(java.lang.Object);;1

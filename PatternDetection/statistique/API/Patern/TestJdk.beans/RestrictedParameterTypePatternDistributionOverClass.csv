@@ -17,7 +17,7 @@ java.beans.VetoableChangeSupport;;0
 java.beans.EventHandler;;0
 java.beans.VetoableChangeListenerProxy;;0
 java.beans.Beans;;0
-java.beans.IndexedPropertyDescriptor;;0
+java.beans.IndexedPropertyDescriptor;;2
 java.beans.beancontext.BeanContextServiceRevokedEvent;;0
 java.beans.ReflectionUtils;;0
 java.beans.PropertyDescriptor;;0

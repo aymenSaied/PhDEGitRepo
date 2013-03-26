@@ -36,7 +36,6 @@ import java.util.Set;
 import NullOrNotNullParamUsingModifiedNullnessAnalysis.ModifiedNullnessAnalysis;
 import NullOrNotNullParamUsingModifiedNullnessAnalysis.NullTestedLocalsAnalysis;
 
-
 import soot.Body;
 import soot.BodyTransformer;
 import soot.Local;
@@ -95,7 +94,6 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 	 * 
 	 * plusieur occurence du maime tupe peuvent exister
 	 */
-
 
 	/* some internal fields */
 
@@ -177,10 +175,11 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 			TypeRestrictionAnalysis typeRestrictionAnalysis = new TypeRestrictionAnalysis(
 					cfg);
 
-//		detectRestrictedTypeOnAllUnit(cfg, typeRestrictionAnalysis);
-			
-			
-			Map<Local, ArrayList<PatternOccurrenceInfo>> UnitCausingParameterRestrictedType =detectRestrictedTypePatern(cfg, localDefinedUsingParameterToParameter, typeRestrictionAnalysis);
+			// detectRestrictedTypeOnAllUnit(cfg, typeRestrictionAnalysis);
+
+			Map<Local, ArrayList<PatternOccurrenceInfo>> UnitCausingParameterRestrictedType = detectRestrictedTypePatern(
+					cfg, localDefinedUsingParameterToParameter,
+					typeRestrictionAnalysis);
 
 		}
 
@@ -369,18 +368,39 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 
 				Unit ExitUnit = (Unit) exitpointIt.next();
 
-				
 				if (ExitUnit instanceof ReturnVoidStmt) {
 
-					if (typeRestrictionAnalysis.isAlwaysRestrictedBefore(
-							ExitUnit, l)) {
+					if ((typeRestrictionAnalysis.isAlwaysRestrictedBefore(
+							ExitUnit, l))
+							|| (typeRestrictionAnalysis
+									.isBothRestrictedAndUnRestrictedBefore(
+											ExitUnit, l))) {
 						weFindReturnStmtThroughWhichParameterTypeIsRestrected = true;
 
 						List<Type> rt = typeRestrictionAnalysis
 								.getRestrictionTypesBefore(ExitUnit, l);
 
-						String coment = "pattern detected param  " + l
-								+ " is type Restricted  it can be ";
+						/*
+						 * faire la diference entre les risque de error lorsque
+						 * la restriction et sur tous les chemin et les warning
+						 * lorsque il ya eu une utulisation sans restriction sur
+						 * une des branches
+						 */
+
+						String coment = "pattern detected param  " + l;
+						String type1 = "";
+						if (typeRestrictionAnalysis
+								.isBothRestrictedAndUnRestrictedBefore(
+										ExitUnit, l)) {
+
+							coment += " maybe type Restricted  it can be ";
+							type1 = "Warning: Restriction for param  ReturnVoidStmt";
+						} else if (typeRestrictionAnalysis
+								.isAlwaysRestrictedBefore(ExitUnit, l)) {
+
+							coment += " is type Restricted  it can be ";
+							type1 = "Error risk: Restriction for param  ReturnVoidStmt";
+						}
 
 						if (rt.size() != 0) {
 
@@ -393,8 +413,6 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 							}
 
 						}
-
-						String type1 = "ReturnVoidStmt for param";
 
 						PatternOccurrenceInfo poi = new PatternOccurrenceInfo(
 								ExitUnit, type1, coment);
@@ -411,19 +429,38 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 					}
 
 				} else if (ExitUnit instanceof ReturnStmt) {
-					
-					
-
 
 					if (typeRestrictionAnalysis.isAlwaysRestrictedBefore(
-							ExitUnit, l)) {
+							ExitUnit, l)
+							|| (typeRestrictionAnalysis
+									.isBothRestrictedAndUnRestrictedBefore(
+											ExitUnit, l))) {
 						weFindReturnStmtThroughWhichParameterTypeIsRestrected = true;
 
 						List<Type> rt = typeRestrictionAnalysis
 								.getRestrictionTypesBefore(ExitUnit, l);
 
-						String coment = "pattern detected param  " + l
-								+ " is type Restricted  it can be ";
+						/*
+						 * faire la diference entre les risque de error lorsque
+						 * la restriction et sur tous les chemin et les warning
+						 * lorsque il ya eu une utulisation sans restriction sur
+						 * une des branches
+						 */
+
+						String coment = "pattern detected param  " + l;
+						String type2 = "";
+						if (typeRestrictionAnalysis
+								.isBothRestrictedAndUnRestrictedBefore(
+										ExitUnit, l)) {
+
+							coment += " maybe type Restricted  it can be ";
+							type2 = "Warning: Restriction for param  ReturnStmt";
+						} else if (typeRestrictionAnalysis
+								.isAlwaysRestrictedBefore(ExitUnit, l)) {
+
+							coment += " is type Restricted  it can be ";
+							type2 = "Error risk: Restriction for param  ReturnStmt";
+						}
 
 						if (rt.size() != 0) {
 
@@ -436,8 +473,6 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 							}
 
 						}
-
-						String type2 = "ReturnStmt for param";
 
 						PatternOccurrenceInfo poi = new PatternOccurrenceInfo(
 								ExitUnit, type2, coment);
@@ -452,9 +487,6 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 						weFindReturnStmtThroughWhichParameterTypeIsNotRestrected = true;
 
 					}
-					
-					
-					
 
 				} else if (ExitUnit instanceof ThrowStmt) {
 
@@ -490,8 +522,7 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 
 					List<Type> rt = typeRestrictionAnalysis
 							.getRestrictionTypesBefore(lastUnit, l);
-					
-					
+
 					String comment = "pattern detected param  " + l
 							+ " is type Restricted  it can be ";
 
@@ -506,11 +537,8 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 						}
 
 					}
-					
-					
-					
-					
-					System.out.println("#"+comment);
+
+					System.out.println("#" + comment);
 					permanentUnitCausingParameterRestrictedType.put(l,
 							temporaryUnitCausingParameterRestrictedType.get(l));
 
@@ -520,101 +548,55 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 
 		}
 
-		
-		
-		
-		
-		
-		
-		
-		
-
 		Statistique Statistique = new Statistique();
-		
+
 		if (permanentUnitCausingParameterRestrictedType.keySet().size() > 0) {
-	    	 
-		    String className= cfg.getBody().getMethod().getDeclaringClass().getName();
-			
-			
-			 // used for Statistique patternDistributionOverClasses  ParameterRestrictedType
-			
-	    	 Integer nbOfParameterRestrictedTypePaternIndeclaringClass = restrictedparameterTypePaternDistributionOverClasses.get(className);
-	    	 
-	    	 nbOfParameterRestrictedTypePaternIndeclaringClass += permanentUnitCausingParameterRestrictedType.keySet().size();
-	    	 
-	    	 restrictedparameterTypePaternDistributionOverClasses.put(className, nbOfParameterRestrictedTypePaternIndeclaringClass);
-			
-	    	 
-	    	 //Statistique patternDistributionOverMethod  ParameterRestrictedType
-	    	 String methodName =cfg.getBody().getMethod().getName();
-	    	 String methodDeclaration =cfg.getBody().getMethod().getDeclaration();
-	    	 String statfileName= "\\RestrictedParameterTypePatternDistributionOverMethod.csv";
-	    	 String OccurrenStatfileName= "\\RestrictedParameterTypePatternOccurrenInMethod.csv";
-	    	 
-	    	 try {
-				Statistique.statistiqueForPatternDistributionOverMethod(permanentUnitCausingParameterRestrictedType.keySet().size(), className, methodName, methodDeclaration,satistuquePath, statfileName);
-				Statistique.statistiqueForPatternOccurrenInMethod(permanentUnitCausingParameterRestrictedType.keySet().size(), className, methodName,methodDeclaration, satistuquePath, OccurrenStatfileName,permanentUnitCausingParameterRestrictedType);
-				
-				
-				
-				
-				
+
+			String className = cfg.getBody().getMethod().getDeclaringClass()
+					.getName();
+
+			// used for Statistique patternDistributionOverClasses
+			// ParameterRestrictedType
+
+			Integer nbOfParameterRestrictedTypePaternIndeclaringClass = restrictedparameterTypePaternDistributionOverClasses
+					.get(className);
+
+			nbOfParameterRestrictedTypePaternIndeclaringClass += permanentUnitCausingParameterRestrictedType
+					.keySet().size();
+
+			restrictedparameterTypePaternDistributionOverClasses.put(className,
+					nbOfParameterRestrictedTypePaternIndeclaringClass);
+
+			// Statistique patternDistributionOverMethod ParameterRestrictedType
+			String methodName = cfg.getBody().getMethod().getName();
+			String methodDeclaration = cfg.getBody().getMethod()
+					.getDeclaration();
+			String statfileName = "\\RestrictedParameterTypePatternDistributionOverMethod.csv";
+			String OccurrenStatfileName = "\\RestrictedParameterTypePatternOccurrenInMethod.csv";
+
+			try {
+				Statistique.statistiqueForPatternDistributionOverMethod(
+						permanentUnitCausingParameterRestrictedType.keySet()
+								.size(), className, methodName,
+						methodDeclaration, satistuquePath, statfileName);
+				Statistique.statistiqueForPatternOccurrenInMethod(
+						permanentUnitCausingParameterRestrictedType.keySet()
+								.size(), className, methodName,
+						methodDeclaration, satistuquePath,
+						OccurrenStatfileName,
+						permanentUnitCausingParameterRestrictedType);
+
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	    	 
-		}    
-	    
-		
-		
-		
-		
-		
-		
+
+		}
+
 		return permanentUnitCausingParameterRestrictedType;
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	private void detectRestrictedTypeOnAllUnit(UnitGraph cfg,
 			TypeRestrictionAnalysis typeRestrictionAnalysis) {
 
@@ -722,8 +704,6 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 	public HashMap<String, Integer> getRestrictedParameterTypePaternDistributionOverClasses() {
 		return restrictedparameterTypePaternDistributionOverClasses;
 	}
-
-	
 
 	public int getNumberOfAnalyzedMethod() {
 

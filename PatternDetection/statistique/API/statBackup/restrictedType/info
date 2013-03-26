@@ -1,71 +1,71 @@
 java.applet
 	nb class :1
 	nb methode: 27
-	RestrictedParameterType:0
+	RestrictedParameterType:0--> 0
 	 
 	
 java.awt	
 	nb class :267
 	nb methode: 4844
-	RestrictedParameterType:8	
+	RestrictedParameterType:8--> 39
 
 java.beans 
 	nb class :41
 	nb methode:547
-	RestrictedParameterType:1
+	RestrictedParameterType:1-->3
 	
 java.io
 	nb class :74
 	nb methode:1012
-	RestrictedParameterType:2
+	RestrictedParameterType:2-->5
 	
 		
 java.lang
 	nb class :167
 	nb methode:2394
-	RestrictedParameterType:15
+	RestrictedParameterType:15-->23
 	
 		
 java.math
 	nb class :7
 	nb methode:300
-	RestrictedParameterType:2
+	RestrictedParameterType:2-->2
 
 	
 java.net
 	nb class :69
 	nb methode:1040
-	RestrictedParameterType:18
+	RestrictedParameterType:18-->20
 
 java.nio
 	nb class :186
 	nb methode:1980
-	RestrictedParameterType:11
+	RestrictedParameterType:11-->35
 
 jaba.rmi
 	nb class :50
 	nb methode:235
-	RestrictedParameterType:0
+	RestrictedParameterType:0-->0
 	
 	
 java.security	
 	nb class :128
 	nb methode:968
-	RestrictedParameterType:3
+	RestrictedParameterType:3-->9
 	
 
 
 java.sql
 	nb class :27
 	nb methode:222
-	RestrictedParameterType:1
+	RestrictedParameterType:1-->1
     
 java.text	
 	nb class :42
 	nb methode:661
-	RestrictedParameterType:10
+	RestrictedParameterType:10-->10
 		
 java.util	
 	nb class :205
 	nb methode:4060
-	RestrictedParameterType:35
+	RestrictedParameterType:35 --> 64

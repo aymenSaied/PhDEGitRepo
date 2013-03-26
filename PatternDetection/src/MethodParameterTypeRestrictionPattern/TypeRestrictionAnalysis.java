@@ -34,6 +34,7 @@ import soot.RefType;
 import soot.Type;
 import soot.Unit;
 import soot.Value;
+import soot.ValueBox;
 import soot.jimple.ArrayRef;
 import soot.jimple.AssignStmt;
 import soot.jimple.CastExpr;
@@ -175,16 +176,34 @@ public class TypeRestrictionAnalysis extends ForwardBranchedFlowAnalysis {
 			} else if (defStmt.getRightOp() instanceof CastExpr) {
 				handelCastAssignment(defStmt, in, out, outBranch);
 
-			}
-			if (defStmt.getRightOp() instanceof Local) {
+			} else if (defStmt.getRightOp() instanceof Local) {
 				handelSimpleCopyAssignment(defStmt, in, out, outBranch);
-			}
-		}
 
-		if (s instanceof JIfStmt) {
+			} else {
+
+				/*
+				 * traitement pour les utilisation de local dans les use box qui ne
+				 * sont pas prealablement restrin et donc il peuvent etre npon
+				 * restrint
+				 */
+				handelNonRestrictedUse(defStmt, in, out, outBranch);
+
+			}
+
+		} else if (s instanceof JIfStmt) {
 			JIfStmt ifStmt = (JIfStmt) s;
 
 			handleIfStmt(ifStmt, in, out, outBranch);
+		} else {
+
+			/*
+			 * traitement pour les utilisation de local dans les use box qui ne
+			 * sont pas prealablement restrin et donc il peuvent etre npon
+			 * restrint
+			 */
+			
+			handelNonRestrictedUse(s, in, out, outBranch);
+			
 		}
 
 		// now copy the computed info to all successors
@@ -243,6 +262,39 @@ public class TypeRestrictionAnalysis extends ForwardBranchedFlowAnalysis {
 				out.put(l, TYPE_IS_RESTRICTED); // je ne suis pas sur que il y a
 												// une restriction sur L a cause
 												// de L = (T) P
+
+			}
+
+		}
+
+	}
+
+	private void handelNonRestrictedUse(Stmt s, AnalysisInfo in,
+			AnalysisInfo out, AnalysisInfo outBranch) {
+
+		List<ValueBox> useBoxes = s.getUseBoxes();
+
+		Iterator<ValueBox> ubIterator = useBoxes.iterator();
+
+		while (ubIterator.hasNext()) {
+			ValueBox valueBox = (ValueBox) ubIterator.next();
+
+			if (valueBox.getValue() instanceof Local) {
+
+				AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
+
+				if ((!(ai.get(valueBox.getValue()) == TYPE_IS_RESTRICTED))
+						&& (!(ai.get(valueBox.getValue()) == TOP))) {
+
+					/*
+					 * à ce point on a une utilisation de local that have never
+					 * been restricted donc on peut dir que il n'est pas
+					 * restricted car il est utuliser sans restriction
+					 */
+
+					out.put(valueBox.getValue(), TYPE_IS_NOT_RESTRICTED);
+
+				}
 
 			}
 
@@ -426,12 +478,19 @@ public class TypeRestrictionAnalysis extends ForwardBranchedFlowAnalysis {
 	 *            a local or constant of that body
 	 * @return true if i is always null right before this statement
 	 */
-	
+
 	public boolean isAlwaysRestrictedBefore(Unit s, Immediate i) {
 		AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
 		return ai.get(i) == TYPE_IS_RESTRICTED;
 	}
 
+	
+	public boolean isBothRestrictedAndUnRestrictedBefore(Unit s, Immediate i) {
+		AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
+		return ai.get(i) == TOP;
+	}
+	
+	
 	/**
 	 * Returns <code>true</code> if the analysis could determine that i is
 	 * always non-null before the statement s.
@@ -450,15 +509,15 @@ public class TypeRestrictionAnalysis extends ForwardBranchedFlowAnalysis {
 
 	/**
 	 * 
-	 * return null if isAlwaysRestrictedBefore(s,i) return false
-	 * on dois verifier que RestrictionTypesList.size() != 0 
+	 * return null if isAlwaysRestrictedBefore(s,i) return false on dois
+	 * verifier que RestrictionTypesList.size() != 0
 	 * 
 	 * */
 	public List<Type> getRestrictionTypesBefore(Unit s, Immediate i) {
 
 		List<Type> RestrictionTypesList = new ArrayList<Type>();
 
-		if (isAlwaysRestrictedBefore(s, i)) {
+		if (isAlwaysRestrictedBefore(s, i)||isBothRestrictedAndUnRestrictedBefore(s,i)) {
 
 			AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
 
@@ -479,20 +538,19 @@ public class TypeRestrictionAnalysis extends ForwardBranchedFlowAnalysis {
 
 			}
 
+		}
 
-		} 
-		
-		if (RestrictionTypesList.size()==0) {
-			
-		try {
-			throw new Exception("RestrictionTypesList.size() is not suposed to be 0 ");
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		if (isAlwaysRestrictedBefore(s, i)&&RestrictionTypesList.size() == 0) {
+
+			try {
+				throw new Exception(
+						"RestrictionTypesList.size() is not suposed to be 0 ");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
-		}
-		
-		
+
 		return RestrictionTypesList;
 
 	}
