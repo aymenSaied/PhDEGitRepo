@@ -36,7 +36,8 @@ import java.security.KeyStore.Entry;
 import java.util.*;
 
 import javax.swing.text.StyledEditorKit.BoldAction;
-
+//import soot.PrimType;
+//import soot.Type;
 public class InvokeStaticInstrumenterP1 extends BodyTransformer{
 
   /* some internal fields */
@@ -196,7 +197,7 @@ public class InvokeStaticInstrumenterP1 extends BodyTransformer{
     		
     		
     		
-    		
+  		
     		ConditionExpr Condtionexpr =(ConditionExpr)((soot.jimple.IfStmt) unit4).getCondition();
     		 
     		//verifier que la condition et du type null verification  

@@ -23,6 +23,8 @@ public class MainDriver {
 	  if (args.length == 0) {
       System.err.println("Usage: java MainDriver [options] classname");
       System.exit(0);
+      
+      
     }
     
 	 // String NomFichier1 = ".\\Test\\API\\P\\test1.txt";

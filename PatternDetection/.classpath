@@ -5,5 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sootlib"/>
 	<classpathentry kind="lib" path="C:/Users/medsd/Downloads/org.eclipse.core.tools_1.4.0.zip"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaAdvancedImaging"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
