@@ -1,0 +1,21 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.rmi.MarshalledObject;;<init>;;1;;public void <init>(java.lang.Object) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.rmi.MarshalledObject: int hash> = 13;;NullAllowed pattern detected param is  :r1
+java.rmi.MarshalledObject;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.rmi.registry.LocateRegistry;;getRegistry;;2;;public static java.rmi.registry.Registry getRegistry(java.lang.String, int, java.rmi.server.RMIClientSocketFactory) throws java.rmi.RemoteException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>();;NullAllowed pattern detected param is  :r0
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r16 = new sun.rmi.server.UnicastRef;;NullAllowed pattern detected param is  :r1
+java.rmi.server.RemoteServer;;setLog;;1;;public static void setLog(java.io.OutputStream)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 1;;NullAllowed pattern detected param is  :r0
+java.rmi.server.RemoteObject;;toStub;;1;;public static java.rmi.Remote toStub(java.rmi.Remote) throws java.rmi.NoSuchObjectException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = staticinvoke <sun.rmi.transport.ObjectTable: java.rmi.Remote getStub(java.rmi.Remote)>(r0);;NullAllowed pattern detected param is  :r0
+java.rmi.server.RMIClassLoader;;loadClass;;1;;public static java.lang.Class loadClass(java.net.URL, java.lang.String) throws java.net.MalformedURLException, java.lang.ClassNotFoundException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r0

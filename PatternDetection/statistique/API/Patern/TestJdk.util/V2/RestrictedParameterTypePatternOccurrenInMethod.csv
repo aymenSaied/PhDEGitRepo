@@ -1,0 +1,191 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.util.Properties;;store;;1;;public void store(java.io.Writer, java.lang.String) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.io.BufferedWriter
+java.util.Calendar;;before;;1;;public boolean before(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $z1;;pattern detected param  r1 maybe type Restricted  it can be , java.util.Calendar
+java.util.Calendar;;after;;1;;public boolean after(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $z1;;pattern detected param  r1 maybe type Restricted  it can be , java.util.Calendar
+java.util.Calendar;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.util.Calendar
+java.util.Date;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $z1;;pattern detected param  r1 maybe type Restricted  it can be , java.util.Date
+java.util.Date;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.util.Date
+java.util.JapaneseImperialCalendar;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $z2;;pattern detected param  r1 maybe type Restricted  it can be , java.util.JapaneseImperialCalendar
+java.util.GregorianCalendar;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $z2;;pattern detected param  r1 maybe type Restricted  it can be , java.util.GregorianCalendar
+java.util.concurrent.locks.ReentrantLock;;hasWaiters;;1;;public boolean hasWaiters(java.util.concurrent.locks.Condition)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z1;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject
+java.util.concurrent.locks.ReentrantLock;;getWaitQueueLength;;1;;public int getWaitQueueLength(java.util.concurrent.locks.Condition)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject
+java.util.concurrent.locks.ReentrantLock;;getWaitingThreads;;1;;protected java.util.Collection getWaitingThreads(java.util.concurrent.locks.Condition)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $r6;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject
+java.util.Collections;;reverse;;1;;public static void reverse(java.util.List)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;shuffle;;1;;public static void shuffle(java.util.List, java.util.Random)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;fill;;1;;public static void fill(java.util.List, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;copy;;2;;public static void copy(java.util.List, java.util.List)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;rotate;;1;;public static void rotate(java.util.List, int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;replaceAll;;1;;public static boolean replaceAll(java.util.List, java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return z0;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;indexOfSubList;;1;;public static int indexOfSubList(java.util.List, java.util.List)
+*;; * ;; * ;;*;;r0;;3
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return i3;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return i8;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return -1;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;unmodifiableList;;1;;public static java.util.List unmodifiableList(java.util.List)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $r1;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;synchronizedList;;1;;public static java.util.List synchronizedList(java.util.List)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $r1;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;synchronizedList;;1;;static java.util.List synchronizedList(java.util.List, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $r2;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.Collections;;checkedList;;1;;public static java.util.List checkedList(java.util.List, java.lang.Class)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $r2;;pattern detected param  r0 maybe type Restricted  it can be , java.util.RandomAccess
+java.util.EnumMap;;<init>;;1;;public void <init>(java.util.Map)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.EnumMap
+java.util.EnumMap;;containsKey;;1;;public boolean containsKey(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $z1;;pattern detected param  r1 maybe type Restricted  it can be , java.lang.Enum
+java.util.EnumMap;;get;;1;;public java.lang.Object get(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $r5;;pattern detected param  r1 maybe type Restricted  it can be , java.lang.Enum
+java.util.EnumMap;;putAll;;1;;public void putAll(java.util.Map)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.util.EnumMap
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.EnumMap
+java.util.EnumMap;;put;;1;;public volatile java.lang.Object put(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $r4;;pattern detected param  r1 is type Restricted  it can be , java.lang.Enum
+java.util.JumboEnumSet;;add;;1;;public volatile boolean add(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z0;;pattern detected param  r1 is type Restricted  it can be , java.lang.Enum
+java.util.RegularEnumSet;;add;;1;;public volatile boolean add(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z0;;pattern detected param  r1 is type Restricted  it can be , java.lang.Enum
+java.util.PriorityQueue;;<init>;;1;;public void <init>(java.util.Collection)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.SortedSet, java.util.PriorityQueue
+java.util.TreeMap;;putAll;;1;;public void putAll(java.util.Map)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.util.SortedMap
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.SortedMap
+java.util.TreeMap;;compare;;1;;final int compare(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $i0;;pattern detected param  r1 maybe type Restricted  it can be , java.lang.Comparable
+java.util.TreeSet;;addAll;;1;;public boolean addAll(java.util.Collection)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return 1;;pattern detected param  r1 is type Restricted  it can be , java.util.SortedSet
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $z3;;pattern detected param  r1 maybe type Restricted  it can be , java.util.SortedSet
+java.util.UUID;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.util.UUID
+java.util.concurrent.ExecutorCompletionService;;<init>;;1;;public void <init>(java.util.concurrent.Executor)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.concurrent.AbstractExecutorService
+java.util.concurrent.ExecutorCompletionService;;<init>;;1;;public void <init>(java.util.concurrent.Executor, java.util.concurrent.BlockingQueue)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.concurrent.AbstractExecutorService
+java.util.concurrent.DelayQueue;;add;;1;;public volatile boolean add(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z0;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.Delayed
+java.util.concurrent.DelayQueue;;offer;;1;;public volatile boolean offer(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z0;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.Delayed
+java.util.concurrent.DelayQueue;;offer;;1;;public volatile boolean offer(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z0;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.Delayed
+java.util.concurrent.DelayQueue;;put;;1;;public volatile void put(java.lang.Object) throws java.lang.InterruptedException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.Delayed
+java.util.concurrent.ForkJoinPool;;execute;;1;;public void execute(java.lang.Runnable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.concurrent.ForkJoinTask
+java.util.concurrent.ForkJoinPool;;submit;;1;;public java.util.concurrent.ForkJoinTask submit(java.lang.Runnable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return r2;;pattern detected param  r1 maybe type Restricted  it can be , java.util.concurrent.ForkJoinTask
+java.util.concurrent.ForkJoinTask;;completeExceptionally;;1;;public void completeExceptionally(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.lang.RuntimeException, java.lang.Error
+java.util.concurrent.RecursiveAction;;setRawResult;;1;;protected volatile void setRawResult(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.lang.Void
+java.util.concurrent.PriorityBlockingQueue;;<init>;;1;;public void <init>(java.util.Collection)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.util.SortedSet, java.util.concurrent.PriorityBlockingQueue
+java.util.concurrent.locks.ReentrantReadWriteLock;;hasWaiters;;1;;public boolean hasWaiters(java.util.concurrent.locks.Condition)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z1;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject
+java.util.concurrent.locks.ReentrantReadWriteLock;;getWaitQueueLength;;1;;public int getWaitQueueLength(java.util.concurrent.locks.Condition)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject
+java.util.concurrent.locks.ReentrantReadWriteLock;;getWaitingThreads;;1;;protected java.util.Collection getWaitingThreads(java.util.concurrent.locks.Condition)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $r6;;pattern detected param  r1 is type Restricted  it can be , java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject
+java.util.jar.Attributes;;put;;2;;public java.lang.Object put(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $r6;;pattern detected param  r1 is type Restricted  it can be , java.util.jar.Attributes$Name
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $r6;;pattern detected param  r2 is type Restricted  it can be , java.lang.String
+java.util.logging.LoggingProxyImpl;;getLevel;;1;;public java.lang.Object getLevel(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $r3;;pattern detected param  r1 is type Restricted  it can be , java.util.logging.Logger
+java.util.logging.LoggingProxyImpl;;setLevel;;2;;public void setLevel(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.util.logging.Logger
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r2 is type Restricted  it can be , java.util.logging.Level
+java.util.logging.LoggingProxyImpl;;isLoggable;;2;;public boolean isLoggable(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z0;;pattern detected param  r1 is type Restricted  it can be , java.util.logging.Logger
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $z0;;pattern detected param  r2 is type Restricted  it can be , java.util.logging.Level
+java.util.logging.LoggingProxyImpl;;log;;2;;public void log(java.lang.Object, java.lang.Object, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.util.logging.Logger
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r2 is type Restricted  it can be , java.util.logging.Level
+java.util.logging.LoggingProxyImpl;;log;;2;;public void log(java.lang.Object, java.lang.Object, java.lang.String, java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.util.logging.Logger
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r2 is type Restricted  it can be , java.util.logging.Level
+java.util.logging.LoggingProxyImpl;;log;;2;;public transient void log(java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object[])
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.util.logging.Logger
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r2 is type Restricted  it can be , java.util.logging.Level
+java.util.logging.LoggingProxyImpl;;getLevelName;;1;;public java.lang.String getLevelName(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $r3;;pattern detected param  r1 is type Restricted  it can be , java.util.logging.Level
+java.util.prefs.XmlSupport;;export;;1;;static void export(java.io.OutputStream, java.util.prefs.Preferences, boolean) throws java.io.IOException, java.util.prefs.BackingStoreException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.util.prefs.AbstractPreferences

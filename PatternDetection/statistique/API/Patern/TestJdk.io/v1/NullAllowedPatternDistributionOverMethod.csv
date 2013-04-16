@@ -1,0 +1,25 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.io.PrintStream;;print;;public void print(java.lang.String);;1
+java.io.PrintStream;;append;;public java.io.PrintStream append(java.lang.CharSequence);;1
+java.io.PrintStream;;append;;public java.io.PrintStream append(java.lang.CharSequence, int, int);;1
+java.io.PrintWriter;;print;;public void print(java.lang.String);;1
+java.io.PrintWriter;;append;;public java.io.PrintWriter append(java.lang.CharSequence);;1
+java.io.PrintWriter;;append;;public java.io.PrintWriter append(java.lang.CharSequence, int, int);;1
+java.io.ObjectOutputStream;;writeTypeString;;void writeTypeString(java.lang.String) throws java.io.IOException;;1
+java.io.Writer;;append;;public java.io.Writer append(java.lang.CharSequence) throws java.io.IOException;;1
+java.io.Writer;;append;;public java.io.Writer append(java.lang.CharSequence, int, int) throws java.io.IOException;;1
+java.io.CharArrayWriter;;append;;public java.io.CharArrayWriter append(java.lang.CharSequence);;1
+java.io.CharArrayWriter;;append;;public java.io.CharArrayWriter append(java.lang.CharSequence, int, int);;1
+java.io.FileInputStream;;<init>;;public void <init>(java.lang.String) throws java.io.FileNotFoundException;;1
+java.io.FileInputStream;;<init>;;public void <init>(java.io.File) throws java.io.FileNotFoundException;;1
+java.io.FileOutputStream;;<init>;;public void <init>(java.lang.String) throws java.io.FileNotFoundException;;1
+java.io.FileOutputStream;;<init>;;public void <init>(java.lang.String, boolean) throws java.io.FileNotFoundException;;1
+java.io.FileOutputStream;;<init>;;public void <init>(java.io.File, boolean) throws java.io.FileNotFoundException;;1
+java.io.File;;<init>;;public void <init>(java.lang.String, java.lang.String);;1
+java.io.File;;<init>;;public void <init>(java.io.File, java.lang.String);;1
+java.io.File;;createTempFile;;public static java.io.File createTempFile(java.lang.String, java.lang.String, java.io.File) throws java.io.IOException;;1
+java.io.RandomAccessFile;;<init>;;public void <init>(java.lang.String, java.lang.String) throws java.io.FileNotFoundException;;1
+java.io.RandomAccessFile;;<init>;;public void <init>(java.io.File, java.lang.String) throws java.io.FileNotFoundException;;1
+java.io.StringWriter;;append;;public java.io.StringWriter append(java.lang.CharSequence);;1
+java.io.StringWriter;;append;;public java.io.StringWriter append(java.lang.CharSequence, int, int);;1
+java.io.Win32FileSystem;;parentOrNull;;static java.lang.String parentOrNull(java.lang.String);;1

@@ -1,0 +1,126 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.lang.String;;valueOf;;1;;public static java.lang.String valueOf(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = "null";;NullAllowed pattern detected param is  :r0
+java.lang.Throwable;;<init>;;1;;public void <init>(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = null;;NullAllowed pattern detected param is  :r1
+java.lang.Class;;forName;;1;;public static java.lang.Class forName(java.lang.String, boolean, java.lang.ClassLoader) throws java.lang.ClassNotFoundException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>();;NullAllowed pattern detected param is  :r1
+java.lang.StringBuffer;;append;;1;;public java.lang.StringBuffer append(java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.StringBuffer;;insert;;1;;public java.lang.StringBuffer insert(int, java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.AbstractStringBuilder;;append;;1;;public java.lang.AbstractStringBuilder append(java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.AbstractStringBuilder;;append;;1;;public java.lang.AbstractStringBuilder append(java.lang.StringBuffer)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = virtualinvoke r0.<java.lang.AbstractStringBuilder: java.lang.AbstractStringBuilder append(java.lang.String)>("null");;NullAllowed pattern detected param is  :r1
+java.lang.AbstractStringBuilder;;append;;1;;public java.lang.AbstractStringBuilder append(java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.AbstractStringBuilder;;append;;1;;public java.lang.AbstractStringBuilder append(java.lang.CharSequence, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.AbstractStringBuilder;;insert;;1;;public java.lang.AbstractStringBuilder insert(int, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.AbstractStringBuilder;;insert;;1;;public java.lang.AbstractStringBuilder insert(int, java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.AbstractStringBuilder;;insert;;1;;public java.lang.AbstractStringBuilder insert(int, java.lang.CharSequence, int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.ClassLoader;;loadLibrary;;1;;static void loadLibrary(java.lang.Class, java.lang.String, boolean)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = null;;NullAllowed pattern detected param is  :r0
+java.lang.ClassLoader;;findNative;;1;;static long findNative(java.lang.ClassLoader, java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = <java.lang.ClassLoader: java.util.Vector systemNativeLibraries>;;NullAllowed pattern detected param is  :r0
+java.lang.ref.Reference;;<init>;;1;;void <init>(java.lang.Object, java.lang.ref.ReferenceQueue)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = <java.lang.ref.ReferenceQueue: java.lang.ref.ReferenceQueue NULL>;;NullAllowed pattern detected param is  :r2
+java.lang.StringBuilder;;append;;1;;public java.lang.StringBuilder append(java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.StringBuilder;;insert;;1;;public java.lang.StringBuilder insert(int, java.lang.CharSequence)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = "null";;NullAllowed pattern detected param is  :r1
+java.lang.System;;setProperties;;1;;public static void setProperties(java.util.Properties)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = new java.util.Properties;;NullAllowed pattern detected param is  :r0
+java.lang.ThreadGroup;;parentOf;;1;;public final boolean parentOf(java.lang.ThreadGroup)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.lang.BootstrapMethodError;;<init>;;1;;public void <init>(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.lang.ProcessImpl;;start;;1;;static java.lang.Process start(java.lang.String[], java.util.Map, java.lang.String, java.lang.ProcessBuilder$Redirect[], boolean) throws java.io.IOException
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r17 = newarray (long)[3];;NullAllowed pattern detected param is  :r3
+java.lang.ProcessEnvironment;;toEnvironmentBlock;;1;;static java.lang.String toEnvironmentBlock(java.util.Map)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.lang.StringCoding;;decode;;1;;static char[] decode(java.lang.String, byte[], int, int) throws java.io.UnsupportedEncodingException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r7 = "ISO-8859-1";;NullAllowed pattern detected param is  :r0
+java.lang.StringCoding;;encode;;1;;static byte[] encode(java.lang.String, char[], int, int) throws java.io.UnsupportedEncodingException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r7 = "ISO-8859-1";;NullAllowed pattern detected param is  :r0
+java.lang.invoke.BoundMethodHandle;;checkReferenceArgument;;1;;static final java.lang.Object checkReferenceArgument(java.lang.Object, java.lang.invoke.MethodHandle, int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.lang.invoke.BoundMethodHandle;;bindPrimitiveArgument;;1;;static final java.lang.Object bindPrimitiveArgument(java.lang.Object, java.lang.invoke.MethodHandle, int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = <java.lang.Integer: java.lang.Class TYPE>;;NullAllowed pattern detected param is  :r0
+java.lang.invoke.BoundMethodHandle;;badBoundArgumentException;;1;;static final java.lang.RuntimeException badBoundArgumentException(java.lang.Object, java.lang.invoke.MethodHandle, int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = "null";;NullAllowed pattern detected param is  :r0
+java.lang.invoke.MethodHandle;;invokeWithArguments;;1;;public transient java.lang.Object invokeWithArguments(java.lang.Object[]) throws java.lang.Throwable
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i1 = 0;;NullAllowed pattern detected param is  :r1
+java.lang.invoke.MethodHandleStatics;;getNameString;;1;;static java.lang.String getNameString(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;NullAllowed pattern detected param is  :r1
+java.lang.invoke.MethodHandleStatics;;getNameString;;1;;static java.lang.String getNameString(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = (java.lang.invoke.MethodType) null;;NullAllowed pattern detected param is  :r1
+java.lang.invoke.MethodHandleStatics;;addTypeString;;1;;static java.lang.String addTypeString(java.lang.Object, java.lang.invoke.MethodHandle)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return r2;;NullAllowed pattern detected param is  :r1
+java.lang.invoke.MethodHandleStatics;;checkSpreadArgument;;1;;static void checkSpreadArgument(java.lang.Object, int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if i0 != 0 goto $r3 = new java.lang.StringBuilder;;NullAllowed pattern detected param is  :r0
+java.lang.invoke.MethodHandles;;checkValue;;1;;static java.lang.Object checkValue(java.lang.Class, java.lang.Object) throws java.lang.ClassCastException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = class "java/lang/Object";;NullAllowed pattern detected param is  :r1
+java.lang.invoke.MethodTypeForm;;reorderParameters;;1;;public static java.lang.invoke.MethodType reorderParameters(java.lang.invoke.MethodType, int[], java.lang.Class[])
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return r0;;NullAllowed pattern detected param is  :r1
+java.lang.invoke.MethodHandleImpl;;bindReceiver;;1;;static java.lang.invoke.MethodHandle bindReceiver(java.lang.invoke.MethodHandle, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r1
+java.lang.invoke.FilterOneArgument;;make;;2;;public static java.lang.invoke.MethodHandle make(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return r1;;NullAllowed pattern detected param is  :r0
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return r0;;NullAllowed pattern detected param is  :r1
+java.lang.management.ThreadInfo;;from;;1;;public static java.lang.management.ThreadInfo 'from'(javax.management.openmbean.CompositeData)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.lang.management.MemoryUsage;;from;;1;;public static java.lang.management.MemoryUsage 'from'(javax.management.openmbean.CompositeData)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.lang.management.MemoryNotificationInfo;;from;;1;;public static java.lang.management.MemoryNotificationInfo 'from'(javax.management.openmbean.CompositeData)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.lang.management.MonitorInfo;;<init>;;1;;public void <init>(java.lang.String, int, int, java.lang.StackTraceElement)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.IllegalArgumentException;;NullAllowed pattern detected param is  :r2
+java.lang.management.MonitorInfo;;from;;1;;public static java.lang.management.MonitorInfo 'from'(javax.management.openmbean.CompositeData)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0

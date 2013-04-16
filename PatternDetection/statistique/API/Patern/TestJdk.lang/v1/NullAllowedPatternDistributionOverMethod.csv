@@ -1,0 +1,42 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.lang.String;;valueOf;;public static java.lang.String valueOf(java.lang.Object);;1
+java.lang.Throwable;;<init>;;public void <init>(java.lang.Throwable);;1
+java.lang.Class;;forName;;public static java.lang.Class forName(java.lang.String, boolean, java.lang.ClassLoader) throws java.lang.ClassNotFoundException;;1
+java.lang.StringBuffer;;append;;public java.lang.StringBuffer append(java.lang.CharSequence);;1
+java.lang.StringBuffer;;insert;;public java.lang.StringBuffer insert(int, java.lang.CharSequence);;1
+java.lang.AbstractStringBuilder;;append;;public java.lang.AbstractStringBuilder append(java.lang.String);;1
+java.lang.AbstractStringBuilder;;append;;public java.lang.AbstractStringBuilder append(java.lang.StringBuffer);;1
+java.lang.AbstractStringBuilder;;append;;public java.lang.AbstractStringBuilder append(java.lang.CharSequence);;1
+java.lang.AbstractStringBuilder;;append;;public java.lang.AbstractStringBuilder append(java.lang.CharSequence, int, int);;1
+java.lang.AbstractStringBuilder;;insert;;public java.lang.AbstractStringBuilder insert(int, java.lang.String);;1
+java.lang.AbstractStringBuilder;;insert;;public java.lang.AbstractStringBuilder insert(int, java.lang.CharSequence);;1
+java.lang.AbstractStringBuilder;;insert;;public java.lang.AbstractStringBuilder insert(int, java.lang.CharSequence, int, int);;1
+java.lang.ClassLoader;;loadLibrary;;static void loadLibrary(java.lang.Class, java.lang.String, boolean);;1
+java.lang.ClassLoader;;findNative;;static long findNative(java.lang.ClassLoader, java.lang.String);;1
+java.lang.ref.Reference;;<init>;;void <init>(java.lang.Object, java.lang.ref.ReferenceQueue);;1
+java.lang.StringBuilder;;append;;public java.lang.StringBuilder append(java.lang.CharSequence);;1
+java.lang.StringBuilder;;insert;;public java.lang.StringBuilder insert(int, java.lang.CharSequence);;1
+java.lang.System;;setProperties;;public static void setProperties(java.util.Properties);;1
+java.lang.ThreadGroup;;parentOf;;public final boolean parentOf(java.lang.ThreadGroup);;1
+java.lang.BootstrapMethodError;;<init>;;public void <init>(java.lang.Throwable);;1
+java.lang.ProcessImpl;;start;;static java.lang.Process start(java.lang.String[], java.util.Map, java.lang.String, java.lang.ProcessBuilder$Redirect[], boolean) throws java.io.IOException;;1
+java.lang.ProcessEnvironment;;toEnvironmentBlock;;static java.lang.String toEnvironmentBlock(java.util.Map);;1
+java.lang.StringCoding;;decode;;static char[] decode(java.lang.String, byte[], int, int) throws java.io.UnsupportedEncodingException;;1
+java.lang.StringCoding;;encode;;static byte[] encode(java.lang.String, char[], int, int) throws java.io.UnsupportedEncodingException;;1
+java.lang.invoke.BoundMethodHandle;;checkReferenceArgument;;static final java.lang.Object checkReferenceArgument(java.lang.Object, java.lang.invoke.MethodHandle, int);;1
+java.lang.invoke.BoundMethodHandle;;bindPrimitiveArgument;;static final java.lang.Object bindPrimitiveArgument(java.lang.Object, java.lang.invoke.MethodHandle, int);;1
+java.lang.invoke.BoundMethodHandle;;badBoundArgumentException;;static final java.lang.RuntimeException badBoundArgumentException(java.lang.Object, java.lang.invoke.MethodHandle, int);;1
+java.lang.invoke.MethodHandle;;invokeWithArguments;;public transient java.lang.Object invokeWithArguments(java.lang.Object[]) throws java.lang.Throwable;;1
+java.lang.invoke.MethodHandleStatics;;getNameString;;static java.lang.String getNameString(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodHandleStatics;;getNameString;;static java.lang.String getNameString(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;1
+java.lang.invoke.MethodHandleStatics;;addTypeString;;static java.lang.String addTypeString(java.lang.Object, java.lang.invoke.MethodHandle);;1
+java.lang.invoke.MethodHandleStatics;;checkSpreadArgument;;static void checkSpreadArgument(java.lang.Object, int);;1
+java.lang.invoke.MethodHandles;;checkValue;;static java.lang.Object checkValue(java.lang.Class, java.lang.Object) throws java.lang.ClassCastException;;1
+java.lang.invoke.MethodTypeForm;;reorderParameters;;public static java.lang.invoke.MethodType reorderParameters(java.lang.invoke.MethodType, int[], java.lang.Class[]);;1
+java.lang.invoke.MethodHandleImpl;;bindReceiver;;static java.lang.invoke.MethodHandle bindReceiver(java.lang.invoke.MethodHandle, java.lang.Object);;1
+java.lang.invoke.FilterOneArgument;;make;;public static java.lang.invoke.MethodHandle make(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;2
+java.lang.management.ThreadInfo;;from;;public static java.lang.management.ThreadInfo 'from'(javax.management.openmbean.CompositeData);;1
+java.lang.management.MemoryUsage;;from;;public static java.lang.management.MemoryUsage 'from'(javax.management.openmbean.CompositeData);;1
+java.lang.management.MemoryNotificationInfo;;from;;public static java.lang.management.MemoryNotificationInfo 'from'(javax.management.openmbean.CompositeData);;1
+java.lang.management.MonitorInfo;;<init>;;public void <init>(java.lang.String, int, int, java.lang.StackTraceElement);;1
+java.lang.management.MonitorInfo;;from;;public static java.lang.management.MonitorInfo 'from'(javax.management.openmbean.CompositeData);;1

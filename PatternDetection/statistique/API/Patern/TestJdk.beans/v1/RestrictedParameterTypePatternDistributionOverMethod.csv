@@ -1,0 +1,2 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.beans.beancontext.BeanContextServicesSupport;;childJustRemovedHook;;protected void childJustRemovedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild);;1

@@ -1,0 +1,34 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.nio.ByteBuffer;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.ByteBuffer
+java.nio.charset.Charset;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.charset.Charset
+java.nio.CharBuffer;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.CharBuffer
+java.nio.ShortBuffer;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.ShortBuffer
+java.nio.IntBuffer;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.IntBuffer
+java.nio.LongBuffer;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.LongBuffer
+java.nio.FloatBuffer;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.FloatBuffer
+java.nio.DoubleBuffer;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.DoubleBuffer
+java.nio.channels.spi.AbstractSelectableChannel;;removeKey;;1;;void removeKey(java.nio.channels.SelectionKey)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r1 is type Restricted  it can be , java.nio.channels.spi.AbstractSelectionKey
+java.nio.channels.spi.AbstractSelectableChannel;;register;;1;;public final java.nio.channels.SelectionKey register(java.nio.channels.Selector, int, java.lang.Object) throws java.nio.channels.ClosedChannelException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return r4;;pattern detected param  r1 is type Restricted  it can be , java.nio.channels.spi.AbstractSelector
+java.nio.file.attribute.FileTime;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ReturnStmt for param;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.nio.file.attribute.FileTime

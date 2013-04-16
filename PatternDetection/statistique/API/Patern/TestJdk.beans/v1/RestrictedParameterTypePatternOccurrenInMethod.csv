@@ -1,0 +1,4 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.beans.beancontext.BeanContextServicesSupport;;childJustRemovedHook;;1;;protected void childJustRemovedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ReturnVoidStmt for param;;return;;pattern detected param  r2 is type Restricted  it can be , java.beans.beancontext.BeanContextServicesSupport$BCSSChild

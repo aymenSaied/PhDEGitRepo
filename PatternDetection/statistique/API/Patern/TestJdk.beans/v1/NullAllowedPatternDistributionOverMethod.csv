@@ -1,0 +1,25 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.beans.PropertyChangeSupport;;addPropertyChangeListener;;public void addPropertyChangeListener(java.beans.PropertyChangeListener);;1
+java.beans.PropertyChangeSupport;;removePropertyChangeListener;;public void removePropertyChangeListener(java.beans.PropertyChangeListener);;1
+java.beans.FeatureDescriptor;;getSoftReference;;static java.lang.ref.Reference getSoftReference(java.lang.Object);;1
+java.beans.FeatureDescriptor;;getWeakReference;;static java.lang.ref.Reference getWeakReference(java.lang.Object);;1
+java.beans.FeatureDescriptor;;getReturnType;;static java.lang.Class getReturnType(java.lang.Class, java.lang.reflect.Method);;1
+java.beans.FeatureDescriptor;;getParameterTypes;;static java.lang.Class[] getParameterTypes(java.lang.Class, java.lang.reflect.Method);;1
+java.beans.PropertyDescriptor;;setReadMethod;;public synchronized void setReadMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException;;1
+java.beans.PropertyDescriptor;;setWriteMethod;;public synchronized void setWriteMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException;;1
+java.beans.PropertyDescriptor;;compareMethods;;boolean compareMethods(java.lang.reflect.Method, java.lang.reflect.Method);;2
+java.beans.Beans;;instantiate;;public static java.lang.Object instantiate(java.lang.ClassLoader, java.lang.String, java.beans.beancontext.BeanContext, java.beans.AppletInitializer) throws java.io.IOException, java.lang.ClassNotFoundException;;1
+java.beans.Introspector;;getBeanInfo;;public static java.beans.BeanInfo getBeanInfo(java.lang.Class, java.lang.Class, int) throws java.beans.IntrospectionException;;1
+java.beans.Introspector;;findMethod;;static java.lang.reflect.Method findMethod(java.lang.Class, java.lang.String, int, java.lang.Class[]);;1
+java.beans.Introspector;;isSubclass;;static boolean isSubclass(java.lang.Class, java.lang.Class);;1
+java.beans.ChangeListenerMap;;set;;public final void set(java.lang.String, java.util.EventListener[]);;1
+java.beans.Encoder;;writeObject;;protected void writeObject(java.lang.Object);;1
+java.beans.Statement;;<init>;;public void <init>(java.lang.Object, java.lang.String, java.lang.Object[]);;1
+java.beans.Statement;;instanceName;;java.lang.String instanceName(java.lang.Object);;1
+java.beans.VetoableChangeSupport;;addVetoableChangeListener;;public void addVetoableChangeListener(java.beans.VetoableChangeListener);;1
+java.beans.VetoableChangeSupport;;removeVetoableChangeListener;;public void removeVetoableChangeListener(java.beans.VetoableChangeListener);;1
+java.beans.MetaData;;getPersistenceDelegate;;public static synchronized java.beans.PersistenceDelegate getPersistenceDelegate(java.lang.Class);;1
+java.beans.NameGenerator;;instanceName;;public java.lang.String instanceName(java.lang.Object);;1
+java.beans.XMLDecoder;;setExceptionListener;;public void setExceptionListener(java.beans.ExceptionListener);;1
+java.beans.beancontext.BeanContextChildSupport;;<init>;;public void <init>(java.beans.beancontext.BeanContextChild);;1
+java.beans.beancontext.BeanContextSupport;;<init>;;public void <init>(java.beans.beancontext.BeanContext, java.util.Locale, boolean, boolean);;1

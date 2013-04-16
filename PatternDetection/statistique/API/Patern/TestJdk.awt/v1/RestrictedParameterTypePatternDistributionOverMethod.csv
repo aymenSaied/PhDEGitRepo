@@ -1,0 +1,9 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.awt.RenderingHints;;containsKey;;public boolean containsKey(java.lang.Object);;1
+java.awt.RenderingHints;;get;;public java.lang.Object get(java.lang.Object);;1
+java.awt.RenderingHints;;put;;public java.lang.Object put(java.lang.Object, java.lang.Object);;1
+java.awt.RenderingHints;;remove;;public java.lang.Object remove(java.lang.Object);;1
+java.awt.Dialog;;<init>;;public void <init>(java.awt.Window, java.lang.String, java.awt.Dialog$ModalityType);;1
+java.awt.Dialog;;<init>;;public void <init>(java.awt.Window, java.lang.String, java.awt.Dialog$ModalityType, java.awt.GraphicsConfiguration);;1
+java.awt.BorderLayout;;addLayoutComponent;;public void addLayoutComponent(java.awt.Component, java.lang.Object);;1
+java.awt.CardLayout;;addLayoutComponent;;public void addLayoutComponent(java.awt.Component, java.lang.Object);;1

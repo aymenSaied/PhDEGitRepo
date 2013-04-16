@@ -1,0 +1,886 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.util.WeakHashMap;;unmaskNull;;1;;static java.lang.Object unmaskNull(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;goto [?= return $r2];;NullAllowed pattern detected param is  :r0 it initialize local $r2
+java.util.WeakHashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = specialinvoke r0.<java.util.WeakHashMap: boolean containsNullValue()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;containsKey;;1;;public boolean containsKey(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;get;;1;;public java.lang.Object get(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;remove;;1;;public java.lang.Object remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r3 != null goto r11 = null;;NullAllowed pattern detected param is  :r1
+java.util.AbstractCollection;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractCollection;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.Arrays;;hashCode;;1;;public static int hashCode(long[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(int[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(short[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(char[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(byte[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(boolean[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(float[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(double[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;deepHashCode;;1;;public static int deepHashCode(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(long[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(int[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(short[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(char[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(byte[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(boolean[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(float[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(double[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;deepToString;;1;;public static java.lang.String deepToString(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Locale;;getInstance;;1;;static java.util.Locale getInstance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, sun.util.locale.LocaleExtensions)
+*;; * ;; * ;;*;;r4;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 = staticinvoke <java.util.Locale: sun.util.locale.LocaleExtensions getCompatibilityExtensions(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>(r0, r1, r2, r3);;NullAllowed pattern detected param is  :r4
+java.util.AbstractList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.ListIterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.ListIterator: boolean hasPrevious()>();;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;removeFirstOccurrence;;1;;public boolean removeFirstOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;get;;1;;public java.lang.Object get(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = specialinvoke r0.<java.util.HashMap: java.lang.Object getForNullKey()>();;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;getEntry;;1;;final java.util.HashMap$Entry getEntry(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i1 = 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;put;;1;;public java.lang.Object put(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = specialinvoke r0.<java.util.HashMap: java.lang.Object putForNullKey(java.lang.Object)>(r2);;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;removeEntryForKey;;1;;final java.util.HashMap$Entry removeEntryForKey(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i2 = 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = specialinvoke r0.<java.util.HashMap: boolean containsNullValue()>();;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;addEntry;;1;;void addEntry(int, java.lang.Object, java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i6 = 0;;NullAllowed pattern detected param is  :r1
+java.util.InvalidPropertiesFormatException;;<init>;;1;;public void <init>(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 = 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i1 = r0.<java.util.ArrayList: int size>;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 = 0;;NullAllowed pattern detected param is  :r1
+java.util.TimSort;;sort;;1;;static void sort(java.lang.Object[], int, int, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;staticinvoke <java.util.Arrays: void sort(java.lang.Object[],int,int)>(r0, i0, i1);;NullAllowed pattern detected param is  :r1
+java.util.Date;;parse;;1;;public static long parse(java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;goto [?= $r21 = new java.lang.IllegalArgumentException];;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ConcurrentHashMap;;entryAt;;1;;static final java.util.concurrent.ConcurrentHashMap$HashEntry entryAt(java.util.concurrent.ConcurrentHashMap$HashEntry[], int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ConcurrentHashMap;;segmentAt;;1;;static final java.util.concurrent.ConcurrentHashMap$Segment segmentAt(java.util.concurrent.ConcurrentHashMap$Segment[], int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.Collections;;binarySearch;;1;;public static int binarySearch(java.util.List, java.lang.Object, java.util.Comparator)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i0 = staticinvoke <java.util.Collections: int binarySearch(java.util.List,java.lang.Object)>(r0, r1);;NullAllowed pattern detected param is  :r2
+java.util.Collections;;min;;1;;public static java.lang.Object min(java.util.Collection, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = staticinvoke <java.util.Collections: java.lang.Object min(java.util.Collection)>(r0);;NullAllowed pattern detected param is  :r1
+java.util.Collections;;max;;1;;public static java.lang.Object max(java.util.Collection, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = staticinvoke <java.util.Collections: java.lang.Object max(java.util.Collection)>(r0);;NullAllowed pattern detected param is  :r1
+java.util.Collections;;replaceAll;;1;;public static boolean replaceAll(java.util.List, java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = 0;;NullAllowed pattern detected param is  :r1
+java.util.Collections;;reverseOrder;;1;;public static java.util.Comparator reverseOrder(java.util.Comparator)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = staticinvoke <java.util.Collections: java.util.Comparator reverseOrder()>();;NullAllowed pattern detected param is  :r0
+java.util.Collections;;eq;;2;;static boolean eq(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r1 != null goto $z0 = 0;;NullAllowed pattern detected param is  :r0
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 1;;NullAllowed pattern detected param is  :r1
+java.util.Collections;;frequency;;1;;public static int frequency(java.util.Collection, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>();;NullAllowed pattern detected param is  :r1
+java.util.JumboEnumSet;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.JumboEnumSet;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.RegularEnumSet;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.RegularEnumSet;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.Formatter;;format;;1;;public transient java.util.Formatter format(java.util.Locale, java.lang.String, java.lang.Object[])
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r10 = null;;NullAllowed pattern detected param is  :r3
+java.util.Objects;;hashCode;;1;;public static int hashCode(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i0 = 0;;NullAllowed pattern detected param is  :r0
+java.util.Objects;;toString;;1;;public static java.lang.String toString(java.lang.Object, java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = r1;;NullAllowed pattern detected param is  :r0
+java.util.LinkedHashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = r0.<java.util.LinkedHashMap: java.util.LinkedHashMap$Entry header>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node first>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node first>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node last>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node last>;;NullAllowed pattern detected param is  :r1
+java.util.Vector;;indexOf;;1;;public synchronized int indexOf(java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = i0;;NullAllowed pattern detected param is  :r1
+java.util.Vector;;lastIndexOf;;1;;public synchronized int lastIndexOf(java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = i0;;NullAllowed pattern detected param is  :r1
+java.util.TreeMap;;valEquals;;2;;static final boolean valEquals(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r1 != null goto $z0 = 0;;NullAllowed pattern detected param is  :r0
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 1;;NullAllowed pattern detected param is  :r1
+java.util.TreeMap;;exportEntry;;1;;static java.util.Map$Entry exportEntry(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;keyOrNull;;1;;static java.lang.Object keyOrNull(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;successor;;1;;static java.util.TreeMap$Entry successor(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;predecessor;;1;;static java.util.TreeMap$Entry predecessor(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ArrayBlockingQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ArrayBlockingQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentSkipListMap;;remove;;1;;public boolean remove(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r2
+java.util.concurrent.Exchanger;;exchange;;1;;public java.lang.Object exchange(java.lang.Object) throws java.lang.InterruptedException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = <java.util.concurrent.Exchanger: java.lang.Object NULL_ITEM>;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.Exchanger;;exchange;;1;;public java.lang.Object exchange(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException, java.util.concurrent.TimeoutException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = <java.util.concurrent.Exchanger: java.lang.Object NULL_ITEM>;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ForkJoinPool;;deregisterWorker;;1;;final void deregisterWorker(java.util.concurrent.ForkJoinWorkerThread, java.lang.Throwable)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.util.concurrent.ForkJoinPool: boolean tryReleaseWaiter()>();;NullAllowed pattern detected param is  :r2
+java.util.concurrent.ForkJoinWorkerThread;;onTermination;;1;;protected void onTermination(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = r2;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;removeFirstOccurrence;;1;;public boolean removeFirstOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedTransferQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.Phaser;;<init>;;1;;public void <init>(java.util.concurrent.Phaser, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.util.concurrent.Phaser: java.util.concurrent.Phaser root> = r0;;NullAllowed pattern detected param is  :r1
+java.util.jar.JarVerifier;;beginEntry;;1;;public void beginEntry(java.util.jar.JarEntry, sun.security.util.ManifestEntryVerifier) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.util.logging.StreamHandler;;setEncoding;;1;;public void setEncoding(java.lang.String) throws java.lang.SecurityException, java.io.UnsupportedEncodingException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.io.OutputStreamWriter;;NullAllowed pattern detected param is  :r1
+java.util.logging.Logger;;entering;;1;;public void entering(java.lang.String, java.lang.String, java.lang.Object[])
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = <java.util.logging.Level: java.util.logging.Level FINER>;;NullAllowed pattern detected param is  :r3
+java.util.logging.Logger;;removeHandler;;1;;public void removeHandler(java.util.logging.Handler) throws java.lang.SecurityException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.util.logging.XMLFormatter;;getHead;;1;;public java.lang.String getHead(java.util.logging.Handler)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 = null;;NullAllowed pattern detected param is  :r1
+java.util.prefs.AbstractPreferences;;<init>;;1;;protected void <init>(java.util.prefs.AbstractPreferences, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("");;NullAllowed pattern detected param is  :r1
+java.util.WeakHashMap;;unmaskNull;;1;;static java.lang.Object unmaskNull(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;goto [?= return $r2];;NullAllowed pattern detected param is  :r0 it initialize local $r2
+java.util.WeakHashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = specialinvoke r0.<java.util.WeakHashMap: boolean containsNullValue()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;containsKey;;1;;public boolean containsKey(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;get;;1;;public java.lang.Object get(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;remove;;1;;public java.lang.Object remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r3 != null goto r11 = null;;NullAllowed pattern detected param is  :r1
+java.util.AbstractCollection;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractCollection;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.Arrays;;hashCode;;1;;public static int hashCode(long[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(int[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(short[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(char[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(byte[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(boolean[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(float[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(double[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;deepHashCode;;1;;public static int deepHashCode(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(long[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(int[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(short[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(char[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(byte[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(boolean[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(float[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(double[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;deepToString;;1;;public static java.lang.String deepToString(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Locale;;getInstance;;1;;static java.util.Locale getInstance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, sun.util.locale.LocaleExtensions)
+*;; * ;; * ;;*;;r4;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 = staticinvoke <java.util.Locale: sun.util.locale.LocaleExtensions getCompatibilityExtensions(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>(r0, r1, r2, r3);;NullAllowed pattern detected param is  :r4
+java.util.AbstractList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.ListIterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.ListIterator: boolean hasPrevious()>();;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;removeFirstOccurrence;;1;;public boolean removeFirstOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;get;;1;;public java.lang.Object get(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = specialinvoke r0.<java.util.HashMap: java.lang.Object getForNullKey()>();;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;getEntry;;1;;final java.util.HashMap$Entry getEntry(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i1 = 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;put;;1;;public java.lang.Object put(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = specialinvoke r0.<java.util.HashMap: java.lang.Object putForNullKey(java.lang.Object)>(r2);;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;removeEntryForKey;;1;;final java.util.HashMap$Entry removeEntryForKey(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i2 = 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = specialinvoke r0.<java.util.HashMap: boolean containsNullValue()>();;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;addEntry;;1;;void addEntry(int, java.lang.Object, java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i6 = 0;;NullAllowed pattern detected param is  :r1
+java.util.InvalidPropertiesFormatException;;<init>;;1;;public void <init>(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 = 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i1 = r0.<java.util.ArrayList: int size>;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 = 0;;NullAllowed pattern detected param is  :r1
+java.util.TimSort;;sort;;1;;static void sort(java.lang.Object[], int, int, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;staticinvoke <java.util.Arrays: void sort(java.lang.Object[],int,int)>(r0, i0, i1);;NullAllowed pattern detected param is  :r1
+java.util.Date;;parse;;1;;public static long parse(java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;goto [?= $r21 = new java.lang.IllegalArgumentException];;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ConcurrentHashMap;;entryAt;;1;;static final java.util.concurrent.ConcurrentHashMap$HashEntry entryAt(java.util.concurrent.ConcurrentHashMap$HashEntry[], int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ConcurrentHashMap;;segmentAt;;1;;static final java.util.concurrent.ConcurrentHashMap$Segment segmentAt(java.util.concurrent.ConcurrentHashMap$Segment[], int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.Collections;;binarySearch;;1;;public static int binarySearch(java.util.List, java.lang.Object, java.util.Comparator)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i0 = staticinvoke <java.util.Collections: int binarySearch(java.util.List,java.lang.Object)>(r0, r1);;NullAllowed pattern detected param is  :r2
+java.util.Collections;;min;;1;;public static java.lang.Object min(java.util.Collection, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = staticinvoke <java.util.Collections: java.lang.Object min(java.util.Collection)>(r0);;NullAllowed pattern detected param is  :r1
+java.util.Collections;;max;;1;;public static java.lang.Object max(java.util.Collection, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = staticinvoke <java.util.Collections: java.lang.Object max(java.util.Collection)>(r0);;NullAllowed pattern detected param is  :r1
+java.util.Collections;;replaceAll;;1;;public static boolean replaceAll(java.util.List, java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = 0;;NullAllowed pattern detected param is  :r1
+java.util.Collections;;reverseOrder;;1;;public static java.util.Comparator reverseOrder(java.util.Comparator)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = staticinvoke <java.util.Collections: java.util.Comparator reverseOrder()>();;NullAllowed pattern detected param is  :r0
+java.util.Collections;;eq;;2;;static boolean eq(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r1 != null goto $z0 = 0;;NullAllowed pattern detected param is  :r0
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 1;;NullAllowed pattern detected param is  :r1
+java.util.Collections;;frequency;;1;;public static int frequency(java.util.Collection, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>();;NullAllowed pattern detected param is  :r1
+java.util.JumboEnumSet;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.JumboEnumSet;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.RegularEnumSet;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.RegularEnumSet;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.Formatter;;format;;1;;public transient java.util.Formatter format(java.util.Locale, java.lang.String, java.lang.Object[])
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r10 = null;;NullAllowed pattern detected param is  :r3
+java.util.Objects;;hashCode;;1;;public static int hashCode(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i0 = 0;;NullAllowed pattern detected param is  :r0
+java.util.Objects;;toString;;1;;public static java.lang.String toString(java.lang.Object, java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = r1;;NullAllowed pattern detected param is  :r0
+java.util.LinkedHashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = r0.<java.util.LinkedHashMap: java.util.LinkedHashMap$Entry header>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node first>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node first>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node last>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node last>;;NullAllowed pattern detected param is  :r1
+java.util.Vector;;indexOf;;1;;public synchronized int indexOf(java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = i0;;NullAllowed pattern detected param is  :r1
+java.util.Vector;;lastIndexOf;;1;;public synchronized int lastIndexOf(java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = i0;;NullAllowed pattern detected param is  :r1
+java.util.TreeMap;;valEquals;;2;;static final boolean valEquals(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r1 != null goto $z0 = 0;;NullAllowed pattern detected param is  :r0
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 1;;NullAllowed pattern detected param is  :r1
+java.util.TreeMap;;exportEntry;;1;;static java.util.Map$Entry exportEntry(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;keyOrNull;;1;;static java.lang.Object keyOrNull(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;successor;;1;;static java.util.TreeMap$Entry successor(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;predecessor;;1;;static java.util.TreeMap$Entry predecessor(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ArrayBlockingQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ArrayBlockingQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentSkipListMap;;remove;;1;;public boolean remove(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r2
+java.util.concurrent.Exchanger;;exchange;;1;;public java.lang.Object exchange(java.lang.Object) throws java.lang.InterruptedException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = <java.util.concurrent.Exchanger: java.lang.Object NULL_ITEM>;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.Exchanger;;exchange;;1;;public java.lang.Object exchange(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException, java.util.concurrent.TimeoutException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = <java.util.concurrent.Exchanger: java.lang.Object NULL_ITEM>;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ForkJoinPool;;deregisterWorker;;1;;final void deregisterWorker(java.util.concurrent.ForkJoinWorkerThread, java.lang.Throwable)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.util.concurrent.ForkJoinPool: boolean tryReleaseWaiter()>();;NullAllowed pattern detected param is  :r2
+java.util.concurrent.ForkJoinWorkerThread;;onTermination;;1;;protected void onTermination(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = r2;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;removeFirstOccurrence;;1;;public boolean removeFirstOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedTransferQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.Phaser;;<init>;;1;;public void <init>(java.util.concurrent.Phaser, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.util.concurrent.Phaser: java.util.concurrent.Phaser root> = r0;;NullAllowed pattern detected param is  :r1
+java.util.jar.JarVerifier;;beginEntry;;1;;public void beginEntry(java.util.jar.JarEntry, sun.security.util.ManifestEntryVerifier) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.util.logging.StreamHandler;;setEncoding;;1;;public void setEncoding(java.lang.String) throws java.lang.SecurityException, java.io.UnsupportedEncodingException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.io.OutputStreamWriter;;NullAllowed pattern detected param is  :r1
+java.util.logging.Logger;;entering;;1;;public void entering(java.lang.String, java.lang.String, java.lang.Object[])
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = <java.util.logging.Level: java.util.logging.Level FINER>;;NullAllowed pattern detected param is  :r3
+java.util.logging.Logger;;removeHandler;;1;;public void removeHandler(java.util.logging.Handler) throws java.lang.SecurityException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.util.logging.XMLFormatter;;getHead;;1;;public java.lang.String getHead(java.util.logging.Handler)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 = null;;NullAllowed pattern detected param is  :r1
+java.util.prefs.AbstractPreferences;;<init>;;1;;protected void <init>(java.util.prefs.AbstractPreferences, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("");;NullAllowed pattern detected param is  :r1
+java.util.WeakHashMap;;unmaskNull;;1;;static java.lang.Object unmaskNull(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;goto [?= return $r2];;NullAllowed pattern detected param is  :r0 it initialize local $r2
+java.util.WeakHashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = specialinvoke r0.<java.util.WeakHashMap: boolean containsNullValue()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;containsKey;;1;;public boolean containsKey(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;get;;1;;public java.lang.Object get(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractMap;;remove;;1;;public java.lang.Object remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r3 != null goto r11 = null;;NullAllowed pattern detected param is  :r1
+java.util.AbstractCollection;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractCollection;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.Arrays;;hashCode;;1;;public static int hashCode(long[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(int[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(short[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(char[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(byte[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(boolean[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(float[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(double[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;hashCode;;1;;public static int hashCode(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;deepHashCode;;1;;public static int deepHashCode(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(long[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(int[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(short[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(char[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(byte[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(boolean[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(float[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(double[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;toString;;1;;public static java.lang.String toString(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Arrays;;deepToString;;1;;public static java.lang.String deepToString(java.lang.Object[])
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r0
+java.util.Locale;;getInstance;;1;;static java.util.Locale getInstance(java.lang.String, java.lang.String, java.lang.String, java.lang.String, sun.util.locale.LocaleExtensions)
+*;; * ;; * ;;*;;r4;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 = staticinvoke <java.util.Locale: sun.util.locale.LocaleExtensions getCompatibilityExtensions(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>(r0, r1, r2, r3);;NullAllowed pattern detected param is  :r4
+java.util.AbstractList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.ListIterator: boolean hasNext()>();;NullAllowed pattern detected param is  :r1
+java.util.AbstractList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = interfaceinvoke r2.<java.util.ListIterator: boolean hasPrevious()>();;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;removeFirstOccurrence;;1;;public boolean removeFirstOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;get;;1;;public java.lang.Object get(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = specialinvoke r0.<java.util.HashMap: java.lang.Object getForNullKey()>();;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;getEntry;;1;;final java.util.HashMap$Entry getEntry(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i1 = 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;put;;1;;public java.lang.Object put(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = specialinvoke r0.<java.util.HashMap: java.lang.Object putForNullKey(java.lang.Object)>(r2);;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;removeEntryForKey;;1;;final java.util.HashMap$Entry removeEntryForKey(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i2 = 0;;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = specialinvoke r0.<java.util.HashMap: boolean containsNullValue()>();;NullAllowed pattern detected param is  :r1
+java.util.HashMap;;addEntry;;1;;void addEntry(int, java.lang.Object, java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i6 = 0;;NullAllowed pattern detected param is  :r1
+java.util.InvalidPropertiesFormatException;;<init>;;1;;public void <init>(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = null;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 = 0;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i1 = r0.<java.util.ArrayList: int size>;;NullAllowed pattern detected param is  :r1
+java.util.ArrayList;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 = 0;;NullAllowed pattern detected param is  :r1
+java.util.TimSort;;sort;;1;;static void sort(java.lang.Object[], int, int, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;staticinvoke <java.util.Arrays: void sort(java.lang.Object[],int,int)>(r0, i0, i1);;NullAllowed pattern detected param is  :r1
+java.util.Date;;parse;;1;;public static long parse(java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;goto [?= $r21 = new java.lang.IllegalArgumentException];;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ConcurrentHashMap;;entryAt;;1;;static final java.util.concurrent.ConcurrentHashMap$HashEntry entryAt(java.util.concurrent.ConcurrentHashMap$HashEntry[], int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ConcurrentHashMap;;segmentAt;;1;;static final java.util.concurrent.ConcurrentHashMap$Segment segmentAt(java.util.concurrent.ConcurrentHashMap$Segment[], int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.Collections;;binarySearch;;1;;public static int binarySearch(java.util.List, java.lang.Object, java.util.Comparator)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i0 = staticinvoke <java.util.Collections: int binarySearch(java.util.List,java.lang.Object)>(r0, r1);;NullAllowed pattern detected param is  :r2
+java.util.Collections;;min;;1;;public static java.lang.Object min(java.util.Collection, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = staticinvoke <java.util.Collections: java.lang.Object min(java.util.Collection)>(r0);;NullAllowed pattern detected param is  :r1
+java.util.Collections;;max;;1;;public static java.lang.Object max(java.util.Collection, java.util.Comparator)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = staticinvoke <java.util.Collections: java.lang.Object max(java.util.Collection)>(r0);;NullAllowed pattern detected param is  :r1
+java.util.Collections;;replaceAll;;1;;public static boolean replaceAll(java.util.List, java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = 0;;NullAllowed pattern detected param is  :r1
+java.util.Collections;;reverseOrder;;1;;public static java.util.Comparator reverseOrder(java.util.Comparator)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = staticinvoke <java.util.Collections: java.util.Comparator reverseOrder()>();;NullAllowed pattern detected param is  :r0
+java.util.Collections;;eq;;2;;static boolean eq(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r1 != null goto $z0 = 0;;NullAllowed pattern detected param is  :r0
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 1;;NullAllowed pattern detected param is  :r1
+java.util.Collections;;frequency;;1;;public static int frequency(java.util.Collection, java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>();;NullAllowed pattern detected param is  :r1
+java.util.JumboEnumSet;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.JumboEnumSet;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.RegularEnumSet;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.RegularEnumSet;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.Formatter;;format;;1;;public transient java.util.Formatter format(java.util.Locale, java.lang.String, java.lang.Object[])
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r10 = null;;NullAllowed pattern detected param is  :r3
+java.util.Objects;;hashCode;;1;;public static int hashCode(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$i0 = 0;;NullAllowed pattern detected param is  :r0
+java.util.Objects;;toString;;1;;public static java.lang.String toString(java.lang.Object, java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = r1;;NullAllowed pattern detected param is  :r0
+java.util.LinkedHashMap;;containsValue;;1;;public boolean containsValue(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = r0.<java.util.LinkedHashMap: java.util.LinkedHashMap$Entry header>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node first>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;indexOf;;1;;public int indexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node first>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;lastIndexOf;;1;;public int lastIndexOf(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node last>;;NullAllowed pattern detected param is  :r1
+java.util.LinkedList;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 = r0.<java.util.LinkedList: java.util.LinkedList$Node last>;;NullAllowed pattern detected param is  :r1
+java.util.Vector;;indexOf;;1;;public synchronized int indexOf(java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = i0;;NullAllowed pattern detected param is  :r1
+java.util.Vector;;lastIndexOf;;1;;public synchronized int lastIndexOf(java.lang.Object, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;i1 = i0;;NullAllowed pattern detected param is  :r1
+java.util.TreeMap;;valEquals;;2;;static final boolean valEquals(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r1 != null goto $z0 = 0;;NullAllowed pattern detected param is  :r0
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 1;;NullAllowed pattern detected param is  :r1
+java.util.TreeMap;;exportEntry;;1;;static java.util.Map$Entry exportEntry(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;keyOrNull;;1;;static java.lang.Object keyOrNull(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;successor;;1;;static java.util.TreeMap$Entry successor(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.util.TreeMap;;predecessor;;1;;static java.util.TreeMap$Entry predecessor(java.util.TreeMap$Entry)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0
+java.util.concurrent.ArrayBlockingQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ArrayBlockingQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentLinkedQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ConcurrentSkipListMap;;remove;;1;;public boolean remove(java.lang.Object, java.lang.Object)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r2
+java.util.concurrent.Exchanger;;exchange;;1;;public java.lang.Object exchange(java.lang.Object) throws java.lang.InterruptedException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = <java.util.concurrent.Exchanger: java.lang.Object NULL_ITEM>;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.Exchanger;;exchange;;1;;public java.lang.Object exchange(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException, java.util.concurrent.TimeoutException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = <java.util.concurrent.Exchanger: java.lang.Object NULL_ITEM>;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingQueue;;remove;;1;;public boolean remove(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.ForkJoinPool;;deregisterWorker;;1;;final void deregisterWorker(java.util.concurrent.ForkJoinWorkerThread, java.lang.Throwable)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.util.concurrent.ForkJoinPool: boolean tryReleaseWaiter()>();;NullAllowed pattern detected param is  :r2
+java.util.concurrent.ForkJoinWorkerThread;;onTermination;;1;;protected void onTermination(java.lang.Throwable)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = r2;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;removeFirstOccurrence;;1;;public boolean removeFirstOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;removeLastOccurrence;;1;;public boolean removeLastOccurrence(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedBlockingDeque;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.LinkedTransferQueue;;contains;;1;;public boolean contains(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.util.concurrent.Phaser;;<init>;;1;;public void <init>(java.util.concurrent.Phaser, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.util.concurrent.Phaser: java.util.concurrent.Phaser root> = r0;;NullAllowed pattern detected param is  :r1
+java.util.jar.JarVerifier;;beginEntry;;1;;public void beginEntry(java.util.jar.JarEntry, sun.security.util.ManifestEntryVerifier) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.util.logging.StreamHandler;;setEncoding;;1;;public void setEncoding(java.lang.String) throws java.lang.SecurityException, java.io.UnsupportedEncodingException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.io.OutputStreamWriter;;NullAllowed pattern detected param is  :r1
+java.util.logging.Logger;;entering;;1;;public void entering(java.lang.String, java.lang.String, java.lang.Object[])
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = <java.util.logging.Level: java.util.logging.Level FINER>;;NullAllowed pattern detected param is  :r3
+java.util.logging.Logger;;removeHandler;;1;;public void removeHandler(java.util.logging.Handler) throws java.lang.SecurityException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.util.logging.XMLFormatter;;getHead;;1;;public java.lang.String getHead(java.util.logging.Handler)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 = null;;NullAllowed pattern detected param is  :r1
+java.util.prefs.AbstractPreferences;;<init>;;1;;protected void <init>(java.util.prefs.AbstractPreferences, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("");;NullAllowed pattern detected param is  :r1

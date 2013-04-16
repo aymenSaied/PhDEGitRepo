@@ -1,0 +1,495 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.net.URL;;<init>;;1;;public void <init>(java.lang.String, java.lang.String, int, java.lang.String, java.net.URLStreamHandler) throws java.net.MalformedURLException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r1.<java.lang.String: java.lang.String toLowerCase()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.URL;;<init>;;3;;public void <init>(java.net.URL, java.lang.String, java.net.URLStreamHandler) throws java.net.MalformedURLException
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r3.<java.net.URLStreamHandler: void parseURL(java.net.URL,java.lang.String,int,int)>(r0, r2, i0, i1);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r34 = r1.<java.net.URL: java.lang.String query>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r36 = r1.<java.net.URL: java.lang.String ref>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;*;;r2;;10
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r2.<java.lang.String: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c5 = virtualinvoke r2.<java.lang.String: char charAt(int)>($i4);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c6 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r2.<java.lang.String: boolean regionMatches(boolean,int,java.lang.String,int,int)>(1, i0, "url:", 0, 4);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i7 = virtualinvoke r2.<java.lang.String: int length()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c8 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i2);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(i0, i2);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i11 = virtualinvoke r2.<java.lang.String: int indexOf(int,int)>(35, i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r33 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>($i12, i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.net.URL;;set;;1;;protected void set(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r3;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r3.<java.lang.String: int lastIndexOf(int)>(63);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r3.<java.lang.String: java.lang.String substring(int)>($i2);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r15 = virtualinvoke r3.<java.lang.String: java.lang.String substring(int,int)>(0, i1);;pattern detected param  r3 must not be null  because used in  InvokeExpr 
+java.net.URL;;openConnection;;1;;public java.net.URLConnection openConnection(java.net.Proxy) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.URL;;getURLStreamHandler;;1;;static java.net.URLStreamHandler getURLStreamHandler(java.lang.String)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("gopher");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.net.DatagramPacket;;setData;;1;;public synchronized void setData(byte[])
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.NetworkInterface;;getByName;;1;;public static java.net.NetworkInterface getByName(java.lang.String) throws java.net.SocketException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.net.NetworkInterface;;getByInetAddress;;1;;public static java.net.NetworkInterface getByInetAddress(java.net.InetAddress) throws java.net.SocketException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.net.NetworkInterface;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;6
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.net.NetworkInterface: java.lang.String name>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r7 = r2.<java.net.NetworkInterface: java.lang.String name>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r9 = r2.<java.net.NetworkInterface: java.net.InetAddress[] addrs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r10 = r2.<java.net.NetworkInterface: java.net.InetAddress[] addrs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r12 = r2.<java.net.NetworkInterface: java.net.InetAddress[] addrs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;r3 = r2.<java.net.NetworkInterface: java.net.InetAddress[] addrs>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.net.InetSocketAddress;;<init>;;1;;public void <init>(java.lang.String, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.InetSocketAddress;;createUnresolved;;1;;public static java.net.InetSocketAddress createUnresolved(java.lang.String, int)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+java.net.InterfaceAddress;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;5
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.net.InterfaceAddress: java.net.InetAddress address>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.net.InterfaceAddress: java.net.InetAddress address>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.net.InterfaceAddress: java.net.Inet4Address broadcast>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r10 = r2.<java.net.InterfaceAddress: java.net.Inet4Address broadcast>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$s1 = r2.<java.net.InterfaceAddress: short maskLength>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.net.SocketInputStream;;<init>;;1;;void <init>(java.net.AbstractPlainSocketImpl) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.net.AbstractPlainSocketImpl: java.io.FileDescriptor getFileDescriptor()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.net.AbstractPlainSocketImpl: java.net.Socket getSocket()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.Socket;;<init>;;1;;public void <init>(java.net.Proxy)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.Socket;;connect;;1;;public void connect(java.net.SocketAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.ServerSocket;;<init>;;1;;void <init>(java.net.SocketImpl)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.SocketImpl: void setServerSocket(java.net.ServerSocket)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.ServerSocket;;implAccept;;1;;protected final void implAccept(java.net.Socket) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.net.Socket: java.net.SocketImpl impl>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.Socket: void setImpl()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.net.Socket: java.net.SocketImpl impl>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r2 = r1.<java.net.Socket: java.net.SocketImpl impl>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.Socket: java.net.SocketImpl impl> = null;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.Socket: java.net.SocketImpl impl> = r2;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.Socket: java.net.SocketImpl impl> = r2;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.Socket: java.net.SocketImpl impl> = r2;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.Socket: void postAccept()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.SocketOutputStream;;<init>;;1;;void <init>(java.net.AbstractPlainSocketImpl) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.net.AbstractPlainSocketImpl: java.io.FileDescriptor getFileDescriptor()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.net.AbstractPlainSocketImpl: java.net.Socket getSocket()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.PasswordAuthentication;;<init>;;1;;public void <init>(java.lang.String, char[])
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r2.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.net.URLStreamHandler;;parseURL;;2;;protected void parseURL(java.net.URL, java.lang.String, int, int)
+*;; * ;; * ;;*;;r1;;8
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.net.URL: java.lang.String getAuthority()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.net.URL: java.lang.String getUserInfo()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r1.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.net.URL: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r1.<java.net.URL: java.lang.String getPath()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r8 = virtualinvoke r1.<java.net.URL: java.lang.String getQuery()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r9 = virtualinvoke r1.<java.net.URL: java.lang.String getRef()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;16
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(63);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r8 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>($i5, i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(0, i3);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c7 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = virtualinvoke r2.<java.lang.String: char charAt(int)>($i8);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c11 = virtualinvoke r2.<java.lang.String: char charAt(int)>($i10);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c13 = virtualinvoke r2.<java.lang.String: char charAt(int)>($i12);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c15 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c17 = virtualinvoke r2.<java.lang.String: char charAt(int)>($i16);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i19 = virtualinvoke r2.<java.lang.String: int indexOf(int,int)>(47, i18);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i19 = virtualinvoke r2.<java.lang.String: int indexOf(int,int)>(63, i18);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(i18, i19);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c39 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i0);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(i0, i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r40 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(i0, i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r46 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(i0, i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.net.URLStreamHandler;;equals;;2;;protected boolean equals(java.net.URL, java.net.URL)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.net.URL: java.lang.String getRef()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r2.<java.net.URL: java.lang.String getRef()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.net.URLStreamHandler;;hashCode;;1;;protected int hashCode(java.net.URL)
+*;; * ;; * ;;*;;r1;;6
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r1.<java.net.URL: java.lang.String getFile()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r1.<java.net.URL: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i8 = virtualinvoke r1.<java.net.URL: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.net.URL: java.lang.String getRef()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.URLStreamHandler;;sameFile;;2;;protected boolean sameFile(java.net.URL, java.net.URL)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r1.<java.net.URL: java.lang.String getFile()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r1.<java.net.URL: java.lang.String getFile()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r1.<java.net.URL: java.lang.String getFile()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.net.URL: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r1.<java.net.URL: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r1.<java.net.URL: java.net.URLStreamHandler handler>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;; * ;; * ;;*;;r2;;7
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r2.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r2.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r2.<java.net.URL: java.lang.String getFile()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r2.<java.net.URL: java.lang.String getFile()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r2.<java.net.URL: int getPort()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r2.<java.net.URL: int getPort()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r14 = r2.<java.net.URL: java.net.URLStreamHandler handler>;;pattern detected param  r2 must not be null  because used in  FieldRef 
+java.net.URLStreamHandler;;getHostAddress;;1;;protected synchronized java.net.InetAddress getHostAddress(java.net.URL)
+*;; * ;; * ;;*;;r1;;5
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.net.URL: java.net.InetAddress hostAddress>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.net.URL: java.net.InetAddress hostAddress>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.URL: java.net.InetAddress hostAddress> = $r6;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.net.URL: java.net.InetAddress hostAddress>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.net.URLStreamHandler;;hostsEqual;;2;;protected boolean hostsEqual(java.net.URL, java.net.URL)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r2.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r2.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r2.<java.net.URL: java.lang.String getHost()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.net.URLStreamHandler;;toExternalForm;;1;;protected java.lang.String toExternalForm(java.net.URL)
+*;; * ;; * ;;*;;r1;;20
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.net.URL: java.lang.String getAuthority()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.net.URL: java.lang.String getAuthority()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.net.URL: java.lang.String getAuthority()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.net.URL: java.lang.String getPath()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r1.<java.net.URL: java.lang.String getPath()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.net.URL: java.lang.String getQuery()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r1.<java.net.URL: java.lang.String getQuery()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r1.<java.net.URL: java.lang.String getRef()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r1.<java.net.URL: java.lang.String getRef()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r1.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r17 = virtualinvoke r1.<java.net.URL: java.lang.String getAuthority()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r18 = virtualinvoke r1.<java.net.URL: java.lang.String getAuthority()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r20 = virtualinvoke r1.<java.net.URL: java.lang.String getAuthority()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r22 = virtualinvoke r1.<java.net.URL: java.lang.String getPath()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r23 = virtualinvoke r1.<java.net.URL: java.lang.String getPath()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r25 = virtualinvoke r1.<java.net.URL: java.lang.String getQuery()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r27 = virtualinvoke r1.<java.net.URL: java.lang.String getQuery()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r29 = virtualinvoke r1.<java.net.URL: java.lang.String getRef()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r31 = virtualinvoke r1.<java.net.URL: java.lang.String getRef()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.URLStreamHandler;;setURL;;1;;protected void setURL(java.net.URL, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.net.URL: java.net.URLStreamHandler handler>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r1.<java.net.URL: java.lang.String getProtocol()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>($r11, r3, i0, r4, r5, r6, r7, r8);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.URI;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;12
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$z2 = virtualinvoke r2.<java.net.URI: boolean isOpaque()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.net.URI: java.lang.String scheme>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.net.URI: java.lang.String fragment>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.net.URI: java.lang.String schemeSpecificPart>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r10 = r2.<java.net.URI: java.lang.String path>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r12 = r2.<java.net.URI: java.lang.String query>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r14 = r2.<java.net.URI: java.lang.String authority>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r17 = r2.<java.net.URI: java.lang.String userInfo>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r19 = r2.<java.net.URI: java.lang.String host>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i1 = r2.<java.net.URI: int port>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r22 = r2.<java.net.URI: java.lang.String authority>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r24 = r2.<java.net.URI: java.lang.String authority>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.net.URI;;compareTo;;1;;public int compareTo(java.net.URI)
+*;; * ;; * ;;*;;r1;;13
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.net.URI: java.lang.String scheme>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.net.URI: boolean isOpaque()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.net.URI: java.lang.String schemeSpecificPart>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.net.URI: java.lang.String fragment>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r1.<java.net.URI: boolean isOpaque()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r9 = r1.<java.net.URI: java.lang.String host>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.net.URI: java.lang.String userInfo>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r1.<java.net.URI: java.lang.String host>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i10 = r1.<java.net.URI: int port>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r15 = r1.<java.net.URI: java.lang.String authority>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r17 = r1.<java.net.URI: java.lang.String path>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r19 = r1.<java.net.URI: java.lang.String query>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r21 = r1.<java.net.URI: java.lang.String fragment>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.net.URLConnection;;setRequestProperty;;1;;public void setRequestProperty(java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.URLConnection;;addRequestProperty;;1;;public void addRequestProperty(java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.URLConnection;;guessContentTypeFromStream;;1;;public static java.lang.String guessContentTypeFromStream(java.io.InputStream) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;19
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.io.InputStream: boolean markSupported()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.io.InputStream: void mark(int)>(16);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i4 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i5 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i6 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i7 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i8 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i9 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i10 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i11 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i12 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i13 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i14 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r0.<java.io.InputStream: int read()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.io.InputStream: void reset()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.net.ContentHandler;;getContent;;1;;public java.lang.Object getContent(java.net.URLConnection, java.lang.Class[]) throws java.io.IOException
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$r4 = r2[i0];;pattern detected param  r2 must not be null  because used in  ArrayRef 
+java.net.SocketPermission;;implies;;1;;public boolean implies(java.security.Permission)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i1 = r2.<java.net.SocketPermission: int mask>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i3 = r2.<java.net.SocketPermission: int mask>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.net.SocketPermission;;impliesIgnoreMask;;1;;boolean impliesIgnoreMask(java.net.SocketPermission)
+*;; * ;; * ;;*;;r1;;27
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.net.SocketPermission: int mask>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i4 = r1.<java.net.SocketPermission: int mask>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r3 = r1.<java.net.SocketPermission: int[] portrange>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.net.SocketPermission: int[] portrange>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z3 = r1.<java.net.SocketPermission: boolean invalid>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z6 = r1.<java.net.SocketPermission: boolean wildcard>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z8 = r1.<java.net.SocketPermission: boolean init_with_ip>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r11 = r1.<java.net.SocketPermission: java.net.InetAddress[] addresses>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r13 = r1.<java.net.SocketPermission: java.net.InetAddress[] addresses>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.SocketPermission: void getIP()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r14 = r1.<java.net.SocketPermission: java.net.InetAddress[] addresses>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r17 = r1.<java.net.SocketPermission: java.net.InetAddress[] addresses>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z14 = r1.<java.net.SocketPermission: boolean wildcard>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z16 = r1.<java.net.SocketPermission: boolean wildcard>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r19 = r1.<java.net.SocketPermission: java.lang.String cname>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z18 = r1.<java.net.SocketPermission: boolean wildcard>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r21 = r1.<java.net.SocketPermission: java.lang.String cname>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.SocketPermission: void getCanonName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r22 = r1.<java.net.SocketPermission: java.lang.String cname>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r25 = r1.<java.net.SocketPermission: java.net.InetAddress[] addresses>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.SocketPermission: void getIP()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$z21 = r1.<java.net.SocketPermission: boolean init_with_ip>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r27 = r1.<java.net.SocketPermission: java.net.InetAddress[] addresses>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r30 = r1.<java.net.SocketPermission: java.net.InetAddress[] addresses>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r33 = r1.<java.net.SocketPermission: java.lang.String cname>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.SocketPermission: void getCanonName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$r35 = r1.<java.net.SocketPermission: java.lang.String cname>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.net.SocketPermission;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i1 = r2.<java.net.SocketPermission: int mask>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i2 = r2.<java.net.SocketPermission: int mask>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i4 = r2.<java.net.SocketPermission: int mask>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.net.SocketPermission: int[] portrange>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r7 = r2.<java.net.SocketPermission: int[] portrange>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r9 = virtualinvoke r2.<java.net.SocketPermission: java.lang.String getName()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r2.<java.net.SocketPermission: void getCanonName()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$z3 = r2.<java.net.SocketPermission: boolean invalid>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r13 = r2.<java.net.SocketPermission: java.lang.String cname>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.net.HttpCookie;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r4 = virtualinvoke r2.<java.net.HttpCookie: java.lang.String getName()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r6 = virtualinvoke r2.<java.net.HttpCookie: java.lang.String getDomain()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r8 = virtualinvoke r2.<java.net.HttpCookie: java.lang.String getPath()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
+java.net.InMemoryCookieStore;;add;;1;;public void add(java.net.URI, java.net.HttpCookie)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.net.InMemoryCookieStore;;get;;1;;public java.util.List get(java.net.URI)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.InMemoryCookieStore;;remove;;1;;public boolean remove(java.net.URI, java.net.HttpCookie)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+java.net.DatagramSocket;;<init>;;1;;protected void <init>(java.net.DatagramSocketImpl)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DatagramSocket;;connect;;1;;public void connect(java.net.SocketAddress) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DatagramSocket;;send;;1;;public void send(java.net.DatagramPacket) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;12
+*;;*;;*;;*;;*;;*;;monitorStmt for param;;entermonitor r1;;pattern detected param  r1 must not be null  because used in  monitorStmt 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.net.DatagramPacket: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r12 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.DatagramPacket: void setAddress(java.net.InetAddress)>($r13);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.DatagramPacket: void setPort(int)>($i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r1.<java.net.DatagramPacket: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r2;;pattern detected param  r1 must not be null it define a local r2which used in  monitorStmt 
+*;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r2;;pattern detected param  r1 must not be null it define a local r2which used in  monitorStmt 
+java.net.DatagramSocket;;receive;;1;;public synchronized void receive(java.net.DatagramPacket) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;monitorStmt for param;;entermonitor r1;;pattern detected param  r1 must not be null  because used in  monitorStmt 
+*;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r3;;pattern detected param  r1 must not be null it define a local r3which used in  monitorStmt 
+*;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r3;;pattern detected param  r1 must not be null it define a local r3which used in  monitorStmt 
+java.net.Inet4Address;;numericToTextFormat;;1;;static java.lang.String numericToTextFormat(byte[])
+*;; * ;; * ;;*;;r0;;4
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$b0 = r0[0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$b2 = r0[1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$b4 = r0[2];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$b6 = r0[3];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.net.MulticastSocket;;joinGroup;;1;;public void joinGroup(java.net.InetAddress) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.net.InetAddress: boolean isMulticastAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.MulticastSocket;;leaveGroup;;1;;public void leaveGroup(java.net.InetAddress) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.net.InetAddress: boolean isMulticastAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.MulticastSocket;;send;;1;;public void send(java.net.DatagramPacket, byte) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;12
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;monitorStmt for param;;entermonitor r1;;pattern detected param  r1 must not be null  because used in  monitorStmt 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r13 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.net.DatagramPacket: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r16 = virtualinvoke r1.<java.net.DatagramPacket: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.DatagramPacket: void setAddress(java.net.InetAddress)>($r17);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.net.DatagramPacket: void setPort(int)>($i3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.net.DatagramPacket: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r3;;pattern detected param  r1 must not be null it define a local r3which used in  monitorStmt 
+*;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r3;;pattern detected param  r1 must not be null it define a local r3which used in  monitorStmt 
+java.net.Inet6Address;;<init>;;1;;void <init>(java.lang.String, byte[], int)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r2.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.net.Inet6Address;;numericToTextFormat;;1;;static java.lang.String numericToTextFormat(byte[])
+*;; * ;; * ;;*;;r0;;2
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$b2 = r0[$i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$b7 = r0[$i6];;pattern detected param  r0 must not be null  because used in  ArrayRef 
+java.net.DualStackPlainDatagramSocketImpl;;bind0;;1;;protected synchronized void bind0(int, java.net.InetAddress) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainDatagramSocketImpl;;peek;;1;;protected synchronized int peek(java.net.InetAddress) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainDatagramSocketImpl;;peekData;;1;;protected synchronized int peekData(java.net.DatagramPacket) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainDatagramSocketImpl;;receive0;;1;;protected synchronized void receive0(java.net.DatagramPacket) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainDatagramSocketImpl;;send;;1;;protected void send(java.net.DatagramPacket) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainDatagramSocketImpl;;connect0;;1;;protected void connect0(java.net.InetAddress, int) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainDatagramSocketImpl;;socketSetOption;;1;;protected void socketSetOption(int, java.lang.Object) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i2 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$z1 = virtualinvoke $r3.<java.lang.Boolean: boolean booleanValue()>();;pattern detected param  r1 must not be null it define a local $r3which used in  InvokeExpr 
+java.net.TwoStacksPlainDatagramSocketImpl;;bind;;1;;protected synchronized void bind(int, java.net.InetAddress) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.net.InetAddress: boolean isAnyLocalAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.DualStackPlainSocketImpl;;socketConnect;;1;;void socketConnect(java.net.InetAddress, int, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainSocketImpl;;socketBind;;1;;void socketBind(java.net.InetAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainSocketImpl;;socketAccept;;1;;void socketAccept(java.net.SocketImpl) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.net.DualStackPlainSocketImpl;;socketSetOption;;1;;void socketSetOption(int, boolean, java.lang.Object) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i3 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i3 = virtualinvoke $r3.<java.lang.Integer: int intValue()>();;pattern detected param  r1 must not be null it define a local $r3which used in  InvokeExpr 
+java.net.HttpURLConnection;;setRequestMethod;;1;;public void setRequestMethod(java.lang.String) throws java.net.ProtocolException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("TRACE");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.IDN;;toASCII;;1;;public static java.lang.String toASCII(java.lang.String, int)
+*;; * ;; * ;;*;;r0;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(i1, i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.net.IDN;;toUnicode;;1;;public static java.lang.String toUnicode(java.lang.String, int)
+*;; * ;; * ;;*;;r0;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(i1, i3);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.net.Inet4AddressImpl;;isReachable;;1;;public boolean isReachable(java.net.InetAddress, int, java.net.NetworkInterface, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.net.InetAddress: byte[] getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.Inet6AddressImpl;;isReachable;;1;;public boolean isReachable(java.net.InetAddress, int, java.net.NetworkInterface, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;i2 = virtualinvoke $r9.<java.net.Inet6Address: int getScopeId()>();;pattern detected param  r1 must not be null it define a local $r9which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r1.<java.net.InetAddress: byte[] getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.PlainSocketImpl;;accept;;1;;protected synchronized void accept(java.net.SocketImpl) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;r2 = $r4.<java.net.PlainSocketImpl: java.net.AbstractPlainSocketImpl impl>;;pattern detected param  r1 must not be null it define a local $r4which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.SocketImpl: java.io.FileDescriptor fd> = $r7;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.net.TwoStacksPlainSocketImpl;;bind;;1;;protected synchronized void bind(java.net.InetAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.net.InetAddress: boolean isAnyLocalAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.SocksSocketImpl;;<init>;;1;;void <init>(java.net.Proxy)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.net.Proxy: java.net.SocketAddress address()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.SocksSocketImpl;;socksBind;;1;;protected synchronized void socksBind(java.net.InetSocketAddress) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;15
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.net.InetSocketAddress: java.lang.String getHostString()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r1.<java.net.InetSocketAddress: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.net.InetSocketAddress: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r78 = virtualinvoke r1.<java.net.InetSocketAddress: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r1.<java.net.InetSocketAddress: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r80 = virtualinvoke r1.<java.net.InetSocketAddress: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i8 = virtualinvoke r1.<java.net.InetSocketAddress: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i11 = virtualinvoke r1.<java.net.InetSocketAddress: int getPort()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z9 = virtualinvoke r1.<java.net.InetSocketAddress: boolean isUnresolved()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r83 = virtualinvoke r1.<java.net.InetSocketAddress: java.lang.String getHostName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r84 = virtualinvoke r1.<java.net.InetSocketAddress: java.lang.String getHostName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r89 = virtualinvoke r1.<java.net.InetSocketAddress: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r90 = virtualinvoke r1.<java.net.InetSocketAddress: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r92 = virtualinvoke r1.<java.net.InetSocketAddress: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r93 = virtualinvoke r1.<java.net.InetSocketAddress: java.net.InetAddress getAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.SocksSocketImpl;;acceptFrom;;1;;protected void acceptFrom(java.net.SocketImpl, java.net.InetSocketAddress) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r27.<java.net.SocksSocketImpl: java.net.InetSocketAddress external_address> = r5;;pattern detected param  r1 must not be null it define a local $r27which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r28.<java.net.PlainSocketImpl: void setInputStream(java.net.SocketInputStream)>($r29);;pattern detected param  r1 must not be null it define a local r28which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r28.<java.net.PlainSocketImpl: void setFileDescriptor(java.io.FileDescriptor)>($r32);;pattern detected param  r1 must not be null it define a local r28which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r28.<java.net.PlainSocketImpl: void setAddress(java.net.InetAddress)>($r35);;pattern detected param  r1 must not be null it define a local r28which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r28.<java.net.PlainSocketImpl: void setPort(int)>($i20);;pattern detected param  r1 must not be null it define a local r28which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke r28.<java.net.PlainSocketImpl: void setLocalPort(int)>($i21);;pattern detected param  r1 must not be null it define a local r28which used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.SocketImpl: java.io.FileDescriptor fd> = $r42;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.SocketImpl: java.net.InetAddress address> = $r45;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.SocketImpl: int port> = $i22;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.net.SocketImpl: int localport> = $i23;;pattern detected param  r1 must not be null  because used in  FieldRef 
+java.net.URLClassLoader;;definePackage;;2;;protected java.lang.Package definePackage(java.lang.String, java.util.jar.Manifest, java.net.URL) throws java.lang.IllegalArgumentException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r14 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(46, 47);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;2
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r13 = virtualinvoke r2.<java.util.jar.Manifest: java.util.jar.Attributes getAttributes(java.lang.String)>(r4);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r22 = virtualinvoke r2.<java.util.jar.Manifest: java.util.jar.Attributes getMainAttributes()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.net.URLClassLoader;;getPermissions;;1;;protected java.security.PermissionCollection getPermissions(java.security.CodeSource)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.security.CodeSource: java.net.URL getLocation()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.URLDecoder;;decode;;2;;public static java.lang.String decode(java.lang.String, java.lang.String) throws java.io.UnsupportedEncodingException
+*;; * ;; * ;;*;;r0;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>($i10, $i11);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.net.URLEncoder;;encode;;2;;public static java.lang.String encode(java.lang.String, java.lang.String) throws java.io.UnsupportedEncodingException
+*;; * ;; * ;;*;;r0;;7
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;c0 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i9 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;c1 = virtualinvoke r0.<java.lang.String: char charAt(int)>($i10);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i11 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c12 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i5);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  otherwise an exception is thrown 

@@ -1,0 +1,5 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.applet.Applet;;resize;;1;;public void resize(java.awt.Dimension)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.awt.Dimension: int width>;;pattern detected param  r1 must not be null  because used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for param;;$i1 = r1.<java.awt.Dimension: int height>;;pattern detected param  r1 must not be null  because used in  FieldRef 

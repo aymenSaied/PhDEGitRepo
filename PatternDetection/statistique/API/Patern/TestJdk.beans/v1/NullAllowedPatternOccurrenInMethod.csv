@@ -1,0 +1,75 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.beans.PropertyChangeSupport;;addPropertyChangeListener;;1;;public void addPropertyChangeListener(java.beans.PropertyChangeListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.beans.PropertyChangeSupport;;removePropertyChangeListener;;1;;public void removePropertyChangeListener(java.beans.PropertyChangeListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.beans.FeatureDescriptor;;getSoftReference;;1;;static java.lang.ref.Reference getSoftReference(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.beans.FeatureDescriptor;;getWeakReference;;1;;static java.lang.ref.Reference getWeakReference(java.lang.Object)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
+java.beans.FeatureDescriptor;;getReturnType;;1;;static java.lang.Class getReturnType(java.lang.Class, java.lang.reflect.Method)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;NullAllowed pattern detected param is  :r0
+java.beans.FeatureDescriptor;;getParameterTypes;;1;;static java.lang.Class[] getParameterTypes(java.lang.Class, java.lang.reflect.Method)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;NullAllowed pattern detected param is  :r0
+java.beans.PropertyDescriptor;;setReadMethod;;1;;public synchronized void setReadMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.beans.PropertyDescriptor: java.lang.String readMethodName> = null;;NullAllowed pattern detected param is  :r1
+java.beans.PropertyDescriptor;;setWriteMethod;;1;;public synchronized void setWriteMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.beans.PropertyDescriptor: java.lang.String writeMethodName> = null;;NullAllowed pattern detected param is  :r1
+java.beans.PropertyDescriptor;;compareMethods;;2;;boolean compareMethods(java.lang.reflect.Method, java.lang.reflect.Method)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 1;;NullAllowed pattern detected param is  :r1
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z1 = 1;;NullAllowed pattern detected param is  :r2
+java.beans.Beans;;instantiate;;1;;public static java.lang.Object instantiate(java.lang.ClassLoader, java.lang.String, java.beans.beancontext.BeanContext, java.beans.AppletInitializer) throws java.io.IOException, java.lang.ClassNotFoundException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r0 = staticinvoke <java.lang.ClassLoader: java.lang.ClassLoader getSystemClassLoader()>();;NullAllowed pattern detected param is  :r0
+java.beans.Introspector;;getBeanInfo;;1;;public static java.beans.BeanInfo getBeanInfo(java.lang.Class, java.lang.Class, int) throws java.beans.IntrospectionException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if i0 != 1 goto $r3 = new java.beans.Introspector;;NullAllowed pattern detected param is  :r1
+java.beans.Introspector;;findMethod;;1;;static java.lang.reflect.Method findMethod(java.lang.Class, java.lang.String, int, java.lang.Class[])
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r1
+java.beans.Introspector;;isSubclass;;1;;static boolean isSubclass(java.lang.Class, java.lang.Class)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;return 0;;NullAllowed pattern detected param is  :r0 it initialize local r2
+java.beans.ChangeListenerMap;;set;;1;;public final void set(java.lang.String, java.util.EventListener[])
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r7 = r0.<java.beans.ChangeListenerMap: java.util.Map map>;;NullAllowed pattern detected param is  :r2
+java.beans.Encoder;;writeObject;;1;;protected void writeObject(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = null;;NullAllowed pattern detected param is  :r1
+java.beans.Statement;;<init>;;1;;public void <init>(java.lang.Object, java.lang.String, java.lang.Object[])
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = <java.beans.Statement: java.lang.Object[] emptyArray>;;NullAllowed pattern detected param is  :r3
+java.beans.Statement;;instanceName;;1;;java.lang.String instanceName(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r1
+java.beans.VetoableChangeSupport;;addVetoableChangeListener;;1;;public void addVetoableChangeListener(java.beans.VetoableChangeListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.beans.VetoableChangeSupport;;removeVetoableChangeListener;;1;;public void removeVetoableChangeListener(java.beans.VetoableChangeListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.beans.MetaData;;getPersistenceDelegate;;1;;public static synchronized java.beans.PersistenceDelegate getPersistenceDelegate(java.lang.Class)
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r6 = <java.beans.MetaData: java.beans.PersistenceDelegate nullPersistenceDelegate>;;NullAllowed pattern detected param is  :r0
+java.beans.NameGenerator;;instanceName;;1;;public java.lang.String instanceName(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return "null";;NullAllowed pattern detected param is  :r1
+java.beans.XMLDecoder;;setExceptionListener;;1;;public void setExceptionListener(java.beans.ExceptionListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = <java.beans.Statement: java.beans.ExceptionListener defaultExceptionListener>;;NullAllowed pattern detected param is  :r1
+java.beans.beancontext.BeanContextChildSupport;;<init>;;1;;public void <init>(java.beans.beancontext.BeanContextChild)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = r0;;NullAllowed pattern detected param is  :r1
+java.beans.beancontext.BeanContextSupport;;<init>;;1;;public void <init>(java.beans.beancontext.BeanContext, java.util.Locale, boolean, boolean)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>();;NullAllowed pattern detected param is  :r2

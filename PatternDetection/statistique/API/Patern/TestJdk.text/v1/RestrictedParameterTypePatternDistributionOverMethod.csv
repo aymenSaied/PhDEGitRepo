@@ -1,0 +1,10 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.text.NumberFormat;;format;;public java.lang.StringBuffer format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.Collator;;compare;;public int compare(java.lang.Object, java.lang.Object);;2
+java.text.CollationKey;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.text.DateFormat;;format;;public final java.lang.StringBuffer format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.SimpleDateFormat;;formatToCharacterIterator;;public java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object);;1
+java.text.DecimalFormat;;format;;public final java.lang.StringBuffer format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.DecimalFormat;;formatToCharacterIterator;;public java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object);;1
+java.text.RuleBasedCollationKey;;compareTo;;public int compareTo(java.text.CollationKey);;1
+java.text.RuleBasedCollationKey;;compareTo;;public volatile int compareTo(java.lang.Object);;1

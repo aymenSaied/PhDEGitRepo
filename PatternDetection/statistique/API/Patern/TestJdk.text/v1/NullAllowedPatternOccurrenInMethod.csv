@@ -1,0 +1,46 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.text.AttributedString;;<init>;;1;;public void <init>(java.text.AttributedCharacterIterator, int, int, java.text.AttributedCharacterIterator$Attribute[])
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r13 = interfaceinvoke r1.<java.text.AttributedCharacterIterator: java.util.Set getAllAttributeKeys()>();;NullAllowed pattern detected param is  :r2
+java.text.RuleBasedBreakIterator;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = 0;;NullAllowed pattern detected param is  :r1
+java.text.MessageFormat;;parse;;1;;public java.lang.Object[] parse(java.lang.String, java.text.ParsePosition)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r3 = newarray (java.lang.Object)[0];;NullAllowed pattern detected param is  :r1
+java.text.FieldPosition;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.ParsePosition;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.ChoiceFormat;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.NumberFormat;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.RuleBasedCollator;;getCollationKey;;1;;public synchronized java.text.CollationKey getCollationKey(java.lang.String)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r1
+java.text.RuleBasedCollator;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.Collator;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.DecimalFormat;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.DecimalFormatSymbols;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.MergeCollation;;addPattern;;1;;public void addPattern(java.lang.String) throws java.text.ParseException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.text.PatternEntry;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.PatternEntry;;addToBuffer;;1;;void addToBuffer(java.lang.StringBuffer, boolean, boolean, java.text.PatternEntry)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(32);;NullAllowed pattern detected param is  :r2

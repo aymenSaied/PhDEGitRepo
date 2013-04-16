@@ -1,0 +1,3 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.math.BigDecimal;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.math.BigInteger;;compareTo;;public volatile int compareTo(java.lang.Object);;1

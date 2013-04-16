@@ -1,0 +1,290 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.lang.String;;<init>;;public void <init>(java.lang.String);;1
+java.lang.String;;<init>;;public void <init>(int[], int, int);;1
+java.lang.String;;<init>;;public void <init>(byte[], int, int, int);;1
+java.lang.String;;<init>;;public void <init>(byte[], int, int, java.lang.String) throws java.io.UnsupportedEncodingException;;1
+java.lang.String;;<init>;;public void <init>(byte[], int, int, java.nio.charset.Charset);;1
+java.lang.String;;<init>;;public void <init>(java.lang.StringBuffer);;1
+java.lang.String;;<init>;;public void <init>(java.lang.StringBuilder);;1
+java.lang.String;;getBytes;;public void getBytes(int, int, byte[], int);;1
+java.lang.String;;getBytes;;public byte[] getBytes(java.lang.String) throws java.io.UnsupportedEncodingException;;1
+java.lang.String;;getBytes;;public byte[] getBytes(java.nio.charset.Charset);;1
+java.lang.String;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.String;;contentEquals;;public boolean contentEquals(java.lang.StringBuffer);;1
+java.lang.String;;contentEquals;;public boolean contentEquals(java.lang.CharSequence);;1
+java.lang.String;;compareTo;;public int compareTo(java.lang.String);;1
+java.lang.String;;regionMatches;;public boolean regionMatches(int, java.lang.String, int, int);;1
+java.lang.String;;regionMatches;;public boolean regionMatches(boolean, int, java.lang.String, int, int);;1
+java.lang.String;;startsWith;;public boolean startsWith(java.lang.String, int);;1
+java.lang.String;;endsWith;;public boolean endsWith(java.lang.String);;1
+java.lang.String;;indexOf;;public int indexOf(java.lang.String, int);;1
+java.lang.String;;indexOf;;static int indexOf(char[], int, int, char[], int, int, int);;2
+java.lang.String;;lastIndexOf;;public int lastIndexOf(java.lang.String, int);;1
+java.lang.String;;lastIndexOf;;static int lastIndexOf(char[], int, int, char[], int, int, int);;2
+java.lang.String;;concat;;public java.lang.String concat(java.lang.String);;1
+java.lang.String;;contains;;public boolean contains(java.lang.CharSequence);;1
+java.lang.String;;replace;;public java.lang.String replace(java.lang.CharSequence, java.lang.CharSequence);;2
+java.lang.String;;split;;public java.lang.String[] split(java.lang.String, int);;1
+java.lang.String;;toLowerCase;;public java.lang.String toLowerCase(java.util.Locale);;1
+java.lang.String;;toUpperCase;;public java.lang.String toUpperCase(java.util.Locale);;1
+java.lang.Throwable;;setStackTrace;;public void setStackTrace(java.lang.StackTraceElement[]);;1
+java.lang.Throwable;;addSuppressed;;public final synchronized void addSuppressed(java.lang.Throwable);;1
+java.lang.StackTraceElement;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Class;;asSubclass;;public java.lang.Class asSubclass(java.lang.Class);;1
+java.lang.Class;;getAnnotation;;public java.lang.annotation.Annotation getAnnotation(java.lang.Class);;1
+java.lang.Class;;isAnnotationPresent;;public boolean isAnnotationPresent(java.lang.Class);;1
+java.lang.StringBuffer;;<init>;;public void <init>(java.lang.String);;1
+java.lang.StringBuffer;;<init>;;public void <init>(java.lang.CharSequence);;1
+java.lang.StringBuffer;;indexOf;;public synchronized int indexOf(java.lang.String, int);;1
+java.lang.StringBuffer;;lastIndexOf;;public synchronized int lastIndexOf(java.lang.String, int);;1
+java.lang.AbstractStringBuilder;;replace;;public java.lang.AbstractStringBuilder replace(int, int, java.lang.String);;1
+java.lang.AbstractStringBuilder;;indexOf;;public int indexOf(java.lang.String, int);;1
+java.lang.AbstractStringBuilder;;lastIndexOf;;public int lastIndexOf(java.lang.String, int);;1
+java.lang.Boolean;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Boolean;;compareTo;;public int compareTo(java.lang.Boolean);;1
+java.lang.Long;;getChars;;static void getChars(long, int, char[]);;1
+java.lang.Long;;parseLong;;public static long parseLong(java.lang.String, int) throws java.lang.NumberFormatException;;1
+java.lang.Long;;decode;;public static java.lang.Long decode(java.lang.String) throws java.lang.NumberFormatException;;1
+java.lang.Long;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Long;;compareTo;;public int compareTo(java.lang.Long);;1
+java.lang.Integer;;getChars;;static void getChars(int, int, char[]);;1
+java.lang.Integer;;parseInt;;public static int parseInt(java.lang.String, int) throws java.lang.NumberFormatException;;1
+java.lang.Integer;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Integer;;decode;;public static java.lang.Integer decode(java.lang.String) throws java.lang.NumberFormatException;;1
+java.lang.Integer;;compareTo;;public int compareTo(java.lang.Integer);;1
+java.lang.Short;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Short;;compareTo;;public int compareTo(java.lang.Short);;1
+java.lang.Float;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Float;;compareTo;;public int compareTo(java.lang.Float);;1
+java.lang.Double;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Double;;compareTo;;public int compareTo(java.lang.Double);;1
+java.lang.reflect.Constructor;;getAnnotation;;public java.lang.annotation.Annotation getAnnotation(java.lang.Class);;1
+java.lang.ClassLoader;;defineClass;;protected final java.lang.Class defineClass(java.lang.String, java.nio.ByteBuffer, java.security.ProtectionDomain) throws java.lang.ClassFormatError;;1
+java.lang.ClassLoader;;setSigners;;protected final void setSigners(java.lang.Class, java.lang.Object[]);;1
+java.lang.ClassLoader;;desiredAssertionStatus;;boolean desiredAssertionStatus(java.lang.String);;1
+java.lang.Package;;isSealed;;public boolean isSealed(java.net.URL);;1
+java.lang.Package;;isCompatibleWith;;public boolean isCompatibleWith(java.lang.String) throws java.lang.NumberFormatException;;1
+java.lang.Package;;getPackage;;static java.lang.Package getPackage(java.lang.Class);;1
+java.lang.Package;;getSystemPackage;;static java.lang.Package getSystemPackage(java.lang.String);;1
+java.lang.reflect.Method;;getAnnotation;;public java.lang.annotation.Annotation getAnnotation(java.lang.Class);;1
+java.lang.reflect.Field;;getTypeName;;static java.lang.String getTypeName(java.lang.Class);;1
+java.lang.reflect.Field;;getAnnotation;;public java.lang.annotation.Annotation getAnnotation(java.lang.Class);;1
+java.lang.reflect.AccessibleObject;;setAccessible;;public static void setAccessible(java.lang.reflect.AccessibleObject[], boolean) throws java.lang.SecurityException;;1
+java.lang.Character;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Character;;codePointAt;;public static int codePointAt(java.lang.CharSequence, int);;1
+java.lang.Character;;codePointAtImpl;;static int codePointAtImpl(char[], int, int);;1
+java.lang.Character;;codePointBefore;;public static int codePointBefore(java.lang.CharSequence, int);;1
+java.lang.Character;;codePointBeforeImpl;;static int codePointBeforeImpl(char[], int, int);;1
+java.lang.Character;;toChars;;public static int toChars(int, char[], int);;1
+java.lang.Character;;toSurrogates;;static void toSurrogates(int, char[], int);;1
+java.lang.Character;;codePointCount;;public static int codePointCount(java.lang.CharSequence, int, int);;1
+java.lang.Character;;codePointCountImpl;;static int codePointCountImpl(char[], int, int);;1
+java.lang.Character;;offsetByCodePoints;;public static int offsetByCodePoints(java.lang.CharSequence, int, int);;1
+java.lang.Character;;offsetByCodePointsImpl;;static int offsetByCodePointsImpl(char[], int, int, int, int);;1
+java.lang.Character;;compareTo;;public int compareTo(java.lang.Character);;1
+java.lang.Byte;;equals;;public boolean equals(java.lang.Object);;1
+java.lang.Byte;;compareTo;;public int compareTo(java.lang.Byte);;1
+java.lang.Thread;;stop;;public final synchronized void stop(java.lang.Throwable);;1
+java.lang.Thread;;setName;;public final void setName(java.lang.String);;1
+java.lang.Thread;;processQueue;;static void processQueue(java.lang.ref.ReferenceQueue, java.util.concurrent.ConcurrentMap);;2
+java.lang.StringBuilder;;<init>;;public void <init>(java.lang.String);;1
+java.lang.StringBuilder;;<init>;;public void <init>(java.lang.CharSequence);;1
+java.lang.StringBuilder;;indexOf;;public int indexOf(java.lang.String, int);;1
+java.lang.StringBuilder;;lastIndexOf;;public int lastIndexOf(java.lang.String, int);;1
+java.lang.System;;setSecurityManager;;public static void setSecurityManager(java.lang.SecurityManager);;1
+java.lang.SecurityManager;;checkPermission;;public void checkPermission(java.security.Permission, java.lang.Object);;1
+java.lang.SecurityManager;;checkAccess;;public void checkAccess(java.lang.Thread);;1
+java.lang.SecurityManager;;checkAccess;;public void checkAccess(java.lang.ThreadGroup);;1
+java.lang.SecurityManager;;checkLink;;public void checkLink(java.lang.String);;1
+java.lang.SecurityManager;;checkRead;;public void checkRead(java.io.FileDescriptor);;1
+java.lang.SecurityManager;;checkWrite;;public void checkWrite(java.io.FileDescriptor);;1
+java.lang.SecurityManager;;checkConnect;;public void checkConnect(java.lang.String, int);;1
+java.lang.SecurityManager;;checkConnect;;public void checkConnect(java.lang.String, int, java.lang.Object);;1
+java.lang.SecurityManager;;checkAccept;;public void checkAccept(java.lang.String, int);;1
+java.lang.SecurityManager;;checkMulticast;;public void checkMulticast(java.net.InetAddress);;1
+java.lang.SecurityManager;;checkMulticast;;public void checkMulticast(java.net.InetAddress, byte);;1
+java.lang.SecurityManager;;checkTopLevelWindow;;public boolean checkTopLevelWindow(java.lang.Object);;1
+java.lang.SecurityManager;;checkPackageAccess;;public void checkPackageAccess(java.lang.String);;1
+java.lang.SecurityManager;;checkPackageDefinition;;public void checkPackageDefinition(java.lang.String);;1
+java.lang.SecurityManager;;checkMemberAccess;;public void checkMemberAccess(java.lang.Class, int);;1
+java.lang.ThreadLocal;;getMap;;java.lang.ThreadLocal$ThreadLocalMap getMap(java.lang.Thread);;1
+java.lang.ThreadLocal;;createMap;;void createMap(java.lang.Thread, java.lang.Object);;1
+java.lang.ApplicationShutdownHooks;;add;;static synchronized void add(java.lang.Thread);;1
+java.lang.ApplicationShutdownHooks;;remove;;static synchronized boolean remove(java.lang.Thread);;1
+java.lang.ThreadGroup;;list;;void list(java.io.PrintStream, int);;1
+java.lang.ThreadGroup;;uncaughtException;;public void uncaughtException(java.lang.Thread, java.lang.Throwable);;2
+java.lang.ref.ReferenceQueue;;enqueue;;boolean enqueue(java.lang.ref.Reference);;1
+java.lang.Enum;;compareTo;;public final int compareTo(java.lang.Enum);;1
+java.lang.Enum;;valueOf;;public static java.lang.Enum valueOf(java.lang.Class, java.lang.String);;2
+java.lang.ConditionalSpecialCasing;;toLowerCaseEx;;static int toLowerCaseEx(java.lang.String, int, java.util.Locale);;1
+java.lang.ConditionalSpecialCasing;;toUpperCaseEx;;static int toUpperCaseEx(java.lang.String, int, java.util.Locale);;1
+java.lang.ConditionalSpecialCasing;;toUpperCaseCharArray;;static char[] toUpperCaseCharArray(java.lang.String, int, java.util.Locale);;1
+java.lang.EnumConstantNotPresentException;;<init>;;public void <init>(java.lang.Class, java.lang.String);;1
+java.lang.InheritableThreadLocal;;getMap;;java.lang.ThreadLocal$ThreadLocalMap getMap(java.lang.Thread);;1
+java.lang.InheritableThreadLocal;;createMap;;void createMap(java.lang.Thread, java.lang.Object);;1
+java.lang.ProcessBuilder;;<init>;;public void <init>(java.util.List);;1
+java.lang.ProcessBuilder;;<init>;;public transient void <init>(java.lang.String[]);;1
+java.lang.ProcessBuilder;;command;;public java.lang.ProcessBuilder command(java.util.List);;1
+java.lang.ProcessBuilder;;command;;public transient java.lang.ProcessBuilder command(java.lang.String[]);;1
+java.lang.ProcessBuilder;;redirectInput;;public java.lang.ProcessBuilder redirectInput(java.lang.ProcessBuilder$Redirect);;1
+java.lang.ProcessBuilder;;redirectOutput;;public java.lang.ProcessBuilder redirectOutput(java.lang.ProcessBuilder$Redirect);;1
+java.lang.ProcessBuilder;;redirectError;;public java.lang.ProcessBuilder redirectError(java.lang.ProcessBuilder$Redirect);;1
+java.lang.Runtime;;exec;;public java.lang.Process exec(java.lang.String, java.lang.String[], java.io.File) throws java.io.IOException;;1
+java.lang.Runtime;;loadLibrary0;;synchronized void loadLibrary0(java.lang.Class, java.lang.String);;1
+java.lang.StringCoding;;decode;;static char[] decode(java.nio.charset.Charset, byte[], int, int);;1
+java.lang.StringCoding;;encode;;static byte[] encode(java.nio.charset.Charset, char[], int, int);;1
+java.lang.annotation.IncompleteAnnotationException;;<init>;;public void <init>(java.lang.Class, java.lang.String);;1
+java.lang.invoke.AdapterMethodHandle;;canPairwiseConvert;;static boolean canPairwiseConvert(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int);;2
+java.lang.invoke.AdapterMethodHandle;;canConvertArgument;;static boolean canConvertArgument(java.lang.Class, java.lang.Class, int);;2
+java.lang.invoke.AdapterMethodHandle;;makePairwiseConvert;;static java.lang.invoke.MethodHandle makePairwiseConvert(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int);;2
+java.lang.invoke.AdapterMethodHandle;;makePermutation;;static java.lang.invoke.MethodHandle makePermutation(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int[]);;3
+java.lang.invoke.AdapterMethodHandle;;extractStackMove;;static int extractStackMove(java.lang.invoke.MethodHandle);;1
+java.lang.invoke.AdapterMethodHandle;;makeRetype;;static java.lang.invoke.MethodHandle makeRetype(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, boolean);;1
+java.lang.invoke.AdapterMethodHandle;;makeVarargsCollector;;static java.lang.invoke.MethodHandle makeVarargsCollector(java.lang.invoke.MethodHandle, java.lang.Class);;1
+java.lang.invoke.AdapterMethodHandle;;canCheckCast;;static boolean canCheckCast(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, java.lang.Class);;2
+java.lang.invoke.AdapterMethodHandle;;canCheckCast;;static boolean canCheckCast(java.lang.Class, java.lang.Class);;2
+java.lang.invoke.AdapterMethodHandle;;makeCheckCast;;static java.lang.invoke.MethodHandle makeCheckCast(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, java.lang.Class);;1
+java.lang.invoke.AdapterMethodHandle;;canPrimCast;;static boolean canPrimCast(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, java.lang.Class);;2
+java.lang.invoke.AdapterMethodHandle;;canPrimCast;;static boolean canPrimCast(java.lang.Class, java.lang.Class);;2
+java.lang.invoke.AdapterMethodHandle;;makePrimCast;;static java.lang.invoke.MethodHandle makePrimCast(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, java.lang.Class);;1
+java.lang.invoke.AdapterMethodHandle;;makePrimCastOnly;;static java.lang.invoke.MethodHandle makePrimCastOnly(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, java.lang.Class);;2
+java.lang.invoke.AdapterMethodHandle;;canUnboxArgument;;static boolean canUnboxArgument(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, java.lang.Class, int);;2
+java.lang.invoke.AdapterMethodHandle;;canUnboxArgument;;static boolean canUnboxArgument(java.lang.Class, java.lang.Class, int);;2
+java.lang.invoke.AdapterMethodHandle;;makeUnboxArgument;;static java.lang.invoke.MethodHandle makeUnboxArgument(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, java.lang.Class, int);;2
+java.lang.invoke.AdapterMethodHandle;;canBoxArgument;;static boolean canBoxArgument(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, java.lang.Class);;2
+java.lang.invoke.AdapterMethodHandle;;canBoxArgument;;static boolean canBoxArgument(java.lang.Class, java.lang.Class);;2
+java.lang.invoke.AdapterMethodHandle;;makeBoxArgument;;static java.lang.invoke.MethodHandle makeBoxArgument(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, java.lang.Class);;2
+java.lang.invoke.AdapterMethodHandle;;canDropArguments;;static boolean canDropArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;makeDropArguments;;static java.lang.invoke.MethodHandle makeDropArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;canDupArguments;;static boolean canDupArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;makeDupArguments;;static java.lang.invoke.MethodHandle makeDupArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;canSwapArguments;;static boolean canSwapArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;makeSwapArguments;;static java.lang.invoke.MethodHandle makeSwapArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;canRotateArguments;;static boolean canRotateArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;makeRotateArguments;;static java.lang.invoke.MethodHandle makeRotateArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, int, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;canSpreadArguments;;static boolean canSpreadArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodType, java.lang.Class, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;makeSpreadArguments;;static java.lang.invoke.MethodHandle makeSpreadArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, java.lang.Class, int, int);;2
+java.lang.invoke.AdapterMethodHandle;;canCollectArguments;;static boolean canCollectArguments(java.lang.invoke.MethodType, java.lang.invoke.MethodType, int, boolean);;2
+java.lang.invoke.AdapterMethodHandle;;makeCollectArguments;;static java.lang.invoke.MethodHandle makeCollectArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle, int, boolean);;2
+java.lang.invoke.BoundMethodHandle;;<init>;;void <init>(java.lang.invoke.DirectMethodHandle, java.lang.Object);;1
+java.lang.invoke.BoundMethodHandle;;<init>;;void <init>(java.lang.invoke.MethodHandle, java.lang.Object, int);;1
+java.lang.invoke.BoundMethodHandle;;<init>;;void <init>(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, java.lang.Object, int);;2
+java.lang.invoke.BoundMethodHandle;;<init>;;void <init>(java.lang.invoke.MethodHandle);;1
+java.lang.invoke.BoundMethodHandle;;checkReferenceArgument;;static final java.lang.Object checkReferenceArgument(java.lang.Object, java.lang.invoke.MethodHandle, int);;1
+java.lang.invoke.BoundMethodHandle;;bindPrimitiveArgument;;static final java.lang.Object bindPrimitiveArgument(java.lang.Object, java.lang.invoke.MethodHandle, int);;1
+java.lang.invoke.BoundMethodHandle;;badBoundArgumentException;;static final java.lang.RuntimeException badBoundArgumentException(java.lang.Object, java.lang.invoke.MethodHandle, int);;1
+java.lang.invoke.MethodHandle;;<init>;;void <init>(java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodHandle;;invokeWithArguments;;public java.lang.Object invokeWithArguments(java.util.List) throws java.lang.Throwable;;1
+java.lang.invoke.MethodHandle;;asVarargsCollector;;public java.lang.invoke.MethodHandle asVarargsCollector(java.lang.Class);;1
+java.lang.invoke.MethodType;;methodType;;public static java.lang.invoke.MethodType methodType(java.lang.Class, java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodType;;makeImpl;;static java.lang.invoke.MethodType makeImpl(java.lang.Class, java.lang.Class[], boolean);;1
+java.lang.invoke.MethodType;;isConvertibleTo;;boolean isConvertibleTo(java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodType;;canConvert;;static boolean canConvert(java.lang.Class, java.lang.Class);;2
+java.lang.invoke.MethodType;;fromMethodDescriptorString;;public static java.lang.invoke.MethodType fromMethodDescriptorString(java.lang.String, java.lang.ClassLoader) throws java.lang.IllegalArgumentException, java.lang.TypeNotPresentException;;1
+java.lang.invoke.DirectMethodHandle;;<init>;;void <init>(java.lang.invoke.MethodType, java.lang.invoke.MemberName, boolean, java.lang.Class);;1
+java.lang.invoke.MethodHandleNatives;;notifyGenericMethodType;;static void notifyGenericMethodType(java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodHandleNatives;;raiseException;;static void raiseException(int, java.lang.Object, java.lang.Object);;2
+java.lang.invoke.MethodHandleNatives;;isCallerSensitive;;static boolean isCallerSensitive(java.lang.invoke.MemberName);;1
+java.lang.invoke.MethodHandleStatics;;getNameString;;static java.lang.String getNameString(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodHandles;;spreadInvoker;;public static java.lang.invoke.MethodHandle spreadInvoker(java.lang.invoke.MethodType, int);;1
+java.lang.invoke.MethodHandles;;exactInvoker;;public static java.lang.invoke.MethodHandle exactInvoker(java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodHandles;;invoker;;public static java.lang.invoke.MethodHandle invoker(java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodHandles;;checkValue;;static java.lang.Object checkValue(java.lang.Class, java.lang.Class, java.lang.Object) throws java.lang.ClassCastException;;2
+java.lang.invoke.MethodHandles;;permuteArguments;;public static transient java.lang.invoke.MethodHandle permuteArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, int[]);;1
+java.lang.invoke.MethodHandles;;constant;;public static java.lang.invoke.MethodHandle constant(java.lang.Class, java.lang.Object);;1
+java.lang.invoke.MethodHandles;;identity;;public static java.lang.invoke.MethodHandle identity(java.lang.Class);;1
+java.lang.invoke.MethodHandles;;insertArguments;;public static transient java.lang.invoke.MethodHandle insertArguments(java.lang.invoke.MethodHandle, int, java.lang.Object[]);;2
+java.lang.invoke.MethodHandles;;dropArguments;;public static java.lang.invoke.MethodHandle dropArguments(java.lang.invoke.MethodHandle, int, java.util.List);;2
+java.lang.invoke.MethodHandles;;filterArguments;;public static transient java.lang.invoke.MethodHandle filterArguments(java.lang.invoke.MethodHandle, int, java.lang.invoke.MethodHandle[]);;2
+java.lang.invoke.MethodHandles;;filterArgument;;static java.lang.invoke.MethodHandle filterArgument(java.lang.invoke.MethodHandle, int, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.MethodHandles;;filterReturnValue;;public static java.lang.invoke.MethodHandle filterReturnValue(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.MethodHandles;;foldArguments;;public static java.lang.invoke.MethodHandle foldArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.MethodHandles;;guardWithTest;;public static java.lang.invoke.MethodHandle guardWithTest(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;3
+java.lang.invoke.MethodHandles;;catchException;;public static java.lang.invoke.MethodHandle catchException(java.lang.invoke.MethodHandle, java.lang.Class, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.MethodTypeForm;;<init>;;protected void <init>(java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodTypeForm;;primsAtEndOrder;;public static int[] primsAtEndOrder(java.lang.invoke.MethodType);;1
+java.lang.invoke.MethodTypeForm;;reorderParameters;;public static java.lang.invoke.MethodType reorderParameters(java.lang.invoke.MethodType, int[], java.lang.Class[]);;2
+java.lang.invoke.MethodTypeForm;;canonicalize;;public static java.lang.invoke.MethodType canonicalize(java.lang.invoke.MethodType, int, int);;1
+java.lang.invoke.MethodTypeForm;;canonicalize;;static java.lang.Class canonicalize(java.lang.Class, int);;1
+java.lang.invoke.MethodTypeForm;;canonicalizes;;static java.lang.Class[] canonicalizes(java.lang.Class[], int);;1
+java.lang.invoke.Invokers;;<init>;;void <init>(java.lang.invoke.MethodType);;1
+java.lang.invoke.Invokers;;invokerType;;static java.lang.invoke.MethodType invokerType(java.lang.invoke.MethodType);;1
+java.lang.invoke.MemberName;;<init>;;public void <init>(java.lang.reflect.Method);;1
+java.lang.invoke.MemberName;;<init>;;public void <init>(java.lang.reflect.Constructor);;1
+java.lang.invoke.MemberName;;<init>;;public void <init>(java.lang.reflect.Field);;1
+java.lang.invoke.MemberName;;<init>;;public void <init>(java.lang.Class);;1
+java.lang.invoke.MemberName;;<init>;;public void <init>(java.lang.Class, java.lang.String, java.lang.invoke.MethodType, int);;1
+java.lang.invoke.CallSite;;<init>;;void <init>(java.lang.invoke.MethodType);;1
+java.lang.invoke.CallSite;;<init>;;void <init>(java.lang.invoke.MethodHandle);;1
+java.lang.invoke.CallSite;;<init>;;void <init>(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle) throws java.lang.Throwable;;1
+java.lang.invoke.CallSite;;checkTargetChange;;void checkTargetChange(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.CallSite;;makeSite;;static java.lang.invoke.CallSite makeSite(java.lang.invoke.MethodHandle, java.lang.String, java.lang.invoke.MethodType, java.lang.Object, java.lang.invoke.MemberName, int);;2
+java.lang.invoke.MethodHandleImpl;;findMethod;;static java.lang.invoke.MethodHandle findMethod(java.lang.invoke.MemberName, boolean, java.lang.Class) throws java.lang.IllegalAccessException;;1
+java.lang.invoke.MethodHandleImpl;;makeAllocator;;static java.lang.invoke.MethodHandle makeAllocator(java.lang.invoke.MethodHandle);;1
+java.lang.invoke.MethodHandleImpl;;accessArrayElement;;static java.lang.invoke.MethodHandle accessArrayElement(java.lang.Class, boolean);;1
+java.lang.invoke.MethodHandleImpl;;bindReceiver;;static java.lang.invoke.MethodHandle bindReceiver(java.lang.invoke.MethodHandle, java.lang.Object);;1
+java.lang.invoke.MethodHandleImpl;;permuteArguments;;static java.lang.invoke.MethodHandle permuteArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, java.lang.invoke.MethodType, int[]);;4
+java.lang.invoke.MethodHandleImpl;;convertArguments;;static java.lang.invoke.MethodHandle convertArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, int);;2
+java.lang.invoke.MethodHandleImpl;;convertArguments;;static java.lang.invoke.MethodHandle convertArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, java.lang.invoke.MethodType, int);;3
+java.lang.invoke.MethodHandleImpl;;spreadArguments;;static java.lang.invoke.MethodHandle spreadArguments(java.lang.invoke.MethodHandle, java.lang.Class, int);;1
+java.lang.invoke.MethodHandleImpl;;spreadArgumentsFromPos;;static java.lang.invoke.MethodHandle spreadArgumentsFromPos(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, int);;1
+java.lang.invoke.MethodHandleImpl;;spreadArguments;;static java.lang.invoke.MethodHandle spreadArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, int, java.lang.Class, int);;2
+java.lang.invoke.MethodHandleImpl;;collectArguments;;static java.lang.invoke.MethodHandle collectArguments(java.lang.invoke.MethodHandle, int, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.MethodHandleImpl;;collectArguments;;static java.lang.invoke.MethodHandle collectArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, int, java.lang.invoke.MethodHandle);;3
+java.lang.invoke.MethodHandleImpl;;filterArgument;;static java.lang.invoke.MethodHandle filterArgument(java.lang.invoke.MethodHandle, int, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.MethodHandleImpl;;foldArguments;;static java.lang.invoke.MethodHandle foldArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, int, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.MethodHandleImpl;;dropArguments;;static java.lang.invoke.MethodHandle dropArguments(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, int);;2
+java.lang.invoke.MethodHandleImpl;;makeGuardWithTest;;static java.lang.invoke.MethodHandle makeGuardWithTest(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;3
+java.lang.invoke.MethodHandleImpl;;makeGuardWithCatch;;static java.lang.invoke.MethodHandle makeGuardWithCatch(java.lang.invoke.MethodHandle, java.lang.Class, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.FilterGeneric;;<init>;;void <init>(java.lang.invoke.MethodType);;1
+java.lang.invoke.FilterGeneric;;getAdapter;;java.lang.invoke.FilterGeneric$Adapter getAdapter(java.lang.invoke.FilterGeneric$Kind, int);;1
+java.lang.invoke.FilterGeneric;;makeArgumentFolder;;public static java.lang.invoke.MethodHandle makeArgumentFolder(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;1
+java.lang.invoke.FilterGeneric;;makeArgumentCollector;;public static java.lang.invoke.MethodHandle makeArgumentCollector(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;1
+java.lang.invoke.FilterGeneric;;make;;static java.lang.invoke.MethodHandle make(java.lang.invoke.FilterGeneric$Kind, int, java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.FilterGeneric;;targetType;;static java.lang.invoke.MethodType targetType(java.lang.invoke.MethodType, java.lang.invoke.FilterGeneric$Kind, int, java.lang.invoke.MethodType);;3
+java.lang.invoke.FilterGeneric;;entryType;;static java.lang.invoke.MethodType entryType(java.lang.invoke.FilterGeneric$Kind, int, java.lang.invoke.MethodType, java.lang.invoke.MethodType);;3
+java.lang.invoke.FilterGeneric;;findAdapter;;static java.lang.invoke.FilterGeneric$Adapter findAdapter(java.lang.invoke.MethodType, java.lang.invoke.FilterGeneric$Kind, int);;2
+java.lang.invoke.ToGeneric;;makeRawArgumentFilter;;static java.lang.invoke.MethodHandle makeRawArgumentFilter(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, java.lang.invoke.MethodType);;3
+java.lang.invoke.ToGeneric;;makeInstance;;java.lang.invoke.ToGeneric$Adapter makeInstance(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.ToGeneric;;make;;public static java.lang.invoke.MethodHandle make(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.ToGeneric;;of;;static java.lang.invoke.ToGeneric of(java.lang.invoke.MethodType);;1
+java.lang.invoke.ToGeneric;;findAdapter;;static java.lang.invoke.ToGeneric$Adapter findAdapter(java.lang.invoke.MethodType);;1
+java.lang.invoke.FromGeneric;;makeInstance;;java.lang.invoke.FromGeneric$Adapter makeInstance(java.lang.invoke.MethodHandle);;1
+java.lang.invoke.FromGeneric;;make;;public static java.lang.invoke.MethodHandle make(java.lang.invoke.MethodHandle);;1
+java.lang.invoke.FromGeneric;;of;;static java.lang.invoke.FromGeneric of(java.lang.invoke.MethodType);;1
+java.lang.invoke.FromGeneric;;findAdapter;;static java.lang.invoke.FromGeneric$Adapter findAdapter(java.lang.invoke.MethodType);;1
+java.lang.invoke.SpreadGeneric;;preSpreadType;;static java.lang.invoke.MethodType preSpreadType(java.lang.invoke.MethodType, int);;1
+java.lang.invoke.SpreadGeneric;;makeInstance;;java.lang.invoke.MethodHandle makeInstance(java.lang.invoke.MethodHandle);;1
+java.lang.invoke.SpreadGeneric;;make;;public static java.lang.invoke.MethodHandle make(java.lang.invoke.MethodHandle, int);;1
+java.lang.invoke.SpreadGeneric;;of;;static java.lang.invoke.SpreadGeneric of(java.lang.invoke.MethodType, int);;1
+java.lang.invoke.SpreadGeneric;;findAdapter;;static java.lang.invoke.SpreadGeneric$Adapter findAdapter(java.lang.invoke.SpreadGeneric, java.lang.invoke.MethodHandle[]);;2
+java.lang.invoke.InvokeGeneric;;<init>;;void <init>(java.lang.invoke.MethodType) throws java.lang.ReflectiveOperationException;;1
+java.lang.reflect.Proxy;;getProxyClass;;public static transient java.lang.Class getProxyClass(java.lang.ClassLoader, java.lang.Class[]) throws java.lang.IllegalArgumentException;;1
+java.lang.reflect.Proxy;;newProxyInstance;;public static java.lang.Object newProxyInstance(java.lang.ClassLoader, java.lang.Class[], java.lang.reflect.InvocationHandler) throws java.lang.IllegalArgumentException;;1
+java.lang.reflect.Proxy;;isProxyClass;;public static boolean isProxyClass(java.lang.Class);;1
+java.lang.reflect.Proxy;;getInvocationHandler;;public static java.lang.reflect.InvocationHandler getInvocationHandler(java.lang.Object) throws java.lang.IllegalArgumentException;;1
+java.lang.invoke.MethodHandleProxies;;asInterfaceInstance;;public static java.lang.Object asInterfaceInstance(java.lang.Class, java.lang.invoke.MethodHandle);;2
+java.lang.invoke.MutableCallSite;;syncAll;;public static void syncAll(java.lang.invoke.MutableCallSite[]);;1
+java.lang.invoke.SwitchPoint;;invalidateAll;;public static void invalidateAll(java.lang.invoke.SwitchPoint[]);;1
+java.lang.management.LockInfo;;<init>;;public void <init>(java.lang.String, int);;1
+java.lang.management.LockInfo;;<init>;;void <init>(java.lang.Object);;1
+java.lang.management.ManagementFactory;;newPlatformMXBeanProxy;;public static java.lang.Object newPlatformMXBeanProxy(javax.management.MBeanServerConnection, java.lang.String, java.lang.Class) throws java.io.IOException;;2
+java.lang.management.ManagementFactory;;getPlatformMXBean;;public static java.lang.management.PlatformManagedObject getPlatformMXBean(java.lang.Class);;1
+java.lang.management.ManagementFactory;;getPlatformMXBeans;;public static java.util.List getPlatformMXBeans(java.lang.Class);;1
+java.lang.management.ManagementFactory;;getPlatformMXBean;;public static java.lang.management.PlatformManagedObject getPlatformMXBean(javax.management.MBeanServerConnection, java.lang.Class) throws java.io.IOException;;1
+java.lang.management.ManagementFactory;;getPlatformMXBeans;;public static java.util.List getPlatformMXBeans(javax.management.MBeanServerConnection, java.lang.Class) throws java.io.IOException;;1
+java.lang.management.PlatformComponent;;getPlatformComponent;;static java.lang.management.PlatformComponent getPlatformComponent(java.lang.Class);;1
+java.lang.management.ManagementPermission;;<init>;;public void <init>(java.lang.String);;1
+java.lang.management.ManagementPermission;;<init>;;public void <init>(java.lang.String, java.lang.String) throws java.lang.IllegalArgumentException;;1
+java.lang.management.MemoryNotificationInfo;;<init>;;public void <init>(java.lang.String, java.lang.management.MemoryUsage, long);;2
+java.lang.reflect.ReflectAccess;;getMethodAccessor;;public sun.reflect.MethodAccessor getMethodAccessor(java.lang.reflect.Method);;1
+java.lang.reflect.ReflectAccess;;setMethodAccessor;;public void setMethodAccessor(java.lang.reflect.Method, sun.reflect.MethodAccessor);;1
+java.lang.reflect.ReflectAccess;;getConstructorAccessor;;public sun.reflect.ConstructorAccessor getConstructorAccessor(java.lang.reflect.Constructor);;1
+java.lang.reflect.ReflectAccess;;setConstructorAccessor;;public void setConstructorAccessor(java.lang.reflect.Constructor, sun.reflect.ConstructorAccessor);;1
+java.lang.reflect.ReflectAccess;;getConstructorSlot;;public int getConstructorSlot(java.lang.reflect.Constructor);;1
+java.lang.reflect.ReflectAccess;;getConstructorSignature;;public java.lang.String getConstructorSignature(java.lang.reflect.Constructor);;1
+java.lang.reflect.ReflectAccess;;getConstructorAnnotations;;public byte[] getConstructorAnnotations(java.lang.reflect.Constructor);;1
+java.lang.reflect.ReflectAccess;;getConstructorParameterAnnotations;;public byte[] getConstructorParameterAnnotations(java.lang.reflect.Constructor);;1
+java.lang.reflect.ReflectAccess;;copyMethod;;public java.lang.reflect.Method copyMethod(java.lang.reflect.Method);;1
+java.lang.reflect.ReflectAccess;;copyField;;public java.lang.reflect.Field copyField(java.lang.reflect.Field);;1
+java.lang.reflect.ReflectAccess;;copyConstructor;;public java.lang.reflect.Constructor copyConstructor(java.lang.reflect.Constructor);;1

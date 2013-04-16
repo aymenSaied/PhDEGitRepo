@@ -1,0 +1,75 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.math.BigDecimal;;<init>;;public void <init>(char[], int, int);;1
+java.math.BigDecimal;;<init>;;public void <init>(char[], int, int, java.math.MathContext);;1
+java.math.BigDecimal;;<init>;;public void <init>(java.lang.String);;1
+java.math.BigDecimal;;<init>;;public void <init>(java.lang.String, java.math.MathContext);;2
+java.math.BigDecimal;;<init>;;public void <init>(double, java.math.MathContext);;1
+java.math.BigDecimal;;<init>;;public void <init>(java.math.BigInteger, java.math.MathContext);;1
+java.math.BigDecimal;;<init>;;public void <init>(java.math.BigInteger, int, java.math.MathContext);;1
+java.math.BigDecimal;;<init>;;public void <init>(int, java.math.MathContext);;1
+java.math.BigDecimal;;<init>;;public void <init>(long, java.math.MathContext);;1
+java.math.BigDecimal;;add;;public java.math.BigDecimal add(java.math.BigDecimal);;1
+java.math.BigDecimal;;add;;public java.math.BigDecimal add(java.math.BigDecimal, java.math.MathContext);;2
+java.math.BigDecimal;;subtract;;public java.math.BigDecimal subtract(java.math.BigDecimal);;1
+java.math.BigDecimal;;subtract;;public java.math.BigDecimal subtract(java.math.BigDecimal, java.math.MathContext);;2
+java.math.BigDecimal;;multiply;;public java.math.BigDecimal multiply(java.math.BigDecimal);;1
+java.math.BigDecimal;;multiply;;public java.math.BigDecimal multiply(java.math.BigDecimal, java.math.MathContext);;1
+java.math.BigDecimal;;divide;;public java.math.BigDecimal divide(java.math.BigDecimal, int, int);;1
+java.math.BigDecimal;;divide;;public java.math.BigDecimal divide(java.math.BigDecimal, int, java.math.RoundingMode);;1
+java.math.BigDecimal;;divide;;public java.math.BigDecimal divide(java.math.BigDecimal, java.math.RoundingMode);;1
+java.math.BigDecimal;;divide;;public java.math.BigDecimal divide(java.math.BigDecimal);;1
+java.math.BigDecimal;;divide;;public java.math.BigDecimal divide(java.math.BigDecimal, java.math.MathContext);;2
+java.math.BigDecimal;;divideToIntegralValue;;public java.math.BigDecimal divideToIntegralValue(java.math.BigDecimal);;1
+java.math.BigDecimal;;divideToIntegralValue;;public java.math.BigDecimal divideToIntegralValue(java.math.BigDecimal, java.math.MathContext);;2
+java.math.BigDecimal;;divideAndRemainder;;public java.math.BigDecimal[] divideAndRemainder(java.math.BigDecimal, java.math.MathContext);;1
+java.math.BigDecimal;;pow;;public java.math.BigDecimal pow(int, java.math.MathContext);;1
+java.math.BigDecimal;;plus;;public java.math.BigDecimal plus(java.math.MathContext);;1
+java.math.BigDecimal;;setScale;;public java.math.BigDecimal setScale(int, java.math.RoundingMode);;1
+java.math.BigDecimal;;compareTo;;public int compareTo(java.math.BigDecimal);;1
+java.math.BigDecimal;;equals;;public boolean equals(java.lang.Object);;1
+java.math.BigInteger;;<init>;;public void <init>(byte[]);;1
+java.math.BigInteger;;<init>;;public void <init>(java.lang.String, int);;1
+java.math.BigInteger;;<init>;;void <init>(char[]);;1
+java.math.BigInteger;;add;;public java.math.BigInteger add(java.math.BigInteger);;1
+java.math.BigInteger;;subtract;;public java.math.BigInteger subtract(java.math.BigInteger);;1
+java.math.BigInteger;;multiply;;public java.math.BigInteger multiply(java.math.BigInteger);;1
+java.math.BigInteger;;divide;;public java.math.BigInteger divide(java.math.BigInteger);;1
+java.math.BigInteger;;divideAndRemainder;;public java.math.BigInteger[] divideAndRemainder(java.math.BigInteger);;1
+java.math.BigInteger;;remainder;;public java.math.BigInteger remainder(java.math.BigInteger);;1
+java.math.BigInteger;;gcd;;public java.math.BigInteger gcd(java.math.BigInteger);;1
+java.math.BigInteger;;primitiveRightShift;;static void primitiveRightShift(int[], int, int);;1
+java.math.BigInteger;;primitiveLeftShift;;static void primitiveLeftShift(int[], int, int);;1
+java.math.BigInteger;;mod;;public java.math.BigInteger mod(java.math.BigInteger);;1
+java.math.BigInteger;;modPow;;public java.math.BigInteger modPow(java.math.BigInteger, java.math.BigInteger);;2
+java.math.BigInteger;;mulAdd;;static int mulAdd(int[], int[], int, int, int);;2
+java.math.BigInteger;;addOne;;static int addOne(int[], int, int, int);;1
+java.math.BigInteger;;modInverse;;public java.math.BigInteger modInverse(java.math.BigInteger);;1
+java.math.BigInteger;;javaIncrement;;int[] javaIncrement(int[]);;1
+java.math.BigInteger;;and;;public java.math.BigInteger and(java.math.BigInteger);;1
+java.math.BigInteger;;or;;public java.math.BigInteger or(java.math.BigInteger);;1
+java.math.BigInteger;;xor;;public java.math.BigInteger xor(java.math.BigInteger);;1
+java.math.BigInteger;;andNot;;public java.math.BigInteger andNot(java.math.BigInteger);;1
+java.math.BigInteger;;compareTo;;public int compareTo(java.math.BigInteger);;1
+java.math.BigInteger;;compareMagnitude;;final int compareMagnitude(java.math.BigInteger);;1
+java.math.BigInteger;;equals;;public boolean equals(java.lang.Object);;1
+java.math.MathContext;;<init>;;public void <init>(int, java.math.RoundingMode);;1
+java.math.MathContext;;<init>;;public void <init>(java.lang.String);;1
+java.math.MathContext;;equals;;public boolean equals(java.lang.Object);;1
+java.math.MutableBigInteger;;<init>;;void <init>(java.math.BigInteger);;1
+java.math.MutableBigInteger;;<init>;;void <init>(java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;compare;;final int compare(java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;compareHalf;;final int compareHalf(java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;copyValue;;void copyValue(java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;add;;void add(java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;subtract;;int subtract(java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;multiply;;void multiply(java.math.MutableBigInteger, java.math.MutableBigInteger);;2
+java.math.MutableBigInteger;;mul;;void mul(int, java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;divideOneWord;;int divideOneWord(int, java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;divide;;java.math.MutableBigInteger divide(java.math.MutableBigInteger, java.math.MutableBigInteger);;2
+java.math.MutableBigInteger;;divide;;long divide(long, java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;hybridGCD;;java.math.MutableBigInteger hybridGCD(java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;mutableModInverse;;java.math.MutableBigInteger mutableModInverse(java.math.MutableBigInteger);;1
+java.math.MutableBigInteger;;fixup;;static java.math.MutableBigInteger fixup(java.math.MutableBigInteger, java.math.MutableBigInteger, int);;2
+java.math.BitSieve;;retrieve;;java.math.BigInteger retrieve(java.math.BigInteger, int, java.util.Random);;1
+java.math.SignedMutableBigInteger;;signedAdd;;void signedAdd(java.math.SignedMutableBigInteger);;1
+java.math.SignedMutableBigInteger;;signedSubtract;;void signedSubtract(java.math.SignedMutableBigInteger);;1

@@ -1,0 +1,30 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.util.Calendar;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.util.Date;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.util.concurrent.locks.ReentrantLock;;hasWaiters;;public boolean hasWaiters(java.util.concurrent.locks.Condition);;1
+java.util.concurrent.locks.ReentrantLock;;getWaitQueueLength;;public int getWaitQueueLength(java.util.concurrent.locks.Condition);;1
+java.util.concurrent.locks.ReentrantLock;;getWaitingThreads;;protected java.util.Collection getWaitingThreads(java.util.concurrent.locks.Condition);;1
+java.util.EnumMap;;containsKey;;public boolean containsKey(java.lang.Object);;1
+java.util.EnumMap;;get;;public java.lang.Object get(java.lang.Object);;1
+java.util.EnumMap;;put;;public volatile java.lang.Object put(java.lang.Object, java.lang.Object);;1
+java.util.JumboEnumSet;;add;;public volatile boolean add(java.lang.Object);;1
+java.util.RegularEnumSet;;add;;public volatile boolean add(java.lang.Object);;1
+java.util.TreeMap;;compare;;final int compare(java.lang.Object, java.lang.Object);;1
+java.util.UUID;;compareTo;;public volatile int compareTo(java.lang.Object);;1
+java.util.concurrent.DelayQueue;;add;;public volatile boolean add(java.lang.Object);;1
+java.util.concurrent.DelayQueue;;offer;;public volatile boolean offer(java.lang.Object);;1
+java.util.concurrent.DelayQueue;;offer;;public volatile boolean offer(java.lang.Object, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;;1
+java.util.concurrent.DelayQueue;;put;;public volatile void put(java.lang.Object) throws java.lang.InterruptedException;;1
+java.util.concurrent.RecursiveAction;;setRawResult;;protected volatile void setRawResult(java.lang.Object);;1
+java.util.concurrent.locks.ReentrantReadWriteLock;;hasWaiters;;public boolean hasWaiters(java.util.concurrent.locks.Condition);;1
+java.util.concurrent.locks.ReentrantReadWriteLock;;getWaitQueueLength;;public int getWaitQueueLength(java.util.concurrent.locks.Condition);;1
+java.util.concurrent.locks.ReentrantReadWriteLock;;getWaitingThreads;;protected java.util.Collection getWaitingThreads(java.util.concurrent.locks.Condition);;1
+java.util.jar.Attributes;;put;;public java.lang.Object put(java.lang.Object, java.lang.Object);;2
+java.util.logging.LoggingProxyImpl;;getLevel;;public java.lang.Object getLevel(java.lang.Object);;1
+java.util.logging.LoggingProxyImpl;;setLevel;;public void setLevel(java.lang.Object, java.lang.Object);;2
+java.util.logging.LoggingProxyImpl;;isLoggable;;public boolean isLoggable(java.lang.Object, java.lang.Object);;2
+java.util.logging.LoggingProxyImpl;;log;;public void log(java.lang.Object, java.lang.Object, java.lang.String);;2
+java.util.logging.LoggingProxyImpl;;log;;public void log(java.lang.Object, java.lang.Object, java.lang.String, java.lang.Throwable);;2
+java.util.logging.LoggingProxyImpl;;log;;public transient void log(java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object[]);;2
+java.util.logging.LoggingProxyImpl;;getLevelName;;public java.lang.String getLevelName(java.lang.Object);;1
+java.util.prefs.XmlSupport;;export;;static void export(java.io.OutputStream, java.util.prefs.Preferences, boolean) throws java.io.IOException, java.util.prefs.BackingStoreException;;1

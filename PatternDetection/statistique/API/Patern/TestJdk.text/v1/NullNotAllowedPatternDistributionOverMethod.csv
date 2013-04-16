@@ -1,0 +1,68 @@
+class name;;Method name;;method Declaration;;number of detected pattern
+java.text.AttributedString;;<init>;;void <init>(java.text.AttributedCharacterIterator[]);;1
+java.text.AttributedString;;<init>;;public void <init>(java.lang.String);;1
+java.text.AttributedString;;<init>;;public void <init>(java.text.AttributedCharacterIterator);;1
+java.text.AttributedString;;<init>;;public void <init>(java.text.AttributedCharacterIterator, int, int, java.text.AttributedCharacterIterator$Attribute[]);;1
+java.text.AttributedString;;addAttribute;;public void addAttribute(java.text.AttributedCharacterIterator$Attribute, java.lang.Object);;1
+java.text.AttributedString;;addAttribute;;public void addAttribute(java.text.AttributedCharacterIterator$Attribute, java.lang.Object, int, int);;1
+java.text.AttributedString;;addAttributes;;public void addAttributes(java.util.Map, int, int);;1
+java.text.Bidi;;<init>;;public void <init>(java.lang.String, int);;1
+java.text.Bidi;;<init>;;public void <init>(java.text.AttributedCharacterIterator);;1
+java.text.Bidi;;<init>;;public void <init>(char[], int, byte[], int, int, int);;1
+java.text.BreakIterator;;getLong;;static long getLong(byte[], int);;1
+java.text.BreakIterator;;getInt;;static int getInt(byte[], int);;1
+java.text.BreakIterator;;getShort;;static short getShort(byte[], int);;1
+java.text.StringCharacterIterator;;<init>;;public void <init>(java.lang.String, int);;1
+java.text.StringCharacterIterator;;<init>;;public void <init>(java.lang.String, int, int, int);;1
+java.text.StringCharacterIterator;;setText;;public void setText(java.lang.String);;1
+java.text.StringCharacterIterator;;equals;;public boolean equals(java.lang.Object);;1
+java.text.RuleBasedBreakIterator;;checkOffset;;protected static final void checkOffset(int, java.text.CharacterIterator);;1
+java.text.RuleBasedBreakIterator;;setText;;public void setText(java.text.CharacterIterator);;1
+java.text.MessageFormat;;applyPattern;;public void applyPattern(java.lang.String);;1
+java.text.MessageFormat;;setFormatsByArgumentIndex;;public void setFormatsByArgumentIndex(java.text.Format[]);;1
+java.text.MessageFormat;;setFormats;;public void setFormats(java.text.Format[]);;1
+java.text.MessageFormat;;formatToCharacterIterator;;public java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object);;1
+java.text.MessageFormat;;parse;;public java.lang.Object[] parse(java.lang.String, java.text.ParsePosition);;1
+java.text.CalendarBuilder;;establish;;java.util.Calendar establish(java.util.Calendar);;1
+java.text.DateFormatSymbols;;setZoneStrings;;public void setZoneStrings(java.lang.String[][]);;1
+java.text.DateFormatSymbols;;setLocalPatternChars;;public void setLocalPatternChars(java.lang.String);;1
+java.text.DateFormatSymbols;;getZoneIndex;;final int getZoneIndex(java.lang.String);;1
+java.text.CharacterIteratorFieldDelegate;;formatted;;public void formatted(java.text.Format$Field, java.lang.Object, int, int, java.lang.StringBuffer);;1
+java.text.CharacterIteratorFieldDelegate;;getIterator;;public java.text.AttributedCharacterIterator getIterator(java.lang.String);;1
+java.text.ChoiceFormat;;applyPattern;;public void applyPattern(java.lang.String);;1
+java.text.ChoiceFormat;;format;;public java.lang.StringBuffer format(double, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.ChoiceFormat;;parse;;public java.lang.Number parse(java.lang.String, java.text.ParsePosition);;2
+java.text.NumberFormat;;format;;public java.lang.StringBuffer format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.CollationElementIterator;;<init>;;void <init>(java.lang.String, java.text.RuleBasedCollator);;2
+java.text.CollationElementIterator;;<init>;;void <init>(java.text.CharacterIterator, java.text.RuleBasedCollator);;1
+java.text.RBCollationTables;;reverse;;static void reverse(java.lang.StringBuffer, int, int);;1
+java.text.RBCollationTables;;getEntry;;static final int getEntry(java.util.Vector, java.lang.String, boolean);;1
+java.text.CollationKey;;<init>;;protected void <init>(java.lang.String);;1
+java.text.DateFormat;;format;;public final java.lang.StringBuffer format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.SimpleDateFormat;;<init>;;void <init>(int, int, java.util.Locale);;1
+java.text.SimpleDateFormat;;set2DigitYearStart;;public void set2DigitYearStart(java.util.Date);;1
+java.text.SimpleDateFormat;;format;;public java.lang.StringBuffer format(java.util.Date, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.SimpleDateFormat;;formatToCharacterIterator;;public java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object);;1
+java.text.SimpleDateFormat;;parse;;public java.util.Date parse(java.lang.String, java.text.ParsePosition);;2
+java.text.SimpleDateFormat;;setDateFormatSymbols;;public void setDateFormatSymbols(java.text.DateFormatSymbols);;1
+java.text.SimpleDateFormat;;equals;;public boolean equals(java.lang.Object);;1
+java.text.DecimalFormat;;<init>;;public void <init>(java.lang.String, java.text.DecimalFormatSymbols);;1
+java.text.DecimalFormat;;format;;public final java.lang.StringBuffer format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.DecimalFormat;;format;;public java.lang.StringBuffer format(double, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.DecimalFormat;;format;;public java.lang.StringBuffer format(long, java.lang.StringBuffer, java.text.FieldPosition);;1
+java.text.DecimalFormat;;formatToCharacterIterator;;public java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object);;1
+java.text.DecimalFormat;;parse;;public java.lang.Number parse(java.lang.String, java.text.ParsePosition);;2
+java.text.DecimalFormat;;setDecimalFormatSymbols;;public void setDecimalFormatSymbols(java.text.DecimalFormatSymbols);;1
+java.text.DecimalFormat;;setRoundingMode;;public void setRoundingMode(java.math.RoundingMode);;1
+java.text.DigitList;;set;;final void set(boolean, java.lang.String, int, boolean);;1
+java.text.DigitList;;set;;final void set(boolean, java.math.BigDecimal, int, boolean);;1
+java.text.DigitList;;set;;final void set(boolean, java.math.BigInteger, int);;1
+java.text.DigitList;;equals;;public boolean equals(java.lang.Object);;1
+java.text.DecimalFormatSymbols;;setCurrency;;public void setCurrency(java.util.Currency);;1
+java.text.DecimalFormatSymbols;;setExponentSeparator;;public void setExponentSeparator(java.lang.String);;1
+java.text.PatternEntry;;addToBuffer;;void addToBuffer(java.lang.StringBuffer, boolean, boolean, java.text.PatternEntry);;1
+java.text.PatternEntry;;appendQuoted;;static void appendQuoted(java.lang.String, java.lang.StringBuffer);;2
+java.text.PatternEntry;;<init>;;void <init>(int, java.lang.StringBuffer, java.lang.StringBuffer);;2
+java.text.Normalizer;;normalize;;public static java.lang.String normalize(java.lang.CharSequence, java.text.Normalizer$Form);;1
+java.text.Normalizer;;isNormalized;;public static boolean isNormalized(java.lang.CharSequence, java.text.Normalizer$Form);;1
+java.text.RBTableBuilder;;build;;public void build(java.lang.String, int) throws java.text.ParseException;;1

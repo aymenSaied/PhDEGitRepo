@@ -1,0 +1,100 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.rmi.Naming;;bind;;1;;public static void bind(java.lang.String, java.rmi.Remote) throws java.rmi.AlreadyBoundException, java.net.MalformedURLException, java.rmi.RemoteException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.rmi.Naming;;rebind;;1;;public static void rebind(java.lang.String, java.rmi.Remote) throws java.rmi.RemoteException, java.net.MalformedURLException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.rmi.activation.Activatable;;exportObject;;1;;public static java.rmi.activation.ActivationID exportObject(java.rmi.Remote, java.lang.String, java.rmi.MarshalledObject, boolean, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.activation.ActivationException, java.rmi.RemoteException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.rmi.activation.ActivationID;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.rmi.activation.ActivationID: java.rmi.server.UID uid>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.rmi.activation.ActivationID: java.rmi.activation.Activator activator>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.rmi.activation.ActivationDesc;;<init>;;1;;public void <init>(java.rmi.activation.ActivationGroupID, java.lang.String, java.lang.String, java.rmi.MarshalledObject, boolean)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.rmi.activation.ActivationDesc;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;9
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.rmi.activation.ActivationDesc: java.rmi.activation.ActivationGroupID groupID>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.rmi.activation.ActivationDesc: java.rmi.activation.ActivationGroupID groupID>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.rmi.activation.ActivationDesc: java.lang.String className>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r10 = r2.<java.rmi.activation.ActivationDesc: java.lang.String className>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r12 = r2.<java.rmi.activation.ActivationDesc: java.lang.String location>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r14 = r2.<java.rmi.activation.ActivationDesc: java.lang.String location>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r16 = r2.<java.rmi.activation.ActivationDesc: java.rmi.MarshalledObject data>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r18 = r2.<java.rmi.activation.ActivationDesc: java.rmi.MarshalledObject data>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$z6 = r2.<java.rmi.activation.ActivationDesc: boolean restart>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.rmi.server.RemoteObject;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = $r4.<java.rmi.server.RemoteObject: java.rmi.server.RemoteRef ref>;;pattern detected param  r1 must not be null it define a local $r4which used in  FieldRef 
+java.rmi.activation.ActivationGroup;;createGroup;;2;;public static synchronized java.rmi.activation.ActivationGroup createGroup(java.rmi.activation.ActivationGroupID, java.rmi.activation.ActivationGroupDesc, long) throws java.rmi.activation.ActivationException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r28 = virtualinvoke r0.<java.rmi.activation.ActivationGroupID: java.rmi.activation.ActivationSystem getSystem()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.rmi.activation.ActivationGroupDesc: java.lang.String getClassName()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r12 = virtualinvoke r1.<java.rmi.activation.ActivationGroupDesc: java.lang.String getLocation()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r25 = virtualinvoke r1.<java.rmi.activation.ActivationGroupDesc: java.rmi.MarshalledObject getData()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.rmi.server.ObjID;;write;;1;;public void write(java.io.ObjectOutput) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r1.<java.io.ObjectOutput: void writeLong(long)>($l0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.rmi.server.ObjID;;read;;1;;public static java.rmi.server.ObjID read(java.io.ObjectInput) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;l0 = interfaceinvoke r0.<java.io.ObjectInput: long readLong()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.rmi.server.ObjID;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$l1 = r2.<java.rmi.server.ObjID: long objNum>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.rmi.server.ObjID: java.rmi.server.UID space>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.rmi.dgc.VMID;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;4
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.rmi.dgc.VMID: java.rmi.server.UID uid>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.rmi.dgc.VMID: byte[] addr>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r9 = r2.<java.rmi.dgc.VMID: byte[] addr>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r12 = r2.<java.rmi.dgc.VMID: byte[] addr>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.rmi.server.UID;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i1 = r2.<java.rmi.server.UID: int unique>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$s3 = r2.<java.rmi.server.UID: short count>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$l5 = r2.<java.rmi.server.UID: long time>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.rmi.server.UID;;write;;1;;public void write(java.io.DataOutput) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r1.<java.io.DataOutput: void writeInt(int)>($i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r1.<java.io.DataOutput: void writeLong(long)>($l1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;interfaceinvoke r1.<java.io.DataOutput: void writeShort(int)>($s2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
+java.rmi.server.UID;;read;;1;;public static java.rmi.server.UID read(java.io.DataInput) throws java.io.IOException
+*;; * ;; * ;;*;;r0;;3
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = interfaceinvoke r0.<java.io.DataInput: int readInt()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;l1 = interfaceinvoke r0.<java.io.DataInput: long readLong()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;s2 = interfaceinvoke r0.<java.io.DataInput: short readShort()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+java.rmi.activation.ActivationGroupID;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.rmi.activation.ActivationGroupID: java.rmi.server.UID uid>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.rmi.activation.ActivationGroupID: java.rmi.activation.ActivationSystem system>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.rmi.activation.ActivationGroupDesc;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;10
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.rmi.activation.ActivationGroupDesc: java.lang.String className>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.rmi.activation.ActivationGroupDesc: java.lang.String className>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = r2.<java.rmi.activation.ActivationGroupDesc: java.lang.String location>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r10 = r2.<java.rmi.activation.ActivationGroupDesc: java.lang.String location>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r12 = r2.<java.rmi.activation.ActivationGroupDesc: java.rmi.MarshalledObject data>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r14 = r2.<java.rmi.activation.ActivationGroupDesc: java.rmi.MarshalledObject data>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r16 = r2.<java.rmi.activation.ActivationGroupDesc: java.rmi.activation.ActivationGroupDesc$CommandEnvironment env>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r18 = r2.<java.rmi.activation.ActivationGroupDesc: java.rmi.activation.ActivationGroupDesc$CommandEnvironment env>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r20 = r2.<java.rmi.activation.ActivationGroupDesc: java.util.Properties props>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r22 = r2.<java.rmi.activation.ActivationGroupDesc: java.util.Properties props>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
+java.rmi.server.RemoteObjectInvocationHandler;;<init>;;1;;public void <init>(java.rmi.server.RemoteRef)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+java.rmi.server.RemoteObjectInvocationHandler;;invoke;;1;;public java.lang.Object invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]) throws java.lang.Throwable
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r2.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+java.rmi.server.LogStream;;write;;1;;public void write(byte[], int, int)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;ArrayRef for param;;$b4 = r1[$i3];;pattern detected param  r1 must not be null  because used in  ArrayRef 
+java.rmi.server.LogStream;;parseLevel;;1;;public static int parseLevel(java.lang.String)
+*;; * ;; * ;;*;;r0;;4
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r0.<java.lang.String: java.lang.String toUpperCase()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r0.<java.lang.String: java.lang.String toUpperCase()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
+*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r0.<java.lang.String: java.lang.String toUpperCase()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 

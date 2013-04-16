@@ -1,0 +1,440 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.rmi.AccessException;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.AccessException;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+*;; * ;; * ;;*;;r2;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.RemoteException;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.io.IOException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.RemoteException;;<init>;;2;;public void <init>(java.lang.String, java.lang.Throwable);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Throwable;;NullAllowed pattern detected param is  :r1
+*;; * ;; * ;;*;;r2;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.io.IOException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r2
+java.rmi.AlreadyBoundException;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Exception: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.ConnectException;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.ConnectException;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+*;; * ;; * ;;*;;r2;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.ConnectIOException;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.ConnectIOException;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+*;; * ;; * ;;*;;r2;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.MarshalException;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.MarshalException;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+*;; * ;; * ;;*;;r2;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.MarshalledObject;;<init>;;1;;public void <init>(java.lang.Object) throws java.io.IOException;;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Object: void <init>()>();;NullAllowed pattern detected param is  :r1
+java.rmi.MarshalledObject;;equals;;1;;public boolean equals(java.lang.Object);;;;;;;;;;
+*;; * ;; * ;;*;;r1;;1;;;;;;
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r1 != r0 goto (branch);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;lookup;;1;;public static java.rmi.Remote lookup(java.lang.String) throws java.rmi.NotBoundException, java.net.MalformedURLException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = staticinvoke <java.rmi.Naming: java.rmi.Naming$ParsedNamingURL parseURL(java.lang.String)>(r0);;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;bind;;1;;public static void bind(java.lang.String, java.rmi.Remote) throws java.rmi.AlreadyBoundException, java.net.MalformedURLException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.rmi.Remote;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;unbind;;1;;public static void unbind(java.lang.String) throws java.rmi.RemoteException, java.rmi.NotBoundException, java.net.MalformedURLException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = staticinvoke <java.rmi.Naming: java.rmi.Naming$ParsedNamingURL parseURL(java.lang.String)>(r0);;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;rebind;;1;;public static void rebind(java.lang.String, java.rmi.Remote) throws java.rmi.RemoteException, java.net.MalformedURLException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.rmi.Remote;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;list;;1;;public static java.lang.String[] list(java.lang.String) throws java.rmi.RemoteException, java.net.MalformedURLException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = staticinvoke <java.rmi.Naming: java.rmi.Naming$ParsedNamingURL parseURL(java.lang.String)>(r0);;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Exception: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;getRegistry;;1;;public static java.rmi.registry.Registry getRegistry(java.lang.String) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = staticinvoke <java.rmi.registry.LocateRegistry: java.rmi.registry.Registry getRegistry(java.lang.String,int)>(r0, 1099);;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;getRegistry;;1;;public static java.rmi.registry.Registry getRegistry(java.lang.String, int) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 := @parameter1: int;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;getRegistry;;2;;public static java.rmi.registry.Registry getRegistry(java.lang.String, int, java.rmi.server.RMIClientSocketFactory) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 := @parameter1: int;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;n0 = null;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;createRegistry;;2;;public static java.rmi.registry.Registry createRegistry(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter2: java.rmi.server.RMIServerSocketFactory;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = new sun.rmi.registry.RegistryImpl;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.SecurityException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RMISecurityException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Error);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Error;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;2;;protected void <init>(java.lang.String, java.rmi.MarshalledObject, boolean, int) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;z0 := @parameter2: boolean;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;4;;protected void <init>(java.lang.String, java.rmi.MarshalledObject, boolean, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 := @parameter5: java.rmi.server.RMIServerSocketFactory;;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r4;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.server.RemoteServer: void <init>()>();;NullAllowed pattern detected param is  :r4
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;z0 := @parameter2: boolean;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;protected void <init>(java.rmi.activation.ActivationID, int) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 := @parameter1: int;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;3;;protected void <init>(java.rmi.activation.ActivationID, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r3 := @parameter3: java.rmi.server.RMIServerSocketFactory;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.server.RemoteServer: void <init>()>();;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 := @parameter1: int;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;register;;1;;public static java.rmi.Remote register(java.rmi.activation.ActivationDesc) throws java.rmi.activation.UnknownGroupException, java.rmi.activation.ActivationException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = staticinvoke <java.rmi.activation.ActivationGroup: java.rmi.activation.ActivationSystem getSystem()>();;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;inactive;;1;;public static boolean inactive(java.rmi.activation.ActivationID) throws java.rmi.activation.UnknownObjectException, java.rmi.activation.ActivationException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = staticinvoke <java.rmi.activation.ActivationGroup: java.rmi.activation.ActivationGroup currentGroup()>();;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;unregister;;1;;public static void unregister(java.rmi.activation.ActivationID) throws java.rmi.activation.UnknownObjectException, java.rmi.activation.ActivationException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = staticinvoke <java.rmi.activation.ActivationGroup: java.rmi.activation.ActivationSystem getSystem()>();;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;exportObject;;3;;public static java.rmi.activation.ActivationID exportObject(java.rmi.Remote, java.lang.String, java.rmi.MarshalledObject, boolean, int) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter2: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;z0 := @parameter3: boolean;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;exportObject;;4;;public static java.rmi.activation.ActivationID exportObject(java.rmi.Remote, java.lang.String, java.rmi.MarshalledObject, boolean, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 := @parameter6: java.rmi.server.RMIServerSocketFactory;;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r4;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = new java.rmi.activation.ActivationDesc;;NullAllowed pattern detected param is  :r4
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter2: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;z0 := @parameter3: boolean;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;exportObject;;2;;public static java.rmi.Remote exportObject(java.rmi.Remote, java.rmi.activation.ActivationID, int) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.rmi.activation.ActivationID;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 := @parameter2: int;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;exportObject;;4;;public static java.rmi.Remote exportObject(java.rmi.Remote, java.rmi.activation.ActivationID, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r3 := @parameter4: java.rmi.server.RMIServerSocketFactory;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = new sun.rmi.server.ActivatableServerRef;;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.rmi.activation.ActivationID;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 := @parameter2: int;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;unexportObject;;1;;public static boolean unexportObject(java.rmi.Remote, boolean) throws java.rmi.NoSuchObjectException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;z0 := @parameter1: boolean;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;<init>;;1;;protected void <init>(java.rmi.server.RemoteRef);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.server.RemoteObject: void <init>(java.rmi.server.RemoteRef)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;setLog;;1;;public static void setLog(java.io.OutputStream);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;if r0 != null goto $z0 = 0;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Exception: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Throwable);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Throwable;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Exception: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.activation.ActivationException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.activation.ActivationException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.rmi.activation.Activator);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Object: void <init>()>();;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;3;;public void <init>(java.lang.String, java.lang.String, java.rmi.MarshalledObject) throws java.rmi.activation.ActivationException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = staticinvoke <java.rmi.activation.ActivationGroup: java.rmi.activation.ActivationGroupID internalCurrentGroupID()>();;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r3 := @parameter2: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;3;;public void <init>(java.lang.String, java.lang.String, java.rmi.MarshalledObject, boolean) throws java.rmi.activation.ActivationException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;z0 := @parameter3: boolean;;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r3 := @parameter2: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;4;;public void <init>(java.rmi.activation.ActivationGroupID, java.lang.String, java.lang.String, java.rmi.MarshalledObject);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 := @parameter3: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r4;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.activation.ActivationDesc: void <init>(java.rmi.activation.ActivationGroupID,java.lang.String,java.lang.String,java.rmi.MarshalledObject,boolean)>(r1, r2, r3, r4, 0);;NullAllowed pattern detected param is  :r4
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r3 := @parameter2: java.lang.String;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;3;;public void <init>(java.rmi.activation.ActivationGroupID, java.lang.String, java.lang.String, java.rmi.MarshalledObject, boolean);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 := @parameter3: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r4;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;z0 := @parameter4: boolean;;NullAllowed pattern detected param is  :r4
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r3 := @parameter2: java.lang.String;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;protected void <init>(java.rmi.server.RemoteRef);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Object: void <init>()>();;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;toStub;;1;;public static java.rmi.Remote toStub(java.rmi.Remote) throws java.rmi.NoSuchObjectException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$z0 = r0 instanceof java.rmi.server.RemoteStub;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Exception: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;protected void <init>(java.rmi.activation.ActivationGroupID) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.server.UnicastRemoteObject: void <init>()>();;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;inactiveObject;;1;;public boolean inactiveObject(java.rmi.activation.ActivationID) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = specialinvoke r0.<java.rmi.activation.ActivationGroup: java.rmi.activation.ActivationMonitor getMonitor()>();;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;setSystem;;1;;public static synchronized void setSystem(java.rmi.activation.ActivationSystem) throws java.rmi.activation.ActivationException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>();;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;activeObject;;2;;protected void activeObject(java.rmi.activation.ActivationID, java.rmi.MarshalledObject) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = specialinvoke r0.<java.rmi.activation.ActivationGroup: java.rmi.activation.ActivationMonitor getMonitor()>();;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Object: void <init>()>();;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.rmi.activation.ActivationSystem);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Object: void <init>()>();;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.util.Properties, java.rmi.activation.ActivationGroupDesc$CommandEnvironment);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.rmi.activation.ActivationGroupDesc$CommandEnvironment;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.activation.ActivationGroupDesc: void <init>(java.lang.String,java.lang.String,java.rmi.MarshalledObject,java.util.Properties,java.rmi.activation.ActivationGroupDesc$CommandEnvironment)>(null, null, null, r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;5;;public void <init>(java.lang.String, java.lang.String, java.rmi.MarshalledObject, java.util.Properties, java.rmi.activation.ActivationGroupDesc$CommandEnvironment);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r4 := @parameter3: java.util.Properties;;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r4;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r5 := @parameter4: java.rmi.activation.ActivationGroupDesc$CommandEnvironment;;NullAllowed pattern detected param is  :r4
+java.rmi.Naming;; * ;; * ;;*;;r5;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.Object: void <init>()>();;NullAllowed pattern detected param is  :r5
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r3 := @parameter2: java.rmi.MarshalledObject;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;2;;protected void <init>(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.server.RemoteServer: void <init>()>();;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter2: java.rmi.server.RMIServerSocketFactory;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;exportObject;;1;;public static java.rmi.server.RemoteStub exportObject(java.rmi.Remote) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = new sun.rmi.server.UnicastServerRef;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;exportObject;;1;;public static java.rmi.Remote exportObject(java.rmi.Remote, int) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 := @parameter1: int;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;exportObject;;3;;public static java.rmi.Remote exportObject(java.rmi.Remote, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new sun.rmi.server.UnicastServerRef2;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;i0 := @parameter1: int;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter3: java.rmi.server.RMIServerSocketFactory;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;unexportObject;;1;;public static boolean unexportObject(java.rmi.Remote, boolean) throws java.rmi.NoSuchObjectException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;z0 := @parameter1: boolean;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;<init>;;1;;protected void <init>(java.rmi.server.RemoteRef);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.server.RemoteObject: void <init>(java.rmi.server.RemoteRef)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;setRef;;2;;protected static void setRef(java.rmi.server.RemoteStub, java.rmi.server.RemoteRef);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.rmi.server.RemoteRef;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = new java.lang.UnsupportedOperationException;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;loadClass;;1;;public static java.lang.Class loadClass(java.lang.String) throws java.net.MalformedURLException, java.lang.ClassNotFoundException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = (java.lang.String) null;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;loadClass;;2;;public static java.lang.Class loadClass(java.net.URL, java.lang.String) throws java.net.MalformedURLException, java.lang.ClassNotFoundException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = <java.rmi.server.RMIClassLoader: java.rmi.server.RMIClassLoaderSpi provider>;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;loadClass;;2;;public static java.lang.Class loadClass(java.lang.String, java.lang.String) throws java.net.MalformedURLException, java.lang.ClassNotFoundException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = <java.rmi.server.RMIClassLoader: java.rmi.server.RMIClassLoaderSpi provider>;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;loadClass;;3;;public static java.lang.Class loadClass(java.lang.String, java.lang.String, java.lang.ClassLoader) throws java.net.MalformedURLException, java.lang.ClassNotFoundException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.lang.String;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter2: java.lang.ClassLoader;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = <java.rmi.server.RMIClassLoader: java.rmi.server.RMIClassLoaderSpi provider>;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;loadProxyClass;;3;;public static java.lang.Class loadProxyClass(java.lang.String, java.lang.String[], java.lang.ClassLoader) throws java.lang.ClassNotFoundException, java.net.MalformedURLException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 := @parameter1: java.lang.String[];;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter2: java.lang.ClassLoader;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = <java.rmi.server.RMIClassLoader: java.rmi.server.RMIClassLoaderSpi provider>;;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;getClassLoader;;1;;public static java.lang.ClassLoader getClassLoader(java.lang.String) throws java.net.MalformedURLException, java.lang.SecurityException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = <java.rmi.server.RMIClassLoader: java.rmi.server.RMIClassLoaderSpi provider>;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;getClassAnnotation;;1;;public static java.lang.String getClassAnnotation(java.lang.Class);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = <java.rmi.server.RMIClassLoader: java.rmi.server.RMIClassLoaderSpi provider>;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;getSecurityContext;;1;;public static java.lang.Object getSecurityContext(java.lang.ClassLoader);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = staticinvoke <sun.rmi.server.LoaderHandler: java.lang.Object getSecurityContext(java.lang.ClassLoader)>(r0);;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;invoke;;2;;public java.lang.Object invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]) throws java.lang.Throwable;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r3;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = virtualinvoke r2.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;NullAllowed pattern detected param is  :r3
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.reflect.Method;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.rmi.dgc.VMID, long);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;l0 := @parameter1: long;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;setSocketFactory;;1;;public static synchronized void setSocketFactory(java.rmi.server.RMISocketFactory) throws java.io.IOException;;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = <java.rmi.server.RMISocketFactory: java.rmi.server.RMISocketFactory factory>;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;setFailureHandler;;1;;public static synchronized void setFailureHandler(java.rmi.server.RMIFailureHandler);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>();;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String,java.lang.Throwable)>(r1, r2);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;log;;1;;public static java.rmi.server.LogStream log(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = <java.rmi.server.LogStream: java.util.Hashtable known>;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;setDefaultStream;;1;;public static synchronized void setDefaultStream(java.io.PrintStream);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r0;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;<java.rmi.server.LogStream: java.io.PrintStream defaultStream> = r0;;NullAllowed pattern detected param is  :r0
+java.rmi.Naming;;setOutputStream;;1;;public synchronized void setOutputStream(java.io.OutputStream);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.rmi.server.LogStream: java.io.OutputStream logOut> = r1;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.CloneNotSupportedException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.lang.CloneNotSupportedException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r2
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.RemoteException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;1;;public void <init>(java.lang.String);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.server.ExportException: void <init>(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;;<init>;;2;;public void <init>(java.lang.String, java.lang.Exception);;;;;;;;;;
+java.rmi.Naming;; * ;; * ;;*;;r1;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;r2 := @parameter1: java.lang.Exception;;NullAllowed pattern detected param is  :r1
+java.rmi.Naming;; * ;; * ;;*;;r2;;1;;;;;;
+java.rmi.Naming;;*;;*;;*;;*;;*;;NullAllowed for param;;specialinvoke r0.<java.rmi.server.ExportException: void <init>(java.lang.String,java.lang.Exception)>(r1, r2);;NullAllowed pattern detected param is  :r2
