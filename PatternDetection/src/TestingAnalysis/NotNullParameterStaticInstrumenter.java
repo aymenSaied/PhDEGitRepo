@@ -58,14 +58,18 @@ import soot.jimple.internal.JCmpgExpr;
 import soot.jimple.internal.JCmplExpr;
 import soot.jimple.internal.JEqExpr;
 import soot.jimple.internal.JGeExpr;
+import soot.jimple.internal.JGtExpr;
 import soot.jimple.internal.JLeExpr;
+import soot.jimple.internal.JLtExpr;
 import soot.jimple.internal.JNeExpr;
 import soot.options.Options;
+import soot.toolkits.graph.BriefUnitGraph;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.SimpleLocalDefs;
 import soot.util.Chain;
 import javax.media.jai.util.Range;
+import MethodParameterRangeLimitationPattern.RangeLimitationWithOneRangeAnalysis;
 
 public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
@@ -76,6 +80,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	static PrintWriter detectedPattern;
 	static HashMap<String, Integer> patternDistributionOverClasses;
 	static ArrayList<Local> methodParameterChain;
+	private ArrayList<Local>numericParameterChain;
+	
 
 	static {
 		patternDistributionOverClasses = new HashMap<String, Integer>(350);
@@ -101,6 +107,9 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		SootMethod method = body.getMethod();
 		System.out.println("methodSignature----->"+method.getSignature());
 		System.out.println("methodModifiers----->"+method.getModifiers());
+		System.out.println("methodName----->"+method.getName());
+		String getSignature = method.getSignature();
+		String methName =method.getName();
 		
 		if (method.getModifiers()==soot.Modifier.PRIVATE) {
 			
@@ -130,7 +139,16 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
 		System.out.println("instrumenting method : " + method.getSignature()
 				+ "    in class  " + declaringClass.getName());
-
+		String methodSignature =method.getSignature();
+// <Date: sun.util.calendar.BaseCalendar getCalendarSystem(int)>
+// <TestRangeAnalysis: void method1(int)>
+		
+		if (methodSignature == "<Date: sun.util.calendar.BaseCalendar getCalendarSystem(int)>") {
+			
+			System.out.println("BreakPoint");
+		}
+		
+		
 		Integer nbOfDetectedpatternInCurrentMethod = 0;
 
 		UnitGraph cfg = new ExceptionalUnitGraph(body);
@@ -151,6 +169,75 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 			System.out.println("-------->methodParameter:    "+l );
 			
 		}
+		
+		
+		//test pour range analyse
+		{
+			List<String> consideredType = new ArrayList<String>();
+			consideredType.add("int");
+			consideredType.add("byte");
+			consideredType.add("short");
+			
+			
+			numericParameterChain= new ArrayList<Local>();
+			for (Local l : methodParameterChain) {
+
+				if (consideredType.contains(l.getType().toString())) {
+
+					numericParameterChain.add(l);
+
+				}
+
+			}
+
+			if (numericParameterChain.size()!=0) {
+				
+				// lacer les tested parameter et les modified nullnessAnalysis
+
+				RangeLimitationWithOneRangeAnalysis rangeLimitationAnalysis = new RangeLimitationWithOneRangeAnalysis(
+						cfg);
+			
+			
+				
+			
+				
+				
+				Iterator<Unit> unitsForRange =cfg.iterator();
+				
+				while (unitsForRange.hasNext()) {
+					Unit unit = (Unit) unitsForRange.next();
+				
+					System.out.println("-------->unit:    " + unit);
+					for (Local l : numericParameterChain){
+															
+						List<MethodParameterRangeLimitationPattern.Range> RangeList = rangeLimitationAnalysis.getRangeLimitationBefore(unit, l);
+						
+						for (MethodParameterRangeLimitationPattern.Range range : RangeList) {
+							
+							
+							System.out.println("R--- "+l+" --range--->:    " +range.toString());
+							
+						}
+									
+					}
+				
+				}
+			
+			
+			
+			
+			
+			}
+			
+			
+			
+			
+			}//fin test pour range analyse
+		
+
+		
+		
+		
 		
 		
 		
@@ -178,11 +265,11 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 						
 						System.out.println("*-------->JNeExpr:    "+Condtionexpr);
 						
-					}else if (Condtionexpr instanceof  JCmplExpr) {
-						System.out.println("*-------->JCmplExpr:    "+Condtionexpr);
+					}else if (Condtionexpr instanceof  JGtExpr) {
+						System.out.println("*-------->JGtExpr:    "+Condtionexpr);
 						
-					}else if (Condtionexpr instanceof JCmpgExpr) {
-						System.out.println("*-------->JCmpgExpr:    "+Condtionexpr);
+					}else if (Condtionexpr instanceof JLtExpr) {
+						System.out.println("*-------->JLtExpr:    "+Condtionexpr);
 						
 					}else if (Condtionexpr instanceof JGeExpr) {
 						System.out.println("*-------->JGeExpr:    "+Condtionexpr);
@@ -231,7 +318,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				}
 			
 		
-		
+		/*	
 		
 		
 Iterator<Unit> units =cfg.iterator();
@@ -291,7 +378,11 @@ Iterator<Unit> units =cfg.iterator();
         
         //rlt=t; //rlt=(RefType)t;
         t=rlt;
-		
+
+        
+     */   
+        
+        
 /*		
 		
 		Iterator<Unit> units =cfg.iterator();

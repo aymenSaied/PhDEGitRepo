@@ -63,6 +63,7 @@ import soot.jimple.internal.JEqExpr;
 import soot.jimple.internal.JIfStmt;
 import soot.jimple.internal.JInstanceOfExpr;
 import soot.jimple.internal.JNeExpr;
+import soot.toolkits.graph.BriefUnitGraph;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.LocalUnitPair;
@@ -124,12 +125,21 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 		SootClass declaringClass = method.getDeclaringClass();
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
-		System.out.println("instrumenting method : " + method.getSignature()
+		String methodSignature =method.getSignature();
+		System.out.println("instrumenting method : " + methodSignature
 				+ "    in class  " + declaringClass.getName());
 
+		//"<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)>"
+		//"<java.net.URL: void checkSpecifyHandler(java.lang.SecurityManager)>"
+		if (methodSignature == "<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)>") {
+			System.out.println("BreakPoint");
+		}
+		
 		Integer nbOfDetectedpatternInCurrentMethod = 0;
 
 		UnitGraph cfg = new ExceptionalUnitGraph(body);
+		
+
 
 		methodParameterChain = new ArrayList<Local>();
 
@@ -165,16 +175,20 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 
 		if (!methodIsPrivate && !MethodCreatedBycompiler) {
 
-			// lacer les tested parameter et les modified nullnessAnalysis
-
-			RangeLimitationWithOneRangeAnalysis rangeLimitationAnalysis = new RangeLimitationWithOneRangeAnalysis(
-					cfg);
+			
 
 			// construire la liste des paramaitre numirique
-			ArrayList<Local> numericParameterChain = new ArrayList<Local>();
+			 numericParameterChain = new ArrayList<Local>();
 
-			List<String> consideredType = rangeLimitationAnalysis
-					.getConsideredType();
+			 
+			 
+			//List<String> consideredType = rangeLimitationAnalysis.getConsideredType();
+			 	 
+			 List<String> consideredType = new ArrayList<String>();
+				consideredType.add("int");
+				consideredType.add("byte");
+				consideredType.add("short");
+				
 			for (Local l : methodParameterChain) {
 
 				if (consideredType.contains(l.getType().toString())) {
@@ -185,18 +199,59 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 
 			}
 
-			// detectRestrictedTypeOnAllUnit(cfg, typeRestrictionAnalysis);
-
-		
 			if (numericParameterChain.size()!=0) {
+				
+				// lacer les tested parameter et les modified nullnessAnalysis
+
+				RangeLimitationWithOneRangeAnalysis rangeLimitationAnalysis = new RangeLimitationWithOneRangeAnalysis(
+						cfg);
+	
 			
+				// detectRestrictedTypeOnAllUnit(cfg, typeRestrictionAnalysis);
+
+				
+				
+				
 				Map<Local, ArrayList<PatternOccurrenceInfo>> UnitCausingParameterRangeLimitation = detectLimitedRangePatern(
 						cfg, localDefinedUsingParameterToParameter,
 						rangeLimitationAnalysis);
-	
+				
+				
+				
+				
+				Iterator<Unit> units2 = cfg.iterator();
+
+				while (units2.hasNext()) {
+					Unit unit = (Unit) units2.next();
+
+					System.out.println("-------->unit:    " + unit);
+
+					for (Local l : numericParameterChain){
+						
+						
+							
+							System.out.println("R--- "+l+" --range--->:    " +rangeLimitationAnalysis.getRangeLimitationBefore(unit, l).get(0).toString());
+							
+						
+						
+						
+					}
+					
+					
+					
+				}
+				
+				
 				
 			}
 			
+			
+			
+	
+			
+			
+			System.out.println("FIN     instrumenting method : " + method.getSignature()
+					+ "    in class  " + declaringClass.getName());	
 		}
 
 	}
@@ -219,11 +274,11 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 
 		}
 
-		Map<Local, ArrayList<PatternOccurrenceInfo>> temporaryUnitCausingParameterLimitedRange = new HashMap<Local, ArrayList<PatternOccurrenceInfo>>(
-				numericParameterChain.size() * 2 + 1, 0.7f);
+		Map<Local, ArrayList<PatternOccurrenceInfo>> temporaryUnitCausingParameterLimitedRange = new HashMap<Local, ArrayList<PatternOccurrenceInfo>>();
+//				numericParameterChain.size() * 2 + 1, 0.7f);
 		;
-		Map<Local, ArrayList<PatternOccurrenceInfo>> permanentUnitCausingParameterLimitedRange = new HashMap<Local, ArrayList<PatternOccurrenceInfo>>(
-				numericParameterChain.size() * 2 + 1, 0.7f);
+		Map<Local, ArrayList<PatternOccurrenceInfo>> permanentUnitCausingParameterLimitedRange = new HashMap<Local, ArrayList<PatternOccurrenceInfo>>();
+//				numericParameterChain.size() * 2 + 1, 0.7f);
 		;
 
 		/*

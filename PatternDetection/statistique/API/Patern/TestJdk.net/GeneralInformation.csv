@@ -1,5 +1,2 @@
-number of class;;number of Method;;NullNotAllowed;;number of detected pattern
-69;;1040;;NullNotAllowed;;85
-*;;*;;NullAllowed;;18
-*;;*;;RestrictedParameterType;;18
-*;;*;;RestrictedParameterType;;20
+number of class;;number of Method;;RestrictedParameterType;;number of detected pattern
+69;;1040;;RestrictedParameterType;;20

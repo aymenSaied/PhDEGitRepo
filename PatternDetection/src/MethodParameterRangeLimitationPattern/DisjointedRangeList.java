@@ -3,6 +3,8 @@ package MethodParameterRangeLimitationPattern;
 import java.util.ArrayList;
 import java.util.List;
 
+import soot.util.ArraySet;
+
 public class DisjointedRangeList extends ArrayList<Range> {
 
 	/**

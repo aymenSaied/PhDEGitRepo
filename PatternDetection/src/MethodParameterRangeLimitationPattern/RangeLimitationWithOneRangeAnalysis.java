@@ -61,21 +61,25 @@ import soot.jimple.internal.JCmpgExpr;
 import soot.jimple.internal.JCmplExpr;
 import soot.jimple.internal.JEqExpr;
 import soot.jimple.internal.JGeExpr;
+import soot.jimple.internal.JGtExpr;
 import soot.jimple.internal.JIfStmt;
 import soot.jimple.internal.JInstanceOfExpr;
 import soot.jimple.internal.JLeExpr;
+import soot.jimple.internal.JLtExpr;
 import soot.jimple.internal.JNeExpr;
 
 import soot.toolkits.graph.UnitGraph;
+import soot.toolkits.scalar.FlowSet;
 import soot.toolkits.scalar.ForwardBranchedFlowAnalysis;
 import soot.util.ArraySet;
 import soot.util.Chain;
 
-public class RangeLimitationWithOneRangeAnalysis extends
-		ForwardBranchedFlowAnalysis {
+public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnalysis {
 
 	// protected LocalTypeSet emptySet;
 	protected HashMap<Local, Range> emptySet;
+	ArrayList<Local> methodParameterChain ;
+	ArrayList<Local> numericParameterChain;
 
 	private HashMap<Local,Integer> localToNbOverestimatedUnion;
 
@@ -94,12 +98,13 @@ public class RangeLimitationWithOneRangeAnalysis extends
 
 		public AnalysisInfo() {
 
-			ParamToRangeLimitation = emptySet;
+			ParamToRangeLimitation =new HashMap<Local, Range>();
+			ParamToRangeLimitation = (HashMap<Local, Range>)emptySet.clone();
 		}
 
 		public AnalysisInfo(AnalysisInfo other) {
-
-			ParamToRangeLimitation = other.ParamToRangeLimitation;
+			ParamToRangeLimitation =new HashMap<Local, Range>();
+			ParamToRangeLimitation = (HashMap<Local, Range>)(other.ParamToRangeLimitation).clone();
 
 		}
 
@@ -152,8 +157,11 @@ public class RangeLimitationWithOneRangeAnalysis extends
 	protected void copy(Object source, Object dest) {
 		AnalysisInfo s = (AnalysisInfo) source;
 		AnalysisInfo d = (AnalysisInfo) dest;
+		d.ParamToRangeLimitation.clear();
+		d.ParamToRangeLimitation = new HashMap<>() ;
+		d.ParamToRangeLimitation =(HashMap<Local, Range>)(s.ParamToRangeLimitation).clone();
 
-		d.ParamToRangeLimitation = s.ParamToRangeLimitation;
+	
 	}
 
 	/**
@@ -171,19 +179,20 @@ public class RangeLimitationWithOneRangeAnalysis extends
 
 		AnalysisInfo outflow = (AnalysisInfo) out;
 
-		Set<Local> ParamSet = outflow.ParamToRangeLimitation.keySet();
+		
 
-		Iterator<Local> paramIth = ParamSet.iterator();
+	outflow.ParamToRangeLimitation.clear();
+		
 
-		while (paramIth.hasNext()) {
-			Local local = (Local) paramIth.next();
-
+		for (Local l : numericParameterChain) {
+			
+			
 			Range resultingUnionRange = ((AnalysisInfo) in1).ParamToRangeLimitation
-					.get(local).union(
+					.get(l).union(
 							((AnalysisInfo) in2).ParamToRangeLimitation
-									.get(local));
+									.get(l));
 
-			outflow.ParamToRangeLimitation.put(local, resultingUnionRange);
+			outflow.ParamToRangeLimitation.put(l, resultingUnionRange);
 
 			/*
 			 * we log the nember of overestimated union
@@ -191,18 +200,22 @@ public class RangeLimitationWithOneRangeAnalysis extends
 			 * if range doesn't intersect it is an overestimation
 			 */
 
-			if (!((AnalysisInfo) in1).ParamToRangeLimitation.get(local)
+			if (!((AnalysisInfo) in1).ParamToRangeLimitation.get(l)
 					.intersects(
 							((AnalysisInfo) in2).ParamToRangeLimitation
-									.get(local))) {
+									.get(l))) {
 
 				
 				
-				localToNbOverestimatedUnion.put(local,localToNbOverestimatedUnion.get(local)+1);
+				localToNbOverestimatedUnion.put(l,localToNbOverestimatedUnion.get(l)+1);
 
 			}
-
+			
+			
 		}
+		
+		
+
 
 	}
 
@@ -270,7 +283,6 @@ public class RangeLimitationWithOneRangeAnalysis extends
 	  
 	  List<Range> rangeLimitationList = new ArrayList<Range>();
 	 
-	  if (isAlreadyRangeLimitedBefore(s, i)) {
 	  
 	  AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
 	  
@@ -282,7 +294,7 @@ public class RangeLimitationWithOneRangeAnalysis extends
 	   * */
 	  rangeLimitationList.add(ai.get(i)) ;
 	  
-	  }
+	  
 	  
 		if (isAlreadyRangeLimitedBefore(s, i)&&rangeLimitationList.size() == 0) {
 
@@ -323,7 +335,7 @@ public class RangeLimitationWithOneRangeAnalysis extends
 
 		if (s instanceof JIfStmt) {
 			JIfStmt ifStmt = (JIfStmt) s;
-
+System.out.println("handleIfStmt");
 			handleIfStmt(ifStmt, in, out, outBranch);
 		}
 
@@ -368,14 +380,14 @@ public class RangeLimitationWithOneRangeAnalysis extends
 				JNeExpr neExpr = (JNeExpr) Condtionexpr;
 				handleNotEqualCheck(neExpr, in, out, outBranch);
 
-			} else if (Condtionexpr instanceof JCmplExpr) {
+			} else if (Condtionexpr instanceof JLtExpr) {
 
-				JCmplExpr lessThanExpr = (JCmplExpr) Condtionexpr;
+				JLtExpr lessThanExpr = (JLtExpr) Condtionexpr;
 				handleLessThanCheck(lessThanExpr, in, out, outBranch);
 
-			} else if (Condtionexpr instanceof JCmpgExpr) {
+			} else if (Condtionexpr instanceof JGtExpr) {
 
-				JCmpgExpr greaterThanExpr = (JCmpgExpr) Condtionexpr;
+				JGtExpr greaterThanExpr = (JGtExpr) Condtionexpr;
 				handleGreaterThanCheck(greaterThanExpr, in, out, outBranch);
 
 			} else if (Condtionexpr instanceof JGeExpr) {
@@ -489,7 +501,7 @@ public class RangeLimitationWithOneRangeAnalysis extends
 
 	}
 
-	private void handleLessThanCheck(JCmplExpr lessThanExpr, AnalysisInfo in,
+	private void handleLessThanCheck(JLtExpr lessThanExpr, AnalysisInfo in,
 			AnalysisInfo out, AnalysisInfo outBranch) {
 
 		Boolean comparingLocalAndNumericConstant = false;
@@ -585,7 +597,7 @@ public class RangeLimitationWithOneRangeAnalysis extends
 
 	}
 
-	private void handleGreaterThanCheck(JCmpgExpr greaterThanExpr,
+	private void handleGreaterThanCheck(JGtExpr greaterThanExpr,
 			AnalysisInfo in, AnalysisInfo out, AnalysisInfo outBranch) {
 
 		Boolean comparingLocalAndNumericConstant = false;
@@ -972,8 +984,8 @@ public class RangeLimitationWithOneRangeAnalysis extends
 	protected void makeInitialSetForRangeLimitation() {
 		// Find all parameter of numiric type
 
-		ArrayList<Local> methodParameterChain = new ArrayList<Local>();
-		ArrayList<Local> numericParameterChain = new ArrayList<Local>();
+		 methodParameterChain = new ArrayList<Local>();
+		 numericParameterChain = new ArrayList<Local>();
 		for (int j = 0; j < ((UnitGraph) graph).getBody().getMethod()
 				.getParameterCount(); j++) {
 
@@ -1162,5 +1174,11 @@ public class RangeLimitationWithOneRangeAnalysis extends
 
 		return consideredType;
 	}
+
+
+
+
+
+
 
 }

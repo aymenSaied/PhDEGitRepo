@@ -127,6 +127,12 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 		System.out.println("instrumenting method : " + method.getSignature()
 				+ "    in class  " + declaringClass.getName());
 
+		String methodSignature= method.getSignature();
+		if (methodSignature == "<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)>") {
+			System.out.println("BreakPoint");
+		}
+		
+
 		Integer nbOfDetectedpatternInCurrentMethod = 0;
 
 		UnitGraph cfg = new ExceptionalUnitGraph(body);

@@ -1,2 +1,9 @@
 class name;;number of detected pattern
-Test1;;2
+Test1;;3
+Range;;5
+TestRangeRestriction;;0
+Date;;1
+TestRangeAnalysis;;0
+JaiI18N;;0
+Test2TypeRestriction;;0
+EnumMap;;0

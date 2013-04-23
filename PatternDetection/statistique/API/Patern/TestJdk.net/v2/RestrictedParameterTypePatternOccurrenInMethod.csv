@@ -1,0 +1,67 @@
+class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.net.AbstractPlainDatagramSocketImpl;;joinGroup;;1;;protected void joinGroup(java.net.SocketAddress, java.net.NetworkInterface) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.AbstractPlainDatagramSocketImpl;;leaveGroup;;1;;protected void leaveGroup(java.net.SocketAddress, java.net.NetworkInterface) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.AbstractPlainDatagramSocketImpl;;setOption;;1;;public void setOption(int, java.lang.Object) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;2
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.lang.Integer
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.lang.Integer, java.lang.Boolean, java.net.InetAddress, java.net.NetworkInterface
+java.net.DatagramPacket;;setSocketAddress;;1;;public synchronized void setSocketAddress(java.net.SocketAddress)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.NetworkInterface;;getByInetAddress;;1;;public static java.net.NetworkInterface getByInetAddress(java.net.InetAddress) throws java.net.SocketException
+*;; * ;; * ;;*;;r0;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $r3;;pattern detected param  r0 is type Restricted  it can be , java.net.Inet4Address, java.net.Inet6Address
+java.net.AbstractPlainSocketImpl;;connect;;1;;protected void connect(java.net.SocketAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.AbstractPlainSocketImpl;;setOption;;1;;public void setOption(int, java.lang.Object) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 maybe type Restricted  it can be , java.lang.Integer, java.lang.Boolean
+java.net.Socket;;connect;;1;;public void connect(java.net.SocketAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.Socket;;bind;;1;;public void bind(java.net.SocketAddress) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.ServerSocket;;bind;;1;;public void bind(java.net.SocketAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.Proxy;;<init>;;1;;public void <init>(java.net.Proxy$Type, java.net.SocketAddress)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r2 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.URI;;compareTo;;1;;public volatile int compareTo(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnStmt;;return $i0;;pattern detected param  r1 is type Restricted  it can be , java.net.URI
+java.net.DatagramSocket;;bind;;1;;public synchronized void bind(java.net.SocketAddress) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.DatagramSocket;;connect;;1;;public void connect(java.net.SocketAddress) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.Inet4Address;;equals;;1;;public boolean equals(java.lang.Object)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Warning: Restriction for param  ReturnStmt;;return $z1;;pattern detected param  r1 maybe type Restricted  it can be , java.net.Inet4Address, java.net.InetAddress
+java.net.MulticastSocket;;joinGroup;;1;;public void joinGroup(java.net.SocketAddress, java.net.NetworkInterface) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.MulticastSocket;;leaveGroup;;1;;public void leaveGroup(java.net.SocketAddress, java.net.NetworkInterface) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+java.net.DualStackPlainDatagramSocketImpl;;socketSetOption;;1;;protected void socketSetOption(int, java.lang.Object) throws java.net.SocketException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.lang.Integer, java.lang.Boolean
+java.net.PlainSocketImpl;;accept;;1;;protected synchronized void accept(java.net.SocketImpl) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.PlainSocketImpl
+java.net.SocksSocketImpl;;connect;;1;;protected void connect(java.net.SocketAddress, int) throws java.io.IOException
+*;; * ;; * ;;*;;r1;;6
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress
+*;;*;;*;;*;;*;;*;;Error risk: Restriction for param  ReturnVoidStmt;;return;;pattern detected param  r1 is type Restricted  it can be , java.net.InetSocketAddress

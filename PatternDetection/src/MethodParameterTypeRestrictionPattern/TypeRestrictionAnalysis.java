@@ -75,7 +75,8 @@ import soot.util.Chain;
 public class TypeRestrictionAnalysis extends ForwardBranchedFlowAnalysis {
 
 	protected LocalTypeSet emptySet;
-
+	
+	
 	/**
 	 * The analysis info is a simple mapping of type {@link Value} to any of the
 	 * constants BOTTOM, TYPE_IS_NOT_RESTRICTED, TYPE_IS_RESTRICTED or TOP. This
