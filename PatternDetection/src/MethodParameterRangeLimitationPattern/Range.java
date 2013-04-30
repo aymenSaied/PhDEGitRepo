@@ -681,11 +681,11 @@ public class Range implements Serializable ,  Comparable {
 
 		Range range1 = this;
 		Range range2= (Range) otherRange;
-		if (range1.getMaxValue().compareTo(range2.getMinValue()) <0 ) {
+		if (range1.getMaxValue().compareTo(range2.getMinValue()) <=0 ) {
 			
 			return -1;
 			
-		}else if (range1.getMinValue().compareTo(range2.getMaxValue())>0) {
+		}else if (range1.getMinValue().compareTo(range2.getMaxValue())>=0) {
 			
 			return 1;
 			

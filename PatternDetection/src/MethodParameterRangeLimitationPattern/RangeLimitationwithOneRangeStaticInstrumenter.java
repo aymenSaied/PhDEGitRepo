@@ -126,6 +126,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
 		String methodSignature =method.getSignature();
+		String methodDeclaration =method.getDeclaration();
 		System.out.println("instrumenting method : " + methodSignature
 				+ "    in class  " + declaringClass.getName());
 
@@ -134,6 +135,11 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 		if (methodSignature == "<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)>") {
 			System.out.println("BreakPoint");
 		}
+		
+		if (methodDeclaration == "public synchronized void setData(byte[], int, int)") {
+			System.out.println("BreakPoint");
+		}
+		
 		
 		Integer nbOfDetectedpatternInCurrentMethod = 0;
 
@@ -349,14 +355,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 
 						}
 
-						if (rangeLimitationAnalysis.getNbOverestimatedUnion(l) > 0) {
-
-							coment += " with "
-									+ rangeLimitationAnalysis
-											.getNbOverestimatedUnion(l)
-									+ "Overestimated Union";
-
-						}
+						
 
 						PatternOccurrenceInfo poi = new PatternOccurrenceInfo(
 								ExitUnit, type1, coment);
@@ -408,14 +407,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 
 						}
 
-						if (rangeLimitationAnalysis.getNbOverestimatedUnion(l) > 0) {
-
-							coment += " with "
-									+ rangeLimitationAnalysis
-											.getNbOverestimatedUnion(l)
-									+ "Overestimated Union";
-
-						}
+					
 
 						PatternOccurrenceInfo poi = new PatternOccurrenceInfo(
 								ExitUnit, type1, coment);
@@ -480,18 +472,65 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 
 					}
 
-					// erification % ]Integer.MIN_VALUE,Integer.MAX_VALUE [
+					// verification % ]Integer.MIN_VALUE,Integer.MAX_VALUE [
 					if (ParameterRangeListFromDifferentExitpoint.size() > 1) {
 
-						/*
-						 * par defaut les interval sont disjointcomme li sont 2
-						 * ou plus donc ne coinside pas avec
-						 * ]Integer.MIN_VALUE,Integer.MAX_VALUE [
-						 */
-						System.out.println("#" + comment);
-						permanentUnitCausingParameterLimitedRange.put(l,
-								temporaryUnitCausingParameterLimitedRange
-										.get(l));
+						
+						DisjointedRangeList joinedRangeList= ParameterRangeListFromDifferentExitpoint.eliminateDisjointionPoint();
+						//on a eliminer les cas de point de jointure 
+						
+						if (joinedRangeList.size()>1) {
+							
+							/*
+							 * par defaut les interval sont disjointcomme li sont 2
+							 * ou plus donc ne coinside pas avec
+							 * ]Integer.MIN_VALUE,Integer.MAX_VALUE [
+							 */
+							System.out.println("#" + comment);
+							permanentUnitCausingParameterLimitedRange.put(l,
+									temporaryUnitCausingParameterLimitedRange
+											.get(l));
+							
+							
+						}else  if (joinedRangeList.size() == 1) {
+						
+							
+							if (!joinedRangeList.get(0)
+									.contains(
+											rangeLimitationAnalysis.initialRange(l
+													.getType()))) {
+
+								/*
+								 * dans ce cas pas le range est diferent de
+								 * ]Integer.MIN_VALUE,Integer.MAX_VALUE [
+								 */
+								System.out.println("#" + comment);
+								permanentUnitCausingParameterLimitedRange.put(l,
+										temporaryUnitCausingParameterLimitedRange
+												.get(l));
+
+							} else {
+
+								/*
+								 * dans ce cas la reunion des range dans les exit
+								 * point donne un range est egale à
+								 * ]Integer.MIN_VALUE,Integer.MAX_VALUE [
+								 * 
+								 * ces un cas rare pour ne pas dire bizar je fait un
+								 * throw exception pour le remarquer si il existe
+								 * TODO
+								 * il represente un cas ous chaque sous domaine
+								 * corespond à un traitement
+								 * 
+								 * peut etre un nouveau patern
+								 */
+
+							}
+							
+						}
+						
+						
+						
 
 					} else if (ParameterRangeListFromDifferentExitpoint.size() == 1) {
 
@@ -518,7 +557,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 							 * 
 							 * ces un cas rare pour ne pas dire bizar je fait un
 							 * throw exception pour le remarquer si il existe
-							 * 
+							 * TODO
 							 * il represente un cas ous chaque sous domaine
 							 * corespond à un traitement
 							 * 

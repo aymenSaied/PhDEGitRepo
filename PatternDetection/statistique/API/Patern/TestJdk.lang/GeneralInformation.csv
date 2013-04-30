@@ -3,3 +3,4 @@ number of class;;number of Method;;NullNotAllowed;;number of detected pattern
 *;;*;;NullAllowed;;42
 *;;*;;RestrictedParameterType;;15
 *;;*;;RestrictedParameterType;;23
+*;;*;;LimitedParameterRange;;41

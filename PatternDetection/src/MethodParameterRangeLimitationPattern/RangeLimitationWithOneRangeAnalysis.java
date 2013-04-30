@@ -67,6 +67,7 @@ import soot.jimple.internal.JInstanceOfExpr;
 import soot.jimple.internal.JLeExpr;
 import soot.jimple.internal.JLtExpr;
 import soot.jimple.internal.JNeExpr;
+import soot.jimple.toolkits.thread.IThreadLocalObjectsAnalysis;
 
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.FlowSet;
@@ -74,14 +75,13 @@ import soot.toolkits.scalar.ForwardBranchedFlowAnalysis;
 import soot.util.ArraySet;
 import soot.util.Chain;
 
-public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnalysis {
+public class RangeLimitationWithOneRangeAnalysis extends
+		ForwardBranchedFlowAnalysis {
 
 	// protected LocalTypeSet emptySet;
-	protected HashMap<Local, Range> emptySet;
-	ArrayList<Local> methodParameterChain ;
+	protected HashMap<Local, DisjointedRangeList> emptySet;
+	ArrayList<Local> methodParameterChain;
 	ArrayList<Local> numericParameterChain;
-
-	private HashMap<Local,Integer> localToNbOverestimatedUnion;
 
 	private List<String> consideredType;
 
@@ -92,19 +92,21 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 	 * 
 	 * 
 	 */
-	protected class AnalysisInfo {
+	protected class AnalysisInfo extends java.util.BitSet {
 
-		HashMap<Local, Range> ParamToRangeLimitation;
+		HashMap<Local, DisjointedRangeList> ParamToRangeLimitationList;
 
 		public AnalysisInfo() {
 
-			ParamToRangeLimitation =new HashMap<Local, Range>();
-			ParamToRangeLimitation = (HashMap<Local, Range>)emptySet.clone();
+			ParamToRangeLimitationList = new HashMap<Local, DisjointedRangeList>();
+			ParamToRangeLimitationList = (HashMap<Local, DisjointedRangeList>) emptySet
+					.clone();
 		}
 
 		public AnalysisInfo(AnalysisInfo other) {
-			ParamToRangeLimitation =new HashMap<Local, Range>();
-			ParamToRangeLimitation = (HashMap<Local, Range>)(other.ParamToRangeLimitation).clone();
+			ParamToRangeLimitationList = new HashMap<Local, DisjointedRangeList>();
+			ParamToRangeLimitationList = (HashMap<Local, DisjointedRangeList>) (other.ParamToRangeLimitationList)
+					.clone();
 
 		}
 
@@ -123,15 +125,15 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 		 * } set(index, (val & 2) == 2); set(index + 1, (val & 1) == 1); }
 		 */
 
-		public void put(Local key, Range val) {
+		public void put(Local key, DisjointedRangeList val) {
 
-			ParamToRangeLimitation.put(key, val);
+			ParamToRangeLimitationList.put(key, val);
 
 		}
 
-		public Range get(Local key) {
+		public DisjointedRangeList get(Local key) {
 
-			return ParamToRangeLimitation.get(key);
+			return ParamToRangeLimitationList.get(key);
 
 		}
 	}
@@ -144,7 +146,7 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 	 */
 	public RangeLimitationWithOneRangeAnalysis(UnitGraph graph) {
 		super(graph);
-		
+
 		consideredType = new ArrayList<String>();
 		consideredType.add("int");
 		consideredType.add("byte");
@@ -157,11 +159,11 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 	protected void copy(Object source, Object dest) {
 		AnalysisInfo s = (AnalysisInfo) source;
 		AnalysisInfo d = (AnalysisInfo) dest;
-		d.ParamToRangeLimitation.clear();
-		d.ParamToRangeLimitation = new HashMap<>() ;
-		d.ParamToRangeLimitation =(HashMap<Local, Range>)(s.ParamToRangeLimitation).clone();
+		d.ParamToRangeLimitationList.clear();
+		d.ParamToRangeLimitationList = new HashMap<>();
+		d.ParamToRangeLimitationList = (HashMap<Local, DisjointedRangeList>) (s.ParamToRangeLimitationList)
+				.clone();
 
-	
 	}
 
 	/**
@@ -179,43 +181,21 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 
 		AnalysisInfo outflow = (AnalysisInfo) out;
 
-		
-
-	outflow.ParamToRangeLimitation.clear();
-		
+		outflow.ParamToRangeLimitationList.clear();
 
 		for (Local l : numericParameterChain) {
 			
 			
-			Range resultingUnionRange = ((AnalysisInfo) in1).ParamToRangeLimitation
+			
+
+			DisjointedRangeList resultingUnionDisjointedRangeList = ((AnalysisInfo) in1).ParamToRangeLimitationList
 					.get(l).union(
-							((AnalysisInfo) in2).ParamToRangeLimitation
-									.get(l));
+							((AnalysisInfo) in2).ParamToRangeLimitationList.get(l));
 
-			outflow.ParamToRangeLimitation.put(l, resultingUnionRange);
+			outflow.ParamToRangeLimitationList.put(l, resultingUnionDisjointedRangeList);
 
-			/*
-			 * we log the nember of overestimated union
-			 * 
-			 * if range doesn't intersect it is an overestimation
-			 */
 
-			if (!((AnalysisInfo) in1).ParamToRangeLimitation.get(l)
-					.intersects(
-							((AnalysisInfo) in2).ParamToRangeLimitation
-									.get(l))) {
-
-				
-				
-				localToNbOverestimatedUnion.put(l,localToNbOverestimatedUnion.get(l)+1);
-
-			}
-			
-			
 		}
-		
-		
-
 
 	}
 
@@ -243,9 +223,27 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 		// if the given range dosent contains the initialRange then it is
 		// AlreadyRangeLimited
 
-		Boolean alreadyRangeLimited = !ai.get(i).contains(
-				initialRange(i.getType()));
-		return alreadyRangeLimited;
+		DisjointedRangeList consideredDisjointedRangeList =ai.get(i);
+		Boolean alreadyRangeLimited;
+		
+		Iterator<Range> rangeItetor = consideredDisjointedRangeList.iterator();
+		while (rangeItetor.hasNext()) {
+			Range range = (Range) rangeItetor.next();
+			
+			
+			if (range.contains(initialRange(i.getType()))) {
+				
+				
+				return false ;
+			}
+			
+			
+			
+		}
+		
+		//si on parcour tous les range et il ne contienne pas ]Integer.MIN_VALUE,Integer.MAX_VALUE [ alors  alreadyRangeLimited= true 
+		
+		return true;
 	}
 
 	/**
@@ -264,9 +262,31 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 		// if the given range contains the initialRange then it is
 		// StillRangeNonLimited
 
-		Boolean StillRangeNonLimited = ai.get(i).contains(
-				initialRange(i.getType()));
-		return StillRangeNonLimited;
+		
+
+
+				DisjointedRangeList consideredDisjointedRangeList =ai.get(i);
+				
+				Iterator<Range> rangeItetor = consideredDisjointedRangeList.iterator();
+				while (rangeItetor.hasNext()) {
+					Range range = (Range) rangeItetor.next();
+					
+					
+					if (range.contains(initialRange(i.getType()))) {
+						
+						
+						return true ;
+					}
+					
+					
+					
+				}
+				
+				//si on parcour tous les range et il ne contienne pas ]Integer.MIN_VALUE,Integer.MAX_VALUE [ alors  StillRangeNonLimited= false 
+				
+				return false;
+				
+				
 	}
 
 	/**
@@ -276,27 +296,32 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 	 * 
 	 * */
 
-	
-	
-	
 	public List<Range> getRangeLimitationBefore(Unit s, Local i) {
-	  
-	  List<Range> rangeLimitationList = new ArrayList<Range>();
-	 
-	  
-	  AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
-	  
-	  /*
-	   * TODO   normalement si on migre vrs la version ou chaque
-	   * param pointe vers une list de Range 
-	   * alors dans  rangeLimitationList on doit mettre la liste des range qui normalement sont disjoint par construction
-	   * 
-	   * */
-	  rangeLimitationList.add(ai.get(i)) ;
-	  
-	  
-	  
-		if (isAlreadyRangeLimitedBefore(s, i)&&rangeLimitationList.size() == 0) {
+
+		List<Range> rangeLimitationList = new ArrayList<Range>();
+
+		AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
+
+		/*
+		 * TODO normalement si on migre vrs la version ou chaque param pointe
+		 * vers une list de Range alors dans rangeLimitationList on doit mettre
+		 * la liste des range qui normalement sont disjoint par construction
+		 */
+		
+		
+		DisjointedRangeList consideredDisjointedRangeList =ai.get(i);
+		
+		
+		Iterator<Range> rangeItetor = consideredDisjointedRangeList.iterator();
+		
+		while (rangeItetor.hasNext()) {
+			Range range = (Range) rangeItetor.next();
+			rangeLimitationList.add(range);
+		}
+		
+
+		if (isAlreadyRangeLimitedBefore(s, i)
+				&& rangeLimitationList.size() == 0) {
 
 			try {
 				throw new Exception(
@@ -305,15 +330,13 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}	  
-	  return rangeLimitationList;
+		}
+		return rangeLimitationList;
 
 	}
-	  
 
-	  /*  */
-	  
-	  
+	/*  */
+
 	// ///////////////////////////////////////////////////////////////////////////////////////
 
 	/**
@@ -335,7 +358,6 @@ public class RangeLimitationWithOneRangeAnalysis extends ForwardBranchedFlowAnal
 
 		if (s instanceof JIfStmt) {
 			JIfStmt ifStmt = (JIfStmt) s;
-System.out.println("handleIfStmt");
 			handleIfStmt(ifStmt, in, out, outBranch);
 		}
 
@@ -357,13 +379,15 @@ System.out.println("handleIfStmt");
 		Local param;
 
 		if (Condtionexpr.getOp1() instanceof Local
-				&& in.ParamToRangeLimitation.containsKey(Condtionexpr.getOp1())) {
+				&& in.ParamToRangeLimitationList.containsKey(Condtionexpr
+						.getOp1())) {
 
 			conditionOnNumericParameter = true;
 			param = (Local) Condtionexpr.getOp1();
 
 		} else if (Condtionexpr.getOp2() instanceof Local
-				&& in.ParamToRangeLimitation.containsKey(Condtionexpr.getOp2())) {
+				&& in.ParamToRangeLimitationList.containsKey(Condtionexpr
+						.getOp2())) {
 
 			conditionOnNumericParameter = true;
 			param = (Local) Condtionexpr.getOp2();
@@ -440,62 +464,98 @@ System.out.println("handleIfStmt");
 
 		if (comparingLocalAndNumericConstant) {
 
-			Range oldRange = in.ParamToRangeLimitation.get(param);
+			DisjointedRangeList oldDisjointedRangeList = in.ParamToRangeLimitationList
+					.get(param);
 
-			if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
+			DisjointedRangeList outBranchDisjointedRangeList = new DisjointedRangeList();
+			DisjointedRangeList outDisjointedRangeList = new DisjointedRangeList();
 
-				/* case 1 comparaisonCanstant in the considered Range */
+			Iterator<Range> rangeIterator = oldDisjointedRangeList.iterator();
 
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						transformToComparable(comparaisonCanstant), true,
-						transformToComparable(comparaisonCanstant), true);
+			while (rangeIterator.hasNext()) {
+				Range oldRange = (Range) rangeIterator.next();
 
-				Range newOutRAnge = oldRange;
+				if (oldRange
+						.contains(transformToComparable(comparaisonCanstant))) {
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					/* case 1 comparaisonCanstant in the considered Range */
 
-			} else if ((oldRange.getMaxValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) < 0) {
+					Range newOutBranchRange = new Range(
+							oldRange.getElementClass(),
+							transformToComparable(comparaisonCanstant), true,
+							transformToComparable(comparaisonCanstant), true);
 
-				/*
-				 * case 2 comparaisonCanstant on the left of the considered
-				 * Range
-				 */
+					Range newOutRAnge1 = new Range(oldRange.getElementClass(),
+							oldRange.getMinValue(), oldRange.isMinIncluded(),
+							transformToComparable(comparaisonCanstant), false);
+					Range newOutRAnge2 = new Range(oldRange.getElementClass(),
+							transformToComparable(comparaisonCanstant), false,
+							oldRange.getMaxValue(), oldRange.isMaxIncluded());
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						1, true, 0, true);
+					outBranchDisjointedRangeList
+							.addAndMaintainDisjunction(newOutBranchRange);
 
-				Range newOutRAnge = oldRange;
+					outDisjointedRangeList
+							.addAndMaintainDisjunction(newOutRAnge1);
+					outDisjointedRangeList
+							.addAndMaintainDisjunction(newOutRAnge2);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+				} else if ((oldRange.getMaxValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) < 0) {
 
-			} else if ((oldRange.getMinValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) > 0) {
+					/*
+					 * case 2 comparaisonCanstant on the left of the considered
+					 * Range
+					 */
 
-				/*
-				 * case 3 comparaisonCanstant on the right of the considered
-				 * Range
-				 */
+					/*
+					 * the range [1,0] is an is a special value that indicates
+					 * the empty Range minimum value is greater than it's
+					 * maximum
+					 */
+					Range newOutBranchRange = new Range(
+							oldRange.getElementClass(), 1, true, 0, true);
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						1, true, 0, true);
+					Range newOutRAnge = oldRange;
 
-				Range newOutRAnge = oldRange;
+					outBranchDisjointedRangeList
+							.addAndMaintainDisjunction(newOutBranchRange);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					outDisjointedRangeList
+							.addAndMaintainDisjunction(newOutRAnge);
+					
+				} else if ((oldRange.getMinValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) > 0) {
+
+					/*
+					 * case 3 comparaisonCanstant on the right of the considered
+					 * Range
+					 */
+
+					/*
+					 * the range [1,0] is an is a special value that indicates
+					 * the empty Range minimum value is greater than it's
+					 * maximum
+					 */
+					Range newOutBranchRange = new Range(
+							oldRange.getElementClass(), 1, true, 0, true);
+
+					Range newOutRAnge = oldRange;
+
+					
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+
+				}
 
 			}
+			
+			outBranch.put(param, outBranchDisjointedRangeList);
+			out.put(param, outDisjointedRangeList);
+			
+			
 
 		}
 
@@ -533,65 +593,97 @@ System.out.println("handleIfStmt");
 
 		if (comparingLocalAndNumericConstant) {
 
-			Range oldRange = in.ParamToRangeLimitation.get(param);
+			
+			
+			DisjointedRangeList oldDisjointedRangeList=in.ParamToRangeLimitationList.get(param);
+			
+			DisjointedRangeList outBranchDisjointedRangeList = new DisjointedRangeList();
+			DisjointedRangeList outDisjointedRangeList = new DisjointedRangeList();
+			
+			
+			Iterator<Range> rangeIterator = oldDisjointedRangeList.iterator();
+			while (rangeIterator.hasNext()) {
+				Range oldRange = (Range) rangeIterator.next();
+			
+				
 
-			if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
+				if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
 
-				/* case 1 comparaisonCanstant in the considered Range */
+					/* case 1 comparaisonCanstant in the considered Range */
 
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						oldRange.getMinValue(), oldRange.isMinIncluded(),
-						transformToComparable(comparaisonCanstant), false);
+					Range newOutBranchRange = new Range(oldRange.getElementClass(),
+							oldRange.getMinValue(), oldRange.isMinIncluded(),
+							transformToComparable(comparaisonCanstant), false);
 
-				Range newOutRAnge = new Range(oldRange.getElementClass(),
-						transformToComparable(comparaisonCanstant), true,
-						oldRange.getMaxValue(), oldRange.isMaxIncluded());
+					Range newOutRAnge = new Range(oldRange.getElementClass(),
+							transformToComparable(comparaisonCanstant), true,
+							oldRange.getMaxValue(), oldRange.isMaxIncluded());
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+					
+					
+				} else if ((oldRange.getMaxValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
 
-			} else if ((oldRange.getMaxValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
+					/*
+					 * case 2 comparaisonCanstant on the left of the considered
+					 * Range
+					 */
 
-				/*
-				 * case 2 comparaisonCanstant on the left of the considered
-				 * Range
-				 */
+					Range newOutBranchRange = oldRange;
 
-				Range newOutBranchRange = oldRange;
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
+					Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
+							true, 0, true);
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
-						true, 0, true);
+					
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
 
-			} else if ((oldRange.getMinValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
+				} else if ((oldRange.getMinValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
 
-				/*
-				 * case 3 comparaisonCanstant on the right of the considered
-				 * Range
-				 */
+					/*
+					 * case 3 comparaisonCanstant on the right of the considered
+					 * Range
+					 */
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
 
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						1, true, 0, true);
+					Range newOutBranchRange = new Range(oldRange.getElementClass(),
+							1, true, 0, true);
 
-				Range newOutRAnge = oldRange;
+					Range newOutRAnge = oldRange;
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
 
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+					
+
+				}
+
+				
+				
+				
+				
 			}
+			
+			
+			outBranch.put(param, outBranchDisjointedRangeList);
+			out.put(param, outDisjointedRangeList);
+			
+			
+	
 
 		}
 
@@ -629,64 +721,96 @@ System.out.println("handleIfStmt");
 
 		if (comparingLocalAndNumericConstant) {
 
-			Range oldRange = in.ParamToRangeLimitation.get(param);
+			DisjointedRangeList oldDisjointedRangeList=in.ParamToRangeLimitationList.get(param);
+			
+			DisjointedRangeList outBranchDisjointedRangeList = new DisjointedRangeList();
+			DisjointedRangeList outDisjointedRangeList = new DisjointedRangeList();
+			
+			
+			Iterator<Range> rangeIterator = oldDisjointedRangeList.iterator();
+			while (rangeIterator.hasNext()) {
+				Range oldRange = (Range) rangeIterator.next();
+				
+			
+				if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
 
-			if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
+					/* case 1 comparaisonCanstant in the considered Range */
 
-				/* case 1 comparaisonCanstant in the considered Range */
+					Range newOutBranchRange = new Range(oldRange.getElementClass(),
+							transformToComparable(comparaisonCanstant), false,
+							oldRange.getMaxValue(), oldRange.isMaxIncluded());
 
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						transformToComparable(comparaisonCanstant), false,
-						oldRange.getMaxValue(), oldRange.isMaxIncluded());
+					Range newOutRAnge = new Range(oldRange.getElementClass(),
+							oldRange.getMinValue(), oldRange.isMinIncluded(),
+							transformToComparable(comparaisonCanstant), true);
 
-				Range newOutRAnge = new Range(oldRange.getElementClass(),
-						oldRange.getMinValue(), oldRange.isMinIncluded(),
-						transformToComparable(comparaisonCanstant), true);
+					
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+					
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+				} else if ((oldRange.getMaxValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
 
-			} else if ((oldRange.getMaxValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
+					/*
+					 * case 2 comparaisonCanstant on the left of the considered
+					 * Range
+					 */
 
-				/*
-				 * case 2 comparaisonCanstant on the left of the considered
-				 * Range
-				 */
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
+					Range newOutBranchRange = new Range(oldRange.getElementClass(),
+							1, true, 0, true);
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						1, true, 0, true);
+					Range newOutRAnge = oldRange;
 
-				Range newOutRAnge = oldRange;
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
 
-			} else if ((oldRange.getMinValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
+				} else if ((oldRange.getMinValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
 
-				/*
-				 * case 3 comparaisonCanstant on the right of the considered
-				 * Range
-				 */
+					/*
+					 * case 3 comparaisonCanstant on the right of the considered
+					 * Range
+					 */
 
-				Range newOutBranchRange = oldRange;
+					Range newOutBranchRange = oldRange;
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
-						true, 0, true);
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
+					Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
+							true, 0, true);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
 
+
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+					
+					
+
+				}
+
+				
+				
 			}
+			
+			
+			outBranch.put(param, outBranchDisjointedRangeList);
+			out.put(param, outDisjointedRangeList);
+			
+			
+			
+
+
 
 		}
 
@@ -727,64 +851,89 @@ System.out.println("handleIfStmt");
 
 		if (comparingLocalAndNumericConstant) {
 
-			Range oldRange = in.ParamToRangeLimitation.get(param);
 
-			if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
+			DisjointedRangeList oldDisjointedRangeList=in.ParamToRangeLimitationList.get(param);
+			
+			DisjointedRangeList outBranchDisjointedRangeList = new DisjointedRangeList();
+			DisjointedRangeList outDisjointedRangeList = new DisjointedRangeList();
+			
+			
+			Iterator<Range> rangeIterator = oldDisjointedRangeList.iterator();
+			while (rangeIterator.hasNext()) {
+				Range oldRange = (Range) rangeIterator.next();
 
-				/* case 1 comparaisonCanstant in the considered Range */
+				if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
 
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						transformToComparable(comparaisonCanstant), true,
-						oldRange.getMaxValue(), oldRange.isMaxIncluded());
+					/* case 1 comparaisonCanstant in the considered Range */
 
-				Range newOutRAnge = new Range(oldRange.getElementClass(),
-						oldRange.getMinValue(), oldRange.isMinIncluded(),
-						transformToComparable(comparaisonCanstant), false);
+					Range newOutBranchRange = new Range(oldRange.getElementClass(),
+							transformToComparable(comparaisonCanstant), true,
+							oldRange.getMaxValue(), oldRange.isMaxIncluded());
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					Range newOutRAnge = new Range(oldRange.getElementClass(),
+							oldRange.getMinValue(), oldRange.isMinIncluded(),
+							transformToComparable(comparaisonCanstant), false);
 
-			} else if ((oldRange.getMaxValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
+					
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
 
-				/*
-				 * case 2 comparaisonCanstant on the left of the considered
-				 * Range
-				 */
+				} else if ((oldRange.getMaxValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						1, true, 0, true);
+					/*
+					 * case 2 comparaisonCanstant on the left of the considered
+					 * Range
+					 */
 
-				Range newOutRAnge = oldRange;
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
+					Range newOutBranchRange = new Range(oldRange.getElementClass(),
+							1, true, 0, true);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					Range newOutRAnge = oldRange;
 
-			} else if ((oldRange.getMinValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+				} else if ((oldRange.getMinValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
 
-				/*
-				 * case 3 comparaisonCanstant on the right of the considered
-				 * Range
-				 */
+					/*
+					 * case 3 comparaisonCanstant on the right of the considered
+					 * Range
+					 */
 
-				Range newOutBranchRange = oldRange;
+					Range newOutBranchRange = oldRange;
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
-						true, 0, true);
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
+					Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
+							true, 0, true);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+				}
 
+				
+				
+				
+				
 			}
+			
+			
+			outBranch.put(param, outBranchDisjointedRangeList);
+			out.put(param, outDisjointedRangeList);
+			
+			
+
+			
 
 		}
 
@@ -824,65 +973,89 @@ System.out.println("handleIfStmt");
 
 		if (comparingLocalAndNumericConstant) {
 
-			Range oldRange = in.ParamToRangeLimitation.get(param);
+			DisjointedRangeList oldDisjointedRangeList=in.ParamToRangeLimitationList.get(param);
+			
+			DisjointedRangeList outBranchDisjointedRangeList = new DisjointedRangeList();
+			DisjointedRangeList outDisjointedRangeList = new DisjointedRangeList();
+			
+			
+			Iterator<Range> rangeIterator = oldDisjointedRangeList.iterator();
+			while (rangeIterator.hasNext()) {
+				Range oldRange = (Range) rangeIterator.next();
 
-			if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
+				
+				if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
 
-				/* case 1 comparaisonCanstant in the considered Range */
+					/* case 1 comparaisonCanstant in the considered Range */
 
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						oldRange.getMinValue(), oldRange.isMinIncluded(),
-						transformToComparable(comparaisonCanstant), true);
+					Range newOutBranchRange = new Range(oldRange.getElementClass(),
+							oldRange.getMinValue(), oldRange.isMinIncluded(),
+							transformToComparable(comparaisonCanstant), true);
 
-				Range newOutRAnge = new Range(oldRange.getElementClass(),
-						transformToComparable(comparaisonCanstant), false,
-						oldRange.getMaxValue(), oldRange.isMaxIncluded());
+					Range newOutRAnge = new Range(oldRange.getElementClass(),
+							transformToComparable(comparaisonCanstant), false,
+							oldRange.getMaxValue(), oldRange.isMaxIncluded());
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
 
-			} else if ((oldRange.getMaxValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
+				} else if ((oldRange.getMaxValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
 
-				/*
-				 * case 2 comparaisonCanstant on the left of the considered
-				 * Range
-				 */
+					/*
+					 * case 2 comparaisonCanstant on the left of the considered
+					 * Range
+					 */
 
-				Range newOutBranchRange = oldRange;
+					Range newOutBranchRange = oldRange;
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
-						true, 0, true);
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
+					Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
+							true, 0, true);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
 
-			} else if ((oldRange.getMinValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
 
-				/*
-				 * case 3 comparaisonCanstant on the right of the considered
-				 * Range
-				 */
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+					
+				} else if ((oldRange.getMinValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
+					/*
+					 * case 3 comparaisonCanstant on the right of the considered
+					 * Range
+					 */
 
-				Range newOutBranchRange = new Range(oldRange.getElementClass(),
-						1, true, 0, true);
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
 
-				Range newOutRAnge = oldRange;
+					Range newOutBranchRange = new Range(oldRange.getElementClass(),
+							1, true, 0, true);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					Range newOutRAnge = oldRange;
 
+
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+				}
+
+				
+				
+				
 			}
+			
+			
+			outBranch.put(param, outBranchDisjointedRangeList);
+			out.put(param, outDisjointedRangeList);
+			
+			
+
 
 		}
 
@@ -920,62 +1093,89 @@ System.out.println("handleIfStmt");
 
 		if (comparingLocalAndNumericConstant) {
 
-			Range oldRange = in.ParamToRangeLimitation.get(param);
 
-			if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
+			DisjointedRangeList oldDisjointedRangeList=in.ParamToRangeLimitationList.get(param);
+			
+			DisjointedRangeList outBranchDisjointedRangeList = new DisjointedRangeList();
+			DisjointedRangeList outDisjointedRangeList = new DisjointedRangeList();
+			
+			
+			Iterator<Range> rangeIterator = oldDisjointedRangeList.iterator();
+			while (rangeIterator.hasNext()) {
+				Range oldRange = (Range) rangeIterator.next();
+				
+				
+				if (oldRange.contains(transformToComparable(comparaisonCanstant))) {
 
-				/* case 1 comparaisonCanstant in the considered Range */
+					/* case 1 comparaisonCanstant in the considered Range */
 
-				Range newOutBranchRange = oldRange;
+					Range newOutBranchRange1 = new Range(oldRange.getElementClass(), oldRange.getMinValue(), oldRange.isMinIncluded(), transformToComparable(comparaisonCanstant), false);
+					Range newOutBranchRange2 = new Range(oldRange.getElementClass(), transformToComparable(comparaisonCanstant), false, oldRange.getMaxValue(), oldRange.isMaxIncluded());
+					
+					Range newOutRAnge = new Range(oldRange.getElementClass(),
+							transformToComparable(comparaisonCanstant), true,
+							transformToComparable(comparaisonCanstant), true);
 
-				Range newOutRAnge = new Range(oldRange.getElementClass(),
-						transformToComparable(comparaisonCanstant), true,
-						transformToComparable(comparaisonCanstant), true);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange1);
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange2);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
+					
+				} else if ((oldRange.getMaxValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) < 0) {
 
-			} else if ((oldRange.getMaxValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) < 0) {
+					/*
+					 * case 2 comparaisonCanstant on the left of the considered
+					 * Range
+					 */
 
-				/*
-				 * case 2 comparaisonCanstant on the left of the considered
-				 * Range
-				 */
+					Range newOutBranchRange = oldRange;
 
-				Range newOutBranchRange = oldRange;
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
+					Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
+							true, 0, true);
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
-						true, 0, true);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
 
-			} else if ((oldRange.getMinValue())
-					.compareTo(transformToComparable(comparaisonCanstant)) > 0) {
+				} else if ((oldRange.getMinValue())
+						.compareTo(transformToComparable(comparaisonCanstant)) > 0) {
 
-				/*
-				 * case 3 comparaisonCanstant on the right of the considered
-				 * Range
-				 */
+					/*
+					 * case 3 comparaisonCanstant on the right of the considered
+					 * Range
+					 */
 
-				Range newOutBranchRange = oldRange;
+					Range newOutBranchRange = oldRange;
 
-				/*
-				 * the range [1,0] is an is a special value that indicates the
-				 * empty Range minimum value is greater than it's maximum
-				 */
-				Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
-						true, 0, true);
+					/*
+					 * the range [1,0] is an is a special value that indicates the
+					 * empty Range minimum value is greater than it's maximum
+					 */
+					Range newOutRAnge = new Range(oldRange.getElementClass(), 1,
+							true, 0, true);
 
-				outBranch.put(param, newOutBranchRange);
-				out.put(param, newOutRAnge);
+					outBranchDisjointedRangeList.addAndMaintainDisjunction(newOutBranchRange);
+					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
 
+				}
+
+				
+				
 			}
+			
+			
+			outBranch.put(param, outBranchDisjointedRangeList);
+			out.put(param, outDisjointedRangeList);
+			
+			
+			
+
+			
 
 		}
 
@@ -984,8 +1184,8 @@ System.out.println("handleIfStmt");
 	protected void makeInitialSetForRangeLimitation() {
 		// Find all parameter of numiric type
 
-		 methodParameterChain = new ArrayList<Local>();
-		 numericParameterChain = new ArrayList<Local>();
+		methodParameterChain = new ArrayList<Local>();
+		numericParameterChain = new ArrayList<Local>();
 		for (int j = 0; j < ((UnitGraph) graph).getBody().getMethod()
 				.getParameterCount(); j++) {
 
@@ -994,17 +1194,20 @@ System.out.println("handleIfStmt");
 
 		}
 
-		emptySet = new HashMap<Local, Range>(methodParameterChain.size());
-		localToNbOverestimatedUnion=new HashMap<Local, Integer>(methodParameterChain.size());
+		emptySet = new HashMap<Local, DisjointedRangeList>(
+				methodParameterChain.size());
 		for (Local l : methodParameterChain) {
 
 			if (consideredType.contains(l.getType().toString())) {
 
 				numericParameterChain.add(l);
 				Range initialRange = initialRange(l.getType());
-				emptySet.put(l, initialRange);
 
-				localToNbOverestimatedUnion.put(l, 0);
+				DisjointedRangeList disjointedRangeList = new DisjointedRangeList();
+				disjointedRangeList.add(initialRange);
+
+				emptySet.put(l, disjointedRangeList);
+
 			}
 
 		}
@@ -1164,21 +1367,11 @@ System.out.println("handleIfStmt");
 		return localToParameter;
 	}
 
-	public Integer getNbOverestimatedUnion(Local l) {
-		return localToNbOverestimatedUnion.get(l);
-	}
-
 	
 
 	public List<String> getConsideredType() {
 
 		return consideredType;
 	}
-
-
-
-
-
-
 
 }
