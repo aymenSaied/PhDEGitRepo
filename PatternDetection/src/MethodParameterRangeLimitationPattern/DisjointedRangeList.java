@@ -25,6 +25,7 @@ public class DisjointedRangeList extends ArrayList<Range> {
 		 */
 
 		Range resultingRange = rangeToAdd;
+	
 		Boolean weFindIntersection = false;
 
 		Iterator<Range> rangeIterator = this.iterator();
@@ -32,7 +33,7 @@ public class DisjointedRangeList extends ArrayList<Range> {
 		while ((rangeIterator.hasNext()) && (!weFindIntersection)) {
 			Range range = (Range) rangeIterator.next();
 
-			if (rangeToAdd.intersects(range)) {
+			if ((rangeToAdd.intersects(range))||(range.isEmpty())||(rangeToAdd.isEmpty())) {
 
 				weFindIntersection = true;
 				resultingRange = rangeToAdd.union(range);

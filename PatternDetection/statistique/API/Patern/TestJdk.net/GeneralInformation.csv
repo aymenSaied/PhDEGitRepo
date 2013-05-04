@@ -3,3 +3,5 @@ number of class;;number of Method;;RestrictedParameterType;;number of detected p
 *;;*;;LimitedParameterRange;;25
 *;;*;;LimitedParameterRange;;40
 *;;*;;LimitedParameterRange;;25
+*;;*;;LimitedParameterRange;;25
+*;;*;;LimitedParameterRange;;25

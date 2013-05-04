@@ -501,7 +501,7 @@ public class RangeLimitationWithOneRangeAnalysis extends
 							.addAndMaintainDisjunction(newOutRAnge2);
 
 				} else if ((oldRange.getMaxValue())
-						.compareTo(transformToComparable(comparaisonCanstant)) < 0) {
+						.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
 
 					/*
 					 * case 2 comparaisonCanstant on the left of the considered
@@ -525,7 +525,7 @@ public class RangeLimitationWithOneRangeAnalysis extends
 							.addAndMaintainDisjunction(newOutRAnge);
 					
 				} else if ((oldRange.getMinValue())
-						.compareTo(transformToComparable(comparaisonCanstant)) > 0) {
+						.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
 
 					/*
 					 * case 3 comparaisonCanstant on the right of the considered
@@ -1122,7 +1122,7 @@ public class RangeLimitationWithOneRangeAnalysis extends
 					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
 					
 				} else if ((oldRange.getMaxValue())
-						.compareTo(transformToComparable(comparaisonCanstant)) < 0) {
+						.compareTo(transformToComparable(comparaisonCanstant)) <= 0) {
 
 					/*
 					 * case 2 comparaisonCanstant on the left of the considered
@@ -1143,7 +1143,7 @@ public class RangeLimitationWithOneRangeAnalysis extends
 					outDisjointedRangeList.addAndMaintainDisjunction(newOutRAnge);
 
 				} else if ((oldRange.getMinValue())
-						.compareTo(transformToComparable(comparaisonCanstant)) > 0) {
+						.compareTo(transformToComparable(comparaisonCanstant)) >= 0) {
 
 					/*
 					 * case 3 comparaisonCanstant on the right of the considered

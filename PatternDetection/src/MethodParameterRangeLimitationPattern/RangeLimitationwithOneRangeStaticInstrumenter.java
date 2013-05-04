@@ -132,11 +132,13 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 
 		//"<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)>"
 		//"<java.net.URL: void checkSpecifyHandler(java.lang.SecurityManager)>"
-		if (methodSignature == "<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)>") {
+		
+		//
+		if (methodSignature == "<java.awt.Scrollbar: void setMaximum(int)>") {
 			System.out.println("BreakPoint");
 		}
 		
-		if (methodDeclaration == "public synchronized void setData(byte[], int, int)") {
+		if (methodDeclaration == "public void <init>(java.awt.color.ColorSpace, int, int, int, int, int, boolean, int, int)") {
 			System.out.println("BreakPoint");
 		}
 		
