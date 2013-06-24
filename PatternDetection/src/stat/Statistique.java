@@ -3,6 +3,7 @@ package stat;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,6 +12,16 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
+import javadoc.api.marshalling.ApiInfo;
+import javadoc.api.marshalling.ClassInfo;
+import javadoc.api.marshalling.MethodInfo;
+import javadoc.api.marshalling.pattern.PaternInfo;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 import soot.Local;
 import NullOrNotNullParamUsingModifiedNullnessAnalysis.NotNullParameterStaticInstrumenter;
@@ -273,5 +284,243 @@ public class Statistique {
 		}
 
 	}
+	
+	
+	
+
+	public void statistiqueForPatternAndJavaDocInMethod(
+			String apiXmlFile,
+			String apiname,
+			String className,
+			String methodSignature ,
+			String statistiqueLocation,
+			String file,
+			Map<Local, String> ParameterLimitedRangeComment) throws IOException, JAXBException{
+		
+		
+		
+		String APIINFO_XML = ".//patenrn.xml.file//"+apiname+".xml";
+		
+		
+		
+	
+		String statistiqueLocationPath = statistiqueLocation;
+		String filename = file;
+		String filePath1 = statistiqueLocationPath + filename;
+
+		File file1 = new File(filePath1);
+
+		String javadoc = new String();
+		String javadocforHtml = new String();
+		javadoc = findComment(methodSignature, apiXmlFile);
+		javadocforHtml=javadoc;
+		javadoc=javadoc.replaceAll("[\r\n]+", "");
+		
+		if (!file1.exists()) {
+
+			
+			
+			JAXBContext context = JAXBContext.newInstance(javadoc.api.marshalling.pattern.ApiInfo.class);
+			Marshaller m = context.createMarshaller();
+		 	
+		    m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+		    
+			
+			
+			PrintWriter patternDistributionOverMethod = new PrintWriter(file1);
+			patternDistributionOverMethod.println("class name" + ";;"
+					+ "Method Signature" + ";;" + "parameter" + ";;"
+					+ "paternComment"+ ";;" + "javadoc");
+
+			
+			
+			Iterator<Local> parameters = ParameterLimitedRangeComment.keySet()
+					.iterator();
+
+			
+			ArrayList<PaternInfo>  paterninfolist1 = new ArrayList<PaternInfo>();
+			
+			while (parameters.hasNext()) {
+				Local param = (Local) parameters.next();
+				String paternComment=ParameterLimitedRangeComment.get(param);
+
+			
+				patternDistributionOverMethod.println(className + ";;" + methodSignature
+						+ ";;" + param + ";;"
+						+ paternComment+ ";;" + javadoc);
+
+			
+				
+				PaternInfo paterninfo = new PaternInfo();
+				
+				paterninfo.setMethodSignature(methodSignature);
+				paterninfo.setPatern(paternComment);
+				paterninfo.setCommentText(javadocforHtml);
+				
+				
+				paterninfolist1.add(paterninfo);
+				
+				
+			}			
+			
+			
+			
+			
+			patternDistributionOverMethod.close();
+			
+			
+			javadoc.api.marshalling.pattern.ApiInfo apiInfo = new javadoc.api.marshalling.pattern.ApiInfo();
+			apiInfo.setName(apiname);
+			apiInfo.setListpatern(paterninfolist1);
+			
+			  m.marshal(apiInfo, new File(APIINFO_XML));
+			
+		}else {
+			
+			JAXBContext context = JAXBContext.newInstance(javadoc.api.marshalling.pattern.ApiInfo.class);
+			 Unmarshaller um = context.createUnmarshaller();
+			 javadoc.api.marshalling.pattern.ApiInfo api = (javadoc.api.marshalling.pattern.ApiInfo) um.unmarshal(new FileReader(APIINFO_XML));
+			
+			
+			
+			
+			ArrayList<PaternInfo>  paterninfolist2 = new ArrayList<PaternInfo>();
+			
+			paterninfolist2.addAll(api.getListpatern());
+			
+			
+			PrintWriter patternDistributionOverMethod = new PrintWriter(
+					new BufferedWriter(new FileWriter(file1, true)));
+			
+			Iterator<Local> parameters = ParameterLimitedRangeComment.keySet()
+					.iterator();
+
+			while (parameters.hasNext()) {
+				Local param = (Local) parameters.next();
+				String paternComment=ParameterLimitedRangeComment.get(param);
+
+			
+				patternDistributionOverMethod.println(className + ";;" + methodSignature
+						+ ";;" + param + ";;"
+						+ paternComment+ ";;" + javadoc);
+
+			
+				
+				PaternInfo paterninfo = new PaternInfo();
+				
+				paterninfo.setMethodSignature(methodSignature);
+				paterninfo.setPatern(paternComment);
+				paterninfo.setCommentText(javadocforHtml);
+				
+				
+				paterninfolist2.add(paterninfo);
+				
+				
+				
+			}			
+			
+			
+			
+			
+			patternDistributionOverMethod.close();
+
+			api.setListpatern(paterninfolist2);
+			Marshaller m = context.createMarshaller();
+		    m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+			m.marshal(api, new File(APIINFO_XML));
+			
+			
+		}
+		
+		
+		
+
+		
+		
+		
+	}
+	
+	
+	
+	
+static	 String findComment(String methodSignatureTofind,String apiXmlFile) throws JAXBException, FileNotFoundException {
+		  
+		  /*
+		   * TODO
+		   * loperation find telque elle est defini consomera 
+		   * beucoup  de resource si on lui envoi chaque instance de paterne 
+		   * pour chercher la javadoc qui lui correspond
+		   * une facon plus optimale 
+		   * est de separer les triatement
+		   * envoyer a cette methode une liste des patern detecter 
+		   * (par exemple une structure qui content le signature de la methode 
+		   * dans la qule on a detecter le patern et le messag de detection exemple i0 is restricted to [0,1] )
+		   * 
+		   * et cette methode se charge de chercher la javadoc correspendante
+		   * donc on fait le unmarshaling une seul fois 
+		   * et pour chaque paterne detecter cherche la javadoc  et ecrire dans le cvs 
+		   * nonClass methodSigneter  paternComment javadoc 
+		   * */
+		  
+		  
+		  
+		  System.out.println("Output from our XML File: ");
+		  
+		  JAXBContext context = JAXBContext.newInstance(ApiInfo.class);
+		  Unmarshaller um = context.createUnmarshaller();
+		  ApiInfo api = (ApiInfo) um.unmarshal(new FileReader(apiXmlFile));
+		  
+		  Boolean methodFound =false;
+		  String comment="no javadoc";
+		  ArrayList<ClassInfo>clasList = api.getListclass();
+		  Iterator<ClassInfo> itClassInfo= clasList.iterator();
+		  
+		  while (itClassInfo.hasNext()&&!methodFound) {
+			ClassInfo classInfo = (ClassInfo) itClassInfo.next();
+			
+			ArrayList<MethodInfo>methodList=classInfo.getListMethod();
+			Iterator<MethodInfo>itMethodInfo=methodList.iterator();
+			while (itMethodInfo.hasNext()&&!methodFound) {
+				MethodInfo methodInfo = (MethodInfo) itMethodInfo.next();
+				
+				//System.out.println("#1"+methodInfo.getMethodSignature());
+				//System.out.println("#2"+methodSignatureTofind);
+				
+				if (methodInfo.getMethodSignature().equals(methodSignatureTofind)) {
+					
+					methodFound=true;
+					comment=methodInfo.getCommentText();
+					//TODO normalement ic je teste sur le commentaire vide pour afecter comment="no javadoc" si comentaire vide
+				} 
+				
+			}
+			
+		}
+		  
+		  
+		  System.out.println("##############");
+		  if (methodFound) {
+			  
+			System.out.println("the method is: "+methodSignatureTofind);
+			System.out.println("javadoc is:  "+comment);
+			
+		}else {
+			
+			System.out.println("the method is: "+methodSignatureTofind);
+			System.out.println("404 not found");
+			comment="404 ;ethod not found";
+			try {
+				throw new Exception(methodSignatureTofind+" not found in xml representation of the API");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		  
+		return comment;  
+	  }
+
+	
+	
 
 }

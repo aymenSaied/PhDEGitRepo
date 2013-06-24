@@ -33,6 +33,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.xml.bind.JAXBException;
+
 import NullOrNotNullParamUsingModifiedNullnessAnalysis.ModifiedNullnessAnalysis;
 import NullOrNotNullParamUsingModifiedNullnessAnalysis.NullTestedLocalsAnalysis;
 
@@ -105,12 +107,15 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 	static ArrayList<Local> methodParameterChain;
 	static ArrayList<Local> numericParameterChain;
 	static String satistuquePath;
+	static String APIINFO_XML;
+	static String API_NAME;
 	static int nbMethode;
 
-	public RangeLimitationwithOneRangeStaticInstrumenter(String satatPath) {
+	public RangeLimitationwithOneRangeStaticInstrumenter(String satatPath,String apiXmlPath,String apiname) {
 
 		satistuquePath = satatPath;
-
+		APIINFO_XML=apiXmlPath;
+		API_NAME=apiname;
 	}
 
 	/*
@@ -288,6 +293,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 		Map<Local, ArrayList<PatternOccurrenceInfo>> permanentUnitCausingParameterLimitedRange = new HashMap<Local, ArrayList<PatternOccurrenceInfo>>();
 //				numericParameterChain.size() * 2 + 1, 0.7f);
 		;
+		Map<Local, String> ParameterLimitedRangeComment = new HashMap<Local, String>();
 
 		/*
 		 * TODO les element qui sont dans
@@ -492,7 +498,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 							permanentUnitCausingParameterLimitedRange.put(l,
 									temporaryUnitCausingParameterLimitedRange
 											.get(l));
-							
+							ParameterLimitedRangeComment.put(l, comment);
 							
 						}else  if (joinedRangeList.size() == 1) {
 						
@@ -510,7 +516,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 								permanentUnitCausingParameterLimitedRange.put(l,
 										temporaryUnitCausingParameterLimitedRange
 												.get(l));
-
+								ParameterLimitedRangeComment.put(l, comment);
 							} else {
 
 								/*
@@ -549,7 +555,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 							permanentUnitCausingParameterLimitedRange.put(l,
 									temporaryUnitCausingParameterLimitedRange
 											.get(l));
-
+							ParameterLimitedRangeComment.put(l, comment);
 						} else {
 
 							/*
@@ -575,7 +581,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 			}
 
 		}
-
+		
 		Statistique Statistique = new Statistique();
 
 		if (permanentUnitCausingParameterLimitedRange.keySet().size() > 0) {
@@ -601,7 +607,8 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 					.getDeclaration();
 			String statfileName = "\\LimitedParameterRangePatternDistributionOverMethod.csv";
 			String OccurrenStatfileName = "\\LimitedParameterRangePatternOccurrenInMethod.csv";
-
+			String validationPatternJavadocFileName="\\JavadocVsPPatternInMethod.csv";
+			
 			try {
 				Statistique.statistiqueForPatternDistributionOverMethod(
 						permanentUnitCausingParameterLimitedRange.keySet()
@@ -613,12 +620,95 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 						methodDeclaration, satistuquePath,
 						OccurrenStatfileName,
 						permanentUnitCausingParameterLimitedRange);
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
+		
+			{//la parti generation du fichier de validation javadic vs PaternComment 
+				
+				
+				//construction de methodSignature telque elle est dans XML file :APIINFO_XML
+				//et faire le cas dei constructeur init
+				
+				String methodSignature = new String();
+				
+				if (methodName.equals("<init>")) {
+				
+					String var1=cfg.getBody().getMethod().getDeclaration();
+					String var2 = cfg.getBody().getMethod().getDeclaringClass().toString();
+					String var3 =methodName;
+					
+					
+					var1=var1.replace("$", ".");
+					//System.out.println("sans $ "+var1);
+					
+					String[] var4=var1.split(var3);
+					
+					String var5 =var4[var4.length-1];
+					String[] var6 = var5.split("throws");
+					
+					 methodSignature =var2+var6[0].trim();
+					
+				
+				}else {
+					
+					
+					String var1=cfg.getBody().getMethod().getDeclaration();
+					String var2 = cfg.getBody().getMethod().getDeclaringClass().toString();
+					String var3 =methodName;
+					var1=var1.replace("$", ".");
+					String[] var4=var1.split(var3);
+					String var5 =var4[var4.length-1];
+					String[] var6 = var5.split("throws");
+					 methodSignature =var2+"."+var3+var6[0].trim();
+					
+					
+					
+				}
+				
+				
+				
+				
+				 
+				
+				
+				
+				
+				
+				try {
+					Statistique.statistiqueForPatternAndJavaDocInMethod(
+							APIINFO_XML,
+							API_NAME ,
+							 className,
+							 methodSignature ,
+							 satistuquePath,
+							 validationPatternJavadocFileName,
+							 ParameterLimitedRangeComment);
+				} catch (IOException | JAXBException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				
+				
+			}
+		
+		
+		
 		}
 
 		return permanentUnitCausingParameterLimitedRange;

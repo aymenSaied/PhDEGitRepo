@@ -105,11 +105,21 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
 		
 		SootMethod method = body.getMethod();
+		
+		System.out.println("method getDeclaration----->"+method.getDeclaration());
+		//System.out.println("method getDavaDeclaration----->"+method.getDavaDeclaration()); decompilation
+		System.out.println("method getDeclaringClass----->"+method.getDeclaringClass());
+		;
 		System.out.println("methodSignature----->"+method.getSignature());
 		System.out.println("methodModifiers----->"+method.getModifiers());
 		System.out.println("methodName----->"+method.getName());
+		System.out.println("method toString----->"+method.toString());
+		System.out.println("method getClass----->"+method.getClass());
+		System.out.println("method getSubSignature----->"+method.getSubSignature());
+		
 		String getSignature = method.getSignature();
 		String methName =method.getName();
+		
 		
 		if (method.getModifiers()==soot.Modifier.PRIVATE) {
 			

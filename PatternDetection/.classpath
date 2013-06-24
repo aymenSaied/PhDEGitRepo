@@ -6,5 +6,6 @@
 	<classpathentry kind="lib" path="C:/Users/medsd/Downloads/org.eclipse.core.tools_1.4.0.zip"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaAdvancedImaging"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.7.0_11/lib/tools.jar" sourcepath="C:/Program Files (x86)/Java/jdk1.7.0_11/src.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
