@@ -105,6 +105,8 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 	static PrintWriter detectedPattern;
 	static HashMap<String, Integer> limitedParameterRangePaternDistributionOverClasses;
 	static ArrayList<Local> methodParameterChain;
+	static HashMap<Local,Integer> methodParameterToStringId ;
+
 	static ArrayList<Local> numericParameterChain;
 	static String satistuquePath;
 	static String APIINFO_XML;
@@ -155,11 +157,12 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 
 
 		methodParameterChain = new ArrayList<Local>();
+		methodParameterToStringId = new HashMap<Local, Integer>();
 
 		for (int j = 0; j < method.getParameterCount(); j++) {
 
 			methodParameterChain.add(body.getParameterLocal(j));
-
+			methodParameterToStringId.put(body.getParameterLocal(j),j);
 		}
 
 		Iterator<Unit> units = cfg.iterator();
@@ -607,7 +610,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 					.getDeclaration();
 			String statfileName = "\\LimitedParameterRangePatternDistributionOverMethod.csv";
 			String OccurrenStatfileName = "\\LimitedParameterRangePatternOccurrenInMethod.csv";
-			String validationPatternJavadocFileName="\\JavadocVsPPatternInMethod.csv";
+			String validationPatternJavadocFileName="\\LimitedParameterRangePatternJavadocVsPatternInMethod.csv";
 			
 			try {
 				Statistique.statistiqueForPatternDistributionOverMethod(
@@ -638,7 +641,7 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 			}
 
 		
-			{//la parti generation du fichier de validation javadic vs PaternComment 
+			{//la parti generation du fichier de validation javadoc vs PaternComment 
 				
 				
 				//construction de methodSignature telque elle est dans XML file :APIINFO_XML
@@ -690,14 +693,19 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 				
 				
 				try {
+					
+					String patternName = "LimitedParameterRangePattern_";
+					
 					Statistique.statistiqueForPatternAndJavaDocInMethod(
 							APIINFO_XML,
 							API_NAME ,
+							patternName,
 							 className,
 							 methodSignature ,
 							 satistuquePath,
 							 validationPatternJavadocFileName,
-							 ParameterLimitedRangeComment);
+							 ParameterLimitedRangeComment,
+							 methodParameterToStringId);
 				} catch (IOException | JAXBException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

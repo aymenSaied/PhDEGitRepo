@@ -17,6 +17,18 @@ java.security.Security;;getImpl;;1;;static java.lang.Object[] getImpl(java.lang.
 java.security.Security;;getImpl;;1;;static java.lang.Object[] getImpl(java.lang.String, java.lang.String, java.lang.String, java.lang.Object) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException, java.security.InvalidAlgorithmParameterException
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = staticinvoke <java.security.Security: java.lang.Class getSpiClass(java.lang.String)>(r1);;NullAllowed pattern detected param is  :r2
+java.security.Timestamp;;<init>;;1;;public void <init>(java.util.Date, java.security.cert.CertPath)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
+java.security.KeyRep;;<init>;;1;;public void <init>(java.security.KeyRep$Type, java.lang.String, java.lang.String, byte[])
+*;; * ;; * ;;*;;r4;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r4
+java.security.KeyStore;;setEntry;;1;;public final void setEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
+java.security.KeyStore;;entryInstanceOf;;1;;public final boolean entryInstanceOf(java.lang.String, java.lang.Class) throws java.security.KeyStoreException
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
 java.security.KeyStoreSpi;;engineLoad;;1;;public void engineLoad(java.security.KeyStore$LoadStoreParameter) throws java.io.IOException, java.security.NoSuchAlgorithmException, java.security.cert.CertificateException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r7 = (java.io.InputStream) null;;NullAllowed pattern detected param is  :r1
@@ -26,6 +38,9 @@ java.security.KeyStoreSpi;;engineGetEntry;;1;;public java.security.KeyStore$Entr
 java.security.UnresolvedPermission;;resolve;;1;;java.security.Permission resolve(java.security.Permission, java.security.cert.Certificate[])
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r2
+java.security.cert.CertificateRevokedException;;<init>;;1;;public void <init>(java.util.Date, java.security.cert.CRLReason, javax.security.auth.x500.X500Principal, java.util.Map)
+*;; * ;; * ;;*;;r4;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r5 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r4
 java.security.cert.X509CertSelector;;setIssuer;;1;;public void setIssuer(java.lang.String) throws java.io.IOException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.security.cert.X509CertSelector: javax.security.auth.x500.X500Principal issuer> = null;;NullAllowed pattern detected param is  :r1
@@ -65,6 +80,9 @@ java.security.cert.X509CertSelector;;setKeyUsage;;1;;public void setKeyUsage(boo
 java.security.cert.X509CertSelector;;setSubjectAlternativeNames;;1;;public void setSubjectAlternativeNames(java.util.Collection) throws java.io.IOException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.security.cert.X509CertSelector: java.util.Set subjectAlternativeNames> = null;;NullAllowed pattern detected param is  :r1
+java.security.cert.X509CertSelector;;equalNames;;1;;static boolean equalNames(java.util.Collection, java.util.Collection)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;if r0 != r1 goto $z0 = 0;;NullAllowed pattern detected param is  :r1
 java.security.cert.X509CertSelector;;setNameConstraints;;1;;public void setNameConstraints(byte[]) throws java.io.IOException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.security.cert.X509CertSelector: byte[] ncBytes> = null;;NullAllowed pattern detected param is  :r1
@@ -95,9 +113,15 @@ java.security.cert.PKIXParameters;;setCertPathCheckers;;1;;public void setCertPa
 java.security.cert.PKIXParameters;;setTargetCertConstraints;;1;;public void setTargetCertConstraints(java.security.cert.CertSelector)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.security.cert.PKIXParameters: java.security.cert.CertSelector certSelector> = null;;NullAllowed pattern detected param is  :r1
+java.security.cert.TrustAnchor;;<init>;;1;;public void <init>(javax.security.auth.x500.X500Principal, java.security.PublicKey, byte[])
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
 java.security.spec.EllipticCurve;;<init>;;1;;public void <init>(java.security.spec.ECField, java.math.BigInteger, java.math.BigInteger, byte[])
 *;; * ;; * ;;*;;r4;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.security.spec.EllipticCurve: byte[] seed> = null;;NullAllowed pattern detected param is  :r4
+java.security.spec.ECPoint;;<init>;;1;;public void <init>(java.math.BigInteger, java.math.BigInteger)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
 java.security.spec.RSAMultiPrimePrivateCrtKeySpec;;<init>;;1;;public void <init>(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.security.spec.RSAOtherPrimeInfo[])
 *;; * ;; * ;;*;;r9;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.security.spec.RSAMultiPrimePrivateCrtKeySpec: java.security.spec.RSAOtherPrimeInfo[] otherPrimeInfo> = null;;NullAllowed pattern detected param is  :r9

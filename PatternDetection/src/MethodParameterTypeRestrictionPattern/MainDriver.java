@@ -39,73 +39,89 @@ public class MainDriver {
 	    //String StaticLocationPath  =".\\statistique\\API\\Patern\\JHotDraw7.0.6"; 
 	   
 	   
-	  
-	  
-	    //		  String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
-	    //  	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
-	  
-	  
-	//	  String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
-	//	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
-	  
+/*String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
+String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
+String APIINFO_XML = ".\\api.xml.file\\java.applet.xml";
+String API_NAME="java.applet";
+*/
 
-		//  String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
-		//  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.beans";
+/*String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
+String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
+String APIINFO_XML = ".\\api.xml.file\\java.awt.xml";
+String API_NAME="java.awt";  
+*/
 
-	  
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
-		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
-	  
-	  
-	  
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.lang\\TestJdk.lang";
-		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
+/*String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.beans";
+	  String APIINFO_XML = ".\\api.xml.file\\java.beans.xml";
+	  String API_NAME="java.beans";	
+*/
 	  
 	  
+/*		 		  String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
+String APIINFO_XML = ".\\api.xml.file\\java.io.xml";
+String API_NAME="java.io";
+	*/  
 
-		//	 String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
-		  //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
-	  
-	  
-	  
 
-		// 		  
-	  String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
-		   //	  
-	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
-	  
-	  
+/* String projectToAnalyzePath ="..\\..\\TestJdk.lang\\TestJdk.lang";
+  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
+String APIINFO_XML = ".\\api.xml.file\\java.lang.xml";
+String API_NAME="java.lang"; 
+*/
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
-	  
-	  
+/*	 String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
+String APIINFO_XML = ".\\api.xml.file\\java.math.xml";
+String API_NAME="java.math";
+*/
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.rmi\\TestJdk.rmi";
-		  // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
-	  
-	  
 
-	//  String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
-		  // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
-	  
-	  
 
-		//  String projectToAnalyzePath ="..\\..\\TestJdk.sql\\TestJdk.sql";
-		  // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
-	  
-	  
+	 			/*  String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
+		  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
+String APIINFO_XML = ".\\api.xml.file\\java.net.xml";
+String API_NAME="java.net";
+  */
 
-		//		  String projectToAnalyzePath ="..\\..\\TestJdk.text\\TestJdk.text";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
-	  
-	  
-	//	 	  String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
-    //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
+		 /* String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
+		  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
+String APIINFO_XML = ".\\api.xml.file\\java.nio.xml";
+String API_NAME="java.nio";
+*/
 
-	  
-	  
+/*			  String projectToAnalyzePath ="..\\..\\TestJdk.rmi\\TestJdk.rmi";
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
+String APIINFO_XML = ".\\api.xml.file\\java.rmi.xml";
+String API_NAME="java.rmi";
+*/	  
+
+/*   String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
+String APIINFO_XML = ".\\api.xml.file\\java.security.xml";
+String API_NAME="java.security";
+*/
+
+/*		  String projectToAnalyzePath ="..\\..\\TestJdk.sql\\TestJdk.sql";
+   String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
+String APIINFO_XML = ".\\api.xml.file\\java.sql.xml";	
+String API_NAME="java.sql";  
+*/
+
+				/*  String projectToAnalyzePath ="..\\..\\TestJdk.text\\TestJdk.text";
+ String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
+	String APIINFO_XML = ".\\api.xml.file\\java.text.xml";
+	String API_NAME="java.text";
+	  */
+
+
+String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
+String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
+String APIINFO_XML = ".\\api.xml.file\\java.util.xml";
+String API_NAME="java.util"; 
+
 	  
 	  
 	  
@@ -113,7 +129,7 @@ public class MainDriver {
 	  
 	  
 	  // NotNullParameterStaticInstrumenter staticInstrumenter =new NotNullParameterStaticInstrumenter(file1,file2,file3);
-	  TypeRestrictionStaticInstrumenter staticInstrumenter =new TypeRestrictionStaticInstrumenter(StaticLocationPath);
+	  TypeRestrictionStaticInstrumenter staticInstrumenter =new TypeRestrictionStaticInstrumenter(StaticLocationPath,APIINFO_XML,API_NAME);
 	  
     /* add a phase to transformer pack by call Pack.add */
     Pack jtp = PackManager.v().getPack("jtp");

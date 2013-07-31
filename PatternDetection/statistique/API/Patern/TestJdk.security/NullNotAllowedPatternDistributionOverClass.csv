@@ -6,7 +6,7 @@ java.security.PolicySpi;;0
 java.security.cert.X509Certificate;;0
 java.security.spec.InvalidParameterSpecException;;0
 java.security.spec.PKCS8EncodedKeySpec;;0
-java.security.KeyStoreSpi;;2
+java.security.KeyStoreSpi;;1
 java.security.cert.CertificateNotYetValidException;;0
 java.security.SecureRandom;;0
 java.security.GeneralSecurityException;;0

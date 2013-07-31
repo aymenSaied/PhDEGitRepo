@@ -1,9 +1,0 @@
-class name;;Method name;;method Declaration;;number of detected pattern
-java.security.ProtectionDomain;;<init>;;public void <init>(java.security.CodeSource, java.security.PermissionCollection);;1
-java.security.ProtectionDomain;;<init>;;public void <init>(java.security.CodeSource, java.security.PermissionCollection, java.lang.ClassLoader, java.security.Principal[]);;1
-java.security.KeyStore;;setKeyEntry;;public final void setKeyEntry(java.lang.String, java.security.Key, char[], java.security.cert.Certificate[]) throws java.security.KeyStoreException;;1
-java.security.KeyStoreSpi;;engineSetEntry;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException;;2
-java.security.Permissions;;add;;public void add(java.security.Permission);;1
-java.security.UnresolvedPermissionCollection;;add;;public void add(java.security.Permission);;1
-java.security.Signature;;initVerify;;public final void initVerify(java.security.cert.Certificate) throws java.security.InvalidKeyException;;1
-java.security.cert.X509CertSelector;;makeGeneralNameInterface;;static sun.security.x509.GeneralNameInterface makeGeneralNameInterface(int, java.lang.Object) throws java.io.IOException;;1

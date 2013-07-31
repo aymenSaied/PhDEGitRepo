@@ -3362,17 +3362,11 @@ java.awt.image.AffineTransformOp;;<init>;;1;;public void <init>(java.awt.geom.Af
 java.awt.image.AffineTransformOp;;filter;;2;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
-*;; * ;; * ;;*;;r2;;4
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r26 = virtualinvoke r2.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i14 = virtualinvoke r2.<java.awt.image.BufferedImage: int getWidth()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i15 = virtualinvoke r2.<java.awt.image.BufferedImage: int getHeight()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
+*;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r34 = virtualinvoke r4.<java.awt.image.BufferedImage: java.awt.Graphics2D createGraphics()>();;pattern detected param  r2 must not be null it define a local r4which used in  InvokeExpr 
-java.awt.image.AffineTransformOp;;filter;;2;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
+java.awt.image.AffineTransformOp;;filter;;1;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
-*;; * ;; * ;;*;;r2;;2
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r2.<java.awt.image.WritableRaster: int getNumBands()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r2.<java.awt.image.WritableRaster: int getNumBands()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.image.AffineTransformOp;;getBounds2D;;1;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3402,14 +3396,12 @@ java.awt.image.ColorConvertOp;;filter;;1;;public final java.awt.image.BufferedIm
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-java.awt.image.ColorConvertOp;;filter;;2;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
+java.awt.image.ColorConvertOp;;filter;;1;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i4 = virtualinvoke r1.<java.awt.image.Raster: int getNumBands()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i6 = virtualinvoke r1.<java.awt.image.Raster: int getHeight()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i8 = virtualinvoke r1.<java.awt.image.Raster: int getWidth()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i16 = virtualinvoke r1.<java.awt.image.Raster: int getTransferType()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-*;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i17 = virtualinvoke r2.<java.awt.image.WritableRaster: int getTransferType()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.image.ColorConvertOp;;getBounds2D;;1;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3431,7 +3423,7 @@ java.awt.image.BandCombineOp;;<init>;;1;;public void <init>(float[][], java.awt.
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r1[0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$r5 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$r13 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
-java.awt.image.BandCombineOp;;filter;;2;;public java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
+java.awt.image.BandCombineOp;;filter;;1;;public java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
 *;; * ;; * ;;*;;r1;;9
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.awt.image.Raster: int getNumBands()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.awt.image.Raster: int getMinX()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3442,12 +3434,6 @@ java.awt.image.BandCombineOp;;filter;;2;;public java.awt.image.WritableRaster fi
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i27 = virtualinvoke r1.<java.awt.image.Raster: int getHeight()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i31 = virtualinvoke r1.<java.awt.image.Raster: int getWidth()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.awt.image.Raster: int[] getPixel(int,int,int[])>(i29, i2, r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-*;; * ;; * ;;*;;r2;;5
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i18 = virtualinvoke r2.<java.awt.image.WritableRaster: int getNumBands()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinX()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i4 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinY()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.WritableRaster: void setPixel(int,int,int[])>(i6, i4, r4);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.WritableRaster: void setPixel(int,int,int[])>(i28, i4, r4);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.image.BandCombineOp;;getBounds2D;;1;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.image.Raster: java.awt.Rectangle getBounds()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3546,21 +3532,9 @@ java.awt.image.ComponentColorModel;;getDataElements;;1;;public java.lang.Object 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$i12 = r1[$i11];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$i19 = r1[$i18];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.awt.image.ComponentColorModel;;getDataElements;;1;;public java.lang.Object getDataElements(float[], int, java.lang.Object)
-*;; * ;; * ;;*;;r1;;20
+*;; * ;; * ;;*;;r1;;8
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$f0 = r1[i2];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$f7 = r1[$i17];;pattern detected param  r1 must not be null  because used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;f8 = r3[$i21];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;$f9 = r3[i4];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;$f17 = r3[i36];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;f21 = r3[$i45];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;$f22 = r3[i5];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;$f30 = r3[i61];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;f34 = r3[$i70];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;$f35 = r3[i6];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;$f43 = r3[i84];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;f47 = r3[$i92];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;$f48 = r3[i7];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;$f54 = r3[i101];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;f57 = r1[$i107];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$f58 = r1[i8];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$f60 = r1[i112];;pattern detected param  r1 must not be null  because used in  ArrayRef 
@@ -3668,15 +3642,12 @@ java.awt.image.ConvolveOp;;filter;;2;;public final java.awt.image.BufferedImage 
 java.awt.image.ConvolveOp;;filter;;1;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.awt.image.Raster: int getNumBands()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-java.awt.image.ConvolveOp;;createCompatibleDestImage;;2;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel)
+java.awt.image.ConvolveOp;;createCompatibleDestImage;;1;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.awt.image.BufferedImage: int getWidth()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.awt.image.BufferedImage: int getHeight()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.Raster getData()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-*;; * ;; * ;;*;;r2;;2
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r2.<java.awt.image.ColorModel: java.awt.image.WritableRaster createCompatibleWritableRaster(int,int)>(i0, i1);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r2.<java.awt.image.ColorModel: boolean isAlphaPremultiplied()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.image.ConvolveOp;;createCompatibleDestRaster;;1;;public java.awt.image.WritableRaster createCompatibleDestRaster(java.awt.image.Raster)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.image.Raster: java.awt.image.WritableRaster createCompatibleWritableRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3720,14 +3691,12 @@ java.awt.image.MultiPixelPackedSampleModel;;setPixel;;2;;public void setPixel(in
 *;; * ;; * ;;*;;r2;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i5 = virtualinvoke r2.<java.awt.image.DataBuffer: int getElem(int)>(i3);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.DataBuffer: void setElem(int,int)>(i3, i29);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-java.awt.image.LookupOp;;filter;;2;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage)
+java.awt.image.LookupOp;;filter;;1;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.awt.image.BufferedImage: int getWidth()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i3 = virtualinvoke r1.<java.awt.image.BufferedImage: int getHeight()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-*;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r2.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.image.LookupOp;;filter;;2;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
 *;; * ;; * ;;*;;r1;;7
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.awt.image.Raster: int getNumBands()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3737,12 +3706,8 @@ java.awt.image.LookupOp;;filter;;2;;public final java.awt.image.WritableRaster f
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i5 = virtualinvoke r1.<java.awt.image.Raster: int getMinX()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i6 = virtualinvoke r1.<java.awt.image.Raster: int getMinY()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.awt.image.Raster: int[] getPixel(int,int,int[])>(i10, i6, r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-*;; * ;; * ;;*;;r2;;5
+*;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.WritableRaster: int getNumBands()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i15 = virtualinvoke r2.<java.awt.image.WritableRaster: int getNumBands()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i7 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinX()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i8 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinY()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.WritableRaster: void setPixel(int,int,int[])>(i11, i8, r3);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.image.LookupOp;;getBounds2D;;1;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3800,15 +3765,13 @@ java.awt.image.RescaleOp;;<init>;;2;;public void <init>(float[], float[], java.a
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$f0 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$f1 = r2[i0];;pattern detected param  r2 must not be null  because used in  ArrayRef 
-java.awt.image.RescaleOp;;filter;;2;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage)
+java.awt.image.RescaleOp;;filter;;1;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.awt.image.BufferedImage: int getWidth()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.awt.image.BufferedImage: int getHeight()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-*;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r7 = virtualinvoke r2.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-java.awt.image.RescaleOp;;filter;;2;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
+java.awt.image.RescaleOp;;filter;;1;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
 *;; * ;; * ;;*;;r1;;7
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.awt.image.Raster: int getNumBands()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.awt.image.Raster: int getWidth()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3817,11 +3780,6 @@ java.awt.image.RescaleOp;;filter;;2;;public final java.awt.image.WritableRaster 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i23 = virtualinvoke r1.<java.awt.image.Raster: int getMinX()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i24 = virtualinvoke r1.<java.awt.image.Raster: int getMinY()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.awt.image.Raster: int[] getPixel(int,int,int[])>(i10, i24, r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
-*;; * ;; * ;;*;;r2;;4
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i25 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinX()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;i26 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinY()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;r8 = virtualinvoke r2.<java.awt.image.WritableRaster: java.awt.image.SampleModel getSampleModel()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.WritableRaster: void setPixel(int,int,int[])>(i9, i26, r3);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.image.RescaleOp;;getBounds2D;;1;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 

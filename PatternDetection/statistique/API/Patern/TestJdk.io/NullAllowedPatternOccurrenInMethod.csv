@@ -53,6 +53,9 @@ java.io.File;;<init>;;1;;public void <init>(java.lang.String, java.lang.String)
 java.io.File;;<init>;;1;;public void <init>(java.io.File, java.lang.String)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r16 = <java.io.File: java.io.FileSystem fs>;;NullAllowed pattern detected param is  :r1
+java.io.File;;list;;1;;public java.lang.String[] list(java.io.FilenameFilter)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return r2;;NullAllowed pattern detected param is  :r1
 java.io.File;;createTempFile;;1;;public static java.io.File createTempFile(java.lang.String, java.lang.String, java.io.File) throws java.io.IOException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r1 = ".tmp";;NullAllowed pattern detected param is  :r1

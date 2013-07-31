@@ -268,11 +268,16 @@ public class ModifiedNullnessAnalysis  extends ForwardBranchedFlowAnalysis
 		} else if(right==NullConstant.v()) {
 			//if we assign null, well, it's null
 			out.put(left, NULL);
+
+			//TODO instruction out.put(left, NULL); dois  est enlever car si on affecte null a une paramaitre ce plus le paramaitre mais une autre variable  	
+			
+		
+		
 		} else if(left instanceof Local && right instanceof Local) {
 			out.put(left, out.get(right));
 		} else {
-			//out.put(left, BOTTOM);
-			out.put(left, TOP);
+			out.put(left, BOTTOM);
+			//out.put(left, TOP);
 		}
 	}
 
@@ -325,9 +330,9 @@ public class ModifiedNullnessAnalysis  extends ForwardBranchedFlowAnalysis
 	}
 
 	
-	public boolean mayBeNullBefore(Unit s, Immediate i) {
+	public boolean isStrictlyAlwaysNullBefore(Unit s, Immediate i) {
 		AnalysisInfo ai = (AnalysisInfo) getFlowBefore(s);
-		return ((ai.get(i)==NULL)||(ai.get(i)==TOP) );
+		return ((ai.get(i)==NULL) );
 		
 		//top
 	}

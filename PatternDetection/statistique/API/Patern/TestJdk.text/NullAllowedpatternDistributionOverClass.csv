@@ -20,9 +20,9 @@ java.text.BreakDictionary;;0
 java.text.BreakIterator;;0
 java.text.MergeCollation;;1
 java.text.DictionaryBasedBreakIterator;;0
-java.text.SimpleDateFormat;;0
+java.text.SimpleDateFormat;;2
 java.text.DateFormatSymbols;;0
-java.text.RuleBasedCollator;;2
+java.text.RuleBasedCollator;;3
 java.text.spi.CollatorProvider;;0
 java.text.RuleBasedCollationKey;;0
 java.text.RuleBasedBreakIterator;;1
@@ -32,7 +32,7 @@ java.text.Collator;;1
 java.text.spi.NumberFormatProvider;;0
 java.text.Format;;0
 java.text.Normalizer;;0
-java.text.AttributedString;;1
+java.text.AttributedString;;2
 java.text.MessageFormat;;1
 java.text.DecimalFormatSymbols;;1
 java.text.Bidi;;0

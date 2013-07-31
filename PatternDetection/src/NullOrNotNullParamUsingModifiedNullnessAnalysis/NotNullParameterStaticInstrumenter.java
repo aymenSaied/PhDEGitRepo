@@ -719,6 +719,15 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				e.printStackTrace();
 			}
 	    	 
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		}    
 	    
 		
@@ -793,7 +802,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 						
 					
 					
-				if (modifiedNullnessAnalysis.isAlwaysNullBefore(unit, l)) {
+				if (modifiedNullnessAnalysis.isStrictlyAlwaysNullBefore(unit, l)) {
 					
 					
 					if (!ParameterWaNullsAtLeastOneTime.contains(l)) {
@@ -838,14 +847,21 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				}
 				
 				
+				/*
+				
+				TODO  j'ai commenter cette boucle pour eviter les cas des paramaitre initialiser par des local 
+				car il faudrais les obtenir par une analyse plus precise brench sensitiv
+				
+				
 				for (Local l : LocalsDefinedUsingParameterSet) {
 					
 					
-					if (true/*useAndDefValnInCurrentUnit.contains(l)*/) {
+					if (true //useAndDefValnInCurrentUnit.contains(l)
+				) {
 					
 					
 					
-				if (modifiedNullnessAnalysis.isAlwaysNullBefore(unit, l)) {
+				if (modifiedNullnessAnalysis.isStrictlyAlwaysNullBefore(unit, l)) {
 					
 					if (!LocalsWaNullsAtLeastOneTime.contains(l)) {
 					
@@ -888,6 +904,10 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				
 				}	
 				}
+				
+				
+				
+		*/		
 				
 				
 				

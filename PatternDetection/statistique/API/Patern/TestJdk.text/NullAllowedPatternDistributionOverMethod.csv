@@ -1,4 +1,5 @@
 class name;;Method name;;method Declaration;;number of detected pattern
+java.text.AttributedString;;<init>;;public void <init>(java.lang.String, java.util.Map);;1
 java.text.AttributedString;;<init>;;public void <init>(java.text.AttributedCharacterIterator, int, int, java.text.AttributedCharacterIterator$Attribute[]);;1
 java.text.RuleBasedBreakIterator;;equals;;public boolean equals(java.lang.Object);;1
 java.text.MessageFormat;;parse;;public java.lang.Object[] parse(java.lang.String, java.text.ParsePosition);;1
@@ -6,9 +7,12 @@ java.text.FieldPosition;;equals;;public boolean equals(java.lang.Object);;1
 java.text.ParsePosition;;equals;;public boolean equals(java.lang.Object);;1
 java.text.ChoiceFormat;;equals;;public boolean equals(java.lang.Object);;1
 java.text.NumberFormat;;equals;;public boolean equals(java.lang.Object);;1
+java.text.RuleBasedCollator;;compare;;public synchronized int compare(java.lang.String, java.lang.String);;1
 java.text.RuleBasedCollator;;getCollationKey;;public synchronized java.text.CollationKey getCollationKey(java.lang.String);;1
 java.text.RuleBasedCollator;;equals;;public boolean equals(java.lang.Object);;1
 java.text.Collator;;equals;;public boolean equals(java.lang.Object);;1
+java.text.SimpleDateFormat;;<init>;;public void <init>(java.lang.String, java.util.Locale);;1
+java.text.SimpleDateFormat;;<init>;;public void <init>(java.lang.String, java.text.DateFormatSymbols);;1
 java.text.DecimalFormat;;equals;;public boolean equals(java.lang.Object);;1
 java.text.DecimalFormatSymbols;;equals;;public boolean equals(java.lang.Object);;1
 java.text.MergeCollation;;addPattern;;public void addPattern(java.lang.String) throws java.text.ParseException;;1

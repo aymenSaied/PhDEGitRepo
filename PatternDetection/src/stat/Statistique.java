@@ -16,6 +16,7 @@ import java.util.Set;
 import javadoc.api.marshalling.ApiInfo;
 import javadoc.api.marshalling.ClassInfo;
 import javadoc.api.marshalling.MethodInfo;
+import javadoc.api.marshalling.ParameterInfo;
 import javadoc.api.marshalling.pattern.PaternInfo;
 
 import javax.xml.bind.JAXBContext;
@@ -291,15 +292,18 @@ public class Statistique {
 	public void statistiqueForPatternAndJavaDocInMethod(
 			String apiXmlFile,
 			String apiname,
+			String patternName,
 			String className,
 			String methodSignature ,
 			String statistiqueLocation,
 			String file,
-			Map<Local, String> ParameterLimitedRangeComment) throws IOException, JAXBException{
+			Map<Local, String> ParameterLimitedRangeComment,
+			HashMap<Local, Integer> methodParameterToStringId
+			) throws IOException, JAXBException{
 		
 		
 		
-		String APIINFO_XML = ".//patenrn.xml.file//"+apiname+".xml";
+		String APIINFO_XML = ".//patenrn.xml.file//"+apiname+"//"+patternName+apiname+".xml";
 		
 		
 		
@@ -343,7 +347,22 @@ public class Statistique {
 			while (parameters.hasNext()) {
 				Local param = (Local) parameters.next();
 				String paternComment=ParameterLimitedRangeComment.get(param);
-
+				
+				// la ligne suivante pour ajoute @parami dans le commment du pater pour savaoir quel est le param  oubin le non du paramaitre 
+				
+				
+				String parameterNameOrIndex ="@param "+methodParameterToStringId.get(param).toString();
+				
+				
+				if (parametersInfoList.size()>0) {
+					
+					
+					parameterNameOrIndex =parametersInfoList.get(methodParameterToStringId.get(param)).getName();
+					
+				}
+				
+				
+				paternComment += "  the pattern was detected for parameter "+ parameterNameOrIndex; 
 			
 				patternDistributionOverMethod.println(className + ";;" + methodSignature
 						+ ";;" + param + ";;"
@@ -398,8 +417,22 @@ public class Statistique {
 			while (parameters.hasNext()) {
 				Local param = (Local) parameters.next();
 				String paternComment=ParameterLimitedRangeComment.get(param);
-
-			
+// la ligne suivante pour ajoute @parami dans le commment du pater pour savaoir quel est le param  oubin le non du paramaitre 
+				
+				
+				String parameterNameOrIndex ="@param "+methodParameterToStringId.get(param).toString();
+				
+				
+				if (parametersInfoList.size()>0) {
+					
+					
+					parameterNameOrIndex =parametersInfoList.get(methodParameterToStringId.get(param)).getName();
+					
+				}
+				
+				
+				paternComment += "  the pattern was detected for parameter "+ parameterNameOrIndex; 
+							
 				patternDistributionOverMethod.println(className + ";;" + methodSignature
 						+ ";;" + param + ";;"
 						+ paternComment+ ";;" + javadoc);
@@ -441,7 +474,7 @@ public class Statistique {
 	}
 	
 	
-	
+	static private ArrayList<ParameterInfo> parametersInfoList;
 	
 static	 String findComment(String methodSignatureTofind,String apiXmlFile) throws JAXBException, FileNotFoundException {
 		  
@@ -472,6 +505,10 @@ static	 String findComment(String methodSignatureTofind,String apiXmlFile) throw
 		  
 		  Boolean methodFound =false;
 		  String comment="no javadoc";
+		  parametersInfoList = new ArrayList<ParameterInfo>();  /* initialisation dans cette position pour eviter 
+		  que les valeur de la recherech presedante reste dans parametersInfoList car c'est une variable statique */ 
+		  
+		  
 		  ArrayList<ClassInfo>clasList = api.getListclass();
 		  Iterator<ClassInfo> itClassInfo= clasList.iterator();
 		  
@@ -491,6 +528,15 @@ static	 String findComment(String methodSignatureTofind,String apiXmlFile) throw
 					methodFound=true;
 					comment=methodInfo.getCommentText();
 					//TODO normalement ic je teste sur le commentaire vide pour afecter comment="no javadoc" si comentaire vide
+					
+					
+					if (comment.equals("")) {
+						
+						  comment = " No javadoc for this method " ;
+						  
+					}
+					
+					parametersInfoList= methodInfo.getParameterList();
 				} 
 				
 			}
@@ -500,6 +546,10 @@ static	 String findComment(String methodSignatureTofind,String apiXmlFile) throw
 		  
 		  System.out.println("##############");
 		  if (methodFound) {
+			  
+			  
+			  
+			  
 			  
 			System.out.println("the method is: "+methodSignatureTofind);
 			System.out.println("javadoc is:  "+comment);

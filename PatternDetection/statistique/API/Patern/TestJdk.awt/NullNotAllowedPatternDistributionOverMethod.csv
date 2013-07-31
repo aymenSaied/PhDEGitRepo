@@ -586,7 +586,7 @@ java.awt.geom.RoundRectIterator;;currentSegment;;public int currentSegment(doubl
 java.awt.image.AffineTransformOp;;<init>;;public void <init>(java.awt.geom.AffineTransform, java.awt.RenderingHints);;1
 java.awt.image.AffineTransformOp;;<init>;;public void <init>(java.awt.geom.AffineTransform, int);;1
 java.awt.image.AffineTransformOp;;filter;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);;2
-java.awt.image.AffineTransformOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;2
+java.awt.image.AffineTransformOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;1
 java.awt.image.AffineTransformOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage);;1
 java.awt.image.AffineTransformOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster);;1
 java.awt.image.AffineTransformOp;;createCompatibleDestImage;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);;1
@@ -595,13 +595,13 @@ java.awt.image.AffineTransformOp;;validateTransform;;void validateTransform(java
 java.awt.image.ColorConvertOp;;<init>;;public void <init>(java.awt.color.ColorSpace, java.awt.RenderingHints);;1
 java.awt.image.ColorConvertOp;;<init>;;public void <init>(java.awt.color.ICC_Profile[], java.awt.RenderingHints);;1
 java.awt.image.ColorConvertOp;;filter;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);;1
-java.awt.image.ColorConvertOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;2
+java.awt.image.ColorConvertOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;1
 java.awt.image.ColorConvertOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage);;1
 java.awt.image.ColorConvertOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster);;1
 java.awt.image.ColorConvertOp;;createCompatibleDestRaster;;public java.awt.image.WritableRaster createCompatibleDestRaster(java.awt.image.Raster);;1
 java.awt.image.ColorConvertOp;;getPoint2D;;public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);;1
 java.awt.image.BandCombineOp;;<init>;;public void <init>(float[][], java.awt.RenderingHints);;1
-java.awt.image.BandCombineOp;;filter;;public java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;2
+java.awt.image.BandCombineOp;;filter;;public java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;1
 java.awt.image.BandCombineOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster);;1
 java.awt.image.BandCombineOp;;createCompatibleDestRaster;;public java.awt.image.WritableRaster createCompatibleDestRaster(java.awt.image.Raster);;1
 java.awt.image.BandCombineOp;;getPoint2D;;public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);;1
@@ -644,7 +644,7 @@ java.awt.image.ByteLookupTable;;lookupPixel;;public int[] lookupPixel(int[], int
 java.awt.image.ByteLookupTable;;lookupPixel;;public byte[] lookupPixel(byte[], byte[]);;1
 java.awt.image.ConvolveOp;;filter;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);;2
 java.awt.image.ConvolveOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;1
-java.awt.image.ConvolveOp;;createCompatibleDestImage;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);;2
+java.awt.image.ConvolveOp;;createCompatibleDestImage;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);;1
 java.awt.image.ConvolveOp;;createCompatibleDestRaster;;public java.awt.image.WritableRaster createCompatibleDestRaster(java.awt.image.Raster);;1
 java.awt.image.ConvolveOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage);;1
 java.awt.image.ConvolveOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster);;1
@@ -656,7 +656,7 @@ java.awt.image.MultiPixelPackedSampleModel;;getDataElements;;public java.lang.Ob
 java.awt.image.MultiPixelPackedSampleModel;;getPixel;;public int[] getPixel(int, int, int[], java.awt.image.DataBuffer);;1
 java.awt.image.MultiPixelPackedSampleModel;;setDataElements;;public void setDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);;1
 java.awt.image.MultiPixelPackedSampleModel;;setPixel;;public void setPixel(int, int, int[], java.awt.image.DataBuffer);;2
-java.awt.image.LookupOp;;filter;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);;2
+java.awt.image.LookupOp;;filter;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);;1
 java.awt.image.LookupOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;2
 java.awt.image.LookupOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage);;1
 java.awt.image.LookupOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster);;1
@@ -672,8 +672,8 @@ java.awt.image.PixelGrabber;;<init>;;public void <init>(java.awt.Image, int, int
 java.awt.image.PixelGrabber;;setPixels;;public void setPixels(int, int, int, int, java.awt.image.ColorModel, byte[], int, int);;2
 java.awt.image.PixelGrabber;;setPixels;;public void setPixels(int, int, int, int, java.awt.image.ColorModel, int[], int, int);;2
 java.awt.image.RescaleOp;;<init>;;public void <init>(float[], float[], java.awt.RenderingHints);;2
-java.awt.image.RescaleOp;;filter;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);;2
-java.awt.image.RescaleOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;2
+java.awt.image.RescaleOp;;filter;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);;1
+java.awt.image.RescaleOp;;filter;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);;1
 java.awt.image.RescaleOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage);;1
 java.awt.image.RescaleOp;;getBounds2D;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster);;1
 java.awt.image.RescaleOp;;createCompatibleDestImage;;public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);;1

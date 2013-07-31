@@ -128,9 +128,7 @@ java.security.KeyStore;;getInstance;;1;;public static java.security.KeyStore get
 java.security.KeyStore;;getEntry;;1;;public final java.security.KeyStore$Entry getEntry(java.lang.String, java.security.KeyStore$ProtectionParameter) throws java.security.NoSuchAlgorithmException, java.security.UnrecoverableEntryException, java.security.KeyStoreException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
-java.security.KeyStoreSpi;;engineSetEntry;;2;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException
-*;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r7 = virtualinvoke r4.<java.security.KeyStore$PasswordProtection: char[] getPassword()>();;pattern detected param  r3 must not be null it define a local r4which used in  InvokeExpr 
+java.security.KeyStoreSpi;;engineSetEntry;;1;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException
 *;; * ;; * ;;*;;r2;;5
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r9 = virtualinvoke r5.<java.security.KeyStore$TrustedCertificateEntry: java.security.cert.Certificate getTrustedCertificate()>();;pattern detected param  r2 must not be null it define a local r5which used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r13 = virtualinvoke $r12.<java.security.KeyStore$PrivateKeyEntry: java.security.PrivateKey getPrivateKey()>();;pattern detected param  r2 must not be null it define a local $r12which used in  InvokeExpr 

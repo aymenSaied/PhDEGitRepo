@@ -5,6 +5,12 @@ java.beans.PropertyChangeSupport;;addPropertyChangeListener;;1;;public void addP
 java.beans.PropertyChangeSupport;;removePropertyChangeListener;;1;;public void removePropertyChangeListener(java.beans.PropertyChangeListener)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.beans.PropertyChangeSupport;;addPropertyChangeListener;;1;;public void addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.beans.PropertyChangeSupport;;removePropertyChangeListener;;1;;public void removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
 java.beans.FeatureDescriptor;;getSoftReference;;1;;static java.lang.ref.Reference getSoftReference(java.lang.Object)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r1 = null;;NullAllowed pattern detected param is  :r0
@@ -17,6 +23,9 @@ java.beans.FeatureDescriptor;;getReturnType;;1;;static java.lang.Class getReturn
 java.beans.FeatureDescriptor;;getParameterTypes;;1;;static java.lang.Class[] getParameterTypes(java.lang.Class, java.lang.reflect.Method)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r0 = virtualinvoke r1.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;NullAllowed pattern detected param is  :r0
+java.beans.EventSetDescriptor;;<init>;;1;;public void <init>(java.lang.Class, java.lang.String, java.lang.Class, java.lang.String[], java.lang.String, java.lang.String, java.lang.String) throws java.beans.IntrospectionException
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r9 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r3
 java.beans.PropertyDescriptor;;setReadMethod;;1;;public synchronized void setReadMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;r0.<java.beans.PropertyDescriptor: java.lang.String readMethodName> = null;;NullAllowed pattern detected param is  :r1
@@ -38,8 +47,8 @@ java.beans.Introspector;;findMethod;;1;;static java.lang.reflect.Method findMeth
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r1
 java.beans.Introspector;;isSubclass;;1;;static boolean isSubclass(java.lang.Class, java.lang.Class)
-*;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;return 0;;NullAllowed pattern detected param is  :r0 it initialize local r2
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
 java.beans.ChangeListenerMap;;set;;1;;public final void set(java.lang.String, java.util.EventListener[])
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r7 = r0.<java.beans.ChangeListenerMap: java.util.Map map>;;NullAllowed pattern detected param is  :r2
@@ -56,6 +65,12 @@ java.beans.VetoableChangeSupport;;addVetoableChangeListener;;1;;public void addV
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
 java.beans.VetoableChangeSupport;;removeVetoableChangeListener;;1;;public void removeVetoableChangeListener(java.beans.VetoableChangeListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.beans.VetoableChangeSupport;;addVetoableChangeListener;;1;;public void addVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener)
+*;; * ;; * ;;*;;r1;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
+java.beans.VetoableChangeSupport;;removeVetoableChangeListener;;1;;public void removeVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return;;NullAllowed pattern detected param is  :r1
 java.beans.MetaData;;getPersistenceDelegate;;1;;public static synchronized java.beans.PersistenceDelegate getPersistenceDelegate(java.lang.Class)

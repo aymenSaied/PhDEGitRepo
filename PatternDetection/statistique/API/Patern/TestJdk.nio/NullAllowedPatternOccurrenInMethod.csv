@@ -14,6 +14,9 @@ java.nio.channels.AsynchronousServerSocketChannel;;open;;1;;public static java.n
 java.nio.channels.AsynchronousSocketChannel;;open;;1;;public static java.nio.channels.AsynchronousSocketChannel open(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r2 = staticinvoke <java.nio.channels.spi.AsynchronousChannelProvider: java.nio.channels.spi.AsynchronousChannelProvider provider()>();;NullAllowed pattern detected param is  :r0
+java.nio.file.InvalidPathException;;<init>;;1;;public void <init>(java.lang.String, java.lang.String, int)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
 java.nio.file.SimpleFileVisitor;;postVisitDirectory;;1;;public java.nio.file.FileVisitResult postVisitDirectory(java.lang.Object, java.io.IOException) throws java.io.IOException
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r4 = <java.nio.file.FileVisitResult: java.nio.file.FileVisitResult CONTINUE>;;NullAllowed pattern detected param is  :r2

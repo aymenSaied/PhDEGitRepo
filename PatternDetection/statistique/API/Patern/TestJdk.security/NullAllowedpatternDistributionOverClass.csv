@@ -15,7 +15,7 @@ java.security.SecureClassLoader;;0
 java.security.cert.LDAPCertStoreParameters;;0
 java.security.AlgorithmParameters;;0
 java.security.Permissions;;0
-java.security.cert.CertificateRevokedException;;0
+java.security.cert.CertificateRevokedException;;1
 java.security.UnresolvedPermissionCollection;;0
 java.security.IdentityScope;;0
 java.security.cert.CertificateException;;0
@@ -41,7 +41,7 @@ java.security.spec.RSAPrivateCrtKeySpec;;0
 java.security.cert.PKIXCertPathChecker;;0
 java.security.cert.CRL;;0
 java.security.cert.CertStore;;0
-java.security.Timestamp;;0
+java.security.Timestamp;;1
 java.security.spec.ECFieldF2m;;0
 java.security.cert.CRLReason;;0
 java.security.AlgorithmParametersSpi;;0
@@ -55,15 +55,15 @@ java.security.NoSuchProviderException;;0
 java.security.DigestOutputStream;;0
 java.security.Signature;;0
 java.security.KeyException;;0
-java.security.cert.TrustAnchor;;0
+java.security.cert.TrustAnchor;;1
 java.security.cert.X509CRLSelector;;2
 java.security.KeyManagementException;;0
-java.security.spec.ECPoint;;0
+java.security.spec.ECPoint;;1
 java.security.SignatureException;;0
 java.security.NoSuchAlgorithmException;;0
 java.security.cert.CertPathHelperImpl;;0
 java.security.cert.CertPathValidatorSpi;;0
-java.security.KeyRep;;0
+java.security.KeyRep;;1
 java.security.cert.CollectionCertStoreParameters;;0
 java.security.Signer;;0
 java.security.CodeSource;;1
@@ -75,7 +75,7 @@ java.security.cert.CertificateFactorySpi;;0
 java.security.Permission;;0
 java.security.KeyPair;;0
 java.security.cert.X509CRL;;0
-java.security.KeyStore;;0
+java.security.KeyStore;;2
 java.security.DigestInputStream;;0
 java.security.spec.InvalidKeySpecException;;0
 java.security.PermissionCollection;;0
@@ -106,7 +106,7 @@ java.security.spec.ECPrivateKeySpec;;0
 java.security.spec.RSAOtherPrimeInfo;;0
 java.security.SignatureSpi;;0
 java.security.URIParameter;;0
-java.security.cert.X509CertSelector;;15
+java.security.cert.X509CertSelector;;16
 java.security.cert.CertStoreException;;0
 java.security.cert.CertificateExpiredException;;0
 java.security.cert.CertPath;;0

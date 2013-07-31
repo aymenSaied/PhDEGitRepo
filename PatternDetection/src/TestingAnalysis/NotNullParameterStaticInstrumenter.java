@@ -80,6 +80,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	static PrintWriter detectedPattern;
 	static HashMap<String, Integer> patternDistributionOverClasses;
 	static ArrayList<Local> methodParameterChain;
+	static HashMap<Local, String> methodParameterToStringId ;
 	private ArrayList<Local>numericParameterChain;
 	
 
@@ -164,19 +165,25 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		UnitGraph cfg = new ExceptionalUnitGraph(body);
 
 		methodParameterChain = new ArrayList<Local>();
-
+		methodParameterToStringId = new HashMap<Local, String>();
 		
 		
 		for (int j = 0; j < method.getParameterCount(); j++) {
 
 			methodParameterChain.add(body.getParameterLocal(j));
 
+			methodParameterToStringId.put(body.getParameterLocal(j), "@parameter "+j);
+			
+			
 		}
 
+		
+		
+		
 		for (Local l : methodParameterChain) {
 			
 			
-			System.out.println("-------->methodParameter:    "+l );
+			System.out.println("-------->methodParameter:    "+l  +" id :"+ methodParameterToStringId.get(l));
 			
 		}
 		

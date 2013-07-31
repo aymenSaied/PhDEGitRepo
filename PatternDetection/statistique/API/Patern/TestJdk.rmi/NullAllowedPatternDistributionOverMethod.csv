@@ -1,7 +1,5 @@
 class name;;Method name;;method Declaration;;number of detected pattern
 java.rmi.MarshalledObject;;<init>;;public void <init>(java.lang.Object) throws java.io.IOException;;1
-java.rmi.MarshalledObject;;equals;;public boolean equals(java.lang.Object);;1
-java.rmi.registry.LocateRegistry;;getRegistry;;public static java.rmi.registry.Registry getRegistry(java.lang.String, int, java.rmi.server.RMIClientSocketFactory) throws java.rmi.RemoteException;;2
+java.rmi.registry.LocateRegistry;;getRegistry;;public static java.rmi.registry.Registry getRegistry(java.lang.String, int, java.rmi.server.RMIClientSocketFactory) throws java.rmi.RemoteException;;1
 java.rmi.server.RemoteServer;;setLog;;public static void setLog(java.io.OutputStream);;1
-java.rmi.server.RemoteObject;;toStub;;public static java.rmi.Remote toStub(java.rmi.Remote) throws java.rmi.NoSuchObjectException;;1
 java.rmi.server.RMIClassLoader;;loadClass;;public static java.lang.Class loadClass(java.net.URL, java.lang.String) throws java.net.MalformedURLException, java.lang.ClassNotFoundException;;1

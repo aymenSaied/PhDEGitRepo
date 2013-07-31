@@ -22,10 +22,10 @@ java.awt.font.StyledParagraph;;6
 java.awt.KeyboardFocusManager;;12
 java.awt.print.PrinterIOException;;0
 java.awt.print.PrinterJob;;2
-java.awt.image.RescaleOp;;11
+java.awt.image.RescaleOp;;9
 java.awt.datatransfer.Clipboard;;2
 java.awt.ModalEventFilter;;3
-java.awt.image.BandCombineOp;;6
+java.awt.image.BandCombineOp;;5
 java.awt.geom.Area;;9
 java.awt.image.ComponentColorModel;;8
 java.awt.event.MouseEvent;;1
@@ -84,7 +84,7 @@ java.awt.image.DataBufferByte;;2
 java.awt.font.ImageGraphicAttribute;;2
 java.awt.geom.RoundRectIterator;;3
 java.awt.geom.RectIterator;;3
-java.awt.image.AffineTransformOp;;11
+java.awt.image.AffineTransformOp;;10
 java.awt.color.ICC_Profile;;7
 java.awt.Scrollbar;;1
 java.awt.image.DataBufferFloat;;2
@@ -107,7 +107,7 @@ java.awt.GridBagLayout;;7
 java.awt.image.AreaAveragingScaleFilter;;0
 java.awt.dnd.DragSourceDragEvent;;0
 java.awt.dnd.SerializationTester;;0
-java.awt.image.ColorConvertOp;;9
+java.awt.image.ColorConvertOp;;8
 java.awt.font.CharArrayIterator;;0
 java.awt.image.RGBImageFilter;;6
 java.awt.SystemColor;;0
@@ -199,7 +199,7 @@ java.awt.image.ShortLookupTable;;3
 java.awt.print.PrinterAbortException;;0
 java.awt.image.CropImageFilter;;1
 java.awt.image.ReplicateScaleFilter;;3
-java.awt.image.ConvolveOp;;9
+java.awt.image.ConvolveOp;;8
 java.awt.PageAttributes;;7
 java.awt.GradientPaint;;0
 java.awt.RenderingHints;;4
@@ -263,5 +263,5 @@ java.awt.AWTEvent;;2
 java.awt.geom.ArcIterator;;3
 java.awt.im.InputContext;;0
 java.awt.Container;;14
-java.awt.image.LookupOp;;9
+java.awt.image.LookupOp;;8
 java.awt.color.ICC_ProfileGray;;0

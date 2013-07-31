@@ -1,4 +1,0 @@
-class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
-java.math.BigDecimal;;<init>;;1;;public void <init>(java.math.BigInteger)
-*;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;NullAllowed for local initialized from param;;goto [?= r0.<java.math.BigDecimal: java.math.BigInteger intVal> = $r3];;NullAllowed pattern detected param is  :r1 it initialize local $r3

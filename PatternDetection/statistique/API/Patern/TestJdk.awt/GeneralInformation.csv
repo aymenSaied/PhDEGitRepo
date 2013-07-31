@@ -1,13 +1,3 @@
 number of class;;number of Method;;NullNotAllowed;;number of detected pattern
-266;;4844;;NullNotAllowed;;795
-*;;*;;NullAllowed;;1913
-*;;*;;RestrictedParameterType;;8
-*;;*;;RestrictedParameterType;;39
-*;;*;;LimitedParameterRange;;135
-*;;*;;LimitedParameterRange;;140
-*;;*;;LimitedParameterRange;;136
-*;;*;;LimitedParameterRange;;136
-*;;*;;LimitedParameterRange;;135
-*;;*;;LimitedParameterRange;;135
-*;;*;;LimitedParameterRange;;135
-*;;*;;LimitedParameterRange;;135
+266;;4844;;NullNotAllowed;;788
+*;;*;;NullAllowed;;243

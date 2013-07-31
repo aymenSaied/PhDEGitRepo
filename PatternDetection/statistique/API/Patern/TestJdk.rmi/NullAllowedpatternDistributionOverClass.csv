@@ -8,7 +8,7 @@ java.rmi.server.ServerNotActiveException;;0
 java.rmi.server.ServerCloneException;;0
 java.rmi.UnmarshalException;;0
 java.rmi.server.Operation;;0
-java.rmi.registry.LocateRegistry;;2
+java.rmi.registry.LocateRegistry;;1
 java.rmi.ServerError;;0
 java.rmi.ServerException;;0
 java.rmi.server.RMIClassLoader;;1
@@ -34,8 +34,8 @@ java.rmi.server.LogStream;;0
 java.rmi.dgc.VMID;;0
 java.rmi.UnexpectedException;;0
 java.rmi.dgc.Lease;;0
-java.rmi.server.RemoteObject;;1
-java.rmi.MarshalledObject;;2
+java.rmi.server.RemoteObject;;0
+java.rmi.MarshalledObject;;1
 java.rmi.RMISecurityException;;0
 java.rmi.MarshalException;;0
 java.rmi.AccessException;;0

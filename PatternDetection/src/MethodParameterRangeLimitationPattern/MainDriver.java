@@ -41,7 +41,7 @@ public class MainDriver {
 	   
 	  
 	  
-	    		  /*String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
+	    		/*  String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
 	     	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
 	  String APIINFO_XML = ".\\api.xml.file\\java.applet.xml";
 	  String API_NAME="java.applet";
@@ -54,39 +54,39 @@ public class MainDriver {
 */
 
 	  
-	  /*String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
+	 /* String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
 			  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.beans";
 			  String APIINFO_XML = ".\\api.xml.file\\java.beans.xml";
 			  String API_NAME="java.beans";	
-	  */
+	*/  
 			  
 			  
-/*		 		  String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
+		 		/*  String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
 		   	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
 	  String APIINFO_XML = ".\\api.xml.file\\java.io.xml";
 	  String API_NAME="java.io";
-*/	  
+	  */
 	  
 
 		  /* String projectToAnalyzePath ="..\\..\\TestJdk.lang\\TestJdk.lang";
 		     String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
 	  String APIINFO_XML = ".\\api.xml.file\\java.lang.xml";
 	  String API_NAME="java.lang";
-	 */ 
+	  */
 
-			 String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
+			 /*String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
 		  	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
 	  String APIINFO_XML = ".\\api.xml.file\\java.math.xml";
 	  String API_NAME="java.math";
-	  
+	  */
 	  
 	  
 
-	/*	 			  String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
+		 			/*  String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
 		   		  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
 	  String APIINFO_XML = ".\\api.xml.file\\java.net.xml";
 	  String API_NAME="java.net";
-	*/  
+	  */
 
 		/*		  String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
 		  		  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
@@ -118,13 +118,13 @@ public class MainDriver {
 	  		String API_NAME="java.text";
 */	  
 		 
-	 /* 
+	  
 	  String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
     	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
     	  String APIINFO_XML = ".\\api.xml.file\\java.util.xml";
     	  String API_NAME="java.util"; 
 	  
-	  */
+	  
 	  
 	  
 	  

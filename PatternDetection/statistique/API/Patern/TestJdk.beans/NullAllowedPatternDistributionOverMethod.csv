@@ -1,10 +1,13 @@
 class name;;Method name;;method Declaration;;number of detected pattern
 java.beans.PropertyChangeSupport;;addPropertyChangeListener;;public void addPropertyChangeListener(java.beans.PropertyChangeListener);;1
 java.beans.PropertyChangeSupport;;removePropertyChangeListener;;public void removePropertyChangeListener(java.beans.PropertyChangeListener);;1
+java.beans.PropertyChangeSupport;;addPropertyChangeListener;;public void addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);;1
+java.beans.PropertyChangeSupport;;removePropertyChangeListener;;public void removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);;1
 java.beans.FeatureDescriptor;;getSoftReference;;static java.lang.ref.Reference getSoftReference(java.lang.Object);;1
 java.beans.FeatureDescriptor;;getWeakReference;;static java.lang.ref.Reference getWeakReference(java.lang.Object);;1
 java.beans.FeatureDescriptor;;getReturnType;;static java.lang.Class getReturnType(java.lang.Class, java.lang.reflect.Method);;1
 java.beans.FeatureDescriptor;;getParameterTypes;;static java.lang.Class[] getParameterTypes(java.lang.Class, java.lang.reflect.Method);;1
+java.beans.EventSetDescriptor;;<init>;;public void <init>(java.lang.Class, java.lang.String, java.lang.Class, java.lang.String[], java.lang.String, java.lang.String, java.lang.String) throws java.beans.IntrospectionException;;1
 java.beans.PropertyDescriptor;;setReadMethod;;public synchronized void setReadMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException;;1
 java.beans.PropertyDescriptor;;setWriteMethod;;public synchronized void setWriteMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException;;1
 java.beans.PropertyDescriptor;;compareMethods;;boolean compareMethods(java.lang.reflect.Method, java.lang.reflect.Method);;2
@@ -18,6 +21,8 @@ java.beans.Statement;;<init>;;public void <init>(java.lang.Object, java.lang.Str
 java.beans.Statement;;instanceName;;java.lang.String instanceName(java.lang.Object);;1
 java.beans.VetoableChangeSupport;;addVetoableChangeListener;;public void addVetoableChangeListener(java.beans.VetoableChangeListener);;1
 java.beans.VetoableChangeSupport;;removeVetoableChangeListener;;public void removeVetoableChangeListener(java.beans.VetoableChangeListener);;1
+java.beans.VetoableChangeSupport;;addVetoableChangeListener;;public void addVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener);;1
+java.beans.VetoableChangeSupport;;removeVetoableChangeListener;;public void removeVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener);;1
 java.beans.MetaData;;getPersistenceDelegate;;public static synchronized java.beans.PersistenceDelegate getPersistenceDelegate(java.lang.Class);;1
 java.beans.NameGenerator;;instanceName;;public java.lang.String instanceName(java.lang.Object);;1
 java.beans.XMLDecoder;;setExceptionListener;;public void setExceptionListener(java.beans.ExceptionListener);;1

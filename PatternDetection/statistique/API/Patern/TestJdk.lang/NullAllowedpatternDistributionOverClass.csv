@@ -74,7 +74,7 @@ java.lang.management.LockInfo;;0
 java.lang.IllegalAccessException;;0
 java.lang.ClassLoaderHelper;;0
 java.lang.InheritableThreadLocal;;0
-java.lang.instrument.ClassDefinition;;0
+java.lang.instrument.ClassDefinition;;1
 java.lang.invoke.MethodHandles;;1
 java.lang.management.MemoryUsage;;1
 java.lang.ref.PhantomReference;;0

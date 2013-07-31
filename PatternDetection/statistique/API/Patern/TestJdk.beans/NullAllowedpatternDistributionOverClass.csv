@@ -10,10 +10,10 @@ java.beans.SimpleBeanInfo;;0
 java.beans.beancontext.BeanContextMembershipEvent;;0
 java.beans.Introspector;;3
 java.beans.PropertyVetoException;;0
-java.beans.PropertyChangeSupport;;2
+java.beans.PropertyChangeSupport;;4
 java.beans.FeatureDescriptor;;4
 java.beans.PropertyEditorSupport;;0
-java.beans.VetoableChangeSupport;;2
+java.beans.VetoableChangeSupport;;4
 java.beans.EventHandler;;0
 java.beans.VetoableChangeListenerProxy;;0
 java.beans.Beans;;1
@@ -27,7 +27,7 @@ java.beans.IntrospectionException;;0
 java.beans.PropertyEditorManager;;0
 java.beans.Statement;;2
 java.beans.MetaData;;1
-java.beans.EventSetDescriptor;;0
+java.beans.EventSetDescriptor;;1
 java.beans.beancontext.BeanContextServiceAvailableEvent;;0
 java.beans.NameGenerator;;1
 java.beans.ThreadGroupContext;;0

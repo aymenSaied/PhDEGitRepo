@@ -23,6 +23,7 @@ java.lang.ProcessImpl;;start;;static java.lang.Process start(java.lang.String[],
 java.lang.ProcessEnvironment;;toEnvironmentBlock;;static java.lang.String toEnvironmentBlock(java.util.Map);;1
 java.lang.StringCoding;;decode;;static char[] decode(java.lang.String, byte[], int, int) throws java.io.UnsupportedEncodingException;;1
 java.lang.StringCoding;;encode;;static byte[] encode(java.lang.String, char[], int, int) throws java.io.UnsupportedEncodingException;;1
+java.lang.instrument.ClassDefinition;;<init>;;public void <init>(java.lang.Class, byte[]);;1
 java.lang.invoke.BoundMethodHandle;;checkReferenceArgument;;static final java.lang.Object checkReferenceArgument(java.lang.Object, java.lang.invoke.MethodHandle, int);;1
 java.lang.invoke.BoundMethodHandle;;bindPrimitiveArgument;;static final java.lang.Object bindPrimitiveArgument(java.lang.Object, java.lang.invoke.MethodHandle, int);;1
 java.lang.invoke.BoundMethodHandle;;badBoundArgumentException;;static final java.lang.RuntimeException badBoundArgumentException(java.lang.Object, java.lang.invoke.MethodHandle, int);;1

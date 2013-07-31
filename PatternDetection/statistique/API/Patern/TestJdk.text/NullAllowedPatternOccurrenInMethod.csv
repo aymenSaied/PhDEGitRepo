@@ -1,4 +1,7 @@
 class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
+java.text.AttributedString;;<init>;;1;;public void <init>(java.lang.String, java.util.Map)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r7 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
 java.text.AttributedString;;<init>;;1;;public void <init>(java.text.AttributedCharacterIterator, int, int, java.text.AttributedCharacterIterator$Attribute[])
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r13 = interfaceinvoke r1.<java.text.AttributedCharacterIterator: java.util.Set getAllAttributeKeys()>();;NullAllowed pattern detected param is  :r2
@@ -20,6 +23,9 @@ java.text.ChoiceFormat;;equals;;1;;public boolean equals(java.lang.Object)
 java.text.NumberFormat;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.RuleBasedCollator;;compare;;1;;public synchronized int compare(java.lang.String, java.lang.String)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
 java.text.RuleBasedCollator;;getCollationKey;;1;;public synchronized java.text.CollationKey getCollationKey(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r1
@@ -29,6 +35,12 @@ java.text.RuleBasedCollator;;equals;;1;;public boolean equals(java.lang.Object)
 java.text.Collator;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1
+java.text.SimpleDateFormat;;<init>;;1;;public void <init>(java.lang.String, java.util.Locale)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
+java.text.SimpleDateFormat;;<init>;;1;;public void <init>(java.lang.String, java.text.DateFormatSymbols)
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
 java.text.DecimalFormat;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return 0;;NullAllowed pattern detected param is  :r1

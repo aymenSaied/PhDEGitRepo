@@ -71,6 +71,9 @@ java.lang.StringCoding;;decode;;1;;static char[] decode(java.lang.String, byte[]
 java.lang.StringCoding;;encode;;1;;static byte[] encode(java.lang.String, char[], int, int) throws java.io.UnsupportedEncodingException
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;$r7 = "ISO-8859-1";;NullAllowed pattern detected param is  :r0
+java.lang.instrument.ClassDefinition;;<init>;;1;;public void <init>(java.lang.Class, byte[])
+*;; * ;; * ;;*;;r2;;1
+*;;*;;*;;*;;*;;*;;NullAllowed for param;;$r3 = new java.lang.NullPointerException;;NullAllowed pattern detected param is  :r2
 java.lang.invoke.BoundMethodHandle;;checkReferenceArgument;;1;;static final java.lang.Object checkReferenceArgument(java.lang.Object, java.lang.invoke.MethodHandle, int)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;NullAllowed for param;;return null;;NullAllowed pattern detected param is  :r0

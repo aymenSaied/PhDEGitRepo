@@ -1,3 +1,6 @@
+sans worrning ----> avec worning 
+
+
 java.applet
 	nb class :1
 	nb methode: 27
@@ -68,4 +71,4 @@ java.text
 java.util	
 	nb class :205
 	nb methode:4060
-	RestrictedParameterType:35 --> 64
+	RestrictedParameterType:32 --> 64

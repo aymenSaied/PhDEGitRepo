@@ -5,9 +5,14 @@ java.security.Policy;;setPolicy;;public static void setPolicy(java.security.Poli
 java.security.Policy;;getPermissions;;public java.security.PermissionCollection getPermissions(java.security.ProtectionDomain);;1
 java.security.Security;;getImpl;;static java.lang.Object[] getImpl(java.lang.String, java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;;1
 java.security.Security;;getImpl;;static java.lang.Object[] getImpl(java.lang.String, java.lang.String, java.lang.String, java.lang.Object) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException, java.security.InvalidAlgorithmParameterException;;1
+java.security.Timestamp;;<init>;;public void <init>(java.util.Date, java.security.cert.CertPath);;1
+java.security.KeyRep;;<init>;;public void <init>(java.security.KeyRep$Type, java.lang.String, java.lang.String, byte[]);;1
+java.security.KeyStore;;setEntry;;public final void setEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException;;1
+java.security.KeyStore;;entryInstanceOf;;public final boolean entryInstanceOf(java.lang.String, java.lang.Class) throws java.security.KeyStoreException;;1
 java.security.KeyStoreSpi;;engineLoad;;public void engineLoad(java.security.KeyStore$LoadStoreParameter) throws java.io.IOException, java.security.NoSuchAlgorithmException, java.security.cert.CertificateException;;1
 java.security.KeyStoreSpi;;engineGetEntry;;public java.security.KeyStore$Entry engineGetEntry(java.lang.String, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException, java.security.NoSuchAlgorithmException, java.security.UnrecoverableEntryException;;1
 java.security.UnresolvedPermission;;resolve;;java.security.Permission resolve(java.security.Permission, java.security.cert.Certificate[]);;1
+java.security.cert.CertificateRevokedException;;<init>;;public void <init>(java.util.Date, java.security.cert.CRLReason, javax.security.auth.x500.X500Principal, java.util.Map);;1
 java.security.cert.X509CertSelector;;setIssuer;;public void setIssuer(java.lang.String) throws java.io.IOException;;1
 java.security.cert.X509CertSelector;;setIssuer;;public void setIssuer(byte[]) throws java.io.IOException;;1
 java.security.cert.X509CertSelector;;setSubject;;public void setSubject(java.lang.String) throws java.io.IOException;;1
@@ -21,6 +26,7 @@ java.security.cert.X509CertSelector;;setSubjectPublicKey;;public void setSubject
 java.security.cert.X509CertSelector;;setSubjectPublicKey;;public void setSubjectPublicKey(byte[]) throws java.io.IOException;;1
 java.security.cert.X509CertSelector;;setKeyUsage;;public void setKeyUsage(boolean[]);;1
 java.security.cert.X509CertSelector;;setSubjectAlternativeNames;;public void setSubjectAlternativeNames(java.util.Collection) throws java.io.IOException;;1
+java.security.cert.X509CertSelector;;equalNames;;static boolean equalNames(java.util.Collection, java.util.Collection);;1
 java.security.cert.X509CertSelector;;setNameConstraints;;public void setNameConstraints(byte[]) throws java.io.IOException;;1
 java.security.cert.X509CertSelector;;setPolicy;;public void setPolicy(java.util.Set) throws java.io.IOException;;1
 java.security.cert.X509CRLSelector;;setDateAndTime;;public void setDateAndTime(java.util.Date);;1
@@ -31,5 +37,7 @@ java.security.cert.PKIXParameters;;setCertStores;;public void setCertStores(java
 java.security.cert.PKIXParameters;;setDate;;public void setDate(java.util.Date);;1
 java.security.cert.PKIXParameters;;setCertPathCheckers;;public void setCertPathCheckers(java.util.List);;1
 java.security.cert.PKIXParameters;;setTargetCertConstraints;;public void setTargetCertConstraints(java.security.cert.CertSelector);;1
+java.security.cert.TrustAnchor;;<init>;;public void <init>(javax.security.auth.x500.X500Principal, java.security.PublicKey, byte[]);;1
 java.security.spec.EllipticCurve;;<init>;;public void <init>(java.security.spec.ECField, java.math.BigInteger, java.math.BigInteger, byte[]);;1
+java.security.spec.ECPoint;;<init>;;public void <init>(java.math.BigInteger, java.math.BigInteger);;1
 java.security.spec.RSAMultiPrimePrivateCrtKeySpec;;<init>;;public void <init>(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.security.spec.RSAOtherPrimeInfo[]);;1

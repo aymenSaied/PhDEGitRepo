@@ -61,7 +61,6 @@ java.math.MutableBigInteger;;compare;;final int compare(java.math.MutableBigInte
 java.math.MutableBigInteger;;compareHalf;;final int compareHalf(java.math.MutableBigInteger);;1
 java.math.MutableBigInteger;;copyValue;;void copyValue(java.math.MutableBigInteger);;1
 java.math.MutableBigInteger;;add;;void add(java.math.MutableBigInteger);;1
-java.math.MutableBigInteger;;subtract;;int subtract(java.math.MutableBigInteger);;1
 java.math.MutableBigInteger;;multiply;;void multiply(java.math.MutableBigInteger, java.math.MutableBigInteger);;2
 java.math.MutableBigInteger;;mul;;void mul(int, java.math.MutableBigInteger);;1
 java.math.MutableBigInteger;;divideOneWord;;int divideOneWord(int, java.math.MutableBigInteger);;1

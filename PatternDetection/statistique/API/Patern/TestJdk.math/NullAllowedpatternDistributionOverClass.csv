@@ -3,6 +3,6 @@ java.math.MathContext;;0
 java.math.BitSieve;;0
 java.math.BigInteger;;0
 java.math.MutableBigInteger;;0
-java.math.BigDecimal;;1
+java.math.BigDecimal;;0
 java.math.RoundingMode;;0
 java.math.SignedMutableBigInteger;;0

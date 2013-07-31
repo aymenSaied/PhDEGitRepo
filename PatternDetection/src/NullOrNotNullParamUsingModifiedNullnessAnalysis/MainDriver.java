@@ -52,69 +52,67 @@ public class MainDriver {
 	   
 	  
 	  
-	    //  String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
-	    //  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
+	      String projectToAnalyzePath ="..\\..\\TestJdk.applet\\TestJdk.applet";
+	      String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.applet"; 
 	  
 	  
-	// 	  	  String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
-	//		  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
+/*	 	  	  String projectToAnalyzePath ="..\\..\\TestJdk.awt\\TestJdk.awt";
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.awt";
+*/	  
+
+		/*	  String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
+			  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.beans";
+*/
+	  
+/*		 String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
+		 String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
+*/	  
+	  
+	  
+	  /*String projectToAnalyzePath ="..\\..\\TestJdk.lang\\TestJdk.lang";
+	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
+	  */
 	  
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.beans\\TestJdk.beans";
-		//	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.beans";
-
-	  
-		// String projectToAnalyzePath ="..\\..\\TestJdk.io\\TestJdk.io";
-		  // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.io";
-	  
+			/* String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
+		   String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
+	  */
 	  
 	  
 
-		//		  String projectToAnalyzePath ="..\\..\\TestJdk.lang\\TestJdk.lang";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.lang";
-	  
-	  
-
-		//	 String projectToAnalyzePath ="..\\..\\TestJdk.math\\TestJdk.math";
-		  // String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.math";
-	  
-	  
-	  
-
-		// 
-	  String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
-		   //
+		 
+/*	  String projectToAnalyzePath ="..\\..\\TestJdk.net\\TestJdk.net";
 	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.net";
-	  
-	  
-
-		//		  String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
-	  
+*/	  
 	  
 
-		//		  String projectToAnalyzePath ="..\\..\\TestJdk.rmi\\TestJdk.rmi";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
-	  
-	  
-
-	//	 	  String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
-	  
+/*			 String projectToAnalyzePath ="..\\..\\TestJdk.nio\\TestJdk.nio";
+		    String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.nio";
+*/	  
 	  
 
-		//		  String projectToAnalyzePath ="..\\..\\TestJdk.sql\\TestJdk.sql";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
-	  
+	/*			  String projectToAnalyzePath ="..\\..\\TestJdk.rmi\\TestJdk.rmi";
+		  	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.rmi";
+	*/  
 	  
 
-		//	  String projectToAnalyzePath ="..\\..\\TestJdk.text\\TestJdk.text";
-		  //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
+		 	  /*String projectToAnalyzePath ="..\\..\\TestJdk.security\\TestJdk.security";
+		  	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.security";
+	  */
 	  
-	  
-	//	 	  String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
-    //	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
 
+				  /*String projectToAnalyzePath ="..\\..\\TestJdk.sql\\TestJdk.sql";
+		  	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.sql";
+	  */
+	  
+
+			/*  String projectToAnalyzePath ="..\\..\\TestJdk.text\\TestJdk.text";
+		  	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.text";
+	  */
+	  
+		 /*	  String projectToAnalyzePath ="..\\..\\TestJdk.util\\TestJdk.util";
+    	  String StaticLocationPath  =".\\statistique\\API\\Patern\\TestJdk.util";
+*/
 	  
 	  
 	  

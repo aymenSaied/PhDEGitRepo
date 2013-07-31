@@ -317,17 +317,6 @@ java.math.MutableBigInteger;;add;;1;;void add(java.math.MutableBigInteger)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i16 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i35 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
-java.math.MutableBigInteger;;subtract;;1;;int subtract(java.math.MutableBigInteger)
-*;; * ;; * ;;*;;r1;;9
-*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;i5 = r2.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;i2 = r2.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for param;;i3 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r5 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i8 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for param;;$r6 = r1.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for param;;$i13 = r1.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null  because used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r7 = r2.<java.math.MutableBigInteger: int[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i25 = r2.<java.math.MutableBigInteger: int offset>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 java.math.MutableBigInteger;;multiply;;2;;void multiply(java.math.MutableBigInteger, java.math.MutableBigInteger)
 *;; * ;; * ;;*;;r1;;5
 *;;*;;*;;*;;*;;*;;FieldRef for param;;i1 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
@@ -396,12 +385,9 @@ java.math.MutableBigInteger;;divide;;1;;long divide(long, java.math.MutableBigIn
 *;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.math.MutableBigInteger: int intLen> = $b1;;pattern detected param  r1 must not be null  because used in  FieldRef 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.math.MutableBigInteger: void clear()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.math.MutableBigInteger;;hybridGCD;;1;;java.math.MutableBigInteger hybridGCD(java.math.MutableBigInteger)
-*;; * ;; * ;;*;;r1;;5
+*;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
-*;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i1 = r2.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i2 = r1.<java.math.MutableBigInteger: int intLen>;;pattern detected param  r1 must not be null  because used in  FieldRef 
-*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r6 = specialinvoke r2.<java.math.MutableBigInteger: java.math.MutableBigInteger binaryGCD(java.math.MutableBigInteger)>(r1);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r4 = virtualinvoke r2.<java.math.MutableBigInteger: java.math.MutableBigInteger divide(java.math.MutableBigInteger,java.math.MutableBigInteger)>(r1, r3);;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
 java.math.MutableBigInteger;;mutableModInverse;;1;;java.math.MutableBigInteger mutableModInverse(java.math.MutableBigInteger)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.math.MutableBigInteger: boolean isOdd()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 

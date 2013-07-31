@@ -143,7 +143,7 @@ java.nio.channels.NonWritableChannelException;;0
 java.nio.HeapCharBuffer;;0
 java.nio.HeapDoubleBuffer;;0
 java.nio.charset.CoderResult;;0
-java.nio.file.InvalidPathException;;0
+java.nio.file.InvalidPathException;;1
 java.nio.charset.UnmappableCharacterException;;0
 java.nio.channels.NotYetConnectedException;;0
 java.nio.DirectIntBufferRS;;0

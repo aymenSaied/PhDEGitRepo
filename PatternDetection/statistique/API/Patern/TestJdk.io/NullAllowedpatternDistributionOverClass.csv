@@ -61,7 +61,7 @@ java.io.StringBufferInputStream;;0
 java.io.PushbackInputStream;;0
 java.io.PipedInputStream;;0
 java.io.FileSystem;;0
-java.io.File;;3
+java.io.File;;4
 java.io.Reader;;0
 java.io.UnsupportedEncodingException;;0
 java.io.BufferedWriter;;0
