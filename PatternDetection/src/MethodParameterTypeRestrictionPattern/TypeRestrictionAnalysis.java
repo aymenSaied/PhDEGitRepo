@@ -254,6 +254,8 @@ public class TypeRestrictionAnalysis extends ForwardBranchedFlowAnalysis {
 			 * pour P et dans les instruction suivante est ce que il y a
 			 * restriction dans cette instruction pour L et dans les instruction
 			 * suivantes
+			 * resolut apres discution vec bruno et la version presente est correcte 
+			 * 
 			 */
 
 			if (left instanceof Local && right.getType() instanceof RefType) {

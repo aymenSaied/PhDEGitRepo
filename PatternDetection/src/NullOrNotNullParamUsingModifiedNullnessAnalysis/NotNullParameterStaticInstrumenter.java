@@ -28,10 +28,13 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import javax.xml.bind.JAXBException;
 
 import soot.Body;
 import soot.BodyTransformer;
@@ -49,8 +52,6 @@ import soot.jimple.InstanceInvokeExpr;
 import soot.jimple.InvokeExpr;
 import soot.jimple.MonitorStmt;
 import soot.jimple.NullConstant;
-import soot.jimple.ReturnStmt;
-import soot.jimple.ReturnVoidStmt;
 import soot.jimple.Stmt;
 import soot.jimple.ThrowStmt;
 import soot.jimple.internal.AbstractBinopExpr;
@@ -59,10 +60,8 @@ import soot.jimple.internal.JEqExpr;
 import soot.jimple.internal.JNeExpr;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
-import soot.toolkits.scalar.LocalUnitPair;
-import soot.toolkits.scalar.SimpleLocalDefs;
-import stat.Statistique;
 import stat.PatternOccurrenceInfo;
+import stat.Statistique;
 public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
 	
@@ -106,13 +105,18 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	static HashMap<String, Integer> nullAllowedPaternDistributionOverClasses;
 	static HashMap<String, Integer> nullNotAllowedPaternDistributionOverClasses;
 	static ArrayList<Local> methodParameterChain;
+	static HashMap<Local,Integer> methodParameterToStringId ;
 	static String satistuquePath; 
+	static String APIINFO_XML;
+	static String API_NAME;
+	
 	static int nbMethode;
 
-	public NotNullParameterStaticInstrumenter(String satatPath) {
+	public NotNullParameterStaticInstrumenter(String satatPath ,String apiXmlPath,String apiname) {
 
 		satistuquePath=satatPath;
-		
+		APIINFO_XML=apiXmlPath;
+		API_NAME=apiname;
 	}
 
 	/*
@@ -135,13 +139,13 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		UnitGraph cfg = new ExceptionalUnitGraph(body);
 
 		methodParameterChain = new ArrayList<Local>();
-
+		methodParameterToStringId = new HashMap<Local, Integer>();
 		
 		
 		for (int j = 0; j < method.getParameterCount(); j++) {
 
 			methodParameterChain.add(body.getParameterLocal(j));
-
+			methodParameterToStringId.put(body.getParameterLocal(j),j);
 		}
 
 		for (Local l : methodParameterChain) {
@@ -297,11 +301,13 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		  
 		
 		
-		
-		
+		 
 		
 		Map<Local, ArrayList<PatternOccurrenceInfo>> unitCausingNullsNotAllowed = new  HashMap<Local, ArrayList<PatternOccurrenceInfo>> (methodParameterChain.size() * 2 + 1, 0.7f); ;
 
+		Map<Local, HashSet<String>> typeOfNullsNotAllowedCauses = new HashMap<Local, HashSet<String>>();
+
+		Map<Local, String> NullNotAllowedPatternComment = new HashMap<Local, String>();
 		
 		
 		Set<Local> LocalsDefinedUsingParameterSet = localDefinedUsingParameterToParameter.keySet();
@@ -331,7 +337,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					if (throwStmtBecauseofnNullParam) {
 						
 						
-						String coment= "pattern detected param  "+ l + " must not be null  otherwise an exception is thrown ";
+						String coment= "pattern detected param  "+ l + " must not be null  ## otherwise an exception is thrown ";
 						System.out.println(coment);
 						
 						
@@ -344,7 +350,24 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
  
 						unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,l,poi);
 						
+						Local paternParam= l;
+						typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type1);
 						
+						String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+						
+						
+						for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+							String type = (String) iterator.next();
+							
+							
+							paternComment += " ## " +type ;
+							
+							
+						}
+						
+						
+						
+						NullNotAllowedPatternComment.put(paternParam, paternComment);
 					
 					
 					
@@ -370,7 +393,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
 					if (throwStmtBecauseofnNullParam) {
 						
-						String coment="pattern detected param  "+ localDefinedUsingParameterToParameter.get(l) + " must not be null it define a local "+ l  +  "which when is null an exception is thrown ";
+						String coment="pattern detected param  "+ localDefinedUsingParameterToParameter.get(l) + " must not be null  ## it define a local "+ l  +  "which when is null an exception is thrown ";
 						System.out.println(coment);
 						
 						
@@ -381,7 +404,32 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 					
  
 						unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(l),poi);
+						
+						
 
+						Local paternParam= localDefinedUsingParameterToParameter.get(l);
+						typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type2);
+						
+						String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+						
+						
+						for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+							String type = (String) iterator.next();
+							
+							
+							paternComment += " ## " +type ;
+							
+							
+						}
+						
+						
+						
+						NullNotAllowedPatternComment.put(paternParam, paternComment);
+					
+						
+						
+						
+						
 						
 					}
 					
@@ -431,6 +479,26 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 							unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,(Local)array,poi);
 							
 
+							Local paternParam= (Local)array;
+							typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type3);
+							
+							String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+							
+							
+							for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+								String type = (String) iterator.next();
+								
+								
+								paternComment += " ## " +type ;
+								
+								
+							}
+							
+							
+							
+							NullNotAllowedPatternComment.put(paternParam, paternComment);
+						
+							
 							
 							
 							
@@ -441,7 +509,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 							System.out.println(coment);
 							
 							
-							String type4 = "ArrayRef for local initialized from param";
+							String type4 = "ArrayRef for local initialized from the param";
 							
 							PatternOccurrenceInfo poi =  new PatternOccurrenceInfo(unit, type4, coment);
 						
@@ -450,7 +518,24 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 							unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(array),poi);
 
 							
+							Local paternParam= localDefinedUsingParameterToParameter.get(array);
+							typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type4);
 							
+							String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+							
+							
+							for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+								String type = (String) iterator.next();
+								
+								
+								paternComment += " ## " +type ;
+								
+								
+							}
+							
+							
+							
+							NullNotAllowedPatternComment.put(paternParam, paternComment);
 							
 							
 							
@@ -493,6 +578,24 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 							unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,(Local)base,poi);
 							
 
+							Local paternParam= (Local)base;
+							typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type5);
+							
+							String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+							
+							
+							for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+								String type = (String) iterator.next();
+								
+								
+								paternComment += " ## " +type ;
+								
+								
+							}
+							
+							
+							
+							NullNotAllowedPatternComment.put(paternParam, paternComment);
 							
 							
 							
@@ -512,6 +615,27 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 							unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(base),poi);
 
 							
+							
+							
+							
+							Local paternParam= localDefinedUsingParameterToParameter.get(base);
+							typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type6);
+							
+							String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+							
+							
+							for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+								String type = (String) iterator.next();
+								
+								
+								paternComment += " ## " +type ;
+								
+								
+							}
+							
+							
+							
+							NullNotAllowedPatternComment.put(paternParam, paternComment);
 							
 							
 							
@@ -563,6 +687,30 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
 								
 								
+
+								Local paternParam= (Local)base;
+								typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type7);
+								
+								String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+								
+								
+								for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+									String type = (String) iterator.next();
+									
+									
+									paternComment += " ## " +type ;
+									
+									
+								}
+								
+								
+								
+								NullNotAllowedPatternComment.put(paternParam, paternComment);
+								
+								
+								
+								
+								
 								
 							} else if (LocalsDefinedUsingParameterSet.contains(base)) {
 								
@@ -580,7 +728,26 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 								unitCausingNullsNotAllowed = updateUnitCausingNullsNotAllowed(unitCausingNullsNotAllowed,localDefinedUsingParameterToParameter.get(base),poi);
 
 								
+
+								Local paternParam= localDefinedUsingParameterToParameter.get(base);
+								typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type8);
 								
+								String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+								
+								
+								for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+									String type = (String) iterator.next();
+									
+									
+									paternComment += " ## " +type ;
+									
+									
+								}
+								
+								
+								
+								NullNotAllowedPatternComment.put(paternParam, paternComment);
+
 								
 								
 								
@@ -634,6 +801,28 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 								
 
 								
+								Local paternParam= (Local)monitorOp;
+								typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type8);
+								
+								String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+								
+								
+								for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+									String type = (String) iterator.next();
+									
+									
+									paternComment += " ## " +type ;
+									
+									
+								}
+								
+								
+								
+								NullNotAllowedPatternComment.put(paternParam, paternComment);
+
+
+								
+								
 								
 								
 							} else if (LocalsDefinedUsingParameterSet.contains(monitorOp)) {
@@ -653,7 +842,26 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 
 								
 								
+								Local paternParam= localDefinedUsingParameterToParameter.get(monitorOp);
+								typeOfNullsNotAllowedCauses = updatetypeOfPatternCauses(typeOfNullsNotAllowedCauses, paternParam, type9);
 								
+								String paternComment = "pattern detected param  "+ paternParam + " must not be null because of: ";
+								
+								
+								for (Iterator iterator = typeOfNullsNotAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+									String type = (String) iterator.next();
+									
+									
+									paternComment += " ## " +type ;
+									
+									
+								}
+								
+								
+								
+								NullNotAllowedPatternComment.put(paternParam, paternComment);
+
+
 								
 								
 							}						
@@ -705,6 +913,7 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	    	 String methodDeclaration =cfg.getBody().getMethod().getDeclaration();
 	    	 String statfileName= "\\NullNotAllowedPatternDistributionOverMethod.csv";
 	    	 String OccurrenStatfileName= "\\NullNotAllowedPatternOccurrenInMethod.csv";
+	    	 String validationPatternJavadocFileName="\\NullNotAllowedPatternJavadocVsPatternInMethod.csv";
 	    	 
 	    	 try {
 				Statistique.statistiqueForPatternDistributionOverMethod(unitCausingNullsNotAllowed.keySet().size(), className, methodName, methodDeclaration,satistuquePath, statfileName);
@@ -725,7 +934,79 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 		
 		
-		
+	    		{//la parti generation du fichier de validation javadoc vs PaternComment 
+					
+					
+					//construction de methodSignature telque elle est dans XML file :APIINFO_XML
+					//et faire le cas dei constructeur init
+					
+					String methodSignature = new String();
+					
+					if (methodName.equals("<init>")) {
+					
+						String var1=cfg.getBody().getMethod().getDeclaration();
+						String var2 = cfg.getBody().getMethod().getDeclaringClass().toString();
+						String var3 =methodName;
+						
+						
+						var1=var1.replace("$", ".");
+						//System.out.println("sans $ "+var1);
+						
+						String[] var4=var1.split(var3);
+						
+						String var5 =var4[var4.length-1];
+						String[] var6 = var5.split("throws");
+						
+						 methodSignature =var2+var6[0].trim();
+						
+					
+					}else {
+						
+						
+						String var1=cfg.getBody().getMethod().getDeclaration();
+						String var2 = cfg.getBody().getMethod().getDeclaringClass().toString();
+						String var3 =methodName;
+						var1=var1.replace("$", ".");
+						String[] var4=var1.split(var3);
+						String var5 =var4[var4.length-1];
+						String[] var6 = var5.split("throws");
+						 methodSignature =var2+"."+var3+var6[0].trim();
+						
+						
+						
+					}
+					
+					
+					
+					
+					 
+					
+					
+					
+					
+					
+					try {
+						
+						String patternName = "NullNotAllowedPattern_";
+						
+						Statistique.statistiqueForPatternAndJavaDocInMethod(
+								APIINFO_XML,
+								API_NAME ,
+								patternName,
+								 className,
+								 methodSignature ,
+								 satistuquePath,
+								 validationPatternJavadocFileName,
+								 NullNotAllowedPatternComment,
+								 methodParameterToStringId);
+					} catch (IOException | JAXBException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					
+					
+					
+				}
 		
 		
 		}    
@@ -761,6 +1042,17 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 		Map<Local, ArrayList<PatternOccurrenceInfo>> temporaryUnitCausingNullAllowed = new  HashMap<Local, ArrayList<PatternOccurrenceInfo>> (methodParameterChain.size() * 2 + 1, 0.7f); ;
 		Map<Local, ArrayList<PatternOccurrenceInfo>> permanentUnitCausingNullAllowed = new  HashMap<Local, ArrayList<PatternOccurrenceInfo>> (methodParameterChain.size() * 2 + 1, 0.7f); ;
+		
+		
+		Map<Local, HashSet<String>> typeOfNullsAllowedCauses = new HashMap<Local, HashSet<String>>();
+
+		Map<Local, String> temporaryNullAllowedPatternComment = new HashMap<Local, String>();
+		Map<Local, String> permanentNullAllowedPatternComment = new HashMap<Local, String>();
+		
+		
+		
+
+		
 		
 		 Integer nbOfnullAllowedPaternInCurrentMethod =0;
 		
@@ -828,6 +1120,28 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	 
 							temporaryUnitCausingNullAllowed = updateUnitCausingNullsNotAllowed(temporaryUnitCausingNullAllowed,(Local)l,poi);
 							
+							
+							Local paternParam= l;
+							typeOfNullsAllowedCauses = updatetypeOfPatternCauses(typeOfNullsAllowedCauses, paternParam, type1);
+							
+							String paternComment = "pattern detected param  "+ paternParam + " can  be null : ";
+							
+							
+							for (Iterator iterator = typeOfNullsAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+								String type = (String) iterator.next();
+								
+								
+								paternComment += " ## " +type ;
+								
+								
+							}
+							
+							
+							
+							temporaryNullAllowedPatternComment.put(paternParam, paternComment);
+						
+						
+							
 
 							
 							
@@ -889,6 +1203,28 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 							temporaryUnitCausingNullAllowed = updateUnitCausingNullsNotAllowed(temporaryUnitCausingNullAllowed,localDefinedUsingParameterToParameter.get(l),poi);
 
 							
+								
+							Local paternParam= localDefinedUsingParameterToParameter.get(l);
+							typeOfNullsAllowedCauses = updatetypeOfPatternCauses(typeOfNullsAllowedCauses, paternParam, type2);
+							
+							String paternComment = "pattern detected param  "+ paternParam + " can  be null : ";
+							
+							
+							for (Iterator iterator = typeOfNullsAllowedCauses.get(paternParam).iterator(); iterator.hasNext();) {
+								String type = (String) iterator.next();
+								
+								
+								paternComment += " ## " +type ;
+								
+								
+							}
+							
+							
+							
+							temporaryNullAllowedPatternComment.put(paternParam, paternComment);
+						
+							
+							
 							
 						}
 						
@@ -934,6 +1270,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				
 				
 				permanentUnitCausingNullAllowed.put(l, temporaryUnitCausingNullAllowed.get(l));
+				permanentNullAllowedPatternComment.put(l, temporaryNullAllowedPatternComment.get(l));
+
 				
 				
 			}else{
@@ -969,6 +1307,8 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 				permanentUnitCausingNullAllowed.put(paramCorespeldigToLocal, temporaryUnitCausingNullAllowed.get(paramCorespeldigToLocal));
 				
 				
+				permanentNullAllowedPatternComment.put(paramCorespeldigToLocal, temporaryNullAllowedPatternComment.get(paramCorespeldigToLocal));
+
 				
 				
 			}else{
@@ -1003,6 +1343,9 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 	    	 String methodDeclaration =cfg.getBody().getMethod().getDeclaration();
 	    	 String statfileName= "\\NullAllowedPatternDistributionOverMethod.csv";
 	    	 String OccurrenStatfileName= "\\NullAllowedPatternOccurrenInMethod.csv";
+	    	 String validationPatternJavadocFileName="\\NullAllowedPatternJavadocVsPatternInMethod.csv";
+
+	    	 
 	    	 
 	    	 try {
 	    		 
@@ -1018,6 +1361,82 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 			}
 	    	 
 	    	 
+		
+	    		{//la parti generation du fichier de validation javadoc vs PaternComment 
+					
+					
+					//construction de methodSignature telque elle est dans XML file :APIINFO_XML
+					//et faire le cas dei constructeur init
+					
+					String methodSignature = new String();
+					
+					if (methodName.equals("<init>")) {
+					
+						String var1=cfg.getBody().getMethod().getDeclaration();
+						String var2 = cfg.getBody().getMethod().getDeclaringClass().toString();
+						String var3 =methodName;
+						
+						
+						var1=var1.replace("$", ".");
+						//System.out.println("sans $ "+var1);
+						
+						String[] var4=var1.split(var3);
+						
+						String var5 =var4[var4.length-1];
+						String[] var6 = var5.split("throws");
+						
+						 methodSignature =var2+var6[0].trim();
+						
+					
+					}else {
+						
+						
+						String var1=cfg.getBody().getMethod().getDeclaration();
+						String var2 = cfg.getBody().getMethod().getDeclaringClass().toString();
+						String var3 =methodName;
+						var1=var1.replace("$", ".");
+						String[] var4=var1.split(var3);
+						String var5 =var4[var4.length-1];
+						String[] var6 = var5.split("throws");
+						 methodSignature =var2+"."+var3+var6[0].trim();
+						
+						
+						
+					}
+					
+					
+					
+					
+					 
+					
+					
+					
+					
+					
+					try {
+						
+						String patternName = "NullAllowedPattern_";
+						
+						Statistique.statistiqueForPatternAndJavaDocInMethod(
+								APIINFO_XML,
+								API_NAME ,
+								patternName,
+								 className,
+								 methodSignature ,
+								 satistuquePath,
+								 validationPatternJavadocFileName,
+								 permanentNullAllowedPatternComment,
+								 methodParameterToStringId);
+					} catch (IOException | JAXBException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					
+					
+					
+				}
+		
+		
 		}  
 		
 		
@@ -1304,6 +1723,33 @@ public class NotNullParameterStaticInstrumenter extends BodyTransformer {
 		
 	}
 	
+	
+	
+
+	private Map<Local, HashSet<String>>  updatetypeOfPatternCauses( Map<Local, HashSet<String>> inMap,Local l, String causesType){
+		
+		
+		Map<Local, HashSet<String>> typeOfPatternCausesMap =inMap;
+		
+		
+		if (typeOfPatternCausesMap.containsKey(l)) {
+			
+			typeOfPatternCausesMap.get(l).add(causesType);
+			//todo verifier que la liste est mise à jour  
+			
+		} else {
+			
+			
+			HashSet<String> CausesSet = new HashSet<String>();
+			
+			CausesSet.add(causesType);
+			typeOfPatternCausesMap.put(l, CausesSet);
+		}
+		
+		
+		return typeOfPatternCausesMap;
+		
+	}
 	
 
 	private Map<Local, ArrayList<PatternOccurrenceInfo>>  updateUnitCausingNullsNotAllowed(Map<Local, ArrayList<PatternOccurrenceInfo>> inMap,Local l,PatternOccurrenceInfo poi){

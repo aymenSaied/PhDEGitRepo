@@ -362,7 +362,7 @@ public class Statistique {
 				}
 				
 				
-				paternComment += "  the pattern was detected for parameter "+ parameterNameOrIndex; 
+				paternComment += " ## the pattern was detected for parameter "+ parameterNameOrIndex; 
 			
 				patternDistributionOverMethod.println(className + ";;" + methodSignature
 						+ ";;" + param + ";;"
@@ -373,7 +373,10 @@ public class Statistique {
 				PaternInfo paterninfo = new PaternInfo();
 				
 				paterninfo.setMethodSignature(methodSignature);
+				paternComment=paternComment.replaceAll( "##","\r\n");
+
 				paterninfo.setPatern(paternComment);
+				paterninfo.setPaternType(patternName);
 				paterninfo.setCommentText(javadocforHtml);
 				
 				
@@ -431,7 +434,7 @@ public class Statistique {
 				}
 				
 				
-				paternComment += "  the pattern was detected for parameter "+ parameterNameOrIndex; 
+				paternComment += " ## the pattern was detected for parameter "+ parameterNameOrIndex; 
 							
 				patternDistributionOverMethod.println(className + ";;" + methodSignature
 						+ ";;" + param + ";;"
@@ -442,7 +445,9 @@ public class Statistique {
 				PaternInfo paterninfo = new PaternInfo();
 				
 				paterninfo.setMethodSignature(methodSignature);
+				paternComment=paternComment.replaceAll( "##","\r\n");
 				paterninfo.setPatern(paternComment);
+				paterninfo.setPaternType(patternName);
 				paterninfo.setCommentText(javadocforHtml);
 				
 				

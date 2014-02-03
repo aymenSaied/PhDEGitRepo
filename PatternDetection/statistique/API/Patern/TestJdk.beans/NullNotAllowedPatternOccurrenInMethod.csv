@@ -1,7 +1,7 @@
 class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
 java.beans.PropertyChangeSupport;;<init>;;1;;public void <init>(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.PropertyChangeSupport;;firePropertyChange;;1;;public void firePropertyChange(java.beans.PropertyChangeEvent)
 *;; * ;; * ;;*;;r1;;3
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getOldValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -97,10 +97,10 @@ java.beans.EventSetDescriptor;;<init>;;1;;void <init>(java.beans.EventSetDescrip
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$z1 = r1.<java.beans.EventSetDescriptor: boolean inDefaultEventSet>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.beans.PropertyDescriptor;;<init>;;1;;public void <init>(java.lang.String, java.lang.Class, java.lang.String, java.lang.String) throws java.beans.IntrospectionException
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.PropertyDescriptor;;<init>;;1;;void <init>(java.lang.Class, java.lang.String, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.PropertyDescriptor;;setClass0;;1;;void setClass0(java.lang.Class)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>($r3);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -187,7 +187,7 @@ java.beans.Beans;;isInstanceOf;;1;;public static boolean isInstanceOf(java.lang.
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.beans.Introspector;;flushFromCaches;;1;;public static void flushFromCaches(java.lang.Class)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.beans.Introspector;;instantiate;;1;;static java.lang.Object instantiate(java.lang.Class, java.lang.String) throws java.lang.InstantiationException, java.lang.IllegalAccessException, java.lang.ClassNotFoundException
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.Class: java.lang.ClassLoader getClassLoader()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -243,7 +243,7 @@ java.beans.Encoder;;writeStatement;;1;;public void writeStatement(java.beans.Sta
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.beans.Statement: java.lang.Object getTarget()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.beans.VetoableChangeSupport;;<init>;;1;;public void <init>(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.VetoableChangeSupport;;fireVetoableChange;;1;;public void fireVetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException
 *;; * ;; * ;;*;;r1;;3
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.beans.PropertyChangeEvent: java.lang.Object getOldValue()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -256,12 +256,12 @@ java.beans.MetaData;;getPrivateFieldValue;;1;;static java.lang.Object getPrivate
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int)>($i1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.beans.EventHandler;;<init>;;2;;public void <init>(java.lang.Object, java.lang.String, java.lang.String, java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.EventHandler;;create;;2;;public static java.lang.Object create(java.lang.Class, java.lang.Object, java.lang.String, java.lang.String, java.lang.String)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.beans.NameGenerator;;unqualifiedClassName;;1;;public static java.lang.String unqualifiedClassName(java.lang.Class)
@@ -277,10 +277,10 @@ java.beans.ReflectionUtils;;getPrivateField;;1;;public static java.lang.Object g
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.lang.Class: java.lang.reflect.Field getDeclaredField(java.lang.String)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.beans.PropertyEditorSupport;;<init>;;1;;public void <init>(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.XMLEncoder;;<init>;;1;;public void <init>(java.io.OutputStream, java.lang.String, boolean, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.XMLEncoder;;writeStatement;;1;;public void writeStatement(java.beans.Statement)
 *;; * ;; * ;;*;;r1;;3
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.beans.Statement: java.lang.Object getTarget()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -288,45 +288,45 @@ java.beans.XMLEncoder;;writeStatement;;1;;public void writeStatement(java.beans.
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r4 = virtualinvoke r1.<java.beans.Statement: java.lang.Object[] getArguments()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.beans.beancontext.BeanContextMembershipEvent;;<init>;;1;;public void <init>(java.beans.beancontext.BeanContext, java.util.Collection)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextMembershipEvent;;<init>;;1;;public void <init>(java.beans.beancontext.BeanContext, java.lang.Object[])
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextServicesSupport;;addBeanContextServicesListener;;1;;public void addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextServicesSupport;;removeBeanContextServicesListener;;1;;public void removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextServicesSupport;;addService;;2;;protected boolean addService(java.lang.Class, java.beans.beancontext.BeanContextServiceProvider, boolean)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextServicesSupport;;revokeService;;2;;public void revokeService(java.lang.Class, java.beans.beancontext.BeanContextServiceProvider, boolean)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextServicesSupport;;hasService;;1;;public synchronized boolean hasService(java.lang.Class)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextServicesSupport;;getService;;4;;public java.lang.Object getService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Class, java.lang.Object, java.beans.beancontext.BeanContextServiceRevokedListener) throws java.util.TooManyListenersException
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r5;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r16;;pattern detected param  r5 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r16;;pattern detected param  r5 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextServicesSupport;;releaseService;;3;;public void releaseService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Object)
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextServicesSupport;;serviceAvailable;;1;;public void serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r1.<java.beans.beancontext.BeanContextServiceAvailableEvent: java.lang.Class getServiceClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -348,31 +348,31 @@ java.beans.beancontext.BeanContextServicesSupport;;bcsPreDeserializationHook;;1;
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.beans.beancontext.BeanContextSupport;;add;;1;;public boolean add(java.lang.Object)
 *;; * ;; * ;;*;;r1;;2
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r5;;pattern detected param  r1 must not be null it define a local r5which used in  monitorStmt 
 java.beans.beancontext.BeanContextSupport;;remove;;1;;protected boolean remove(java.lang.Object, boolean)
 *;; * ;; * ;;*;;r1;;2
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;;*;;*;;*;;*;;*;;monitorStmt for local initialized from param;;exitmonitor r6;;pattern detected param  r1 must not be null it define a local r6which used in  monitorStmt 
 java.beans.beancontext.BeanContextSupport;;containsAll;;1;;public boolean containsAll(java.util.Collection)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.beans.beancontext.BeanContextSupport;;addBeanContextMembershipListener;;1;;public void addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextSupport;;removeBeanContextMembershipListener;;1;;public void removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextSupport;;getResourceAsStream;;2;;public java.io.InputStream getResourceAsStream(java.lang.String, java.beans.beancontext.BeanContextChild)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextSupport;;getResource;;2;;public java.net.URL getResource(java.lang.String, java.beans.beancontext.BeanContextChild)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.beans.beancontext.BeanContextSupport;;serialize;;2;;protected final void serialize(java.io.ObjectOutputStream, java.util.Collection) throws java.io.IOException
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 

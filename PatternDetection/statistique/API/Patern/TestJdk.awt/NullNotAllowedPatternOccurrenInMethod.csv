@@ -70,21 +70,21 @@ java.awt.image.Raster;;createInterleavedRaster;;1;;public static java.awt.image.
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;i6 = r0[i7];;pattern detected param  r0 must not be null  because used in  ArrayRef 
 java.awt.image.Raster;;createBandedRaster;;2;;public static java.awt.image.WritableRaster createBandedRaster(int, int, int, int, int[], int[], java.awt.Point)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.Raster;;createInterleavedRaster;;1;;public static java.awt.image.WritableRaster createInterleavedRaster(java.awt.image.DataBuffer, int, int, int, int, int[], java.awt.Point)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.awt.image.Raster;;createBandedRaster;;1;;public static java.awt.image.WritableRaster createBandedRaster(java.awt.image.DataBuffer, int, int, int, int[], int[], java.awt.Point)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.awt.image.Raster;;createPackedRaster;;1;;public static java.awt.image.WritableRaster createPackedRaster(java.awt.image.DataBuffer, int, int, int, int[], java.awt.Point)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.awt.image.Raster;;createPackedRaster;;1;;public static java.awt.image.WritableRaster createPackedRaster(java.awt.image.DataBuffer, int, int, int, java.awt.Point)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.awt.image.Raster;;createWritableRaster;;1;;public static java.awt.image.WritableRaster createWritableRaster(java.awt.image.SampleModel, java.awt.Point)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.awt.image.SampleModel: java.awt.image.DataBuffer createDataBuffer()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -105,7 +105,7 @@ java.awt.image.Raster;;<init>;;2;;protected void <init>(java.awt.image.SampleMod
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r1.<java.awt.image.SampleModel: int getHeight()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.image.Raster;;createCompatibleWritableRaster;;1;;public java.awt.image.WritableRaster createCompatibleWritableRaster(java.awt.Rectangle)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.WritableRaster;;<init>;;2;;protected void <init>(java.awt.image.SampleModel, java.awt.Point)
 *;; * ;; * ;;*;;r1;;3
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.awt.image.SampleModel: java.awt.image.DataBuffer createDataBuffer()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -236,7 +236,7 @@ java.awt.Component;;printAll;;1;;public void printAll(java.awt.Graphics)
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.awt.Graphics: java.awt.Shape getClip()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.Component;;createBufferStrategy;;1;;void createBufferStrategy(int, java.awt.BufferCapabilities) throws java.awt.AWTException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.Component;;contains;;1;;public boolean contains(java.awt.Point)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.awt.Point: int x>;;pattern detected param  r1 must not be null  because used in  FieldRef 
@@ -365,7 +365,7 @@ java.awt.Component;;list;;1;;public void list(java.io.PrintWriter, int)
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.PrintWriter: void println(java.lang.Object)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.Component;;applyComponentOrientation;;1;;public void applyComponentOrientation(java.awt.ComponentOrientation)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.Component;;applyCompoundShape;;1;;void applyCompoundShape(sun.java2d.pipe.Region)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z4 = virtualinvoke r1.<sun.java2d.pipe.Region: boolean isEmpty()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -416,7 +416,7 @@ java.awt.MenuItem;;eventEnabled;;1;;boolean eventEnabled(java.awt.AWTEvent)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.awt.AWTEvent: int id>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.awt.GraphicsEnvironment;;registerFont;;1;;public boolean registerFont(java.awt.Font)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.event.MouseEvent;;<init>;;1;;public void <init>(java.awt.Component, int, long, int, int, int, int, boolean, int)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r5 = virtualinvoke r1.<java.awt.Component: java.awt.Point getLocationOnScreen()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -543,10 +543,10 @@ java.awt.Font;;createFont;;1;;public static java.awt.Font createFont(int, java.i
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r0.<java.io.File: java.lang.String getPath()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.awt.Font;;getFamily;;1;;public java.lang.String getFamily(java.util.Locale)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.Font;;getFontName;;1;;public java.lang.String getFontName(java.util.Locale)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.Font;;decode;;1;;public static java.awt.Font decode(java.lang.String)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c13 = virtualinvoke r0.<java.lang.String: char charAt(int)>($i12);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -730,7 +730,7 @@ java.awt.Graphics;;getClipBounds;;1;;public java.awt.Rectangle getClipBounds(jav
 *;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.awt.Rectangle: int y> = $i1;;pattern detected param  r1 must not be null  because used in  FieldRef 
 *;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.awt.Rectangle: int width> = $i2;;pattern detected param  r1 must not be null  because used in  FieldRef 
 *;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.awt.Rectangle: int height> = $i3;;pattern detected param  r1 must not be null  because used in  FieldRef 
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.FontMetrics;;stringWidth;;1;;public int stringWidth(java.lang.String)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -788,7 +788,7 @@ java.awt.Window;;connectOwnedWindow;;1;;void connectOwnedWindow(java.awt.Window)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.awt.Window: java.lang.ref.WeakReference weakThis>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.awt.Window;;setType;;1;;public void setType(java.awt.Window$Type)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.Window;;setBounds;;1;;public void setBounds(java.awt.Rectangle)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.awt.Rectangle: int x>;;pattern detected param  r1 must not be null  because used in  FieldRef 
@@ -866,7 +866,7 @@ java.awt.image.BufferedImage;;setRGB;;1;;public void setRGB(int, int, int, int, 
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$i13 = r1[$i12];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.awt.image.BufferedImage;;getProperty;;1;;public java.lang.Object getProperty(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.BufferedImage;;getData;;1;;public java.awt.image.Raster getData(java.awt.Rectangle)
 *;; * ;; * ;;*;;r1;;7
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i5 = r1.<java.awt.Rectangle: int width>;;pattern detected param  r1 must not be null  because used in  FieldRef 
@@ -902,10 +902,10 @@ java.awt.Desktop;;edit;;1;;public void edit(java.io.File) throws java.io.IOExcep
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.File: boolean canWrite()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.Desktop;;browse;;1;;public void browse(java.net.URI) throws java.io.IOException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.Desktop;;mail;;1;;public void mail(java.net.URI) throws java.io.IOException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.TextField;;eventEnabled;;1;;boolean eventEnabled(java.awt.AWTEvent)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i0 = r1.<java.awt.AWTEvent: int id>;;pattern detected param  r1 must not be null  because used in  FieldRef 
@@ -959,22 +959,22 @@ java.awt.JobAttributes;;set;;1;;public void set(java.awt.JobAttributes)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$i6 = r1.<java.awt.JobAttributes: int toPage>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.awt.JobAttributes;;setDefaultSelection;;1;;public void setDefaultSelection(java.awt.JobAttributes$DefaultSelectionType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.JobAttributes;;setDestination;;1;;public void setDestination(java.awt.JobAttributes$DestinationType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.JobAttributes;;setDialog;;1;;public void setDialog(java.awt.JobAttributes$DialogType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.JobAttributes;;setMultipleDocumentHandling;;1;;public void setMultipleDocumentHandling(java.awt.JobAttributes$MultipleDocumentHandlingType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.JobAttributes;;setPageRanges;;1;;public void setPageRanges(int[][])
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.JobAttributes;;setSides;;1;;public void setSides(java.awt.JobAttributes$SidesType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.JobAttributes;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;21
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.awt.JobAttributes: java.lang.String fileName>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -1008,19 +1008,19 @@ java.awt.PageAttributes;;set;;1;;public void set(java.awt.PageAttributes)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r7 = r1.<java.awt.PageAttributes: int[] printerResolution>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.awt.PageAttributes;;setColor;;1;;public void setColor(java.awt.PageAttributes$ColorType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.PageAttributes;;setMedia;;1;;public void setMedia(java.awt.PageAttributes$MediaType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.PageAttributes;;setOrientationRequested;;1;;public void setOrientationRequested(java.awt.PageAttributes$OrientationRequestedType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.PageAttributes;;setOrigin;;1;;public void setOrigin(java.awt.PageAttributes$OriginType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.PageAttributes;;setPrintQuality;;1;;public void setPrintQuality(java.awt.PageAttributes$PrintQualityType)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.PageAttributes;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;8
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.awt.PageAttributes: java.awt.PageAttributes$ColorType color>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -1033,10 +1033,10 @@ java.awt.PageAttributes;;equals;;1;;public boolean equals(java.lang.Object)
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r18 = r2.<java.awt.PageAttributes: int[] printerResolution>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 java.awt.datatransfer.Clipboard;;isDataFlavorAvailable;;1;;public boolean isDataFlavorAvailable(java.awt.datatransfer.DataFlavor)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.datatransfer.Clipboard;;getData;;1;;public java.lang.Object getData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException, java.io.IOException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.EventQueue;;dispatchEvent;;1;;protected void dispatchEvent(java.awt.AWTEvent)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.awt.AWTEvent: java.lang.Object getSource()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1048,16 +1048,16 @@ java.awt.EventQueue;;push;;1;;public void push(java.awt.EventQueue)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.awt.EventQueue: java.awt.EventQueue previousQueue> = r3;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.awt.dnd.DragGestureEvent;;<init>;;2;;public void <init>(java.awt.dnd.DragGestureRecognizer, int, java.awt.Point, java.util.List)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.awt.dnd.DragGestureRecognizer: java.awt.Component getComponent()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r1.<java.awt.dnd.DragGestureRecognizer: java.awt.dnd.DragSource getDragSource()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.dnd.DragGestureRecognizer;;<init>;;1;;protected void <init>(java.awt.dnd.DragSource, java.awt.Component, int, java.awt.dnd.DragGestureListener)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.FocusTraversalPolicy;;getInitialComponent;;1;;public java.awt.Component getInitialComponent(java.awt.Window)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.geom.Dimension2D;;setSize;;1;;public void setSize(java.awt.geom.Dimension2D)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d0 = virtualinvoke r1.<java.awt.geom.Dimension2D: double getWidth()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1181,13 +1181,13 @@ java.awt.AWTEventMulticaster;;save;;1;;protected static void save(java.io.Object
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r0.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r2);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.awt.AWTEventMulticaster;;getListeners;;1;;public static java.util.EventListener[] getListeners(java.util.EventListener, java.lang.Class)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.AWTKeyStroke;;registerSubclass;;1;;protected static void registerSubclass(java.lang.Class)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.awt.AWTKeyStroke;;getAWTKeyStroke;;1;;public static java.awt.AWTKeyStroke getAWTKeyStroke(java.lang.Character, int)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.awt.AWTKeyStroke;;getAWTKeyStrokeForEvent;;1;;public static java.awt.AWTKeyStroke getAWTKeyStrokeForEvent(java.awt.event.KeyEvent)
 *;; * ;; * ;;*;;r0;;5
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r0.<java.awt.event.KeyEvent: int getID()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -1197,7 +1197,7 @@ java.awt.AWTKeyStroke;;getAWTKeyStrokeForEvent;;1;;public static java.awt.AWTKey
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i5 = virtualinvoke r0.<java.awt.event.KeyEvent: int getModifiers()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.awt.AWTKeyStroke;;getAWTKeyStroke;;1;;public static java.awt.AWTKeyStroke getAWTKeyStroke(java.lang.String)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.awt.AWTKeyStroke;;equals;;1;;public final boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$c0 = r2.<java.awt.AWTKeyStroke: char keyChar>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -1703,18 +1703,18 @@ java.awt.image.DataBufferByte;;<init>;;1;;public void <init>(byte[][], int, int[
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.image.DataBufferUShort;;<init>;;1;;public void <init>(short[], int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.DataBufferUShort;;<init>;;1;;public void <init>(short[], int, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.DataBufferUShort;;<init>;;1;;public void <init>(short[][], int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.DataBufferUShort;;<init>;;2;;public void <init>(short[][], int, int[])
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$i4 = r2[i1];;pattern detected param  r2 must not be null  because used in  ArrayRef 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.DataBufferInt;;<init>;;1;;public void <init>(int[][], int)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1731,10 +1731,10 @@ java.awt.KeyboardFocusManager;;initFocusTraversalKeysSet;;1;;static java.util.Se
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z2 = interfaceinvoke r1.<java.util.Set: boolean isEmpty()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.KeyboardFocusManager;;setDefaultFocusTraversalPolicy;;1;;public void setDefaultFocusTraversalPolicy(java.awt.FocusTraversalPolicy)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.KeyboardFocusManager;;setDefaultFocusTraversalKeys;;1;;public void setDefaultFocusTraversalKeys(int, java.util.Set)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.KeyboardFocusManager;;redispatchEvent;;2;;public final void redispatchEvent(java.awt.Component, java.awt.AWTEvent)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.awt.Component: void dispatchEvent(java.awt.AWTEvent)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1774,44 +1774,44 @@ java.awt.SequencedEvent;;<init>;;1;;public void <init>(java.awt.AWTEvent)
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.awt.AWTEvent: java.lang.Object getSource()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.font.TextLayout;;<init>;;2;;public void <init>(java.lang.String, java.awt.Font, java.awt.font.FontRenderContext)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;<init>;;2;;public void <init>(java.lang.String, java.util.Map, java.awt.font.FontRenderContext)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;<init>;;1;;public void <init>(java.text.AttributedCharacterIterator, java.awt.font.FontRenderContext)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;<init>;;1;;void <init>(java.awt.font.TextLine, byte, float[], float)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.awt.font.TextLine: int characterCount()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.font.TextLayout;;getNextRightHit;;1;;public java.awt.font.TextHitInfo getNextRightHit(int, java.awt.font.TextLayout$CaretPolicy)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;getNextLeftHit;;1;;public java.awt.font.TextHitInfo getNextLeftHit(int, java.awt.font.TextLayout$CaretPolicy)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;getVisualOtherHit;;1;;public java.awt.font.TextHitInfo getVisualOtherHit(java.awt.font.TextHitInfo)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r1.<java.awt.font.TextHitInfo: int getCharIndex()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z9 = virtualinvoke r1.<java.awt.font.TextHitInfo: boolean isLeadingEdge()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.font.TextLayout;;getCaretShape;;1;;public java.awt.Shape getCaretShape(java.awt.font.TextHitInfo, java.awt.geom.Rectangle2D)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;getCaretShapes;;2;;public java.awt.Shape[] getCaretShapes(int, java.awt.geom.Rectangle2D, java.awt.font.TextLayout$CaretPolicy)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r12;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r12;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;getVisualHighlightShape;;1;;public java.awt.Shape getVisualHighlightShape(java.awt.font.TextHitInfo, java.awt.font.TextHitInfo, java.awt.geom.Rectangle2D)
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;getLogicalHighlightShape;;1;;public java.awt.Shape getLogicalHighlightShape(int, int, java.awt.geom.Rectangle2D)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;hitTestChar;;1;;public java.awt.font.TextHitInfo hitTestChar(float, float, java.awt.geom.Rectangle2D)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d2 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMinY()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1820,32 +1820,32 @@ java.awt.font.TextLayout;;hitTestChar;;1;;public java.awt.font.TextHitInfo hitTe
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d8 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMaxX()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.font.TextLayout;;draw;;1;;public void draw(java.awt.Graphics2D, float, float)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TextLayout;;getBaselineFromGraphic;;1;;static byte getBaselineFromGraphic(java.awt.font.GraphicAttribute)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r0.<java.awt.font.GraphicAttribute: int getAlignment()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.awt.dnd.DropTargetDragEvent;;<init>;;1;;public void <init>(java.awt.dnd.DropTargetContext, java.awt.Point, int, int)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.dnd.DropTargetEvent;;<init>;;1;;public void <init>(java.awt.dnd.DropTargetContext)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.dnd.DropTargetContext: java.awt.dnd.DropTarget getDropTarget()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.dnd.DropTargetDropEvent;;<init>;;1;;public void <init>(java.awt.dnd.DropTargetContext, java.awt.Point, int, int)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.TrayIcon;;<init>;;1;;public void <init>(java.awt.Image)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.TrayIcon;;setImage;;1;;public void setImage(java.awt.Image)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.TrayIcon;;displayMessage;;3;;public void displayMessage(java.lang.String, java.lang.String, java.awt.TrayIcon$MessageType)
 *;; * ;; * ;;*;;r3;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r6 = virtualinvoke r3.<java.awt.TrayIcon$MessageType: java.lang.String name()>();;pattern detected param  r3 must not be null  because used in  InvokeExpr 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.TrayIcon;;processEvent;;1;;void processEvent(java.awt.AWTEvent)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.awt.AWTEvent: int getID()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1857,7 +1857,7 @@ java.awt.TrayIcon;;processMouseMotionEvent;;1;;void processMouseMotionEvent(java
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.awt.event.MouseEvent: int getID()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.SystemTray;;add;;1;;public void add(java.awt.TrayIcon) throws java.awt.AWTException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.DefaultFocusTraversalPolicy;;accept;;1;;protected boolean accept(java.awt.Component)
 *;; * ;; * ;;*;;r1;;7
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.awt.Component: boolean isVisible()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1869,10 +1869,10 @@ java.awt.DefaultFocusTraversalPolicy;;accept;;1;;protected boolean accept(java.a
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.awt.Component: java.awt.peer.ComponentPeer getPeer()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.ContainerOrderFocusTraversalPolicy;;getFirstComponent;;1;;public java.awt.Component getFirstComponent(java.awt.Container)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.ContainerOrderFocusTraversalPolicy;;getLastComponent;;1;;public java.awt.Component getLastComponent(java.awt.Container)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.ContainerOrderFocusTraversalPolicy;;accept;;1;;protected boolean accept(java.awt.Component)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.awt.Component: boolean canBeFocusOwner()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1928,13 +1928,13 @@ java.awt.DefaultKeyboardFocusManager;;processKeyEvent;;2;;public void processKey
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r2.<java.awt.event.KeyEvent: int getID()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.dnd.DragSourceContext;;<init>;;4;;public void <init>(java.awt.dnd.peer.DragSourceContextPeer, java.awt.dnd.DragGestureEvent, java.awt.Cursor, java.awt.Image, java.awt.Point, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener)
 *;; * ;; * ;;*;;r5;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r18;;pattern detected param  r5 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r18;;pattern detected param  r5 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r6;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r17;;pattern detected param  r6 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r17;;pattern detected param  r6 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.dnd.DragSourceContext;;dragEnter;;1;;public void dragEnter(java.awt.dnd.DragSourceDragEvent)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.awt.dnd.DragSourceDragEvent: int getTargetActions()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1946,7 +1946,7 @@ java.awt.dnd.DragSourceContext;;dropActionChanged;;1;;public void dropActionChan
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.awt.dnd.DragSourceDragEvent: int getTargetActions()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.WaitDispatchSupport;;<init>;;1;;public void <init>(java.awt.EventDispatchThread, java.awt.Conditional)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.FlowLayout;;preferredLayoutSize;;1;;public java.awt.Dimension preferredLayoutSize(java.awt.Container)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r7 = virtualinvoke r1.<java.awt.Container: java.lang.Object getTreeLock()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -2025,10 +2025,10 @@ java.awt.font.TextLine;;getAdvanceBetween;;1;;public static float getAdvanceBetw
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;r1 = r0[i3];;pattern detected param  r0 must not be null  because used in  ArrayRef 
 java.awt.font.NumericShaper;;getContextualShaper;;1;;public static java.awt.font.NumericShaper getContextualShaper(java.util.Set, java.awt.font.NumericShaper$Range)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.font.NumericShaper;;shape;;1;;public void shape(char[], int, int, java.awt.font.NumericShaper$Range)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.font.TransformAttribute;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.awt.font.TransformAttribute: java.awt.geom.AffineTransform transform>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -2424,15 +2424,15 @@ java.awt.image.ReplicateScaleFilter;;setPixels;;1;;public void setPixels(int, in
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$i38 = r2[$i37];;pattern detected param  r2 must not be null  because used in  ArrayRef 
 java.awt.MultipleGradientPaint;;<init>;;5;;void <init>(float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod, java.awt.MultipleGradientPaint$ColorSpaceType, java.awt.geom.AffineTransform)
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r4;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r4 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r4 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r5;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r5 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r5 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.awt.LinearGradientPaintContext;;<init>;;2;;void <init>(java.awt.LinearGradientPaint, java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints, java.awt.geom.Point2D, java.awt.geom.Point2D, float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod, java.awt.MultipleGradientPaint$ColorSpaceType)
 *;; * ;; * ;;*;;r8;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d2 = virtualinvoke r8.<java.awt.geom.Point2D: double getX()>();;pattern detected param  r8 must not be null  because used in  InvokeExpr 
@@ -2445,13 +2445,13 @@ java.awt.LinearGradientPaintContext;;fillRaster;;1;;protected void fillRaster(in
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[$i9] = $i10;;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.awt.MultipleGradientPaintContext;;<init>;;5;;protected void <init>(java.awt.MultipleGradientPaint, java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints, float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod, java.awt.MultipleGradientPaint$ColorSpaceType)
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r4;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r16;;pattern detected param  r4 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r16;;pattern detected param  r4 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r5;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r17;;pattern detected param  r5 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r17;;pattern detected param  r5 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r6;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r18;;pattern detected param  r6 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r18;;pattern detected param  r6 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;14
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r22 = r1.<java.awt.MultipleGradientPaint: java.lang.ref.SoftReference gradient>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r23 = r1.<java.awt.MultipleGradientPaint: java.lang.ref.SoftReference gradient>;;pattern detected param  r1 must not be null  because used in  FieldRef 
@@ -2520,9 +2520,9 @@ java.awt.image.SinglePixelPackedSampleModel;;setSamples;;2;;public void setSampl
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.DataBuffer: void setElem(int,int)>($i27, i26);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.RadialGradientPaint;;<init>;;2;;public void <init>(java.awt.geom.Point2D, float, java.awt.geom.Point2D, float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod, java.awt.MultipleGradientPaint$ColorSpaceType, java.awt.geom.AffineTransform)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.RadialGradientPaint;;<init>;;1;;public void <init>(java.awt.geom.Rectangle2D, float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod)
 *;; * ;; * ;;*;;r1;;5
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d0 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getCenterX()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -2654,19 +2654,19 @@ java.awt.image.ComponentSampleModel;;setSamples;;2;;public void setSamples(int, 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.DataBuffer: void setElem(int,int,int)>($i21, i8, $i22);;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.awt.datatransfer.DataFlavor;;tryToLoadClass;;1;;protected static final java.lang.Class tryToLoadClass(java.lang.String, java.lang.ClassLoader) throws java.lang.ClassNotFoundException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.datatransfer.DataFlavor;;<init>;;1;;public void <init>(java.lang.Class, java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.datatransfer.DataFlavor;;<init>;;1;;public void <init>(java.lang.String, java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.datatransfer.DataFlavor;;<init>;;1;;public void <init>(java.lang.String, java.lang.String, java.lang.ClassLoader) throws java.lang.ClassNotFoundException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.datatransfer.DataFlavor;;<init>;;1;;public void <init>(java.lang.String) throws java.lang.ClassNotFoundException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.datatransfer.DataFlavor;;getReaderForText;;1;;public java.io.Reader getReaderForText(java.awt.datatransfer.Transferable) throws java.awt.datatransfer.UnsupportedFlavorException, java.io.IOException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = interfaceinvoke r1.<java.awt.datatransfer.Transferable: java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -2675,7 +2675,7 @@ java.awt.datatransfer.DataFlavor;;getParameter;;1;;public java.lang.String getPa
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("humanPresentableName");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.datatransfer.DataFlavor;;isMimeTypeEqual;;1;;public boolean isMimeTypeEqual(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.datatransfer.DataFlavor;;isMimeTypeEqual;;1;;public final boolean isMimeTypeEqual(java.awt.datatransfer.DataFlavor)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.awt.datatransfer.DataFlavor: java.awt.datatransfer.MimeType mimeType>;;pattern detected param  r1 must not be null  because used in  FieldRef 
@@ -2982,7 +2982,7 @@ java.awt.geom.Area;;exclusiveOr;;1;;public void exclusiveOr(java.awt.geom.Area)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r4 = r1.<java.awt.geom.Area: java.util.Vector curves>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.awt.geom.Area;;transform;;1;;public void transform(java.awt.geom.AffineTransform)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.geom.Area;;contains;;1;;public boolean contains(java.awt.geom.Point2D)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d0 = virtualinvoke r1.<java.awt.geom.Point2D: double getX()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3361,12 +3361,12 @@ java.awt.image.AffineTransformOp;;<init>;;1;;public void <init>(java.awt.geom.Af
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.awt.geom.AffineTransform: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.image.AffineTransformOp;;filter;;2;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r34 = virtualinvoke r4.<java.awt.image.BufferedImage: java.awt.Graphics2D createGraphics()>();;pattern detected param  r2 must not be null it define a local r4which used in  InvokeExpr 
 java.awt.image.AffineTransformOp;;filter;;1;;public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.AffineTransformOp;;getBounds2D;;1;;public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3386,10 +3386,10 @@ java.awt.image.AffineTransformOp;;validateTransform;;1;;void validateTransform(j
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$d0 = virtualinvoke r1.<java.awt.geom.AffineTransform: double getDeterminant()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.image.ColorConvertOp;;<init>;;1;;public void <init>(java.awt.color.ColorSpace, java.awt.RenderingHints)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.ColorConvertOp;;<init>;;1;;public void <init>(java.awt.color.ICC_Profile[], java.awt.RenderingHints)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.ColorConvertOp;;filter;;1;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3608,7 +3608,7 @@ java.awt.image.PixelInterleavedSampleModel;;createSubsetSampleModel;;1;;public j
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$i3 = r1[i0];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.awt.image.BufferedImageFilter;;<init>;;1;;public void <init>(java.awt.image.BufferedImageOp)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.image.BufferedImageFilter;;setPixels;;2;;public void setPixels(int, int, int, int, java.awt.image.ColorModel, byte[], int, int)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i32 = virtualinvoke r1.<java.awt.image.ColorModel: int getRGB(int)>($s31);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -3633,7 +3633,7 @@ java.awt.image.ByteLookupTable;;lookupPixel;;1;;public byte[] lookupPixel(byte[]
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$b11 = r1[i9];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.awt.image.ConvolveOp;;filter;;2;;public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage)
 *;; * ;; * ;;*;;r1;;2
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r8;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;; * ;; * ;;*;;r2;;3
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r2.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
@@ -3834,15 +3834,15 @@ java.awt.image.renderable.RenderableImageOp;;setParameterBlock;;1;;public java.a
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.awt.image.renderable.ParameterBlock: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.print.Book;;setPage;;2;;public void setPage(int, java.awt.print.Printable, java.awt.print.PageFormat) throws java.lang.IndexOutOfBoundsException
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.print.PageFormat;;setPaper;;1;;public void setPaper(java.awt.print.Paper)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.awt.print.Paper: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.awt.print.PrinterJob;;printDialog;;1;;public boolean printDialog(javax.print.attribute.PrintRequestAttributeSet) throws java.awt.HeadlessException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.awt.print.PrinterJob;;pageDialog;;1;;public java.awt.print.PageFormat pageDialog(javax.print.attribute.PrintRequestAttributeSet) throws java.awt.HeadlessException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 

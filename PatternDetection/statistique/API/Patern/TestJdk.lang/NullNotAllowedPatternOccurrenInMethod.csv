@@ -13,10 +13,10 @@ java.lang.String;;<init>;;1;;public void <init>(byte[], int, int, int)
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$b13 = r1[$i12];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.lang.String;;<init>;;1;;public void <init>(byte[], int, int, java.lang.String) throws java.io.UnsupportedEncodingException
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.lang.String;;<init>;;1;;public void <init>(byte[], int, int, java.nio.charset.Charset)
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.lang.String;;<init>;;1;;public void <init>(java.lang.StringBuffer)
 *;; * ;; * ;;*;;r1;;5
 *;;*;;*;;*;;*;;*;;monitorStmt for param;;entermonitor r1;;pattern detected param  r1 must not be null  because used in  monitorStmt 
@@ -33,10 +33,10 @@ java.lang.String;;getBytes;;1;;public void getBytes(int, int, byte[], int)
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;r1[$i8] = $b11;;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.lang.String;;getBytes;;1;;public byte[] getBytes(java.lang.String) throws java.io.UnsupportedEncodingException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.String;;getBytes;;1;;public byte[] getBytes(java.nio.charset.Charset)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.String;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.lang.String: char[] value>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -115,16 +115,16 @@ java.lang.String;;split;;1;;public java.lang.String[] split(java.lang.String, in
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$c9 = virtualinvoke r1.<java.lang.String: char charAt(int)>(1);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.lang.String;;toLowerCase;;1;;public java.lang.String toLowerCase(java.util.Locale)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.String;;toUpperCase;;1;;public java.lang.String toUpperCase(java.util.Locale)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.Throwable;;setStackTrace;;1;;public void setStackTrace(java.lang.StackTraceElement[])
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r5 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.lang.Throwable;;addSuppressed;;1;;public final synchronized void addSuppressed(java.lang.Throwable)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.StackTraceElement;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r3 = r2.<java.lang.StackTraceElement: java.lang.String declaringClass>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -136,10 +136,10 @@ java.lang.Class;;asSubclass;;1;;public java.lang.Class asSubclass(java.lang.Clas
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>(r0);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.lang.Class;;getAnnotation;;1;;public java.lang.annotation.Annotation getAnnotation(java.lang.Class)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.Class;;isAnnotationPresent;;1;;public boolean isAnnotationPresent(java.lang.Class)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.StringBuffer;;<init>;;1;;public void <init>(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -182,7 +182,7 @@ java.lang.Long;;getChars;;1;;static void getChars(long, int, char[])
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;r0[i35] = c3;;pattern detected param  r0 must not be null  because used in  ArrayRef 
 java.lang.Long;;parseLong;;1;;public static long parseLong(java.lang.String, int) throws java.lang.NumberFormatException
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.lang.Long;;decode;;1;;public static java.lang.Long decode(java.lang.String) throws java.lang.NumberFormatException
 *;; * ;; * ;;*;;r0;;12
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r0.<java.lang.String: int length()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -211,7 +211,7 @@ java.lang.Integer;;getChars;;1;;static void getChars(int, int, char[])
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;r0[i21] = c3;;pattern detected param  r0 must not be null  because used in  ArrayRef 
 java.lang.Integer;;parseInt;;1;;public static int parseInt(java.lang.String, int) throws java.lang.NumberFormatException
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.lang.Integer;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i1 = virtualinvoke $r2.<java.lang.Integer: int intValue()>();;pattern detected param  r1 must not be null it define a local $r2which used in  InvokeExpr 
@@ -252,7 +252,7 @@ java.lang.Double;;compareTo;;1;;public int compareTo(java.lang.Double)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$d1 = r1.<java.lang.Double: double value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.lang.reflect.Constructor;;getAnnotation;;1;;public java.lang.annotation.Annotation getAnnotation(java.lang.Class)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.ClassLoader;;defineClass;;1;;protected final java.lang.Class defineClass(java.lang.String, java.nio.ByteBuffer, java.security.ProtectionDomain) throws java.lang.ClassFormatError
 *;; * ;; * ;;*;;r2;;9
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i0 = virtualinvoke r2.<java.nio.ByteBuffer: int remaining()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
@@ -287,7 +287,7 @@ java.lang.Package;;getSystemPackage;;1;;static java.lang.Package getSystemPackag
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r8 = virtualinvoke r0.<java.lang.String: java.lang.String replace(char,char)>(46, 47);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.lang.reflect.Method;;getAnnotation;;1;;public java.lang.annotation.Annotation getAnnotation(java.lang.Class)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.reflect.Field;;getTypeName;;1;;static java.lang.String getTypeName(java.lang.Class)
 *;; * ;; * ;;*;;r0;;5
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Class: boolean isArray()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -297,7 +297,7 @@ java.lang.reflect.Field;;getTypeName;;1;;static java.lang.String getTypeName(jav
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r10 = virtualinvoke r0.<java.lang.Class: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.lang.reflect.Field;;getAnnotation;;1;;public java.lang.annotation.Annotation getAnnotation(java.lang.Class)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.reflect.AccessibleObject;;setAccessible;;1;;public static void setAccessible(java.lang.reflect.AccessibleObject[], boolean) throws java.lang.SecurityException
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
@@ -361,7 +361,7 @@ java.lang.Byte;;compareTo;;1;;public int compareTo(java.lang.Byte)
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$b1 = r1.<java.lang.Byte: byte value>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.lang.Thread;;stop;;1;;public final synchronized void stop(java.lang.Throwable)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.Thread;;setName;;1;;public final void setName(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.String: char[] toCharArray()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -392,28 +392,28 @@ java.lang.SecurityManager;;checkPermission;;1;;public void checkPermission(java.
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;virtualinvoke $r3.<java.security.AccessControlContext: void checkPermission(java.security.Permission)>(r1);;pattern detected param  r2 must not be null it define a local $r3which used in  InvokeExpr 
 java.lang.SecurityManager;;checkAccess;;1;;public void checkAccess(java.lang.Thread)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkAccess;;1;;public void checkAccess(java.lang.ThreadGroup)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkLink;;1;;public void checkLink(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkRead;;1;;public void checkRead(java.io.FileDescriptor)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkWrite;;1;;public void checkWrite(java.io.FileDescriptor)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkConnect;;1;;public void checkConnect(java.lang.String, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkConnect;;1;;public void checkConnect(java.lang.String, int, java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkAccept;;1;;public void checkAccept(java.lang.String, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkMulticast;;1;;public void checkMulticast(java.net.InetAddress)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.net.InetAddress: java.lang.String getHostAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -422,16 +422,16 @@ java.lang.SecurityManager;;checkMulticast;;1;;public void checkMulticast(java.ne
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r1.<java.net.InetAddress: java.lang.String getHostAddress()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.lang.SecurityManager;;checkTopLevelWindow;;1;;public boolean checkTopLevelWindow(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkPackageAccess;;1;;public void checkPackageAccess(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkPackageDefinition;;1;;public void checkPackageDefinition(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.SecurityManager;;checkMemberAccess;;1;;public void checkMemberAccess(java.lang.Class, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.ThreadLocal;;getMap;;1;;java.lang.ThreadLocal$ThreadLocalMap getMap(java.lang.Thread)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r2 = r1.<java.lang.Thread: java.lang.ThreadLocal$ThreadLocalMap threadLocals>;;pattern detected param  r1 must not be null  because used in  FieldRef 
@@ -443,7 +443,7 @@ java.lang.ApplicationShutdownHooks;;add;;1;;static synchronized void add(java.la
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.Thread: boolean isAlive()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.lang.ApplicationShutdownHooks;;remove;;1;;static synchronized boolean remove(java.lang.Thread)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.lang.ThreadGroup;;list;;1;;void list(java.io.PrintStream, int)
 *;; * ;; * ;;*;;r1;;4
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.io.PrintStream: void print(java.lang.String)>(" ");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -474,7 +474,7 @@ java.lang.Enum;;valueOf;;2;;public static java.lang.Enum valueOf(java.lang.Class
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.lang.Class: java.util.Map enumConstantDirectory()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r9 = virtualinvoke r0.<java.lang.Class: java.lang.String getCanonicalName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.ConditionalSpecialCasing;;toLowerCaseEx;;1;;static int toLowerCaseEx(java.lang.String, int, java.util.Locale)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i3 = virtualinvoke r0.<java.lang.String: int codePointAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -495,16 +495,16 @@ java.lang.InheritableThreadLocal;;createMap;;1;;void createMap(java.lang.Thread,
 *;;*;;*;;*;;*;;*;;FieldRef for param;;r1.<java.lang.Thread: java.lang.ThreadLocal$ThreadLocalMap inheritableThreadLocals> = $r3;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.lang.ProcessBuilder;;<init>;;1;;public void <init>(java.util.List)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.ProcessBuilder;;<init>;;1;;public transient void <init>(java.lang.String[])
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r4 = r3[i1];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
+*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from the param;;r4 = r3[i1];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
 java.lang.ProcessBuilder;;command;;1;;public java.lang.ProcessBuilder command(java.util.List)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.ProcessBuilder;;command;;1;;public transient java.lang.ProcessBuilder command(java.lang.String[])
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r4 = r3[i1];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
+*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from the param;;r4 = r3[i1];;pattern detected param  r1 must not be null it define a local r3which used in  ArrayRef 
 java.lang.ProcessBuilder;;redirectInput;;1;;public java.lang.ProcessBuilder redirectInput(java.lang.ProcessBuilder$Redirect)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.ProcessBuilder$Redirect: java.lang.ProcessBuilder$Redirect$Type type()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -841,7 +841,7 @@ java.lang.invoke.MethodHandles;;filterArguments;;2;;public static transient java
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r14 = virtualinvoke r3.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null it define a local r3which used in  InvokeExpr 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from param;;r6 = r5[i4];;pattern detected param  r1 must not be null it define a local r5which used in  ArrayRef 
+*;;*;;*;;*;;*;;*;;ArrayRef for local initialized from the param;;r6 = r5[i4];;pattern detected param  r1 must not be null it define a local r5which used in  ArrayRef 
 java.lang.invoke.MethodHandles;;filterArgument;;2;;static java.lang.invoke.MethodHandle filterArgument(java.lang.invoke.MethodHandle, int, java.lang.invoke.MethodHandle)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r2 = virtualinvoke r0.<java.lang.invoke.MethodHandle: java.lang.invoke.MethodType type()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -1171,10 +1171,10 @@ java.lang.reflect.Proxy;;getProxyClass;;1;;public static transient java.lang.Cla
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$r63 = r1[i5];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.lang.reflect.Proxy;;newProxyInstance;;1;;public static java.lang.Object newProxyInstance(java.lang.ClassLoader, java.lang.Class[], java.lang.reflect.InvocationHandler) throws java.lang.IllegalArgumentException
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.lang.reflect.Proxy;;isProxyClass;;1;;public static boolean isProxyClass(java.lang.Class)
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r1;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.lang.reflect.Proxy;;getInvocationHandler;;1;;public static java.lang.reflect.InvocationHandler getInvocationHandler(java.lang.Object) throws java.lang.IllegalArgumentException
 *;; * ;; * ;;*;;r0;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -1197,7 +1197,7 @@ java.lang.invoke.SwitchPoint;;invalidateAll;;1;;public static void invalidateAll
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;r2 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
 java.lang.management.LockInfo;;<init>;;1;;public void <init>(java.lang.String, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.lang.management.LockInfo;;<init>;;1;;void <init>(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -1234,9 +1234,9 @@ java.lang.management.ManagementPermission;;<init>;;1;;public void <init>(java.la
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z1 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("monitor");;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.lang.management.MemoryNotificationInfo;;<init>;;2;;public void <init>(java.lang.String, java.lang.management.MemoryUsage, long)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.lang.reflect.ReflectAccess;;getMethodAccessor;;1;;public sun.reflect.MethodAccessor getMethodAccessor(java.lang.reflect.Method)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.reflect.Method: sun.reflect.MethodAccessor getMethodAccessor()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 

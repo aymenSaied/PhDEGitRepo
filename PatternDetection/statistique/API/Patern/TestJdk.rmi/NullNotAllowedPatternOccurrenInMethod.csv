@@ -1,10 +1,10 @@
 class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
 java.rmi.Naming;;bind;;1;;public static void bind(java.lang.String, java.rmi.Remote) throws java.rmi.AlreadyBoundException, java.net.MalformedURLException, java.rmi.RemoteException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.rmi.Naming;;rebind;;1;;public static void rebind(java.lang.String, java.rmi.Remote) throws java.rmi.RemoteException, java.net.MalformedURLException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.rmi.activation.Activatable;;exportObject;;1;;public static java.rmi.activation.ActivationID exportObject(java.rmi.Remote, java.lang.String, java.rmi.MarshalledObject, boolean, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.activation.ActivationException, java.rmi.RemoteException
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r11 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -14,7 +14,7 @@ java.rmi.activation.ActivationID;;equals;;1;;public boolean equals(java.lang.Obj
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.rmi.activation.ActivationID: java.rmi.activation.Activator activator>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 java.rmi.activation.ActivationDesc;;<init>;;1;;public void <init>(java.rmi.activation.ActivationGroupID, java.lang.String, java.lang.String, java.rmi.MarshalledObject, boolean)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.rmi.activation.ActivationDesc;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;9
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.rmi.activation.ActivationDesc: java.rmi.activation.ActivationGroupID groupID>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -85,7 +85,7 @@ java.rmi.activation.ActivationGroupDesc;;equals;;1;;public boolean equals(java.l
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r22 = r2.<java.rmi.activation.ActivationGroupDesc: java.util.Properties props>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 java.rmi.server.RemoteObjectInvocationHandler;;<init>;;1;;public void <init>(java.rmi.server.RemoteRef)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.rmi.server.RemoteObjectInvocationHandler;;invoke;;1;;public java.lang.Object invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]) throws java.lang.Throwable
 *;; * ;; * ;;*;;r2;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r2.<java.lang.reflect.Method: java.lang.Class getDeclaringClass()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 

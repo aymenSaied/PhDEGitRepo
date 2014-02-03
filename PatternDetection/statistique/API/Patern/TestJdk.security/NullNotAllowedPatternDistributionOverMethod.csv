@@ -30,7 +30,7 @@ java.security.IdentityScope;;getIdentity;;public java.security.Identity getIdent
 java.security.spec.EncodedKeySpec;;<init>;;public void <init>(byte[]);;1
 java.security.KeyStore;;getInstance;;public static java.security.KeyStore getInstance(java.lang.String, java.security.Provider) throws java.security.KeyStoreException;;1
 java.security.KeyStore;;getEntry;;public final java.security.KeyStore$Entry getEntry(java.lang.String, java.security.KeyStore$ProtectionParameter) throws java.security.NoSuchAlgorithmException, java.security.UnrecoverableEntryException, java.security.KeyStoreException;;1
-java.security.KeyStoreSpi;;engineSetEntry;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException;;1
+java.security.KeyStoreSpi;;engineSetEntry;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException;;2
 java.security.UnresolvedPermission;;<init>;;public void <init>(java.lang.String, java.lang.String, java.lang.String, java.security.cert.Certificate[]);;1
 java.security.UnresolvedPermission;;resolve;;java.security.Permission resolve(java.security.Permission, java.security.cert.Certificate[]);;1
 java.security.UnresolvedPermission;;equals;;public boolean equals(java.lang.Object);;1

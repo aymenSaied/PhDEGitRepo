@@ -11,7 +11,7 @@ java.security.AccessControlContext;;<init>;;1;;public void <init>(java.security.
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r5 = r1.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.security.AccessControlContext;;checkPermission;;1;;public void checkPermission(java.security.Permission) throws java.security.AccessControlException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.AccessControlContext;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;6
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.security.AccessControlContext: java.security.ProtectionDomain[] context>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -22,33 +22,33 @@ java.security.AccessControlContext;;equals;;1;;public boolean equals(java.lang.O
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r10 = r2.<java.security.AccessControlContext: java.security.DomainCombiner combiner>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 java.security.AccessController;;checkPermission;;1;;public static void checkPermission(java.security.Permission) throws java.security.AccessControlException
 *;; * ;; * ;;*;;r0;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r0 must not be null  ## otherwise an exception is thrown 
 java.security.CodeSource;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.security.CodeSource: java.net.URL location>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r6 = r2.<java.security.CodeSource: java.net.URL location>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 java.security.Policy;;getInstance;;1;;public static java.security.Policy getInstance(java.lang.String, java.security.Policy$Parameters, java.security.Provider) throws java.security.NoSuchAlgorithmException
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.security.Policy;;implies;;1;;public boolean implies(java.security.ProtectionDomain, java.security.Permission)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r10 = r1.<java.security.ProtectionDomain: java.security.ProtectionDomain$Key key>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 *;;*;;*;;*;;*;;*;;FieldRef for param;;$r17 = r1.<java.security.ProtectionDomain: java.security.ProtectionDomain$Key key>;;pattern detected param  r1 must not be null  because used in  FieldRef 
 java.security.CodeSigner;;<init>;;1;;public void <init>(java.security.cert.CertPath, java.security.Timestamp)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.Provider;;putService;;1;;protected synchronized void putService(java.security.Provider$Service)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r20;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r20;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.Provider;;removeService;;1;;protected synchronized void removeService(java.security.Provider$Service)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.AlgorithmParameters;;getInstance;;1;;public static java.security.AlgorithmParameters getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.AlgorithmParameterGenerator;;getInstance;;1;;public static java.security.AlgorithmParameterGenerator getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.Security;;insertProviderAt;;1;;public static synchronized int insertProviderAt(java.security.Provider, int)
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r1 = virtualinvoke r0.<java.security.Provider: java.lang.String getName()>();;pattern detected param  r0 must not be null  because used in  InvokeExpr 
@@ -73,16 +73,16 @@ java.security.Security;;getFilterComponents;;2;;static java.lang.String[] getFil
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.security.MessageDigest;;getInstance;;1;;public static java.security.MessageDigest getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.MessageDigest;;update;;1;;public void update(byte[], int, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.MessageDigest;;update;;1;;public final void update(java.nio.ByteBuffer)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.MessageDigest;;digest;;1;;public int digest(byte[], int, int) throws java.security.DigestException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.MessageDigest;;isEqual;;2;;public static boolean isEqual(byte[], byte[])
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$b5 = r0[i1];;pattern detected param  r0 must not be null  because used in  ArrayRef 
@@ -124,11 +124,13 @@ java.security.spec.EncodedKeySpec;;<init>;;1;;public void <init>(byte[])
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.security.KeyStore;;getInstance;;1;;public static java.security.KeyStore getInstance(java.lang.String, java.security.Provider) throws java.security.KeyStoreException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.KeyStore;;getEntry;;1;;public final java.security.KeyStore$Entry getEntry(java.lang.String, java.security.KeyStore$ProtectionParameter) throws java.security.NoSuchAlgorithmException, java.security.UnrecoverableEntryException, java.security.KeyStoreException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
-java.security.KeyStoreSpi;;engineSetEntry;;1;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
+java.security.KeyStoreSpi;;engineSetEntry;;2;;public void engineSetEntry(java.lang.String, java.security.KeyStore$Entry, java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException
+*;; * ;; * ;;*;;r3;;1
+*;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r7 = virtualinvoke r4.<java.security.KeyStore$PasswordProtection: char[] getPassword()>();;pattern detected param  r3 must not be null it define a local r4which used in  InvokeExpr 
 *;; * ;; * ;;*;;r2;;5
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r9 = virtualinvoke r5.<java.security.KeyStore$TrustedCertificateEntry: java.security.cert.Certificate getTrustedCertificate()>();;pattern detected param  r2 must not be null it define a local r5which used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$r13 = virtualinvoke $r12.<java.security.KeyStore$PrivateKeyEntry: java.security.PrivateKey getPrivateKey()>();;pattern detected param  r2 must not be null it define a local $r12which used in  InvokeExpr 
@@ -137,7 +139,7 @@ java.security.KeyStoreSpi;;engineSetEntry;;1;;public void engineSetEntry(java.la
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r26 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r2 must not be null  because used in  InvokeExpr 
 java.security.UnresolvedPermission;;<init>;;1;;public void <init>(java.lang.String, java.lang.String, java.lang.String, java.security.cert.Certificate[])
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.UnresolvedPermission;;resolve;;1;;java.security.Permission resolve(java.security.Permission, java.security.cert.Certificate[])
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r9 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -174,7 +176,7 @@ java.security.Signature;;getInstance;;2;;public static java.security.Signature g
 *;; * ;; * ;;*;;r0;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r0.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("NONEwithRSA");;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.Signature;;initVerify;;1;;public final void initVerify(java.security.cert.Certificate) throws java.security.InvalidKeyException
 *;; * ;; * ;;*;;r1;;3
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke r2.<java.security.cert.X509Certificate: java.util.Set getCriticalExtensionOIDs()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
@@ -182,10 +184,10 @@ java.security.Signature;;initVerify;;1;;public final void initVerify(java.securi
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r6 = virtualinvoke r1.<java.security.cert.Certificate: java.security.PublicKey getPublicKey()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.security.Signature;;sign;;1;;public final int sign(byte[], int, int) throws java.security.SignatureException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.Signature;;update;;1;;public final void update(java.nio.ByteBuffer) throws java.security.SignatureException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.SignatureSpi;;engineUpdate;;1;;protected void engineUpdate(java.nio.ByteBuffer)
 *;; * ;; * ;;*;;r1;;9
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.nio.ByteBuffer: boolean hasRemaining()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -208,7 +210,7 @@ java.security.Signer;;setKeyPair;;1;;public final void setKeyPair(java.security.
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;r3 = virtualinvoke r1.<java.security.KeyPair: java.security.PrivateKey getPrivate()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.security.URIParameter;;<init>;;1;;public void <init>(java.net.URI)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.cert.CertPathHelperImpl;;implSetPathToNames;;1;;protected void implSetPathToNames(java.security.cert.X509CertSelector, java.util.Set)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;virtualinvoke r1.<java.security.cert.X509CertSelector: void setPathToNamesInternal(java.util.Set)>(r2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -245,37 +247,37 @@ java.security.cert.X509CRLSelector;;match;;1;;public boolean match(java.security
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r38 = virtualinvoke r2.<java.security.cert.X509CRL: java.util.Date getNextUpdate()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
 java.security.cert.CertPathValidatorException;;<init>;;2;;public void <init>(java.lang.String, java.lang.Throwable, java.security.cert.CertPath, int, java.security.cert.CertPathValidatorException$Reason)
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r4;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r4 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r9;;pattern detected param  r4 must not be null  ## otherwise an exception is thrown 
 java.security.cert.CollectionCertStoreParameters;;<init>;;1;;public void <init>(java.util.Collection)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.cert.LDAPCertStoreParameters;;<init>;;1;;public void <init>(java.lang.String, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.cert.PKIXParameters;;<init>;;1;;public void <init>(java.security.KeyStore) throws java.security.KeyStoreException, java.security.InvalidAlgorithmParameterException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.cert.PKIXParameters;;setTrustAnchors;;1;;public void setTrustAnchors(java.util.Set) throws java.security.InvalidAlgorithmParameterException
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.cert.PKIXCertPathBuilderResult;;<init>;;1;;public void <init>(java.security.cert.CertPath, java.security.cert.TrustAnchor, java.security.cert.PolicyNode, java.security.PublicKey)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.cert.PKIXCertPathValidatorResult;;<init>;;2;;public void <init>(java.security.cert.TrustAnchor, java.security.cert.PolicyNode, java.security.PublicKey)
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.cert.TrustAnchor;;<init>;;1;;public void <init>(java.security.cert.X509Certificate, byte[])
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.cert.TrustAnchor;;<init>;;2;;public void <init>(java.lang.String, java.security.PublicKey, byte[])
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.security.cert.PolicyQualifierInfo;;<init>;;1;;public void <init>(byte[]) throws java.io.IOException
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r4 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -288,18 +290,18 @@ java.security.cert.X509CRLEntry;;equals;;1;;public boolean equals(java.lang.Obje
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;r3 = virtualinvoke $r4.<java.security.cert.X509CRLEntry: byte[] getEncoded()>();;pattern detected param  r1 must not be null it define a local $r4which used in  InvokeExpr 
 java.security.spec.ECParameterSpec;;<init>;;3;;public void <init>(java.security.spec.EllipticCurve, java.security.spec.ECPoint, java.math.BigInteger, int)
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.security.spec.EllipticCurve;;<init>;;3;;public void <init>(java.security.spec.ECField, java.math.BigInteger, java.math.BigInteger, byte[])
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r7;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.security.spec.EllipticCurve;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;3
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.security.spec.EllipticCurve: java.security.spec.ECField field>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
@@ -311,11 +313,11 @@ java.security.spec.ECPoint;;equals;;1;;public boolean equals(java.lang.Object)
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r8 = $r7.<java.security.spec.ECPoint: java.math.BigInteger y>;;pattern detected param  r1 must not be null it define a local $r7which used in  FieldRef 
 java.security.spec.RSAOtherPrimeInfo;;<init>;;3;;public void <init>(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger)
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.security.spec.ECFieldF2m;;<init>;;1;;public void <init>(int, int[])
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r2 = virtualinvoke r1.<java.lang.Object: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -331,39 +333,39 @@ java.security.spec.ECFieldFp;;equals;;1;;public boolean equals(java.lang.Object)
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = $r3.<java.security.spec.ECFieldFp: java.math.BigInteger p>;;pattern detected param  r1 must not be null it define a local $r3which used in  FieldRef 
 java.security.spec.ECGenParameterSpec;;<init>;;1;;public void <init>(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.spec.ECPrivateKeySpec;;<init>;;2;;public void <init>(java.math.BigInteger, java.security.spec.ECParameterSpec)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.security.spec.ECPublicKeySpec;;<init>;;2;;public void <init>(java.security.spec.ECPoint, java.security.spec.ECParameterSpec)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.security.spec.MGF1ParameterSpec;;<init>;;1;;public void <init>(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.security.spec.PSSParameterSpec;;<init>;;2;;public void <init>(java.lang.String, java.lang.String, java.security.spec.AlgorithmParameterSpec, int, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 
 java.security.spec.RSAMultiPrimePrivateCrtKeySpec;;<init>;;8;;public void <init>(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.security.spec.RSAOtherPrimeInfo[])
 *;; * ;; * ;;*;;r8;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r17;;pattern detected param  r8 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r17;;pattern detected param  r8 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r7;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r16;;pattern detected param  r7 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r16;;pattern detected param  r7 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r3;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r12;;pattern detected param  r3 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r12;;pattern detected param  r3 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r4;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r4 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r13;;pattern detected param  r4 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r5;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r5 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r5 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r6;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r6 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r15;;pattern detected param  r6 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r10;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 *;; * ;; * ;;*;;r2;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r2 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r2 must not be null  ## otherwise an exception is thrown 

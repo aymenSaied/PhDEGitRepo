@@ -35,41 +35,21 @@ import java.util.Set;
 
 import javax.xml.bind.JAXBException;
 
-import NullOrNotNullParamUsingModifiedNullnessAnalysis.ModifiedNullnessAnalysis;
-import NullOrNotNullParamUsingModifiedNullnessAnalysis.NullTestedLocalsAnalysis;
-
 import soot.Body;
 import soot.BodyTransformer;
 import soot.Local;
 import soot.SootClass;
 import soot.SootMethod;
-import soot.Type;
 import soot.Unit;
 import soot.Value;
-import soot.ValueBox;
-import soot.jimple.ArrayRef;
 import soot.jimple.DefinitionStmt;
-import soot.jimple.FieldRef;
-import soot.jimple.InstanceFieldRef;
-import soot.jimple.InstanceInvokeExpr;
-import soot.jimple.InvokeExpr;
-import soot.jimple.MonitorStmt;
-import soot.jimple.NullConstant;
 import soot.jimple.ReturnStmt;
 import soot.jimple.ReturnVoidStmt;
 import soot.jimple.Stmt;
 import soot.jimple.ThrowStmt;
-import soot.jimple.internal.AbstractBinopExpr;
 import soot.jimple.internal.JCastExpr;
-import soot.jimple.internal.JEqExpr;
-import soot.jimple.internal.JIfStmt;
-import soot.jimple.internal.JInstanceOfExpr;
-import soot.jimple.internal.JNeExpr;
-import soot.toolkits.graph.BriefUnitGraph;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
-import soot.toolkits.scalar.LocalUnitPair;
-import soot.toolkits.scalar.SimpleLocalDefs;
 import stat.PatternOccurrenceInfo;
 import stat.Statistique;
 
@@ -132,6 +112,13 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 		SootClass declaringClass = method.getDeclaringClass();
 		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 
+		if (declaringClass.toString().contains("InetSocketAddress")) {
+			
+			System.out.println("InetSocketAddress");
+			
+		}
+		
+		
 		String methodSignature =method.getSignature();
 		String methodDeclaration =method.getDeclaration();
 		System.out.println("instrumenting method : " + methodSignature
@@ -472,14 +459,14 @@ public class RangeLimitationwithOneRangeStaticInstrumenter extends
 				if ((ParameterRangeListFromDifferentExitpoint.size() != 0)) {
 
 					String comment = "pattern detected the Range of param  "
-							+ l + "  is limeted to : ";
+							+ l + "  is limited to : ";
 
 					Iterator<Range> it = ParameterRangeListFromDifferentExitpoint
 							.iterator();
 
 					while (it.hasNext()) {
 						Range range = it.next();
-						comment += ", " + range.toString();
+						comment += "##, " + range.toString();
 
 					}
 

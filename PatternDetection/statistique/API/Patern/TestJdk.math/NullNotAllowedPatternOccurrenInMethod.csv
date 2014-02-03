@@ -276,10 +276,10 @@ java.math.BigInteger;;equals;;1;;public boolean equals(java.lang.Object)
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;r4 = r2.<java.math.BigInteger: int[] mag>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 java.math.MathContext;;<init>;;1;;public void <init>(int, java.math.RoundingMode)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.math.MathContext;;<init>;;1;;public void <init>(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.math.MathContext;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$i0 = r2.<java.math.MathContext: int precision>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 

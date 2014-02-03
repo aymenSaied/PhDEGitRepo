@@ -1,35 +1,35 @@
 class name;;Method name;;number of detected pattern;;method Declaration;;parameter;;number of occurrences;;occurrenceType;;unitOnwhichOccurrenceIsDetected;;commentFragment
 java.text.AttributedString;;<init>;;1;;void <init>(java.text.AttributedCharacterIterator[])
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.AttributedString;;<init>;;1;;public void <init>(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.AttributedString;;<init>;;1;;public void <init>(java.text.AttributedCharacterIterator)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = interfaceinvoke r1.<java.text.AttributedCharacterIterator: int getBeginIndex()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = interfaceinvoke r1.<java.text.AttributedCharacterIterator: int getEndIndex()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.text.AttributedString;;<init>;;1;;public void <init>(java.text.AttributedCharacterIterator, int, int, java.text.AttributedCharacterIterator$Attribute[])
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.AttributedString;;addAttribute;;1;;public void addAttribute(java.text.AttributedCharacterIterator$Attribute, java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.AttributedString;;addAttribute;;1;;public void addAttribute(java.text.AttributedCharacterIterator$Attribute, java.lang.Object, int, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.AttributedString;;addAttributes;;1;;public void addAttributes(java.util.Map, int, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r4;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.Bidi;;<init>;;1;;public void <init>(java.lang.String, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.Bidi;;<init>;;1;;public void <init>(java.text.AttributedCharacterIterator)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.Bidi;;<init>;;1;;public void <init>(char[], int, byte[], int, int, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r3;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.BreakIterator;;getLong;;1;;static long getLong(byte[], int)
 *;; * ;; * ;;*;;r0;;2
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$b3 = r0[i0];;pattern detected param  r0 must not be null  because used in  ArrayRef 
@@ -47,10 +47,10 @@ java.text.StringCharacterIterator;;<init>;;1;;public void <init>(java.lang.Strin
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i1 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.text.StringCharacterIterator;;<init>;;1;;public void <init>(java.lang.String, int, int, int)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.StringCharacterIterator;;setText;;1;;public void setText(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.StringCharacterIterator;;equals;;1;;public boolean equals(java.lang.Object)
 *;; * ;; * ;;*;;r1;;5
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$i1 = virtualinvoke r2.<java.text.StringCharacterIterator: int hashCode()>();;pattern detected param  r1 must not be null it define a local r2which used in  InvokeExpr 
@@ -81,7 +81,7 @@ java.text.MessageFormat;;setFormats;;1;;public void setFormats(java.text.Format[
 *;;*;;*;;*;;*;;*;;ArrayRef for param;;$r3 = r1[i1];;pattern detected param  r1 must not be null  because used in  ArrayRef 
 java.text.MessageFormat;;formatToCharacterIterator;;1;;public java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r6;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.MessageFormat;;parse;;1;;public java.lang.Object[] parse(java.lang.String, java.text.ParsePosition)
 *;; * ;; * ;;*;;r2;;6
 *;;*;;*;;*;;*;;*;;FieldRef for param;;i2 = r2.<java.text.ParsePosition: int index>;;pattern detected param  r2 must not be null  because used in  FieldRef 
@@ -165,13 +165,13 @@ java.text.RBCollationTables;;getEntry;;1;;static final int getEntry(java.util.Ve
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r0.<java.util.Vector: java.lang.Object elementAt(int)>(i0);;pattern detected param  r0 must not be null  because used in  InvokeExpr 
 java.text.CollationKey;;<init>;;1;;protected void <init>(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.DateFormat;;format;;1;;public final java.lang.StringBuffer format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l0 = virtualinvoke $r7.<java.lang.Number: long longValue()>();;pattern detected param  r1 must not be null it define a local $r7which used in  InvokeExpr 
 java.text.SimpleDateFormat;;<init>;;1;;void <init>(int, int, java.util.Locale)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r5;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.SimpleDateFormat;;set2DigitYearStart;;1;;public void set2DigitYearStart(java.util.Date)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$l0 = virtualinvoke r1.<java.util.Date: long getTime()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -183,7 +183,7 @@ java.text.SimpleDateFormat;;format;;1;;public java.lang.StringBuffer format(java
 java.text.SimpleDateFormat;;formatToCharacterIterator;;1;;public java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l0 = virtualinvoke $r9.<java.lang.Number: long longValue()>();;pattern detected param  r1 must not be null it define a local $r9which used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r11;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.SimpleDateFormat;;parse;;2;;public java.util.Date parse(java.lang.String, java.text.ParsePosition)
 *;; * ;; * ;;*;;r1;;3
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i2 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -228,7 +228,7 @@ java.text.DecimalFormat;;formatToCharacterIterator;;1;;public java.text.Attribut
 *;; * ;; * ;;*;;r1;;3
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$d0 = virtualinvoke $r6.<java.lang.Number: double doubleValue()>();;pattern detected param  r1 must not be null it define a local $r6which used in  InvokeExpr 
 *;;*;;*;;*;;*;;*;;InvokeExpr for local initialized from param;;$l0 = virtualinvoke $r8.<java.lang.Number: long longValue()>();;pattern detected param  r1 must not be null it define a local $r8which used in  InvokeExpr 
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r14;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.DecimalFormat;;parse;;2;;public java.lang.Number parse(java.lang.String, java.text.ParsePosition)
 *;; * ;; * ;;*;;r1;;1
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$z0 = virtualinvoke r1.<java.lang.String: boolean regionMatches(int,java.lang.String,int,int)>($i1, $r7, 0, $i2);;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -241,7 +241,7 @@ java.text.DecimalFormat;;setDecimalFormatSymbols;;1;;public void setDecimalForma
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$r3 = virtualinvoke r1.<java.text.DecimalFormatSymbols: java.lang.Object clone()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
 java.text.DecimalFormat;;setRoundingMode;;1;;public void setRoundingMode(java.math.RoundingMode)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.DigitList;;set;;1;;final void set(boolean, java.lang.String, int, boolean)
 *;; * ;; * ;;*;;r1;;2
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;i1 = virtualinvoke r1.<java.lang.String: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 
@@ -259,10 +259,10 @@ java.text.DigitList;;equals;;1;;public boolean equals(java.lang.Object)
 *;;*;;*;;*;;*;;*;;FieldRef for local initialized from param;;$r4 = r2.<java.text.DigitList: char[] digits>;;pattern detected param  r1 must not be null it define a local r2which used in  FieldRef 
 java.text.DecimalFormatSymbols;;setCurrency;;1;;public void setCurrency(java.util.Currency)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.DecimalFormatSymbols;;setExponentSeparator;;1;;public void setExponentSeparator(java.lang.String)
 *;; * ;; * ;;*;;r1;;1
-*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  otherwise an exception is thrown 
+*;;*;;*;;*;;*;;*;;ThrowStmt for param;;throw $r2;;pattern detected param  r1 must not be null  ## otherwise an exception is thrown 
 java.text.PatternEntry;;addToBuffer;;1;;void addToBuffer(java.lang.StringBuffer, boolean, boolean, java.text.PatternEntry)
 *;; * ;; * ;;*;;r1;;14
 *;;*;;*;;*;;*;;*;;InvokeExpr for param;;$i0 = virtualinvoke r1.<java.lang.StringBuffer: int length()>();;pattern detected param  r1 must not be null  because used in  InvokeExpr 

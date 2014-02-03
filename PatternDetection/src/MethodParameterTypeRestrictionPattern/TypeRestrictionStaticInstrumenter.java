@@ -556,7 +556,7 @@ public class TypeRestrictionStaticInstrumenter extends BodyTransformer {
 
 						while (it.hasNext()) {
 							Type type = (Type) it.next();
-							comment += ", " + type;
+							comment += ",## " + type;
 
 						}
 
